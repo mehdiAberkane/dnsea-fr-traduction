@@ -1,0 +1,262 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq12_7216_substitute</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7216</qid>
+      <designer>박정민</designer>
+      <qlevel>28</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Get a substitute]]></qkname>
+      <qnpc>
+         <npcid>16</npcid>
+         <npcename>n016_trader_borin</npcename>
+         <npckname>대장장이 보린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>2</npcid>
+         <npcename>n002_trader_dorin</npcename>
+         <npckname>대장장이 도린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Blacksmith Corin$<BR>I wonder how brother Berlinin at Saint Haven is doing recently.<BR>※ You need to receive a quest from Blacksmith Berlin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Borin$<BR>What you are looking at? Aren't you a spy sent by my older brother, are you?<BR>※ You need to receive a quest from Blacksmith Berlin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Blacksmith Dorin$<BR>You're suspicious! Is my younger brother Borin sending you to peep at my skills?<BR>※ You need to receive a quest from Blacksmith Berlin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="17"><![CDATA[<html>What makes you worried?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Blacksmith Berlin$<BR>Hmm, it's difficult.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Blacksmith Berlin$<BR>I finished making the music box but I need to empty my forge to attend Harori's fan meeting. As you know, if I empty here even for a day, something big would happen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="19"><![CDATA[<html>Why don't you ask someone to attend to your shop?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Berlin$<BR>I'm worried about my customers and the flame in the kiln could be blown out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-d" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Blacksmith Berlin$<BR>Mmm, that's good idea. It would be nice if there is a volunteer among my cousins. Can you ask around for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceptted" mid="22"><![CDATA[<html><FONT color=#086171>Accept quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Get a substitute$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Berlin$<BR>Please ask Corin at Calderock Village first. Calderock Village is not so far from here, he may do me a favour. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2" mid="28"><![CDATA[<html>(Talk about Berlin's request)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Blacksmith Corin$<BR>You are not buying anything. What do you wanna say?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Corin$<BR>Mmm, I'd like to grant Berlin's favour but it's been busy here, too. I heard Borin at Mana Ridge is free recently, why don't you ask Borin?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-2-a" mid="34"><![CDATA[<html>Oh, sorry. But I have to deliver the message.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Blacksmith Borin$<BR>Don’t ask anything if you don't buy!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-a" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Blacksmith Borin$<BR><FONT color=#7e12d2>(Borin makes an awkward face after he'd gotten Blacksmith Berlin's message)</FONT><BR>Hmm. If it's as usual, it's no problem to care Berlin's forge. But I'm middle of making goods that Master Sorceress Cynthia ordered.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Blacksmith Borin$<BR>Dorin would grant him a favour since his business is slack recently. Why don't you ask brother Dorin at Prairie Town?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-3-a" mid="42"><![CDATA[<html>(Deliver Berlin's message)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Blacksmith Dorin$<BR>What's the matter? You don't seem that you came here to buy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-3-d" mid="44"><![CDATA[<html>Corin said he's busy.</html>]]></talk_answer>
+      <talk_answer link_index="n002_trader_dorin-3-b" mid="45"><![CDATA[<html>Borin said Dorin would take it cause you are free.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Blacksmith Dorin$<BR>Well, that's difficult. What Corin or Borin said?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-3-c" mid="47"><![CDATA[<html>Calm down!</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Blacksmith Dorin$<BR>What?! Slack?!<BR>That bastard told you that?!<BR>I'm gonna go to Mana Ridge right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-c" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-3-d" mid="49"><![CDATA[<html>What would you do about Berlin's request?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Blacksmith Dorin$<BR>How can I possibly calm down now?!<BR>I'll go to Mana Ridge and show him that I'm his older brother!<BR>How rude he is!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-d" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Blacksmith Dorin$<BR>Tsk, the business in Calderock Village seems to be thriving.<BR>Alright!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Blacksmith Dorin$<BR>Tell Berlin, I can keep an eye on his kiln for a day. <BR><FONT color=#7e12d2>(Dorin shouts being unable to hold back his anger)</FONT><BR>Borin, bastard, you dare to dump it on me!!/html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-a" mid="56"><![CDATA[<html>Dorin can keep an eye on your kiln for a day.</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Blacksmith Berlin$<BR>So, what did my cousins say?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-b" mid="58"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-b" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Blacksmith Berlin$<BR>Haha, that's lucky!<BR>Dorin, he sometimes lose his temper, but loyal.<BR> Thanks to him, I can go to fan meeting happily.<BR><FONT color=#7e12d2>(Berlin's shoulder moving up and down)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7216</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+         <exe type="recompense_view">72160,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">72160,,,,,</exe>
+         <exe type="complete">7216</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 91, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="d">2</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n016_trader_borin" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin" sub="d" />
+   <exelink qstep="3" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="3" npc="n002_trader_dorin" sub="c" />
+   <exelink qstep="3" npc="n002_trader_dorin" sub="d" />
+   <exelink qstep="3" npc="n002_trader_dorin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n091_trader_bellin" sub="a">0</exelink>
+   <exelink qstep="4" npc="n091_trader_bellin" sub="b">1,2</exelink>
+   <journal_data recompense="72160" quest_title="대타 구하기" chapterid="" quest_level="28" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom:11@0,27@0,28@0</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Talk to Blacksmith Corin at Calderock Village ]]></title>
+         <contents mid="62"><![CDATA[<html>Let's have a talk with Blacksmith Corin at Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Blacksmith Corin</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Blacksmith Corin]]></destination>
+         <todo_msg mid="64"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Talk to Mana Ridge Blacksmith Borin]]></title>
+         <contents mid="67"><![CDATA[<html>let's have a Talk to Blacksmith Borin in Mana Ridge.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Blacksmith Borin</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Talk to Blacksmith Borin]]></destination>
+         <todo_msg mid="69"><![CDATA[Talk to Blacksmith Borin in Mana Ridge.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>1,n2</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Talk to Prairie Town Blacksmith Dorin]]></title>
+         <contents mid="72"><![CDATA[<html>Let's have a Talk with Blacksmith Dorin at Prairie Town.<BR>
+ <BR>
+<FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Blacksmith Dorin</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to Blacksmith Dorin]]></destination>
+         <todo_msg mid="74"><![CDATA[Talk to Blacksmith Dorinin at Prairie Town.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Talk to Blacksmith Berlin]]></title>
+         <contents mid="77"><![CDATA[<html>Deliver the message to Blacksmith Berlin at Saint Haven that Blacksmith Dorin will care for the forge.<BR><BR><FONT color=#086171>Saint Haven </FONT><FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="79"><![CDATA[Talk to Blacksmith Berlinin at Saint Haven.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7215</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

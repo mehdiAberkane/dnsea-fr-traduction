@@ -1,0 +1,43 @@
+   <talk>
+      <npcename>n149_arena_ticker_2</npcename>
+      <npcid>149</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Colosseum Shopkeeper Michael]]></npckname>
+      <talk_paragraph index="001" image="QS_Default.dds" itemindex="374341682">
+         <talk_answer link_index="trade" mid="4"><![CDATA[<html>[Colosseum Shop]</html>]]></talk_answer>
+         <talk_answer link_index="trade_2" mid="44"><![CDATA[<html>[Previous Season Ladder shop]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Colosseum Shopkeeper Michael${action:Talk}<BR>Oh hi there. I'm Michael.<BR>I'll trade your <FONT color=#a82424>Colosseum Medals</FONT> with awesome stuff from my shop!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="6" false="2">0</exe>
+         <exe type="conexe" true="7" false="3">1</exe>
+         <exe type="conexe" true="8" false="4">2</exe>
+         <exe type="conexe" true="9" false="5">3</exe>
+         <exe type="conexe" true="10" false="10">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5002,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5003,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5004,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5005,100);</exe>
+         <exe type="conexe" true="16" false="12">0</exe>
+         <exe type="conexe" true="17" false="13">1</exe>
+         <exe type="conexe" true="18" false="14">2</exe>
+         <exe type="conexe" true="19" false="15">3</exe>
+         <exe type="conexe" true="20" false="20">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5201,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5202,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5203,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5204,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5205,100);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <exelink idx="trade">1</exelink>
+      <exelink idx="trade_2">11</exelink>
+   </talk>

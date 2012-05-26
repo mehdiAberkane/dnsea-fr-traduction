@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n136_elite_soilder</npcename>
+      <npcid>136</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Saint Haven Elite Soldier]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Saint Haven Elite Soldier$<BR>
+Sir!! I am in the midst of executing the mission!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_575_suspicion_of_murder</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">575</chk>
+      </conditions>
+   </talk>

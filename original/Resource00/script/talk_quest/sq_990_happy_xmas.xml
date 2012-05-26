@@ -1,0 +1,458 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq_990_happy_xmas</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>990</qid>
+      <designer>곽노찬</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Happy Christmas]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>193</npcid>
+         <npcename>n193_santaund</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>346</npcid>
+         <npcename>n346_orc_oneeye</npcename>
+         <npckname>김오크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>347</npcid>
+         <npcename>n347_mandra_son</npcename>
+         <npckname>만드라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>65</npcid>
+         <npcename>n065_goblinson04_gosuk</npcename>
+         <npckname>고숙이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-noquest" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Santound${sound:Hound_Stand_c.wav}<BR>Rrrrrr~~<BR><BR>
+※ <FONT color=#7e12d2>You can accept a quest from Events Planner Irine.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-noquest" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Orc Krema$<BR>
+Where’s my love <FONT color=#a82424>Orc Na</FONT>?<BR>
+<FONT color=#387206>{user_nick}</FONT>, have you seen an eye stunning Orc? <BR>
+※ <FONT color=#7e12d2>You can acquire a quest from Events Planner Irine.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-noquest" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Mandra$<BR>
+Hi, human! How are you? <BR>
+ <BR>
+※ <FONT color=#7e12d2>You can acquire a quest from Events Planner Irine.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-noquest" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Goblee$<BR>
+I hungry goble.<BR>
+Hey~ What should I have for dinner gobble? <BR>
+※ <FONT color=#7e12d2>You can acquire a quest from Events Planner Irine.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="7"><![CDATA[<html> (I know) </html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="8"><![CDATA[<html> (I don't know) </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Events Planner Irine$<BR><FONT color=#387206>{user_nick}</FONT>, do you know the origin of Christmas? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-d" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Events Planner Irine$<BR>
+Of course, you would know, <FONT color=#387206>{user_nick}</FONT>! <BR>Christmas is the day we can thank our neighbours and friends and deepen our friendship with them. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="12"><![CDATA[<html> Ok </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Events Planner Irine$<BR>
+<FONT color=#a82424>Christmas</FONT> isn’t the culture of Alteia.<BR>I heard that it is a culture of travelers from other world. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-d" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Events Planner Irine$<BR>There are many stories about origin of Christmas. However, what I’m sure is that Christmas is the day we can thank our neighbours and friends and deepen our friendship with them. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Happy Christmas$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="19"><![CDATA[<html> A friend?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Events Planner Irine$<BR>
+How about getting in touch with your <FONT color=#a82424>Friend</FONT> during this Winter Festival? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-b" mid="21"><![CDATA[<html>A frined…. <FONT color=#a82424>Orc Krema</FONT>…?!</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-1-c" mid="22"><![CDATA[<html>It's Christmas, <FONT color=#a82424>Santa Hound</FONT>!</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-1-d" mid="23"><![CDATA[<html><FONT color=#a82424>Goblee</FONT> I miss~</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-1-e" mid="24"><![CDATA[<html>Short but good memory, <FONT color=#a82424>Mandra</FONT>!</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Events Planner Irine$<BR>
+Yes, bringing back the memory of precious people that you have met travelling around Alteia.<BR>
+Do you have any <FONT color=#a82424>Friend</FONT> in your mind?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-b" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Events Planner Irine$<BR>
+Wow, <FONT color=#a82424>Orc Krema</FONT> must be a close friend. <BR>
+I hear that Orc Krema is near <FONT color=#a82424>Cristal Stream</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-c" image="QM_Hound_ice.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Events Planner Irine$<BR><FONT color=#a82424>Santound</FONT>, is that the hound that went missing near <FONT color=#a82424>Mana Ridge</FONT>? <BR>
+Wow, were you a friend of him? <FONT color=#a82424>{user_nick}</FONT>, you can have a friendship over species. Awesome~ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-d" image="QM_goblin_son04.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Events Planner Irine $<BR>
+<FONT color=#a82424>Goblee</FONT> is waiting for her grandfather at <FONT color=#a82424>Dark Mountain</FONT>. All she can depend on is you <FONT color=#387206>{user_nick}</FONT>. I think she must be happy too. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-e" image="QN_mandra_son.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Events Planner Irine$<BR>
+<FONT color=#a82424>Mandra</FONT> can’t be seen easily. <BR>
+Recently, there were a person who saw Madra near <FONT color=#a82424>Hermalte Port</FONT>, so you may find Mandra there. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-1-a" mid="37"><![CDATA[<html> How are you? </html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Santaound${sound:Hound_Stand_b.wav}<BR>Rrrr~ Rrrrr~<BR>
+<FONT color=#086171>(Is it Christmas already? It was sometime last year when I decided to give dreams and hopes to hounds.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-a" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-1-b" mid="39"><![CDATA[<html>Good to hear that you have been ok. I just came to say hello. </html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Santaound${sound:Hound_Stand_c.wav}<BR>Rrrr~ Rrr…<BR>
+<FONT color=#086171>(I have been fine. I wish you could feel the warmth of this chimney. It’s feels like being in a spa)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-b" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-1-c" mid="41"><![CDATA[<html> Thanks so much </html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Santaound${sound:Hound_Stand_b.wav}<BR>Rrrr~ Rrrr~<BR>
+<FONT color=#086171>(How polite are you….I hope you spend a nice winter. I don’t know if this will help but please use it.)</FONT><BR>
+<FONT color=#7e12d2>(Santaound gives something from his bag)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-c" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-1-d" mid="43"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Happy Christmas$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-d" image="QM_Hound_ice.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Santaound$<BR>
+Rrrrr~<BR>
+<FONT color=#086171>(Caring for your neighbours….and please look after our hounds) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-a" mid="49"><![CDATA[<html> Hey, Orc Krema. How have you been? </html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Orc Krema$<BR>
+I’m lonely again this year. How come she doesn’t know my mind? <BR>
+<FONT color=#7e12d2>(Orc Krema gets teary looking at the photo of her)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-a" image="" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-b" mid="51"><![CDATA[<html> I came to see if you are ok since it's Christmas </html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Orc Krema$<BR>
+<FONT color=#387206>{user_nick}</FONT>…?<BR>
+What brings you here? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-b" image="" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-c" mid="53"><![CDATA[<html>… Why? </html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html> $Orc Krema$ <BR> What? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-c" image="" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-d" mid="55"><![CDATA[<html> Huh? I'm sorry but I've got a girl friend. </html>]]></talk_answer>
+      <talk_answer link_index="n346_orc_oneeye-1-f" mid="56"><![CDATA[<html> You don't need a girl friend. It's best to feel the freedom being single </html.]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Orc Krema$<BR>
+Ah… Ok…. I guess you don’t have a girl friend too. <BR>
+Did you come to share the pain with me? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-d" image="" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-e" mid="60"><![CDATA[<html>Yes, I don’t have a girl friend. So what? </html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Orc Krema$<BR>I’m not going to be fooled by that. <FONT color=#387206>{user_nick}</FONT>, if you have one, you wouldn’t be here spending time with me~ <BR>
+Why can’t you face the reality? Just admit that you don’t have a girl friend. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-e" image="" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-g" mid="62"><![CDATA[<html> Well I got to go. Take care. </html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Orc Krema$<BR>
+Hahaha, of course you don’t. It’s not possible for you to have a girl friend which I don’t have. That’s just the way this world works. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-f" image="" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-g" mid="64"><![CDATA[<html> Well I got to go. Take care. </html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Orc Krema$<BR>
+Well, you are such a bad liar. <FONT color=#387206>{user_nick}</FONT>, you can’t convince people with no confident. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-g" image="" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-h" mid="65"><![CDATA[<html> (Got to leave this place soon) </html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Orc Krema$<BR>
+Are you leaving already? <BR>
+Why don’t we finish what we started before? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-h" image="" itemindex="">
+      <talk_answer link_index="n346_orc_oneeye-1-i" mid="67"><![CDATA[<html> (Receive reward)</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Happy Christmas$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n346_orc_oneeye-1-i" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Orc Krema$<BR>
+Hahaha~ Are you leaving because you are scared of me? <FONT color=#387206>{user_nick}</FONT>!<BR>
+Stop right there~<BR>
+<FONT color=#7e12d2>(Orc Krema runs after me. Better hurry)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-a" mid="71"><![CDATA[<html> Mandra, how have you been? </html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Mandra$<BR>
+Here comes the prince of earth <FONT color=#a82424>Mandra</FONT>! Move… <BR>
+Hmm? I have seen you… <FONT color=#387206>{user_class}</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-a" image="" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-b" mid="73"><![CDATA[<html> No… I just came to see if you are ok. </html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Mandra$<BR>
+It’s you!<BR>
+Are you still after my leaf? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-b" image="" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-c" mid="75"><![CDATA[<html><FONT color=#7e12d2>▶ Battle begins</FONT></html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Mandra$<BR>
+Oh, ok! I thought something had happen, people all dressed in red. <BR>
+Well, should we finish what we started? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-c" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-d" mid="78"><![CDATA[<html> (Takes a peremtive strike) </html>]]></talk_answer>
+      <talk_answer link_index="n347_mandra_son-1-f" mid="79"><![CDATA[<html> (Wait for him to start) </html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Mandra VS {user_nick}$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-d" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-e" mid="81"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>The preemptive strike didn’t work.<BR>
+Got hit in stomach with no chance to block.<BR>
+<BR><FONT color=#7e12d2>▶ {user_nick} took 100,000,000 damage.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-e" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-c" mid="83"><![CDATA[<html> (Try again) </html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Game Over$<BR>
+<FONT color=#a82424>Mandra</FONT> have won.<BR>
+ <BR>
+<FONT color=#7e12d2>▶ Would you like to try again? </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-f" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-g" mid="88"><![CDATA[<html> (Aim upper body)</html>]]></talk_answer>
+      <talk_answer link_index="n347_mandra_son-1-h" mid="89"><![CDATA[<html> (Aim lower body) </html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}{action:Talk}<BR>
+<FONT color=#a82424>Mandra</FONT> threw punch at a speed of light but didn’t reach <FONT color=#387206>{user_nick}</FONT>. <BR>
+<FONT color=#7e12d2>▶ Mandra loses his balance.</FONT><BR>
+<FONT color=#7e12d2>▶ Next attack?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-g" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-i" mid="92"><![CDATA[<html> (Poke his eyes) </html>]]></talk_answer>
+      <talk_answer link_index="n347_mandra_son-1-j" mid="95"><![CDATA[<html> (Kick his groin) </html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}{action:Talk}<BR>Punch have landed on a leaf of <FONT color=#a82424>Mandra</FONT>. <BR>
+<BR><FONT color=#7e12d2>▶ Mandra took 10 damage.</FONT><BR><FONT color=#7e12d2>▶ Next attack?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-h" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-e" mid="93"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>You aimed lower body, but <FONT color=#a82424>Mandra</FONT> have dodged all the attacks with stunning footwork.<BR>
+After his dodge, Mandra’s attacks have landed.<BR><FONT color=#7e12d2>▶ {user_nick} took damage of 100,000,000.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-i" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-e" mid="98"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>
+Aimed <FONT color=#a82424>Mandra</FONT>’s eyes but failed to land the attack properly. Mandra have used [<FONT color=#086171>Thousand Hand Buddha</FONT>].<BR>
+<FONT color=#7e12d2>▶ {user_nick} took 100,000,000 damage.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-j" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-k" mid="100"><![CDATA[<html> (Use Special Energy Burst) </html>]]></talk_answer>
+      <talk_answer link_index="n347_mandra_son-1-l" mid="101"><![CDATA[<html> (Use Lethal Tiger Dragon) </html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}{action:Talk}<BR>Aimed Mandra’s groin but, it만had no affect on him. <BR><FONT color=#7e12d2>▶ Mandra has lost his awareness </FONT><BR><FONT color=#7e12d2>▶ Next Attack?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-k" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-m" mid="104"><![CDATA[<html><FONT color=#7e12d2>▶ Mandra have lost.</FONT></html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}{action:Talk}<BR>
+While <FONT color=#a82424>Mandera</FONT> was lost, you have used some kind of <FONT color=#a82424>Special Energy Burst</FONT>(?)… Mandra was thrown away by the burst. <BR>
+<FONT color=#7e12d2>▶ Mandra took 999,999,999 damage.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-l" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-e" mid="106"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR><FONT color=#7e12d2>(Click Click)</FONT> <FONT color=#a82424>←↙↓↘→↘↓↙← + C </FONT>! Oops, it’s the wrong command! Rising Dragon has been activated by control mistake. Mandra attacks back after dodging Rising Dragon.<BR><FONT color=#7e12d2>▶ {user_nick} took 100,000,000 damage.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-m" image="" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-n" mid="109"><![CDATA[<html> You were good too. </html>]]></talk_answer>
+      <talk_question mid="107"><![CDATA[<html>$Mandra$<BR>
+Well, you haven’t lost it yet Arjen… I mean <FONT color=#387206>{user_nick}</FONT>.<BR>
+Good Game.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-n" image="" itemindex="">
+      <talk_answer link_index="n347_mandra_son-1-o" mid="111"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Happy Christmas$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n347_mandra_son-1-o" image="" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$Mandra$<BR>
+See you soon, my friend.<BR>
+I will expect a good match next time as well!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-1" image="" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-1-a" mid="116"><![CDATA[<html> Santa Goble…? Well, I'm not to sure. </html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Goblee$<BR>
+Chu Chu… hey~~<BR>
+Have you seen <FONT color=#a82424>Santa Goble</FONT> wearing a red hat goble? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-1-a" image="" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-1-b" mid="118"><![CDATA[<html> (Ah… Grandfather Goblin….)</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Goblee$<BR>
+Hmm… This time every year <FONT color=#a82424>Santa Goble</FONT> would come and give us presents but I can’t see him this year. Did anything happen to him goble? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-1-b" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-1-c" mid="121"><![CDATA[<html>Eh..That's…</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Goblee$<BR>
+Do you think he’s not coming because <FONT color=#a82424>Goblee</FONT> is not a good kid anymore goble? Or does he not know I moved here from Prairie Town goble? <BR>
+<FONT color=#7e12d2>(Goblee seems upset)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-1-c" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-1-d" mid="124"><![CDATA[<html> Goblee…(Give a hug to Goblee)</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Goblee$<BR>
+I miss Grandfather Goblin goble…. <BR>
+<FONT color=#7e12d2>(Goblee’s eyes fill with tears)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-1-d" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-1-e" mid="126"><![CDATA[<html> Alone? I'm here by you Goblee </html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Goblee$<BR>
+Well, I miss all my brothers too gobel. All other Goblins are having feasts with their families but…. <FONT color=#a82424>Goblee</FONT> is alone goble.….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-1-e" image="" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-1-f" mid="128"><![CDATA[<html>(Receive Reward)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Happy Christmas$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-1-f" image="QM_goblin_son04.dds" itemindex="">
+      <talk_question mid="129"><![CDATA[<html>$Goblee$<BR>
+I’m hungry goble…<BR>
+What’s for dinner goble? Let’s have steak goble~! <BR>
+<FONT color=#7e12d2>(Goblee became naïve again) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">9900,,,,</exe>
+         <exe type="setquest">990</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">990</exe>
+         <exe type="recompense">9901,,,,</exe>
+         <exe type="recompense">9902,,,,</exe>
+         <exe type="recompense">9903,,,,</exe>
+         <exe type="recompense">9904,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="c" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="d" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="e" />
+   <exelink qstep="1" npc="n193_santaund" sub="b" />
+   <exelink qstep="1" npc="n193_santaund" sub="c">1</exelink>
+   <exelink qstep="1" npc="n193_santaund" sub="d">0</exelink>
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="b" />
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="c" />
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="d" />
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="f" />
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="e" />
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="g" />
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="g" />
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="h">2</exelink>
+   <exelink qstep="1" npc="n346_orc_oneeye" sub="i">0</exelink>
+   <exelink qstep="1" npc="n347_mandra_son" sub="b" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="c" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="d" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="f" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="e" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="c" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="g" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="h" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="i" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="j" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="e" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="e" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="k" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="l" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="m" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="e" />
+   <exelink qstep="1" npc="n347_mandra_son" sub="n">3</exelink>
+   <exelink qstep="1" npc="n347_mandra_son" sub="o">0</exelink>
+   <exelink qstep="1" npc="n065_goblinson04_gosuk" sub="b" />
+   <exelink qstep="1" npc="n065_goblinson04_gosuk" sub="c" />
+   <exelink qstep="1" npc="n065_goblinson04_gosuk" sub="d" />
+   <exelink qstep="1" npc="n065_goblinson04_gosuk" sub="e">4</exelink>
+   <exelink qstep="1" npc="n065_goblinson04_gosuk" sub="f">0</exelink>
+   <journal_data recompense="9900" quest_title="해피 크리스마스" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image />
+         <need_itemlist />
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="132"><![CDATA[Happy Christmas]]></title>
+         <contents mid="133"><![CDATA[<html>Meet a friend that you haven’t seen for awhile and say hello.<BR>
+ <BR>
+※ <FONT color=#7e12d2>Once the quest is done, you can’t talk to other NPC </FONT><BR>
+ <BR>
+<FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Orc Krema</FONT><BR>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Mandra</FONT><BR>
+<FONT color=#086171>Dark Mountain</FONT> <FONT color=#a82424>→ Goblee</FONT></html>]]></contents>
+         <destination mid="134"><![CDATA[Say hello to your friend]]></destination>
+         <todo_msg mid="135"><![CDATA[Event has been added]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>989</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

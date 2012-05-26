@@ -1,0 +1,29 @@
+   <talk>
+      <npcename>n020_sorceress_yullia</npcename>
+      <npcid>20</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Sorceress Julia]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Sorceress Julia$<BR>Ah... I must return to<FONT color=#a82424>Mana Ridge</FONT>...</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_104_orb_of_vision2</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="enterquest">mq05_105_orb_of_vision3</exe>
+         <exe type="conexe" true="7" false="6">2</exe>
+         <exe type="conexe" true="8" false="9">3</exe>
+         <exe type="enterquest">mq05_128_orb_of_vision1</exe>
+         <exe type="enterquest">mq05_129_orb_of_vision2</exe>
+         <exe type="conexe" true="10" false="1">4</exe>
+         <exe type="enterquest">mq05_138_orb_of_vision1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">104</chk>
+         <chk type="hasquest">105</chk>
+         <chk type="hasquest">128</chk>
+         <chk type="hasquest">129</chk>
+         <chk type="hasquest">138</chk>
+      </conditions>
+   </talk>

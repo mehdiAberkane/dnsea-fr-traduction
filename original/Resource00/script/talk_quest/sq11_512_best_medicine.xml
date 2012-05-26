@@ -1,0 +1,501 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_512_best_medicine</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>512</qid>
+      <designer>손원호</designer>
+      <qlevel>30</qlevel>
+      <qdesc>테이의 엄마의 병은 더 심해졌고 이젠 어떻게 해야 할지 모르겠다고 한다. 테이는 예전에 스타쉬라는 학자가 이야기한 전설의 명약을 떠올린다. 문장학자 스타쉬를 찾아가면. 전설의 명약 만드라고라의 전설을 이야기해준다. 만드라고라는 지성을 가진 식물로서 지금까지 수많은 모험가들이 만드라고라를 찾으러 갔지만 누구도 만드라고라를 구해온 사람은 없다며 만드라고라가 있는 강하류 를 알려준다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Best Elixir]]></qkname>
+      <qnpc>
+         <npcid>244</npcid>
+         <npcename>n244_tei</npcename>
+         <npckname>테이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>246</npcid>
+         <npcename>n246_mandra_son</npcename>
+         <npckname>만드라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>249</npcid>
+         <npcename>n249_saint_guard</npcename>
+         <npckname>왕성 근위병 로이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-noquest" image="" itemindex="">
+      <talk_question mid="151"><![CDATA[<html>$Tei$<BR>I hope my mother recover soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="" itemindex="">
+      <talk_question mid="153"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Go away! I am busy! Do not disturb me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-a" mid="6"><![CDATA[<html>What happen?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Royal Guard Roy$<BR><FONT color=#382000>{user_nick}</FONT>, so it's you.<BR>What should we do now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-a" image="QN_boy_tei.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-b" mid="8"><![CDATA[<html>Ahh, are you referring to the boy who help get the Rainbow Bell Flower?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Royal Guard Roy$<BR>Do you still remember the little who you have helped at Hermalte Port?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-c" mid="10"><![CDATA[<html>Ahhh... </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Royal Guard Roy$<BR>Erm. Because Tei mother was sick that why he requested for help. Unfortunately , the elixir is not showing any effect. His mother is still sick. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-d" mid="12"><![CDATA[<html>I'll go take a look.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Royal Guard Roy$<BR>Having to shoulder so much burden at such tender age, haiz..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Mission</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$The Best Elixir$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-1-a" mid="17"><![CDATA[<html>Don’t worry</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Royal Guard Roy$<BR>Really?<BR>Such a relieve to hear that you are the one going <FONT color=#382000>{user_nick}</FONT> .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1-a" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Royal Guard Roy$<BR>You can find the little boy at <FONT color=#a82424>Hermalte Port</FONT>. Thank you so much for your help. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Royal Guard Roy$<BR>Having to shoulder so much burden at such tender age, haiz..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-a" mid="21"><![CDATA[<html>Hello.. Are you okay?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Tei$<BR>Sob Sob. What should I do now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-a" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-b" mid="23"><![CDATA[<html>Yes, is me.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Tei$<BR>Ah，Great Adventurer! So you are the one that helped me the other time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-2-c" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Tei$<BR>What should I do now.. I thought mother will recover once I have the Rainbow Bell Flower, however seems like the elixir is not showing any effect at all.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-c" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-d" mid="27"><![CDATA[<html>Don’t worry! I'll help you.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Tei$<BR>What should I do now? If mother would to pass away… I… I….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-e" mid="29"><![CDATA[<html>What other method do you still have?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Tei$<BR>Sob Sob……How would you help me?<BR>I have tried every possible elixir.<BR>I have already done all that can be done.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-e" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-f" mid="31"><![CDATA[<html>Please don’t cry and think about it carefully.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Tei$<BR>I don’t know……sob sob……<BR>What should I do now……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-f" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-g" mid="33"><![CDATA[<html>What happen?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Tei$<BR>Sob Sob… Come to think of it, I heard about this matter from the port entrance crew.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-g" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n244_tei-2-h" mid="36"><![CDATA[<html>Heraldry Scholar Stas?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Tei$<BR>I don’t really remember, according to <FONT color=#a82424>Saint Haven</FONT> there's this <FONT color=#a82424>Heraldry Scholar </FONT> who knows about it. His name is... Stas...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-h" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-i" mid="38"><![CDATA[<html>I'll go take a look</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Tei$<BR>Yup. He should know the cure for my mother, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-i" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Tei$<BR>Sob……Thank you……<BR>You must save my mother</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-3" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Tei$<BR>Sob Sob... Go find <FONT color=#a82424>Stas</FONT> in <FONT color=#a82424>Saint Haven</FONT> for any cure for my mother.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="43"><![CDATA[<html>I have a favour to ask you</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Ah! Is not this either. Information are all messed up and who are you? Can’t you see that I am busy! Do not disturb.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="45"><![CDATA[<html>(Ask about what elixir is required to save little boy's mother)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Entrust? I am busy, who cares about what entrust.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n088_scholar_starshy-3-c" mid="47"><![CDATA[<html>Monster Breathe?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Yup. Seems like this is quite troublesome. If <FONT color=#a82424>Rainbow Bell Flower</FONT>also can't cure... It must have been tinted by monster's breath. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-d" mid="49"><![CDATA[<html>What should I do?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Heraldry Scholar Stas$<BR>When Black Dragon is recovering, surrounding monster will get stronger. I am sure it caused by <FONT color=#2b2723>breathe from those forest demon</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-e" mid="51"><![CDATA[<html>You mean there's no other way?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I'm sorry, there's really no other way<BR>Being able to survive till now is considered a miracle</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-f" mid="53"><![CDATA[<html>Seems like there are things that even know-it-all Stas doesn't know about.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Heraldry Scholar Stas$<BR>No! No and No! Please leave, there are still things waiting for me to be done.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-g" mid="57"><![CDATA[<html>Don’t you know the way to save the little boy's mother? </html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Heraldry Scholar Stas$<BR>What?! How is it possible to have things that I don’t know about? I know everything there is to know about this world. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-g" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-h" mid="59"><![CDATA[<html>Just tell me the solution and I will….</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Ah! Stubborn fellow, how can I not know. Even thought I know, there's nothing we can do with it. So...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-h" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-i" mid="61"><![CDATA[<html>I don’t know</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Heraldry Scholar Stas$<BR>So stubborn. If you must know, let me tell you. There's a type of <FONT color=#a82424>Legendary Elixir</FONT> that is able to cure all illnesses in the world. Do you know what it is?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-i" image="QN_mandra_shadow.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-j" mid="63"><![CDATA[<html>So it is possible as long as I am able to  find it? </html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Heraldry Scholar Stas$<BR>You don't know? It's a <FONT color=#a82424>Mandra</FONT>, a plant normally buried underground, which takes the form of a human.  Ah! It's troublesome to explain, just assume it exists.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-j" image="QN_mandra_shadow.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-k" mid="65"><![CDATA[<html>I think I have seen it before.</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Looking for Mandra? Wahaha! <FONT color=#a82424>Mandra</FONT> is very crafty and will not get caught easily. It is hardly seen, not to mention catching it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-k" image="QN_mandra_shadow.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-l" mid="67"><![CDATA[<html>Where can I find it?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Heraldry Scholar Stas$<BR>What? You can see <FONT color=#a82424>Mandra</FONT>? Haha… What a braggart. Well, since you can see Mandra and have such good luck, maybe you can really try your luck to find it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-l" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-m" mid="69"><![CDATA[<html>I'll go take a look</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Heraldry Scholar Stas$<BR>It's up to you since you like trouble so much. Legends say that <FONT color=#a82424>Flooded Downstream Ruins</FONT> is the best habitat for Mandra but nobody has actually seen it before.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-m" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Mandra is very sensitive to its surroundings, it will hide once it detects the presence of others. That's why you should do this <FONT color=#a82424>alone</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-n" image="" itemindex="">
+      <talk_question mid="216"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Venturing in a group makes too much noise!<BR><BR><FONT color=#a82424>※ This quest must be completed Solo.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QW_34.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Heraldry Scholar Stas$<BR>My Grandpa told me that Mandra thrives in the <FONT color=#a82424>Flooded Downstream Ruins</FONT>. As this story was told to me long ago, no one knows if they still exist there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-a" mid="157"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Mandra$<BR>Ah! It's you, I thought was some medical forager.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-a" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-b" mid="159"><![CDATA[<html>Honestly... (begin telling the story)</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Mandra$<BR>Wahahaa! So there are stuff that you actually need to beg me for help, the king of the earth?<html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-b" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-c" mid="161"><![CDATA[<html>Yes</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Mandra$<BR>Yes? So you guys have the rights to capture our poor Mandra in order to cure some sickness!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-c" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-d" mid="163"><![CDATA[<html>I'm so sorry</html>]]></talk_answer>
+      <talk_question mid="162"><![CDATA[<html>$Mandra$<BR>Hahaha, how dare you capture the prince of Earth. <BR>Very brave of you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-d" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-e" mid="175"><![CDATA[<html>(Challenge Mandra)</html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Mandra$<BR>Ha, guess I will be the one saying sorry to you instead. You shall be the number 1000th challenger who tried to capture me but failed. <BR><FONT color=#7e12d2>(Mandra raises its fist in defiance)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-e" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-f" mid="177"><![CDATA[<html>(Battle Starts)</html>]]></talk_answer>
+      <talk_question mid="176"><![CDATA[<html>$Mandra$<BR>If you can even lay a finger me, I'll do as you say. <BR>Bring it on!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-f" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-h" mid="179"><![CDATA[<html>(First Attack)</html>]]></talk_answer>
+      <talk_answer link_index="n246_mandra_son-4-g" mid="180"><![CDATA[<html>(Waiting for opponent to retaliate</html>]]></talk_answer>
+      <talk_question mid="178"><![CDATA[<html><FONT color=#086171>Mandra VS {user_nick}</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-g" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-u" mid="182"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="181"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>Mandra fist flew over in a speed of lighting, being unable to evade such attacks, chest was wounded.<BR><FONT color=#a82424> It's super effective!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-h" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-i" mid="184"><![CDATA[<html>(Aiming for upper body)</html>]]></talk_answer>
+      <talk_answer link_index="n246_mandra_son-4-j" mid="185"><![CDATA[<html>(Aiming for lower body)</html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>{user_nick} doesn’t give Mandra any chance to rest and attacks suddenly. Mandra gets stunned and begins to panic, weakening its defence. <BR><FONT color=#a82424> Mandra suffers 5 damage. <BR>It's not very effective...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-i" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-u" mid="187"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>The attacks launched after taking aim at the upper body have been swiftly neutralised by Mandra, who follows up with a flawless attack after defending successfully.<BR>It's super effective!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-j" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-l" mid="189"><![CDATA[<html>(Sand Attack)</html>]]></talk_answer>
+      <talk_answer link_index="n246_mandra_son-4-k" mid="190"><![CDATA[<html>(Giga Drain)</html>]]></talk_answer>
+      <talk_question mid="188"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR> Unstable lower body seems like a weak point. Mandra starts swaying after taking hits on the lower body.<BR><FONT color=#a82424> Mandra suffers 10 damage.</FONT><BR>Take aim and launch a few combos when the chance comes. Fight? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-k" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-u" mid="192"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>Take aim and launch several attacks at the Mandra's vital points , but as these points are different from humans, it retaliates with a fierce attack.  Mandra unleashed its hidden skill [Fury Swipes].<BR><FONT color=#a82424> <BR> It's super effective!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-l" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-m" mid="194"><![CDATA[<html>(uses Supersonic Waves)</html>]]></talk_answer>
+      <talk_answer link_index="n246_mandra_son-4-n" mid="195"><![CDATA[<html>(uses Seismic Toss)</html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>Accidentally hits the eyes. <BR><FONT color=#a82424> Mandra suffers 25 damage.</FONT><BR>Mandra is unable to see. Use your killer moves now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-m" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-u" mid="165"><![CDATA[<html>(Game Over)</html>]]></talk_answer>
+      <talk_question mid="164"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>While gathering energy for the supersonic waves, Mandra suddenly regains conscious. Followed closely by Mandra whirlwind attacks. Consciousness instantly become blurred. <BR><FONT color=#a82424> Receive 10000000 damage.<BR>{user_nick} fainted! </FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-n" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-o" mid="167"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$VS Mandra${sound:Archer_SpinKick_a.wav}<BR>A never-seen-before move, Seismic Toss has been unleashed! Mandra take hits from a 100 non-stop combo.<BR><FONT color=#a82424> Mandra suffers 9999999 damage. It's super effective!<BR>Mandra withdraws!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-o" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-p" mid="169"><![CDATA[<html>You are quite a formidable opponent.</html>]]></talk_answer>
+      <talk_question mid="168"><![CDATA[<html><FONT color=#2b2723>$Mandra$<BR>Ho..ho.. I actually got defeated, you are such a amazing fellow.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-p" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-q" mid="172"><![CDATA[<html>... Why are you blushing...</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Mandra$<BR>Ho, I cant believe.. I actually lost. <BR>I will keep my promise.<BR>I will do as what you say... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-q" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-r" mid="197"><![CDATA[<html>After thinking for a moment, just the leaves will do the job right?</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Mandra$<BR>All I have to do is to follow you into the boiling tank right?<BR> AH.. Such a short yet beautiful life for me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-r" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-s" mid="199"><![CDATA[<html>All I need is to save the kid's mother.</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Mandra$<BR>What? You only need a piece of my leaf, is more than enough to revive a human being. But if you eat me you can have an eternal life, don’t you want it? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-s" image="QS_Default.dds" itemindex="300242">
+      <talk_answer link_index="n246_mandra_son-4-t" mid="202"><![CDATA[<html>(Receive Mandra's leaf)</html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$Mandra$<BR>... You are such a nice person. Hmm, this should be enough to save the kid's mom. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-t" image="" itemindex="">
+      <talk_question mid="203"><![CDATA[<html>$Mandra$<BR>I will always remember your kindness, Friend.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-4-u" image="" itemindex="">
+      <talk_answer link_index="n246_mandra_son-4-e" mid="219"><![CDATA[<html>(Rematch)</html>]]></talk_answer>
+      <talk_question mid="218"><![CDATA[<html>$Game Over$<BR>That was a brilliant attack from Mandra. You lose.<BR><BR><FONT color=#a82424>▶ Would you like to rematch?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n246_mandra_son-5" image="" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Mandra$<BR>I will not forget you. Friend.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5" image="QS_Default.dds" itemindex="300242">
+      <talk_answer link_index="n244_tei-5-a" mid="206"><![CDATA[<html>(Hands over the Mandra leaf)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Tei$<BR>Ah! Adventurer! You're here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-a" image="" itemindex="">
+      <talk_answer link_index="n244_tei-5-b" mid="208"><![CDATA[<html>I wish my mum is better.</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Tei$<BR>This… Mandra leaf. <BR>If I have it, mother will be able to…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-b" image="" itemindex="">
+      <talk_answer link_index="n244_tei-5-c" mid="210"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Tei$<BR>Thank you. Thank you so much!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-c" image="" itemindex="">
+      <talk_answer link_index="n244_tei-5-d" mid="212"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-5-e" mid="214"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Tei$<BR>I'll bring it to mother! Thank you very much!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-5-e" image="" itemindex="">
+      <talk_question mid="215"><![CDATA[<html><FONT color=#7e12d2>(Tei smiles brightly with the Mandra in his hand. Looking at his smiling face, I couldn't help but laugh along. I think that there's an old saying which says that helping others is all about helping yourself.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5121,5122,5123,5124,5125</exe>
+         <exe type="setquest">512</exe>
+         <exe type="talk" npc="n249_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n088_scholar_starshy">a</exe>
+         <exe type="talk" npc="n088_scholar_starshy">n</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="addquestitem" num="1">300242</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5121,5122,5123,5124,5125</exe>
+         <exe type="complete">512</exe>
+         <exe type="delquestitem" num="-1">300242</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n249_saint_guard" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n244_tei" sub="b" />
+   <exelink qstep="2" npc="n244_tei" sub="c" />
+   <exelink qstep="2" npc="n244_tei" sub="d" />
+   <exelink qstep="2" npc="n244_tei" sub="e" />
+   <exelink qstep="2" npc="n244_tei" sub="f" />
+   <exelink qstep="2" npc="n244_tei" sub="g" />
+   <exelink qstep="2" npc="n244_tei" sub="h" />
+   <exelink qstep="2" npc="n244_tei" sub="i">0,1</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="a">2</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="h" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="i" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="j" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="k" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="l" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="m">0,1</exelink>
+   <exelink qstep="4" npc="n246_mandra_son" sub="b" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="c" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="d" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="e" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="f" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="h" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="g" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="u" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="i" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="j" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="u" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="l" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="k" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="u" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="m" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="n" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="u" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="o" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="p" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="q" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="r" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="s" />
+   <exelink qstep="4" npc="n246_mandra_son" sub="t">0,1,2</exelink>
+   <exelink qstep="4" npc="n246_mandra_son" sub="e" />
+   <exelink qstep="5" npc="n244_tei" sub="a">2</exelink>
+   <exelink qstep="5" npc="n244_tei" sub="b" />
+   <exelink qstep="5" npc="n244_tei" sub="c">0</exelink>
+   <exelink qstep="5" npc="n244_tei" sub="d">1</exelink>
+   <exelink qstep="5" npc="n244_tei" sub="e" />
+   <journal_data recompense="1:5121,2:5122,3:5123,4:5124,5:5125" quest_title="최고의 영약" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300242">
+      <journal index="1">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n249</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>249</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="120"><![CDATA[Speak with Royal Guard Roy]]></title>
+         <contents mid="121"><![CDATA[<html>Royal Guard Roy has something to say. Try to speak with him.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Royal Guard Roy</FONT></html>]]></contents>
+         <destination mid="122"><![CDATA[Speak with Royal Guard Roy]]></destination>
+         <todo_msg mid="123"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="124"><![CDATA[Speak with Boy Tei]]></title>
+         <contents mid="125"><![CDATA[<html>According to Royal Guard Roy, Tei's mother is still sick. Meet with Tei at Hermalte Port to hear the story.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Tei</FONT></html>]]></contents>
+         <destination mid="126"><![CDATA[Speak with Boy Tei]]></destination>
+         <todo_msg mid="127"><![CDATA[Meet Tei at Hermalte Port.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="129"><![CDATA[Speak with Heraldry Scholar Stas]]></title>
+         <contents mid="130"><![CDATA[<html>Tei's mother is still sick. Go to Saint Haven to find Heraldry Scholar Stas for a new cure.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="131"><![CDATA[Speak with Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="132"><![CDATA[Meet with Heraldry Scholar Stas at Saint Haven.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_34.dds</contents_image>
+         <destination_pos>344,1,1</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@3</destination_mode>
+         <statemark_npcid>246</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="133"><![CDATA[[1 Person] Collect Mandra]]></title>
+         <contents mid="134"><![CDATA[<html>According to Stas, the drug that can cure Tay's mum is Mandra leaf. Go to Flooded Downstream Ruins to collect it.<BR><BR><FONT color=#a82424>※ This quest must be completed alone.</FONT><BR><BR><FONT color=#086171>Hermalte Port(Ruined Riverbanks)</FONT> <FONT color=#a82424>→Flooded Downstream Ruins</FONT></html>]]></contents>
+         <destination mid="135"><![CDATA[[1 Person] Collect Mandra]]></destination>
+         <todo_msg mid="136"><![CDATA[Head down to River Ruins alone to find Mandra.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="137"><![CDATA[Speak with Boy Tei]]></title>
+         <contents mid="138"><![CDATA[<html>Hand the Mandra to Tei who is waiting at Hermalte Port.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Tei</FONT></html>]]></contents>
+         <destination mid="139"><![CDATA[Speak with Boy Tei]]></destination>
+         <todo_msg mid="140"><![CDATA[Return to Hermalte Port and hand the Mandra to Tei.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>471</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

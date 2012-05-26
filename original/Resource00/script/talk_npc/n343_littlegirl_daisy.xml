@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n343_littlegirl_daisy</npcename>
+      <npcid>343</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Daisy]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Daisy$<BR>My father will definitely be angry if he discovers that I have been wandering outside, <BR> Hush, you didn't see me right?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="sq11_678_find_blackbird.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Hunt for the Black Bird</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="sq11_679_purpose_of_mystery_man.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Strange Man's Motives</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="12"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Daisy$<BR>My father will definitely be angry if he discovers that I have been wandering outside, <BR> Hush, you didn't see me right?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

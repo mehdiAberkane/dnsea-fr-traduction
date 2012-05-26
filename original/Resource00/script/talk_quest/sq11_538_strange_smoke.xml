@@ -1,0 +1,411 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_538_strange_smoke</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>538</qid>
+      <designer>김주연</designer>
+      <qlevel>26</qlevel>
+      <qdesc>초록색 약물	400143
+초록색 얼룩	400144
+스타쉬의 소견서	400145
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Strange Smoke]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR>I am worried that a lot of bad things happened before the war .<BR><FONT color=#7e12d2>(You can start this quest after  you talk to Guard Joey)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Heraldry Scholar Stas$<BR>A fire happened in the military weapons store.<BR><FONT color=#7e12d2>(You can start this quest after  you talk to Guard Joey)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="8"><![CDATA[<html>Is there something that isn't good?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Guard Joey$<BR><FONT color=#7e12d2>(Guard Joey's expression doesn't look great)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Guard Joey$<BR><FONT color=#7e12d2>(Guard Joey speaks after hesitation)</FONT><BR>Actually I fell asleep while on duty for weapons store, and fire accident happened then.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Guard Joey$<BR>Fire did not happen naturally, it was intentional. However, it happened while I was sleeping, I will have to take on the responsibility and the heavy punishment.  </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="14"><![CDATA[<html>You fell asleep suddenly?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Guard Joey$<BR>However I was not trying to be lazy. I had never fell asleep or fooled around on night shifts  before. It was just that day I fell asleep.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-e" mid="16"><![CDATA[<html>Hmm.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Guard Joey$<BR>Yes, and when I woke up the store was on fire. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-f" mid="18"><![CDATA[<html>I understand.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Guard Joey$<BR><FONT color=#382000>{user_nick}</FONT>, I have heard you were Carderock's hero. General  will listen to <FONT color=#382000>{user_nick}</FONT>'s words. Please explain my situation and plead my request.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Strange Smoke$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-a" mid="22"><![CDATA[<html>I can help, but I have a few questions.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Guard Joey$<BR>Thank you so much , adventurer.<BR>
+I will never forget it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-b" mid="24"><![CDATA[<html>Before you slept, is there anything in particular?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Guard Joey$<BR>What is it that you want to make sure?<BR>
+I will tell you everything I know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-c" mid="26"><![CDATA[<html>James and Edward?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Guard Joey$<BR>Hmm, the two merchant father and son James and Edward passed by the warehouse. After they passed by , an hour later I believe I fell asleep.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-d" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Guard Joey$<BR>Yes, Merchant James used to participate in the punitive force against the dragon members. Merchant Edward who is his son is bad-tempered but smart.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-d" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n252_saint_guard-1-e" mid="30"><![CDATA[<html>What is the green stain?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Guard Joey$<BR>They are trustable people, they should not be related to the fire accident.<BR><FONT color=#7e12d2>(Joey's shirt contains a green stain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-e" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n252_saint_guard-1-f" mid="32"><![CDATA[<html>Maybe that’s why you fell asleep suddenly?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Guard Joey$<BR>The green stain? When did this get on?<BR><FONT color=#7e12d2>(Joey puts his face on his stain and smells it)</FONT><BR>Sniff, this smells something unique. Smells like a flower and also grass...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-f" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n252_saint_guard-1-g" mid="34"><![CDATA[<html>Crest Scholars Stas may know something if you show it to him.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Guard Joey이$<BR>Hmm, before I fell asleep this stain was never there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-g" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Guard Joey$<BR>
+<FONT color=#7e12d2>(Joey rips off the stained part and passes it)</FONT><BR><FONT color=#a82424>Crest Scholars Stas</FONT> please find out what the green stain is and help me prove my innocence </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$General Douglas$<BR>It is unfortunate a lot of negative things are happening before an important battle.<BR><FONT color=#7e12d2>(Have to complete quest with Guard Joey to move onto the quest)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$
+Crest Scholars Stas $<BR>I don't know why a fire happened at a military storage.<BR><FONT color=#7e12d2>(Have to complete talking with Guard Joey to move onto the quest)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Guard Joey$<BR>I would appreciate it if <FONT color=#a82424>Crest Scholars Stas </FONT>could see what this green stain is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="39"><![CDATA[<html>(Explain Guard Joey's task)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Crest Scholars Stas$<BR>Why is a young man like you here when preparing to battle Dark Overlord Keep?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n088_scholar_starshy-3" mid="41"><![CDATA[<html>(Gives the green stain)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Crest Scholars Stas$<BR>Hmm-. An hour after father James and son Edward came by  you fell asleep, and a green stain was left on your clothes. Can you show me the green stain?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$General Douglas$<BR>It is unfortunate a lot of negative things are happening before an important battle.<BR><FONT color=#7e12d2>(Have to finish talking to Crest Scholars Stas )</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QS_Default.dds" itemindex="400144">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="44"><![CDATA[<html>What would that green stain be?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Crest Scholars Stas$<BR><FONT color=#7e12d2>(Crest Scholars Stas smells the stain with his nose contacted)</FONT><BR>very unique scent.<BR>
+hmm … yes, I know what this smell is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Crest Scholars Stas $<BR>This is a drug similar to the bros who handle fire to strengthen their power. If you can get some drugs I can investigate further.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="QW_28.dds" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$Crest Scholars Stas $<BR>Go to <FONT color=#a82424>Dark Overlord Keep</FONT>and  from the  <FONT color=#a82424>Trapped Brethren Fire Mage</FONT> bring back the <FONT color=#a82424>green drugs</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QW_28.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Crest Scholars Stas $<BR>Go to <FONT color=#a82424>Dark Overlord Keep</FONT>and  from the  <FONT color=#a82424>Trapped Brethren Fire Mage</FONT> bring back the <FONT color=#a82424>green drugs</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="QS_Default.dds" itemindex="400143">
+      <talk_answer link_index="n088_scholar_starshy-6" mid="49"><![CDATA[<html>(Gives the green drugs)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Crest Scholars Stas$<BR>Looks like you collected the green drugs.<BR>Give me the green drugs.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6" image="QS_Default.dds" itemindex="400143">
+      <talk_answer link_index="n088_scholar_starshy-6-a" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Crest Scholars Stas$<BR>It will take awhile to analyze , hold on a minute.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-a" image="QS_Default.dds" itemindex="400143">
+      <talk_answer link_index="n088_scholar_starshy-6-b" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Crest Scholars Stas $<BR><FONT color=#7e12d2>(Crest Scholars Stas who stirred the reagent stirs his head)</FONT><BR>Hmm, okay. I think I may know what it is. I believe they are using magic using the green drugs. We could say it is an MP potion that the Bros uses.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-b" image="QS_Default.dds" itemindex="400143">
+      <talk_answer link_index="n088_scholar_starshy-6-c" mid="55"><![CDATA[<html>Sleeping effect?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Crest Scholars Stas$<BR>
+But this drug would cause  a bit of illusion or<FONT color=#a82424>powerful sleeping effect</FONT>on them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-d" mid="57"><![CDATA[<html>What is this?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Crest Scholars Stas $<BR>The soldier probably fell asleep because of the drug. However I don't know how he used it.<BR><FONT color=#7e12d2>(Crest Scholars Stas writes something on the paper)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-d" image="QS_Default.dds" itemindex="400145">
+      <talk_answer link_index="n088_scholar_starshy-7" mid="59"><![CDATA[<html>Oh, thank you.</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Crest Scholars Stas $<BR>This  <FONT color=#a82424>Opinion</FONT> contains about the guard's green stain and what the drug is used for. This would be better than rather than the soldier trying to defend himself or someone as you arguing with him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-7" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-7-a" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Crest Scholars Stas $<BR>No need to thank me…there is nothing free in this world. <BR>You owe me something<BR>I will get this from you soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-7-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Crest Scholars Stas $<BR>Give my opinion to <FONT color=#a82424>General Douglas</FONT>.<BR>Let us here about what happened that night from the guard. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-7" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8" mid="64"><![CDATA[<html>(Hands over Crest Scholars Stas' opinion )</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$General Douglas$<BR>What is going on?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8" image="QS_Default.dds" itemindex="400145">
+      <talk_answer link_index="n042_general_duglars-8-a" mid="66"><![CDATA[<html>Yes?</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$General Douglas$<BR><FONT color=#7e12d2>(General Douglas looked at Crest Scholars Stas' opinion carefully)</FONT><BR>Hmm… However, It may be hard for the guard to go unpunished.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-a" image="QS_Default.dds" itemindex="400145">
+      <talk_question mid="67"><![CDATA[<html>$General Douglas$<BR>
+It would be hard to avoid responsibility, but thanks to this opinion and your words situation will be considered  . <BR>
+Punishment would not be too heavy.<BR>
+<FONT color=#7e12d2>(Thank god .Delivered to Guard Joey)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-8" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-8-a" mid="69"><![CDATA[<html>(Tells what has been going on)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Guard Joey$<BR>Have you told General Douglas my story?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-8-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-8-b" mid="71"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-8-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Guard Joey$<BR>Thank you so much!<BR>
+I owe you big to the adventurer!<BR>
+<FONT color=#7e12d2>(Guard Joey seems moved)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5381,5382,5383,5384,5385</exe>
+         <exe type="setquest">538</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400144</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">400144</exe>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>400143</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400143</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="4,5,6,7">825</exe>
+         <exe type="addquestitem" num="1">400143</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">200825</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>983
+</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400143</exe>
+         <exe type="setstep">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="addquestitem" num="1">400145</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="delquestitem" num="-1">400145</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5381,5382,5383,5384,5385</exe>
+         <exe type="complete">538</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="c" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="d" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="e" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="f" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="g">0,1,2</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b">0,2,3,8,1</exelink>
+   <exelink qstep="5" npc="n088_scholar_starshy" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="7">0,1,2</exelink>
+   <exelink qstep="7" npc="n042_general_duglars" sub="8">0,1,2</exelink>
+   <exelink qstep="8" npc="n042_general_duglars" sub="a">2,3,4</exelink>
+   <exelink qstep="8" npc="n252_saint_guard" sub="a">0</exelink>
+   <exelink qstep="8" npc="n252_saint_guard" sub="b">1</exelink>
+   <journal_data recompense="1:5381,2:5382,3:5383,4:5384,5:5385" quest_title="이상한 연기" chapterid="" quest_level="26" quest_mark_type="10" use_item_list="400143,400144,400145">
+      <journal index="1">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n252</destination_pos>
+         <destination_mode />
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Talk with Guard Joey]]></title>
+         <contents mid="74"><![CDATA[<html>Let's ask <FONT color=#a82424>Guard Joey</FONT>what more happened at the incident of the fire .<BR><BR><FONT color=#086171>Saint Haven's Inside</FONT> <FONT color=#a82424>→ Guard Joey</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Talk with Guard Joey]]></destination>
+         <todo_msg mid="76"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode />
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Talk with Crest Scholars Stas ]]></title>
+         <contents mid="78"><![CDATA[<html><FONT color=#a82424>Crest Scholars Stas</FONT>when shown the green stain.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Crest Scholars Stas</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Talk with Crest Scholars Stas ]]></destination>
+         <todo_msg mid="80"><![CDATA[Show Crest Scholars Stas the green stain]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_28.dds</contents_image>
+         <destination_pos>284,0,0</destination_pos>
+         <destination_mode>custom:281@3,282@3,283@3,284@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Collect the green drugs at the Dark Overlord Keep]]></title>
+         <contents mid="82"><![CDATA[<html><FONT color=#2b2723>IN <FONT color=#a82424>Dark Overlord Keep</FONT>에서</FONT>collect green drugs from  <FONT color=#a82424>Trapped Brethren Fire Mage</FONT><BR><BR><FONT color=#086171>Black Mine(Dark Overlord Keep's door)</FONT> <FONT color=#a82424>→ Dark Overlord Keep</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Dark Overlord Keep]]></destination>
+         <todo_msg mid="84"><![CDATA[Collect the green drugs at the Dark Overlord Keep]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode />
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Talk with Crest Scholars Stas ]]></title>
+         <contents mid="86"><![CDATA[<html>Collected the green drugs. Let's give this to <FONT color=#a82424>Crest Scholars Stas</FONT>.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Crest Scholars Stas</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Talk with Crest Scholars Stas ]]></destination>
+         <todo_msg mid="88"><![CDATA[Go back to Crest Scholars Stas of Saint Haven]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode />
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Talk with General Douglas ]]></title>
+         <contents mid="90"><![CDATA[<html>Let's find General Douglas with Crest Scholars Stas' opinion. Let us also defend Guard Joey.<BR><BR><FONT color=#086171>Inside Saint Haven</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Talk with Guard Joey]]></destination>
+         <todo_msg mid="92"><![CDATA[Talk with General Douglas of the inner royal palace. ]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode />
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Talk with Guard Joey]]></title>
+         <contents mid="94"><![CDATA[<html><FONT color=#a82424>Guard Joey</FONT>'s punishment has before softer. Lets tell Guard Joey this information.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Guard Joey</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Talk with Guard Joey]]></destination>
+         <todo_msg mid="96"><![CDATA[Go back to Guard Joey]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>403,436</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

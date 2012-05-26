@@ -1,0 +1,16 @@
+   <talk>
+      <npcename>n058_guard_pesent_tosy</npcename>
+      <npcid>58</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Guard Toshi]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="2"><![CDATA[<html>$Guard Toshi$<BR>I hear the evil monsters have assembled. It seems like war...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_pass" image="">
+         <talk_question mid="3"><![CDATA[<html>$Guard Toshi$<BR>Vigilante Leader Steve  from Prairie Town has the passes you need, but you will have to prove yourself worthy first. If you survive the monsters in Cristal stream, I'll let you pass.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

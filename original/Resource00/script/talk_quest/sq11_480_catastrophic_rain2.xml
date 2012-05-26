@@ -1,0 +1,275 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_480_catastrophic_rain2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>480</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>오염된 토양표본(300016)
+오염된 나무줄기(300017)
+
+군터와 대화
+말라버린 마리사의 샘에서 오염된 나무줄기 채집
+군터에게 보고
+스타쉬와 대화
+다시 군터에게.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Catastrophic Rain II]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Heraldry Scholar Stas$<BR>What? Why are you looking at me like that?! Are you here to keep me under watch? <BR><FONT color=#7e12d2>(Need to receive quest from Adventurer's Guild Master Gunther to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="30"><![CDATA[<html>Oh, okay.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR><FONT color=#a82424>Heraldry Scholar Stas</FONT> is researching on the <FONT color=#a82424>Catastrophic Rain</FONT>. It focuses on the contaminants when huge monsters are killed and contamination of the surroundings.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-a" mid="41"><![CDATA[<html>Oh, okay.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Heraldry Scholar Stas is researching on the <FONT color=#a82424>Catastrophic Rain</FONT>. It focuses on the contaminants when huge monsters are killed and contamination of the surroundings.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-a" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-b" mid="43"><![CDATA[<html>I see. What can I do to help?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>The research has only begun, but he doesn't have many samples to work with. <FONT color=#a82424>Deserted Wood Path</FONT> has suffered too much contamination over a long time to get a good reading.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-b" image="QW_35.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-c" mid="45"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>To ensure Heraldry Scholar Stas can proceed his studies, please go to the <FONT color=#a82424>Dried Marissa Spring</FONT> and gather some contaminated stems.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2" mid="98"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Catastrophic Rain II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="QW_35.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>When you go to the <FONT color=#a82424>Dried Marissa Spring</FONT>, and find strange colored and shaped tree branches, smash them and bring them back.<BR>I'll be waiting.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Talking to himself… Someday, people will realize the importance of my studies.<BR><FONT color=#7e12d2>(Stas is concentrating on this studies and mumbling)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-a" mid="53"><![CDATA[<html>(Gunther laughs out loud)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Back already? You got some talent there. You're a hard to find at Saint Haven. I have high hopes for you</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>You don't need to give me these samples, you take them to <FONT color=#a82424>Heraldry Scholar Stas</FONT> directly. He asked for these a long time ago, so he might have forgotten.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Huh? Didn't you go to <FONT color=#a82424>Heraldry Scholar Stas</FONT>?<BR>Those contaminated samples… maybe harmful to your body, so don't hold on to it too long. Hurry and be on your way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="57"><![CDATA[<html>What?! What do you mean…?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Huh. You're sent by <FONT color=#a82424>Adventurer's Guild Master Gunther</FONT>?<BR>…You're not someone from the church making me fall into a trap are you? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="59"><![CDATA[<html>(Stas starts to make excuses)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Heraldry Scholar Stas$<BR>If you're not, fine. I know I'm interested in traces of dragon or history but don't try to group me with the dragon followers. This… These things are purely for academic use.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="61"><![CDATA[<html>(Stas rapidly looks around the contaminated sample)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Anyway, give me that. <FONT color=#7e12d2>(Stas took the things in my hand in a blink of an eye)</FONT> Wow… this is a tree stem sample from Deserted Woods… Very nice indeed. Is this the soil sample taken from the Dark Overlord's Gate when the Black Dragon appeared?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Do you know about the <FONT color=#a82424>Catastrophic Rain</FONT>? 50 years ago, when the six heroes eliminated the Black Dragon, the surroundings suffered a massive contamination. As the Black Dragon vanished, tons of contaminants fell out, and we call it the Catastrophic Rain.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-e" mid="65"><![CDATA[<html>Hmm? Then what about the Deserted Woods…?</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Heraldry Scholar Stas$<BR>According to the records, <FONT color=#a82424>Six Heroes</FONT> suffered from major injuries from the Black Dragon Catastrophic Rain. Same thing happened this time when the Black Dragon reappeared…. I'm studying that right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-f" mid="67"><![CDATA[<html>What does that mean?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Heraldry Scholar Stas$<BR>It is said that in the Deserted Woods, <FONT color=#a82424>unknown factors caused</FONT><FONT color=#a82424> a contamination</FONT>. I hypothesized that contamination was made by similar phenomenon as Catastrophic Rain.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-g" mid="69"><![CDATA[<html>I see. (Not yet….)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Heraldry Scholar Stas$<BR>If my hypothesis turns out to be true, <FONT color=#a82424>the experiment the ancient people had done at the Deserted Woods have something to do with the Black Dragon</FONT>. If it was not the case, then those two events shouldn't be of the same characteristics.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-g" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Sample from 50 years ago, from recent situation… and the Deserted Woods... I have quite a few samples to analyze. Now, I need to analyze the samples, so it's time for you to return to Gunther.<FONT color=#7e12d2> (Stas was annoyed by my presence)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Why aren't you going? I'll send a messenger right away, so by the time you get back, I should have contacted him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-a" mid="73"><![CDATA[<html>I just came back from there.</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Hey, what happened to you?! Didn't you go to <BR>Heraldry Scholar Stas?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-b" mid="75"><![CDATA[<html>Yes? What's wrong…?</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>I thought the same thing.<BR>I received a message from a messenger that he received the package alright, but then almost instantly, another message came.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-c" mid="77"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-5-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-5-next_quest" mid="79"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>He sent be a thank you letter and the payment… but then, another messenger came and he's very angry. Strange.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n036_adventurer_guildmaster_gunter-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4801,4802,4803,4804,4805</exe>
+         <exe type="setquest">480</exe>
+         <exe type="setstep">2</exe>
+         <exe type="huntitem" num="5" exe="4,5,6" onexe="">300017</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300016</exe>
+         <exe type="delquestitem" num="-1">300017</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4801,4802,4803,4804,4805</exe>
+         <exe type="complete">480</exe>
+         <exe type="custom">api_npc_NextScript(userObjID, npcObjID, "n036_adventurer_guildmaster_gunter-1", "sq11_481_catastrophic_rain3.xml");</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="2">1,3,2</exelink>
+   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="g">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="b">0</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="c">1</exelink>
+   <exelink qstep="5" npc="n036_adventurer_guildmaster_gunter" sub="next_quest">2</exelink>
+   <journal_data recompense="1:4801,2:4802,3:4803,4:4804,5:4805" quest_title="재앙의 비 II" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300016,300017">
+      <journal index="1">
+         <contents_image>QW_35.dds</contents_image>
+         <destination_pos>354,0,0</destination_pos>
+         <destination_mode>custom:351@4,352@4,353@4,354@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Another Sample]]></title>
+         <contents mid="82"><![CDATA[<html>Collect contaminated tree stems from the Dried Marissa Spring. You can obtain this by smashing dried tree.<BR><BR><FONT color=#086171>Black Mountain(Deserted Woods)</FONT> <FONT color=#a82424>→ Dried Marissa Spring</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Collect Polluted Tree-Trunks]]></destination>
+         <todo_msg mid="84"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode />
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Completed Sample Collection]]></title>
+         <contents mid="86"><![CDATA[<html>Report back to Adventurer's Guild Master Gunther.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Gunther</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Talk to Adventurer's Guild Master Gunther]]></destination>
+         <todo_msg mid="88"><![CDATA[Report to Adventurer's Guild Master Gunther.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode />
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Stas' Hypothesis]]></title>
+         <contents mid="90"><![CDATA[<html>Pass on the sample to Heraldry Scholar Stas.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="92"><![CDATA[Pass on the sample to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode />
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Odd Results]]></title>
+         <contents mid="94"><![CDATA[<html>Mission is over, report back to Adventurer's Guild Master Gunther.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Gunther</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Talk to Adventurer's Guild Master Gunther]]></destination>
+         <todo_msg mid="96"><![CDATA[Report back to Adventurer's Guild Master Gunther.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>479</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

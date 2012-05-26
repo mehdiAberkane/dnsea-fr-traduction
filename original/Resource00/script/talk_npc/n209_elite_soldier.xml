@@ -1,0 +1,34 @@
+   <talk>
+      <npcename>n209_elite_soldier</npcename>
+      <npcid>209</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Elite Soldier Calrim]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="12"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="13"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Elite Soldier Calrim$<BR>The mission has failed but my loyalty remains unwavered.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Elite Soldier Calrim$<BR>The aftermath of the last mission is still keeping me busy. There are still wounded men who needs tending to.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="50" link_target="mq11_432_here_sainthaven.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>It's Saint Heaven</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="mq11_401_castle_sainthaven.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Saint Haven Fortress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="15" link_target="mq11_402_town_of_death.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Town of Death</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="mq11_419_where_argenta.xml"><![CDATA[<html><FONT face=??>[Lv.24] <FONT color=#a94407>Whereabouts of Argenta</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="mq11_403_meet_argenta_again.xml"><![CDATA[<html>[Lv.26] <FONT color=#a94407>Dark Overlord Keep</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="mq11_410_sea_monsters_soul.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Being Human</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="mq11_422_question_of_dragon.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>Stas's Question</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="mq11_428_revive_serpentra.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>New Crisis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="mq11_430_trace_apostle.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Whereabouts of the Apostles</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="mq11_389_commentary_of_geraint.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>Geraint says</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="mq11_397_but_unbowed.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Lost it</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="mq11_398_lose_or_shorn.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Lost it</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="48"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Elite Soldier Calrim$<BR>Go ahead, speak your mind.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

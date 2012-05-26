@@ -1,0 +1,285 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq32_8601_my_name</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8601</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc>이벤트 도우미의 향수	300311
+연습용 말(1일용)	???
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[My Name]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>62</npcid>
+         <npcename>n062_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-noquest" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Events planner Irine$<BR>Do you know <FONT color=#a82424>Trainer Lindsay </FONT> from Saint Haven? <BR>She is very bright and funny lady~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-a" mid="6"><![CDATA[<html> (She speaks funny) </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Trainer Lindsay$<BR>Hello? Adventurer! There is an adventurer who is close with <BR><FONT color=#a82424>Irine</FONT>. Is that you? 
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-acceppted" mid="31"><![CDATA[<html> (Let's listen to her for a bit) </html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Trainer Lindsay ${action:Glad}<BR> <FONT color=#a82424>Irine</FONT> and <FONT color=#a82424>YOU</FONT>, friend! Correct? <BR>
+So… You friend with ME, Lindsay. <BR>Hey, Come on! Let’s play <BR>
+Let's have fun~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Events planner Irine$<BR>Do you know <FONT color=#a82424>Trainer Lindsay </FONT> from Saint Haven? <BR>She is a very bright and funny lady~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-1-a" mid="34"><![CDATA[<html> Hi </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-1-a" mid="35"><![CDATA[<html> Hi nice to meet you…..</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[html>$Trainer Lindsay${action:Talk}<BR>I heard plenty of stories about you. <BR>Well, I’m <FONT color=#a82424>Lindsay </FONT>, glad to meet you!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-1-b" mid="37"><![CDATA[<html>I’m <FONT color=#387206>{user_class} {user_nick}</FONT>, you?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Trainer Lindsay$<BR>Um.. playing is hard… Um… introduce yourself! <BR> Then we can become friends! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1-b" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-1-c" mid="39"><![CDATA[<html>(Thinks she is raising horses)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Trainer Lindsay$<BR>Me, My name is <FONT color=#a82424>Lindsay</FONT>! I look after animals, especially horses. <BR>I raise horses and find them a good master. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-1-d" mid="41"><![CDATA[<html> Horses bite...???</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Trainer Lindsay$<BR>I raise horses. Horses aren’t human. They are different <BR> They cause a lot of pain when they bite!!</html> ]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1-d" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2" mid="43"><![CDATA[<html> A present? </html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Trainer Lindsay$<BR>YES! Horses bite! I’m sad. <BR>YOU, are now a friend. <BR>
+Lindsay is happy if a friend gives Lindsay a <FONT color=#a82424>Present</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-a" mid="45"><![CDATA[<html>(Thinking of getting something from Irine)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Trainer Lindsay $<BR>Present! <FONT color=#a82424>Events Planner Irine's perfume </FONT>, Present! Perfume that <FONT color=#a82424>Irine</FONT> uses. <BR>I like Events Planner Irine, I like perfume. Okay?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-a" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR><FONT color=#a82424>Lindsay</FONT> Looking forward! Wow!<BR>
+Pitter-patter! Pitter-patter~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-a" mid="48"><![CDATA[<html> Just give me the perfume that you are using </html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Events Planner Irine$<BR>A present for Trainer Lindsay? <BR>Hmm~ I don’t give  <FONT color=#a82424>Event Planner’s Perfume</FONT> just like that. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-b" mid="50"><![CDATA[<html> Donation? </html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Events Planner Irine $<BR>Um.. What should I do? Ah, I’m running this fund raiser for the children. <BR>If you participate I’ll give you some of my perfume. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-b" image="QS_Default.dds" itemindex="336617728">
+      <talk_question mid="51"><![CDATA[<html>$Events Planner Irine$<BR>I shouldn’t take money…Give me<FONT color=#a82424>10 Lesser Onyx</FONT>, then I’ll give you my perfume <BR> It’s for poor children so please help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3" image="QS_Default.dds" itemindex="336617728">
+      <talk_question mid="52"><![CDATA[<html>$Events Planner Irine$<BR>What we collect is <FONT color=#a82424>Lesser Onyx</FONT>.<BR>Please donate 10 of them!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-a" image="QS_Default.dds" itemindex="336617728">
+      <talk_answer link_index="n100_event_ilyn-3-c" mid="55"><![CDATA[<html> (Donate)</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-3-b" mid="56"><![CDATA[<html> (Donate later) </html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Events Planner Irine$<BR>You did bring it!<BR>You are so generous!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-b" image="" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Events Planner Irine$<BR>Ah, really? I can’t force you to donate. <BR>Please come again if you have the right amount. Bye~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-c" image="QS_Default.dds" itemindex="300311">
+      <talk_answer link_index="n100_event_ilyn-3-d" mid="59"><![CDATA[<html> (Receive perfume) </html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[html>$Events Planner Irine$<BR>Thank you very much. Many children can eat now, due to your kind heart. <BR> Here’s the perfume I use as promised. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-d" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-e" mid="61"><![CDATA[<html> Do horses have sensitive noses? </html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Events Planner Irine$<BR>These are made by natural ingredients but I’m worried. <BR>It may surprise Lindsay’s horses.<BR>
+<FONT color=#7e12d2>(Irine puts her head a little to one side.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-e" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Events Planner Irine$<BR>I know nothing about horses but wouldn’t they try to eat if it smells like a flower? <BR>Anyway say hello to <FONT color=#a82424>Lindsay</FONT> please. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-4" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Events Planner Irine$<BR>Say hello to <FONT color=#a82424>Trainer Lindsay </FONT>. <BR>Hope she likes this. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-4-a" mid="66"><![CDATA[<html> Happy….</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Trainer Lindsay$<BR>It smells good!! Smells like <FONT color=#a82424>Irine</FONT> right? <BR>I like getting presents. So happy~~~~~ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4-a" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-4-b" mid="68"><![CDATA[<html> (It's your present not mine) </html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Trainer Lindsay${action:Kiss}<BR>Uhm~ <FONT color=#7e12d2>(Lindsay puts on perfume and jumps around)</FONT> Look good?<BR>I’m happy that you got a present, YOU! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4-b" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-4-c" mid="70"><![CDATA[<html> (Lindsay shakes my hand wildly)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Trainer Lindsay $<BR>Sweet… and good smell~.<BR>Good!. YOU and Me. now <FONT color=#a82424>Friends</FONT>. Right?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4-c" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-4-d" mid="72"><![CDATA[<html>(I don't know what she is saying)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Trainer Lindsay$<BR>Will give you present because we are friends. <BR><FONT color=#a82424>Lindsay</FONT> puts of perfume and will become Events Planner. <BR>Um, Anyway….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4-d" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR>Good! Give and Take!? Right??<BR>
+<FONT color=#387206>{user_nick}</FONT>, We became friends!<BR>You come again to see horses! OK? See You Again~<BR>
+<FONT color=#7e12d2>(Lindsay and I became closer)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8601</exe>
+         <exe type="talk" npc="n062_trainer_lindsay">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_npc_Disappoint( userObjID, 62 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="10" exe="" onexe="">336617728</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="item" num="10" op="]=">336617728</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n100_event_ilyn">a</exe>
+         <exe type="talk" npc="n100_event_ilyn">3</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delitem" num="10">336617728</exe>
+         <exe type="addquestitem" num="1">300311</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300311</exe>
+         <exe type="complete">8601</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="1" npc="n062_trainer_lindsay" sub="c">2</exelink>
+   <exelink qstep="1" npc="n062_trainer_lindsay" sub="d" />
+   <exelink qstep="1" npc="n062_trainer_lindsay" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="b">0,2,1</exelink>
+   <exelink qstep="3" npc="n100_event_ilyn">0</exelink>
+   <exelink qstep="3" npc="n100_event_ilyn" sub="c" />
+   <exelink qstep="3" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="3" npc="n100_event_ilyn" sub="d" />
+   <exelink qstep="3" npc="n100_event_ilyn" sub="e">3,5,6,4,7</exelink>
+   <exelink qstep="4" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="4" npc="n062_trainer_lindsay" sub="c" />
+   <exelink qstep="4" npc="n062_trainer_lindsay" sub="d">0,1</exelink>
+   <journal_data recompense="" quest_title="마이 네임" chapterid="" quest_level="32" quest_mark_type="15" use_item_list="300311">
+      <journal index="1">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom:1@4,5@4,8@4</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Trainer Lindsay]]></title>
+         <contents mid="26"><![CDATA[<html>Meet a weird girl. Talk to Trainer Lindsay <BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay </FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="28"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:1@4,5@4,8@4</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Events Planner Irine's perfume]]></title>
+         <contents mid="75"><![CDATA[<html>Go and get perfume from Events Planner Irine.<BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Events Planner Irine </FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="77"><![CDATA[Go see Events Planner Irine]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:1@4,5@4,8@4</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Donating Angel]]></title>
+         <contents mid="85"><![CDATA[<html>Events Planner Irine is running a fundraiser for children. Donate 10 Lesser Onyx and get perfume from Irine. <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine </FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="79"><![CDATA[Give 10 Lesser Onyx to Events Planner Irine]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom:1@4,5@4,8@4</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[Happy Girl]]></title>
+         <contents mid="81"><![CDATA[<html>Acquired Events Planner Irine's perfume, deliver it to Trainer Lindsay. <BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Trainer Lindsay </FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="83"><![CDATA[Report to Trainer Lindsay]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>100:2000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

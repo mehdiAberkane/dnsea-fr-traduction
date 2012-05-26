@@ -1,0 +1,415 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_453_missing_ring</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>453</qid>
+      <designer>김주연</designer>
+      <qlevel>25</qlevel>
+      <qdesc>300038 검붉은 흙</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>454</nextqid>
+      <nextqname>sq11_454_second_kidnapping</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Disappeared Ring]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>51</npcid>
+         <npcename>n051_alrento_viscount</npcename>
+         <npckname>알렌토 자작</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>52</npcid>
+         <npcename>n052_place_of_trail</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>72</npcid>
+         <npcename>n072_whiterose_lena_blackm</npcename>
+         <npckname>하얀 장미의 기사</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Viscount Arlento$<BR>
+How come there are only stupid soldiers in this castle. Bring me some smart ones. <BR>
+<FONT color=#7e12d2>(You can start a quest from General Douglas in Royal Castle) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$???$<BR>Just little bit of dust but there’s nothing special. <BR>
+<FONT color=#7e12d2>(You can start a quest from General Douglas in Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$White Rose Knight$<BR>
+You are annoying, go back.<BR>
+<FONT color=#7e12d2>(You can start a quest from General Douglas in Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="10"><![CDATA[<html> What's the matter? </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$General Douglas${action:Talk}<BR>I’m so sorry for asking you so many things. <BR>Can you help me if you’re ok? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$General Douglas$<BR>There has been a <FONT color=#a82424>theft </FONT> in Royal Castle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Disappeared ring$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>White Rose Knight</FONT> said that <FONT color=#a82424>Viscount's Ring</FONT>was stolen.<BR>
+Fotunately he was not not hurt but he is unable to fight as he was entrusted with my investigation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="18"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$General Douglas$<BR>You are the only one I can trust. Please do me a favor.<BR>
+<FONT color=#a82424>Viscount Arlento</FONT> knows you are coming so listen from him. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Viscount Arlent $<BR>
+How come there are only stupid soldiers in this castle. Bring me some smart ones.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Just little bit of dust but there’s nothing special.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$White Rose Knight$<BR>You are annoying, go back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$General Douglas${action:Talk}<BR>I’m glad I have you in the time like this. <FONT color=#a82424>Viscount Arlento</FONT> knows you are coming so listen from him. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-a" mid="24"><![CDATA[<html>General Douglas has sent me.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Viscount Arlento$<BR>Who are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-a" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-b" mid="26"><![CDATA[<html>Can you tell me what happened? </html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Viscount Arlento$<BR>Oh… You are the person who would find me the <FONT color=#a82424>ring</FONT>.<BR>I don’t care who it is as long they bring me a thief. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-b" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-c" mid="28"><![CDATA[<html>Wearing white clothes and a mask….</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Viscount Arlento$<BR>I saw the thief.<BR>
+I saw him with my own eyes.<BR>
+Dressed in <FONT color=#a82424>white clothes</FONT> and wearing a <FONT color=#a82424>mask</FONT>, also he was about my height.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-c" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-d" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Viscount Arlento$<BR>Also a thief had <FONT color=#a82424>red hair</FONT>. <BR>I don’t remember properly but the thief was wearing white clothes and had red hair. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-d" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-2-e" mid="32"><![CDATA[<html> Where was the ring originally? </html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Viscount Arlento$<BR>Then this case is over, I have to request General Douglas to strengthen the security of this castle. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-2-e" image="" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-3" mid="34"><![CDATA[<html> I'll have a look around </html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Viscount Arlento$<BR>I left it there, on the table. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-3" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Viscount Arlento$<BR>Regardless of many guards in the castle, no one could catch the thief!<BR>
+They are such a useless people, all they know is how to stand!  </html>
+]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-3" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n052_place_of_trail-3-get_item" mid="37"><![CDATA[<html> (Collects little bit of soil) </html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(A foot print has been remained near the place where the ring was)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n052_place_of_trail-4" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Just little bit of dust, there’s nothing special)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-4-a" mid="40"><![CDATA[<html> (Show him the soil) </html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Viscount Arlento$<BR>
+<FONT color=#a82424>Foot print</FONT>?<BR>
+It’s not mine and my maids don’t have chance to step on soil and they don’t wear that kind of shoes. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4-a" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n051_alrento_viscount-4-b" mid="43"><![CDATA[<html> I should go to Dark Mine </html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Viscount Arlendo$<BR>Wait! That red soil seems very similar to the soil in Dark Mine… <BR><FONT color=#7e12d2>(Viscount sniffs the soil)</FONT><BR>
+This smell, it smells like monsters of <FONT color=#a82424> Dark Mine</FONT>. Eww. I don’t like it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-4-b" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Viscount Arlento$<BR>Do what you like.<BR>However, Don’t go around telling all the people about this please. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-5" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Viscount Arlento$<BR>I think General have sent me the right person. <BR>Please find me the ring. If I don’t have the ring, I…. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-a" mid="47"><![CDATA[<html> You are the thief who stole the ring </html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$White Rose Knight$<BR>You…?!<BR><FONT color=#7e12d2>(The thief is surprised)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-a" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-b" mid="49"><![CDATA[<html> Give me the ring </html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$White Rose Knight$<BR>Coming after me by using this useless adventurer…… <BR>Isn’t there anyone useful in the castle? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-b" image="" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-c" mid="51"><![CDATA[<html> What? </html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$White Rose Arlento$<BR>Hahaha! So stupid!<BR>
+You are like a puppet, you don’t know anything but do what you’ve been told!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-c" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-d" mid="53"><![CDATA[<html> Is Viscount Arlento a Dragon Follower? </html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$White Rose Knight$<BR>I have been tracking <FONT color=#a82424>Dragon Followers</FONT> to persecute them. That <FONT color=#a82424>Noble</FONT> who I stole a ring from is one of <FONT color=#a82424>Dragon Followers</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-d" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-e" mid="127"><![CDATA[<html> A set up? What are you talking about? </html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$White Rose Knight$<BR>
+Yes. It was a set up to draw out Dragon Followers by using <FONT color=#a82424>him</FONT>as a bait but you are the one who fell in the set up… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-e" image="QS_01.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-f" mid="129"><![CDATA[<html>You tricked us! Is Viscount Arlento safe? </html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$White Rose Knight$<BR>
+Do you think I would make a such mistake like leaving my <FONT color=#a82424>footprint </FONT>?<BR>
+Who do you think I am?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-f" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-g" mid="118"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$White Rose Knight$<BR>
+Are you worried about that <FONT color=#a82424>Noble</FONT>? Hahaha!<BR>
+You don’t have to worry about him. He is still useful so I won’t kill him yet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-g" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n072_whiterose_lena_blackm-5-h" mid="131"><![CDATA[<html> What do you mean? </html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$White Rose Knight$<BR>
+Plus, I don’t have to get my hand dirty. <BR>
+He won’t last long anyway….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-5-h" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="119"><![CDATA[<html>$White Rose Knight$<BR>If <FONT color=#a82424>Dragon Followers</FONT> hear about losing his ring, he won’t be able to save his life. Their first principle is to get rid of useless people. <BR>
+<FONT color=#7e12d2>(Report to General Douglas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n072_whiterose_lena_blackm-6" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$White Rose Knight$<BR>
+I can’t kill him now.<BR>
+Not yet….<BR>
+<FONT color=#7e12d2>(Report to General Douglas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-a" mid="59"><![CDATA[<html>Well, he has planned this from beginning.</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$General Douglas$<BR>Here you come! Lot of things has happened while you were away. <BR><FONT color=#a82424>Viscount Knight</FONT> have been kidnapped by <FONT color=#a82424>White Rose Knight</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-a" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-b" mid="61"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$General Douglas${action:Talk2}<BR>What do you mean by planned from beginning? <BR>Was the footprint also a set up to? <BR>To trick who? <BR>Actually have you met the <FONT color=#a82424>thief</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-b" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-c" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$General Douglas$<BR>Um… He said <FONT color=#a82424>Viscount Arlento</FONT> is a <FONT color=#a82424>Dragon Follower</FONT>.<BR>But he have duty to protect him unless the evidence shows up. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-d" mid="65"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-6-d" image="QN_Npc_Noble_Man_Pushibal.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-6-!next" mid="136"><![CDATA[<html> Do you have any inforamtion about the place? </html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$General Douglas$<BR>Keep this secret for now. <BR>We have to rescue him first. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n051_alrento_viscount-6" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Viscount Arlento$<BR>How’s the investigation going? <BR>What’s taking so long? <BR>
+No one can find out about my loss of the <FONT color=#a82424>ring</FONT>! Keep your mouth shut.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4531,4532,4533,4534,4535</exe>
+         <exe type="setquest">453</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300038</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300038</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment>백장미는 대화 후 사라진다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4531,4532,4533,4534,4535</exe>
+         <exe type="complete">453</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="b" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="c" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="d" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="e" />
+   <exelink qstep="2" npc="n051_alrento_viscount" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n052_place_of_trail" sub="get_item">0,1,2</exelink>
+   <exelink qstep="4" npc="n051_alrento_viscount" sub="b">0,1,2</exelink>
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="b" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="c" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="d" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="e" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="f" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="g" />
+   <exelink qstep="5" npc="n072_whiterose_lena_blackm" sub="h">0,1</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="6" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="d">1</exelink>
+   <exelink qstep="6" npc="n042_general_duglars" sub="!next" />
+   <journal_data recompense="1:4531,2:4532,3:4533,4:4534,5:4535" quest_title="사라진 반지" chapterid="" quest_level="25" quest_mark_type="10" use_item_list="300038">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Theft case]]></title>
+         <contents mid="70"><![CDATA[<html>There has been a <FONT color=#a82424>theft case</FONT> in Royal Castle. Ask <FONT color=#a82424>General Douglas</FONT> for detail. <BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas </FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Theft case]]></destination>
+         <todo_msg mid="72"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Noble_Man_Pushibal.dds</contents_image>
+         <destination_pos>21,n51</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>51</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Conversation with Viscount Arlento in Royal Castle]]></title>
+         <contents mid="74"><![CDATA[<html>You are in charge of the Ring Theft Case. Meet <FONT color=#a82424>Viscount Arlento</FONT> and find out the detail. <BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Viscount Arlento </FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Conversation with Viscount Arlento in Royal Castle]]></destination>
+         <todo_msg mid="76"><![CDATA[Talk to Viscount Arlento in Royal Castle]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_SaintHaven_Inside.dds</contents_image>
+         <destination_pos>21,n52</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>52</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Investigate where the ring was]]></title>
+         <contents mid="78"><![CDATA[<html>Investigate <FONT color=#a82424>the desk where the ring was on</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Desk nearby Viscount Arlento </FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Investigate the desk where the ring was]]></destination>
+         <todo_msg mid="80"><![CDATA[Investigate the nearby desk where the ring was]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Noble_Man_Pushibal.dds</contents_image>
+         <destination_pos>21,n51</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>51</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Conversation with Viscount Arlento in Royal Castle]]></title>
+         <contents mid="82"><![CDATA[<html>Found <FONT color=#a82424>red soil footprint</FONT> at the desk. Talk to <FONT color=#a82424>Viscount Arlento</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Viscount Arlento</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Conversation with Viscount Arlento in Royal Castle]]></destination>
+         <todo_msg mid="84"><![CDATA[Talk to Viscount Arlento in Royal Castle]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>274,n72</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@1</destination_mode>
+         <statemark_npcid>72</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Investigate Dark Mine]]></title>
+         <contents mid="86"><![CDATA[<html>According to <FONT color=#a82424>Viscount Arlento</FONT>, the <FONT color=#a82424>red soil </FONT> found near the desk is very similar to the soil in Dark Mine. Go to <FONT color=#a82424>Dark Mine</FONT> and see if there are any evidence.<BR>
+<FONT color=#7e12d2>※ May not proceed with other quests simultaneously.</FONT><BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Dark Mine</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Investigate Dark Mine]]></destination>
+         <todo_msg mid="88"><![CDATA[Check for other evidences in Dark Mine]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Conversation with General Douglas in Royal Castle]]></title>
+         <contents mid="90"><![CDATA[<html>You have met <FONT color=#a82424>White Rose Knight</FONT> in <FONT color=#a82424>Dark Mine</FONT>. Return to Royal castle and report to <FONT color=#a82424>General Douglas</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas </FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Conversation with General Douglas in Royal Castle]]></destination>
+         <todo_msg mid="92"><![CDATA[Report to General Douglas in Royal Castle]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>452</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,193 @@
+﻿   <talk>
+      <npcename>n045_soceress_master_stella</npcename>
+      <npcid>45</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Sorceress Stella]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_001" mid="6"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Sorceress Stella${action:Talk}<BR>The alignment of the stars have been strange.<BR>They speak of many things that will happen someday. Train harder, for you will need strength for this day.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Master Sorceress Stella${action:Talk}<BR>What? You think Sorcesseress are a quiet bunch who merely study <FONT color=#a82424>Arcane Magic</FONT>? Huge mistake I tell you!]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="233" link_target="mq05_124_prologue_sorceress.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>Genius Sorceress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="258" link_target="mq15_9200_lament_for_farewell1.xml"><![CDATA[<html>[Lv50] <FONT color=#a94407>A Lament For Her I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="sq11_545_vain_dream.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>A Pipe Dream</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="sq11_525_secret_of_flower.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Secret of Flowers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="236" link_target="nq12_7214_birthday_present1.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Happy Birthday Harori I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="sq11_465_endless_dream1.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Broken Dreams Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="sq11_466_endless_dream2.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Broken Dreams Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="82" link_target="sq11_485_endless_dream4.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Broken Dreams Part 4</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="sq11_527_gardening_stella.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Stella's Gardening</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="sq11_528_valid_conclusion.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Positive Conclusion</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="sq11_496_dark_armor1.xml"><![CDATA[<html>[Lv.29] <FONT color=#086171>[Title] [Immortal Lv3] Shadow Armor I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="sq11_532_guard_of_flower.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Garden Protector</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="130" link_target="nq06_7501_irksome_work.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Annoyance</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="131" link_target="nq19_8801_counselling_tara.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Tara's Predicament</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="70" link_target="sq11_488_merchant_study3.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Merchant Lessons III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="71" link_target="sq11_489_merchant_study4.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Merchant Lessons IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="88" link_target="sq11_569_more_episode_rings1.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>The Earrings I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="sq11_570_more_episode_rings2.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>The Earring II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="95" link_target="sq11_571_collect_antiques.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171> Antiques</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="72" link_target="sq11_502_powerup_magic1.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>[Title] [Monster Lv2] Health Strengthening I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="75" link_target="sq11_503_powerup_magic2.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>[Title] [Monster Lv2] Health Strengthening II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="76" link_target="sq11_504_powerup_magic3.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>[Title] [Monster Lv2] Health Strengthening III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="112" link_target="sq11_606_eyewitness_stella.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Stella's Sightings</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="113" link_target="sq11_607_engineer_of_future.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Engineer from the Future</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="114" link_target="sq11_608_incomplete_compass.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Faulty Compass</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="115" link_target="sq11_609_foretell_compass.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Prophetic Compass</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="116" link_target="sq11_610_ensure_a_future.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>For Another Future</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="243" link_target="sq11_617_key_of_seadragon.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Key to the Sea Dragon Nest</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="244" link_target="sq11_618_fallen_life_crystal.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Deprived Decisions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="245" link_target="sq11_619_to_the_seadragon.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Let's Fight the Sea Dragon!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="259"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Master Sorceress Stella$<BR>What do you want from me?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="mq408_clear_check" mid="138"><![CDATA[<html>[Talk] Black Dragon Raid</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="253" link_target="sq_977_xmas_stella.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="212" link_target="nq06_7502_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Lady Karacule</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="213" link_target="nq06_7503_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Interference</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="214" link_target="nq06_7504_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Flowers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="215" link_target="nq06_7505_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Kayleen</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="216" link_target="nq06_7506_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Make-up Tips</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="217" link_target="nq06_7507_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Archer Ithilien</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="218" link_target="nq06_7508_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Warrior Rodrigo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="219" link_target="nq06_7509_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Abandoned Field</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="220" link_target="nq06_7510_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Weather Story</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="221" link_target="nq06_7511_stella_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Stella</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="226" link_target="nq06_7512_stella_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Stella's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="227" link_target="nq06_7513_stella_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Stella's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="250" link_target="nq06_7514_stella_90_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>An Unexpected Gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="251"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Master Sorceress Stella$<BR>According to the stars' alignment, Saint Haven seems safe for now. But I suspect this is only a temporary relief.<BR><FONT color=#7e12d2>[Stella clicks her tongue.] </FONT>What's gonna happen…?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="408_not_clear" image="" itemindex="">
+         <talk_answer link_index="talk" mid="140"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="23"><![CDATA[<html>$Master Sorceress Stella$<BR>Ahhh the Black Dragon Raid. Our Lady Karacule was a silent powerful force for the mission. Without her, those brawling Warriors, long-eared Elves and pretentious Clerics would all end up as the dragon's next meal.  </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="408_clear" image="" itemindex="">
+         <talk_answer link_index="talk" mid="27"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="26"><![CDATA[<html>$Master Sorceress Stella$<BR>I heard of the ordeal in Black Mountain.<BR>Don't worry, it is safe here.<BR>The stars' alignment however, still speak of danger ahead.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent_soceress" image="" itemindex="">
+         <talk_answer link_index="quest" mid="179"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_90" mid="180"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="181"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90_soceress" mid="182"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="143"><![CDATA[<html>$Master Sorceress Stella$<BR>I wonder if Lady Karacule felt the same way when she met the heroes.<BR>This feeling of bravery and commitment, without fear of death.<BR>I sense such feelings from you.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent_soceress" image="" itemindex="">
+         <talk_answer link_index="quest" mid="183"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_60" mid="184"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="185"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60_soceress" mid="186"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="148"><![CDATA[<html>$Master Sorceress Stella$<BR>You crossed my mind momentarily when I thought of Lady Karacule.<BR>Oh, don't be cocky just because of that! </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent_soceress" image="" itemindex="">
+         <talk_answer link_index="quest" mid="187"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_30" mid="188"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="189"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30_soceress" mid="190"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="149"><![CDATA[<html>$Master Sorceress Stella$<BR>The stars predicted your arrival.<BR>Not that I was waiting of course.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent_soceress" image="" itemindex="">
+         <talk_answer link_index="quest" mid="191"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_0" mid="192"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="193"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0_soceress" mid="194"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="150"><![CDATA[<html>$Master Sorceress Stella$<BR>The ordeal has only just begun...<BR>Please be commited to your training.<BR>That is the only way to protect yourself from harm.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="195"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="196"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="197"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="151"><![CDATA[<html>$Master Sorceress Stella$<BR>Someday <FONT color=#387206>{user_nick}</FONT>, your name will shine like distant stars.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="198"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="199"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="200"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="152"><![CDATA[<html>$Master Sorceress Stella$<BR>Looking at you, I think I now understand how Lady Karacule could work with those<FONT color=#387206>{user_class}</FONT> companions.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="201"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="202"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="203"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="153"><![CDATA[<html>$Master Sorceress Stella$<BR>It's unbelievable.<BR>I'm actually at ease with a <FONT color=#387206>{user_class}</FONT> in front of me.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="204"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="205"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="206"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="154"><![CDATA[<html>$Master Sorceress Stella$<BR>Are you interested in Arcane Magic?<BR>Hmmm, it could be beyond the mental capabilities of a <FONT color=#387206>{user_class}</FONT> though..</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="207"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="208"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="155"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="209"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="158"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh? This is…?<BR>Never mind. I'll just resell it to buy more land. Thank you! Hoho!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="7" false="15">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="6">1</exe>
+         <exe type="talk">408_clear</exe>
+         <exe type="talk">408_not_clear</exe>
+         <exe type="conexe" true="8" false="0">2</exe>
+         <exe type="conexe" true="11" false="9">3</exe>
+         <exe type="conexe" true="12" false="10">4</exe>
+         <exe type="conexe" true="13" false="14">5</exe>
+         <exe type="talk">90_percent_soceress</exe>
+         <exe type="talk">60_percent_soceress</exe>
+         <exe type="talk">30_percent_soceress</exe>
+         <exe type="talk">0_percent_soceress</exe>
+         <exe type="conexe" true="16" false="1">2</exe>
+         <exe type="conexe" true="19" false="17">3</exe>
+         <exe type="conexe" true="20" false="18">4</exe>
+         <exe type="conexe" true="21" false="22">5</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 45 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 45 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 408) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 7501) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 45 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 45 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 45 ) >= 30</chk>
+      </conditions>
+      <exelink idx="skill_001">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="mq408_clear_check">4</exelink>
+      <exelink idx="back_talk">2</exelink>
+      <exelink idx="skill_90">3</exelink>
+      <exelink idx="present_90_soceress">23,24</exelink>
+      <exelink idx="skill_60">3</exelink>
+      <exelink idx="present_60_soceress">23,24</exelink>
+      <exelink idx="skill_30">3</exelink>
+      <exelink idx="present_30_soceress">23,24</exelink>
+      <exelink idx="skill_0">3</exelink>
+      <exelink idx="present_0_soceress">23,24</exelink>
+      <exelink idx="present_90">23,24</exelink>
+      <exelink idx="present_60">23,24</exelink>
+      <exelink idx="present_30">23,24</exelink>
+      <exelink idx="present_0">23,24</exelink>
+      <exelink idx="gift">25,26</exelink>
+      <exelink idx="back_present_ui">2</exelink>
+      <exelink idx="back_gift">2</exelink>
+   </talk>

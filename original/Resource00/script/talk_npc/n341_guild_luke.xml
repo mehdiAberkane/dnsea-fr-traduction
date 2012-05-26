@@ -1,0 +1,103 @@
+   <talk>
+      <npcename>n341_guild_luke</npcename>
+      <npcid>341</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Member Luke]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="guild_menu" mid="4"><![CDATA[<html><FONT size=2>[Guild Option]</FONT></html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="115"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Adventurer's Guild Member Luke${action:Talk}<BR>I hope you had made some friends in the course of the journey. Do consider setting up a Guild with your best allies. The sense of belonging is incredible.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="talk_1" mid="6"><![CDATA[<html>How to form a Guild?</html>]]></talk_answer>
+         <talk_answer link_index="talk_2" mid="87"><![CDATA[<html>How to join a Guild?</html>]]></talk_answer>
+         <talk_answer link_index="talk_3" mid="88"><![CDATA[<html>How to withdraw from a Guild?</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="89"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>A Guild is where everyone pledges loyalty to the group. There is so much fun, and so much to do when you're in a Guild.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="90"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Forming a Guild$<BR>To form a Guild, you will need <FONT color=#a82424>gold</FONT> and you cannot be a member of any other Guilds. As the <FONT color=#a82424>Guild Master</FONT>, you are free to invite players to join your new Guild.]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_2" image="" itemindex="">
+         <talk_answer link_index="talk" mid="91"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Joining a Guild$<BR>Ask the <FONT color=#a82424>Guild master</FONT> or Guild admin members for an invite. <BR>To invite a player into the Guild, use [Invite] on your Guild tab, or right click on the player you wish to invite and select [Guild Invite].</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_3" image="" itemindex="">
+         <talk_answer link_index="talk" mid="92"><![CDATA[<html><FONT face=Arial size=2>(Back)</FONT></html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$Withdrawing from a Guild$<BR>To <FONT color=#a82424>withdraw</FONT> from a Guild, select <FONT color=#a82424>Withdraw from Guild</FONT>.  from the <FONT color=#a82424>Guild Menu</FONT>. The Guild masters can only leave after delegating his/her position to a Guild member.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="no_guild" image="" itemindex="">
+         <talk_answer link_index="no_guild_0" mid="93"><![CDATA[<html>[Create Guild]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="94"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="30"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>You do not belong to any Guild at the moment,<FONT color=#382000>{user_nick}</FONT>.<BR>Would you like to form a Guild?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_man" image="" itemindex="">
+         <talk_answer link_index="guild_man_3" mid="95"><![CDATA[<html>[Check Guild Points]</html>]]></talk_answer>
+         <talk_answer link_index="guild_man_2" mid="96"><![CDATA[<html>[Withdraw from Guild]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="97"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>You are currently in a Guild.<BR>Do you want to check your <FONT color=#a82424>Guild points</FONT> or <FONT color=#a82424>withdraw</FONT> from the Guild?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_master" image="" itemindex="">
+         <talk_answer link_index="guild_admin" mid="99"><![CDATA[<html>[Manage Guild]</html>]]></talk_answer>
+         <talk_answer link_index="guild_master_3" mid="98"><![CDATA[<html>[Check Guild Points]</html>]]></talk_answer>
+         <talk_answer link_index="guild_war" mid="126"><![CDATA[<html>[Applying to a guild]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="100"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="60"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>Hello <FONT color=#a82424>Guild master</FONT>! You are authorised to <FONT color=#a82424>Manage Guild</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_admin" image="" itemindex="">
+         <talk_answer link_index="guild_admin_5" mid="103"><![CDATA[<html>[Expand Guild]</html>]]></talk_answer>
+         <talk_answer link_index="guild_mark" mid="122"><![CDATA[<html>[Guild Emblem]</html>]]></talk_answer>
+         <talk_answer link_index="guild_admin_1" mid="104"><![CDATA[<html>[Disband Guild.]</html>]]></talk_answer>
+         <talk_answer link_index="guild_master" mid="123"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="82"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>Hello <FONT color=#a82424>Guild master</FONT>! You are authorised to <FONT color=#a82424>Manage Guild</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="no_level" image="" itemindex="">
+         <talk_answer link_index="001" mid="106"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="105"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>You do not belong to any Guild at the moment, <FONT color=#382000>{user_nick}</FONT>.<BR>[Your character level must be level 9 or above to form a Guild.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="116" link_target="sq01_063_enter_adventure.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Hello there! The Guild welcomes you.</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="117"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="112"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>Are you part of the Adventurer's Guild?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_war_fail" image="" itemindex="">
+         <talk_answer link_index="guild_master" mid="128"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="127"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>? <FONT color=#7e12d2>Either it's not the time for registering Guild Battle now, OR, your application has been processed.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 0);</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 1);</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 2);</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 3);</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 4);</exe>
+         <exe type="conexe" true="11" false="7">0</exe>
+         <exe type="conexe" true="9" false="10">1</exe>
+         <exe type="talk">no_guild</exe>
+         <exe type="talk">guild_master</exe>
+         <exe type="talk">guild_man</exe>
+         <exe type="conexe" true="8" false="12">2</exe>
+         <exe type="talk">no_level</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,38000,100);</exe>
+         <exe type="conexe" true="15" false="16">3</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 5);</exe>
+         <exe type="talk">guild_war_fail</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_guild_GetGuildMemberRole(userObjID) == 0</chk>
+         <chk type="custom">api_guild_GetGuildMemberRole(userObjID) == 1</chk>
+         <chk type="lvl" op=">=">9</chk>
+         <chk type="custom">api_guildwar_IsPreparation(userObjID) == 1</chk>
+      </conditions>
+      <exelink idx="guild_menu">6</exelink>
+      <exelink idx="no_guild_0">1</exelink>
+      <exelink idx="guild_man_3">4</exelink>
+      <exelink idx="guild_man_2">3</exelink>
+      <exelink idx="guild_master_3">4</exelink>
+      <exelink idx="guild_war">14</exelink>
+      <exelink idx="guild_admin_5">5</exelink>
+      <exelink idx="guild_mark">13</exelink>
+      <exelink idx="guild_admin_1">2</exelink>
+   </talk>

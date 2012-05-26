@@ -1,0 +1,70 @@
+   <talk>
+      <npcename>n357_arena_ticker</npcename>
+      <npcid>357</npcid>
+      <startexe>29</startexe>
+      <npckname mid="1"><![CDATA[Arena soldier Rebban]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="gogogo" mid="4"><![CDATA[<html>[Enter into the Arena]</html>]]></talk_answer>
+         <talk_answer link_index="trade" mid="33"><![CDATA[<html>[Market deal]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="24"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Arena soldier Rebban${action:Talk}<BR>Welcome, adventurer.<BR><FONT color=#a82424>Colosseum</FONT>is for the people from <FONT color=#a82424>Aletea continent</FONT>to test one's skill.<BR>Did you also come here to test yourself?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="9"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Arena soldier Rebban${action:Talk}<BR><FONT color=#a82424>Coloseum</FONT> is a royal construct that acts as a  <FONT color=#a82424>PvP arena</FONT>. In order to enter, pick [<FONT color=#086171>Enter coloseum</FONT>] from chat menu, or pick [<FONT color=#086171>Change channel</FONT>] from upper right corner of tow UI.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="trade" image="QS_Default.dds" itemindex="374341682">
+         <talk_answer link_index="trade_1" mid="34"><![CDATA[<html>[The Arena Market]</html>]]></talk_answer>
+         <talk_answer link_index="trade_2" mid="35"><![CDATA[<html>[Raider shop]</html>]]></talk_answer>
+         <talk_answer link_index="trade_3" mid="36"><![CDATA[<html>[Last season raider shop]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="37"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="28"><![CDATA[<html>$Arena soldier Rebban$<BR>You can use <FONT color=#a82424>goodness medal</FONT>and raider points to buy items.<BR><BR>※ <FONT color=#7e12d2>At last season raider shop, you can buy last season raider equipments with goodness medal.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="colosseum" image="" itemindex="">
+         <talk_question mid="40"><![CDATA[<html>$Colosseum Manager Royen$<BR><FONT color=#a82424>Colosseum</FONT> is <FONT color=#a82424>PvP arena</FONT> which made by palace to enable adventurers' to fight each other. ※ <FONT color=#7e12d2>You can move to Colosseum Lobby by using [<FONT color=#086171>Change Channel</FONT>] located at upper right UI in village.<BR>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_user_ChangeChannel( userObjID, 1 );</exe>
+         <exe type="conexe" true="6" false="3">0</exe>
+         <exe type="conexe" true="7" false="4">1</exe>
+         <exe type="conexe" true="8" false="5">2</exe>
+         <exe type="conexe" true="9" false="10">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5002,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5003,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5004,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5005,100);</exe>
+         <exe type="conexe" true="15" false="12">0</exe>
+         <exe type="conexe" true="16" false="13">1</exe>
+         <exe type="conexe" true="17" false="14">2</exe>
+         <exe type="conexe" true="18" false="19">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5101,101);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5102,101);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5103,101);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5104,101);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5105,101);</exe>
+         <exe type="conexe" true="24" false="21">0</exe>
+         <exe type="conexe" true="25" false="22">1</exe>
+         <exe type="conexe" true="26" false="23">2</exe>
+         <exe type="conexe" true="27" false="28">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5201,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5202,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5203,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5204,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5205,100);</exe>
+         <exe type="conexe" true="0" false="30">4</exe>
+         <exe type="talk">colosseum</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="custom">api_user_IsMissionAchieved(userObjID, 728) == 1</chk>
+      </conditions>
+      <exelink idx="gogogo">1</exelink>
+      <exelink idx="trade_1">2</exelink>
+      <exelink idx="trade_2">11</exelink>
+      <exelink idx="trade_3">20</exelink>
+   </talk>

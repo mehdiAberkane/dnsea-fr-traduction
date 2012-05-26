@@ -1,0 +1,129 @@
+﻿   <talk>
+      <npcename>n041_duke_stwart</npcename>
+      <npcid>41</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Duke Stewart]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="14"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="15"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Duke Stewart$<BR>All subjects of Lagendia must be loyal to the young king...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="casius1" mid="16"><![CDATA[<html>[Talk] House of Cassius</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="188" link_target="sq_976_xmas_stwart.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="171" link_target="nq17_6702_stewart_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Saint Haven Fortress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="172" link_target="nq17_6703_stewart_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Royal Family</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="173" link_target="nq17_6704_stewart_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171> Six Heroes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="174" link_target="nq17_6705_stewart_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Dragons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="175" link_target="nq17_6706_stewart_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Reign and Rulers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="183" link_target="nq17_6712_stewart_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Stewart's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="184" link_target="nq17_6713_stewart_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Stewart's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="206"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Duke Stewart$<BR>Discipline is non-existent in the Royal family today. Sigh, this makes me worried about the future.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="casius1" image="" itemindex="">
+         <talk_answer link_index="casius2" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Duke Stewart$<BR>After <FONT color=#a82424>King Peter</FONT> left the throne, Lagendia was attacked by waves of tragedies like the <FONT color=#a82424>War of the Magic</FONT> and  the <FONT color=#a82424>Black Dragon</FONT>.  <FONT color=#a82424>King Cassius</FONT> appeared then and defended the castle, saving us all.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="casius2" image="" itemindex="">
+         <talk_answer link_index="talk" mid="18"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="10"><![CDATA[<html>$Duke Stewart$<BR>King Cassius was initially a kinght. He couldn’t bear seeing the kingdom crumble under such evil, thus he took up the throne. So you see, in times of crisis, a hero will emerge.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="26" link_target="mq11_401_castle_sainthaven.xml"><![CDATA[<html>[Lv.22] <FONT color=#a94407>Saint Haven Royal Castle</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="mq11_402_town_of_death.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Town of Death</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="mq11_408_soaring_black_arkmonarch.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Tale of Courage</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="mq11_409_remainder_works.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Unfinished Business</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="49" link_target="mq11_410_sea_monsters_soul.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Being Human</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="mq11_414_odd_sequela.xml"><![CDATA[<html>[Lv.32] <FONT color=#a94407>Bizarre Aftermath</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="mq11_428_revive_serpentra.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>New Crisis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="59" link_target="mq11_429_guardian_geraint.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Guardian Geraint</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="mq11_430_trace_apostle.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407> Whereabouts of Apostles</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="70" link_target="mq11_431_next_town.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Pollution</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="212" link_target="mq11_442_soaring_and_falling.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>One is Supposed to Fall</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="213" link_target="mq11_443_settlement.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Settled</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="71" link_target="sq11_533_disaster_of_mountain_town.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Murder of Mountain Village</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="72" link_target="sq11_534_arrest_the_falsifier1.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Counterfeit Document I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="73" link_target="sq11_535_arrest_the_falsifier2.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Counterfeit Document II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="74" link_target="sq11_536_ringleader_of_the_disaster.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>Culprit of Disaster</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="80" link_target="sq11_459_complete_decode.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Complete Detoxification</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="81" link_target="sq11_460_who_is_whiterose.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Identity of White Rose</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="nq17_6701_stewart_true_heart.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Duke's Heartfelt Feelings</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="sq11_561_busy_bellin.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Busy Blacksmith</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="91" link_target="sq11_562_recycling_iron1.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>Scrap Metal Recycling Plan I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="96" link_target="sq11_563_recycling_iron2.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>Scrap Metal Recycling Plan II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="sq11_596_big_undertaking.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>National Business</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="199" link_target="sq11_641_stewart_ask.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Duke's Request</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="200" link_target="sq11_642_relic_destroyer.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Destruction of the Sacred Article</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="201" link_target="sq11_643_new_clue.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The New Clue</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="202" link_target="sq11_644_more_clue.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>More Clues</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="203" link_target="sq11_645_paganish_name.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Heretic's Name</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="204" link_target="sq11_646_destroyed_sealing_box.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Damaged Sealed Box</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="205" link_target="sq11_647_celestine_rosary.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Azure Rosary</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_qeust" mid="214"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Duke Stewart$<BR>Hmm... I'm a little busy with the young king.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="155"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="156"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="157"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="104"><![CDATA[<html>$Duke Stewart$<BR><FONT color=#387206>{user_class} {user_nick}</FONT>,<BR>we are so grateful for your help extended to the Royal family. <BR>May His Majesty will reward your fierce loyalty.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="158"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="159"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="160"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="108"><![CDATA[<html>$Duke Stewart$<BR>Hello, <FONT color=#387206>{user_nick}</FONT>.<BR>The castle grounds may be big, but there is none here whose trustworthiness is on par with you. A pity, really</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="161"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="162"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="163"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="112"><![CDATA[<html>$Duke Stewart$<BR>You may not have royal blood, nor a high status, but you're a good person. <BR>I'll forgive you for your past mistakes.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="164"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="165"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="166"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="116"><![CDATA[<html>$Duke Stewart$<BR>Ahhh, <FONT color=#387206>{user_nick}</FONT>.<BR>No doubt you have been a great help around here, but you must still remember your manners in front of Royalty.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="167"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="168"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="120"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="169"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="136"><![CDATA[<html>$Duke Stewart$<BR>Hmm?<BR>I'm not sure what this is, but I'll keep it.<BR>It reflects your deep sincerity.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 41 );</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 41 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 6701) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 41 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 41 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 41 ) >= 30</chk>
+      </conditions>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="back_qeust">1</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+   </talk>

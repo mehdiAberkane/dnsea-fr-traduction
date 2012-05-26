@@ -1,0 +1,108 @@
+   <talk>
+      <npcename>n304_auction_manger_duwen</npcename>
+      <npcid>304</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Trading Master Darwin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="12"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="auction_001" mid="3"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="4"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Trading Master Darwin$<BR>Do you want to trade something?<BR></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="about_auction" mid="6"><![CDATA[<html>[Talk] About Trading House</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="79" link_target="sq_987_xmas_duwen.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="nq10_8402_dewen_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Expensive Items</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="nq10_8403_dewen_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Rare Trade</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="nq10_8404_dewen_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Cutting Costs</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="59" link_target="nq10_8405_dewen_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Family</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="nq10_8406_dewen_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Life Lesson</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="66" link_target="nq10_8412_dewen_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Darwin's Gift?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="nq10_8413_dewen_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Darwin's Gift ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="68"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Trading Master Darwin$<BR>Adventurers are busy people so leave the selling of your unwanted goods to us. You may also buy things that others have for sale</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="76" link_target="nq12_7213_illegal_ticket.xml"><![CDATA[<html>[Lv.26] Ticket Resale</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="nq10_8401_basic_of_deal.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Trading Basics</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="73"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Trading Master Darwin$<BR>Can I help you with anything else?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="about_auction" image="" itemindex="">
+         <talk_answer link_index="talk" mid="31"><![CDATA[<html>[Pick another conversation topic.]</html>]]></talk_answer>
+         <talk_question mid="18"><![CDATA[<html>$Trading Master Darwin$<BR>Adventurers are busy people so leave the selling of your unwanted goods to us. You may also buy things that others have for sale</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="32"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present" mid="33"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="20"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="34"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="23"><![CDATA[<html>$Trading Master Darwin$<BR>I've completed many successful trades but this is the first time I'm getting something for absolutely nothing.<BR>Erm, thank you.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="37"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="auction_0" mid="35"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="36"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="38"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="25"><![CDATA[<html>$Trading Master Darwin$<BR><FONT color=#387206>{user_nick}</FONT>, do you have something you'd like to trade?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="41"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="auction_30" mid="39"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="40"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="42"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="43"><![CDATA[<html>$Trading Master Darwin$<BR>I'm sure you'd like a reliable person to help you out. Come, I shall oversee your trades personally.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="46"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="auction_60" mid="44"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="45"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="47"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="48"><![CDATA[<html>$Trading Master Darwin$<BR>I used to think friendship is a waste of time… <BR>but I think that mindset has changed after knowing you, {user_nick}.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="51"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="auction_90" mid="49"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="50"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="52"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="53"><![CDATA[<html>$Trading Master Darwin$<BR>Ahhh, here comes my VIP,<FONT color=#387206>{user_nick}</FONT>.<BR>You deserve special treatment, unlike the rest.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenMarket(userObjID);</exe>
+         <exe type="conexe" true="3" false="0">0</exe>
+         <exe type="conexe" true="6" false="4">1</exe>
+         <exe type="conexe" true="7" false="5">2</exe>
+         <exe type="conexe" true="8" false="9">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 304 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 304 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 8401) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 304 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 304 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 304 ) >= 30</chk>
+      </conditions>
+      <exelink idx="auction_001">1</exelink>
+      <exelink idx="back_talk">2</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="gift">12,13</exelink>
+      <exelink idx="back_present">2</exelink>
+      <exelink idx="back_gift">2</exelink>
+      <exelink idx="auction_0">1</exelink>
+      <exelink idx="present_0">10,11</exelink>
+      <exelink idx="auction_30">1</exelink>
+      <exelink idx="present_30">10,11</exelink>
+      <exelink idx="auction_60">1</exelink>
+      <exelink idx="present_60">10,11</exelink>
+      <exelink idx="auction_90">1</exelink>
+      <exelink idx="present_90">10,11</exelink>
+   </talk>

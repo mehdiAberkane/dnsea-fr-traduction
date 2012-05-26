@@ -1,0 +1,285 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq32_8603_cannot_eat</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8603</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>347210504	검은 광석
+(벨린 호감도 템)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Don't eat that]]></qkname>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>62</npcid>
+         <npcename>n062_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-noquest" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Blacksmith Berlin$<BR>Thanks to <FONT color=#a82424>Trainer</FONT> kid, there’s lots of order of horseshoes. <BR>It’s lot easier to make horseshoes than weapons. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-noquest" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$Master Archer Ithilien $<BR>How is the horse that <FONT color=#a82424>Lindsay</FONT> was looking after? <BR>It worries me, they will get sick if the trainer does not take good care of them. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-a" mid="6"><![CDATA[<html>(Smiling happily)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Trainer Lindsay $<BR>My friend <FONT color=#387206> {user_nick}</FONT>, you come so often lately.<BR>Are you into me? HAHAHA!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-b" mid="86"><![CDATA[<html> …Who? </html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Trainer Lindsay$<BR>I have an another concern that I want to talk with My honey.<BR>
+Listen!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-c" mid="89"><![CDATA[<html> (There is a misunderstanding) </html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Trainer Lindsay${action:Kiss}<BR>My Honey. YOU. Um…You are into me. Be proactive! <BR>Love is war. You have to gain it! Ok? I'm kind and generous!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-d" mid="139"><![CDATA[<html> Why is he sick? </html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Trainer Lindsay$<BR>Tom is sick again. He is still sick after giving him your mediation. <BR>ME, a <FONT color=#a82424>Trainer</FONT> so I observed. I know why he is sick! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-e" mid="141"><![CDATA[<html>(What is she saying…)</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Trainer Lindsay$<BR>Littery…? Um, Horse shouldn’t eat. Time eats all the time. <BR> I tell him not to but he never listens to me. YOU, Help me! Please help me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-acceppted" mid="31"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Don't eat that$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR><FONT color=#a82424>Master Archer Ithilien</FONT> knows well about animals. She is so smart. <BR> Go and ask her please! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Blacksmith Berlin$<BR>Thanks to <FONT color=#a82424>Trainer</FONT> kid, there’s lots of order of horseshoes. <BR>It’s lot easier to make horseshoes than weapons. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="94"><![CDATA[<html> Littery?! </html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[html>$Master Archer Ithilien$<BR>Ah, is that what she said? <BR>That means the horse is eating <FONT color=#a82424>Littery</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-b" mid="96"><![CDATA[<html> What should I do? </html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Master Archer Ithilien$<BR>It’s the hay you lay on ground in the barn. The horse shouldn’t eat that. That’s why he was sick. <BR> Well, it’s important making sure that he doesn’t eat littery. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-b" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Master Archer Ithilien$<BR>I hear that <FONT color=#a82424>wood shavings</FONT> are good for it since, they can’t eat it. Where could you get wood shavings? <BR> Ah, go ask <FONT color=#a82424>Blacksmith Berlin</FONT> about it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Master Archer Ithilien$<BR>Get wood shavings from <FONT color=#a82424>Blacksmith Berlin </FONT> and lay it on the barn. <BR>If you make horse not to eat littery, then you can change his habit. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="142"><![CDATA[<html>$Trainer Lindsay$<BR>Wood shavings? …Ummmm, Sorry. I don't know~<BR><FONT color=#a82424>Blacksmith Berlin</FONT>? Ah, MR Berlin~ <FONT color=#7e12d2>(Lindsay puts her head a little on side)</FONT> Berlin, Who?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-a" mid="144"><![CDATA[<html>Come on, please help us!</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Blacksmith Berlin$<BR>Wood shavings? I’m a blacksmith not a carpenter. <BR>Why are대you looking for wood shavings in a blacksmith? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-b" mid="146"><![CDATA[<html> What can I give you? </html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$Blacksmith Berlin$<BR>
+I can’t give you that for free… I need to get something right? <BR>It’s called give and take. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-b" image="QS_Default.dds" itemindex="347210504">
+      <talk_question mid="147"><![CDATA[<html>$Blacksmith Berlin$<BR> Get me a <FONT color=#a82424>Dark Stone</FONT>.<BR>If you go to <FONT color=#a82424>Dark Mine</FONT> you should find one. It’s too easy for a adventurer like you right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3" image="QS_Default.dds" itemindex="347210504">
+      <talk_question mid="122"><![CDATA[<html>$Blacksmith Berlin$<BR>Have you heard of <FONT color=#a82424>Dark Stone</FONT>? You can find it somewhere in Dark Mine. <BR>I’ll help you if you get me one of that. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-a" image="QS_Default.dds" itemindex="347210504">
+      <talk_answer link_index="n091_trader_bellin-3-c" mid="149"><![CDATA[<html> (Give) </html>]]></talk_answer>
+      <talk_answer link_index="n091_trader_bellin-3-b" mid="150"><![CDATA[<html> (Don't give) </html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Blacksmith Berlin$<BR>You did get it!<BR>Here, hand me over the <FONT color=#a82424>Dark Stone</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-b" image="QS_Default.dds" itemindex="347210504">
+      <talk_question mid="151"><![CDATA[<html>$Blacksmith Berlin$<BR>What? Are you kidding me? Why did you bring it if you are not going to give it to me? <BR>Oh my god!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-c" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-d" mid="153"><![CDATA[<html> Thank you. </html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$Blacksmith Berlin$<BR>Ok, good. <BR>I’ll send <FONT color=#a82424>wood shavings</FONT> to <FONT color=#a82424>Trainer Lindsay</FONT> as I promised. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-d" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="154"><![CDATA[<html>$Blacksmith Berlin$<BR>So tell <FONT color=#a82424>Trainer Lindsay</FONT> about it.<BR> I’ll send them as soon as they get ready. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-e" image="QS_Default.dds" itemindex="347210504">
+      <talk_question mid="165"><![CDATA[<html>$Blacksmith Berlin$<BR>Have you heard of <FONT color=#a82424>Dark Stone</FONT>? You can find it somewhere in Dark Mine. <BR>I’ll help you if you get me one of that. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="155"><![CDATA[<html>$Blacksmith Berlin$<BR>So tell <FONT color=#a82424>Trainer Lindsay</FONT> about it.<BR> I’ll send them as soon as they get ready. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-4-a" mid="158"><![CDATA[<html> Mr. Berlin will send you the wood shavings. </html>]]></talk_answer>
+      <talk_question mid="157"><![CDATA[<html>$Trainer Lindsay$<BR>Oh my friend!! Come here~!!<BR><FONT color=#7e12d2>(Lindsay waves her hand)</FONT></html>>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4-a" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-4-b" mid="160"><![CDATA[<html> (Lindsay smiles) </html>]]></talk_answer>
+      <talk_question mid="159"><![CDATA[<html>$Trainer Lindsay${action:Kiss}<BR>WOW~!! Really?<BR>Thank you! My friend! You are a nice guy! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-4-c" mid="162"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="161"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4-c" image="" itemindex="">
+      <talk_question mid="163"><![CDATA[<html>$Trainer Lindsay$<BR>Thanks to you Tom is not sick anymore.<BR>
+…Weren’t be sick? Um, too hard. Anyway~<BR>
+See you!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8603</exe>
+         <exe type="talk" npc="n062_trainer_lindsay">1</exe>
+         <exe type="recompense_view">86030,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="30002" exe="" onexe="">347210504</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">347210504</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="5">0</exe>
+         <exe type="talk" npc="n091_trader_bellin">a</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delitem" num="1">347210504</exe>
+         <exe type="talk" npc="n091_trader_bellin">e</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">86030,,,,,</exe>
+         <exe type="complete">8603</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 62, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n091_trader_bellin" sub="b">0,2,1</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin">0</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="d">6,2,4,3</exelink>
+   <exelink qstep="4" npc="n062_trainer_lindsay" sub="b">0</exelink>
+   <exelink qstep="4" npc="n062_trainer_lindsay" sub="c">1,2</exelink>
+   <journal_data recompense="0:86030" quest_title="먹으면 안 돼" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Advice from Ithilien]]></title>
+         <contents mid="26"><![CDATA[<html>See Master Archer Ithilien and seek an advice for Lindsay’s horse. <BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Master Archer Ithilien </FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="28"><![CDATA[Seek an advice from Master Archer Ithilien regarding the horse]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[To Blacksmith Berlin]]></title>
+         <contents mid="75"><![CDATA[<html>See Blacksmith Berlin and get wood shavings. <BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Blacksmith Berlin </FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="77"><![CDATA[See Blacksmith Berlin and get wood shavings]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Berlin's Favor]]></title>
+         <contents mid="79"><![CDATA[<html>Deliver a Black Stone to Blacksmith Berlin.<BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="81"><![CDATA[Deliver a Black Stone to Blacksmith Berlin]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[To Trainer Lindsay]]></title>
+         <contents mid="83"><![CDATA[<html>Blacksmith Berlin has promised to send wood shavings. Report to Trainer Lindsay.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay </FONT></html>]]></contents>
+         <destination mid="181"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="182"><![CDATA[Report to Trainer Lindsay]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>8602</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

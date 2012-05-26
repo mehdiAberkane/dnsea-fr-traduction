@@ -1,0 +1,61 @@
+   <talk>
+      <npcename>n710_scholar_hancock</npcename>
+      <npcid>710</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Heraldry Scholar Hancock]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="trade_001" mid="98"><![CDATA[<html>[Shop]</html>]]></talk_answer>
+         <talk_answer link_index="emblem_001" mid="95"><![CDATA[<html>[Heraldry Production]</html>]]></talk_answer>
+         <talk_answer link_index="openglyphlift_001" mid="226"><![CDATA[<html>[Returning Heraldry]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="4"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Heraldry Scholar Hancock${action:Talk}<BR>The weather today… ...<BR> Hmmm, as usual, it is always wet.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="180"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Hancock$<BR>The books I read recently feel damp. <BR> Compared to these Heraldry, I guess I should learn how to manufacture drying agents instead.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="202" link_target="sq15_832_guardian_heart.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>The Guardian's Heart</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="203" link_target="sq15_841_motive_of_betrayal.xml"><![CDATA[<html>[Lv.42] <FONT color=#086171>The Reason behind the Betrayal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="181" link_target="sq15_800_special_lubricant.xml"><![CDATA[<html>[Lv.42] <FONT color=#086171>Special Lubricant</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="187" link_target="sq15_811_questionable_letter.xml"><![CDATA[<html>[Lv.44] <FONT color=#086171>The Mysterious Letter</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="190" link_target="sq15_818_ancient_draft.xml"><![CDATA[<html>[Lv.45] <FONT color=#086171>The Ancients' Design</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="191" link_target="sq15_819_tetra_stone.xml"><![CDATA[<html>[Lv.45] <FONT color=#086171>Tetra Stone</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="192" link_target="sq15_820_special_treasure_box.xml"><![CDATA[<html>[Lv.45] <FONT color=#086171>The Unique Jewelry Box</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="193" link_target="sq15_821_power_of_tetrastone.xml"><![CDATA[<html>[Lv.45] <FONT color=#086171>Power of the Tetra Stone</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="194" link_target="sq15_822_disappeared_tetrastone.xml"><![CDATA[<html>[Lv.45] <FONT color=#086171>Disappearance of the Tetra Stone</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="211" link_target="dq15_1032_dauntless.xml"><![CDATA[<html>[A day] <FONT color=#086171>Indomitable scholar</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="204" link_target="sq15_836_opening_is_like_that.xml"><![CDATA[<html>[Lv.46] <FONT color=#086171>This is How it Begins</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="205" link_target="sq15_837_shameful_past.xml"><![CDATA[<html>[Lv.46] <FONT color=#086171>The Hidden Past</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="219" link_target="sq15_860_real_treasure1.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>Real treasure I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="220" link_target="sq15_861_real_treasure2.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>Real treasure  II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="221" link_target="sq15_862_real_treasure3.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>Real treasure  III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="222" link_target="sq15_863_long_live.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>To be remembered for long</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="223"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="177"><![CDATA[<html>$Heraldry Scholar Hancock$<BR>You shouldn't let the wet weather dampen your spirits!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenCompoundEmblem(userObjID);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35002,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35003,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35004,100);</exe>
+         <exe type="conexe" true="2" false="7">0</exe>
+         <exe type="conexe" true="3" false="8">1</exe>
+         <exe type="conexe" true="4" false="9">2</exe>
+         <exe type="conexe" true="5" false="10">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35005,100);</exe>
+         <exe type="custom">api_ui_OpenGlyphLift(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="trade_001">6</exelink>
+      <exelink idx="emblem_001">1</exelink>
+      <exelink idx="openglyphlift_001">11</exelink>
+   </talk>

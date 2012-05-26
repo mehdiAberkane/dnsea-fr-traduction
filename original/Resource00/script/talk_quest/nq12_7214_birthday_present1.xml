@@ -1,0 +1,306 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq12_7214_birthday_present1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7214</qid>
+      <designer>박정민</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Birthday gift for Harori I]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Merchant Kelly$<BR>Mr.Berlin is strange these days.<BR>Why don't you visit him once?<BR>※ <FONT color=#7e12d2> You need to receive a quest from Blacksmith Berlin.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Master Sorceress Stella$<BR>Everybody is talking about Harori or something .<BR> I don't understand why the little girl is so loved.<BR>※ <FONT color=#7e12d2>You need to accept a quest from Blacksmith Berlin.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Master Archer Ithilien$<BR>A human female singer called Harori will be visiting here soon .<BR>I don't really know about human arts, but I think asong is always good to comfort hearts.<BR>※ <FONT color=#7e12d2>You need to accept a quest from Blacksmith Berlin.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Lady Kayleen$<BR>Honestly I think I'm 100 times prettier than Harori or something.<BR>Guys like YOUNG girls blindly.<BR>※ <FONT color=#7e12d2>You need to accept a quest from Blacksmith Berlin.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="16"><![CDATA[<html>Do you wanna ask me something privately?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Blacksmith Berlin$<BR>Oh, here you are.<BR><FONT color=#7e12d2>(Berlin lowers his voice)</FONT><BR>I have something to ask you privately.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Blacksmith Berlin$<BR>Actually, Harori's fan meeting is not just a fan meeting at this time. It's a celebration for Harori's 15th birthday party, too. So I want to give her a present as a fan.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Berlin$<BR>I have no idea what girls like. Can you ask around instead of me? Of course, keep this secret that I'm try to get some information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-accepetted" mid="22"><![CDATA[<html><FONT color=#086171>Accept quest</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Birthday gift for Harori$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Blacksmith Berlin$<BR>Thank you. Merchant Kelly, Master Sorceress Stella, Master Archer Ithilien, or Lady Kayleen would know well about things that women are fond of.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Master Sorceress Stella$<BR>Everybody talks about Harori or something .<BR> I don't understand why the little girl is so loved.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Master Archer Ithilien$<BR>A human female singer called Harori will be visiting here soon .<BR>I don't really know about human arts, I think a song is always good to comfort hearts.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Lady Kayleen$<BR>Honestly, I think I'm 100 times prettier than Harori or something.<BR>Guys like YOUNG girls blindly.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-a" mid="49"><![CDATA[<html>I came here to ask something.</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Merchant Kelly$<BR>Welcome! What would you like to buy today?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-a" image="QN_Sonya.dds" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-b" mid="51"><![CDATA[<html>Do you know things that women like?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Merchant Kelly$<BR>Phew, did you? <BR><FONT color=#7e12d2>(Kelly seems so disappointed.)</FONT><BR>What do you want to know?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2" mid="53"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Merchant Kelly$<BR>Usually guys think flowers, expensive luxuries. In fact, cash is the best. Presents by men are often not of women's tastes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2" image="" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Merchant Kelly$<BR>If giving cash is not really your style, giving gift cards is another option. <BR>Next time, buy something and not just ask!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2-a" mid="58"><![CDATA[<html>Do you know things that women like?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Master Sorceress Stella$<BR>Cute little boy? What brings you here today?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3" mid="60"><![CDATA[<html>A special present?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Master Sorceress Stella$<BR>Men make the mistake of assuming that women like expensive things. They are always giving perfume, cosmetics and such. But women want something special.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Master Sorceress Stella$<BR>For example, I want cute laboratory mice. About 100s. Don't think every woman likes the same thing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="66"><![CDATA[<html>Do you know things that women like?<</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Archer Ithilien$<BR>Is there anything you wanna tell me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-4" mid="68"><![CDATA[<html>Present from the heart?</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Master Archer Ithilien$<BR>Well? I don't know well about a female human's taste. But anyone would be touched by the present from the heart.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-4" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Master Archer Ithilien$<BR> Sculpture or cookies made by yourself. People must be moved if they have that kind of present.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-4-a" mid="72"><![CDATA[<html>I'd like to ask what present woman would like.</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Lady Kayleen$<BR>Huh? What happened?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-4-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-5" mid="74"><![CDATA[<html>Well. Just curious.</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Lady Kayleen$<BR>Something valuabe of course. Not only expensive but something unique would be better. Why do you ask?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-5" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$Lady Kayleen$<BR>So, you have too much free time. I can't believe that you’re asking around that kind of thing at this time. Don't bother me, go away! <FONT color=#7e12d2>(Go to Blacksmith Berlin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-a" mid="82"><![CDATA[<html>(Tell about what you heard from 4 people)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Blacksmith Berlin$<BR>Have you asked about thing that girls like?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-b" mid="83"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Blacksmith Berlin$<BR>So, to sum up, it should be something suit to taste, special, from heart, unique.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-c" mid="84"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-c" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#7e12d2>(Berlin holds his head.)</FONT><BR>Hmm, it's difficult. What I gave to my old wife ever, were just a pair of pretty shoes. I need to think about it what can meet all that conditions.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7214</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+         <exe type="recompense_view">72140,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">72140,,,,,</exe>
+         <exe type="complete">7214</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 91, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="c">2</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="accepetted">0,1</exelink>
+   <exelink qstep="1" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="1" npc="n092_trader_kelly" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n045_soceress_master_stella" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n038_royal_magician_kalaen" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="b">0</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="c">1,2</exelink>
+   <journal_data recompense="72140" quest_title="하로리의 생일선물Ⅰ" chapterid="" quest_level="26" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Talk to Merchant Kelly]]></title>
+         <contents mid="90"><![CDATA[<html>Ask Merchant Kelly about things that women would like.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Talk to Merchant Kelly]]></destination>
+         <todo_msg mid="92"><![CDATA[New quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Talk to Master Sorceress Stella]]></title>
+         <contents mid="95"><![CDATA[<html>Ask Master Sorceress Stella about things that women would like.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="97"><![CDATA[Talk to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[Talk to Master Archer Ithilien]]></title>
+         <contents mid="100"><![CDATA[<html>Ask Master Archer Ithilien about things that women would like.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="102"><![CDATA[Talk to Master Archer Ithilien.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[Talk to Lady Kayleen]]></title>
+         <contents mid="105"><![CDATA[<html>Ask Lady Kayleenabout things that women would like.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Lady Kayleen</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[Talk to Lady Kayleen]]></destination>
+         <todo_msg mid="107"><![CDATA[Talk to Lady Kayleen.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[Talk to Blacksmith Berlin]]></title>
+         <contents mid="111"><![CDATA[<html>Tell Blacksmith Berlin about things that women would like.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="113"><![CDATA[Talk to Blacksmith Berlin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7213</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

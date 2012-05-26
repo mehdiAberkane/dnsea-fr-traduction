@@ -1,0 +1,47 @@
+﻿   <talk>
+      <npcename>n034_cleric_master_germain</npcename>
+      <npcid>34</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Cleric Jermain]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>My Master died protecting our faith and this place. I will carry on this legacy and share with you my knowledge as long as you are willing.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>My Master died protecting our faith and this place. I will carry on this legacy and share with you my knowledge as long as you are willing.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="9" link_target="mq08_205_ancient_relic.xml"><![CDATA[<html>[Lv.12] <FONT color=#a94407>Ancient Relic</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="171" link_target="mq08_225_get_back.xml"><![CDATA[<html>[Lv12] <FONT color=#a94407>Get back the thing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="mq08_206_surprise_attack.xml"><![CDATA[<html>[Lv.14] <FONT color=#a94407>Outwit Your Opponent!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="143" link_target="sq08_314_entity_of_the_darkness.xml"><![CDATA[<html>[Lv.12] <FONT color=#086171>Black Aura</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="113" link_target="sq08_255_ashes_of_saint1.xml"><![CDATA[<html>[Lv.13] <FONT color=#086171>Ashes of a Saint I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="114" link_target="sq08_256_ashes_of_saint2.xml"><![CDATA[<html>[Lv.13] <FONT color=#086171>Ashes of a Saint II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="115" link_target="sq08_257_ashes_of_saint3.xml"><![CDATA[<html>[Lv.13] <FONT color=#086171>Ashes of a Saint III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="116" link_target="sq08_258_ashes_of_saint4.xml"><![CDATA[<html>[Lv.13] <FONT color=#086171>Ashes of a Saint IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="155" link_target="nq11_5701_lily_hope.xml"><![CDATA[<html>[Lv.13] <FONT color=#086171>Lily's Wish</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="166" link_target="sq08_366_disaster_pot.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Simply Disastrous</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="156" link_target="sq08_284_test_cleric1.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Destiny I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="157" link_target="sq08_285_test_cleric2.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Destiny II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="158" link_target="sq08_343_change_job4.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="159" link_target="sq08_335_guard_over_fire.xml"><![CDATA[<html>[Lv.17] <FONT color=#086171>Beware of Fire</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="160" link_target="sq08_321_sign_of_death1.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>Aura of Death I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="161" link_target="sq08_333_invisible_body1.xml"><![CDATA[<html>[Lv.21]<FONT color=#086171> Invisible Body I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="162" link_target="sq08_334_invisible_body2.xml"><![CDATA[<html>[Lv.21]<FONT color=#086171> Invisible Body II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="172"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Master Cleric Jermain$<BR>My Master, the great Priest William was condemned and died under the hands of barbarians during the uprising many years back. <BR> I hope to carry on my Master's teachings, and make him proud.]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+   </talk>

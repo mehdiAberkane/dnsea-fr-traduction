@@ -1,0 +1,289 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq12_7218_new_worker2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7218</qid>
+      <designer>박정민</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Find a new worker II]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>65</npcid>
+         <npcename>n065_goblinson04_gosuk</npcename>
+         <npckname>고숙이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Merchant Pero$<BR>No refund! No after service! These are the rules of my business.<BR>※ You need to receive a quest from Blacksmith Berlin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Gosuk$<BR>Gosuk become stronger!!<BR>Now I'm hunting Ogre!<BR>※You need to receive a quest from Blacksmith Berlin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="11"><![CDATA[<html>Are you having trouble on training spiders?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#7e12d2>(Berlin doesn't look well.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Blacksmith Berlin$<BR>Having trouble training spiders?<BR>wyhuhauhuhuhahua!<BR><FONT color=#7e12d2>(Berlin cries strangely.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="15"><![CDATA[<html>Oh dear….</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Blacksmith Berlin$<BR>Yes, <FONT color=#a82424>I was not able to train the spiders!<BR>They are too stupid!<BR>Also, I paid a fine for their disturbance!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-d" mid="17"><![CDATA[<html>Yes. Calm down, I'll be right back.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Berlin$<BR>Things have become such a mess and all you can say is just "oh dear…"?<BR>Go to <FONT color=#a82424>Merchant Pero</FONT> right now, and find a suitable worker!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-e" mid="19"><![CDATA[<html><FONT color=#086171>Accept quest</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Find a new worker II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-e" image="" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Blacksmith Berlin$<BR>Yeah… huuuu huuuu…<BR>
+Nothing is solved even when I'm upset, gonna drink a cup of cold water to chill out.<BR>
+Go hurry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Blacksmith Berlin$<BR>What are you doing?  Go to <FONT color=#a82424>Merchant Pero</FONT> right away!!<BR><FONT color=#7e12d2>(Berlin's face is trembling.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Gosuk$<BR>Gosuk become stronger!<BR>Now I'm hunting Ogre!<BR>※ You need to complete the talk on the previous stage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="25"><![CDATA[<html>(Explain Berlin's situation)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant Pero$<BR>Hey, How is the new worker training going?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-b" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Merchant Pero$<BR>Oh dear…!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-c" mid="29"><![CDATA[<html>Are there any good workers around?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Merchant Pero$<BR>I'm afraid, no refund, no after service are my rules.<BR>So what I can say is only "<FONT color=#a82424>oh dear…!</FONT>" in this kind of situation. wahahahaha…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-c" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-2" mid="31"><![CDATA[<html>Are there any useful Goblins?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Merchant Pero$<BR><FONT color=#7e12d2>(Pero feels annoyed )</FONT><BR>Wait! To sum up, you need something more intelligent than the spider, right?<BR> For instance, Goblin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Merchant Pero$<BR>I've seen a rather smart <FONT color=#a82424>Goblin</FONT> hanging around Foothills of Black Mountain. Why don't you catch it alive?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-2" image="" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-2-a" mid="36"><![CDATA[<html>What? Is that you, useful Goblin?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Gosuk$<BR>Human!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-2-a" image="" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-2-b" mid="43"><![CDATA[<html>Alright. By the way, Mr. Berlin is looking for a worker.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Gosuk$<BR>Gosuk isn't just a good enough Goblin anymore!<BR>I'm a strong Goblin!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-2-b" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-2-c" mid="44"><![CDATA[<html>Well, I was about to…</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Gosuk$<BR><FONT color=#7e12d2>(Gosuk is in bad mood quickly after hearing Berlin's situation)<BR></FONT>Then you came to hunt Gosuk?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-2-c" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-2-d" mid="45"><![CDATA[<html>Hmm… it's difficult….</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Gosuk$<BR><FONT color=#7e12d2>(Gosuk sheds tears)</FONT><BR>N…no! Gosuk has to find Grandpa goblin!<BR>
+If I'm captured at forge, I can't find Granpa goblin…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-2-d" image="" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-2-e" mid="46"><![CDATA[<html>An Ogre?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Gosuk$<BR>Human Berlin is a pitiful goblin.<BR>But I can't help him goblin.<BR>
+goblingoblin… then, strong Ogre is a better goblin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-2-e" image="" itemindex="">
+      <talk_answer link_index="n065_goblinson04_gosuk-3" mid="47"><![CDATA[<html>(Get the Ogre trap that Gosuk made)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Gosuk$<BR>Gosuk made a trap to hunt Ogre goblin.<BR>
+Hunt Ogre with this goblin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-3" image="QM_goblin_son04.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Gosuk$<BR>You can hunt a black Ogre over there goblin!<BR>Gosuk make a trap well goblin!<BR><FONT color=#7e12d2>(Gosuk points to the Dark Overlord Training Camp)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n065_goblinson04_gosuk-4" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Gosuk$<BR>Gosuk hunted an Ogre with a trap goblin!<BR>Gosuk make a trap well goblin!<BR> Give Ogre to human Berlin goblin!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-a" mid="54"><![CDATA[<html>It is….</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Blacksmith Berlin$<BR>So, have you found any useful workers?<BR><FONT color=#7e12d2>(Berlin has got dark circles under his eyes.)</FONT><BR>Perhaps that bulky Ogre isn't the worker, is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-b" mid="56"><![CDATA[<html>It’s smarter than spiders and strong though….</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Blacksmith Berlin$<BR>What…?!<BR>
+How can I manage the wild Ogre as a worker!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-b" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-c" mid="59"><![CDATA[<html>(Takes Jakobo with a disappointed face.)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Blacksmith Berlin$<BR>
+<FONT color=#7e12d2>(Berlin's dark eye circles get darker)</FONT><BR>Yes…, anything would be better than spiders….<BR>
+I have no choice, the Society for the Prevention of Cruelty to Animals will be coming here in a couple of days….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-4-d" mid="62"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Find a new worker II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4-d" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#7e12d2>(Berlin stars at Ogre Jakobo sadly and starts teaching it to jump.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7218</exe>
+         <exe type="recompense_view">72180,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300335</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">987</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200987</exe>
+         <exe type="addquestitem" num="1">300334</exe>
+         <exe type="huntitem" num="1" exe="7,8,9" onexe="">300334</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">72180,,,,,</exe>
+         <exe type="complete">7218</exe>
+         <exe type="delquestitem" num="-1">300334</exe>
+         <exe type="delquestitem" num="-1">300335</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 91, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="e">0</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n065_goblinson04_gosuk" sub="b" />
+   <exelink qstep="2" npc="n065_goblinson04_gosuk" sub="c" />
+   <exelink qstep="2" npc="n065_goblinson04_gosuk" sub="d" />
+   <exelink qstep="2" npc="n065_goblinson04_gosuk" sub="e" />
+   <exelink qstep="2" npc="n065_goblinson04_gosuk" sub="3">0,1,2,3,4,6</exelink>
+   <exelink qstep="4" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="4" npc="n091_trader_bellin" sub="c">0</exelink>
+   <exelink qstep="4" npc="n091_trader_bellin" sub="d">1,2,3,4</exelink>
+   <journal_data recompense="72180" quest_title="새로운 일꾼 구하기Ⅱ" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Request for a worker]]></title>
+         <contents mid="75"><![CDATA[<html>Get information from Merchant Pero for another worker.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Pero</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Merchant Pero]]></destination>
+         <todo_msg mid="77"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_goblin_son04.dds</contents_image>
+         <destination_pos>13,n65</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>65</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Catch a Goblin alive]]></title>
+         <contents mid="80"><![CDATA[<html>Go to Foothills of Black Mountain and catch a Goblin alive.<BR><BR><FONT color=#086171>Foothills of Black Mountain</FONT><FONT color=#a82424> → Gosuk</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Gosuk]]></destination>
+         <todo_msg mid="82"><![CDATA[Talk to Gosuk at Foothills of Black Mountain.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_Ogre_Black04.dds</contents_image>
+         <destination_pos>364,0,0</destination_pos>
+         <destination_mode>custom:361@1,362@1,363@1,364@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Dark Overlord Training Camp]]></title>
+         <contents mid="87"><![CDATA[<html>Catch Ogre Jakobo alive at Dark Overlord Training Camp.<BR><BR><FONT color=#086171>Foothills of Black Mountain(Dark Overlord Village)</FONT> <FONT color=#a82424>→ Dark Overlord Training Camp</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Dark Overlord Training Camp]]></destination>
+         <todo_msg mid="89"><![CDATA[go to Dark Overlord Training Camp.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Pass Ogre Jakobo]]></title>
+         <contents mid="93"><![CDATA[<html>Pass Ogre Jakobo to Blacksmith Berlin at Saint Haven.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="95"><![CDATA[Talk to Blacksmith Berlin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7217</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

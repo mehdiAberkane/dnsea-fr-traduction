@@ -1,0 +1,338 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_478_the_name_geraint</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>478</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Name Geraint]]></qkname>
+      <qnpc>
+         <npcid>295</npcid>
+         <npcename>n295_girly_voice</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>297</npcid>
+         <npcename>n297_girly_voice</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n295_girly_voice-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(This place feels odd. But cannot pinpoint what)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n297_girly_voice-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(This place feels odd. But cannot pinpoint what)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-a" mid="8"><![CDATA[<html>Waiting for me?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant Kelly$<BR>I was waiting for a visitor, welcome.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-b" mid="11"><![CDATA[<html>(Not feeling good at all)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant Kelly$<BR>Yes.<BR>I had a favor to ask.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-c" mid="13"><![CDATA[<html>What kind of an item?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Kelly$<BR>Frankly, my grandma had a prolonged illness, but recently, her health became worse. Whenever she wakes up, she searches for that item… Will you help me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-c" image="QW_45.dds" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-d" mid="15"><![CDATA[<html>Ghost Town of Deserted Woods?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant Kelly$<BR>It's my grandma's youth treasure. While she was moving away quickly, she left her treasure there.<BR>That place became the <FONT color=#a82424>Ghost Town of Deserted Woods</FONT>, a ruin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-e" mid="17"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Merchant Kelly$<BR>I know its dangerous. If it was possible, I would go by myself, but I couldn't go since I'm only a merchant who doesn't know how to fight. I beg you, please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-acceppted" mid="19"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$The Name Geraint$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="QW_45.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Merchant Kelly$<BR><FONT color=#a82424>Ghost Town of Deserted Woods</FONT> is located well within the Deserted Woods. If you look closely, you'll find it.<BR>I heard that item is an ornament made by carving out wood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n297_girly_voice-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(This place feels odd. But cannot pinpoint what)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n295_girly_voice-1" image="" itemindex="">
+      <talk_answer link_index="n295_girly_voice-1-a" mid="24"><![CDATA[<html>(I can hear faint voice of a young girl)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(This place feels odd.</FONT><BR><FONT color=#7e12d2>Geraint's jewel is shining)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n295_girly_voice-1-a" image="" itemindex="">
+      <talk_answer link_index="n295_girly_voice-1-b" mid="26"><![CDATA[<html>(Geraint's jewel is shining)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Young Girl's Voice$<BR>…Are we dead?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n295_girly_voice-1-b" image="" itemindex="">
+      <talk_answer link_index="n295_girly_voice-1-c" mid="28"><![CDATA[<html>(Geraint's jewel is shining)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Young Girl's Voice$<BR>I'm Lisa.<BR>Who are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n295_girly_voice-1-c" image="" itemindex="">
+      <talk_answer link_index="n295_girly_voice-1-d" mid="30"><![CDATA[<html>(Geraint's jewel is shining a slight blank light)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Young Girl's Voice$<BR>Haha, You're stupid~ You don't even know your name? <FONT color=#7e12d2>(Girl claps her hand)</FONT> Okay, from now on, your name is <FONT color=#a82424>Geraint</FONT>!! A few nights ago, our dog died and his name was Geraint.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n295_girly_voice-1-d" image="" itemindex="">
+      <talk_answer link_index="n295_girly_voice-2" mid="32"><![CDATA[<html>(The voice slowly fades away)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Young Girl's Voice$<BR>You don't like it? Out dog was big and had yellow hair just like you.<BR>So the name fits you well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n295_girly_voice-2" image="" itemindex="">
+      <talk_answer link_index="n295_girly_voice-2-a" mid="34"><![CDATA[<html>(It maybe traces of a girl who used to live here)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(Geraint's jewel blinks a few times and fades away.</FONT><BR><FONT color=#7e12d2>Now, there is nothing more that appear to be odd)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n295_girly_voice-2-a" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(Now, there is nothing more that appear to be odd)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n297_girly_voice-2" image="" itemindex="">
+      <talk_answer link_index="n297_girly_voice-2-a" mid="37"><![CDATA[<html>(Geraint's jewel is shining)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(This is a place where I can't just pass by)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n297_girly_voice-2-a" image="" itemindex="">
+      <talk_answer link_index="n297_girly_voice-2-b" mid="39"><![CDATA[<html>(I feel sorry from the jewel)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Young Girl's Voice$<BR><FONT color=#7e12d2>(Unfamiliar voice of a girl can be heard)</FONT><BR>I'm sorry, but today, we only have this hard bread to eat.<BR>I should have more food so you, <FONT color=#a82424>Geraint</FONT> can cheer up…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n297_girly_voice-2-b" image="" itemindex="">
+      <talk_answer link_index="n297_girly_voice-2-c" mid="41"><![CDATA[<html>(Geraint's jewel makes a buzzing noise)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Young Girl's Voice$<BR>Huh? No~ why are you sorry Geraint?<BR>The royal aristocrats who took all the food are to blame.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n297_girly_voice-2-c" image="" itemindex="">
+      <talk_answer link_index="n297_girly_voice-2-d" mid="43"><![CDATA[<html>(The light from the jewel fades)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Young Girl's Voice$<BR>What, you're going to teach them a lesson?<BR>No~ don't. They are very strong.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n297_girly_voice-2-d" image="" itemindex="">
+      <talk_answer link_index="n297_girly_voice-3" mid="45"><![CDATA[<html>(Voice fades away)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Young Girl's Voice$<BR>But thank you for this piece! <BR>I'll store it in this <FONT color=#a82424>box</FONT> so I don't lose it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n297_girly_voice-3" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Suspicious Place$<BR><FONT color=#7e12d2>(Now, there is nothing more that appear to be odd.<BR>It might be a good idea to search for strange boxes in the area)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-a" mid="49"><![CDATA[<html>(Hands over the item)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Merchant Kelly$<BR>You must have found what I was looking for.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-b" mid="51"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Merchant Kelly$<BR>I should have asked you sooner.<BR>My grandma isn't able to receive the item anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-c" mid="53"><![CDATA[<html>Oh no, I'm sorry to hear that.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Merchant Kelly$<BR>A short while after I made the request to you, I received the news that my grandma had passed away.<BR>Now, I can at least place this ornament at her funeral.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-c" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-d" mid="55"><![CDATA[<html>Umm, I had a question.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Merchant Kelly$<BR>But, it's good that I was able to give her the treasure she so wanted.<BR>Otherwise, she would have longed for it forever.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-d" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-e" mid="57"><![CDATA[<html>What's that wanted criminal flier that was with the ornament?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Merchant Kelly$<BR>What?<BR>What would you like to know?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-e" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-f" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Merchant Kelly$<BR>Oh, this?<BR>Umm, this must be the wanted flier of a person grandma had met when she was young.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-f" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-g" mid="61"><![CDATA[<html>Tax collector's coach?</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Merchant Kelly$<BR>He wasn't so bright with the reality. He was thankful for grandma's help and he attacked the coach a tax collector who had taken all the food from the town was in.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-g" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-h" mid="63"><![CDATA[<html>Why did he do that?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Merchant Kelly$<BR>Yes, it was really bold. For that, he became a fugitive and the officials tormented the townspeople to find that man. But grandma never told them where he was.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-h" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-i" mid="65"><![CDATA[<html>(Kelly was smiling and then wiped her tears)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Merchant Kelly$<BR>Well, grandma always said he was her first love.<BR>But, I always laughed when I heard that. She was only 6 back then.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-i" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-5" mid="67"><![CDATA[<html>It's okay.</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Merchant Kelly$<BR>I'm sorry to show you this part of me.<BR>Thanks to you, I could give my grandma a great last present.<BR>Thank you so much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-5" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-5-a" mid="71"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Merchant Kelly$<BR>Oh, and the fugitive's name was <FONT color=#a82424>Geraint</FONT>.<BR>Geraint was the name of her dog, and the name of her brother.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-5-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-5-b" mid="73"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Merchant Kelly$<BR>It's not such a common name. But sine the dog and her brother both died early so my grandma was worried that the name <FONT color=#a82424>Geraint</FONT> is a name that causes a short life.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-5-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-5-c" mid="75"><![CDATA[<html>What kind of…?</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Merchant Kelly$<BR>So she was always worried about that Geraint swordsman.<BR>And sometimes… Grandma used to say things like this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-5-c" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-5-d" mid="93"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Merchant Kelly$<BR>Maybe that Geraint swordsman may be the <FONT color=#a82424>Hero Geraint</FONT>.<BR>Isn't it funny? A hero wouldn't be a criminal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-5-d" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-5-e" mid="95"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-5-e" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Merchant Kelly$<BR>Thank you for your help.<BR>Goodbye.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">478</exe>
+         <exe type="recompense_view">,4781,4782,4783,4784,4785</exe>
+         <exe type="talk" npc="n092_trader_kelly">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300291</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300292</exe>
+         <exe type="delquestitem" num="-1">300291</exe>
+         <exe type="setstep">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">478</exe>
+         <exe type="recompense">,4781,4782,4783,4784,4785</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 92, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="acceppted">0,2</exelink>
+   <exelink qstep="1" npc="n295_girly_voice" sub="b" />
+   <exelink qstep="1" npc="n295_girly_voice" sub="c" />
+   <exelink qstep="1" npc="n295_girly_voice" sub="d" />
+   <exelink qstep="1" npc="n295_girly_voice" sub="2">0,2,1</exelink>
+   <exelink qstep="2" npc="n297_girly_voice" sub="b" />
+   <exelink qstep="2" npc="n297_girly_voice" sub="c" />
+   <exelink qstep="2" npc="n297_girly_voice" sub="d" />
+   <exelink qstep="2" npc="n297_girly_voice" sub="3">0,1</exelink>
+   <exelink qstep="4" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="4" npc="n092_trader_kelly" sub="c" />
+   <exelink qstep="4" npc="n092_trader_kelly" sub="d" />
+   <exelink qstep="4" npc="n092_trader_kelly" sub="e" />
+   <exelink qstep="4" npc="n092_trader_kelly" sub="f" />
+   <exelink qstep="4" npc="n092_trader_kelly" sub="g" />
+   <exelink qstep="4" npc="n092_trader_kelly" sub="h" />
+   <exelink qstep="4" npc="n092_trader_kelly" sub="i" />
+   <exelink qstep="4" npc="n092_trader_kelly" sub="5">0,1,2</exelink>
+   <exelink qstep="5" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="5" npc="n092_trader_kelly" sub="c" />
+   <exelink qstep="5" npc="n092_trader_kelly" sub="d">1</exelink>
+   <exelink qstep="5" npc="n092_trader_kelly" sub="e">0,2</exelink>
+   <journal_data recompense="1:4781,2:4782,3:4783,4:4784,5:4785" quest_title="제레인트란 이름" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_45.dds</contents_image>
+         <destination_pos>451,n295</destination_pos>
+         <destination_mode>custom:451@4</destination_mode>
+         <statemark_npcid>295</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Kelly's Request]]></title>
+         <contents mid="78"><![CDATA[<html>Go to Ghost Town of Deserted Woods and find the <FONT color=#a82424>Handcrafted Ornament</FONT>.<BR><BR><FONT color=#086171>Black Mountain(Deserted Woods)</FONT> <FONT color=#a82424>→ Ghost Town of Deserted Woods</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Search Ghost Town of Deserted Woods]]></destination>
+         <todo_msg mid="80"><![CDATA[Search Ghost Town of Deserted Woods for the handcrafted ornaments]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_45.dds</contents_image>
+         <destination_pos>452,n297</destination_pos>
+         <destination_mode>custom:451@1,452@4</destination_mode>
+         <statemark_npcid>297</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Strange Sound]]></title>
+         <contents mid="82"><![CDATA[<html>Search for places where something might be in there. I only heard things but didn't find anything. Since Geraint's jewel is shining, the place must be related to Geraint. Let's search other places.<BR><BR><FONT color=#086171>Black Mountain(Deserted Woods)</FONT> <FONT color=#a82424>→ Ghost Town of Deserted Woods</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Search Ghost Town of Deserted Woods]]></destination>
+         <todo_msg mid="84"><![CDATA[Search Ghost Town of Deserted Woods some more]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_45.dds</contents_image>
+         <destination_pos>452,0,0</destination_pos>
+         <destination_mode>custom:452@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Inside a Box]]></title>
+         <contents mid="86"><![CDATA[<html>Searched for another place where Geraint's jewel reacted, but there was no handcrafted ornament. I heard about a <FONT color=#a82424>box</FONT> being nearby, so let's search for it.<BR><BR><FONT color=#086171>Black Mountains(Deserted Woods)</FONT> <FONT color=#a82424>→ Ghost Town of Deserted Woods</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Search nearby boxes]]></destination>
+         <todo_msg mid="88"><![CDATA[Search nearby boxes]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[The secret of wanted criminal fliers]]></title>
+         <contents mid="90"><![CDATA[<html>Found the handcrafted ornament Merchant Kelly had asked to find. Ask Merchant Kelly about the wanted criminal flier that I found with the ornament.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Talk to Merchant Kelly]]></destination>
+         <todo_msg mid="92"><![CDATA[Give the found item to Merchant Kelly.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>589</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

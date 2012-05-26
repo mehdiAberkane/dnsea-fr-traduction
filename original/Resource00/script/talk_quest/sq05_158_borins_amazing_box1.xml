@@ -1,0 +1,412 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_158_borins_amazing_box1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>158</qid>
+      <designer>곽노찬</designer>
+      <qlevel>7</qlevel>
+      <qdesc>300150 낡은 유물함
+300151 폭풍의 바랄라이카
+300152 바랄라이카 부스러기</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>159</nextqid>
+      <nextqname>sq05_159_borins_amazing_box2</nextqname>
+      <nextqnpc>n016_trader_borin</nextqnpc>
+      <qkname mid="1"><![CDATA[Borin's Relic Box Part 1]]></qkname>
+      <qnpc>
+         <npcid>16</npcid>
+         <npcename>n016_trader_borin</npcename>
+         <npckname>대장장이 보린  (마나리 무기상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>361</npcid>
+         <npcename>n361_item_destroy</npcename>
+         <npckname>아이템 분해기</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-a" mid="6"><![CDATA[<html>Do you have a problem here?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Borin$<BR>Well, look who's here!<BR>Big-time high-and-mighty <FONT color=#a82424>hero of the story</FONT>, huh?<BR>What brings you to my humble little shop?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Borin$<BR>Erm? No, no! There's nothing unpleasant… Ahh~ choo~!<BR>I didn't become like this just because those second hand goods are more popular that the stuff I'm selling!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-c" mid="20"><![CDATA[<html>Well, that's good.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Borin$<BR>Ah, is there anything else?<BR>Ugh, seems to have lot of <FONT color=#a82424>phlegm</FONT> today. Ahem, ahhh~ chooo~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-d" mid="12"><![CDATA[<html>(……...) Let me see what items you have.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Borin$<BR>Oh, then welcome, valued customer! We always treat our customers with <FONT color=#a82424>respect</FONT> and <FONT color=#a82424>honesty</FONT>, as I'm sure you've noticed. That's how we've maintained our <FONT color=#dc5a00>number</FONT> <FONT color=#a82424>1</FONT> standing in the blacksmithing field for the past <FONT color=#dc5a00>10</FONT> <FONT color=#a82424>consecutive years</FONT>. We've always upheld our commitment to supplying <FONT color=#a82424>quality items</FONT> to you, our adoring patron, with the <FONT color=#a82424>dignity</FONT> you've come to expect.<BR>What can I do for you today?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-d" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n016_trader_borin-accepting-e" mid="15"><![CDATA[<html>A relic box? What?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Borin$<BR>Since you are my special customer. Well, friend, I have something special for you! Let me show you a beautiful <FONT color=#a82424>Relic Box</FONT>, passed down from my ancestors, at a low, low price of <FONT color=#dc5a00>10</FONT><FONT color=#a82424>Gold</FONT>, and not a copper more!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Borin's Relic Box Part 1$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n016_trader_borin-1-a" mid="22"><![CDATA[<html>Sounds like…just any normal box.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Borin$<BR>A <FONT color=#a82424>Relic Box</FONT> is a box that <FONT color=#a82424>contains a special surprise</FONT> inside!<BR>No one knows what it contains until <FONT color=#a82424>it's being opened</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-a" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n016_trader_borin-1-b" mid="24"><![CDATA[<html>I don’t think I have the money to afford it.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Blacksmith Borin$<BR>...<BR>But it's a <FONT color=#a82424>Relic Box</FONT>! It might contain something very valuable inside? I'm sure such a wise young adventurer like yourself cannot resist such a treasure temptations, hmm?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-c" mid="26"><![CDATA[<html> (... ... ...) </html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Borin$<BR>...<BR>...<BR>...<BR>Now scram before I chop you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-c" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n016_trader_borin-1-d" mid="30"><![CDATA[<html>... Thanks?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Blacksmith Borin$<BR>Guess what? You may be just another freeloader who just sells nothing but junk and never purchase anything, thus making me poorer and poorer, but you since are a regular customer. I'll write an <FONT color=#a82424>IOU</FONT> for the box, just this time. Here, open up the <FONT color=#a82424>Relic Box</FONT> and see what's inside.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-d" image="QS_Default.dds" itemindex="300150">
+      <talk_answer link_index="n016_trader_borin-1-e" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Borin$<BR>Let me know what treasure you find in the box.<BR>(Select the <FONT color=#a82424>Relic Box</FONT> in your <FONT color=#a82424>Inventory</FONT> and <FONT color=#a82424>right-click</FONT> to use it.)<BR>(Blacksmith Borin hands you a Relic Box.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-e" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Blacksmith Borin$<BR>Oh, by the way... <FONT color=#a82424>My current interest rate for IOUs</FONT> is <FONT color=#dc5a00>79.24</FONT><FONT color=#086171>%</FONT> a <FONT color=#a82424>year</FONT>, and the <FONT color=#a82424>late fee</FONT> is capped at <FONT color=#dc5a00>99.98</FONT><FONT color=#a82424>%</FONT>. <FONT color=#a82424>Processing fees</FONT> and other <FONT color=#a82424>service fees</FONT> are additional. Hahahahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Borin$<BR>Can you please open the chest already? You have been standing there for so long. Don't make me wait!<BR>(Select the <FONT color=#a82424>Relic Box</FONT> in your <FONT color=#a82424>Inventory</FONT> and <FONT color=#a82424>right-click</FONT> to use it.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-a" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n016_trader_borin-2-b" mid="39"><![CDATA[<html>It should be something good. Am I right?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Blacksmith Borin$<BR>Oh my god. It's you!<BR><FONT color=#7e12d2>(Blacksmith Borin's eyes are about to pop out.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-b" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n016_trader_borin-2-class_check_2" mid="41"><![CDATA[<html>What is it? Do you know?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Blacksmith Borin$<BR>This is... This...is...<BR><BR><FONT color=#dc5a00>Leica the Storm</FONT>!<BR>But...but...why's it in the...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-c" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n016_trader_borin-2-e" mid="44"><![CDATA[<html>Thank you so much! I finally got something good.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Blacksmith Borin$<BR>This <FONT color=#a82424>Ancient Weapon</FONT> was forged long ago by my <FONT color=#a82424>ancestors</FONT>, and it took many generations of hardwork. I have never thought that <FONT color=#a82424>something so powerful</FONT> could be found inside that <FONT color=#a82424>old box</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-d" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n016_trader_borin-2-e" mid="46"><![CDATA[<html>Thank you!</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Blacksmith Borin$<BR>This <FONT color=#a82424>Ancient Weapon</FONT> was forged long ago by my <FONT color=#a82424>ancestors</FONT>, and it took many generations of hardwork. I have never thought that <FONT color=#a82424>something so powerful</FONT> could be found inside that <FONT color=#a82424>old box</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-e" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n016_trader_borin-2-f" mid="48"><![CDATA[<html>Wait a minute. You mean it cannot be used?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Blacksmith Borin$<BR>Heh...heheheheh. But, it doesn't matter. That is a weapon that <FONT color=#a82424>cannot be used</FONT> in today's world.<BR>It's only value is as an <FONT color=#a82424>antique</FONT>.<BR>It might be better to break it down and make an entirely new weapon from it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-f" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n016_trader_borin-2-g" mid="50"><![CDATA[<html>How are we going to make a new weapon out of it?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Blacksmith Borin$<BR>You can try to use it but there won't be anything special.<BR>Only <FONT color=#dc5a00>Ancients</FONT> that wield this weapon can possess its power. The <FONT color=#dc5a00>Ancients</FONT> has been long gone, hundreds of years ago. The weapon is basically useless now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-g" image="QS_Default.dds" itemindex="300151">
+      <talk_answer link_index="n016_trader_borin-2-h" mid="53"><![CDATA[<html>How can a weapon only be useful when wielded by Ancients? Why not us?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Blacksmith Borin$<BR>It hurts to say that such an <FONT color=#a82424>ancient relic</FONT> must be <FONT color=#a82424>dismantled</FONT>, but it's all a part of the circle of life.<BR>The useless are consumed and reformed to become useful. Destruction yields creation! Hahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-h" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Blacksmith Borin$<BR>Hey! Please don't waste precious time. Dismantle <FONT color=#dc5a00>Leica the Storm</FONT> quickly.<BR>I'll try to forge a weapon that you can wield.<BR>The <FONT color=#a82424>Disassembler</FONT> is at <FONT color=#a82424>Frost Hill</FONT>. Get it going!.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-i" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="85"><![CDATA[<html>$Blacksmith Borin$<BR>What? How can you lost the <FONT color=#a82424>Relic Box</FONT>? <BR>You are lucky that someone found it and brought it back. I should have keep it. Haha! <BR>Can you please unlock the <FONT color=#a82424>Relic Box</FONT>now? Don't make me wait!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-j" image="QS_Default.dds" itemindex="300150">
+      <talk_question mid="90"><![CDATA[<html>$Blacksmith Borin$<BR>Quickly unlock the chest! Don't leave it at the warehouse. I wanna see it. Let's do this!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n016_trader_borin-3-a" mid="91"><![CDATA[<html>I see. So these are the weapon fragments. Cool….</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Blacksmith Borin$<BR>What the hell is this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-a" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n016_trader_borin-3-b" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Blacksmith Borin$<BR><BR>Is this the only thing you got from dismantling <FONT color=#dc5a00>Leica the Storm</FONT>? Why only this?!<BR>I do not want a <FONT color=#a82424>junk</FONT> like this!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-b" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n016_trader_borin-3-c" mid="63"><![CDATA[<html>There's nothing I could do about it.</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Blacksmith Borin$<BR>Do you know that plenty of  <FONT color=#a82424>Heraldry</FONT>, <FONT color=#a82424>jewels</FONT>, <FONT color=#a82424>gold ingots</FONT>, and <FONT color=#a82424>treasures</FONT> have been used to forge <FONT color=#dc5a00>Leica the Storm</FONT>?!<BR>Why so little left? You are making me mad!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-c" image="QS_Default.dds" itemindex="300152">
+      <talk_answer link_index="n016_trader_borin-3-d" mid="65"><![CDATA[<html>I already told you...</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Blacksmith Borin$<BR>This is madness! Do you know I am about to forge a <FONT color=#a82424>powerful</FONT> <FONT color=#086171>unbreakable</FONT> <FONT color=#dc5a00>relentless</FONT> <FONT color=#7e12d2>irreplaceable</FONT> <FONT color=#419300>unimaginable</FONT> <FONT color=#a82424>marvelous</FONT> <FONT color=#dc5a00>unbelievable</FONT> weapon to surpass <FONT color=#dc5a00>Leica the Storm</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-d" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3-!next" mid="67"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-e" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="87"><![CDATA[<html>$Blacksmith Borin$<BR><FONT color=#a94407>Leica the Storm</FONT> was brought to me by one of the militiamen. It was found like a trash laying somewhere.<BR>Are you a food or what? Please figure out how to use the Dismantler. I'll pass it to you one last time. Bring it to <FONT color=#a82424>Frost Hill</FONT> and have it<FONT color=#a82424>dismantled</FONT> now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-f" image="QN_Npc_ItemDissolution.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Blacksmith Borin$<BR>What are you doing? I thought I told you to take <FONT color=#dc5a00>Leica the Storm</FONT> over to <FONT color=#a82424>Frost Hill</FONT> and get it <FONT color=#a82424>dismantled</FONT>!<BR>Hurry up and put the item into the Disassembler, and bring back the <FONT color=#a82424>materials</FONT>.<BR><FONT color=#7e12d2>(Use the Disassembler to dismantle Leica the Storm.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3-g" image="QS_Default.dds" itemindex="300152">
+      <talk_question mid="93"><![CDATA[<html>$Blacksmith Borin$<BR>What, now you think you can just run off with the remains of my ancestor's weapon? Cough 'em up!<BR><FONT color=#7e12d2>(Bring the materials you received after dismantling the Leica the Storm.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">158</exe>
+         <exe type="recompense_view">,1581,1581,1581,1582</exe>
+         <exe type="talk" npc="n016_trader_borin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300150 케케묵은 깜짝 상자</comment>
+      <conditions />
+      <executions>
+         <exe type="additem" num="1">300150</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="4,5,6">300152</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">300151</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="item" num="1" op="]=">300150</chk>
+         <chk type="item" num="1" op="]=">300152</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300150 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300151 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300152 , 1) >= 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="10,16,6,9" false="18">3</exe>
+         <exe type="talk" npc="n016_trader_borin">a</exe>
+         <exe type="talk" npc="n016_trader_borin">2</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="talk" npc="n016_trader_borin">c</exe>
+         <exe type="talk" npc="n016_trader_borin">d</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="10,9">300152</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="1" false="19">0</exe>
+         <exe type="talk" npc="n016_trader_borin">i</exe>
+         <exe type="additem" num="1">300150</exe>
+         <exe type="conexe" true="2" false="15">2</exe>
+         <exe type="conexe" true="17" false="12,13">4</exe>
+         <exe type="talk" npc="n016_trader_borin">3</exe>
+         <exe type="talk" npc="n016_trader_borin">j</exe>
+         <exe type="conexe" true="17" false="11">6</exe>
+         <exe type="conexe" true="17" false="14">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">300152</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="item" num="1" op="]=">300151</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300151 , 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300152 , 1) >= 1</chk>
+         <chk type="item" num="1" op="]=">300150</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 300150 , 1) >= 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="talk" npc="n016_trader_borin">3</exe>
+         <exe type="talk" npc="n016_trader_borin">f</exe>
+         <exe type="recompense">1581,,,,</exe>
+         <exe type="complete">158</exe>
+         <exe type="recompense">1582,,,,</exe>
+         <exe type="conexe" true="3" false="5">1</exe>
+         <exe type="conexe" true="12" false="10">4</exe>
+         <exe type="talk" npc="n016_trader_borin">e</exe>
+         <exe type="additem" num="1">300151</exe>
+         <exe type="conexe" true="2" false="11">2</exe>
+         <exe type="conexe" true="12" false="13">3</exe>
+         <exe type="talk" npc="n016_trader_borin">g</exe>
+         <exe type="conexe" true="12" false="14">5</exe>
+         <exe type="conexe" true="12" false="8,9">6</exe>
+         <exe type="delitem" num="-1">300150</exe>
+         <exe type="delitem" num="-1">300151</exe>
+         <exe type="delitem" num="-1">300152</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n016_trader_borin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="1" npc="n016_trader_borin" sub="c" />
+   <exelink qstep="1" npc="n016_trader_borin" sub="d" />
+   <exelink qstep="1" npc="n016_trader_borin" sub="e">0,1,2,3</exelink>
+   <exelink qstep="2" npc="n016_trader_borin">0</exelink>
+   <exelink qstep="2" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="2" npc="n016_trader_borin" sub="class_check_2">3</exelink>
+   <exelink qstep="2" npc="n016_trader_borin" sub="e" />
+   <exelink qstep="2" npc="n016_trader_borin" sub="e" />
+   <exelink qstep="2" npc="n016_trader_borin" sub="f" />
+   <exelink qstep="2" npc="n016_trader_borin" sub="g" />
+   <exelink qstep="2" npc="n016_trader_borin" sub="h">6,7,8</exelink>
+   <exelink qstep="3" npc="n016_trader_borin">0</exelink>
+   <exelink qstep="3" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="c" />
+   <exelink qstep="3" npc="n016_trader_borin" sub="d">6</exelink>
+   <exelink qstep="3" npc="n016_trader_borin" sub="!next">4,15,16,17</exelink>
+   <journal_data recompense="3:1581,4:1582" quest_title="보린의 유물함Ⅰ" chapterid="" quest_level="7" quest_mark_type="10" use_item_list="300151,300150,300152">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Talk to Blacksmith Borin]]></title>
+         <contents mid="69"><![CDATA[<html>Hear what Blacksmith Borin have to say regarding the <FONT color=#a82424>Relic Box</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Blacksmith Borin</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Speak to Blacksmith Borin]]></destination>
+         <todo_msg mid="71"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Use the Relic Box and then speak to Blacksmith Borin]]></title>
+         <contents mid="73"><![CDATA[<html>Retrieve the item from <FONT color=#a82424>Relic Box<FONT color=#2b2723> and speak to </FONT><FONT color=#a82424>Blacksmith Borin</FONT></FONT><FONT color=#2b2723>again.</FONT><BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Blacksmith Borin</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Use the Relic Box and then speak to Blacksmith Borin]]></destination>
+         <todo_msg mid="75"><![CDATA[Use the Relic Box you received from Blacksmith Borin.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_ItemDissolution.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,n361</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>361</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Use the Disassembler to dismantle Leica the Storm]]></title>
+         <contents mid="78"><![CDATA[<html>Blacksmith Borin has request you to use <FONT color=#a82424>Disassembler</FONT> to dismantle <FONT color=#dc5a00>Leica the Storm</FONT> at <FONT color=#a82424>Frost Hill</FONT>. New item could be made out of the fragments.<BR><BR><FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→ Disassembler</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Use Disassembler to dismantle Leica the Storm]]></destination>
+         <todo_msg mid="80"><![CDATA[Go to Frost Hill and use Disassembler to dismantle Leica the Storm.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Speak to Blacksmith Borin]]></title>
+         <contents mid="82"><![CDATA[<html>You have obtained a <FONT color=#a82424>Leica Shard</FONT>from<FONT color=#a82424>dismantling </FONT> <FONT color=#dc5a00>Leica the Storm</FONT> . Bring it to <FONT color=#a82424>Blacksmith Borin</FONT> in Mana Ridge.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Blacksmith Borin</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Speak to Blacksmith Borin]]></destination>
+         <todo_msg mid="84"><![CDATA[You have dismantled the Leica the Storm. Return to Blacksmith Borin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>7:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3:4</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

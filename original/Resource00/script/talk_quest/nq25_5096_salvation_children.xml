@@ -1,0 +1,411 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq25_5096_salvation_children</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5096</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Support for the children]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>70</npcid>
+         <npcename>n070_plane_ticketer_sorene</npcename>
+         <npckname>매표원 소렌느</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>87</npcid>
+         <npcename>n087_beggar</npcename>
+         <npckname>걸인 로피</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-noquest" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$Ticket Agent Sorene $<BR><FONT color=#a82424>Irine </FONT> The kids outside the town are cared for by the palace right? <BR>
+Irine’s sister is warm hearted, or so I heard. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-noquest" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Ropi the Beggar$<BR>… (Chasing flies without speaking)<BR>
+<BR><FONT color=#7e12d2>※ You can start the quest by talking to Events Planner Irine.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Heraldry Scholar Stas $<BR>… (Seems like he is reading a book)<BR>
+<BR><FONT color=#7e12d2>※ You can start the quest by talking to Events Planner Irine.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="30"><![CDATA[<html>Oh that's good!</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Events Planner Irine $<BR>
+<FONT color=#387206>{user_nick}</FONT> Wait! I have good news. <BR>There are more people wanting to help the kids that are cared for by the palace~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="99"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Events Planner Irine$<BR>So speaking of that. <BR>Could you go and see the sponsors for me? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="101"><![CDATA[<html>(Irine seems happy)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Events Planner Irine $<BR>
+I'm so grateful to them, and I wish I could thank them personally… <BR>But I have an event to take care of. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceppted" mid="103"><![CDATA[<html><FONT color=#086171>Quest accepted </FONT></html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Sponsor for the children$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="QN_Npc_Woman_Tiketer_Sorene.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="105"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Events Planner Irine $<BR><FONT color=#a82424>Ticket Agent Sorene </FONT> My sister will be waiting. Please give her this earrings and perfume. She must be delighted to receive this. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="QN_Npc_Woman_Tiketer_Sorene.dds" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Events Planner Irine $<BR>
+<FONT color=#a82424>Sorene</FONT> I am sure she will be delighted if you give her this earrings and perfume. <BR>I wonder what she is going to donate. Hahaha! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-1" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Ropi the Beggar $<BR>….<BR><FONT color=#7e12d2>(He is chasing flies without saying anything.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_question mid="108"><![CDATA[<html>$Heraldry Scholar Stas $<BR>…<BR>
+<FONT color=#7e12d2>(Seems like he is reading a book)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-1-a" mid="110"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Ticket Agent Sorene $<BR>Did Irine send you? <BR>
+Sponsoring the abandoned children right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1-a" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-1-b" mid="112"><![CDATA[<html>(Sorene smiles)</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Ticket Agent Sorene $<BR>I knew it. <BR>
+Irine seems to be very busy lately. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1-b" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-1-c" mid="114"><![CDATA[<html>It's the thought that counts.</html>]]></talk_answer>
+      <talk_answer link_index="n070_plane_ticketer_sorene-1-c" mid="115"><![CDATA[<html>I hear that you have something to donate.</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Ticket Agent Sorene $<BR>How are the children that Irine brought? Are they being well taken care of? <BR>
+I wanted to do something useful to help them but couldn’t think of anything special. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1-c" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-1-d" mid="117"><![CDATA[<html>Irine told me to give you this.</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Ticket Agent Sorene$<BR>Hmm… What can I give you? I got this cake and… <BR><FONT color=#7e12d2>(Sorene is looking through her bag.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1-d" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-1-e" mid="119"><![CDATA[<html>(Sorene smiles more brightly)</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Ticket Agent Sorene $<BR>Wow! This is Ghoul’s earring and the famous Kakaflower perfume! <BR>I love Irine’s taste! I will do whatever I can to help her~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1-e" image="" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-1-f" mid="121"><![CDATA[<html>(Receive a free airship ticket)</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Ticket Agent Sorene $<BR>I’ll help with whatever I can. Hmm… What should I give? <BR>Ah! If the children ever need to use the <FONT color=#a82424>airship </FONT>, I’ll arrange for them to use it for free!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1-f" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-1-g" mid="123"><![CDATA[<html>(I can have that cake…)</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Ticket Agent Sorene$<BR>Wow I love the colour of this earring. It’s so fascinating. And I love the smell of this perfume. <BR>Please send Irine my gratitude~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-1-g" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_answer link_index="n070_plane_ticketer_sorene-2" mid="125"><![CDATA[<html>I have never heard of it.</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Ticket Agent Sorene $<BR>Ah, <FONT color=#a82424>Ropi the Beggar</FONT> also wants to donate as well. <BR> Are you going to see him? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n070_plane_ticketer_sorene-2" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Ticket Agent Sorene$<BR>Oh~ Just in case, please go and see <FONT color=#a82424>Ropi </FONT>. He is actually very kind-hearted. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_question mid="127"><![CDATA[<html>$Events Planner Irine$ <BR>What? <FONT color=#a82424>Ropi the Beggar</FONT> is also helping as well? <BR>
+That’s nice. Can you pay him a visit too? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-2-a" mid="130"><![CDATA[<html>(Makes a glance after chasing flies)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Ropi the Beggar $<BR>
+Hahaha~Hahaha!!! <BR>
+…Who are you? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-a" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-2-b" mid="132"><![CDATA[<html>Excuse me, the truth is...</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Ropi the Beggar$<BR>I gotta have a bath today. It’s my day off.<BR>So don’t give me anything and just leave! Hahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-b" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-2-c" mid="135"><![CDATA[<html>I hear you have something to donate.</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$Ropi the Beggar$<BR>Today’s my day off! Don’t you know what I’m saying? <BR>It’s like talking to a Hound! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-c" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-2-d" mid="137"><![CDATA[<html>Right.(Why didn't you say it from the beginning?)</html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$Ropi the Beggar $<BR>Ah~ yes I know about the donation. <BR>The Hound in my head told me about it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-d" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n087_beggar-2-e" mid="139"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$Ropi the Beggar $<BR>Here, take this. <BR>It should help <FONT color=#a82424>Irine </FONT> for her goodwill. Hahaha <BR>
+<FONT color=#7e12d2>(He hands me over some coins.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-2-e" image="" itemindex="">
+      <talk_question mid="140"><![CDATA[<html>$Ropi the Beggar $<BR>Really? Thanks.<BR>It’s my day off so why don’t you come by later and give me some rotten apple or food for my Hound? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-3" image="" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$Ropi the Beggar$<BR>I gotta have a bath today. It’s my day off.<BR>So don’t give me anything and just leave! Hahaha~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-a" mid="143"><![CDATA[<html>I went and saw Ropi the Beggar.</html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$Events Planner Irine $<BR> Did my sister Sorene like my presents? <BR>
+It took you a while to make that visit.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-b" mid="145"><![CDATA[<html>(Hand over the stuff to Irine)</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$Events Planner Irine $<BR>Wow~ <FONT color=#a82424>Ropi</FONT> is a very generous and kind person~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-c" mid="147"><![CDATA[<html>(Irine shakes her head)</html>]]></talk_answer>
+      <talk_question mid="146"><![CDATA[<html>$Events Planner Irine$<BR>Free airship tickets! Wow~ Sorene is so thoughtful.<BR>This will help the children when they grow up. Uhm and these….rugged coins? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-d" mid="149"><![CDATA[<html>Yes I'll do that.</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Events Planner Irine $<BR>These coins… It’s too old and have holes in them… I don’t think these can be a collector’s item. <BR>
+Well, I should go and get it checked out. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="150"><![CDATA[<html>$Events Planner Irine$<BR><FONT color=#387206>{user_nick}</FONT>, I think we better show these to <FONT color=#a82424>Heraldry Scholar Stas.</FONT> <BR>Well can you do me a favour again? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="152"><![CDATA[<html>$Events Planner Irine$<BR>We can’t just throw them away considering Ropi’s goodwill in giving these. <BR> I think we better check the coins to <FONT color=#a82424>Stash </FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="154"><![CDATA[<html>Yes. It is something.</html>]]></talk_answer>
+      <talk_question mid="153"><![CDATA[<html>$Heraldry Scholar Stas $<BR>What? <FONT color=#a82424>Ropi</FONT> made a donation? <BR>Hahaha. It’s something~ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="156"><![CDATA[<html>Maybe.</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Donation made by some weird beggar… <BR>I never thought he could be sane again. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="158"><![CDATA[<html>(Show him the coins.)</html>]]></talk_answer>
+      <talk_question mid="157"><![CDATA[<html>$Heraldry Scholar Stas $<BR>
+So, what did Ropi donate? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="160"><![CDATA[<html>(Huh? Are they really antique?)</html>]]></talk_answer>
+      <talk_question mid="159"><![CDATA[<html>$Heraldry Scholar Stas $<BR>…It’s bit dirty but it should be ok after washing…Hmmm? <BR>
+<FONT color=#7e12d2>(His eyes grew bigger)</FONT><BR>
+Hang on! Are these the gold coins of Pirate King Ropi? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-e" mid="162"><![CDATA[<html>Phew... (He seems excited...)</html>]]></talk_answer>
+      <talk_question mid="161"><![CDATA[<html>$Heraldry Scholar Stas$<BR>……It does look like it but it’s not. <BR>Hmm…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-f" mid="165"><![CDATA[<html>Sure.</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Heraldry Scholar Stas$<BR>But it is forged so well. I value the technology. <BR>
+Hey, can I use these in my studies? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-5" mid="169"><![CDATA[<html>(Receive Relationship Between Crest and Jewelry I, II, III)</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>I will give you this instead. <FONT color=#7e12d2>(He puts down a pile of old books)</FONT><BR>I’ve read this when I was young, so it should help in educating the children. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-5" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="170"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I wish there will be more literary scholars born after reading those. Hahaha! <BR>Well, say hello to <FONT color=#a82424>Irine</FONT> please. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-5" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-5-a" mid="173"><![CDATA[<html>(Hand over the pile of books.)</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Events Planner Irine${action:Talk}<BR>Forged gold coins of Pirate King Ropi? I have heard of it before. <BR> But it’s a rumor which doesn't exist right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-5-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-5-b" mid="175"><![CDATA[<html>Yes. You're not kidding. </html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Events Planner Irine$<BR>Well, it all worked out well.<BR> We solved our question and got extra books because of <FONT color=#a82424>Stas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-5-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-5-c" mid="177"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="176"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-5-c" image="" itemindex="">
+      <talk_question mid="178"><![CDATA[<html>$Events Planner Irine$<BR>But the books are <FONT color=#a82424>a little </FONT> hard for the children. Hope they will like it nonetheless. <BR>Thanks for your help <FONT color=#387206> {user_nick}</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">5096</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="recompense_view">50960,,,,,</exe>
+         <exe type="addquestitem" num="1">300317</exe>
+         <exe type="addquestitem" num="1">300318</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">300317</exe>
+         <exe type="delquestitem" num="-1">300318</exe>
+         <exe type="addquestitem" num="1">300320</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300319</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300320</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300319</exe>
+         <exe type="addquestitem" num="1">300321</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300321</exe>
+         <exe type="complete">5096</exe>
+         <exe type="recompense">50960,,,,,</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 100, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="c">2</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceppted">0,1,3,4</exelink>
+   <exelink qstep="1" npc="n070_plane_ticketer_sorene" sub="b" />
+   <exelink qstep="1" npc="n070_plane_ticketer_sorene" sub="c" />
+   <exelink qstep="1" npc="n070_plane_ticketer_sorene" sub="c" />
+   <exelink qstep="1" npc="n070_plane_ticketer_sorene" sub="d" />
+   <exelink qstep="1" npc="n070_plane_ticketer_sorene" sub="e" />
+   <exelink qstep="1" npc="n070_plane_ticketer_sorene" sub="f" />
+   <exelink qstep="1" npc="n070_plane_ticketer_sorene" sub="g" />
+   <exelink qstep="1" npc="n070_plane_ticketer_sorene" sub="2">0,2,3,4,1</exelink>
+   <exelink qstep="2" npc="n087_beggar" sub="b" />
+   <exelink qstep="2" npc="n087_beggar" sub="c" />
+   <exelink qstep="2" npc="n087_beggar" sub="d" />
+   <exelink qstep="2" npc="n087_beggar" sub="e">0,1,2</exelink>
+   <exelink qstep="3" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="3" npc="n100_event_ilyn" sub="c" />
+   <exelink qstep="3" npc="n100_event_ilyn" sub="d">0,1,2</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="5">2,0,1,3</exelink>
+   <exelink qstep="5" npc="n100_event_ilyn" sub="b">2</exelink>
+   <exelink qstep="5" npc="n100_event_ilyn" sub="c">0,1,3</exelink>
+   <journal_data recompense="0:50960" quest_title="아이들을 위한 후원" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300317,300318,300320">
+      <journal index="1">
+         <contents_image>QN_Npc_Woman_Tiketer_Sorene.dds</contents_image>
+         <destination_pos>11,n70</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>70</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Sorene's donation]]></title>
+         <contents mid="38"><![CDATA[<html>Deliver Irine’s earrings and perfume to Ticket Agent Sorene.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Ticket Agent Sorene </FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Ticket Agent Sorene]]></destination>
+         <todo_msg mid="40"><![CDATA[Receive donation from Ticket agent Sorene]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Beggar.dds</contents_image>
+         <destination_pos>11,n87</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>87</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Ropi's Donation]]></title>
+         <contents mid="85"><![CDATA[<html>Receive donation from Ropi the Beggar.<BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Ropi the Beggar </FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Talk to Ropi the Beggar]]></destination>
+         <todo_msg mid="87"><![CDATA[Receive donation from Ropi the Beggar]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:11@1,1@1,5@1,8@1</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Irine's Happiness]]></title>
+         <contents mid="89"><![CDATA[<html>Update status to Events Planner Irine <BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Events Planner Irine </FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="91"><![CDATA[Go back and update status to Irine]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="180"><![CDATA[Stas' diagnosis]]></title>
+         <contents mid="181"><![CDATA[<html>Get Ropi’s coin checked out by Heraldry Scholar Stas. <BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Heraldry Scholar Stas </FONT></html>]]></contents>
+         <destination mid="182"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="183"><![CDATA[Check out the coins with Heraldry Scholar Stas]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:11@1,1@1,5@1,8@1</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="186"><![CDATA[Full of Donations]]></title>
+         <contents mid="187"><![CDATA[<html>Deliver Stas' books to Events Planner Irine.<BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Events Planner Irine </FONT></html>]]></contents>
+         <destination mid="184"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="185"><![CDATA[Go back to Events Planner Irine]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>5095</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

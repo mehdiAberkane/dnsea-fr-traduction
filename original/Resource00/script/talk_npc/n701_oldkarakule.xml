@@ -1,0 +1,58 @@
+   <talk>
+      <npcename>n701_oldkarakule</npcename>
+      <npcid>701</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Karacule FairyStar]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="15"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Karacule FairyStar$<BR>Cough cough…...<BR>
+It's time……I have to hurry.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="16" link_target="mq15_702_witch_of_swamp.xml"><![CDATA[<html>[Lv.40] <FONT color=#a94407>Swamp of Witch</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="mq15_704_missing_natives.xml"><![CDATA[<html>[Lv.40] <FONT color=#a94407>The Disappearing Aborigines</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="mq15_705_doubtful_proposal.xml"><![CDATA[<html>[Lv.42] <FONT color=#a94407>Peculiar Suggestion</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="mq15_707_unkind_reunion.xml"><![CDATA[<html>[Lv.42] <FONT color=#a94407>Hostile Reunion</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="mq15_709_rescue_natives.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>Save the Aborigines</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="mq15_710_most_important_thing.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>The Most Precious Thing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="mq15_713_across_mind.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>Complex Feelings</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="mq15_716_reason_to_be_strong.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>The Reason to become Stronger</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="mq15_717_for_my_friend.xml"><![CDATA[<html>[Lv.46] <FONT color=#a94407>For Friends</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="mq15_718_other_uninvited_guest.xml"><![CDATA[<html>[Lv.46] <FONT color=#a94407>Uninvited Guests</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="mq15_719_dark_past.xml"><![CDATA[<html>[Lv.46] <FONT color=#a94407>The Past of Darkness</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="61" link_target="mq15_720_behind_story.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>The Hidden Story</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="62" link_target="mq15_721_native_medicine.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>The Aborigines' Medicine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="64" link_target="mq15_722_regret.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>The Late Regret</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="mq15_723_succession.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>Inheritance</font></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="70" link_target="mq15_725_karakule.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>Met Karakule</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="73" link_target="mq15_727_mystery_man.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>Met a strange man</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="79" link_target="mq15_730_rescue_natives.xml"><![CDATA[<html>[Lv42] <FONT color=#a94407>Rescue natives</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="82" link_target="mq15_736_prepared.xml"><![CDATA[<html>[Lv44] <FONT color=#a94407>Make a fresh</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="85" link_target="mq15_737_truth.xml"><![CDATA[<html>[Lv44] <FONT color=#a94407>Approaching truth </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="91" link_target="mq15_738_tears.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>Drop tears</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="94" link_target="mq15_739_meet_again.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>Meet again</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="97" link_target="mq15_740_past_story.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>It's The Story Of The Past</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="mq15_741_past_wounds.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Wound From The Sad Past</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="mq15_742_genius.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Genius</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="106" link_target="mq15_743_destiny.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>It Is Fate</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="109" link_target="mq15_744_record_end.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Stop The record</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="88" link_target="sq15_748_what_am_i.xml"><![CDATA[<html>[Previous] <FONT color=#086171>Who am I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="sq15_751_miracle_boy.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>The Miracle Child</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="sq15_762_knowledge_of_sorceress.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>A Sorcerer's Wisdom</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="sq15_763_truly_power.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>The Power that is truly Needed</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="54"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Karacule FairyStar$<BR>Cough cough…...<BR>
+It's time……I have to hurry.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="karakule_dead" image="" itemindex="">
+         <talk_question mid="76"><![CDATA[<html>$Oldkarakule$<BR><FONT color=#7e12d2>(closing eyes comfortably. Any painful things never can bother her)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk">001</exe>
+         <exe type="talk">karakule_dead</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_GetQuestStep(userObjID, 723) == 3</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n349_pvp_ranking_board</npcename>
+      <npcid>349</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Ladder Match Rankings Notice Board]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="ranking_info_1" mid="5"><![CDATA[<html>Ladder Match Rankings[1 VS 1]</html>]]></talk_answer>
+         <talk_answer link_index="ranking_info_3" mid="8"><![CDATA[<html>Ranking board [3 VS 3]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Ladder Match Rankings Notice Board${action:Touch}<BR>Ranking Board's notice for <FONT color=#a82424>Ladder Match</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenPvPLadderRankBoard( userObjID, 349, 1 );</exe>
+         <exe type="custom">api_ui_OpenPvPLadderRankBoard( userObjID, 349, 2 );</exe>
+         <exe type="custom">api_ui_OpenPvPLadderRankBoard( userObjID, 349, 3 );</exe>
+         <exe type="custom">api_ui_OpenPvPLadderRankBoard( userObjID, 349, 4 );</exe>
+      </executions>
+      <conditions />
+      <exelink idx="ranking_info_1">1</exelink>
+      <exelink idx="ranking_info_3">3</exelink>
+   </talk>

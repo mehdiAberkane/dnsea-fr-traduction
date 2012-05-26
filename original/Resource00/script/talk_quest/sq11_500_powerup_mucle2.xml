@@ -1,0 +1,198 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_500_powerup_mucle2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>500</qid>
+      <designer>김주연</designer>
+      <qlevel>32</qlevel>
+      <qdesc>상급 워리어 로드리고를 통해 투사 Lv2 칭호를 얻기 위한 두 번째 시험을 받는다. 외딴 섬 중심부를 마스터 난이도로 클리어하는 근성의 시험을 통과하자.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>501</nextqid>
+      <nextqname>sq11_501_powerup_mucle3</nextqname>
+      <nextqnpc>n098_warrior_master_lodrigo</nextqnpc>
+      <qkname mid="1"><![CDATA[[Title] Fighter Lv2/ Strength Training II]]></qkname>
+      <qnpc>
+         <npcid>98</npcid>
+         <npcename>n098_warrior_master_lodrigo</npcename>
+         <npckname>상급 워리어 로드리고</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-a" mid="6"><![CDATA[<html>Eh, already?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Warrior Rodrigo$<BR>You had enough break, let's start the second test right away.<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-b" mid="8"><![CDATA[<html>Isn't it "temper when it's hot"….?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Warrior Rodrigo$<BR>It's ok. <FONT color=#a82424>You should temper the iron when its cold</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-c" mid="10"><![CDATA[<html>Test of spirit? </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Warrior Rodrigo$<BR>… Anyway let's start the second test. This test is the test of your spirit. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-d" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Warrior Rodrigo$<BR>It is the test to see your spirit not giving up on against monsters that may be lot stronger than you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Strength Training II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-a" mid="17"><![CDATA[<html>What should I do? </html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Warrior Rodrigo$<BR>The place for the test is same as before. Go to the <FONT color=#a82424>Core of Forsaken Islet</FONT> and show me your spirit. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-a" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-b" mid="19"><![CDATA[<html>Master Level….</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Warrior Rodrigo$<BR>All you have to do is clear the <FONT color=#a82424>Core of Forsaken Islet</FONT> at <FONT color=#a82424>Master Level</FONT>.<BR>Sounds simple right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-c" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Warrior Rodrigo$<BR>If you are scared, you are free to take your friends as well.<BR>Your spirit truly comes out when you are protecting someone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-c" image="QW_33.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Well go and clear the <FONT color=#a82424>Core of Forsaken Islet</FONT> at <FONT color=#a82424>Master Level</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2" image="QW_33.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Master Warrior Rodrigo$<BR>What are you waiting for?<BR>Go to the <FONT color=#a82424>Core of Forsaken Islet</FONT> and prove your undying spirit. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-a" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Oh, did you pass the test of spirit as well? I wonder why Chandler liked you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-b" mid="29"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-c" mid="31"><![CDATA[<html>What's the final test like?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Well, it's time for the last test. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-d" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Hmm… The last test is… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-d" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-!next" mid="35"><![CDATA[<html>(He figured out on the spot.)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Warrior Rodrigo$<BR>It's the test of passion and spirit!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">5000,,,,,</exe>
+         <exe type="setquest">500</exe>
+         <exe type="talk" npc="n098_warrior_master_lodrigo">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="stageConstructionLevel" op="]=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4,5,6" false="">0</exe>
+         <exe type="checkStageClearRank" rand="6" num="331" onexe="2" true="[=" xsi:nil="true" />
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">500</exe>
+         <exe type="recompense">5000,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="b" />
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="c">0,3,1</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="a">1</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="b">0</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="c" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="d" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="!next" />
+   <journal_data recompense="5000" quest_title="[칭호] 투사Lv2/ 근력 강화 Ⅱ" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode />
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[The second test]]></title>
+         <contents mid="39"><![CDATA[<html>Go to <FONT color=#a82424>Master Warrior Rodrigo</FONT> and ask about the second test for the Fighter Title Lv2. <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Warrior Rodrigo</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[The second test]]></destination>
+         <todo_msg mid="41"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Clear the core of Forsaken Islet at Master level.]]></title>
+         <contents mid="43"><![CDATA[<html>The second test for the Fighter Title Lv2 is clearing the <FONT color=#a82424>Core of Forsaken Islet</FONT> at <FONT color=#a82424> Master Level</FONT>. Try it.<BR><BR><FONT color=#086171>Hermalte Port(Transportation ship to Forsaken Islet)</FONT> <FONT color=#a82424>→ Core of Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Clear the core of Forsaken Islet at Master level.]]></destination>
+         <todo_msg mid="45"><![CDATA[Clear the core of Forsaken Islet at Master level.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode />
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Conversation with Master Warrior Rodrigo]]></title>
+         <contents mid="47"><![CDATA[<html>Cleared the Core of Forsaken Islet at Master Level. Return to <FONT color=#a82424>Master Warrior Rodrigo</FONT>.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Warrior Rodrigo</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Conversation with Master Warrior Rodrigo]]></destination>
+         <todo_msg mid="49"><![CDATA[Return to Master Warrior Rodrigo in Saint Haven]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>499</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

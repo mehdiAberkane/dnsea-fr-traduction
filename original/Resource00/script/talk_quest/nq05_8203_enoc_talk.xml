@@ -1,0 +1,95 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq05_8203_enoc_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8203</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Recent interests]]></qkname>
+      <qnpc>
+         <npcid>46</npcid>
+         <npcename>n046_cleric_master_enoc</npcename>
+         <npckname>상급 클레릭 에녹</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-a" mid="6"><![CDATA[<html>Don't blame yourself too much</html>]]></talk_answer>
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-b" mid="7"><![CDATA[<html>This would be a good opportunity to lead the Order properly</html>]]></talk_answer>
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-c" mid="8"><![CDATA[<html>Why don't you try finding Dragon Followers who might still be alive?</html>]]></talk_answer>
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-d" mid="9"><![CDATA[<html>Forget past matters.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Enoch$<BR>
+The Bishop was a Dragon Follower. I realized that they weren't punished appropriately. When did the Followers begin to hide here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Master Cleric Enoch$<BR>
+Thanks, but I think we need to be held responsible. They came to us when we dropped our guard.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Cleric Enoch$<BR>Uhmm, I hope that. But I have never missed the Pope Teramai this much.  If he comes again, this chaos can be fixed appropriately.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Cleric Enoch$<BR>You're quite realistic. Yes, you're right. We can't wait for him since he had left us. We have to thoroughly find betrayers in our Order.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Cleric Enoch$<BR>Hmm, this won’t be solved by letting it go. To forget is to run away from a problem. You should learn to take responsibility instead of just running away.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 8203, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 46, 80 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 46, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 46, 320 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 46, 320 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 최근의 관심사에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>46:2400:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

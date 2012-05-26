@@ -1,0 +1,73 @@
+   <talk>
+      <npcename>n011_priest_leonardo</npcename>
+      <npcid>11</npcid>
+      <startexe>8</startexe>
+      <npckname mid="20"><![CDATA[Master Cleric Leonard]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="24"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="tuto" mid="58"><![CDATA[<html>[Receive Tutorial]</html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$Master Cleric Leonard$<BR>May the Goddess's blessings be with you...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="27" link_target="mq05_110_girl_of_destiny.xml"><![CDATA[<html>[Lv.9] <FONT color=#a94407>Girl of Destiny</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="mq05_112_doubt.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>Bizarre Aura</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="mq05_113_orb_of_vision1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a82424>Vision Orb I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="mq05_118_snatch_orb.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>The Stolen Orb</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="mq05_119_prospect.xml"><![CDATA[<html>[Lv.8] <FONT color=#a94407>Realization</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="mq05_120_money_girl.xml"><![CDATA[<html>[Lv.9] <FONT color=#a94407>Girl of Importance</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="mq05_125_lost_sacred_object1.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>The Stolen Goods Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="72" link_target="mq05_134_girl_of_destiny.xml"><![CDATA[<html>[Lv.9] <FONT color=#a94407>Girl of Destiny</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="81" link_target="mq05_137_doubt.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>Bizarre Aura</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="82" link_target="mq05_138_orb_of_vision1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a82424>Vision Orb I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="83" link_target="mq05_142_snatch_orb.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>The Stolen Orb</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="84" link_target="mq05_143_prospect.xml"><![CDATA[<html>[Lv.8] <FONT color=#a94407>Realization</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="85" link_target="mq05_144_money_girl.xml"><![CDATA[<html>[Lv.9] <FONT color=#a94407>Girl Of Importance</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="sq05_154_gurafinder2.xml"><![CDATA[<html>[Lv.6] <FONT color=#086171>Liar Liar, Pants on Fire</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="sq05_162_good_arbeit.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>In The Name of Justice</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="86"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="25"><![CDATA[<html>$Master Cleric Leonard$<BR>Life will be meaningless without hardships and trials.<BR>Learn from them, and keep the faith.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="tuto" image="" itemindex="">
+         <talk_answer link_index="backtuto" mid="59"><![CDATA[<html>Bring it on!</html>]]></talk_answer>
+         <talk_answer link_index="tutoend" mid="60"><![CDATA[<html>Maybe next time.</html>]]></talk_answer>
+         <talk_question mid="50"><![CDATA[<html>$Master Cleric Leonard$<BR>Your swift training progress makes me proud.<BR>I prepared arranged a special training session for you. Are you up for it?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="tutoend" image="" itemindex="">
+         <talk_answer link_index="back_tutoend" mid="61"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="53"><![CDATA[<html>$Master Cleric Leonard$<BR>Ahhh, I like your confidence. If you ever need refresher lessons, you know where to find me.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="notalone" image="" itemindex="">
+         <talk_question mid="55"><![CDATA[<html>$Master Cleric Leonard$<BR>Oh c'mon, don't stress this old man out. I can only train one person at a time. <BR> Ask your friends to wait somewhere. Then we can begin.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gotuto" image="" itemindex="">
+         <talk_answer link_index="gogo" mid="62"><![CDATA[<html>[Enter]</html>]]></talk_answer>
+         <talk_question mid="56"><![CDATA[<html>$Master Cleric Leonard$<BR>Alright, let's get going then. I've set up a little area for you to practice in.<BR>Good luck.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="89"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="88"><![CDATA[<html>$Master Cleric Leonard$<BR>May the Goddess keep watch over you<BR></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_101_lost_sacred_object1</exe>
+         <exe type="conexe" true="0" false="7">0</exe>
+         <exe type="conexe" true="5" false="4">1</exe>
+         <exe type="talk">notalone</exe>
+         <exe type="talk">gotuto</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13511,1);</exe>
+         <exe type="conexe" true="0" false="1">2</exe>
+         <exe type="conexe" true="2" false="9">3</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="9">3</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 123) == 1</chk>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 101) == 1</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="back_quest">10</exelink>
+      <exelink idx="backtuto">3</exelink>
+      <exelink idx="back_tutoend">10</exelink>
+      <exelink idx="gogo">6</exelink>
+   </talk>

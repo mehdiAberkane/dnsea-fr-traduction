@@ -1,0 +1,51 @@
+   <talk>
+      <npcename>n199_darklair_castia</npcename>
+      <npcid>199</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Priestess of Darkness Castia]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="buy" mid="4"><![CDATA[<html>[Shop / Item Repair]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>One day, the darkness will be understood by someone...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="90" link_target="sq08_367_albratum_start.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Boundary of Darkness</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="91" link_target="sq08_368_albratum_quest1.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Jealous Arbitrium I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="92" link_target="sq08_369_albratum_quest2.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Jealous Arbitrium II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="93" link_target="sq08_370_albratum_quest3.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Jealous Arbitrium III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="94" link_target="sq08_371_albratum_quest4.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Jealous Arbitrium IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="95" link_target="sq08_372_albratum_quest5.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Jealous Arbitrium V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="72" link_target="sq08_345_call_to_darkvillage.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>Call of the Dark Village</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="73" link_target="sq08_346_curtain_of_abyss.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>Veil of Abyss</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="74" link_target="sq08_347_decuman_filed.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>The Tenth Land</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="75" link_target="sq08_348_fifteenth_field.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>The Fifteenth Land</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="76" link_target="sq08_349_twentieth_field.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>The Twentieth Land</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="77" link_target="sq08_350_half_of_fifty.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>The Twenty-Fifth Land</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="78" link_target="sq08_351_thirtieth_field.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>The Thirtieth Land</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="79" link_target="sq08_352_beyond_the_nightmare.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>Nightmare From Beyond</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="sq15_751_miracle_boy.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>The Miracle Child</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="105" link_target="sq15_752_secret_of_eclair.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Eclair's Secret</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="106" link_target="sq15_753_wordless_mom.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>A Silent Reunion</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="107" link_target="sq15_754_as_you_wish.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Recovering Freedom</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="108"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Adventurer, you who bring light from the lands above… lend me your help.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="openshop">25001</exe>
+         <exe type="openshop">25002</exe>
+         <exe type="openshop">25003</exe>
+         <exe type="openshop">25004</exe>
+         <exe type="conexe" true="1" false="6">0</exe>
+         <exe type="conexe" true="2" false="7">1</exe>
+         <exe type="conexe" true="3" false="8">2</exe>
+         <exe type="conexe" true="4" false="4">3</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="buy">5</exelink>
+   </talk>

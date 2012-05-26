@@ -1,0 +1,102 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq06_7506_stella_talk</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7506</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Cosmetics]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="8"><![CDATA[<html>You still look young.</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="9"><![CDATA[<html>Why don't you use some cosmetics?</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="10"><![CDATA[<html>You look the same as usual.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Stella$<BR>My skin is getting worse as I had recently written an article column on Karacule.<BR>Do you think I look a little older now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Sorceress Stella$<BR>
+Haha. Do you mean it? Huh. Do you know how old I am?<BR><FONT color=#7e12d2>(She looks happy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR>
+What?! Are you saying Ihave a lot of wrinkles? Are you serious?<BR><FONT color=#7e12d2>(Stella looks upset.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Stella$<BR>Huh! Don't just say that, but buy me something like anti-aging cosmetics! You haven't given me any cosmetics though so how should I use any in the first place?<BR><FONT color=#7e12d2>(She seems to have many complaints.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Stella$<BR>
+Huh? As usual… What do you mean?<BR>What?! You, don't you know how to express yourself properly? Are you hiding something from me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-f" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Sorceress Stella$<BR>Why don't you say nice things about me?! Like, Stella is so beautiful! Although her skin is getting a little bit dry, but it's still silky smooth like a young elf! Why don't you say something like this!?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-f" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Stella$<BR>…Huh. Enough! You don't have any manners.<BR>(She gets upset.)</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7506, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 45, 320 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 45, 320 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 45, 160 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="d">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 화장품에 대해서" chapterid="-1" quest_level="1" quest_mark_type="1" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>45:7200:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

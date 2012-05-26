@@ -1,0 +1,152 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3162_n409_mine_hunt</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3162</qid>
+      <designer>손원호</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Guild Request] Source for materials]]></qkname>
+      <qnpc>
+         <npcid>409</npcid>
+         <npcename>n409_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Argh! Oh no! The <FONT color=#a82424>Elastic Sauce</FONT> that can tighten skin has finished! Meow!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-b" mid="98"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>If Missy hears about this, she will cook me! Meow! <FONT color=#7e12d2>(Missy will definitely do that… Meow)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-c" mid="100"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>To make Elastic Sauce, you will need the <FONT color=#a82424>Abandoned Mine Giant Spider's Poison Sac</FONT> which can tighten the skin! Meow. Quick, save me! Meow!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-c" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-d" mid="102"><![CDATA[<html>Defeat 1 Abandoned Mine Giant Spider</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>If you can defeat the <FONT color=#a82424>Abandoned Mine Giant Spider</FONT>, I will handle the Poison Sac! Meow!<BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2> Client: Nye Nye, the Cat Chef</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-e" mid="11"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-e" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$[Guild Request] Elastic Sauce$<BR>You accepted a Mission.<BR>Defeat<FONT color=#a82424>Black Mine</FONT>'s <FONT color=#a82424>Abandoned Mine Giant Spider</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-1" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request] Elastic Sauce</FONT>.<BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2" image="GQ_hunt_end.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-2-a" mid="22"><![CDATA[<html>[Completed]<FONT color=#086171>Elastic Sauce</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Adventurers who have completed the Mission, please stamp the Mission posting below to receive your reward.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n409_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2-b" image="GQ_hunt_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>An Adventurer's Mission has been completed.<BR><BR><FONT color=#a82424>[Adventurer's Guild Commission Board]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3162, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">31620,,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="5,6,7" onexe="">809</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">302702</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 809);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">3162</exe>
+         <exe type="recompense">31620,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n409_guild_board" sub="d">3</exelink>
+   <exelink qstep="accepting" npc="n409_guild_board" sub="e">0,1,4,8,2</exelink>
+   <exelink qstep="2" npc="n409_guild_board" sub="a">1</exelink>
+   <exelink qstep="2" npc="n409_guild_board" sub="b">0</exelink>
+   <journal_data recompense="31620" quest_title="[길드의뢰] 탱글 탱글 소스" chapterid="" quest_level="24" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>273,0,0</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@3,274@0</destination_mode>
+         <statemark_npcid>409</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Defeat Black Mine's Abandoned Mine Giant Spider]]></title>
+         <contents mid="43"><![CDATA[<html>Go to Black Mine to defeat 1 Abandoned Mine Giant Spider.<BR><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Black Mine</FONT><BR>
+</html>]]></contents>
+         <destination mid="44"><![CDATA[[Hunt] Black mine]]></destination>
+         <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_guild_board.dds</contents_image>
+         <destination_pos>12,n409</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>409</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report Mission completion to the Adventurer's Guild Commission Board]]></title>
+         <contents mid="47"><![CDATA[<html> Hernandez would put a muzzle on the bulletin board in the guild venturer complete report commissioned let. <BR> <BR> <FONT color=#086171> Hernandez would put a muzzle (black mine entrance) </FONT> <FONT color = # a82424 > → venturer Guild bulletin </FONT> </html>]]></contents>
+         <destination mid="48"><![CDATA[Report Mission completion to the Adventurer's Guild Commission Board]]></destination>
+         <todo_msg mid="49"><![CDATA[An Adventurer's Mission has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3161</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

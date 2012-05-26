@@ -1,0 +1,107 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq02_5302_baily_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5302</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Problems]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="9"><![CDATA[<html>Gossip.</html>]]></talk_answer>
+      <talk_answer link_index="n028_scholar_bailey-accepting-d" mid="10"><![CDATA[<html>Trouble with Merchant May.</html>]]></talk_answer>
+      <talk_answer link_index="n028_scholar_bailey-accepting-g" mid="11"><![CDATA[<html>Being a loner.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Do I have any problem?<BR>Hmm I wonder what kind of problem I had?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Well. There was some rumor back in my hometown that I am just a loner hermit who looked at Heraldry wholeday. Where did you hear that?<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey gets all sensitive. Merchant Maybe there really was a rumor like that.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Let get the facts right.. I am not a loner hermit, it's just that I never step out of the house for about three years</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-c" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Do you understand the feeling of failing Heraldry scholar certificate exam three years in a row<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey lets out a sigh and starts pouring out his past sufferings. It appears that he went through quite a lot.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-e" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Ah, so you know too?<BR>I wouldn't call it a trouble, but... you know how Merchant May started practicing singing because she wants to be like Ms. Adelynn?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-f" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>It appears that some ignorant adventurer gave Merchant May a music sheet. Talk about giving harpies extra wings...<BR>This is an outrageous thing to do, its like giving an orc his shield back!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-f" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Since then, Merchant May keep singing non stop everyady and night, but that is if you call it singing.<FONT color=#7e12d2>(Heraldry Scholar Bailey's face looks pale.)</FONT><BR>This is a serious problem, what can we do to stop her from singing, oh yes... she sing while cooking too!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-h" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Hahaha. I'm not too concerned about that kind of stuff.<BR>It's not easy for a diligent scholar to take care of human relationships.<BR>Hahahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-h" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>But Ms. Tiana told me this yesterday.<BR>Do I really not have a lover because of studies?<BR>What do you think she meant by that? Maybe Ms. Tiana is interested in me?<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey is concerned about something that's probably not true.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5302, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 28, 150 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 28, 300 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 28, 150 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="d">2,0</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="g">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 고민거리" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>28:750:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

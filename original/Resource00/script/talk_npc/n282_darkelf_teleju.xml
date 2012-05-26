@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n282_darkelf_teleju</npcename>
+      <npcid>282</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Dark Elf Telreju [Ruins of Lost Time]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Dark Elf Girl$<BR>La la la~ Oh, you're wondering why I'm here? Make a guess, why don't you?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="enterquest">sq11_490_darkelf_girl</exe>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="enterquest">sq11_494_darkelf_teleju4</exe>
+         <exe type="conexe" true="6" false="2">2</exe>
+         <exe type="enterquest">sq11_521_i_know_you</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">490</chk>
+         <chk type="hasquest">494</chk>
+         <chk type="hasquest">521</chk>
+      </conditions>
+   </talk>

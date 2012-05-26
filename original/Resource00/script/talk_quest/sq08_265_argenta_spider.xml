@@ -1,0 +1,387 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_265_argenta_spider</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>265</qid>
+      <designer>김인정</designer>
+      <qlevel>19</qlevel>
+      <qdesc>독주머니(400091)
+독주머니 10개 수집. 수집되는 아이템 아니고, 스테이지를 제대로 진행하면 마지막 보스전 후 npc에게 습득하게 되어 있음. 이하 진행 개요.
+아르젠타에게 퀘스트 수락.
+1번 필드에서 데이비드와 대화.
+3번 필드에서 데이비드와 대화.
+보스 클리어 후 데이비드와 대화.
+데이비드에게 독 주머니 10개 습득.
+아르젠타에게 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Argenta's Poison Sac]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>189</npcid>
+         <npcename>n189_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(페어리스타 마법연구소)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Adventurer David$<BR>Looks like you need my signature! No worries, the first signature will be free of charge. Heh. <BR><FONT color=#7e12d2>(You must receive the quest from Argenta at Gray Ruins to proceed.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="8"><![CDATA[<html> What happen this time? </html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Argenta$<BR>Even though handling you jobs can be rather annoying.<BR>Still… I am going to use you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-party1" mid="10"><![CDATA[<html>(Ask what's for the day) </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Argenta$<BR>Are you heading to <FONT color=#a82424>Dark Tower Magic Institute</FONT>?<BR>Since you are making a trip here, why not help me out as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$Argenta$<BR>This job can be easily accomplish alone.<BR>Not like I am gonna ask you to capture the Dragon. Go alone.<BR><BR><FONT color=#7e12d2>(You cannot proceed the quest while in a party)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="12"><![CDATA[<html> ... A little? How little is considered little? </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Argenta$<BR>This job is so simple that any injured Hound finish it. All you need to do is to bring me some <FONT color=#a82424>Poison Sac</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="14"><![CDATA[<html> I'll check this one out. </html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Argenta$<BR>What? <FONT color=#a82424>A little bit</FONT> is <FONT color=#a82424>a little bit</FONT>. Does the exact number matters? Anyway, all you need to do is to kill a few of monsters at <FONT color=#a82424>Dark Tower Magic Institute</FONT>. As simple as it sound?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="16"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Argenta's Poison Sac$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Argenta$<BR>I won't be waiting long for you? We shall see...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-party2" mid="20"><![CDATA[<html> So, what do I do? </html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Argenta$<BR>Are you heading to <FONT color=#a82424>Dark Tower Magic Institute</FONT>?<BR>Since you are making a trip here, why not help me out as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-a" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$Argenta$<BR>This job can be easily accomplish alone.<BR>Not like I am gonna ask you to capture the Dragon. Go alone.<BR><BR><FONT color=#7e12d2>(You cannot proceed the quest while in a party)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-1-c" mid="22"><![CDATA[<html> ... A little? How little is considered little? </html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Argenta$<BR>This job is so simple that any injured Hound finish it. All you need to do is to bring me some <FONT color=#a82424>Poison Sac</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-c" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-1-d" mid="24"><![CDATA[<html> I'll check this one out. </html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Argenta$<BR>What? <FONT color=#a82424>A little bit</FONT> is <FONT color=#a82424>a little bit</FONT>. Does the exact number matters? Anyway, all you need to do is to kill a few of monsters at <FONT color=#a82424>Dark Tower Magic Institute</FONT>. As simple as it sound?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-2" mid="26"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Argenta' Poison Sac$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$Adventurer David$<BR>Heh. You again! Quit following me around? Heh. Heh. Heh.<BR><FONT color=#7e12d2>(Please go talk to Argenta in Gray Ruins.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Argenta$<BR>I won't be around to wait for you for a long time.<BR>Deal with it yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-2-a" mid="30"><![CDATA[<html> (This is why the person deserve to be ignored.) </html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. Seems like <FONT color=#a82424>Great Adventurer David</FONT>'s has a new follower. Ha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-a" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-2-b" mid="32"><![CDATA[<html>I'm here to find a Poison Sac.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Adventurer David$<BR>So what <FONT color=#a82424>excuse</FONT> do you have in mind this time round to <FONT color=#a82424>follow me</FONT>? Heh.<BR>I'm at all ears.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-2-c" mid="34"><![CDATA[<html> Huh? Why? </html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Adventurer David${action:Talk}<BR>What? <FONT color=#7e12d2>(Adventurer David laughed.)</FONT> <BR>Heh. This is the worst reason I ever come across.<BR>Newbie! The <FONT color=#a82424>Poison Sac</FONT> that you are looking for doesn't exist around here! Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-2-c" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Adventurer David$<BR>Can't you go <FONT color=#a82424>alone</FONT>? Heh. Heh. Heh.<BR><FONT color=#7e12d2>(Adventurer David's arrogance is acting up again)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-3" image="QS_Default.dds" itemindex="400091">
+      <talk_question mid="36"><![CDATA[<html>$Adventurer David$<BR>So you travel so far here just for a <FONT color=#a82424>Poison Sac</FONT>... Like I predicted, Newbie! Heh. Heh. Heh.<BR><FONT color=#7e12d2>(Adventurer David's arrogance is acting up again)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-a" mid="38"><![CDATA[<html>(Staring in disbelieve, dumbfounded and speechless.)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. Are you curious why can't you get the <FONT color=#a82424>Poison Sac</FONT>, are you? You <FONT color=#a82424>poor</FONT> thing. I will <FONT color=#a82424>specially</FONT> tell you!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-a" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-b" mid="40"><![CDATA[<html> I was told to do this</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Adventurer David${action:Talk}<BR>You can retrieve the <FONT color=#a82424>Poison Sac</FONT> at <FONT color=#a82424>Death Basin</FONT>, not here! Heh. As expected, a Newbie having such limited information, I the <FONT color=#a82424>Great Adventurer David</FONT> will never make such a grave mistake. Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-4-c" mid="42"><![CDATA[<html> But I'll not give any money. </html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Adventurer David$<BR>Are you trying to push the blame? Having such attitude, you will never become a <FONT color=#a82424>Great Adventurer</FONT>. Heh. Is okay Newbie! I might have some <FONT color=#a82424>Poison Sac</FONT> on hand. Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-c" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-d" mid="44"><![CDATA[<html> ... On what condition again? </html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Adventurer David$<BR>Did you think I, Great Adventurer, will give you a Poison Sac for <FONT color=#a82424>a small token</FONT>? You are not even any where near there yet. Heh. Heh. Heh. Of course, I will give it to you <FONT color=#a82424>freely</FONT>, if you fufil my <FONT color=#a82424>some</FONT> requirements.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-d" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-e" mid="46"><![CDATA[<html> You're kidding! </html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Adventurer David$<BR>I, Adventurer David almost slay the <FONT color=#a82424>Spider Queen</FONT> in there. Sadly, <FONT color=#a82424>my hand slipped during the battle, so I had no choice but to stop and rest for a moment</FONT>! Agh! I am sure the Spider Queen will be dead by now if such accident didn't happen. I could have delivered my <FONT color=#a82424>final blow</FONT>! Guess what? I bet the Spider Queen is smirking at one corner right now. Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-e" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-f" mid="48"><![CDATA[<html>It's just pure coincidence, nothing to do with clairvoyance.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Adventurer David$<BR>Those are for real! Have you seen me lying? Heh. Heh. Heh. For I am the <FONT color=#382000>Greatest</FONT> and <FONT color=#7e12d2>Powerful</FONT> and <FONT color=#086171>Honest</FONT> Adventurer. As you know already, I have clairvoyance. Heh. That is why I preserve some Poison Sac for you, <FONT color=#a82424>Newbie</FONT>. Beg me, and I shall give you those <FONT color=#a82424>Poison Sac</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-f" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-4-g" mid="50"><![CDATA[<html> Feeling so horrified, tears almost fall. </html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Adventurer David$<BR>But! If you slay Spider Queen, I will fulfil your request! Remember, <FONT color=#a82424>just one final blow</FONT> will be sufficient to slay the Spider Queen. Just one hit!! Perfect? Doesn't it feels like a dream, being able to get the Poison Sac with <FONT color=#a82424>hitting the Spider Queen just once</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-4-g" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Adventurer David$<BR>Don't be too thrilled~ Heh. Now, you go defeat Spider Queen. Remember, all it takes is just <FONT color=#a82424>one more blow</FONT> to kill the Spider Queen! Heh. Heh. Heh.<BR><FONT color=#7e12d2>(Adventurer David's arrogance is acting up again)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-5" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Adventurer David$<BR>.. Upon encountering the  <FONT color=#a82424>Spider Queen</FONT> I was so shocked that I dropped my weapon. Sheesh... No one saw that scene right?.<BR><FONT color=#7e12d2>(Adventurer David was trembling as he spoke.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6" image="QM_Queen_Spider.dds" itemindex="">
+      <talk_answer link_index="n189_slave_david-6-a" mid="55"><![CDATA[<html>It took more than just one hit.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Adventurer David$<BR>Ha. Ha. Ha. Rookie <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>!!<BR>I enjoyed very much of you Rookie form, when you were struggling against <FONT color=#a82424>Spider Queen</FONT> who just needs <FONT color=#a82424>one more hit</FONT> to defeat!! Ha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-a" image="" itemindex="">
+      <talk_answer link_index="n189_slave_david-6-b" mid="57"><![CDATA[<html> ... You're kidding! </html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Adventurer David$<BR>What's because you are such a <FONT color=#a82424>weakling</FONT>. Frankly speaking, I could kill the Spider Queen with <FONT color=#a82424>just a half of hit</FONT>, not one hit! Ha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n189_slave_david-6-c" mid="59"><![CDATA[<html>(Receive a bag of poison Sac.)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Adventurer David$<BR>No lies is needed! For I am the <FONT color=#a82424>Great Adventurer</FONT>. Were you stunned by my intellectual speech?<BR>Heh. Anyway, here is the Poison Sac which I <FONT color=#a82424>promised</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-6-c" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. So long Newbie!<BR><FONT color=#7e12d2>(Adventurer David stares into the sky aimlessly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n189_slave_david-7" image="" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. So long Newbie!<BR><FONT color=#7e12d2>(Adventurer David stares into the sky aimlessly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n164_argenta_wounded-7-a" mid="63"><![CDATA[<html>(Hand over to Argenta)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Argenta$<BR>What took you so long? Weakling <FONT color=#086171><FONT color=#382000>{user_nick}</FONT></FONT>.<BR>So, have you bought the Poison Sac?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-b" mid="65"><![CDATA[<html>That... That poisonious...!</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Argenta$<BR>As expected, you are such a fool, <FONT color=#a82424>a unfailing fool</FONT>! Now you <FONT color=#a82424>only</FONT> brought 10 Poison Sac.<BR><FONT color=#7e12d2>(Argenta ate those Poison Sac in a single breath.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-c" mid="67"><![CDATA[<html>You will die from poison overdose!</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Argenta$<BR>Why are you so surprized? It is common sense that drinking a <FONT color=#a82424>mild poison</FONT> actually boost body. You mean you didn't know about it?<BR>Even humans are putting the mild poison in their foods.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-d" mid="69"><![CDATA[<html>I remember I overhead that, Poison Sac can be found in Death Basin.</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Argenta$<BR>I'm not dying. Do I look dead now?<BR>Why are you still staring at me? Seems like you do have a problem with me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-e" mid="71"><![CDATA[<html>But you told me that Poison Sac are in Dark Tower Magic Institute.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Argenta$<BR>Oh, really?<BR>So what?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-f" mid="73"><![CDATA[<html> Oh ... yeah .... </html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Argenta$<BR>Poison Sac were in Dark Tower Magic Institute at least <FONT color=#a82424>a few days ago</FONT>. I believe those monster might have moved since they have legs. Why are you always arguing with me about <FONT color=#a82424>trivial matters</FONT>? You are so <FONT color=#a82424>narrow-minded</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-f" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-g" mid="75"><![CDATA[<html>(In a state of shocked..)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Argenta$<BR>Seems like you are still a young kid? Run along now.<BR>But chances that I might have more job for you later on, get back here if I call okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-7-h" mid="77"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-7-h" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Argenta$<BR>Why? Can't I use you freely as and when I like it? Be glad that you are my most comfortable <FONT color=#a82424>slave</FONT> in whole world. Be grateful, you will have a better future..</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">265</exe>
+         <exe type="setstep">2</exe>
+         <exe type="recompense_view">,2651,2652,2653,2654,2655</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">c</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="recompense_view">,2651,2652,2653,2654,2655</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="10">400091</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400091</exe>
+         <exe type="recompense">,2651,2652,2653,2654,2655</exe>
+         <exe type="complete">265</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="party1">3</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="f">0,1</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="party2">2</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="d">1</exelink>
+   <exelink qstep="1" npc="n164_argenta_wounded" sub="2">0</exelink>
+   <exelink qstep="2" npc="n189_slave_david" sub="b" />
+   <exelink qstep="2" npc="n189_slave_david" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n189_slave_david" sub="b" />
+   <exelink qstep="4" npc="n189_slave_david" sub="c" />
+   <exelink qstep="4" npc="n189_slave_david" sub="d" />
+   <exelink qstep="4" npc="n189_slave_david" sub="e" />
+   <exelink qstep="4" npc="n189_slave_david" sub="f" />
+   <exelink qstep="4" npc="n189_slave_david" sub="g">0,1</exelink>
+   <exelink qstep="6" npc="n189_slave_david" sub="b" />
+   <exelink qstep="6" npc="n189_slave_david" sub="c">0,1,2</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="f" />
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="g">1</exelink>
+   <exelink qstep="7" npc="n164_argenta_wounded" sub="h">0,2</exelink>
+   <journal_data recompense="1:2651,2:2652,3:2653,4:2654,5:2655" quest_title="아르젠타의 독주머니" chapterid="" quest_level="19" quest_mark_type="10" use_item_list="400091">
+      <journal index="1">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>152,n189</destination_pos>
+         <destination_mode>custom:151@1,152@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[Argenta's Errand]]></title>
+         <contents mid="81"><![CDATA[<html>Argenta assigned an errand to you. Collect <FONT color=#a82424>Poison Sac</FONT> at Dark Tower Magic. Even though you have no idea how to collect, just head down to <FONT color=#a82424>Dark Tower Magic</FONT>.<BR><FONT color=#7e12d2>(You cannot proceed the quest while in a party)<BR></FONT><BR><FONT color=#086171>Cristal Stream → Blizzard Plain(Road of No Return)</FONT> <FONT color=#a82424>→ Dark Tower Magic</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[(Solo) Explore the Dark Tower Magic Institute.]]></destination>
+         <todo_msg mid="83"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>153,n189</destination_pos>
+         <destination_mode>custom:152@3,153@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Strange Adventurer David]]></title>
+         <contents mid="85"><![CDATA[<html>You met a strange person named, <FONT color=#a82424>Adventurer David</FONT>. He seems like he knows how to collect the <FONT color=#a82424>Poison Sac</FONT>, but he is not willing to share. You might need to venture into the deeper area to uncover the secret. So let's move forward.<BR> <BR><FONT color=#086171> Blizzard Plain(Road of No Return)</FONT> <FONT color=#a82424>→ Dark Tower Magic.</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Explore the Dark Tower Magic Institute.]]></destination>
+         <todo_msg mid="87"><![CDATA[Please venture into the deeper area to find Poison Sac.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_Queen_Spider.dds</contents_image>
+         <destination_pos>154,0,0</destination_pos>
+         <destination_mode>custom:153@1,154@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Adventurer David's Suggestion]]></title>
+         <contents mid="89"><![CDATA[<html>Adventurer David offered a suggestion. If you defeat the <FONT color=#a82424>Spider Queen</FONT>, Adventurer David will reward you with Poison Sac. Adventurer David said that he has almost kill Spider Queen. Although it sound suspicious, we shall just go ahead with that plan.<BR> <BR><FONT color=#086171>Blizzard Plain(Road of No Return)</FONT> <FONT color=#a82424>→ Dark Tower Magic</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Kill Spider Queen]]></destination>
+         <todo_msg mid="91"><![CDATA[Please kill Spider Queen Raren]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image />
+         <destination_pos>154,n189</destination_pos>
+         <destination_mode>custom:154@1</destination_mode>
+         <statemark_npcid>189</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Adventurer David Cracker]]></title>
+         <contents mid="93"><![CDATA[<html>You have slayed Spider Queen. As you have promised with <FONT color=#a82424>Adventurer David</FONT>, you have to go get Poison Sac from Adventurer David.<BR><BR><FONT color=#086171> Dark Tower Magic</FONT> <FONT color=#a82424>→ Adventurer David</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Talk to Adventurer David]]></destination>
+         <todo_msg mid="95"><![CDATA[You have killed Spider Queen. Please go talk to Adventurer David.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>9,-1155,-4312</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[Collect Poison Sac]]></title>
+         <contents mid="97"><![CDATA[<html>You have received Poison Sac. Let's go back to <FONT color=#a82424>Gray Ruins</FONT> and give Poison Sac to <FONT color=#a82424>Argenta</FONT>.<BR> <BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[Report to Argenta]]></destination>
+         <todo_msg mid="99"><![CDATA[You have been collected Poison Sac. Please report to Argenta in Gray Ruins.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>19:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>264</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

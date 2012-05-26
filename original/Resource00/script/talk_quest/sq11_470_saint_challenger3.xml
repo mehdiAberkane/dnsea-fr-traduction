@@ -1,0 +1,242 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_470_saint_challenger3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>470</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>"세번 째 도전장은 김오크다운 허세 쩌는 도전장이다. 대군주의 연병장에서 기다리겠다고 하는데… 김오크와 격돌. 하지만 가볍게 승리한다. 이번 싸움은 패배했지만 언젠가 다시 도전할 것을 다짐하는 김오크. 우정 + 라이벌 수치가 왠지 높아진 느낌이다. 사나이의 뜨거운 우정에 대해 이야기하며 다시 만날 것을 약속하고 도와준 것에 대한 보답으로 김오크 가문의 보물을 선물한다. (김오크 가문의 망치. 쓸데는 없다.)"
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Orc Kim's Counterattack]]></qkname>
+      <qnpc>
+         <npcid>98</npcid>
+         <npcename>n098_warrior_master_lodrigo</npcename>
+         <npckname>상급 워리어 로드리고</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-a" mid="6"><![CDATA[<html>What…What's going on?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Warrior Rodrigo$<BR>You... Come over here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-b" mid="8"><![CDATA[<html>You mean Orc Kim's challenge.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Warrior Rodrigo$<BR>What do you mean what's going on! It's because of your best friend or rival, whatever you call him, <FONT color=#a82424>Orc Kim</FONT>. I received another <FONT color=#a82424>challenge</FONT> from him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-c" mid="10"><![CDATA[<html>Then, you should have declined.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Yes. Do you know how much this letter stinks… They say <FONT color=#a82424>a person gets angry at others for ones own mistakes</FONT>, I'm tired of passing on these kind of challenges.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-d" mid="12"><![CDATA[<html>I agree.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Of course I declined. But then, Orc Kim said he won't forget what I've done for him and started to look inside his <FONT color=#a82424>underwear</FONT>! I have no idea what's inside that underwear but I don't want it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-e" mid="14"><![CDATA[<html>(Reads Orc Kim's challenge)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Anyway, I won't be delivering any more of Orc Kim's challenge, so this will be the last time. Take this letter!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-f" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>{user_nick}, listen carefully to what I'm about to tell you.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-f" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-g" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>This letter originated from England in 1925.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-h" mid="20"><![CDATA[<html>(What, this is just a letter of good luck)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>If you send this exact letter to 10 different people, good luck will come to you….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-h" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-i" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>Sorry. Recently, I've received this letter and I had no choice but to send it to you. It said if I didn't send it to 10 people, there will be a curse upon me… If I don't do these kind of things, I feel uncomfortable.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-i" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-j" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>Now I'm free from being cursed. Haha I feel so great! Now, let's get back to business. It's just too obvious how strong I am.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-j" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-k" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>Frankly, up until now, I was full of exaggeration. However, as I got my memory back, I remembered my father's will. You should never take a shortcut when preparing for a challenge. Only endless training will make you a winner…</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-k" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-l" mid="29"><![CDATA[<html>(But only a day went past!)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>But I had not trained myself. I won't succeed… No… no, this isn't it. Anyway, in the honorable name of Orc Warrior Typhoon, after I parted from you, I trained myself for 30 minutes day and night everyday.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-l" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-m" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>At last, I developed a fatal nuclear dragon punch. When I throw a punch, it is so strong that an old man in the other town falls down. I'm going to use this punch on you.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-m" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-n" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000>{user_nick}! It's a challenge! Put everything you and I have and fight again. I already feel pleased to imagine myself on top of you, who had lost, and fart on you.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-n" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-o" mid="36"><![CDATA[<html>(Talk to Rodrigo)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Orc Kim's Challenge$<BR><FONT color=#382000><FONT color=#382000>The challenge will take place at the </FONT> <FONT color=#a82424>Fortress of Dark Overlord Army</FONT></FONT><FONT color=#382000>, where you should know well. If you want, you can bring all your friends and I'll challenge all of you. Haha!<BR><BR>* From unbeatable Orc Kim</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-o" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-p" mid="38"><![CDATA[<html>He is so stubborn I have no choice but to face him.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Master Warrior Rodrigo$<BR>It seems this will be the last challenge. Of course, will you face him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-p" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-acceptted" mid="40"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Orc Kim's Counterattack$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-a" mid="44"><![CDATA[<html>… Yes.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Master Warrior Rodrigo$<BR>They say, <FONT color=#a82424>look before you leap</FONT>, so don't underestimate him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-a" image="QW_43.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Go to <FONT color=#a82424>Fortress of Dark Overlord Army</FONT> and make sure he never sends this kind of filthy letter again! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2" image="QW_43.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Go to <FONT color=#a82424>Fortress of Dark Overlord Army</FONT> and make sure he never sends this kind of filthy letter again! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-a" mid="48"><![CDATA[<html>I've won.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Warrior Rodrigo$<BR>So, how did the challenge go?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-b" mid="50"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Thank goodness. I feel better knowing I'm free from his filthy letter. Take this! This is a present for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-c" mid="52"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-d" mid="54"><![CDATA[<html>Isn't the saying, 'The boughs that bear most hang lowest?'</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Master Warrior Rodrigo$<BR>They say <FONT color=#a82424>the boughs that bear most have the largest breast</FONT>, so don't pride yourself too much for winning over Orc Kim.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-d" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-e" mid="56"><![CDATA[<html>Thank you for passing on the challenge!</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Heh. Still a fastidious man. <BR>Off you go on your journey.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-e" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-3-f" mid="58"><![CDATA[<html>We can see each other time to time.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Just like <FONT color=#a82424>a good medicine tastes bitter</FONT>… <BR>Now that I have to part with him, it makes me a little sad.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-3-f" image="" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Master Warrior Rodrigo$<BR>In case we meet again, I'll learn some <FONT color=#a82424>new proverbs</FONT>. <BR>Farewell.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4701,4702,4703,4704,4705</exe>
+         <exe type="setquest">470</exe>
+         <exe type="talk" npc="n098_warrior_master_lodrigo">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="3,4,5" onexe="">21069</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4701,4702,4703,4704,4705</exe>
+         <exe type="complete">470</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="p">0</exelink>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="a">0,2,1</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="b">0</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="c">1</exelink>
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="d" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="e" />
+   <exelink qstep="3" npc="n098_warrior_master_lodrigo" sub="f" />
+   <journal_data recompense="1:4701,2:4702,3:4703,4:4704,5:4705" quest_title="역습의 김오크" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode />
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Talk to Master Warrior Rodrigo]]></title>
+         <contents mid="62"><![CDATA[<html>The real challenge from Orc Kim, who got his memory back, arrived. Receive the challenge from Master Warrior Rodrigo and read it.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Warrior Rodrigo</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Master Warrior Rodrigo]]></destination>
+         <todo_msg mid="64"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_43.dds</contents_image>
+         <destination_pos>431,0,0</destination_pos>
+         <destination_mode>custom:431@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Challenge with Orc Kim]]></title>
+         <contents mid="66"><![CDATA[<html>According to the challenge, Orc Kim will be waiting at the Fortress of Dark Overlord Army. Go there and challenge him.<BR><BR><FONT color=#086171>Black Mountain(Dark Overlord's Gate)</FONT> <FONT color=#a82424>→ Fortress of Dark Overlord Army</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Challenge with Orc Kim]]></destination>
+         <todo_msg mid="68"><![CDATA[Go to the Fortress of Dark Overlord Army and challenge Orc Kim.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode />
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Talk to Master Warrior Rodrigo]]></title>
+         <contents mid="70"><![CDATA[<html>Orc Kim is easily beaten. Return to Saint Haven and report to Master Warrior Rodrigo.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Warrior Rodrigo</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Talk to Master Warrior Rodrigo]]></destination>
+         <todo_msg mid="72"><![CDATA[Orc Kim is beaten! Report back to Rodrigo.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>469</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

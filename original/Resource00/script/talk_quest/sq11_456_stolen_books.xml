@@ -1,0 +1,238 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_456_stolen_books</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>456</qid>
+      <designer>김주연</designer>
+      <qlevel>26</qlevel>
+      <qdesc>왕성 비망록 400098
+세인트 헤이븐 연감 400099
+무기개발론 400100
+궁중 요리법 400101
+마물 도감 400102</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Stolen books]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR>Recently, the kingdom’s important documents are being stolen. We found an important lead, so we are looking for an investigator. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$General Douglas$<BR>The crime scene was a mess but there was a white rose decoration. I believe it is related to the thief that you have investigated before. You mentioned the thief had a white rose decoration. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="40"><![CDATA[<html> (Guess he was waiting for me)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$General Douglas$<BR>
+Also the remaining books had similar footprints that were found before. Summing up all these information, we are sure that it’s the same thief as before. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-d" mid="8"><![CDATA[<html> Ok </html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$General Douglas$<BR>We don’t have any reliable person but you. You are aware of that thief as well. So can you retrieve the books and find out his motives. Please? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="10"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Stolen Books$<BR>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$General Douglas$<BR>According to Ghunter’s report, there were some abandoned books in <FONT color=#a82424>Forsaken Islet</FONT>. He believes that the books were stolen from here. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$General Douglas$<BR>
+Please go to <FONT color=#a82424>Forsaken Islet</FONT> and collect the books. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$General Douglas$<BR>Is that all of the books? <BR>Oh, we have retrieved all the important books. We have to strengthen the security of the Archive as well. The security of the interior has been weakened due to the reinforcing of the outside security. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="17"><![CDATA[<html>What kind of records? </html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$General Douglas$<BR>Ah! The most important books are missing!<BR>The records about Dragon Followers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="19"><![CDATA[<html>The Cryptogram?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$General Douglas$<BR>It’s the book about Dragon Followers’ history, case records and report on their <FONT color=#a82424> Cryptogram </FONT>. Since the decoder is missing, I guess that's what the thief was looking for. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-d" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$General Douglas$<BR>
+They communicated in a cryptic language since they are a secret association. It was so secretive that we could not decode them. Damn…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-e" mid="23"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest Reward$<BR>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-e" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-f" mid="41"><![CDATA[<html> It's a big problem, those important books are missing </html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$General Douglas$<BR>The thief tried to find out about the ring. That means the thief stole the decoder to find out more information about the ring. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-f" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$General Douglas$<BR>
+Well, it’s a big problem that the property of kingdom is being stolen but I wonder how the thief could access the castle. We can find out what he wants to do with it in his next move. We should just wait. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4561,4562,4563,4564,4565</exe>
+         <exe type="setquest">456</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>(아이템 등록 필요)
+왕성 비망록(500) / 세인트 헤이븐 연감(510) / 무기개발론(514) / 궁중 요리법(517) / 마물 도감(533)
+
+왕성 내부에서 일어나는 정치적 사건이나 중요한 문제에 대하여 기록한 책.
+세인트 헤이븐의 초대왕인 카시우스에 대한 내용부터 여러 왕들에 관련된 사건등이 기록된 책.
+지금까지 사용된 무기들의 문제점을 보완하여 새로운 무기를 만들어내고자 학자들이 기록한 책.
+왕에게만 올려졌던 각종 요리법들이 기록되어있는 책.
+학계에 보고된 마물들의 종류와 그들의 무기 그리고 생태등을 기록한 책.
+
+
+</comment>
+      <conditions>
+         <chk type="questitem" num="2" op="]=">400098</chk>
+         <chk type="questitem" num="2" op="]=">400099</chk>
+         <chk type="questitem" num="2" op="]=">400100</chk>
+      </conditions>
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">871</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200871</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">863</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200863</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="11">862</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="11">200862</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">400098</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">400099</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">400100</exe>
+         <exe type="conexe" true="12" false="13,12">0</exe>
+         <exe type="conexe" true="12" false="14,12">1</exe>
+         <exe type="conexe" true="12" false="15,12">2</exe>
+         <exe type="conexe" true="16,17,18" false="">0 and 1 and 2</exe>
+         <exe type="addquestitem" num="1">400098</exe>
+         <exe type="addquestitem" num="1">400099</exe>
+         <exe type="addquestitem" num="1">400100</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>*퀘스트 아이템 등록되면 삭제하고, 포기시에도 삭제될 수 있도록 넣어야함.</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense">,4561,4562,4563,4564,4565</exe>
+         <exe type="complete">456</exe>
+         <exe type="delquestitem" num="-1">400098</exe>
+         <exe type="delquestitem" num="-1">400099</exe>
+         <exe type="delquestitem" num="-1">400100</exe>
+         <exe type="delquestitem" num="-1">400101</exe>
+         <exe type="delquestitem" num="-1">400102</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1,2,3,4,5,6,7,8,19,20</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="d">0</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="e">1,2,3,4,5,6</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="f" />
+   <journal_data recompense="1:4561,2:4562,3:4563,4:4564,5:4565" quest_title="도난당한 책들" chapterid="" quest_level="26" quest_mark_type="10" use_item_list="400098,400099,400100,400101,400102&#xD;&#xA;">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Stolen books]]></title>
+         <contents mid="26"><![CDATA[<html>Stolen books from Saint Haven’s armory was found in <FONT color=#a82424>Forsaken Islet</FONT>. Go to <FONT color=#a82424>General Douglas</FONT> and find out more. <BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle </FONT> <FONT color=#a82424>→ General Douglas </FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Stolen Books]]></destination>
+         <todo_msg mid="28"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_30.dds</contents_image>
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Retrieve books from Forsaken Islet]]></title>
+         <contents mid="30"><![CDATA[<html>According to <FONT color=#a82424>Adventurer’s Guild Master Ghunter </FONT>’s report the books were discovered in <FONT color=#a82424>Forsaken Islet </FONT>. Go to the island and retrieve the books. <BR>
+ <BR>
+<FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Forsaken Islet </FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Retrieve the books from Forsaken Islet]]></destination>
+         <todo_msg mid="32"><![CDATA[Find the books being found in Forsaken Islet.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Conversation with General Douglas in Royal Castle]]></title>
+         <contents mid="34"><![CDATA[<html>Found all the <FONT color=#a82424>Stolen books</FONT>. Report to <FONT color=#a82424>General Douglas</FONT> in Royal Castle.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle </FONT> <FONT color=#a82424>→ General Douglas </FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Conversation with General Douglas in Royal Castle]]></destination>
+         <todo_msg mid="36"><![CDATA[Report to General Douglas in Royal Castle.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>455</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

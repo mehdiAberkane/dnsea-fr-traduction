@@ -1,0 +1,251 @@
+   <talk>
+      <npcename>n413_guild_board</npcename>
+      <npcid>413</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Lonely Forest Path]]></npckname>
+      <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="4" link_target="gq11_3171_n413_wilden_normal.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Mapology II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="5" link_target="gq11_3172_n413_wilden_hunt.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>The Hair Affair</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="6" link_target="gq11_3173_n413_wilden_drop.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Snooping Around Welton Hollow </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq11_3174_n413_wilden_hard.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Courage of a Man</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq11_3175_n413_wilden_boss.xml"><![CDATA[<html>[Lv.24]<FONT color=#086171>Wanted: Stone Wing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq11_3176_n413_wilden_prop.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Finding The Remains</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="gq11_3177_n413_wilden_master.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Money Matters II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq11_3180_n413_wilden_rank.xml"><![CDATA[<html>[Lv.24] <FONT color=#7e12d2>Assault II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="gq11_3231_n413_marisa_normal.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Mapology VIII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="gq11_3232_n413_marisa_hunt.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Sweet Revenge</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="gq11_3233_n413_marisa_drop.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Cause Analysis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="gq11_3234_n413_marisa_hard.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Black Sauce Spaghetti</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="gq11_3235_n413_marisa_boss.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Wanted: Red Eyes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="gq11_3236_n413_marisa_prop.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Ghostly Disturbance</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="gq11_3237_n413_marisa_master.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Devil's Claw</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq11_3240_n413_marisa_rank.xml"><![CDATA[<html>[Lv.30] <FONT color=#7e12d2>Assault VIII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="gq11_3179_n413_wilden_abyss.xml"><![CDATA[<html>[Lv.31]<FONT color=#7e12d2> Into the Abyss: Defeat Stone Wing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="39" link_target="gq11_3239_n413_marisa_abyss.xml"><![CDATA[<html>[Lv.31]<FONT color=#7e12d2> Into the Abyss: Defeat Red Eyes.</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="gq11_3311_n413_explosion_normal.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Breathtaking Moment</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="42" link_target="gq11_3312_n413_explosion_hunt.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Weaker Than You III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="43" link_target="gq11_3313_n413_explosion_drop.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> One and Only Fan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="gq11_3314_n413_explosion_hard.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Satisfactory Capabilities</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="gq11_3315_n413_explosion_boss.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Wanted: Cyclops Patchwork</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="gq11_3316_n413_explosion_prop.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Finding Hidden Chuckie VI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="gq11_3317_n413_explosion_master.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> A Simple Bet</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="gq11_3320_n413_explosion_rank.xml"><![CDATA[<html>[Lv.36]<FONT color=#7e12d2> Assault VI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="50" link_target="gq11_3341_n413_gtown_normal.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Cutie Fertilizer</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="gq11_3342_n413_gtown_hunt.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Handling Stock</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="gq11_3343_n413_gtown_drop.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Security Council</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="gq11_3344_n413_gtown_hard.xml"><![CDATA[<html>[Lv.38]<FONT color=#086171> Geraints I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="gq11_3345_n413_gtown_boss.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171> Wanted: Giant Wisp</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="gq11_3346_n413_gtown_prop.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Finding Hidden Chuckie IX</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="gq11_3347_n413_gtown_master.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Desired Farewell</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="gq11_3350_n413_gtown_rank.xml"><![CDATA[<html>[Lv.38] <FONT color=#7e12d2>Assault IX</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="59" link_target="gq11_3319_n413_explosion_abyss.xml"><![CDATA[<html>[Lv.39]<FONT color=#7e12d2> Into the Abyss: Defeat Cyclops Patchwork</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="gq11_3349_n413_gtown_abyss.xml"><![CDATA[<html>[Lv.39] <FONT color=#7e12d2>Into the Abyss: Defeat Giant Wisp </FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>The following requests have been received.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="33"><![CDATA[<html><P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal>$Adventurer's Guild Board${action:Talk}<BR>No requests have been received at the moment.<P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal> <P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal><FONT color=#086171>? To: The Adventurer who tore up the Guild Board and escaped. [FYI, that wasn't part of the request!]</FONT><P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_31" mid="147"><![CDATA[<html>[Lv.24] Abandoned Welton Hollow</html>]]></talk_answer>
+         <talk_answer link_index="stage_35" mid="148"><![CDATA[<html>[Lv.30] Dried Marissa Spring</html>]]></talk_answer>
+         <talk_answer link_index="stage_41" mid="149"><![CDATA[<html>[Lv36] Explosion zone in Withered Leaves Forest </html>]]></talk_answer>
+         <talk_answer link_index="stage_45" mid="150"><![CDATA[<html>[Lv38]Ghost Town of Lonely Forest</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="151"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="62"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_31" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="152" link_target="gq11_3171_n413_wilden_normal.xml"><![CDATA[<html><FONT color=#2b2723>[Normal]</FONT><FONT color=#086171> Mapology II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="153" link_target="gq11_3172_n413_wilden_hunt.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171> The Hair Affair</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="154" link_target="gq11_3173_n413_wilden_drop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Snooping Around Welton Hollow </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="155" link_target="gq11_3174_n413_wilden_hard.xml"><![CDATA[<html><FONT color=#2b2723>[Hard]</FONT><FONT color=#086171> Courage of a Man</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="156" link_target="gq11_3175_n413_wilden_boss.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171> Wanted: Stone Wing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="157" link_target="gq11_3176_n413_wilden_prop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Finding the Remains</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="158" link_target="gq11_3177_n413_wilden_master.xml"><![CDATA[<html><FONT color=#2b2723>[Master]</FONT><FONT color=#086171>Money Matters II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="159" link_target="gq11_3180_n413_wilden_rank.xml"><![CDATA[<html><FONT color=#2b2723>[Master]</FONT><FONT color=#7e12d2> Total Attacks II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="160" link_target="gq11_3179_n413_wilden_abyss.xml"><![CDATA[<html><FONT color=#2b2723>[Abyss]</FONT><FONT color=#7e12d2> </FONT><FONT color=#7e12d2>Into the Abyss: Defeat Stone Wing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_31" mid="161"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="68"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Welton Hollow</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_35" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="162" link_target="gq11_3231_n413_marisa_normal.xml"><![CDATA[<html><FONT color=#2b2723>[Normal]</FONT><FONT color=#086171> Mapology VIII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="163" link_target="gq11_3232_n413_marisa_hunt.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171> Sweet Revenge</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="164" link_target="gq11_3233_n413_marisa_drop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Cause Analysis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="165" link_target="gq11_3234_n413_marisa_hard.xml"><![CDATA[<html><FONT color=#2b2723>[Hard]</FONT><FONT color=#086171> Black Sauce Spaghetti</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="166" link_target="gq11_3235_n413_marisa_boss.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171>  Wanted: Red Eyes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="167" link_target="gq11_3236_n413_marisa_prop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Ghostly Disturbance</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="168" link_target="gq11_3237_n413_marisa_master.xml"><![CDATA[<html><FONT color=#2b2723>[Master]</FONT><FONT color=#086171> The Devil's Claw</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="169" link_target="gq11_3240_n413_marisa_rank.xml"><![CDATA[<html><FONT color=#2b2723>[Master]</FONT><FONT color=#7e12d2> Assault VIII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="170" link_target="gq11_3239_n413_marisa_abyss.xml"><![CDATA[<html><FONT color=#2b2723>[Abyss]</FONT><FONT color=#7e12d2> </FONT><FONT color=#7e12d2>Into the Abyss: Defeat Red Eyes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_35" mid="171"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="69"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Dried Marissa Spring</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_41" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="172" link_target="gq11_3311_n413_explosion_normal.xml"><![CDATA[<html>[Normal]<FONT color=#086171> Breathtaking Moment</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="173" link_target="gq11_3312_n413_explosion_hunt.xml"><![CDATA[<html><FONT size=2>[Hunt]<FONT color=#086171> Weaker Than You III</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="174" link_target="gq11_3313_n413_explosion_drop.xml"><![CDATA[<html>[Acquire]<FONT color=#086171>  One and Only Fan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="175" link_target="gq11_3314_n413_explosion_hard.xml"><![CDATA[<html>[Hard]<FONT color=#086171> Satisfactory Capabilities</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="176" link_target="gq11_3315_n413_explosion_boss.xml"><![CDATA[<html>[Hunt]<FONT color=#086171> Wanted: Cyclops Patchwork</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="177" link_target="gq11_3316_n413_explosion_prop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Finding Hidden Chuckie VI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="178" link_target="gq11_3317_n413_explosion_master.xml"><![CDATA[<html>[Master]<FONT color=#086171> Simple Bet</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="179" link_target="gq11_3320_n413_explosion_rank.xml"><![CDATA[<html>[Master]<FONT color=#7e12d2> Assault VI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="180" link_target="gq11_3319_n413_explosion_abyss.xml"><![CDATA[<html>[Abyss]<FONT color=#7e12d2> Into the Abyss: Defeat Cyclops Patchwork</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_41" mid="181"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="70"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Forest of Dead Leaves</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_45" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="182" link_target="gq11_3341_n413_gtown_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Cutie Fertilizer</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="183" link_target="gq11_3342_n413_gtown_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Handling Stock</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="184" link_target="gq11_3343_n413_gtown_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>The Security Council</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="185" link_target="gq11_3344_n413_gtown_hard.xml"><![CDATA[<html>[Hard]<FONT color=#086171> Geraints I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="186" link_target="gq11_3345_n413_gtown_boss.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Wanted: Giant Wisp</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="187" link_target="gq11_3346_n413_gtown_prop.xml"><![CDATA[<html>[Collect] <FONT color=#086171>Finding Hidden Chuckie ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="188" link_target="gq11_3347_n413_gtown_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>Desired Farewell</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="189" link_target="gq11_3350_n413_gtown_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault IX</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="190" link_target="gq11_3349_n413_gtown_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Giant Wisp </FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="191"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Ghost Town of Desolate Woods</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv24" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_31" mid="195"><![CDATA[<html>[Lv.24] Abandoned Welton Hollow</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="196"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="194"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv30" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_31" mid="198"><![CDATA[<html>[Lv.24] Abandoned Welton Hollow</html>]]></talk_answer>
+         <talk_answer link_index="stage_35" mid="199"><![CDATA[<html>[Lv.30] Dried Marissa Spring</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="200"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="197"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv36" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_31" mid="202"><![CDATA[<html>[Lv.24] Abandoned Welton Hollow</html>]]></talk_answer>
+         <talk_answer link_index="stage_35" mid="203"><![CDATA[<html>[Lv.30] Dried Marissa Spring</html>]]></talk_answer>
+         <talk_answer link_index="stage_41" mid="204"><![CDATA[<html>[Lv36] Forest of Dead Leaves</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="205"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="201"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="9" false="2">0</exe>
+         <exe type="conexe" true="10" false="3">1</exe>
+         <exe type="conexe" true="11" false="4">2</exe>
+         <exe type="conexe" true="12" false="5">3</exe>
+         <exe type="conexe" true="13" false="6">4</exe>
+         <exe type="conexe" true="14" false="7">5</exe>
+         <exe type="conexe" true="15" false="8">6</exe>
+         <exe type="conexe" true="16" false="17">7</exe>
+         <exe type="enterquest">gq11_3171_n413_wilden_normal</exe>
+         <exe type="enterquest">gq11_3172_n413_wilden_hunt</exe>
+         <exe type="enterquest">gq11_3173_n413_wilden_drop</exe>
+         <exe type="enterquest">gq11_3174_n413_wilden_hard</exe>
+         <exe type="enterquest">gq11_3175_n413_wilden_boss</exe>
+         <exe type="enterquest">gq11_3176_n413_wilden_prop</exe>
+         <exe type="enterquest">gq11_3177_n413_wilden_master</exe>
+         <exe type="enterquest">gq11_3180_n413_wilden_rank</exe>
+         <exe type="conexe" true="25" false="18">8</exe>
+         <exe type="conexe" true="26" false="19">9</exe>
+         <exe type="conexe" true="27" false="20">10</exe>
+         <exe type="conexe" true="28" false="21">11</exe>
+         <exe type="conexe" true="29" false="22">12</exe>
+         <exe type="conexe" true="30" false="23">13</exe>
+         <exe type="conexe" true="31" false="24">14</exe>
+         <exe type="conexe" true="32" false="33">15</exe>
+         <exe type="enterquest">gq11_3231_n413_marisa_normal</exe>
+         <exe type="enterquest">gq11_3232_n413_marisa_hunt</exe>
+         <exe type="enterquest">gq11_3233_n413_marisa_drop</exe>
+         <exe type="enterquest">gq11_3234_n413_marisa_hard</exe>
+         <exe type="enterquest">gq11_3235_n413_marisa_boss</exe>
+         <exe type="enterquest">gq11_3236_n413_marisa_prop</exe>
+         <exe type="enterquest">gq11_3237_n413_marisa_master</exe>
+         <exe type="enterquest">gq11_3240_n413_marisa_rank</exe>
+         <exe type="conexe" true="35" false="34">16</exe>
+         <exe type="conexe" true="36" false="37">17</exe>
+         <exe type="enterquest">gq11_3179_n413_wilden_abyss</exe>
+         <exe type="enterquest">gq11_3239_n413_marisa_abyss</exe>
+         <exe type="conexe" true="44" false="38">18</exe>
+         <exe type="conexe" true="45" false="39">19</exe>
+         <exe type="conexe" true="46" false="40">20</exe>
+         <exe type="conexe" true="47" false="41">21</exe>
+         <exe type="conexe" true="48" false="42">22</exe>
+         <exe type="conexe" true="49" false="43">23</exe>
+         <exe type="conexe" true="50" false="52">24</exe>
+         <exe type="enterquest">gq11_3311_n413_explosion_normal</exe>
+         <exe type="enterquest">gq11_3312_n413_explosion_hunt</exe>
+         <exe type="enterquest">gq11_3313_n413_explosion_drop</exe>
+         <exe type="enterquest">gq11_3314_n413_explosion_hard</exe>
+         <exe type="enterquest">gq11_3315_n413_explosion_boss</exe>
+         <exe type="enterquest">gq11_3316_n413_explosion_prop</exe>
+         <exe type="enterquest">gq11_3317_n413_explosion_master</exe>
+         <exe type="enterquest">gq11_3320_n413_explosion_rank</exe>
+         <exe type="conexe" true="51" false="53">25</exe>
+         <exe type="conexe" true="61" false="54">26</exe>
+         <exe type="conexe" true="62" false="55">27</exe>
+         <exe type="conexe" true="63" false="56">28</exe>
+         <exe type="conexe" true="64" false="57">29</exe>
+         <exe type="conexe" true="65" false="58">30</exe>
+         <exe type="conexe" true="66" false="59">31</exe>
+         <exe type="conexe" true="67" false="60">32</exe>
+         <exe type="conexe" true="68" false="69">33</exe>
+         <exe type="enterquest">gq11_3341_n413_gtown_normal</exe>
+         <exe type="enterquest">gq11_3342_n413_gtown_hunt</exe>
+         <exe type="enterquest">gq11_3343_n413_gtown_drop</exe>
+         <exe type="enterquest">gq11_3344_n413_gtown_hard</exe>
+         <exe type="enterquest">gq11_3345_n413_gtown_boss</exe>
+         <exe type="enterquest">gq11_3346_n413_gtown_prop</exe>
+         <exe type="enterquest">gq11_3347_n413_gtown_master</exe>
+         <exe type="enterquest">gq11_3350_n413_gtown_rank</exe>
+         <exe type="conexe" true="71" false="70">34</exe>
+         <exe type="conexe" true="72" false="73">35</exe>
+         <exe type="enterquest">gq11_3319_n413_explosion_abyss</exe>
+         <exe type="enterquest">gq11_3349_n413_gtown_abyss</exe>
+         <exe type="conexe" true="0" false="74">36</exe>
+         <exe type="conexe" true="76" false="75">37</exe>
+         <exe type="conexe" true="77" false="78">38</exe>
+         <exe type="talk">lv36</exe>
+         <exe type="talk">lv30</exe>
+         <exe type="talk">lv24</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3171</chk>
+         <chk type="hasquest">3172</chk>
+         <chk type="hasquest">3173</chk>
+         <chk type="hasquest">3174</chk>
+         <chk type="hasquest">3175</chk>
+         <chk type="hasquest">3176</chk>
+         <chk type="hasquest">3177</chk>
+         <chk type="hasquest">3180</chk>
+         <chk type="hasquest">3231</chk>
+         <chk type="hasquest">3232</chk>
+         <chk type="hasquest">3233</chk>
+         <chk type="hasquest">3234</chk>
+         <chk type="hasquest">3235</chk>
+         <chk type="hasquest">3236</chk>
+         <chk type="hasquest">3237</chk>
+         <chk type="hasquest">3240</chk>
+         <chk type="hasquest">3179</chk>
+         <chk type="hasquest">3239</chk>
+         <chk type="hasquest">3311</chk>
+         <chk type="hasquest">3312</chk>
+         <chk type="hasquest">3313</chk>
+         <chk type="hasquest">3314</chk>
+         <chk type="hasquest">3315</chk>
+         <chk type="hasquest">3316</chk>
+         <chk type="hasquest">3317</chk>
+         <chk type="hasquest">3320</chk>
+         <chk type="hasquest">3341</chk>
+         <chk type="hasquest">3342</chk>
+         <chk type="hasquest">3343</chk>
+         <chk type="hasquest">3344</chk>
+         <chk type="hasquest">3345</chk>
+         <chk type="hasquest">3346</chk>
+         <chk type="hasquest">3347</chk>
+         <chk type="hasquest">3350</chk>
+         <chk type="hasquest">3319</chk>
+         <chk type="hasquest">3349</chk>
+         <chk type="lvl" op=">=">38</chk>
+         <chk type="lvl" op=">=">36</chk>
+         <chk type="lvl" op=">=">30</chk>
+      </conditions>
+      <exelink idx="back_stage_31">73</exelink>
+      <exelink idx="back_stage_35">73</exelink>
+      <exelink idx="back_stage_41">73</exelink>
+   </talk>

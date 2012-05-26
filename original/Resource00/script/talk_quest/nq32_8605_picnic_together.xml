@@ -1,0 +1,221 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq32_8605_picnic_together</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8605</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>8606</nextqid>
+      <nextqname>nq32_8606_good_glass</nextqname>
+      <nextqnpc>n062_trainer_lindsay</nextqnpc>
+      <qkname mid="1"><![CDATA[Picnic for Two]]></qkname>
+      <qnpc>
+         <npcid>117</npcid>
+         <npcename>n117_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>62</npcid>
+         <npcename>n062_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-noquest" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="181"><![CDATA[<html>$Trainer Lindsay$<BR>Hmm? Why are you here? Did you miss me? HAHAHA!<BR>Meet me at <FONT color=#a82424>Saint Haven</FONT>. I don’t like stalkers~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-a" mid="6"><![CDATA[<html> Picnic? How's the horse? </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Trainer Lindsay$<BR>Hey! <FONT color=#387206>{user_nick}</FONT>, Let’s go for a picnic.<BR>
+Picnic!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-b" mid="183"><![CDATA[<html> (You want me to go harvest) </html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$Trainer Lindsay$<BR>Yes. So let’s go picnic!<BR>Have to go feed the horses. Need hay to feed them. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-c" mid="185"><![CDATA[<html> What kind of grass do you feed them? </html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Trainer Lindsay$<BR>I gave him grass and Tom grew sick. <BR>So I got into trouble. I am sad. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-d" mid="187"><![CDATA[<html> (You gave him what you shouldn't have…)</html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$Trainer Lindsay${action:Cry}<BR>I gave him grass and Kakaflower. Also gave him special meal for Hounds. But Tom got sick. I am a very very bad trainer. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-e" mid="141"><![CDATA[<html> Ok. </html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Trainer Lindsay$<BR>I made lunch box. So you go to picnic with me. Let's go~<BR>I wait. OK? Let’s go!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-acceppted" mid="31"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html> $Picnic for Two$ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1" image="QW_39.dds" itemindex="">
+      <talk_question mid="189"><![CDATA[<html>$Trainer Lindsay$<BR>Umm, let’s go to <FONT color=#a82424>Captain Darlant’s Base</FONT>~!<BR>I've always wanted to go there. I'll head over first and wait for you there.  Come quick~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-1-a" mid="192"><![CDATA[<html> (Pulls out a big lunch box) </html> ]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Trainer Lindsay$<BR>You did make it! YOU, come. I, wait. Lots of fun.<BR>Lunch Box… I have a lunch box. I made it! Happy? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1-a" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-1-b" mid="194"><![CDATA[<html> Do you like carrots? </html>]]></talk_answer>
+      <talk_question mid="193"><![CDATA[<html>$Trainer Lindsay$<BR>Here, eat!!!<BR><FONT color=#7e12d2>(The lunch box is bursting with carrots. And only carrots.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1-b" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-1-c" mid="196"><![CDATA[<html> (Spit it out)…. Have you tried? </html>]]></talk_answer>
+      <talk_question mid="195"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>I don’t like carrots. I hate it~ They are for YOU! <BR><FONT color=#7e12d2>(She gives me a piece of carrot but it tastes awful. I think carrots are spoilt.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1-c" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-1-d" mid="198"><![CDATA[<html> So what do we need for hay? </html>]]></talk_answer>
+      <talk_question mid="197"><![CDATA[<html>$Trainer Lindsay$<BR>SURE~ Of course I haven’t!! ME hate carrots. <BR>YOU eat them all. Me really hate carrots~ Eww~<BR>
+<FONT color=#7e12d2>(She really hates it.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1-d" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-1-e" mid="200"><![CDATA[<html> What? You feed flowers to horses? </html>]]></talk_answer>
+      <talk_question mid="199"><![CDATA[<html>$Trainer Lindsay$<BR>Flowers! Anemone, Lavender, Lily of the Valley, and… daffodils… and… and…<BR><FONT color=#7e12d2>(She starts to name different flowers)</FONT><BR>
+I find flowers! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1-e" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-1-f" mid="202"><![CDATA[<html> You are the trainer…</html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$Trainer Lindsay$<BR>…?! Why? Flowers are pretty. I like their smell. <BR>Can’t I feed them? Hmm.. What do they eat? YOU know?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1-f" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-1-g" mid="204"><![CDATA[<html> (It's getting serious, better head back soon.) </html>]]></talk_answer>
+      <talk_question mid="203"><![CDATA[<html>$Trainer Lindsay$<BR>Really? Um.. What do they eat then? I don't know.<BR>Can’t I feed them anything? There’re lots of grass around here!!<BR><FONT color=#7e12d2>(Sheis really going to feed them ANYTHING!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1-g" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="205"><![CDATA[<html>$Trainer Lindsay$<BR>Huh? Are we going back? OK.<BR> Meet me at <FONT color=#a82424>Saint Haven</FONT>. SEE YOU~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-2" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="206"><![CDATA[<html>$Trainer Lindsay$<BR>Um… No flowers? It’s too dark here, no flowers… <BR>I’m going back. Meet me at <FONT color=#a82424>Saint Haven</FONT>. SEE YOU~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-a" mid="208"><![CDATA[<html> Isn't there a book on what to feed them? </html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Trainer Lindsay$<BR>Hey~ <FONT color=#387206>{user_nick}</FONT> has arrived. <BR>HAHAHA~ Lots of carrots for you! Oh~ ME don’t like carrots. YOU eat them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="210"><![CDATA[<html> (Lindsay shows me the book) </html>]]></talk_answer>
+      <talk_question mid="209"><![CDATA[<html>$Trainer Lindsay$<BR>Book? Here, 「<FONT color=#a82424>How to become the best trainer</FONT>」It's wonderful~!<BR>ME sleep on this every day. It’s so hard!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-c" mid="212"><![CDATA[<html> (Read the book outloud to her.) </html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Trainer Lindsay$<BR>ME can’t read. It’s too hard. <BR> Tom will be healthy if I five him lots of pretty flowers. I like to smell flowers. Great!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-d" mid="214"><![CDATA[<html> (Keep reading) </html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html><FONT color=#7e12d2>(Oats, corns, beans, barley and wheat can be fed in small volumes. These contain high protein so they are good for meals. <BR>Various hays, grass, and straws are rich in vitamins but lesser in nutrition. Therefore they are suitable for snacks. Sugar cubes, apples, watermelons and carrots are also suitable as snacks.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-d" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-e" mid="216"><![CDATA[<html> Do you get it now? </html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html><FONT color=#7e12d2>(Horses are sensitive on the form or the smell rather than their appetite. <BR> Horses have small stomach so they are required to be fed often. If they are not fed properly, they can get parorexia easily.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-e" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-f" mid="218"><![CDATA[<html> (She is so confident) </html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Trainer Lindsay$<BR>Eww… Why do I have to study? <FONT color=#7e12d2>(Lindsay grimaces)</FONT><BR>I’ll show you what I feed them. I’m good. I don’t need to study!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-f" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-!next" mid="220"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="219"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8605</exe>
+         <exe type="talk" npc="n062_trainer_lindsay">1</exe>
+         <exe type="recompense_view">86050,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">86050,,,,,</exe>
+         <exe type="complete">8605</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 62, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n117_trainer_lindsay" sub="b" />
+   <exelink qstep="1" npc="n117_trainer_lindsay" sub="c" />
+   <exelink qstep="1" npc="n117_trainer_lindsay" sub="d" />
+   <exelink qstep="1" npc="n117_trainer_lindsay" sub="e" />
+   <exelink qstep="1" npc="n117_trainer_lindsay" sub="f" />
+   <exelink qstep="1" npc="n117_trainer_lindsay" sub="g">0,1</exelink>
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="c" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="d" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="e" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="f">0</exelink>
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="!next">1,2</exelink>
+   <journal_data recompense="0:86050" quest_title="둘이서 피크닉" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_39.dds</contents_image>
+         <destination_pos>392,n117</destination_pos>
+         <destination_mode>custom:391@1</destination_mode>
+         <statemark_npcid>117</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Picnic ]]></title>
+         <contents mid="26"><![CDATA[<html>Meet Lindsay near Captain Darlant’s Base.<BR><BR><FONT color=#086171>Hermalte Port(Airship to Forsaken Islet)</FONT> <FONT color=#a82424>→ Captain Darlant’s Base </FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Find Lindsay near Captain Darlant's Base]]></destination>
+         <todo_msg mid="28"><![CDATA[Meet with Lindsay near Captain Darlant's Base]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Feeding Horses]]></title>
+         <contents mid="75"><![CDATA[<html>Lindsay doesn’t know anything about feeding horses. Go back to Saint Haven and talk to her. <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="77"><![CDATA[Return to Saint Haven and talk to Trainer Lindsay]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>8604</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,100 @@
+   <talk>
+      <npcename>n029_crew_kevin</npcename>
+      <npcid>29</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Kevin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="18"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="19"><![CDATA[<html>[Talk] </html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Kevin$<BR>I'm leading the back-up crew of Nautilus! Are you proud of me?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="104" link_target="sq_964_xmas_kevin.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="86" link_target="nq20_5802_kevin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Father's Ring</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="87" link_target="nq20_5803_kevin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Hubert's Ship</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="88" link_target="nq20_5804_kevin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Aspirations</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="nq20_5805_kevin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Food</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="nq20_5806_kevin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Scary Things</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="nq20_5812_kevin_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Kevin's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="nq20_5813_kevin_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Kevin's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="101"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Kevin$<BR>I'm gonna be a pilot! But that's in future. I'm not sure what to be for now...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="QW_AirShip.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="21" link_target="sq08_300_ring_of_kevin.xml"><![CDATA[<html>[Lv.13] <FONT color=#086171>Kevin's Treasure</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="93" link_target="sq08_359_estimations_of_art.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Naysayers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="sq08_301_ring_thief1.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>The Ring Thief</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="sq08_302_ring_thief2.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Hiding in Plain Sight</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="sq08_303_ring_thief3.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>The Invisible Man</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="nq20_5801_kevins_dream.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Flight Crew</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq08_261_argenta_milk.xml"><![CDATA[<html>[Lv.17] <FONT color=#086171>Argenta's Milk</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="sq08_286_argenta_slave.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Argenta's Slave</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="sq11_609_foretell_compass.xml"><![CDATA[<html>[Nest] <FONT color=#a82424>Prophetic Compass</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="sq11_610_ensure_a_future.xml"><![CDATA[<html>[Nest] <FONT color=#a82424>The Other Future</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="94"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="20"><![CDATA[<html>$Kevin$<BR>You'll see me riding the Nautilus someday! Hee hee!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="59"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="60"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="61"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Kevin$<BR>Hey, I miss you! Did you miss me, <FONT color=#387206> {user_nick}</FONT>?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="62"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="63"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="64"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="65"><![CDATA[<html>$Kevin$<BR>Hmm, being a pilot is great, but maybe it's fun to be a  <FONT color=#387206>{user_class}</FONT> like you, <FONT color=#387206> {user_nick}</FONT>!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="66"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="67"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="68"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="69"><![CDATA[<html>$Kevin$<BR>Hmmm, your name slipped my mind for a moment… Oh wait, it's <FONT color=#387206> {user_nick}</FONT> right? </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="70"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="71"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="72"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="73"><![CDATA[<html>$Kevin$<BR>I'm leading the back-up crew of Nautilus! Are you proud of me?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="81"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="82"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="76"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="83"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="79"><![CDATA[<html>$Kevin$<BR>Yippee! Presents for me! Erm, I mean, thank you,<FONT color=#387206>{user_nick}</FONT>!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 29 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 29 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 5801) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 29 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 29 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 29 ) >= 30</chk>
+      </conditions>
+      <exelink idx="back_talk">1</exelink>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+   </talk>

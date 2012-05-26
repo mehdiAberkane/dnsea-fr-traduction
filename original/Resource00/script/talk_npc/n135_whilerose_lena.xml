@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n135_whilerose_lena</npcename>
+      <npcid>135</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[White Rose Knight]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$White Rose Knight$<BR>……I have nothing to say to you.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">sq11_575_suspicion_of_murder</exe>
+         <exe type="enterquest">sq11_576_in_a_dilemma</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">575</chk>
+         <chk type="hasquest">576</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,141 @@
+   <talk>
+      <npcename>n089_saint_guard</npcename>
+      <npcid>89</npcid>
+      <startexe>8</startexe>
+      <npckname mid="1"><![CDATA[Royal Guard]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="warp" mid="6"><![CDATA[<html>[Use Warp]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="190"><![CDATA[<html>[Searching NPC]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Royal Guard$<BR>Royal Guards are deplored to keep watch on the  [<FONT color=#a82424>Warp</FONT>] points in town<BR>Use the Warp points to move quickly around town.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="warp" mid="13"><![CDATA[<html>[Use Warp]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="191"><![CDATA[<html>[Searching NPC]</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Royal Guard$<BR>Welcome to Saint Haven.<BR>Can I help you?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="warp" mid="28"><![CDATA[<html>[Use Warp]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="192"><![CDATA[<html>[Searching NPC]</html>]]></talk_answer>
+         <talk_question mid="15"><![CDATA[<html>$Royal Guard$<BR>There are rumours about you, <FONT color=#387206>{user_nick}</FONT>. <BR>You are slave to the hooded person…the one who's always sprouting nonsense on top of the miltary barracks.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="warp" mid="29"><![CDATA[<html>[Use Warp]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="193"><![CDATA[<html>[Searching NPC]</html>]]></talk_answer>
+         <talk_question mid="17"><![CDATA[<html>$Royal Guard$<BR>Recently a friend returned from training at the Mana Ridge. It was so cold, his facial muscles were damaged by the frost.<BR>So much for my advice to wear appropriate warm clothings. He was going on and on about a man's pride... hah, now look at him! Tsk...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="005" image="" itemindex="">
+         <talk_answer link_index="warp" mid="30"><![CDATA[<html>[Use Warp]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="194"><![CDATA[<html>[Searching NPC]</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Royal Guard$<BR>My girlfriend left me a few days ago. Apparently she doesn't like my constant army stories. Those stories are so spectacular, how can anyone hate it?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="006" image="" itemindex="">
+         <talk_answer link_index="warp" mid="31"><![CDATA[<html>[Use Warp]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="195"><![CDATA[<html>[Searching NPC]</html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$Royal Guard$<BR>Harori's [<FONT color=#a82424>I Love Cake ?</FONT>] concert date clashes with my duty! Argh! <BR>I want to go so bad… Maybe I should abandon my post...<BR></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="007" image="" itemindex="">
+         <talk_answer link_index="warp" mid="32"><![CDATA[<html>[Use Warp]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="196"><![CDATA[<html>[Searching NPC]</html>]]></talk_answer>
+         <talk_question mid="22"><![CDATA[<html>$Royal Guard$<BR>429 Days 7 Hours 27 minutes 32 seconds... 429 Days 7 Hours 27 minutes 33 seconds...<BR>429 Days 7 Hours 27 Minutes 34 seconds... 429 Days 7 Hours 27 MInutes 35 Seconds...<BR>Whew... I guess I just have to wait 37,092,456 more seconds before I can go home.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="008" image="" itemindex="">
+         <talk_answer link_index="warp" mid="36"><![CDATA[<html>[Use Warp]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="197"><![CDATA[<html>[Searching NPC]</html>]]></talk_answer>
+         <talk_question mid="35"><![CDATA[<html>$Royal Guard$<BR>Use the [<FONT color=#a82424>Warp</FONT>] to teleport quickly around town.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="warp" image="" itemindex="">
+         <talk_answer link_index="warp_1" mid="8"><![CDATA[<html>[Warp] North Gate Central Square [To Black Mountain Foothills]</html>]]></talk_answer>
+         <talk_answer link_index="warp_2" mid="9"><![CDATA[<html>[Warp] South Gate Central Square [To Hermalte Port]</html>]]></talk_answer>
+         <talk_answer link_index="warp_3" mid="10"><![CDATA[<html>[Warp] Eastern District</html>]]></talk_answer>
+         <talk_answer link_index="warp_4" mid="11"><![CDATA[<html>[Warp] Western District Ticket Office</html>]]></talk_answer>
+         <talk_answer link_index="warp_5" mid="198"><![CDATA[<html>[Warp] Kingdom Gate</html>]]></talk_answer>
+         <talk_answer link_index="warp_6" mid="199"><![CDATA[<html>[Warp] Enterance of the garden of time and space</html>]]></talk_answer>
+         <talk_answer link_index="back_warp" mid="200"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Royal Guard$<BR>Select where you want to go.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="warp_npc" image="" itemindex="">
+         <talk_answer link_index="warp_npc_0" mid="201"><![CDATA[<html>[Event] Event Planner Irine</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_1" mid="202"><![CDATA[<html>[Workshop]Blacksmith Berlin</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_2" mid="203"><![CDATA[<html>[General store] Merchant Kelly </html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_3" mid="204"><![CDATA[<html>[Mount Shop] Trainer Lindsay</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_4" mid="205"><![CDATA[<html>[Guild Shop]Dishonest Merchant Pero</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_5" mid="206"><![CDATA[<html>[Trading House] Trading Master Deowen</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_6" mid="207"><![CDATA[<html>[Warehouse] Warehouseman Russell</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_7" mid="208"><![CDATA[<html>[Guild Alliance] Adventurer's Alliance Gunther</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_8" mid="209"><![CDATA[<html>[Heraldry Scholar] Scholar Stas</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_9" mid="210"><![CDATA[<html>[Ticket office] Ticketer Sorene</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_10" mid="211"><![CDATA[<html>[Skill] Warrior Trainer Rodrigo</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_11" mid="212"><![CDATA[<html>[Skill] Master Archer Ithilien</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_12" mid="213"><![CDATA[<html>[Skill] Master Sorceress Stella</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_13" mid="214"><![CDATA[<html>[Skill]Master Cleric Enoch</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_14" mid="215"><![CDATA[<html>[Skill] Academic Station</html>]]></talk_answer>
+         <talk_answer link_index="back_warp_npc" mid="217"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="49"><![CDATA[<html>$Royal Guard$<BR>
+Choose NPC which you want to move.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">003</exe>
+         <exe type="talk">004</exe>
+         <exe type="talk">005</exe>
+         <exe type="talk">006</exe>
+         <exe type="talk">007</exe>
+         <exe type="talk">008</exe>
+         <exe type="conexe" true="9" false="10">0</exe>
+         <exe type="conexe" true="11" false="12">0</exe>
+         <exe type="conexe" true="13" false="14">0</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="conexe" true="6" false="7">0</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -415976, 1181000, 10330937);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -375585, 214000, -6245515);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 3551023, 455000, -2178078);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -4217515, 455000, -643371);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -290292, 214000, 666929);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -1625519, 1181000, 6439187);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -446750, 214000, -2367718);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 3896148, 455000, -2613367);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 725539, 1181000, 9288281);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3165875, 455000, 2106609);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -1709429, 214000, -1913703);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 37915, 214000, -671667);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 479209, 214000, -2098117);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -2108023, 1181000, 7861859);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 1376441, 1181000, 7891218);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -4610484, 455000, -17651);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3505218, 455000, -1774605);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3514421, 455000, -822619);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -5122671, 455000, -851892);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -4257640, 455000, -2171617);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3476335, 455000, -1341695);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 1059042, 1181000, 6494015);</exe>
+      </executions>
+      <conditions>
+         <chk type="prob">500</chk>
+      </conditions>
+      <exelink idx="warp_1">15</exelink>
+      <exelink idx="warp_2">16</exelink>
+      <exelink idx="warp_3">17</exelink>
+      <exelink idx="warp_4">18</exelink>
+      <exelink idx="warp_5">19</exelink>
+      <exelink idx="warp_6">20</exelink>
+      <exelink idx="back_warp">8</exelink>
+      <exelink idx="warp_npc_0">21</exelink>
+      <exelink idx="warp_npc_1">22</exelink>
+      <exelink idx="warp_npc_2">23</exelink>
+      <exelink idx="warp_npc_3">24</exelink>
+      <exelink idx="warp_npc_4">25</exelink>
+      <exelink idx="warp_npc_5">26</exelink>
+      <exelink idx="warp_npc_6">27</exelink>
+      <exelink idx="warp_npc_7">28</exelink>
+      <exelink idx="warp_npc_8">29</exelink>
+      <exelink idx="warp_npc_9">30</exelink>
+      <exelink idx="warp_npc_10">31</exelink>
+      <exelink idx="warp_npc_11">32</exelink>
+      <exelink idx="warp_npc_12">33</exelink>
+      <exelink idx="warp_npc_13">34</exelink>
+      <exelink idx="warp_npc_14">35</exelink>
+      <exelink idx="back_warp_npc">8</exelink>
+   </talk>

@@ -1,0 +1,313 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_471_for_mama</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>471</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>엄마의 불치병을 고치기 위해 약을 구하는 소년 테이를 만날 수 있다. 소년은 효심이 가득하고, 부모를 위해 고사리 같은 손에 굳은 살이 베기도록 열심히 일한다. 부모의 은혜를 갚기 위해, 진정 효도하고 싶어하는 소년의 마음이 전해져 유저는 무지개 방울꽃을 찾아 강하류 폐허로 간다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[For Mother]]></qkname>
+      <qnpc>
+         <npcid>244</npcid>
+         <npcename>n244_tei</npcename>
+         <npckname>테이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>245</npcid>
+         <npcename>n245_mandra_son</npcename>
+         <npckname>만드라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>249</npcid>
+         <npcename>n249_saint_guard</npcename>
+         <npckname>왕성 근위병 로이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Tei$<BR>Mother... My mother is very ill. What should I do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Madra$<BR>Haha. I am the prince of the motherlands!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-a" mid="8"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Royal Guard Roy$<BR>Maybe I should have helped that boy…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-b" mid="10"><![CDATA[<html>A boy?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Royal Guard Roy$<BR>Oh my. It's you. <BR>Well, I'm just thinking of a boy I just passed by.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-b" image="QN_boy_tei.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-c" mid="12"><![CDATA[<html>Don't worry. I'll go and see if he's alright.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Royal Guard Roy$<BR>I met him at the <FONT color=#a82424>Hermalte Port</FONT>, and he was looking for a medicine that would cure his mother's illness. As the Royal Guard, I have to protect this place and I had no choice but to just pass him. But I keep thinking about the boy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$For Mother$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-1-a" mid="16"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Royal Guard Roy$<BR>Will you do it? Thank goodness. <BR>Don't worry about the Royal security! <BR>I'll have my eyes wide open and protect it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1-a" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Royal Guard Roy$<BR>The boy should still be at the <FONT color=#a82424>Hermalte Port</FONT>. <BR>Hurry and help that boy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Tei$<BR>Mother... My mother is very ill. What should I do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Royal Guard Roy$<BR>I think the boy's mother is very ill, so hurry. It's <FONT color=#a82424>Hermalte Port</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-a" mid="21"><![CDATA[<html>I'm here to help you. Don't worry.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Tei$<BR>Adventurer! My mother is very ill. Please help me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-a" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-b" mid="23"><![CDATA[<html>What can I do to help?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Tei$<BR>Really? Thank you. For a long time, my mother had been suffering from a <FONT color=#a82424>serious illness</FONT>. I tried to find every medicine that was said to be good for my mother, but she is still sick. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-2-c" mid="25"><![CDATA[<html>Rainbow Bell Flower?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Tei$<BR>Up until now, I found a way to get the necessary medicine, but I could never get my hands on the <FONT color=#a82424>Rainbow Bell Flower</FONT>. That flower is the only thing left… If I could find that flower and give it to my mother, I'm sure she'll get better.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-c" image="QW_32.dds" itemindex="">
+      <talk_answer link_index="n244_tei-2-d" mid="27"><![CDATA[<html>How much is the flower?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Tei$<BR>Yes. It's a very precious medicine which is said to grow only around the <FONT color=#a82424>ruins at downstream</FONT>. In spite of the danger, I went there a few times but couldn't find the flower. And I don't have the money to buy that expensive flower…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-2-e" mid="29"><![CDATA[<html>(So expensive…) I'll go there and try to find it.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Tei$<BR>Last time I heard from a merchant, I could buy that flower with <FONT color=#a82424>1000 gold</FONT> … </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-2-e" image="QW_32.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Tei$<BR>Thank you so much. But please be careful, I heard there were many vicious monsters around the <FONT color=#a82424>ruins at downstream</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-3" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Tei$<BR>I really want my mother to get well soon…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-a" mid="35"><![CDATA[<html>Who are you?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Mandra$<BR>Haha. I was going to eliminate this monster. <BR>But I guess you beat me to it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-a" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-b" mid="37"><![CDATA[<html>You look quite strange to be the prince of the motherlands…</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Mandra$<BR>My name is Mandra. <BR>I'm the prince of this vast motherland. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-b" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-c" mid="39"><![CDATA[<html>(At a loss for words)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Mandra$<BR>Blinded by the appearance and unable to see the true heart. <BR>Such a pity.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-c" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-d" mid="42"><![CDATA[<html>What's this?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Mandra$<BR>Anyway, since you eliminated the monster that was sipping the vital force of the mountains instead of me, I would like to show a token of appreciation. Take this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-d" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-e" mid="44"><![CDATA[<html>I don't want to take it…</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Mandra$<BR>This is my most prized <FONT color=#a82424>glow-in-the-dark underwear</FONT>. <BR>It glows in the dark.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-e" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-f" mid="46"><![CDATA[<html>Instead of that, I'm looking for the Rainbow Bell Flower...</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Mandra$<BR>Not knowing the beauty of the glow-in-the-dark underwear.. <BR>What a pity. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-f" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-g" mid="48"><![CDATA[<html>It's not for me… (Tells the boy's story)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Mandra$<BR><FONT color=#a82424>Rainbow Bell Flower</FONT>. Of course I know what it is. But I'm not going to give you, an insignificant adventurer, the treasure from the motherlands. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-g" image="" itemindex="">
+      <talk_answer link_index="n245_mandra_son-3-h" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Mandra$<BR>Hmm. So, the flower is for his mother! <BR>Like us, human beings must also have filial affection.. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-h" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n245_mandra_son-3-i" mid="86"><![CDATA[<html>(Feels uncomfortable but takes the flower)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Mandra$<BR>Oh well. I was going to eat this as a snack… <BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2>(Mandra takes out the Rainbow Bell Flower from his underwear)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-i" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n245_mandra_son-3-j" mid="52"><![CDATA[<html>Thank you. (Though dirty)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Mandra$<BR>It's true that this flower is good for health, but I don't know if it can cure an illness. Anyway, I hope it helps!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-3-j" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Mandra$<BR>It was short, but nice meeting you. <BR>A friend who knows nothing about the beauty of the glow-in-the-dark underwear. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n245_mandra_son-4" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Mandra$<BR>It was short, but nice meeting you. <BR>A friend who knows nothing about the beauty of the glow-in-the-dark underwear. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-a" mid="57"><![CDATA[<html>I brought the Rainbow Bell Flower.</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Tei$<BR>My mother has to get better soon… I'm worried sick.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-a" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-4-b" mid="59"><![CDATA[<html>Haha… It's normal to smell like that.</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Tei$<BR>This is… the <FONT color=#a82424>Rainbow Bell Flower</FONT>? <BR>But… It has quite a strange smell…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-b" image="QS_Default.dds" itemindex="300075">
+      <talk_answer link_index="n244_tei-4-c" mid="61"><![CDATA[<html>Yes. I hope so.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Tei$<BR>… They say, a good medicine tastes bitter… Since this flower smells this bad, I'm sure it's a really good medicine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-c" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-d" mid="63"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-d" image="" itemindex="">
+      <talk_answer link_index="n244_tei-4-e" mid="65"><![CDATA[<html>I hope your mother gets better.</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Tei$<BR>Thank you so much for helping me. <BR>I better get back home and give this to my mother! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n244_tei-4-e" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html><FONT color=#7e12d2>(Tei wrapped his hands around the Rainbow Bell Flower carefully. Tei was tired from working day and night to make his mother better, but his face was full of joy. After seeing his face, I prayed again and again for Tei's mother to get well)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4711,4712,4713,4714,4715</exe>
+         <exe type="setquest">471</exe>
+         <exe type="talk" npc="n249_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300075</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300075</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300075</exe>
+         <exe type="recompense">,4711,4712,4713,4714,4715</exe>
+         <exe type="complete">471</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n249_saint_guard" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n249_saint_guard" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n244_tei" sub="b" />
+   <exelink qstep="2" npc="n244_tei" sub="c" />
+   <exelink qstep="2" npc="n244_tei" sub="d" />
+   <exelink qstep="2" npc="n244_tei" sub="e">0,2,1</exelink>
+   <exelink qstep="3" npc="n245_mandra_son" sub="b" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="c" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="d" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="e" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="f" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="g" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="h" />
+   <exelink qstep="3" npc="n245_mandra_son" sub="i">2</exelink>
+   <exelink qstep="3" npc="n245_mandra_son" sub="j">0,1</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="a">0</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="b" />
+   <exelink qstep="4" npc="n244_tei" sub="c">1</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="d">2</exelink>
+   <exelink qstep="4" npc="n244_tei" sub="e" />
+   <journal_data recompense="1:4711,2:4712,3:4713,4:4714,5:4715" quest_title="어머니를 위하여" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="300075">
+      <journal index="1">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n249</destination_pos>
+         <destination_mode />
+         <statemark_npcid>249</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Talk to Royal Guard Roy]]></title>
+         <contents mid="69"><![CDATA[<html>Royal Guard Roy has something to say. Talk to Roy.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Royal Guard Roy</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk to Royal Guard Roy]]></destination>
+         <todo_msg mid="71"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode />
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Talk to the boy, Tei]]></title>
+         <contents mid="73"><![CDATA[<html>According to Royal Guard Roy, Tei's mother is very ill. Go to Hermalte Port and listen to Tei's story.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Tei</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk to the boy, Tei]]></destination>
+         <todo_msg mid="75"><![CDATA[Meet Tei at the Hermalte Port .]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_32.dds</contents_image>
+         <destination_pos>324,0,0</destination_pos>
+         <destination_mode>custom:321@1,322@1,323@1,324@3</destination_mode>
+         <statemark_npcid>245</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Find the Rainbow Bell Flower]]></title>
+         <contents mid="77"><![CDATA[<html>In order to save Tei's mother, she needs a Rainbow Bell Flower. Go deep into the ruins at downstream and find the Rainbow Bell Flower.<BR><BR><FONT color=#086171>Hermalte Port(Ruins at Downstream)</FONT> <FONT color=#a82424>→ Ruins at Downstream</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Find the Rainbow Bell Flower]]></destination>
+         <todo_msg mid="79"><![CDATA[Go to the ruins at downstream and find the Rainbow Bell Flower.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <destination_pos>12,n244</destination_pos>
+         <destination_mode />
+         <statemark_npcid>244</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[Talk to the boy, Tei]]></title>
+         <contents mid="81"><![CDATA[<html>With Mandra's help, we found the Rainbow Bell Flower. Return to Hermalte Port and give Tei the flower.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Tei</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[Talk to the boy, Tei]]></destination>
+         <todo_msg mid="83"><![CDATA[Return to Hermalte Port and give Tei the flower.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

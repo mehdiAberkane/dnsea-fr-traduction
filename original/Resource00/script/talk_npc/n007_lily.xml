@@ -1,0 +1,91 @@
+   <talk>
+      <npcename>n007_lily</npcename>
+      <npcid>7</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Lily]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="10"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Lily$<BR>I miss my sister...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="QN_Rose.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="67" link_target="sq_963_xmas_lily.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="50" link_target="nq11_5702_lily_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Prairie Town</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="nq11_5703_lily_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Mayor Harold</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="nq11_5704_lily_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Rose</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="nq11_5705_lily_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Friends</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="nq11_5706_lily_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="62" link_target="nq11_5712_lily_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Lily's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="63" link_target="nq11_5713_lily_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Lily's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="64"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Lily$<BR><FONT color=#a82424>Rose</FONT> is the beauty of this town<BR>And she has the kindest heart... *Sniff sniff*<BR>Please save my sister!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="12" link_target="nq11_5701_lily_hope.xml"><![CDATA[<html>[Lv.13] <FONT color=#086171>Lily's Wish</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="65"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Lily$<BR>I hope my sister is safe...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="33"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="34"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="35"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="15"><![CDATA[<html>$Lily$<BR>I dreamt of you, <FONT color=#387206>{user_nick}</FONT>. It's weird. I've never dreamt of anyone but my sister...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="36"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="37"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="38"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Lily$<BR>I had a dream yesterday. We went for a picnic - Rose, me and you,<FONT color=#387206>{user_nick}</FONT>... You seem nice. Rose would love to be friends with you, <FONT color=#387206>{user_nick}</FONT>...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="39"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="40"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="41"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="23"><![CDATA[<html>$Lily$<BR>Are you here to see me, <FONT color=#387206>{user_nick}</FONT>?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="42"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="43"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="44"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="27"><![CDATA[<html>$Lily$<BR>*Sniff sniff...* Any news of Rose yet?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="45"><![CDATA[<html>[Gift.]</html>]]></talk_answer>
+         <talk_answer link_index="back_9resent_ui" mid="46"><![CDATA[<html>[Don't give gift.]</html>]]></talk_answer>
+         <talk_question mid="31"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="48"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="47"><![CDATA[<html>$Lily$<BR>Oh! You got me a present?<BR>Thank you!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 7 );</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 7 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 5701) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 7 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 7 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 7 ) >= 30</chk>
+      </conditions>
+      <exelink idx="back_talk">1</exelink>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_9resent_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+   </talk>

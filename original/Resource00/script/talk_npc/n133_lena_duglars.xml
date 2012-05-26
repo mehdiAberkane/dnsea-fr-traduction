@@ -1,0 +1,107 @@
+   <talk>
+      <npcename>n133_lena_duglars</npcename>
+      <npcid>133</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Missy Lena]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="16"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="17"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Missy Lena$<BR>Sigh...<BR>It's so tense inside the castle… everyone looks so rigid, even my father, General Douglas. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="18" link_target="sq11_458_amazing_memory.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Incredible Memory</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="19" link_target="sq11_459_complete_decode.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Complete Detoxification /FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="sq11_460_who_is_whiterose.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171> Identity of the White Rose</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="nq26_7401_you_know_me.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>The One Who Knows Another Side of Me</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="21" link_target="sq11_555_timid_man1.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Timid Man I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="sq11_556_timid_man2.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Timid Man II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="sq11_564_lena_and_spice.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Lena and the Spices</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="sq11_591_rash_romanticist.xml"><![CDATA[<html>[Lv.33] <FONT color=#086171>Love Impulses</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_595_merciful_lady.xml"><![CDATA[<html>[Lv.33] <FONT color=#086171>Lady Volunteer</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="sq11_565_lena_and_treasure_chest.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Lena and the Treasure Chest</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="125" link_target="sq11_579_new_determin.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>New Determination</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="126"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Missy Lena$<BR>I don't usually talk to strangers but you're an exception.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="129" link_target="sq_975_xmas_lena.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="nq26_7402_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Weather</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="nq26_7403_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Place</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="101" link_target="nq26_7404_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Color</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="nq26_7405_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Hobbies</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="nq26_7406_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Daily Life</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="nq26_7407_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="105" link_target="nq26_7408_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About {user_nick}</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="106" link_target="nq26_7409_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Dressing Style</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="107" link_target="nq26_7410_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Dragon Followers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="108" link_target="nq26_7411_lena_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Plans for the Future</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="113" link_target="nq26_7412_lena_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Lena's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="114" link_target="nq26_7413_lena_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Lena's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="120" link_target="nq26_7414_lena_90_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>An Unexpected Gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="121"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="15"><![CDATA[<html>$Missy Lena${action:talk}<BR>Silence is not necessarily a bad thing. If there are no words to be spoken, you can always smell the flowers.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="83"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="84"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="85"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="45"><![CDATA[<html>$Missy Lena$<BR>I feel like you're the only one who really knows me… almost like there are no secrets between us.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="86"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="87"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="88"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="49"><![CDATA[<html>$Missy Lena${action:talk}<BR>My dear <FONT color=#387206>{user_nick}</FONT>, I think there may be such a thing called trust in this world. You showed it to me.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="89"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="90"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="91"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="53"><![CDATA[<html>$Missy Lena${action:talk}<BR>You’re like this burst of sunshine. Please keep a distance from me. I'm afraid the darkness in my heart would dim this light you bring.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="92"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="93"><![CDATA[<html><FONT face=Arial size=2>[Talk]</FONT></html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="94"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="57"><![CDATA[<html>$Missy Lena${action:talk}<BR>Everyone has a dark secret of two in our hearts. I wonder what is yours...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="95"><![CDATA[<html>[Gifts]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="96"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="61"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="97"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="64"><![CDATA[<html>$Missy Lena${action:talk}<BR>Thank you. <BR>So this is what care and concern feels like. What a warm feeling, even if it’s a little awkward.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 133 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 133 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 7401) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 133 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 133 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 133 ) >= 30</chk>
+      </conditions>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="back_talk">1</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+   </talk>

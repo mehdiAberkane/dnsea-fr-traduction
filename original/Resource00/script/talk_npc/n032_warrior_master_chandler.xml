@@ -1,0 +1,159 @@
+   <talk>
+      <npcename>n032_warrior_master_chandler</npcename>
+      <npcid>32</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Warrior Chandler]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_001" mid="4"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="5"><![CDATA[<html>[Talk] </html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Warrior Chandler$<BR>It is a sad thing. We're losing many good warriors in this time of chaos. Train hard and may your fate be different!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="8"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="9"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Master Warrior Chandler$<BR>It is a sad thing. We're losing many good warriors in this time of chaos. Train hard and may your fate be different!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="249" link_target="sq_970_xmas_chandler.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="228" link_target="nq03_7002_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Calderock Village</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="229" link_target="nq03_7003_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="230" link_target="nq03_7004_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Archer Adelynn</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="231" link_target="nq03_7005_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Cleric Jermain</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="232" link_target="nq03_7006_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Sorceress Tiana</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="233" link_target="nq03_7007_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Adventurer's Guild Master Deckard</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="234" link_target="nq03_7008_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>{user_nick}</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="235" link_target="nq03_7009_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Typhoon Keem</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="236" link_target="nq03_7010_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>First Love</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="237" link_target="nq03_7011_chandler_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Top of Wishlist</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="244" link_target="nq03_7012_chandler_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Chandler's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="245" link_target="nq03_7013_chandler_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Chandler's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="11"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="10"><![CDATA[<html>$Master Warrior Chandler$<BR>Warriors were plentiful in Calderock Village until recent times. Now, we can only content with new Warriors like you once in a while.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="33" link_target="sq08_278_test_warrior1.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Evidence of Transciption I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="sq08_279_test_warrior2.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Evidence of Transcription II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="64" link_target="sq08_340_change_job1.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="sq08_290_battle_strength1.xml"><![CDATA[<html>[Lv.17] <FONT color=#086171>[Title] [Brawler Lv.1] Basic of Battle is Strength I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="sq08_291_battle_strength2.xml"><![CDATA[<html>[Lv.17] <FONT color=#086171>[Title] [Brawler Lv.1] Basic of Battle is Strength II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="sq08_275_catherock_challenger_1.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Orc Gim's Challenge I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="sq08_276_catherock_challenger_2.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Orc Gim's Challenge II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="59" link_target="sq08_277_catherock_challenger_3.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Orc Gim's Challenge III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="nq03_7001_rival_of_destiny.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Fate of a Rival</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="246"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Master Warrior Chandler$<BR>It is a sad thing. We're losing many good warriors in this time of chaos. Train hard and may your fate be different!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent_warrior" image="" itemindex="">
+         <talk_answer link_index="quest" mid="195"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_90" mid="196"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="197"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90_warrior" mid="198"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="70"><![CDATA[<html>$Master Warrior Chandler$<BR>Ahhh, the joys of youth. Train hard and you can surpass me. /html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent_warrior" image="" itemindex="">
+         <talk_answer link_index="quest" mid="199"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_60" mid="200"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="201"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60_warrior" mid="202"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="75"><![CDATA[<html>$Master Warrior Chandler$<BR>Your muscles are a bit weak. Train them up to match that lion heart of yours!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent_warrior" image="" itemindex="">
+         <talk_answer link_index="quest" mid="203"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_30" mid="204"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="205"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30_warrior" mid="206"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="80"><![CDATA[<html>$Master Warrior Chandler$<BR>A healthy diet and daily training will strengthen those muscles in no time. <BR>It's gonna be tough in the beginning but perservere and don't slack off!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent_warrior" image="" itemindex="">
+         <talk_answer link_index="quest" mid="207"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_0" mid="208"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="209"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0_warrior" mid="210"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="85"><![CDATA[<html>$Master Warrior Chandler$<BR>Not bad, but there is still room for improvement. You know what all good warriors have? Muscles, my friend! <BR> Keep up your training and build those muscles!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="211"><![CDATA[<html><FONT size=2 face=Arial>[Quest]</FONT></html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="212"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="213"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="89"><![CDATA[<html>$Master Warrior Chandler$<BR>No intention of trying out for a job advancement? Well, I'll respect that. Whenever you're ready then. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="214"><![CDATA[<html><FONT size=2 face=Arial>[Quest]</FONT></html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="215"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="216"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="93"><![CDATA[<html>$Master Warrior Chandler$<BR> It is my wish that one of my bright young students like you can surpass me. You are a good fighter, though you lack strength.]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="217"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="218"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="219"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="97"><![CDATA[<html>$Master Warrior Chandler$<BR>You make a pretty decent Warrior though your strength can be improved. Are you interested in some muscles enchancers? Could be useful, ya know.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="220"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="221"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="222"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="101"><![CDATA[<html>$Master Warrior Chandler$<BR>Oh, being a <FONT> color=#387206>{user_class}s</FONT>is cool though I thought you have the makings of a great <FONT color=#a82424>Warrior</FONT> instead.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="223"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="224"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="161"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="225"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="194"><![CDATA[<html>$Master Warrior Chandler$<BR>Is this my reward for being such a great teacher?<BR><FONT color=#7e12d2>[Chandler seems delighted at the gift.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="4" false="12">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="0">1</exe>
+         <exe type="conexe" true="8" false="6">2</exe>
+         <exe type="conexe" true="9" false="7">3</exe>
+         <exe type="conexe" true="10" false="11">4</exe>
+         <exe type="talk">90_percent_warrior</exe>
+         <exe type="talk">60_percent_warrior</exe>
+         <exe type="talk">30_percent_warrior</exe>
+         <exe type="talk">0_percent_warrior</exe>
+         <exe type="conexe" true="13" false="1">1</exe>
+         <exe type="conexe" true="16" false="14">2</exe>
+         <exe type="conexe" true="17" false="15">3</exe>
+         <exe type="conexe" true="18" false="19">4</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 32 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 32 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 7001) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 32 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 32 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 32 ) >= 30</chk>
+      </conditions>
+      <exelink idx="skill_001">3</exelink>
+      <exelink idx="back_talk">2</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="skill_90">3</exelink>
+      <exelink idx="present_90_warrior">20,21</exelink>
+      <exelink idx="skill_60">3</exelink>
+      <exelink idx="present_60_warrior">20,21</exelink>
+      <exelink idx="skill_30">3</exelink>
+      <exelink idx="present_30_warrior">20,21</exelink>
+      <exelink idx="skill_0">3</exelink>
+      <exelink idx="present_0_warrior">20,21</exelink>
+      <exelink idx="present_90">20,21</exelink>
+      <exelink idx="present_60">20,21</exelink>
+      <exelink idx="present_30">20,21</exelink>
+      <exelink idx="present_0">20,21</exelink>
+      <exelink idx="gift">22,23</exelink>
+      <exelink idx="back_present_ui">2</exelink>
+      <exelink idx="back_gift">2</exelink>
+   </talk>

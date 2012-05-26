@@ -1,0 +1,29 @@
+   <talk>
+      <npcename>n348_arena_trader</npcename>
+      <npcid>348</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Ladder Match Supply Soldier Raphael]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="trade" mid="4"><![CDATA[<html>[Ladder Match Shop]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Ladder Match Supply Soldier Raphael${action:Talk}<BR>Hello, I'm the supply soldier Raphael.<BR>The points you earned during the ladder match can be used in the ladder match shop. Do visit us frequently!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="5" false="2">0</exe>
+         <exe type="conexe" true="6" false="3">1</exe>
+         <exe type="conexe" true="7" false="4">2</exe>
+         <exe type="conexe" true="8" false="9">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5101,101);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5102,101);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5103,101);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5104,101);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5105,101);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <exelink idx="trade">1</exelink>
+   </talk>

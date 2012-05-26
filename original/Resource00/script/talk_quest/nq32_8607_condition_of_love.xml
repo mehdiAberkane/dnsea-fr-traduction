@@ -1,0 +1,314 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq32_8607_condition_of_love</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8607</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>하급 루비	336593152
+하급 사파이어	336597248
+하급 옵시디언	336601344
+하급 토파즈	336605440
+애정도 스카우터	300312
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Condition of Love]]></qkname>
+      <qnpc>
+         <npcid>16</npcid>
+         <npcename>n016_trader_borin</npcename>
+         <npckname>대장장이 보린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>62</npcid>
+         <npcename>n062_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-noquest" image="" itemindex="">
+      <talk_question mid="274"><![CDATA[<html>$Blacksmith Borin$<BR>Pweet~! I thought you were going to <FONT color=#a82424>Saint Haven</FONT>. Why are you here? <BR>
+I hear there's a <FONT color=#a82424>lady who looks after horses</FONT>, have you met her? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-a" mid="6"><![CDATA[<html> What's wrong? </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Trainer Lindsay$<BR>Oh~ I feel gloomy now.<BR>I’m upset, sad. I need words of comfort. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-b" mid="183"><![CDATA[<html> (I think she is upset) </html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$Trainer Lindsay$<BR>YOU like <FONT color=#a82424>Irine</FONT>. TOM likes <FONT color=#a82424>YOU</FONT>.<BR>Tom likes your carrot more than my hay. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-c" mid="185"><![CDATA[<html> It should be ok if you study more about horses </html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Trainer Lindsay${action:Cry}<BR>Ah~ I want to be closer with horses. I was nice to them, but why do they like you more than me? <BR> This is unfair!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-d" mid="141"><![CDATA[<html> What? Machine?!</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Trainer Lindsay$<BR>What?! Study? Why? Love is always not fair! You know?<BR>So I decided to build a <FONT color=#a82424>machine</FONT>~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-d" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-e" mid="276"><![CDATA[<html> A love scout? </html>]]></talk_answer>
+      <talk_question mid="275"><![CDATA[<html>$Trainer Lindsay$<BR>YES~! A machine! I’ve asked Mr. Borin~ He is cool~<BR> <FONT color=#a82424>Mr. Borin</FONT> is making me a love scout. Isn’t that cool? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-acceppted" mid="31"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Horses' Favourite Grass$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="277"><![CDATA[<html>$Trainer Lindsay$<BR>YES, you got it~<BR>Go to <FONT color=#a82424>Blacksmith Borin</FONT> and get the love scout for me. Come on~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-a" mid="279"><![CDATA[<html> I'm here to pick up the love scout. </html>]]></talk_answer>
+      <talk_question mid="278"><![CDATA[<html>$Blacksmith Borin$<BR>You shouldn’t be here. What brings you here? <BR>You look like a hard worker like that Hound. Hahaha. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-a" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-b" mid="281"><![CDATA[<html> I didn't order this. </html>]]></talk_answer>
+      <talk_answer link_index="n016_trader_borin-1-b" mid="282"><![CDATA[<html> The person who ordered this is cute. </html>]]></talk_answer>
+      <talk_question mid="280"><![CDATA[<html>$Blacksmith Borin$<BR>Love Scout? Ah, was that you who ordered that crazy thing? <BR><FONT color=#7e12d2>(He grumbles)</FONT> I’ve put so much effort making this thinking the owner is a cute little girl. Damn.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-b" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-c" mid="285"><![CDATA[<html> Anyway, where’s the machine? </html>]]></talk_answer>
+      <talk_question mid="283"><![CDATA[<html>$Blacksmith Borin$<BR>Ah, really? It said <FONT color=#a82424>Trainer Lindsay</FONT> on the order form, but why are you here? <BR>
+<FONT color=#7e12d2>(He seems irritated) </FONT> I took a bath to see her! Pweet~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-c" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-d" mid="287"><![CDATA[<html> How much is it? </html>]]></talk_answer>
+      <talk_question mid="286"><![CDATA[<html>$Blacksmith Borin$<BR>Oh I made it! But I can’t give it to you for free. You have to give me something at least. <BR>Of course you have to pay the price, there is a price on everything on this world!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-d" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-1-e" mid="289"><![CDATA[<html> (Borin dusts off the machine) </html>]]></talk_answer>
+      <talk_question mid="288"><![CDATA[<html>$Blacksmith Borin$<BR>Hmm.. Let’s see. How about one each of the <FONT color=#a82424>Lower Ruby, Lower Sapphire, Lower Obsidian and Lower Topaz </FONT>? It’s cheap! Really cheap! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-1-e" image="" itemindex="">
+      <talk_question mid="290"><![CDATA[<html>$Blacksmith Borin$<BR>Why are you looking at me like that? <BR>Go and get me one each of the <FONT color=#a82424>Lower Ruby, Lower Sapphire, Lower Obsidian and Lower Topaz </FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2" image="" itemindex="">
+      <talk_question mid="291"><![CDATA[<html>$Blacksmith Borin$<BR>Why are you looking at me like that? <BR>Go and get me one each of the <FONT color=#a82424>Lower Ruby, Lower Sapphire, Lower Obsidian and Lower Topaz </FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-a" image="" itemindex="">
+      <talk_question mid="292"><![CDATA[<html>$Blacksmith Borin$<BR>Why are you looking at me like that? <BR>Go and get me one each of the <FONT color=#a82424>Lower Ruby, Lower Sapphire, Lower Obsidian and Lower Topaz </FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-b" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-2-d" mid="294"><![CDATA[<html> (Give) </html>]]></talk_answer>
+      <talk_answer link_index="n016_trader_borin-2-c" mid="295"><![CDATA[<html> (Don't give) </html>]]></talk_answer>
+      <talk_question mid="293"><![CDATA[<html>$Blacksmith Borin$<BR>Oh~ Did you bring them? <BR>Well, everyone has a couple of jewelry in their pockets. Hahaha. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-c" image="" itemindex="">
+      <talk_question mid="296"><![CDATA[<html>$Blacksmith Borin$<BR>Are you kidding me? Didn’t you come to give me those? <BR> I am not going to give you <FONT color=#a82424>Love Scout</FONT> in that case. You can only have a look.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-d" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-2-e" mid="298"><![CDATA[<html> (It's a stupid machine.) </html>]]></talk_answer>
+      <talk_question mid="297"><![CDATA[<html>$Blacksmith Borin$<BR>Here, give me those. (He snatches like a thief)<BR>Here’s Love Scout.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-2-e" image="" itemindex="">
+      <talk_answer link_index="n016_trader_borin-3" mid="300"><![CDATA[<html> Ok. </html>]]></talk_answer>
+      <talk_question mid="299"><![CDATA[<html>$Blacksmith Borin$<BR>This <FONT color=#a82424>Love Scout</FONT> is made from the feather of Harpy, sweat of Orc and metal. <BR>It looks like Gurafinders on the outside but it’s totally different on the inside. Be careful, it’s a sensitive machine. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n016_trader_borin-3" image="" itemindex="">
+      <talk_question mid="301"><![CDATA[<html>$Blacksmith Borin$<BR>Well, take care. What's her name? Is she <FONT color=#a82424>Trainer Lindsay</FONT> from Saint Haven?<BR>Anyway deliver it to that cute girl. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-a" mid="303"><![CDATA[<html> (Lindsay is excited) </html>]]></talk_answer>
+      <talk_question mid="302"><![CDATA[<html>$Trainer Lindsay$<BR>Wow~ <FONT color=#387206>{user_nick}</FONT>, MY Friend~!!<BR>Where’s the Love Scout? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-a" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-b" mid="305"><![CDATA[<html> (Lindsay puts the machine on the horse) </html>]]></talk_answer>
+      <talk_question mid="304"><![CDATA[<html>$Trainer Lindsay$<BR><FONT color=#7e12d2>(She checks out the Love Scout)</FONT><BR>
+Wow! It's fantastic!<BR>I’ll use this on Tom! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-c" mid="308"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="306"><![CDATA[<html>$Young Foal${sound:UI_QUIZ_X.wav}<BR>Hee-haw ~<BR><FONT color=#7e12d2>(The machine shows the level: useless cloth)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-d" mid="310"><![CDATA[<html> (Let's try) </html>]]></talk_answer>
+      <talk_question mid="309"><![CDATA[<html>$Trainer Lindsay$<BR> Level <FONT color=#a82424>Useless Cloth</FONT>? What?!<BR>Hey, YOU! YOU try. Go for it~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-d" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-e" mid="313"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="311"><![CDATA[<html>$Young Foal${sound:UI_QUIZ_O.wav}<BR>Hee-haw~~<BR><FONT color=#7e12d2>(The machine shows the level : Mid Diamond) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-e" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-f" mid="315"><![CDATA[<html> (Lindsay mumbles) </html>]]></talk_answer>
+      <talk_question mid="314"><![CDATA[<html>$Trainer Lindsay$<BR>I can't believe it! Oooh~~~!! Don't be ridiculous!<BR>How come you are closer to Tom than me? I’m the <FONT color=#a82424>Trainer</FONT>!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-f" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-g" mid="317"><![CDATA[<html> (Lindsay is depressed) </html>]]></talk_answer>
+      <talk_question mid="316"><![CDATA[<html>$Trainer Lindsay${sound:UI_QUIZ_X.wav}<BR><FONT color=#7e12d2>(Lindsay tries on other horses.)<BR></FONT>What… Levels are all useless cloth and dead skin of spider! I'm so SAD~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-g" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-h" mid="319"><![CDATA[<html> Um… Why don't you study about them?</html>]]></talk_answer>
+      <talk_question mid="318"><![CDATA[<html>$Trainer Lindsay$<BR>HEY~ Look here~! EVERY horse is like that! <BR>
+I feed them and comb them… but why?! This world is so complicated!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-h" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-i" mid="321"><![CDATA[<html> (I don't think that's the case) </html>]]></talk_answer>
+      <talk_question mid="320"><![CDATA[<html>$Trainer Lindsay$<BR>Why do I have to study our love?<BR>
+All we need in LOVE is our hearts!!! Isn’t it? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-i" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-j" mid="323"><![CDATA[<html> (I don't think she is listening) </html>]]></talk_answer>
+      <talk_question mid="322"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>I will be having my Trainer qualifications soon. Everyone will understand me if I pass. <BR>Right? ME, studying for it. YES!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-j" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-k" mid="325"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="324"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-k" image="" itemindex="">
+      <talk_question mid="326"><![CDATA[<html>$Trainer Lindsay$<BR>Take care~ ME play with horses.<BR> This <FONT color=#a82424>Love Scout</FONT> works wonders~~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8607</exe>
+         <exe type="recompense_view">86070,,,,,</exe>
+         <exe type="talk" npc="n062_trainer_lindsay">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">336593152</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">336597248</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">336601344</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">336605440</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">336593152</chk>
+         <chk type="item" num="1" op="]=">336597248</chk>
+         <chk type="item" num="1" op="]=">336601344</chk>
+         <chk type="item" num="1" op="]=">336605440</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="5">0</exe>
+         <exe type="conexe" true="2" false="5">1</exe>
+         <exe type="conexe" true="3" false="5">2</exe>
+         <exe type="conexe" true="4" false="5">3</exe>
+         <exe type="talk" npc="n016_trader_borin">b</exe>
+         <exe type="talk" npc="n016_trader_borin">a</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delitem" num="1">336593152</exe>
+         <exe type="delitem" num="1">336597248</exe>
+         <exe type="delitem" num="1">336601344</exe>
+         <exe type="delitem" num="1">336605440</exe>
+         <exe type="addquestitem" num="1">300312</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300312</exe>
+         <exe type="recompense">86070,,,,,</exe>
+         <exe type="complete">8607</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 62, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="acceppted">0,2</exelink>
+   <exelink qstep="1" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="1" npc="n016_trader_borin" sub="b" />
+   <exelink qstep="1" npc="n016_trader_borin" sub="c" />
+   <exelink qstep="1" npc="n016_trader_borin" sub="d" />
+   <exelink qstep="1" npc="n016_trader_borin" sub="e">0,2,3,4,5,1</exelink>
+   <exelink qstep="2" npc="n016_trader_borin">0</exelink>
+   <exelink qstep="2" npc="n016_trader_borin" sub="d" />
+   <exelink qstep="2" npc="n016_trader_borin" sub="c" />
+   <exelink qstep="2" npc="n016_trader_borin" sub="e" />
+   <exelink qstep="2" npc="n016_trader_borin" sub="3">6,8,9,10,11,12,13,7</exelink>
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="c" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="d" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="e" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="f" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="g" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="h" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="i" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="j">1</exelink>
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="k">0,2,3</exelink>
+   <journal_data recompense="0:86070" quest_title="애정의 조건" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="300312">
+      <journal index="1">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Borin's Invention]]></title>
+         <contents mid="75"><![CDATA[<html>Go to Blacksmith Borin and get the Love Scout.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Blacksmith Borin</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Blacksmith Borin]]></destination>
+         <todo_msg mid="77"><![CDATA[Talk to Blacksmith Borin]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>5,n16</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>16</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Price]]></title>
+         <contents mid="26"><![CDATA[<html>Give one each of the Lower Ruby, Lower Sapphire, Lower Obsidian, and Lower Topez to Blacksmith Borin.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Blacksmith Borin</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Give items to Blacksmith Borin]]></destination>
+         <todo_msg mid="28"><![CDATA[Find each of Lower Ruby, Lower Sapphire, Lower Obsidian and Lower Topaz]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="262"><![CDATA[Report to Trainer Lindsay]]></title>
+         <contents mid="263"><![CDATA[<html>Acquired the Love Scout. Give it to <FONT color=#a82424>Trainer Lindsay</FONT>.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay</FONT></html>]]></contents>
+         <destination mid="264"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="265"><![CDATA[Report to Trainer Lindsay]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>8606</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

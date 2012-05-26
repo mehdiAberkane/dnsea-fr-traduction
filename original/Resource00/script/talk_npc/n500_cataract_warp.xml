@@ -1,0 +1,76 @@
+   <talk>
+      <npcename>n500_cataract_warp</npcename>
+      <npcid>500</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Member]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="warp_gate" mid="6"><![CDATA[<html>[Warp Gate]</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc" mid="71"><![CDATA[<html>[NPC Search]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer's Guild Member$<BR>You may use the warp to quickly navigate the town, select [<FONT color=#a82424>Warp Gate</FONT>] to do so.<BR>Use <FONT color=#7e12d2>[NPC Search]</FONT> - <FONT color=#a82424>to move to the NPC.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="warp_gate" image="" itemindex="">
+         <talk_answer link_index="warp_gate_1" mid="72"><![CDATA[<html>[Warp] North Gate (To Gray Ruins)</html>]]></talk_answer>
+         <talk_answer link_index="warp_gate_2" mid="73"><![CDATA[<html>[Warp] South Gate (To Cristal Stream)</html>]]></talk_answer>
+         <talk_answer link_index="warp_gate_3" mid="75"><![CDATA[<html>[Warp] East Gate (To Wonderful Theme's Park)</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="74"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="39"><![CDATA[<html>$Adventurer's Guild Member$<BR>Please select the area to warp to.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="warp_npc" image="" itemindex="">
+         <talk_answer link_index="warp_npc_0" mid="91"><![CDATA[<html>[Events] Event Planner Irine</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_1" mid="76"><![CDATA[<html>[Blacksmith] Blacksmith Corin</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_2" mid="77"><![CDATA[<html>[General Store] Merchant May</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_3" mid="85"><![CDATA[<html>[Trading] Merchant Shylock</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_4" mid="84"><![CDATA[<html>[Storage] Warehouse Keeper Rupert</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_5" mid="78"><![CDATA[<html>[Guild] Guild Master Deckard</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_6" mid="79"><![CDATA[<html>[Heraldry Scholar] Heraldry Scholar Bailey</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_7" mid="86"><![CDATA[<html>[Ticket] Ticketing Lorraine</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_8" mid="88"><![CDATA[<html>[Ticket] Ticketing Arnen (To Saint Haven)</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_9" mid="80"><![CDATA[<html>[Skill] Master Warrior Chandler</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_10" mid="81"><![CDATA[<html>[Skill] Master Archer Adelynn</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_11" mid="82"><![CDATA[<html>[Skill] Master Sorceress Tiana</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_12" mid="83"><![CDATA[<html>[Skill] Master Cleric Jermain</html>]]></talk_answer>
+         <talk_answer link_index="warp_npc_13" mid="94"><![CDATA[<html>[Skill] Academic Station</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="87"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="43"><![CDATA[<html>$Adventurer's Guild Member$<BR>Please select the NPC.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3747992, -1819863, 5200531);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3765890, -1920027, -6596781);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 1057250, -1851242, 519253);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -4965922, -1891300, -2636140);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3888687, -1909000, 2198132);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -4286562, -1907472, -3926226);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -4398078, -1905277, -3336093);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3031179, -1886000, -2057742);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -2975703, -1908484, -3207203);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -4368625, -1839105, -6464328);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, 2717711, -1679554, 2533617);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3890851, -1909000, 2488109);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -2937593, -1909000, 2571937);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -2460070, -1921171, 1129554);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -2597875, -1908500,2316336);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3436195, -1889074, 2267304);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -2510023, -1889742, 2595765);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3977273, -1909000, 772796);</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -5269437, -1877328, 1347007);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="warp_gate_1">1</exelink>
+      <exelink idx="warp_gate_2">2</exelink>
+      <exelink idx="warp_gate_3">3</exelink>
+      <exelink idx="warp_npc_0">16</exelink>
+      <exelink idx="warp_npc_1">4</exelink>
+      <exelink idx="warp_npc_2">5</exelink>
+      <exelink idx="warp_npc_3">6</exelink>
+      <exelink idx="warp_npc_4">7</exelink>
+      <exelink idx="warp_npc_5">8</exelink>
+      <exelink idx="warp_npc_6">9</exelink>
+      <exelink idx="warp_npc_7">10</exelink>
+      <exelink idx="warp_npc_8">11</exelink>
+      <exelink idx="warp_npc_9">12</exelink>
+      <exelink idx="warp_npc_10">13</exelink>
+      <exelink idx="warp_npc_11">14</exelink>
+      <exelink idx="warp_npc_12">15</exelink>
+      <exelink idx="warp_npc_13">17</exelink>
+   </talk>

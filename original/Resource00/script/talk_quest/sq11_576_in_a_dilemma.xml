@@ -1,0 +1,368 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_576_in_a_dilemma</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>576</qid>
+      <designer>김인정</designer>
+      <qlevel>36</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>577</nextqid>
+      <nextqname>sq11_577_second_informer</nextqname>
+      <nextqnpc>n249_saint_guard</nextqnpc>
+      <qkname mid="1"><![CDATA[In Dilemma]]></qkname>
+      <qnpc>
+         <npcid>135</npcid>
+         <npcename>n135_whilerose_lena</npcename>
+         <npckname>하얀 장미의 기사</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>249</npcid>
+         <npcename>n249_saint_guard</npcename>
+         <npckname>왕성 근위병 로이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>48</npcid>
+         <npcename>n048_maid_of_lena</npcename>
+         <npckname>왕성 하녀</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Guard Roy$<BR>I keep eyes on people who come in to Saint Haven.<BR><FONT color=#7e12d2>(Get Quest from General Douglas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Knight of White Rose$<BR>The body is already moved into the Kingdom. There's no information that I can find.<BR> What should I do?<BR><FONT color=#7e12d2>(Get Quest from General Douglas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Maid$<BR>Ugh….Why Miss Rena is late today?<BR>
+I am waiting forever.<BR><FONT color=#7e12d2>(Get Quest from General Douglas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="9"><![CDATA[<html>Is White Rose caught?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$General Douglas${action:Talk2}<BR>I can't believe White Rose was just murdered.<BR>
+I am confused because many soldiers report new information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="11"><![CDATA[<html>Are you thinking something?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$General Douglas$<BR>Well , no…..<FONT color=#a82424>MysTelejuous Thief White Rose</FONT>….<BR>
+But was he really murdered? I am not sure. And….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="13"><![CDATA[<html>Yes? (Curious….)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$General Douglas$<BR>Ah… <FONT color=#a82424>The sign on the hand of murdered person</FONT> is.. I think that is….<BR>
+<FONT color=#7e12d2>(General Douglas suddenly stops to talk)</FONT> …Nothing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-party" mid="15"><![CDATA[<html>Well… what about Miss Rena?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$General Douglas$<BR>Well… I think this is not a thing I can talk with you.<BR>
+We will investigate so don't worry.<BR><FONT color=#7e12d2>(General Douglas changes topic)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="17"><![CDATA[<html>…Yes. Well, sure.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$General Douglas$<BR>Hum? Why are you looking for my daughter?<BR>Oh yes… you are friends with my daughter.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-c" mid="19"><![CDATA[<html>Yes? Where is she?!</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$General Douglas$<BR>She is not in Saint Haven now.<BR>
+That's too bad that you guys can't see each other today.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-d" mid="21"><![CDATA[<html> Recuperate? To where?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$General Douglas$<BR>She's weak so I sent her to somewhere is really good to recuperate.<BR>My girl is too weak.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-d" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$General Douglas${action:Talk}<BR>Hum… Now I guess she's at <FONT color=#a82424>Hermalte Port</FONT>with a <FONT color=#a82424>maid</FONT>to take a ship.<BR>
+I hope she gets better and comes back. Hahaha. <BR>
+<FONT color=#7e12d2>(General Douglas smiles)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-e" image="" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$General Douglas$<BR>Hum? What are they doing? Ha, well.<BR>
+ <BR>
+<FONT color=#7e12d2>※ cannot proceed while still in a party</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Guard Roy$<BR>I keep eyes on people who come in to Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Knight of White Rose$<BR>The body is already moved into the Kingdom. There's no information that I can find.<BR> What should I do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-1" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Maid$<BR>Ugh….Why Miss Rena is late today?<BR>
+I am waiting forever.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$General Douglas$<BR>My <FONT color=#a82424>Rena</FONT> is now with a maid at Hermalte Port to take a ship.<BR>She's with<FONT color=#a82424>maid</FONT> so it will be ok.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-2-a" mid="29"><![CDATA[<html>Where is Miss Rena?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Maid$<BR>Oh, you are a friend with <FONT color=#a82424>Miss Rena</FONT>?<BR> Your name was <FONT color=#387206>{user_nick}</FONT> Am I right? I have a good memory~ Hoho.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2-a" image="" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-2-b" mid="31"><![CDATA[<html>Well, I guess you just misunderstood…</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Maid${action:Talk}<BR>Are… you following Miss Rena? Hello!! Although Miss Rena is pretty!! She will feel afraid of you if you follow her like that~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2-b" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-2-c" mid="33"><![CDATA[<html>Do you know where she goes?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Maid$<BR>Whatever!! Miss Rena is not here. She just went to somewhere. You know, <FONT color=#a82424>Miss Rena</FONT> doesn't really feel fear.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2-c" image="QW_47.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-3" mid="35"><![CDATA[<html>(There is the area where I saw with soldiers. Let's go)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Maid$<BR>Well… I don't know.. I followed her secretly. I think she's going to <FONT color=#a82424>Ruins of Lost Time</FONT> .<BR>But I didn't go because I am afraid.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-3" image="QW_47.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Maid$<BR>Well, if you meet Miss Rena at <FONT color=#a82424>Ruins of Lost Time</FONT>, please tell her to come back.<BR>I am afraid to wait alone. 
+ <BR>
+<FONT color=#7e12d2>※ cannot proceed while still in a party</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-a" mid="38"><![CDATA[<html>No way, seriously murder…?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Knight of White Rose$<BR>You came. <FONT color=#387206>{user_nick}</FONT>.<BR>I knew you would be here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-a" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-b" mid="40"><![CDATA[<html>Then why there?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Knight of White Rose$<BR>What are you talking about! No way, did you think White Rose is like a dumb criminal to be murdered?<BR>
+Disappointed. I did not murder.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-b" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-c" mid="50"><![CDATA[<html>Are you sure?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Knight of White Rose$<BR>I went to there to meet someone. I was planning to get some important information.<BR>
+But when I arrived there, the guy was dead already. After then… you know it since you saw it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-c" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-d" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Knight of White Rose$<BR>Are you thinking that I did? I thought , you knew I wouldn't kill anyone. That person was a dragon follower, and he quit.<BR>
+ So he was planning to give me their information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-d" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-e" mid="46"><![CDATA[<html>The soldiers already moved it to the kingdom.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Knight of White Rose$<BR>It's possible that other dragon follower noticed and killed him. It was unexpected so I didn't even check carefully the crime scene.<BR> I came again after the soldiers left, but there was nothing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-e" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-f" mid="51"><![CDATA[<html>I heard there is a mark on the hand…</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Knight of White Rose$<BR>Nothing special?<BR>
+Like a message he left before dead….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-f" image="QS_Default.dds" itemindex="300348">
+      <talk_answer link_index="n135_whilerose_lena-3-g" mid="53"><![CDATA[<html>(Look White Rose to request something )</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Knight of White Rose$<BR>Mark? On the hand? …what does it look like? Have you heard? <FONT color=#7e12d2>(White Rose tries to ask)</FONT><BR>
+…You seems like you don't know the details. All right. It's easy to know the information which goes into General. I will try to find another new information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-g" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-h" mid="56"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Knight of White Rose${action:Talk}<BR>Anyways, I have something that I want you to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-h" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-i" mid="58"><![CDATA[<html>May be.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Knight of White Rose$<BR>Actually there are two people who was going to give me information.<BR>
+I asked the one of them to meet but bad thing just happened, <FONT color=#a82424>another one</FONT> will be dangerous.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-i" image="" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-j" mid="60"><![CDATA[<html>Who should I take to you?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Knight of White Rose$<BR>Now I can't go back to <FONT color=#a82424>Saint Haven</FONT> so I want to ask you if you can bring the another person.<BR>
+It's better you to take care of him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-j" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n135_whilerose_lena-3-k" mid="62"><![CDATA[<html>All right.</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Knight of White Rose$<BR>Go to Guard Roy. He's working in front of kingdom gate, so it won't be difficult to find him.<BR>
+Ask him where Oliver is, and meet Oliver.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-3-k" image="QW_42.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Knight of White Rose$<BR>This is a dangerous place since it's a crime scene.<BR>
+Take him and let's meet at Gate of Death City.<BR> I will wait for you there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n135_whilerose_lena-4" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Knight of White Rose${action:Talk}<BR>Meet <FONT color=#a82424>Guard Roy</FONT> who is working in front of kingdom gate. And ask him where Oliver is.<BR>
+After you meet Oliver, take him to <FONT color=#a82424>Gate of Death City</FONT> to meet again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-4" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-4-a" mid="67"><![CDATA[<html>I am looking for Oliver.</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Guard Roy$<BR>What?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-4-a" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-4-b" mid="69"><![CDATA[<html>Cleric?</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Guard Roy$<BR>Oliver? …Oliver, Oliver… Ah!<BR> I remember, ah that <FONT color=#a82424>Cleric Oliver</FONT> you are talking about~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-4-b" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-4-c" mid="71"><![CDATA[<html>(Listen about it more)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Guard Roey${action:Talk}<BR>He comes here often so if you come here, you can easily meet him.<BR> But I don't think he's coming today.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-4-c" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-4-d" mid="73"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Guard Roy$<BR>Between the Guards, they are talking about <FONT color=#a82424>MysTelejuous Thief White Rose</FONT> just murdered.<BR>
+Cleric Oliver was here when my friend told me that news.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-4-d" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n249_saint_guard-4-e" mid="75"><![CDATA[<html>(Ask more)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Guard Roy$<BR>After he heard about murder of White Rose, he ran away and said he will go back to hometown.<BR>
+I think he left already.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n249_saint_guard-4-e" image="" itemindex="">
+      <talk_answer link_index="n249_saint_guard-4-!next" mid="77"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">576</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n042_general_duglars">a</exe>
+         <exe type="talk" npc="n042_general_duglars">e</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">5760,,,,,</exe>
+         <exe type="complete">576</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 133, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="party">2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n048_maid_of_lena" sub="b" />
+   <exelink qstep="2" npc="n048_maid_of_lena" sub="c" />
+   <exelink qstep="2" npc="n048_maid_of_lena" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="b" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="c" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="d" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="e" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="f" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="g" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="h" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="i" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="j" />
+   <exelink qstep="3" npc="n135_whilerose_lena" sub="k">0,1</exelink>
+   <exelink qstep="4" npc="n249_saint_guard" sub="b" />
+   <exelink qstep="4" npc="n249_saint_guard" sub="c" />
+   <exelink qstep="4" npc="n249_saint_guard" sub="d" />
+   <exelink qstep="4" npc="n249_saint_guard" sub="e">0</exelink>
+   <exelink qstep="4" npc="n249_saint_guard" sub="!next">1,2</exelink>
+   <journal_data recompense="0:5760" quest_title="진퇴양난" chapterid="" quest_level="36" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode />
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Talk with General Douglas]]></title>
+         <contents mid="79"><![CDATA[<html>Report about White Rose to General Douglas at Ruins of Lost Time. Something is weird, so let's ask about Miss Rena to General.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Kingdom</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Talk with General Douglas]]></destination>
+         <todo_msg mid="81"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n48</destination_pos>
+         <destination_mode />
+         <statemark_npcid>48</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[People with Lena]]></title>
+         <contents mid="83"><![CDATA[<html>Lena is going to take a ship. Let's find the people with Lena at Hermalte Port.<BR><BR><FONT color=#086171>Hermalte Port.</FONT> <FONT color=#a82424>→ Maid</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Find the people with Lena at Hermalte Port.]]></destination>
+         <todo_msg mid="85"><![CDATA[Go to Hermalte Port to talk with the people with Lena]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_47.dds</contents_image>
+         <destination_pos>473,n135</destination_pos>
+         <destination_mode>custom:471@1,472@1,473@1</destination_mode>
+         <statemark_npcid>135</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[At the Ruins of Lost Time]]></title>
+         <contents mid="87"><![CDATA[<html>Lena seems like she has something to investigate at Ruins of Lost Time. Let's go to find her.<BR><BR><FONT color=#7e12d2>※ cannot proceed while still in a party<BR><BR></FONT><FONT color=#086171>Hermalte Port (River Ruins Gate)</FONT> <FONT color=#a82424>→Ruins of Lost Time</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[(One person) Find Lena at Ruins of Lost Time.]]></destination>
+         <todo_msg mid="89"><![CDATA[Find Lena at Ruins of Lost Time.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n249</destination_pos>
+         <destination_mode />
+         <statemark_npcid>249</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Who is Oliver?]]></title>
+         <contents mid="91"><![CDATA[<html>Let's talk with Guard Roy who is working in front of kingdom gate.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Guard Roy</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Talk with Guard Roy]]></destination>
+         <todo_msg mid="93"><![CDATA[Meet Guard Roy to talk ]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>575</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

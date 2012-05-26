@@ -1,0 +1,442 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_467_endless_dream3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>467</qid>
+      <designer>손원호</designer>
+      <qlevel>27</qlevel>
+      <qdesc>꿈 가루를 이용해서 엘로이즈의 꿈 속으로 들어가지만 결국 깨우지 못하고, 대신 길리안의 이야기를 듣는다. 길리안에게 찾아가면 그는 소녀를 모른다고 하는데…
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Unwakeable Dream III]]></qkname>
+      <qnpc>
+         <npcid>237</npcid>
+         <npcename>n237_sylock</npcename>
+         <npckname>거상 샤일록</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>238</npcid>
+         <npcename>n238_elloise</npcename>
+         <npckname>엘로이즈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>239</npcid>
+         <npcename>n239_elloise</npcename>
+         <npckname>엘로이즈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>240</npcid>
+         <npcename>n240_elloise</npcename>
+         <npckname>엘로이즈</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Sleeping Eloise$<BR>... ...<BR><BR><FONT color=#7e12d2>(She is in a deep sleep)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Eloise$<BR>
+I'm alright now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-accepting" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-accepting-a" mid="8"><![CDATA[<html>(Talk about Gillian)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant Milo$<BR>What happened? Why isn't Gillian here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-accepting-b" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant Milo$<BR>Ok… that's what happened. <BR>
+He seems to be a better guy than I thought. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Unwakeable Dream III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-1" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-1-a" mid="15"><![CDATA[<html>Leave it to me please.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant Milo$<BR>Please go into her dream and give her the pendant.<BR>
+I'm counting on you….. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-1-a" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Merchant Milo$<BR>I won't need anything else as long as Eloise wakes up.…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-2" image="QN_elloise.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Merchant Milo$<BR>I'm counting on you...<BR>
+Please wake my daughter up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-2" image="QS_Default.dds" itemindex="300083">
+      <talk_answer link_index="n238_elloise-2-member1" mid="19"><![CDATA[<html>(Use the Dream Powder)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Eloise$<BR>… …<BR>
+<BR><FONT color=#7e12d2>(She is in a deep sleep)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-2-a" image="" itemindex="">
+      <talk_answer link_index="n238_elloise-2-into_dream" mid="107"><![CDATA[<html>(Enter the dream)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Eloise$<BR>… …<BR><BR><FONT color=#7e12d2>(Charming lights twinkles around Eloise)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n238_elloise-2-b" image="" itemindex="">
+      <talk_question mid="108"><![CDATA[<html>$System$<BR>
+<FONT color=#7e12d2><FONT color=#a82424>You can't enter the dream in a party. If you are in a party now, try again after the withdrawal from party.</FONT> </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-a" mid="21"><![CDATA[<html>I have something to give you.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Eloise in the dream$<BR>It's you again. <BR>
+Why don't you leave me alone?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-a" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-b" mid="23"><![CDATA[<html>(Give her the pendant)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Eloise in the dream$<BR>I don’t need anything. <BR>
+Just leave me alone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-b" image="QS_Default.dds" itemindex="300074">
+      <talk_answer link_index="n239_elloise-3-c" mid="25"><![CDATA[<html>Gillian have given me this.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Eloise in the dream$<BR>Oh… How?! <BR>
+Why do you have this <FONT color=#a82424>pendant</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-c" image="QS_Default.dds" itemindex="300074">
+      <talk_answer link_index="n239_elloise-3-d" mid="27"><![CDATA[<html>He didn't leave you.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Eloise in the dream$<BR>No way! This is our <FONT color=#a82424>sign of promise</FONT>. We promised to keep it to ourselves…he…left me….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-d" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-e" mid="29"><![CDATA[<html>Gillian was trying to get stronger for you.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Eloise in the dream$<BR>Liar! <BR>
+<FONT color=#a82424>He left me at the end…</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-e" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-f" mid="31"><![CDATA[<html>He is trying to become a better person just for you.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Eloise in the dream$<BR>For…me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-f" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-g" mid="34"><![CDATA[<html>He is going to do everything to meet you again.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Eloise in the Dream$<BR>… … to come back to me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-g" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-h" mid="36"><![CDATA[<html>(Eloise seems weird)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Eoise in the dream$<BR>Oh Gillian. Oh, my Gillian… <BR>
+I have to go back… <BR>
+No I can't <FONT color=#a82424>I can't wake up!!!</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-h" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-3-i" mid="38"><![CDATA[<html>(Black smoke rises from the dark) </html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Eloise in the dream$<BR>No you can't wake up. <BR>
+I am the owner of this dream! It's me!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-3-i" image="QM_Wraith_Red.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Eloise in the dream$<BR>R... Run. <BR>
+<FONT color=#a82424>Nightmare</FONT> is here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-4" image="QM_Wraith_Red.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Eloise in the dream$<BR>R... Run. <BR>
+<FONT color=#a82424>Nightmare</FONT> is here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-5" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-5-a" mid="42"><![CDATA[<html>Are you feeling better?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Eloise in the dream$<BR>You have destroyed my <FONT color=#a82424>nightmare</FONT>… Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n239_elloise-5-a" image="" itemindex="">
+      <talk_answer link_index="n239_elloise-5-out_dream" mid="44"><![CDATA[<html>(Hold Eloise's hand)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Eloise in the dream$<BR>Yes I'm feeling much better because of you. <BR>
+Let's go back together. <BR>
+To the real world…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-6" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Merchant Milo$<BR>Eloise seems little bit different...<BR>
+I think there is a change in her…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-a" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Eloise$<BR>… …<BR>
+<BR><FONT color=#7e12d2>(Eloise opens her eyes slowly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-a" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-b" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Eloise$<BR>Blue sky, nice wind, cloud…. Twinkling sea. This is my world. <BR><FONT color=#7e12d2>(Eloise looks outside with clean eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-b" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-c" mid="52"><![CDATA[<html>I'm glad.</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Eloise$<BR>Thank you. Now, I can open my eyes and look at this beautiful world. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-c" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-d" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Eloise$<BR>Gillian should be working hard somewhere in this world. You have fought against my nightmare so I think it's my turn to fight against the nightmare of reality. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-d" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-e" mid="56"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Eloise$<BR>I don't know when it will be but I'll live my best until the day I meet Gillian. And when I see him I'm going to tell him that I love him with my own will, not someone elses. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-e" image="" itemindex="">
+      <talk_answer link_index="n240_elloise-6-f" mid="58"><![CDATA[<html>Good Luck.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Eloise$<BR>I'm going to ask my father to give me one more chance. I'll introduce Gillian to him after I become a trustworthy daughter.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-6-f" image="" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Eloise$<BR>Thank you so much for waking me up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n240_elloise-7" image="QN_shylock.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Eloise$<BR>I'm ok now. I think my father wants to speak with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-a" mid="63"><![CDATA[<html>Why are you crying after all that hard work? </html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Merchant Milo$<BR>
+Boohoo…Boohoo Eloise woke up….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-a" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-b" mid="65"><![CDATA[<html>Are you letting them fall in love?</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Merchant Milo$<BR>This is tears of joy. She is all grown up now. I should get her married soon….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-b" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-c" mid="67"><![CDATA[<html>That's good.</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Merchant Milo$<BR>
+Um… I don't like him 100% but if Eloise is happy with him, I shall talk to him again. Eloise is old enough to take responsibility of her own actions now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-c" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-d" mid="69"><![CDATA[<html>I kind of get it.</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Merchant Milo$<BR>How would a young adventurer like you know the mind of a father? All I want is the <FONT color=#a82424>Happiness of Eloise</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-d" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-e" mid="71"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Merchant Milo$<BR>Thanks for understanding….This is to thank all the hard work you have put in lately. Take it please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-e" image="" itemindex="">
+      <talk_answer link_index="n237_sylock-7-f" mid="73"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n237_sylock-7-f" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Merchant Milo$<BR>
+Now, it's my turn to open my heart and talk to my daughter. Thank you for helping.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4671,4672,4673,4674,4675</exe>
+         <exe type="setquest">467</exe>
+         <exe type="talk" npc="n237_sylock">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13013,1);</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n238_elloise">a</exe>
+         <exe type="talk" npc="n238_elloise">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">21068</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,12,7);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4671,4672,4673,4674,4675</exe>
+         <exe type="complete">467</exe>
+         <exe type="delquestitem" num="1">300083</exe>
+         <exe type="delquestitem" num="1">300074</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n237_sylock" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n237_sylock" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n237_sylock" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n238_elloise" sub="member1">3</exelink>
+   <exelink qstep="2" npc="n238_elloise" sub="into_dream">0,1,2</exelink>
+   <exelink qstep="3" npc="n239_elloise" sub="b" />
+   <exelink qstep="3" npc="n239_elloise" sub="c" />
+   <exelink qstep="3" npc="n239_elloise" sub="d" />
+   <exelink qstep="3" npc="n239_elloise" sub="e" />
+   <exelink qstep="3" npc="n239_elloise" sub="f" />
+   <exelink qstep="3" npc="n239_elloise" sub="g" />
+   <exelink qstep="3" npc="n239_elloise" sub="h" />
+   <exelink qstep="3" npc="n239_elloise" sub="i">0,2,1</exelink>
+   <exelink qstep="5" npc="n239_elloise" sub="out_dream">0,1,2</exelink>
+   <exelink qstep="6" npc="n240_elloise" sub="b" />
+   <exelink qstep="6" npc="n240_elloise" sub="c" />
+   <exelink qstep="6" npc="n240_elloise" sub="d" />
+   <exelink qstep="6" npc="n240_elloise" sub="e" />
+   <exelink qstep="6" npc="n240_elloise" sub="f">0,1</exelink>
+   <exelink qstep="7" npc="n237_sylock" sub="b" />
+   <exelink qstep="7" npc="n237_sylock" sub="c" />
+   <exelink qstep="7" npc="n237_sylock" sub="d" />
+   <exelink qstep="7" npc="n237_sylock" sub="e">0</exelink>
+   <exelink qstep="7" npc="n237_sylock" sub="f">1,2,3</exelink>
+   <journal_data recompense="1:4671,2:4672,3:4673,4:4674,5:4675" quest_title="깨지 않는 꿈 Ⅲ" chapterid="" quest_level="27" quest_mark_type="10" use_item_list="300083,300074">
+      <journal index="1">
+         <contents_image>QN_shylock.dds</contents_image>
+         <destination_pos>12,n237</destination_pos>
+         <destination_mode />
+         <statemark_npcid>237</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Conversation with Merchant Milo]]></title>
+         <contents mid="78"><![CDATA[<html>Before entering the dream of Eloise, talk to Merchant Milo.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Merchant Milo</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Conversation with Merchant Milo]]></destination>
+         <todo_msg mid="80"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_elloise.dds</contents_image>
+         <destination_pos>12,n238</destination_pos>
+         <destination_mode />
+         <statemark_npcid>238</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[To the dream of Eloise]]></title>
+         <contents mid="82"><![CDATA[<html>Enter the dream of Eloise by using Dream Powder.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Sleeping Eloise</FONT></html>\]]></contents>
+         <destination mid="83"><![CDATA[To the dream of Eloise]]></destination>
+         <todo_msg mid="84"><![CDATA[Enter the dream of Eloise again]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_elloise.dds</contents_image>
+         <destination_pos>13013,n239</destination_pos>
+         <destination_mode>custom:13013@1</destination_mode>
+         <statemark_npcid>239</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Conversation with Eloise in the dream]]></title>
+         <contents mid="87"><![CDATA[<html>Enter the dream of Eloise and talk to her.<BR>
+<BR><FONT color=#086171>The dream of Eloise</FONT> <FONT color=#a82424>→ Eloise</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Conversation with Eloise in the dream]]></destination>
+         <todo_msg mid="89"><![CDATA[Talk to Eloise in the dream]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QM_Wraith_Red.dds</contents_image>
+         <destination_pos>13013,n239</destination_pos>
+         <destination_mode>custom:13013@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Defeat Scarlet Reaper of Nightmare]]></title>
+         <contents mid="91"><![CDATA[<html>Defeat Scarlet Reaper of Nightmare that Eloise's dark mind have made in her dream.<BR>
+ <BR>
+<FONT color=#086171>The dream of Eloise</FONT> <FONT color=#a82424>→ Scarlet Reaper of Nightmare</FONT><BR>
+ </html>]]></contents>
+         <destination mid="92"><![CDATA[Defeat Scarlet Reaper of Nightmare]]></destination>
+         <todo_msg mid="93"><![CDATA[Defeat the Nightmare Eloise have made]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_elloise.dds</contents_image>
+         <destination_pos>13013,n239</destination_pos>
+         <destination_mode>custom:13013@1</destination_mode>
+         <statemark_npcid>239</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Conversation with Eloise in the dream]]></title>
+         <contents mid="95"><![CDATA[<html>Defeated the Nightmare. Return to reality with Eloise in the dream.<BR>
+ <BR>
+<FONT color=#086171>The dream of Eloise</FONT> <FONT color=#a82424>→ Eloise</FONT><BR>
+ <BR>
+ </html>]]></contents>
+         <destination mid="96"><![CDATA[Conversation with Eloise in the dream]]></destination>
+         <todo_msg mid="97"><![CDATA[Talk to Eloise in the dream]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_elloise.dds</contents_image>
+         <destination_pos>12,n240</destination_pos>
+         <destination_mode />
+         <statemark_npcid>240</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="98"><![CDATA[Conversation with Eloise]]></title>
+         <contents mid="99"><![CDATA[<html>Eloise woke up. Talk to Eloise.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Eloise</FONT></html>]]></contents>
+         <destination mid="100"><![CDATA[Conversation with Eloise]]></destination>
+         <todo_msg mid="101"><![CDATA[Talk to the awakened Eloise]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_shylock.dds</contents_image>
+         <destination_pos>12,n237</destination_pos>
+         <destination_mode />
+         <statemark_npcid>237</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[Conversation with Merchant Milo]]></title>
+         <contents mid="103"><![CDATA[<html>Eloise wants to live facing reality. Report this to Merchant Milo.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Merchant Milo</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[Conversation with Merchant Milo]]></destination>
+         <todo_msg mid="105"><![CDATA[Talk to Milo]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>466</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

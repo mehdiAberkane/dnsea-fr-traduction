@@ -1,0 +1,313 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq10_8401_basic_of_deal</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8401</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>용도불명 폐기물	300310</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Basic of Deal]]></qkname>
+      <qnpc>
+         <npcid>301</npcid>
+         <npcename>n301_auction_manger_scrooge</npcename>
+         <npckname>거래소 조합장 스크루지</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>302</npcid>
+         <npcename>n302_auction_manger_oneal</npcename>
+         <npckname>거래소 조합장 오닐</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>303</npcid>
+         <npcename>n303_auction_manger_shylock</npcename>
+         <npckname>거래소 조합장 샤일록</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>304</npcid>
+         <npcename>n304_auction_manger_duwen</npcename>
+         <npckname>거래소 조합장 더웬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n301_auction_manger_scrooge-noquest" image="QN_shylock.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Exchange Deacon Scrooge$<BR>Time is gold. You do know that, do you?<BR><FONT color=#7e12d2>(You need to receive a quest from Exchange Deacon Deowen at Saint Haven.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n302_auction_manger_oneal-noquest" image="QN_shylock.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Exchange Deacon O'niel$<BR>Time is gold. You do know that, do you?<BR><FONT color=#7e12d2>(You need to receive a quest from Exchange Deacon Deowen at Saint Haven.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n303_auction_manger_shylock-noquest" image="QN_shylock.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Exchange Deacon Shylock$<BR>You should spend your time effectively to be a rich.<BR><FONT color=#7e12d2>(You need to receive a quest from Exchange Deacon Deowen at Saint Haven.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-a" mid="9"><![CDATA[<html>What? Me?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Perhaps are you……?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-b" mid="11"><![CDATA[<html>I'm quite famous. (Feels smug)</html>]]></talk_answer>
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-b" mid="12"><![CDATA[<html>The rumor? What kind of rumor did you hear?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Perhaps, you are the famous adventurer <FONT color=#387206>{user_nick}</FONT>…?<BR>Your appearance is the same as the rumor described.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting-b" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-c" mid="14"><![CDATA[<html>(He's talking about Harori's CD single.)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Is that true that you sold a handful of inventory to <FONT color=#a82424>Lady Kayleen</FONT> ?<BR>I was totally impressed by it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-acceppted" mid="16"><![CDATA[<html>What kind of work is it?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Exchange Deacon Deowen$<BR>I need some help.<BR>Will you lend a hand?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-1" image="QN_Scrooge.dds" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-1-a" mid="20"><![CDATA[<html>Hmm. Alright.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Exchange Deacon Deowen$<BR> <FONT color=#a82424>Exchange Deacon Scrooge</FONT> at Prairie Town left a handful of inventory in our exchange which is not sold at all . It's hard to keep them there anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-1-a" image="QN_Scrooge.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Exchange Deacon Deowen$<BR>So please go to <FONT color=#a82424>Prairie Town</FONT> and give them back to <FONT color=#a82424>Scrooge</FONT>.<BR>Please!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n302_auction_manger_oneal-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Exchange Deacon O'niel$<BR>Time is gold.<BR>
+You know that, do you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n303_auction_manger_shylock-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Exchange Deacon Shylock$<BR>You should spend your time effectively to be rich.<BR>Keep this in your mind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n301_auction_manger_scrooge-1" image="QN_shylock.dds" itemindex="">
+      <talk_answer link_index="n301_auction_manger_scrooge-1-a" mid="25"><![CDATA[<html>Well, that's it….</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Exchange Deacon Scrooge$<BR>What is this stuff you have? It looks quite familiar to me.<BR>… Could it be the thing that <FONT color=#a82424>Deowen</FONT> from <FONT color=#a82424>Saint Haven</FONT> sent to me?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n301_auction_manger_scrooge-1-a" image="" itemindex="">
+      <talk_answer link_index="n301_auction_manger_scrooge-1-b" mid="27"><![CDATA[<html>(Scrooge whines.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Exchange Deacon Scrooge$<BR>Ahah… What a <FONT color=#a82424>handful of useless things</FONT>!!<BR>
+Actually I took care of that at first.<BR>Someone left it to our exchange and conveniently forgot about it for several days.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n301_auction_manger_scrooge-1-b" image="" itemindex="">
+      <talk_answer link_index="n301_auction_manger_scrooge-1-c" mid="29"><![CDATA[<html>Then, please take this…</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Exchange Deacon Scrooge$<BR>So I ended up putting it at <FONT color=#a82424>Saint Haven's</FONT> exchange secretly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n301_auction_manger_scrooge-1-c" image="QN_Duwen.dds" itemindex="">
+      <talk_answer link_index="n301_auction_manger_scrooge-1-d" mid="31"><![CDATA[<html>Do I have to go there?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Exchange Deacon Scrooge$<BR>W, w, wait!! I found who left the things!<BR>It's … <FONT color=#a82424>Exchange Deacon Shylock</FONT> at <FONT color=#a82424>Calderock Village</FONT> !!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n301_auction_manger_scrooge-1-d" image="QN_Duwen.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Exchange Deacon Scrooge$<BR>Yes, that's right. Hmmhmm. Then, take it and go to <FONT color=#a82424>Calderock Village</FONT>!<BR>
+Hmmhmm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n301_auction_manger_scrooge-2" image="QN_Duwen.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Exchange Deacon Scrooge$<BR><FONT color=#a82424>Shylock</FONT> at <FONT color=#a82424>Calderock Village</FONT> left this at our exchange, then I brought it to Saint Haven.<BR> If you want to nitpick, please go to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n303_auction_manger_shylock-2" image="QN_Duwen.dds" itemindex="">
+      <talk_answer link_index="n303_auction_manger_shylock-2-a" mid="37"><![CDATA[<html>(Shylock sighs)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Exchange Deacon Shylock$<BR>Well, is it back to me? Haah.<BR><FONT color=#7e12d2>(Shylock's face is distorted as he sees it.)</FONT><BR>Haa… it's annoying.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n303_auction_manger_shylock-2-a" image="" itemindex="">
+      <talk_answer link_index="n303_auction_manger_shylock-2-b" mid="39"><![CDATA[<html>Huh! (It's the same as what Scrooge had said.)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Exchange Deacon Shylock$<BR>Actually let me tell you about it.<BR>Someday, someone left that to our exchange…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n303_auction_manger_shylock-2-b" image="QN_Scrooge.dds" itemindex="">
+      <talk_answer link_index="n303_auction_manger_shylock-3" mid="41"><![CDATA[<html>Perhaps… (well, isn't this the same story?!)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Exchange Deacon Shylock$<BR>…so I brought it to the exchange at Prairie Town.<BR>Hmm. I'm sure that the suspect is <FONT color=#a82424>Exchange Deacon O'niel</FONT> at <FONT color=#a82424>Mana Ridge</FONT>!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n303_auction_manger_shylock-3" image="QN_Scrooge.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Exchange Deacon Shylock$<BR>How can he pretend not to put this useless waste in other's exchange. Isn't <FONT color=#a82424>O'niel</FONT> at <FONT color=#a82424>Mana Ridge</FONT> a dirty businessman?<BR>
+Please take it back to the owner.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n302_auction_manger_oneal-3" image="QS_Default.dds" itemindex="300310">
+      <talk_answer link_index="n302_auction_manger_oneal-3-a" mid="44"><![CDATA[<html>Take this!</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Exchange Deacon O'niel$<BR>Is that the <FONT color=#a82424>useless waste</FONT>…?!<BR>Shylock at Calderock Village knew this belonged to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n302_auction_manger_oneal-3-a" image="" itemindex="">
+      <talk_answer link_index="n302_auction_manger_oneal-3-b" mid="46"><![CDATA[<html>What?! (What's going on here?)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Exchange Deacon O'niel$<BR>Well… this is because, <BR>…Someone left it at our exchange.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n302_auction_manger_oneal-3-b" image="" itemindex="">
+      <talk_answer link_index="n302_auction_manger_oneal-3-c" mid="48"><![CDATA[<html>Haaa.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Exchange Deacon O'niel$<BR>
+It's true that I brought this to the exchange at Calderock.<BR>But I couldn't help doing that. Do you agree with me?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n302_auction_manger_oneal-3-c" image="" itemindex="">
+      <talk_answer link_index="n302_auction_manger_oneal-3-d" mid="50"><![CDATA[<html>That's?!</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Exchange Deacon O'niel$<BR>I found the suspect fortunately.<BR>It's…!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n302_auction_manger_oneal-3-d" image="QN_shylock.dds" itemindex="">
+      <talk_answer link_index="n302_auction_manger_oneal-4" mid="52"><![CDATA[<html>…Huh.</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Exchange Deacon O'niel$<BR>It's him, <FONT color=#a82424>Exchange Deacon Deowen</FONT> at Saint Haven!!<BR>
+He is the owner!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n302_auction_manger_oneal-4" image="QN_shylock.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Exchange Deacon O'niel$<BR>Then… please give the trash back to<FONT color=#a82424>Exchange Deacon Deowen</FONT>!<BR>He won't deny it. Cough.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4" image="QN_shylock.dds" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-4-a" mid="55"><![CDATA[<html>…The suspect is you!</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Exchange Deacon Deowen$<BR>What?! Why did you bring it back again?<BR><FONT color=#7e12d2>(Deowen shakes his hands in annoyance.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4-a" image="QN_shylock.dds" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-4-b" mid="57"><![CDATA[<html>What is going on now?!</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Hhmm… no way…. In the end……<BR>
+That annoying thing came back to me…?<BR><FONT color=#7e12d2>(Deowen draws a long sigh.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4-b" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-4-c" mid="59"><![CDATA[<html>(Is this a horror story…)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Once upon a time, a strange adventurer left this thing at our exchange…<BR>And he never came back… I was afraid that the thing has been sold and has not been owned by anybody.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4-c" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-4-d" mid="61"><![CDATA[<html>But still you've done the wrong thing.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Whenever I looked around my exchange, I could see this among my lot of goods. It was scary to me.<BR>So I brought this to another exchange and wanted to forget about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4-d" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-4-e" mid="63"><![CDATA[<html>(Deowen takes it with a sad face.)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Uhh… but it’s back to me again. Haa… well, I give up.<BR>
+I'll take it as my fate.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4-e" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Exchange Deacon Deowen$<BR><FONT color=#7e12d2>(He mumbles to himself.)</FONT> Do I have to change its wrapping and bring to other exchanges later on? Phew~ Exchanges also have a lot of troublesome issues. You should know this.<BR>
+<FONT color=#7e12d2>(You've established a closer relationship with Exchange Deacon Deowen.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8401</exe>
+         <exe type="talk" npc="n304_auction_manger_duwen">1</exe>
+         <exe type="addquestitem" num="1">300310</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300310</exe>
+         <exe type="complete">8401</exe>
+         <exe type="custom">api_npc_Rage( userObjID, 304 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n304_auction_manger_duwen" sub="acceppted">0,1,2</exelink>
+   <exelink qstep="1" npc="n301_auction_manger_scrooge" sub="b" />
+   <exelink qstep="1" npc="n301_auction_manger_scrooge" sub="c" />
+   <exelink qstep="1" npc="n301_auction_manger_scrooge" sub="d">1,0</exelink>
+   <exelink qstep="2" npc="n303_auction_manger_shylock" sub="b" />
+   <exelink qstep="2" npc="n303_auction_manger_shylock" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n302_auction_manger_oneal" sub="b" />
+   <exelink qstep="3" npc="n302_auction_manger_oneal" sub="c" />
+   <exelink qstep="3" npc="n302_auction_manger_oneal" sub="d" />
+   <exelink qstep="3" npc="n302_auction_manger_oneal" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n304_auction_manger_duwen" sub="a">2</exelink>
+   <exelink qstep="4" npc="n304_auction_manger_duwen" sub="b" />
+   <exelink qstep="4" npc="n304_auction_manger_duwen" sub="c" />
+   <exelink qstep="4" npc="n304_auction_manger_duwen" sub="d" />
+   <exelink qstep="4" npc="n304_auction_manger_duwen" sub="e">0,1</exelink>
+   <journal_data recompense="" quest_title="거래의 기본" chapterid="" quest_level="38" quest_mark_type="15" use_item_list="300310">
+      <journal index="1">
+         <contents_image>QN_Scrooge.dds</contents_image>
+         <destination_pos>1,n301</destination_pos>
+         <destination_mode>custom:11@4,12@0,13@0</destination_mode>
+         <statemark_npcid>301</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[To Exchange Deacon Scrooge]]></title>
+         <contents mid="68"><![CDATA[<html>Exchange Deacon Deowen passes an useless item to you. He says that Exchange Deacon Scrooge at Prairie Town forced him to take it. Go to Scrooge and ask about this matter.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Exchange Deacon Scrooge</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk to Exchange Deacon Scrooge]]></destination>
+         <todo_msg mid="70"><![CDATA[Talk to Exchange Deacon Scrooge at Prairie Town about the situation.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Duwen.dds</contents_image>
+         <destination_pos>8,n303</destination_pos>
+         <destination_mode>custom:11@4,12@0,13@0</destination_mode>
+         <statemark_npcid>303</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[To Exchange Deacon Shylock]]></title>
+         <contents mid="72"><![CDATA[<html>According to Scrooge, Shylock forced him to take the useless waste.<BR>
+<BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Exchange Deacon Shylock</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to Exchange Deacon Shylock]]></destination>
+         <todo_msg mid="74"><![CDATA[Talk to Exchange Deacon Shylock at Calderock Village about the situation.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Scrooge.dds</contents_image>
+         <destination_pos>5,n302</destination_pos>
+         <destination_mode>custom:11@4,12@0,13@0</destination_mode>
+         <statemark_npcid>302</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Exchange Deacon O'niel]]></title>
+         <contents mid="76"><![CDATA[<html>According to Shylock, O'niel forced him to take the useless waste.<BR>
+<BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Exchange Deacon O'niel</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[Talk to Exchange Deacon O'niel]]></destination>
+         <todo_msg mid="78"><![CDATA[Talk to Exchange Deacon O'niel at Mana Ridge about situation.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_shylock.dds</contents_image>
+         <destination_pos>11,n304</destination_pos>
+         <destination_mode>custom:1@4,5@4,8@4,2@0,3@0,7@0,4@0,9@0,10@0</destination_mode>
+         <statemark_npcid>304</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Unexpected True Criminal]]></title>
+         <contents mid="80"><![CDATA[<html>Deowen forces another exchange to take the useless waste. It came back to starting point so meet Deowen to talk.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Exchange Deacon Deowen</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Exchange Deacon Deowen]]></destination>
+         <todo_msg mid="82"><![CDATA[Talk to Exchange Deacon Deowen.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>277:2000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

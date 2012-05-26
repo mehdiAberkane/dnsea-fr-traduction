@@ -1,0 +1,276 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq16_6601_dreaming_boy</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6601</qid>
+      <designer>나은하</designer>
+      <qlevel>24</qlevel>
+      <qdesc>대화 - 기사왕이 되고 싶어서 노력 중임 펜팔로 파티도 모집했음 내가 아무것도 안한다고 생각하면 오산임</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Dreaming Boy]]></qkname>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>49</npcid>
+         <npcename>n049_sainthaven_kid</npcename>
+         <npckname>까치머리 꼬마</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$King Cassius$<BR>Sometimes I wanna hang out outside.<BR>Hush, don't tell this to my uncle.<BR><FONT color=#7e12d2>(You need to complete the previous quest.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Unkempt Kid$<BR>I'll leave for my adventure soon.<BR>My heart is thumping already!<BR><FONT color=#7e12d2>(You need to complete the previous quest)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-a" mid="8"><![CDATA[<html>Some people call him the Calderock's hero.</html>]]></talk_answer>
+      <talk_answer link_index="n040_king_casius-accepting-b" mid="9"><![CDATA[<html>They're just exaggerating.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$King Cassius$<BR>You are the rather famous adventurer in Calderock Village, aren't you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-c" mid="11"><![CDATA[<html>Why do you think so?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$King Cassius$<BR><FONT color=#a82424>Calderock's Hero</FONT>… it's cool.<BR>Hmm, but it's not as good as King Cassius.<BR>Do you know why?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-c" mid="13"><![CDATA[<html>Why do you think so?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$King Cassius$<BR>How humble you are.<BR>Well, I think the King is greater than a hero at Calderock.<BR>Do you know why?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-c" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$King Cassius$<BR><FONT color=#7e12d2>(Cassius laughs innocently)</FONT><BR>That's because an adventurer can't be the King of Knight, but a king can be a hero.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-e" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$King Cassius$<BR>My uncle and ministers think I'm a child.<BR>They think a child doesn't know anything and can't do anything.<BR>But that's not true.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-acceptted" mid="19"><![CDATA[<html>(Listen to him)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$King Cassius$<BR>Hey, I'm telling you specially.<BR>Are you interested in that kind of effort I make?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Unkempt Kid$<BR>I promised to return the book which I borrowed to my penpal but I can't contact him recently.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-a" mid="25"><![CDATA[<html>(Cassius whispers)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$King Cassius$<BR>If my uncle or ministers hear this, they're gonna scold me. That's why I whisper to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-b" mid="27"><![CDATA[<html>Adventure?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$King Cassius$<BR>My name is named after an ancestor of my family, the King of Knight Cassius. I'll be an adventurer like him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-c" mid="29"><![CDATA[<html>(Cassius keeps whispering)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$King Cassius$<BR>Hush! Too loud.<BR>Firstly, I can't become the King of Knight by just living in the castle. So I'm practicing horse-riding and swordsmanship in my own way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-c" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-d" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$King Cassius$<BR>I make friends by becoming their penpal.<BR>Of course, I hid the fact that I'm the king.<BR>If they knew this, they wouldn’t get closer to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-d" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-e" mid="33"><![CDATA[<html>It sounds dangerous for me.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$King Cassius$<BR>Whatever. As I told you my secret, keep it. This is an order from King.<BR><FONT color=#7e12d2>(Cassius makes an unreasonable demand.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-e" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-f" mid="35"><![CDATA[<html>No, It's not like that.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$King Cassius$<BR><FONT color=#7e12d2>(Cassius looks dissatisfied)</FONT><BR>Do you think that I can't do anything?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-f" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-g" mid="37"><![CDATA[<html>No, Your Majesty will be the great King of Knight… I'm just….</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$King Cassius$<BR>Stop, you're just like the other ministers.<BR><FONT color=#7e12d2>(Hmmm, if I left him alone, he's gonna make trouble)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-g" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-h" mid="39"><![CDATA[<html>Isn't it better if more people help you?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$King Cassius$<BR>Just…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-h" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-1-i" mid="41"><![CDATA[<html>I'm honoured.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$King Cassius$<BR>Alright. You are such a smart man.<BR>My ancestor, the King of Knight had made the effort to select right persons for a long time. In that sense, why don't you take part in my plan?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1-i" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2" mid="43"><![CDATA[<html>Yes, tell me Your Majesty.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$King Cassius$<BR>Okay, you're taking part in my adventure.<BR>I'll give you an order.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-a" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$King Cassius$<BR>There are talented people whom I befriended through penpal, who had agreed to take part in my adventure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-a" image="QN_boy_tei.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$King Cassius$<BR>
+Check out the adventure novel he was supposed to give me back. You can easily find him from his unique <FONT color=#a82424>bush hair.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-a" mid="48"><![CDATA[<html>I'm sent by your penpal friend.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Unkempt Kid$<BR>Hi?<BR>What brings you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-a" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-b" mid="50"><![CDATA[<html>What? Oh, yes.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Unkempt Kid$<BR> Ah, as a matter of fact, I was looking for a way to give it back.<BR>Is he doing well these days?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-b" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-c" mid="52"><![CDATA[<html>What, a collegue at Calderock?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Unkempt Kid$<BR>He is a poor boy. He lost parents and his uncle always nags him. But a collegue at Calderock Village completes the air craft soon… oops.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-c" image="QS_Default.dds" itemindex="400197">
+      <talk_answer link_index="n049_sainthaven_kid-3" mid="54"><![CDATA[<html>(Take the adventure book)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Unkempt Kid$<BR>Hehehe, it's secret!<BR>Pretend you didn't hear anything, please.<BR>Here's the book.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-3" image="QN_boy_tei.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Unkempt Kid$<BR>Say hello to him!<BR><FONT color=#7e12d2>(Unkempt Kid would never imagine his penpal is King Cassius.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-a" mid="59"><![CDATA[<html>(Cassius trys to mouth his words, soundlessly)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$King Cassius$<BR>Oh, you arrived. <BR>Did you perform my order to take a close look at people's lives?<BR>Did you bring back the report?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3-a" image="QS_Default.dds" itemindex="400197">
+      <talk_answer link_index="n040_king_casius-4" mid="61"><![CDATA[<html>(Pass the adventure book)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$King Cassius$<BR>Give. Me. Back. The. Adventure. Book. When. The. Ministers. Are. Not Paying. Attention .<BR><FONT color=#7e12d2>(Let's do what Cassius wants for now.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-4" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-4-a" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$King Cassius$<BR>Good job.<BR>You're such a loyal man.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-4-a" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$King Cassius$<BR>Hmmhmm, you can leave now.<BR><FONT color=#7e12d2>(You've established a closer relationship with King Cassius.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">6601</exe>
+         <exe type="talk" npc="n040_king_casius">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntitem" num="1" exe="" onexe="">400197</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">400197</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400197</exe>
+         <exe type="setstep">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">6601</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n040_king_casius" sub="b" />
+   <exelink qstep="1" npc="n040_king_casius" sub="c" />
+   <exelink qstep="1" npc="n040_king_casius" sub="d" />
+   <exelink qstep="1" npc="n040_king_casius" sub="e" />
+   <exelink qstep="1" npc="n040_king_casius" sub="f" />
+   <exelink qstep="1" npc="n040_king_casius" sub="g" />
+   <exelink qstep="1" npc="n040_king_casius" sub="h" />
+   <exelink qstep="1" npc="n040_king_casius" sub="i" />
+   <exelink qstep="1" npc="n040_king_casius" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="b" />
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="c" />
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="3">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n040_king_casius" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n040_king_casius" sub="a">0</exelink>
+   <journal_data recompense="" quest_title="꿈꾸는 소년" chapterid="" quest_level="24" quest_mark_type="15" use_item_list="400197">
+      <journal index="1">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Talk to King Cassius]]></title>
+         <contents mid="69"><![CDATA[<html>Listen to King Cassius's plan.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT><FONT color=#a82424> → King Cassius</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="71"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <destination_pos>11,n49</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>49</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Take back the Adventure Book]]></title>
+         <contents mid="75"><![CDATA[<html>Get back the Adventure Book from Unkempt Kid.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Unkempt Kid</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Unkempt Kid]]></destination>
+         <todo_msg mid="77"><![CDATA[Talk to Unkempt Kid.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Talk to King Cassius]]></title>
+         <contents mid="83"><![CDATA[<html>Pass Adventure Book to King Cassius.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="85"><![CDATA[Pass Adventure Book to King Cassius.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>401,432</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

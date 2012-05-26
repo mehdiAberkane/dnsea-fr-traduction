@@ -1,0 +1,59 @@
+   <talk>
+      <npcename>n403_guild_board</npcename>
+      <npcid>403</npcid>
+      <startexe>6</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Catacombss Entrance]]></npckname>
+      <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="gq08_3091_n403_catacomb_normal.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Not A Coward!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq08_3092_n403_catacomb_hunt.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Provocation</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq08_3093_n403_catacomb_drop.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Challenge II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="gq08_3094_n403_catacomb_hard.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>The Little Collector VI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq08_3100_n403_catacomb_rank.xml"><![CDATA[<html>[Lv.16] <FONT color=#7e12d2>Counterattack: Deep Inside The Catacombss</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="gq08_3099_n403_catacomb_abyss.xml"><![CDATA[<html>[Lv.23] <FONT color=#7e12d2>Into the Abyss: Defeat Baruha</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>The following requests have been received.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>No requests have been received at the moment.<BR><BR><FONT color=#086171>?Dangerous and rewarding part time job available: Troll Polishers - polish their backs and 1,200 Gold you'll snag! Call us now!</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="_stage_20" mid="29"><![CDATA[<html>[Lv.16] Catacombs Hall</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="30"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_stage_20" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="31" link_target="gq08_3091_n403_catacomb_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Not A Coward!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="gq08_3092_n403_catacomb_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Provocation</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="gq08_3093_n403_catacomb_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Challenge II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="gq08_3094_n403_catacomb_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>The Little Collector VI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="gq08_3100_n403_catacomb_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Counterattack: Deep Inside The Catacombss</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="gq08_3099_n403_catacomb_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Minotaur Banruha</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="38"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>The following requests have been received.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">gq08_3091_n403_catacomb_normal</exe>
+         <exe type="enterquest">gq08_3092_n403_catacomb_hunt</exe>
+         <exe type="enterquest">gq08_3093_n403_catacomb_drop</exe>
+         <exe type="enterquest">gq08_3094_n403_catacomb_hard</exe>
+         <exe type="enterquest">gq08_3100_n403_catacomb_rank</exe>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="conexe" true="2" false="8">1</exe>
+         <exe type="conexe" true="3" false="9">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="conexe" true="5" false="11">4</exe>
+         <exe type="conexe" true="12" false="13">5</exe>
+         <exe type="enterquest">gq08_3099_n403_catacomb_abyss</exe>
+         <exe type="conexe" true="0" false="14">6</exe>
+         <exe type="talk">_no_quest</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3091</chk>
+         <chk type="hasquest">3092</chk>
+         <chk type="hasquest">3093</chk>
+         <chk type="hasquest">3094</chk>
+         <chk type="hasquest">3100</chk>
+         <chk type="hasquest">3099</chk>
+         <chk type="lvl" op=">=">16</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n274_hopgoblinold</npcename>
+      <npcid>274</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Grandpa Goblin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Hobgoblin Gramps$<BR>*Howl* My poor grandchildren! Oh, Gosuk! Gobts! Gobzy! Goblynn! Gobba!!!<BR>Where are my beloved grandchildren!<BR><FONT color=#7e12d2>[He seems too distraught to talk.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">sq08_317_find_the_grandson2</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">317</chk>
+      </conditions>
+   </talk>

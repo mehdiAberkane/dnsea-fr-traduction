@@ -1,0 +1,170 @@
+   <talk>
+      <npcename>n323_warehouse_lupert</npcename>
+      <npcid>323</npcid>
+      <startexe>14</startexe>
+      <npckname mid="1"><![CDATA[Warehouse Keeper Rupert]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="ware_001" mid="3"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="14"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>Do not burden yourself on this journey. Store your items in my Warehouse so your inventory will not become full.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="279" link_target="sq_966_xmas_lupert.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="112" link_target="nq13_6001_storekeeper_appeal.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Deposit Fee Discount</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="135" link_target="nq13_6002_lupert_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Calderock Village</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="136" link_target="nq13_6003_lupert_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Work Reasons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="137" link_target="nq13_6004_lupert_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="138" link_target="nq13_6005_lupert_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Ideal Partner</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="139" link_target="nq13_6006_lupert_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Aspirations</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="151" link_target="nq13_6012_lupert_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Rupert's Gift ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="152" link_target="nq13_6013_lupert_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Rupert's Gift ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="153"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>It is common to meet with insufficient inventory space while adventuring. At times like this, feel free to store your items in my WareHouse.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="142" link_target="sq08_355_inventory_clearance.xml"><![CDATA[<html>[Lv.9] <FONT color=#086171>Clearance</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="sq08_261_argenta_milk.xml"><![CDATA[<html>[Lv.17] <FONT color=#086171>Argenta's Milk</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="sq08_286_argenta_slave.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Argenta's Slave</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="154"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Nothing to store? What brings you here then?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="114"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ware_90_percent" mid="115"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="116"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="117"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="45"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>You will always have the best slots of my Warehouse, even if you can't drop by as frequently.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="118"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ware_60_percent" mid="119"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="120"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="121"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="50"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>Have faith in me, <FONT color=#387206>{user_nick}</FONT>.</html> Even if dragons were to raid this place, your stuff will still be safe in my Warehouse.]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="122"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ware_30_percent" mid="123"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="124"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="125"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>Don't worry,<FONT color=#387206>{user_nick}</FONT>.</html> You will always have the best slots in da house! Hahaha!]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="126"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ware_0_percent" mid="127"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="128"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="129"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="60"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>Welcome <FONT color=#387206>{user_nick}</FONT>. Do you need my help in anything?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="130"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="131"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="65"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="132"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="68"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>I'll be putting this in your… a gift for me? Oh my! <BR>I'm at loss for words. Thank you!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="254"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="warehouse_002" mid="255"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="guild_002" mid="256"><![CDATA[<html>[Guild Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="257"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="156"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>Do not burden yourself on this journey. Store your items in my Warehouse so your inventory will not become full.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_90" image="" itemindex="">
+         <talk_answer link_index="quest" mid="258"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ware_guild_90" mid="259"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="guild_warehouse_90" mid="260"><![CDATA[<html>[Guild Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="261"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_guild_90" mid="262"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="173"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>You will always have the best slots of my Warehouse, even if you can't drop by as frequently.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_60" image="" itemindex="">
+         <talk_answer link_index="quest" mid="263"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ware_guild_60" mid="264"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="guild_warehouse_60" mid="265"><![CDATA[<html>[Guild Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="266"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_guild_60" mid="267"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="179"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>Have faith in me, <FONT color=#387206>{user_nick}</FONT>.</html> Even if dragons were to raid this place, your stuff will still be safe in my Warehouse.]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_30" image="" itemindex="">
+         <talk_answer link_index="quest" mid="268"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ware_guild_30" mid="269"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="guild_warehouse_30" mid="270"><![CDATA[<html>[Guild Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="271"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_guild_30" mid="272"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="180"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>Don't worry,<FONT color=#387206>{user_nick}</FONT>.</html> You will always have the best slots in da house! Hahaha!]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_0" image="" itemindex="">
+         <talk_answer link_index="quest" mid="273"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ware_guild_0" mid="274"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="guild_warehouse_0" mid="275"><![CDATA[<html>[Guild Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="276"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_guild_0" mid="277"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="181"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>Welcome <FONT color=#387206>{user_nick}</FONT>. Do you need my help in anything?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenWareHouse(userObjID);</exe>
+         <exe type="conexe" true="3" false="0">0</exe>
+         <exe type="conexe" true="6" false="4">1</exe>
+         <exe type="conexe" true="7" false="5">2</exe>
+         <exe type="conexe" true="8" false="9">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 323 );</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 323 );</exe>
+         <exe type="talk">gift</exe>
+         <exe type="conexe" true="15" false="2">4</exe>
+         <exe type="conexe" true="16" false="23">0</exe>
+         <exe type="conexe" true="19" false="17">1</exe>
+         <exe type="conexe" true="20" false="18">2</exe>
+         <exe type="conexe" true="21" false="22">3</exe>
+         <exe type="talk">guild_90</exe>
+         <exe type="talk">guild_60</exe>
+         <exe type="talk">guild_30</exe>
+         <exe type="talk">guild_0</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenGuildWareHouse (userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 6001) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 323 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 323 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 323 ) >= 30</chk>
+         <chk type="custom">api_guild_HasGuildWare(userObjID) == 1</chk>
+      </conditions>
+      <exelink idx="ware_001">1</exelink>
+      <exelink idx="back_quest">14</exelink>
+      <exelink idx="back_quest">14</exelink>
+      <exelink idx="ware_90_percent">1</exelink>
+      <exelink idx="present_90">10,11</exelink>
+      <exelink idx="ware_60_percent">1</exelink>
+      <exelink idx="present_60">10,11</exelink>
+      <exelink idx="ware_30_percent">1</exelink>
+      <exelink idx="present_30">10,11</exelink>
+      <exelink idx="ware_0_percent">1</exelink>
+      <exelink idx="present_0">10,11</exelink>
+      <exelink idx="gift">12,13</exelink>
+      <exelink idx="back_present_ui">14</exelink>
+      <exelink idx="back_gift">14</exelink>
+      <exelink idx="warehouse_002">1</exelink>
+      <exelink idx="guild_002">24</exelink>
+      <exelink idx="ware_guild_90">1</exelink>
+      <exelink idx="guild_warehouse_90">24</exelink>
+      <exelink idx="present_guild_90">10,11</exelink>
+      <exelink idx="ware_guild_60">1</exelink>
+      <exelink idx="guild_warehouse_60">24</exelink>
+      <exelink idx="present_guild_60">10,11</exelink>
+      <exelink idx="ware_guild_30">1</exelink>
+      <exelink idx="guild_warehouse_30">24</exelink>
+      <exelink idx="present_guild_30">10,11</exelink>
+      <exelink idx="ware_guild_0">1</exelink>
+      <exelink idx="guild_warehouse_0">24</exelink>
+      <exelink idx="present_guild_0">10,11</exelink>
+   </talk>

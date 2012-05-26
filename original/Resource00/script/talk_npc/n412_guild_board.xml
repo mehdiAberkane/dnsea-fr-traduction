@@ -1,0 +1,254 @@
+   <talk>
+      <npcename>n412_guild_board</npcename>
+      <npcid>412</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Dark Overlord's Gateway]]></npckname>
+      <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="4" link_target="gq11_3191_n412_dominion_normal.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.26]</FONT> </FONT><FONT color=#086171>Mapology Ⅳ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="5" link_target="gq11_3192_n412_dominion_hunt.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.26]</FONT> </FONT><FONT color=#086171>You may not leave the fan club!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="6" link_target="gq11_3193_n412_dominion_drop.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.26]</FONT> </FONT><FONT color=#086171>The Invasion Plan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq11_3194_n412_dominion_hard.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.26]</FONT> </FONT><FONT color=#086171>Scouting for the Dark Overlord</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq11_3195_n412_dominion_boss.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.26]</FONT></FONT><FONT color=#086171> Wanted: Flame Wing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq11_3196_n412_dominion_prop.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.26]</FONT> </FONT><FONT color=#086171>Escape Plan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="gq11_3197_n412_dominion_master.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.26]</FONT></FONT><FONT color=#086171> War Materials</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq11_3200_n412_dominion_rank.xml"><![CDATA[<html><FONT color=#7e12d2><FONT color=#2b2723>[Lv.26]</FONT> </FONT><FONT color=#7e12d2>Attacks ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="gq11_3221_n412_guard_normal.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.28]</FONT> </FONT><FONT color=#086171>Mapology ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="gq11_3222_n412_guard_hunt.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.28]</FONT> </FONT><FONT color=#086171>The Bell and the Orge</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="gq11_3223_n412_guard_drop.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.28]</FONT> </FONT><FONT color=#086171>Explosives Research</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="gq11_3224_n412_guard_hard.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.28]</FONT> </FONT><FONT color=#086171>Fraud Charges</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="gq11_3225_n412_guard_boss.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.28]</FONT> </FONT><FONT color=#086171> Wanted: Raven Kustas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="gq11_3226_n412_guard_prop.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.28]</FONT> </FONT><FONT color=#086171>Kangio Rescue</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="gq11_3227_n412_guard_master.xml"><![CDATA[<html><FONT color=#086171><FONT color=#2b2723>[Lv.28]</FONT> </FONT><FONT color=#086171>Healthy Orc Poop</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq11_3230_n412_guard_rank.xml"><![CDATA[<html><FONT color=#7e12d2><FONT color=#2b2723>[Lv.28]</FONT> </FONT><FONT color=#7e12d2> Attacks ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="gq11_3251_n412_ground_normal.xml"><![CDATA[<html>[Lv.30]<FONT color=#086171> Mapology C</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="gq11_3252_n412_ground_hunt.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Beauty Sleep</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="gq11_3253_n412_ground_drop.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Infiltrate the Parade Ground</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="gq11_3254_n412_ground_hard.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Battle of the Day</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="gq11_3255_n412_ground_boss.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171> Wanted: Jakobo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="gq11_3256_n412_ground_prop.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Rescue The Residents</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="39" link_target="gq11_3257_n412_ground_master.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Sale of Exercise Equipment </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="40" link_target="gq11_3260_n412_ground_rank.xml"><![CDATA[<html>[Lv.30] <FONT color=#7e12d2>Assault X</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="gq11_3199_n412_dominion_abyss.xml"><![CDATA[<html>[Lv.31] <FONT color=#7e12d2>Into the Abyss: Defeat Flame Wing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="gq11_3229_n412_guard_abyss.xml"><![CDATA[<html>[Lv.31] <FONT color=#7e12d2>Into the Abyss: Defeat Kustas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="gq11_3259_n412_ground_abyss.xml"><![CDATA[<html>[Lv.31] <FONT color=#7e12d2>Into the Abyss: Defeat Jakobo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="50" link_target="gq11_3301_n412_dtower_normal.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Loving Pair V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="gq11_3302_n412_dtower_hunt.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Dragon Follower Wanted</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="gq11_3303_n412_dtower_drop.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Mud Needed</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="gq11_3304_n412_dtower_hard.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Acquiring Dragon Scales</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="gq11_3305_n412_dtower_boss.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Wanted: Ogre Jaburu</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="gq11_3306_n412_dtower_prop.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Finding Hidden Chuckie ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="gq11_3307_n412_dtower_master.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Cooing Belly Buttons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="gq11_3310_n412_dtower_rank.xml"><![CDATA[<html>[Lv.34] <FONT color=#7e12d2>Assault V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="gq11_3309_n412_dtower_abyss.xml"><![CDATA[<html>[Lv.39] <FONT color=#7e12d2>Into the Abyss: Defeat Ogre Jaburu</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>The following requests have been received.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="42"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>No requests have been received at the moment.<BR><BR><FONT color=#086171>?Need to lose weight? Try the Miracle Dark Elf Diet! A daily Mandragora root a day shaves the pounds away… till you're a size XS. Incredible!</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_28" mid="148"><![CDATA[<html>[Lv.26] Dark Overlord Keep</html>]]></talk_answer>
+         <talk_answer link_index="stage_43" mid="149"><![CDATA[<html>[Lv.28]Fortress of the Dark Overlord Army</html>]]></talk_answer>
+         <talk_answer link_index="stage_36" mid="150"><![CDATA[<html>[Lv.30] Dark Overlord Parade Ground</html>]]></talk_answer>
+         <talk_answer link_index="stage_40" mid="151"><![CDATA[<html>[Lv34] Dark Overlord Tower</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="152"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="63"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_28" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="153" link_target="gq11_3191_n412_dominion_normal.xml"><![CDATA[<html><FONT color=#2b2723>[Normal]</FONT><FONT color=#086171> Mapology IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="154" link_target="gq11_3192_n412_dominion_hunt.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171> You May Not Leave The Fanclub!!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="155" link_target="gq11_3193_n412_dominion_drop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171>  Invasion Plan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="156" link_target="gq11_3194_n412_dominion_hard.xml"><![CDATA[<html><FONT color=#2b2723>[Hard]</FONT><FONT color=#086171>Scouting of the Dark Overlord</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="157" link_target="gq11_3195_n412_dominion_boss.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171>Wanted: Flame Wing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="158" link_target="gq11_3196_n412_dominion_prop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Escape Plan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="159" link_target="gq11_3197_n412_dominion_master.xml"><![CDATA[<html><FONT color=#2b2723>[Master]/FONT><FONT color=#086171> War materials</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="160" link_target="gq11_3200_n412_dominion_rank.xml"><![CDATA[<html><FONT color=#2b2723>[[Master]</FONT><FONT color=#7e12d2> Total Attack IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="161" link_target="gq11_3199_n412_dominion_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Flame Wing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_28" mid="162"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="69"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Dark Overlord Keep</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_43" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="163" link_target="gq11_3221_n412_guard_normal.xml"><![CDATA[<html><FONT color=#2b2723>[Normal]</FONT><FONT color=#086171> Mapology VII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="164" link_target="gq11_3222_n412_guard_hunt.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171>The Bell and the Orgre. </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="165" link_target="gq11_3223_n412_guard_drop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171>Explosives Research</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="166" link_target="gq11_3224_n412_guard_hard.xml"><![CDATA[<html><FONT color=#2b2723>[Hard]</FONT><FONT color=#086171> Fraud Charges</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="167" link_target="gq11_3225_n412_guard_boss.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171> Wanted:Raven Kustas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="168" link_target="gq11_3226_n412_guard_prop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Kangio Rescue</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="169" link_target="gq11_3227_n412_guard_master.xml"><![CDATA[<html><FONT color=#2b2723>[Master]</FONT><FONT color=#086171> Healthy Orc Poop</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="170" link_target="gq11_3230_n412_guard_rank.xml"><![CDATA[<html><FONT color=#2b2723>[Master]</FONT><FONT color=#7e12d2>  Assault VII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="171" link_target="gq11_3229_n412_guard_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Kustas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_43" mid="172"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="70"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Fortress of the Dark Overlord Army</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_36" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="173" link_target="gq11_3251_n412_ground_normal.xml"><![CDATA[<html>[Normal]<FONT color=#086171> Mapology X</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="174" link_target="gq11_3252_n412_ground_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Beauty Sleep</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="175" link_target="gq11_3253_n412_ground_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Infiltrate the Parade Ground</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="176" link_target="gq11_3254_n412_ground_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>Battle of the Day</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="177" link_target="gq11_3255_n412_ground_boss.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Wanted: Jakobo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="178" link_target="gq11_3256_n412_ground_prop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Rescue the Resident</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="179" link_target="gq11_3257_n412_ground_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>Sale of Exercise Equipment </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="180" link_target="gq11_3260_n412_ground_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault X</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="181" link_target="gq11_3259_n412_ground_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Jakobo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_36" mid="182"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Dark Overlord Parade Ground</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_40" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="183" link_target="gq11_3301_n412_dtower_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Loving Pair V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="184" link_target="gq11_3302_n412_dtower_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Dragon Follower Wanted</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="185" link_target="gq11_3303_n412_dtower_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Need Mud</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="186" link_target="gq11_3304_n412_dtower_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>Acquiring Dragon Scales</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="187" link_target="gq11_3305_n412_dtower_boss.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Wanted: Ogre Jaburu</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="188" link_target="gq11_3306_n412_dtower_prop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Finding Hidden Chuckie V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="189" link_target="gq11_3307_n412_dtower_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>Cooing Belly Buttons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="190" link_target="gq11_3310_n412_dtower_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="191" link_target="gq11_3309_n412_dtower_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Ogre Jaburu</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="192"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="72"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Dark Overlord Tower</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv26" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_28" mid="196"><![CDATA[<html>[Lv.26] Dark Overlord Keep</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="197"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="195"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv28" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_28" mid="199"><![CDATA[<html>[Lv.26] Dark Overlord Keep</html>]]></talk_answer>
+         <talk_answer link_index="stage_43" mid="200"><![CDATA[<html>[Lv.28]Fortress of the Dark Overlord Army</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="201"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="198"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv30" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_28" mid="203"><![CDATA[<html>[Lv.26] Dark Overlord Keep</html>]]></talk_answer>
+         <talk_answer link_index="stage_43" mid="204"><![CDATA[<html>[Lv.28]Fortress of the Dark Overlord Army</html>]]></talk_answer>
+         <talk_answer link_index="stage_36" mid="205"><![CDATA[<html>[Lv30] Dark Overlord Parade Ground</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="206"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="202"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="9" false="2">0</exe>
+         <exe type="conexe" true="10" false="3">1</exe>
+         <exe type="conexe" true="11" false="4">2</exe>
+         <exe type="conexe" true="12" false="5">3</exe>
+         <exe type="conexe" true="13" false="6">4</exe>
+         <exe type="conexe" true="14" false="7">5</exe>
+         <exe type="conexe" true="15" false="8">6</exe>
+         <exe type="conexe" true="16" false="17">7</exe>
+         <exe type="enterquest">gq11_3191_n412_dominion_normal</exe>
+         <exe type="enterquest">gq11_3192_n412_dominion_hunt</exe>
+         <exe type="enterquest">gq11_3193_n412_dominion_drop</exe>
+         <exe type="enterquest">gq11_3194_n412_dominion_hard</exe>
+         <exe type="enterquest">gq11_3195_n412_dominion_boss</exe>
+         <exe type="enterquest">gq11_3196_n412_dominion_prop</exe>
+         <exe type="enterquest">gq11_3197_n412_dominion_master</exe>
+         <exe type="enterquest">gq11_3200_n412_dominion_rank</exe>
+         <exe type="conexe" true="25" false="18">8</exe>
+         <exe type="conexe" true="26" false="19">9</exe>
+         <exe type="conexe" true="27" false="20">10</exe>
+         <exe type="conexe" true="28" false="21">11</exe>
+         <exe type="conexe" true="29" false="22">12</exe>
+         <exe type="conexe" true="30" false="23">13</exe>
+         <exe type="conexe" true="31" false="24">14</exe>
+         <exe type="conexe" true="32" false="33">15</exe>
+         <exe type="enterquest">gq11_3221_n412_guard_normal</exe>
+         <exe type="enterquest">gq11_3222_n412_guard_hunt</exe>
+         <exe type="enterquest">gq11_3223_n412_guard_drop</exe>
+         <exe type="enterquest">gq11_3224_n412_guard_hard</exe>
+         <exe type="enterquest">gq11_3225_n412_guard_boss</exe>
+         <exe type="enterquest">gq11_3226_n412_guard_prop</exe>
+         <exe type="enterquest">gq11_3227_n412_guard_master</exe>
+         <exe type="enterquest">gq11_3230_n412_guard_rank</exe>
+         <exe type="conexe" true="41" false="34">16</exe>
+         <exe type="conexe" true="42" false="35">17</exe>
+         <exe type="conexe" true="43" false="36">18</exe>
+         <exe type="conexe" true="44" false="37">19</exe>
+         <exe type="conexe" true="45" false="38">20</exe>
+         <exe type="conexe" true="46" false="39">21</exe>
+         <exe type="conexe" true="47" false="40">22</exe>
+         <exe type="conexe" true="48" false="49">23</exe>
+         <exe type="enterquest">gq11_3251_n412_ground_normal</exe>
+         <exe type="enterquest">gq11_3252_n412_ground_hunt</exe>
+         <exe type="enterquest">gq11_3253_n412_ground_drop</exe>
+         <exe type="enterquest">gq11_3254_n412_ground_hard</exe>
+         <exe type="enterquest">gq11_3255_n412_ground_boss</exe>
+         <exe type="enterquest">gq11_3256_n412_ground_prop</exe>
+         <exe type="enterquest">gq11_3257_n412_ground_master</exe>
+         <exe type="enterquest">gq11_3260_n412_ground_rank</exe>
+         <exe type="conexe" true="52" false="50">24</exe>
+         <exe type="conexe" true="53" false="51">25</exe>
+         <exe type="conexe" true="54" false="55">26</exe>
+         <exe type="enterquest">gq11_3199_n412_dominion_abyss</exe>
+         <exe type="enterquest">gq11_3229_n412_guard_abyss</exe>
+         <exe type="enterquest">gq11_3259_n412_ground_abyss</exe>
+         <exe type="conexe" true="61" false="56">27</exe>
+         <exe type="conexe" true="62" false="57">28</exe>
+         <exe type="conexe" true="63" false="58">29</exe>
+         <exe type="conexe" true="64" false="59">30</exe>
+         <exe type="conexe" true="65" false="60">31</exe>
+         <exe type="conexe" true="66" false="67">32</exe>
+         <exe type="enterquest">gq11_3301_n412_dtower_normal</exe>
+         <exe type="enterquest">gq11_3302_n412_dtower_hunt</exe>
+         <exe type="enterquest">gq11_3303_n412_dtower_drop</exe>
+         <exe type="enterquest">gq11_3304_n412_dtower_hard</exe>
+         <exe type="enterquest">gq11_3305_n412_dtower_boss</exe>
+         <exe type="enterquest">gq11_3306_n412_dtower_prop</exe>
+         <exe type="conexe" true="69" false="68">33</exe>
+         <exe type="conexe" true="70" false="71">34</exe>
+         <exe type="enterquest">gq11_3307_n412_dtower_master</exe>
+         <exe type="enterquest">gq11_3310_n412_dtower_rank</exe>
+         <exe type="conexe" true="72" false="73">35</exe>
+         <exe type="enterquest">gq11_3309_n412_dtower_abyss</exe>
+         <exe type="conexe" true="0" false="74">36</exe>
+         <exe type="conexe" true="77" false="75">37</exe>
+         <exe type="conexe" true="78" false="76">38</exe>
+         <exe type="conexe" true="79" false="80">39</exe>
+         <exe type="talk">lv30</exe>
+         <exe type="talk">lv28</exe>
+         <exe type="talk">lv26</exe>
+         <exe type="talk">_no_quest</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3191</chk>
+         <chk type="hasquest">3192</chk>
+         <chk type="hasquest">3193</chk>
+         <chk type="hasquest">3194</chk>
+         <chk type="hasquest">3195</chk>
+         <chk type="hasquest">3196</chk>
+         <chk type="hasquest">3197</chk>
+         <chk type="hasquest">3200</chk>
+         <chk type="hasquest">3221</chk>
+         <chk type="hasquest">3222</chk>
+         <chk type="hasquest">3223</chk>
+         <chk type="hasquest">3224</chk>
+         <chk type="hasquest">3225</chk>
+         <chk type="hasquest">3226</chk>
+         <chk type="hasquest">3227</chk>
+         <chk type="hasquest">3230</chk>
+         <chk type="hasquest">3251</chk>
+         <chk type="hasquest">3252</chk>
+         <chk type="hasquest">3253</chk>
+         <chk type="hasquest">3254</chk>
+         <chk type="hasquest">3255</chk>
+         <chk type="hasquest">3256</chk>
+         <chk type="hasquest">3257</chk>
+         <chk type="hasquest">3260</chk>
+         <chk type="hasquest">3199</chk>
+         <chk type="hasquest">3229</chk>
+         <chk type="hasquest">3259</chk>
+         <chk type="hasquest">3301</chk>
+         <chk type="hasquest">3302</chk>
+         <chk type="hasquest">3303</chk>
+         <chk type="hasquest">3304</chk>
+         <chk type="hasquest">3305</chk>
+         <chk type="hasquest">3306</chk>
+         <chk type="hasquest">3307</chk>
+         <chk type="hasquest">3310</chk>
+         <chk type="hasquest">3309</chk>
+         <chk type="lvl" op=">=">34</chk>
+         <chk type="lvl" op=">=">30</chk>
+         <chk type="lvl" op=">=">28</chk>
+         <chk type="lvl" op=">=">26</chk>
+      </conditions>
+      <exelink idx="back_stage_28">73</exelink>
+      <exelink idx="back_stage_43">73</exelink>
+      <exelink idx="back_stage_36">73</exelink>
+   </talk>

@@ -1,0 +1,113 @@
+   <talk>
+      <npcename>n015_sorceress_tara</npcename>
+      <npcid>15</npcid>
+      <startexe>16</startexe>
+      <npckname mid="1"><![CDATA[Sorceress Tara]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>Mana Ridge is the holy land of all Sorceresses.<BR>Please be mindful of everything you do and say here.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="39" link_target="mq05_122_comeback2.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>Cynthia's Request Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="mq05_115_orb_of_vision3.xml"><![CDATA[<html>[Lv.3] <FONT color=#a94407>Reaching for the Vision</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="mq05_116_arrest.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Murderous Intent</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="mq05_117_love_money.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Richie Rich</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="mq05_106_find_the_orb.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Finding the Orb</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="93" link_target="mq05_130_find_the_orb.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Finding the Orb</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="94" link_target="mq05_135_comeback1.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>Cynthia's Request Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="95" link_target="mq05_136_comeback2.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>Cynthia's Request Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="96" link_target="mq05_139_orb_of_vision2.xml"><![CDATA[<html>[Lv.3] <FONT color=#a94407>Understanding the Vision</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="97" link_target="mq05_140_arrest.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Murderous Intent</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="98" link_target="mq05_141_love_money.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Richie Rich</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="sq05_166_secret_remedy.xml"><![CDATA[<html>[Lv.3] <FONT color=#086171>Going Through Therapy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="sq05_167_azurely_reagent.xml"><![CDATA[<html>[Lv.4] <FONT color=#086171>Blue Reagent</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="sq05_163_lets_party.xml"><![CDATA[<html>[Lv.7] <FONT color=#086171>Lovers Mushroom</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="sq05_160_magic_test_1.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Master License - Written Exam</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="sq05_161_magic_test_2.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Master's License - Practical Test</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="nq19_8801_counselling_tara.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Tara's Predicament</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="45"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Sorceress Tara$<BR>How may I help you?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="51"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="52"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="53"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="47"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>I love meeting new people like you,<FONT color=#387206>{user_nick}</FONT>.  It's as interesting as studying magic!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="54"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="55"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="56"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="48"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>I must repay your kindness someday. <BR>Please visit me as often as you can.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="57"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="58"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="59"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="49"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>Will you drop by to see me more often?<BR>I miss you so, so much...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="60"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="61"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="62"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="50"><![CDATA[<html>$Sorceress Tara$<BR>Be wise, be cautious, in whatever you do. <BR>I believe that will keep you out of harm's way.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="100" link_target="sq_978_xmas_tara.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="76" link_target="nq19_8802_tara_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Master Sorceress Cynthia</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="77" link_target="nq19_8803_tara_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Cleric Thomas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="78" link_target="nq19_8804_tara_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Blacksmith Borin </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="79" link_target="nq19_8805_tara_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite color</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="80" link_target="nq19_8806_tara_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Aspirations</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="86" link_target="nq19_8812_tara_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Gift for Sorceress Tara</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="87" link_target="nq19_8813_tara_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Another Gift for Sorceress Tara</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="88"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="64"><![CDATA[<html>$Sorceress Tara$<BR>This conversation is so enjoyable!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="72"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="73"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="66"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="74"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="69"><![CDATA[<html>$Sorceress Tara$<BR>Is this really for me?<BR>I'm so touched! Thanks!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 15 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 15 );</exe>
+         <exe type="talk">gift</exe>
+         <exe type="conexe" true="1" false="14">4</exe>
+         <exe type="conexe" true="1" false="15">5</exe>
+         <exe type="enterquest">mq05_111_comeback1</exe>
+         <exe type="conexe" true="13" false="1">6</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 8801) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 15 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 15 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 15 ) >= 30</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 124) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 111) == 1</chk>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="back_talk">1</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+   </talk>

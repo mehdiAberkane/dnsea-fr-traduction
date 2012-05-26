@@ -1,0 +1,462 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_481_catastrophic_rain3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>481</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>오염된 토양표본(300016)
+오염된 나무줄기(300017)
+군터와 대화
+스타쉬와 대화
+강하류 수몰지로 가서 모험자 길드원과 대화
+3인의 npc중 결백한 사람을 알려줌
+다시 스타쉬와 대화.
+군터에게 최종 보고.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Catastrophic Rain III]]></qkname>
+      <qnpc>
+         <npcid>225</npcid>
+         <npcename>n225_sainthaven_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람1 (세인트헤이븐_281퀘스트용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>226</npcid>
+         <npcename>n226_sainthaven_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람2 (세인트헤이븐_281퀘스트용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>227</npcid>
+         <npcename>n227_sainthaven_prison</npcename>
+         <npckname>감옥에 갇힌 마을 사람3 (세인트헤이븐_281퀘스트용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>228</npcid>
+         <npcename>n228_adventurer</npcename>
+         <npckname>모험자 길드원 (세인트헤이븐_281퀘스트용)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Heraldry Scholar Stas$<BR>It's time for me to confirm my hypothesis! I knew this day would come.<BR><FONT color=#7e12d2>(Need to receive quest from Adventurer's Guild Master Gunther to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="12"><![CDATA[<html>That's impossible….</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>He lost all the samples. People suspected of being dragon followers came in and took all of them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="14"><![CDATA[<html>(Gunther couldn't hide his anger)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>There is someone within the Royal castle taking care of them. To make this kind of a incident and get away with it, I can't believe it. Vicious dragon followers!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="16"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>You go to <FONT color=#a82424>Heraldry Scholar Stas</FONT> and listen to the situation, then go after the dragon followers. I'll send someone as soon as I hear something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="18"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Catastrophic Rain III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR><FONT color=#a82424>Heraldry Scholar Stas</FONT> must be devastated. Just barely got his hands on the sample….<BR>On top of that, dragon followers are influencing the Royal castle. This is so shocking.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-a" mid="23"><![CDATA[<html>This is unbelievable….</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>He lost all the samples. People suspected of being dragon followers came in and took all of them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-a" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-b" mid="25"><![CDATA[<html>(Gunther couldn't hide his anger)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>There is someone within the Royal castle taking care of them. To make this kind of a incident and get away with it, I can't believe it. Vicious dragon followers!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-c" mid="27"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>You go to <FONT color=#a82424>Heraldry Scholar Stas</FONT> and listen to the situation, then go after the dragon followers. I'll send someone as soon as I hear something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2" mid="29"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Catastrophic Rain III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-1" image="" itemindex="">
+      <talk_question mid="134"><![CDATA[<html>$Dennis$<BR>I'm not the one!! Why is everything getting screwed up?….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-1" image="" itemindex="">
+      <talk_question mid="135"><![CDATA[<html>$Moris$<BR>Let me go home… I'm not the one… Really….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-1" image="" itemindex="">
+      <talk_question mid="136"><![CDATA[<html>$Hollys$<BR>I'm not the one! Listen to my story.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-1" image="" itemindex="">
+      <talk_question mid="137"><![CDATA[<html>$Adventurer's Guild Member$<BR>We're currently in a mission.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR><FONT color=#a82424>Heraldry Scholar Stas</FONT> must be devastated. Just barely got his hands on the sample….<BR>On top of that, dragon followers are influencing the Royal castle. This is so shocking.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="35"><![CDATA[<html>Did you report it?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I lost the sample!! Right after you left, they came in and took everything!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="37"><![CDATA[<html>(Stas was so angry his body was shaking)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I told General Douglas and Adventurer's Guild Master. They said they will send pursuers, but I'm not sure if we'll catch them…. There are people inside the castle working with the dragon followers!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3" mid="39"><![CDATA[<html>Where did the pursuers go?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Even if we find the people who stole the sample, one of the nobles may be protecting him. Then we might even have to let him go….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QW_34.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Probably at the <FONT color=#a82424>Flooded Downstream Ruins</FONT>.<BR>If you're okay, please get the samples back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-3" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Dennis$<BR>I'm not the one!! Why is everything getting screwed up?...<BR><FONT color=#7e12d2>(Need to talk to the Adventurer's Guild Member)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-3" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Moris$<BR>Let me go home... I'm not the one... Really....<BR><FONT color=#7e12d2>(Need to talk to the Adventurer's Guild Member)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-3" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Hollys$<BR>I'm not the one! Listen to my story.<BR><FONT color=#7e12d2>(Need to talk to the Adventurer's Guild Member)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_answer link_index="n228_adventurer-3-a" mid="46"><![CDATA[<html>What's the minor problem?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Adventurer's Guild Member$<BR>Oh. Are you<FONT color=#382000>{user_nick}</FONT>? I heard from <FONT color=#a82424>Gunther</FONT> that you were coming. I caught some suspicious group, but there was a minor problem and couldn't bring them over.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3-a" image="QN_Npc_PrairieTown_Man_Prison.dds" itemindex="">
+      <talk_answer link_index="n228_adventurer-3-b" mid="48"><![CDATA[<html>Umm… Can't we just take them all?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Adventurer's Guild Member$<BR>Among those three that were arrested, there seems to be one <FONT color=#a82424>innocent person</FONT>. I believe due to threats, that person may hold the samples. In a sense, that person is a victim.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3-b" image="" itemindex="">
+      <talk_answer link_index="n228_adventurer-3-c" mid="50"><![CDATA[<html>You seem to have many problems.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Adventurer's Guild Member$<BR>Taking innocent people may result in some problems. Royal Castle is very uncooperative about this, too. If we don't take people we're certain of, we'll be in trouble.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3-c" image="" itemindex="">
+      <talk_answer link_index="n228_adventurer-3-d" mid="52"><![CDATA[<html>How could we separate them?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Adventurer's Guild Member$<BR>Yes, in fact, our Adventurer's Guild might be in trouble.<BR>In order to avoid problems, we have to find out who's <FONT color=#a82424>innocent</FONT> and let that person go first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-3-d" image="" itemindex="">
+      <talk_answer link_index="n228_adventurer-4" mid="55"><![CDATA[<html>Okay, I'll try to sort them out.</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Adventurer's Guild Member$<BR>Dragon followers <FONT color=#a82424>lie</FONT>. But… I'm not sure who's lying. If you're okay… will you help me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-4" image="QN_Npc_PrairieTown_Man_Prison.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Adventurer's Guild Member$<BR>There is only one person innocent among those three. The other two are the dragon followers. Find the <FONT color=#a82424>innocent one</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-4" image="" itemindex="">
+      <talk_answer link_index="n225_sainthaven_prison-4-a" mid="58"><![CDATA[<html>Let's listen to the other's story more.</html>]]></talk_answer>
+      <talk_answer link_index="n225_sainthaven_prison-4-b" mid="59"><![CDATA[<html>Choose! This person is honest!</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Dennis$<BR>Me? Not me!! Let me go!! Hey, it's not me!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-4-a" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Dennis$<BR>…What are you waiting for?! Hurry!! Don't you trust me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-4-b" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_question mid="61"><![CDATA[<html>$Dennis${sound:UI_QUIZ_X.wav}<BR>What!? …I'm sorry. I couldn't help but laugh… I'm pretty good at lying, am I?! It's a piece of cake to make you believe me! Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-4" image="" itemindex="">
+      <talk_answer link_index="n226_sainthaven_prison-4-a" mid="64"><![CDATA[<html>Let's listen to the other's story more.</html>]]></talk_answer>
+      <talk_answer link_index="n226_sainthaven_prison-4-b" mid="65"><![CDATA[<html>Choose! This person is honest!</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Moris$<BR>Umm… the dragon follower is Dennis… Really… Believe me….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-4-a" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Moris$<BR>I hope you choose quickly… It's really not me….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-4-b" image="" itemindex="">
+      <talk_answer link_index="n226_sainthaven_prison-4-c" mid="68"><![CDATA[<html>Do you have the sample?</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Moris${sound:UI_QUIZ_O.wav}<BR>Thank you for trusting me!<BR>Thank goodness….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-4-c" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Moris$<BR>Yes, here I have them.<BR>Those bastards… Making me hold on to these...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-4" image="" itemindex="">
+      <talk_answer link_index="n227_sainthaven_prison-4-a" mid="72"><![CDATA[<html>Let's listen to the other's story more.</html>]]></talk_answer>
+      <talk_answer link_index="n227_sainthaven_prison-4-b" mid="73"><![CDATA[<html>Choose! This person is honest!</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Hollys$<BR>Ahh, I'm so pissed!! <FONT color=#a82424>Moris</FONT> Look at him act? I saw it all. Moris is the real dragon follower.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-4-a" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Hollys$<BR>Think about it slowly. Then you'll get the answer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-4-b" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_question mid="75"><![CDATA[<html>$Hollys${sound:UI_QUIZ_X.wav}<BR>Haha!! You believed me!! Stupid! Haha. You can't discern us!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-5" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$Dennis$<BR>Ahh!! Let me go!!<BR><FONT color=#7e12d2>(Quest failed. Start over from the beginning of the stage)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-5" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Moris$<BR>If you had listened to my story… But….<BR><FONT color=#7e12d2>(Quest failed. Start over from the beginning of the stage)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-5" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Hollys$<BR>Ahh, I'm so pissed.<BR><FONT color=#7e12d2>(Quest failed. Start over from the beginning of the stage)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-5" image="" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Adventurer's Guild Member$<BR>I trusted you… Gunther must have misjudged you….<BR><FONT color=#7e12d2>(Quest failed. Start over from the beginning of the stage)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n225_sainthaven_prison-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Dennis$<BR>I lose this time but you'll regret this!!<BR><FONT color=#7e12d2>(Return to Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n226_sainthaven_prison-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Moris$<BR>Thank you for believing me… But I really have to go back...<BR><FONT color=#7e12d2>(Return to Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n227_sainthaven_prison-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$Hollys$<BR>Wait and see!! The dragon followers will not back down over this!!<BR><FONT color=#7e12d2>(Return to Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n228_adventurer-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$Adventurer's Guild Member$<BR>You're amazing!! <FONT color=#a82424>Gunther</FONT>'s recommended person is better than the others! I'll take those dragon followers, so you can go ahead and head back.<BR><FONT color=#7e12d2>(Return to Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-6" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>What? If you recovered the samples, first go to <FONT color=#a82424>Heraldry Scholar Stas</FONT> and give them to him and come back.<BR><FONT color=#7e12d2>(Return to Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-a" mid="87"><![CDATA[<html>Here it is.</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Heraldry Scholar Stas$<BR>What about the sample?! Did you bring back the <FONT color=#a82424>sample</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-a" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-b" mid="89"><![CDATA[<html>(Stas almost cries)</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I'm glad I trusted you!! <FONT color=#a82424>Gunther</FONT> sent me someone trustworthy.<BR>Now I could see progress from these samples.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-c" mid="91"><![CDATA[<html>What happened at the Deserted Woods?</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Heraldry Scholar Stas$<BR><FONT color=#a82424>When a vicious dragon falls, it comes with a Catastrophic Rain.</FONT>… That's my hypothesis. But I don't think every dragon is evil. Also the contamination incident at the Deserted Woods are somehow related to the <FONT color=#a82424>Black Dragon</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-6-d" mid="93"><![CDATA[<html>What?! Dragons are being made?</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I'm not certain. But… according to a <FONT color=#a82424>legend</FONT> the Black Dragon was <FONT color=#a82424>born</FONT> at the very place. It was believed that dragons always existed, but if that legend is true, it means that dragons are being made.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-6-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-7" mid="95"><![CDATA[<html>(Stas looks at the sample with care)</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Heraldry Scholar Stas$<BR>It's only a <FONT color=#a82424>hypothesis</FONT>. And it's an exaggerated one. Maybe in the ancient times, a Black Dragon was killed at the Deserted Woods and at that time, a Catastrophic Rain fell. 50 years ago or just now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-7" image="QN_Npc_Master_Gunter.dds" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Anyway, you put so much effort into this job. Now, go back to <FONT color=#a82424>Adventurer's Guild Master Gunther</FONT>.<BR>I'll give you the reward shortly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-a" mid="99"><![CDATA[<html>(Stas' messengers are so fast)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>The messenger Heraldry Scholar Stas sent just arrived moments ago. Haha. I am a good judge of talent!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-b" mid="101"><![CDATA[<html>That… During the dragon raid?</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>He says his studying the Catastrophic Rain… He is so devoted?! He won't forget the <FONT color=#a82424>dragon raid</FONT> and <FONT color=#a82424>still</FONT> cling on to dragons.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-c" mid="103"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Ahh. You might not know. Heraldry Scholar Stas was one of the people who fought against the Black Dragon 50 years ago along with <FONT color=#a82424>six heroes</FONT>. He wasn’t at the frontline, but he supported the battle from the Royal Castle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-d" mid="105"><![CDATA[<html>(Gunther looks really excited)</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>The six heroes vanished into the legend… only he didn't forget the fear. Everyone wants to think dragons only appear in legends but just now, a Black Dragon appeared!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-d" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-e" mid="107"><![CDATA[<html>I might know what it feels like.</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>So dragons are still our Saint Haven's reality! Whoever met a dragon will never be free from it. I can understand Stas.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-e" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-f" mid="109"><![CDATA[<html>(Gunther is deep in his old memories)</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Frankly, I've met the six heroes. It was such a long time ago, but I remember it as if it had happened yesterday. Bold, young and fresh heroes… fear of dragons….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-f" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-7-g" mid="111"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-7-g" image="" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>After fighting that hard, we still don't know much about dragons. We're continuing to take damage, so we will have to face it someday. We need to learn more and fight stronger. Remember that.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4811,4812,4813,4814,4815</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setquest">481</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4811,4812,4813,4814,4815</exe>
+         <exe type="setquest">481</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="3,5">300016,300017</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300016</exe>
+         <exe type="delquestitem" num="-1">300017</exe>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4811,4812,4813,4814,4815</exe>
+         <exe type="complete">481</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">2,1</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="2">1,2</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n228_adventurer" sub="b" />
+   <exelink qstep="3" npc="n228_adventurer" sub="c" />
+   <exelink qstep="3" npc="n228_adventurer" sub="d" />
+   <exelink qstep="3" npc="n228_adventurer" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n225_sainthaven_prison" sub="b">0</exelink>
+   <exelink qstep="4" npc="n226_sainthaven_prison" sub="c">3,1,2</exelink>
+   <exelink qstep="4" npc="n227_sainthaven_prison" sub="b">0</exelink>
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="6" npc="n088_scholar_starshy" sub="7">0,1,2,3</exelink>
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="c" />
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="d" />
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="e" />
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="f">0</exelink>
+   <exelink qstep="7" npc="n036_adventurer_guildmaster_gunter" sub="g">1</exelink>
+   <journal_data recompense="1:4811,2:4812,3:4813,4:4814,5:4815" quest_title="재앙의 비 III" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300016, 300017">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode />
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[Stas' Distress]]></title>
+         <contents mid="115"><![CDATA[<html>Heraldry Scholar Stas seems to be in deep distress. Listen to his story.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="117"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_34.dds</contents_image>
+         <destination_pos>344,n228</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@1</destination_mode>
+         <statemark_npcid>228</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="118"><![CDATA[Tracking Sample]]></title>
+         <contents mid="119"><![CDATA[<html>Chase the dragon followers who stole the sample to the Flooded Downstream.<BR><BR><FONT color=#086171>Hermalte Port(Ruins at Downstream)</FONT> <FONT color=#a82424>→ Flooded Downstream Ruins</FONT></html>]]></contents>
+         <destination mid="120"><![CDATA[Recover sample at the Flooded Downstream Ruins]]></destination>
+         <todo_msg mid="121"><![CDATA[Recover sample at the Flooded Downstream Ruins]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_PrairieTown_Man_Prison.dds</contents_image>
+         <destination_pos>344,n228</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@4</destination_mode>
+         <statemark_npcid>228</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="122"><![CDATA[He tells the truth]]></title>
+         <contents mid="123"><![CDATA[<html>Only one out of three is telling the truth. Find out who's innocent.<BR><BR><FONT color=#086171>Flooded Downstream</FONT> <FONT color=#a82424>→ Townspeople in Jail</FONT></html>]]></contents>
+         <destination mid="124"><![CDATA[Find the Person Telling the Truth]]></destination>
+         <todo_msg mid="125"><![CDATA[Find out who's telling the truth.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode />
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="126"><![CDATA[Sample Delivery]]></title>
+         <contents mid="127"><![CDATA[<html>Got the sample back. Heraldry Scholar Stas is waiting dearly for this, so let's bring it back to him quickly.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="128"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="129"><![CDATA[Give the sample to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode />
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="130"><![CDATA[Unforgettable]]></title>
+         <contents mid="131"><![CDATA[<html>Since you finished the quest, report back to Adventurer's Guild Master Gunther.<BR><BR><FONT color=#086171>Saint Haven</FONT> → Adventurer's Guild Master Gunther</html>]]></contents>
+         <destination mid="132"><![CDATA[Talk to Adventurer's Guild Master Gunther]]></destination>
+         <todo_msg mid="133"><![CDATA[Report to Adventurer's Guild Master Gunther.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>480</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

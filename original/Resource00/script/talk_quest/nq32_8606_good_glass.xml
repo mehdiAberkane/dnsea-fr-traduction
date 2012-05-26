@@ -1,0 +1,325 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq32_8606_good_glass</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8606</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Horses' Favourite Grass]]></qkname>
+      <qnpc>
+         <npcid>117</npcid>
+         <npcename>n117_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>62</npcid>
+         <npcename>n062_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-noquest" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="181"><![CDATA[<html>$Trainer Lindsay$<BR>Hmm? Why are you here? Did you miss me? HAHAHA!<BR>Meet me at <FONT color=#a82424>Saint Haven</FONT>. ME don’t like stalkers~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-noquest" image="" itemindex="">
+      <talk_question mid="221"><![CDATA[<html>$Master Archer Ithilien$<BR>How’s <FONT color=#a82424>Trainer Lindsay</FONT> lately? <BR>She needs to study more about horses. She worries me. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-a" mid="6"><![CDATA[<html>Anyway, have you studied about the diet of horses? </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Trainer Lindsay$<BR>Hey~ <FONT color=#387206>{user_nick}</FONT> has arrived. <BR>HAHAHA~ Lots of carrots! Oh~ ME don’t like carrots. YOU eat them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-b" mid="183"><![CDATA[<html> (Lindsay shows me the book) </html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$Trainer Lindsay$<BR>I have a book called "How to become the best trainer". It's wonderful!<BR>ME sleeps on it every day. It’s too hard. I can’t read it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-c" mid="185"><![CDATA[<html> (I suspect she has no intention of studying it.) </html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Trainer Lindsay$<BR>Eww… Why do I have to study? <FONT color=#7e12d2>(Lindsay grimaces)</FONT><BR>I’ll show you what I feed them. I’m good. I don’t need to study!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-c" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-d" mid="141"><![CDATA[<html> There are some weird stuff mixed in it. </html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Trainer Lindsay$<BR>Remember the present you got for me before from the Black Cow? I saw a similar kind of grass. <BR>So I brought some home too. Me kind, right?<BR>
+<FONT color=#7e12d2>(Lindsay shows me some grass.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-acceppted" mid="31"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Horses' Favorite Grass$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-1" image="" itemindex="">
+      <talk_question mid="189"><![CDATA[<html>$Trainer Lindsay$<BR>Hmm? Why are you here? Did you miss me? HAHAHA!<BR>Meet me at <FONT color=#a82424>Saint Haven</FONT>. ME don’t like stalkers~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-1-a" mid="192"><![CDATA[<html> There are some weird stuff mixed in it. </html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Trainer Lindsay$<BR>Remember the present you got for me before from the Black Cow? I saw a similar kind of grass. <BR>So I brought some home too. Me kind, right?<BR>
+<FONT color=#7e12d2>(Lindsay shows me some grass.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-1-b" mid="196"><![CDATA[<html> (I'm getting worried.) </html>]]></talk_answer>
+      <talk_question mid="195"><![CDATA[<html>$Trainer Lindsay$<BR>It’s a pretty Lily of the Valley. Horses like this, right? <BR>ME made good preparation. I don’t have to study!!! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1-b" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="205"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR>Trust ME! Why are you worried? I don't get it!<BR>Um… Ask <FONT color=#a82424>Master Archer Ithilien</FONT> about it. She knows everything about horses. I’m right! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_question mid="222"><![CDATA[<html>$Master Archer Ithilien$<BR>How’s <FONT color=#a82424>Trainer Lindsay</FONT> lately? <BR>She needs to study more about horses. She worries me. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="206"><![CDATA[<html>$Trainer Lindsay$<BR> Hurry up! Please~~!<BR>Go ask <FONT color=#a82424>Master Archer Ithilien</FONT> about it~!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-a" mid="225"><![CDATA[<html> (Ithilien shakes her head) </html>]]></talk_answer>
+      <talk_question mid="224"><![CDATA[<html>$Master Archer Ithilien$<BR>Excuse me? Question on what to feed the horses?<BR>Oh~ <FONT color=#a82424>Lindsay</FONT> still hasn't mastered the basics yet. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-b" mid="227"><![CDATA[<html> Is it that bad? </html>]]></talk_answer>
+      <talk_question mid="226"><![CDATA[<html>$Master Archer Ithilien $<BR>Also mixing Lily of the Valley with hay… I don’t get it. <BR>Isn’t it common sense that you have to study and respect the other species if you were to communicate with them? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-c" mid="230"><![CDATA[<html> Poisonous? </html>]]></talk_answer>
+      <talk_question mid="228"><![CDATA[<html>$Master Archer Ithilien$<BR>The flower you told me about blooms an orange fruit which is dangerous to consume. In fact, they can be lethal to horses. Many grasses are poisonous too so you have to be cautious. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-d" mid="233"><![CDATA[<html> (Detailed explanation continues) </html>]]></talk_answer>
+      <talk_question mid="231"><![CDATA[<html>$Master Archer Ithilien$<BR>For an example, a Ragwort contains lethal poison. They are contagious so you'd have to remove the poison before horses eat them. Also Yew is dangerous… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-d" image="QW_39.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-e" mid="235"><![CDATA[<html> May I? </html>]]></talk_answer>
+      <talk_question mid="234"><![CDATA[<html>$Master Archer Ithilien$<BR>And edible hays…. Ah, I have some boxes of hays with golden syrup near <FONT color=#a82424>Captain Darlant’s Base</FONT>, you can take them. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-e" image="" itemindex="">
+      <talk_question mid="236"><![CDATA[<html>$Master Archer Ithilien$<BR>I can’t just stand and watch horses get starved. <BR> I had other uses for them but please take them instead and feed the horses. Well, see you soon. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="QW_39.dds" itemindex="">
+      <talk_question mid="237"><![CDATA[<html>$Master Archer Ithilien$<BR>There’s a box of hay with golden syrup near <FONT color=#a82424>Captain Darlant’s Base</FONT> so feed the horses with that. <BR>You can inform Lindsay about it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3" image="QW_39.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-a" mid="239"><![CDATA[<html> (She is happy) </html>]]></talk_answer>
+      <talk_question mid="238"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>How kind!, YOU!<BR>Then go to <FONT color=#a82424>Captain Darlant’s Base</FONT> and find the box. Let's go~! YEAH!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-4" mid="241"><![CDATA[<html> (Lindsay is all ready to go) </html>]]></talk_answer>
+      <talk_question mid="240"><![CDATA[<html>$Trainer Lindsay$<BR>Huh?! Why aren't you leaving? Are you into me? <BR>HAHAHA~ ME like a proactive person. It’s good if you continue to help me! HAHA~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-4" image="QW_39.dds" itemindex="">
+      <talk_question mid="242"><![CDATA[<html>$Trainer Lindsay$<BR>Let’s go and find the box. Come to <FONT color=#a82424> Captain Darlant’s Base</FONT> <BR>I’ll go first. Come, I’ll be waiting. OK?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-4" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-4-a" mid="244"><![CDATA[<html> I didn't have to come. </html>]]></talk_answer>
+      <talk_question mid="243"><![CDATA[<html>$Trainer Lindsay$<BR>I got here before you. There’s the box. <BR>TOM should be happy too. Good~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-4-a" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-4-b" mid="246"><![CDATA[<html> What? </html>]]></talk_answer>
+      <talk_answer link_index="n117_trainer_lindsay-4-b" mid="247"><![CDATA[<html> Yeah, whatever. </html>]]></talk_answer>
+      <talk_question mid="245"><![CDATA[<html>$Trainer Lindsay$<BR>Oh, No. No. YOU are wrong~<BR>
+You can’t leave me alone. You like me so you must come. OK?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-4-b" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-4-c" mid="249"><![CDATA[<html> You have to study!!</html>]]></talk_answer>
+      <talk_question mid="248"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR>I’m happy that Elf gave me this. Happy!!<BR>
+I’ll keep trusting you from now on. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-4-c" image="" itemindex="">
+      <talk_answer link_index="n117_trainer_lindsay-4-d" mid="251"><![CDATA[<html> (Oh! My Goddess!!) </html>]]></talk_answer>
+      <talk_question mid="250"><![CDATA[<html>$Trainer Lindsay$<BR>Study? WHY?!<BR>YOU get the hay, ME receive. GOOD!<BR>
+Everyone happy!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-4-d" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="252"><![CDATA[<html>$Trainer Lindsay$<BR>Let’s go back to <FONT color=#a82424>Saint Haven</FONT>. Tom and the other horses will be waiting. <BR>ME going to become a Great Trainer. HAHAHA~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n117_trainer_lindsay-5" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="253"><![CDATA[<html>$Trainer Lindsay$<BR>Let’s go back to <FONT color=#a82424>Saint Haven</FONT>. Tom and the other horses will be waiting. <BR>ME going to become a Great Trainer. HAHAHA~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-5" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-5-a" mid="256"><![CDATA[<html> (Lindsay laughs put loud.) </html>]]></talk_answer>
+      <talk_question mid="254"><![CDATA[<html>$Trainer Lindsay${action:Kiss}<BR>Thank you so much for helping me today. Thank you~~!!<BR>YOU are the best. I LOVE YOU~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-5-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-5-b" mid="258"><![CDATA[<html> (Sigh…)</html>]]></talk_answer>
+      <talk_question mid="257"><![CDATA[<html>$Trainer Lindsay$<BR>You get hay for beloved me.<BR>
+It’s <FONT color=#086171>OK</FONT> since your <FONT color=#7e12d2>LOVE</FONT> to me is <FONT color=#a94407>Full</FONT>!! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-5-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-5-c" mid="260"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="259"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-5-c" image="" itemindex="">
+      <talk_question mid="261"><![CDATA[<html>$Trainer Lindsay$<BR>So, goodbye~ I’m very happy because of YOU~!<BR>HAHA~ Take care~</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8606</exe>
+         <exe type="recompense_view">86060,,,,,</exe>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n062_trainer_lindsay-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">86060,,,,,</exe>
+         <exe type="complete">8606</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 62, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="acceppted">0,2</exelink>
+   <exelink qstep="1" npc="n062_trainer_lindsay" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n117_trainer_lindsay" sub="b" />
+   <exelink qstep="4" npc="n117_trainer_lindsay" sub="b" />
+   <exelink qstep="4" npc="n117_trainer_lindsay" sub="c" />
+   <exelink qstep="4" npc="n117_trainer_lindsay" sub="d">0,1</exelink>
+   <exelink qstep="5" npc="n062_trainer_lindsay" sub="b">0</exelink>
+   <exelink qstep="5" npc="n062_trainer_lindsay" sub="c">1,2</exelink>
+   <journal_data recompense="0:86060" quest_title="말이 좋아하는 풀" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Lindsay's Grass]]></title>
+         <contents mid="75"><![CDATA[<html>Talk to Lindsay about the grass she had found. <BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Trainer Lindsay</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="77"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Edible Grass]]></title>
+         <contents mid="26"><![CDATA[<html>See Master Archer Ithilien and ask about the grass that Lindsay had found. <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien /FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="28"><![CDATA[Ask Master Archer Ithilien about the grass]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="262"><![CDATA[Happy Lindsay]]></title>
+         <contents mid="263"><![CDATA[<html>Master Archer Ithilien is willing to give the hay box. Report to Trainer Lindsay.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay </FONT></html>]]></contents>
+         <destination mid="264"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="265"><![CDATA[Explain what Master Archer Ithilien had said to Trainer Lindsay]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_39.dds</contents_image>
+         <destination_pos>392,n117</destination_pos>
+         <destination_mode>custom:391@1</destination_mode>
+         <statemark_npcid>117</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="266"><![CDATA[To Captain Darlant's Base]]></title>
+         <contents mid="267"><![CDATA[<html>Lindsay is on her way to Captain Darlant’s Base. Meet her there.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Airship to Forsaken Islet)</FONT> <FONT color=#a82424>→ Captain Darlant’s Base </FONT></html>]]></contents>
+         <destination mid="268"><![CDATA[Find Lindsay near Captain Darlant's Base]]></destination>
+         <todo_msg mid="269"><![CDATA[Go to Captain Darlant's Base and meet with Trainer Lindsay]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="270"><![CDATA[Talk to Trainer Lindsay]]></title>
+         <contents mid="271"><![CDATA[<html>Go back to Saint Haven and talk to Trainer Lindsay.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay</FONT></html>]]></contents>
+         <destination mid="272"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="273"><![CDATA[Go back to Saint Haven and meet with Trainer Lindsay]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>8605</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

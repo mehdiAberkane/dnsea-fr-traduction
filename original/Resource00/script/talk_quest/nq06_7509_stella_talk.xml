@@ -1,0 +1,106 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq06_7509_stella_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7509</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Giving up the spitting flower farm?]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Stella$<BR>Huh? The spitting flower farm? …I sold it a long time ago.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="9"><![CDATA[<html>Plant it again.</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="10"><![CDATA[<html>Well…he seems very simple-minded.</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-accepting-f" mid="11"><![CDATA[<html>You don't have patience.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Sorceress Stella$<BR>Who was he… Merchant Pero? He tried to catch a Mandora and grow it but it's kind of delusion. Mandoras are not grown by people that easily.<BR>If so, it's not a real Mandora. Hahaha.<BR><FONT color=#7e12d2>(That's not funny.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR>What? What do you mean by planting? Only Karacule can plant and grow spitting flowers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Stella$<BR>
+I have failed to grow it, although I gave them water everyday. Hoo~…Not everyone can be a farmer.<BR><FONT color=#7e12d2>(Stella is full of respect for farmers)</FONT><BR>
+If you say so, let's think about planting a rose or something again. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Stella$<BR>
+I'm finding a good land to make Karacule Wonderland.<BR> I bought some land during the economic crisis.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Master Sorceress Stella$<BR>As soon as I get permission from the Royal Castle, I'll begin construction. Hahaha, I'll make a Black Dragon's Cave and and a ferris wheel. And I'll pose for pictures in Karacule's mask!<FONT color=#7e12d2> (Stella grabs a big mask.)<BR></FONT>If I complete this project, I'll let you work at my place. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-g" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#7e12d2>(Stella gets upset.)</FONT> No…No! Although I gave up my spitting flower farm, I bought a land in preparation for my Karacule Wonderland project!<BR>You… Do you have any idea how huge my plan is!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-g" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Master Sorceress Stella$<BR>I'll wear this mask and pose for photos! <FONT color=#7e12d2>(Stella grabs a big mask.)<BR></FONT>If I complete this project, I'll let you work at my place. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7509, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 45, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 45, 320 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 45, 320 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="b">1,0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="d">2,0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="f">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 칵퉤꽃 밭은 포기 했는가?" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>45:12000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,345 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_486_merchant_study1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>486</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc>작은 상자	400156
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>487</nextqid>
+      <nextqname>sq11_487_merchant_study2</nextqname>
+      <nextqnpc>n277_bluff_dealers_pope</nextqnpc>
+      <qkname mid="1"><![CDATA[Merchant Study I]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>278</npcid>
+         <npcename>n278_lady_darkelf</npcename>
+         <npckname>다크엘프 소녀</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-noquest" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Darkelf Girl$<BR>### ? #### !?<BR><FONT color=#7e12d2>(You can start a quest if you talk to Merchant Pero)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="7"><![CDATA[<html>(Should I take a look around?)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Pero$<BR>Hey, where are you going so fast. Come in and look around.<BR>I have everything, from sea mermaid's hair to dragon's heart.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Pero$<BR>Okay, just look around. Would I charge you for just looking around? You'll find stuff you won't be able to find elsewhere.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Pero$<BR>How about this height enhancement herb?<BR>Or, I also have ointment that makes your eyes bigger.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="14"><![CDATA[<html>What's the name of the sword?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Pero$<BR>How about this sword?<BR>Adventurers like you should have a legendary sword like this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="16"><![CDATA[<html>Seems like you just made that up….</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Merchant Pero$<BR>The name of this sword? Yes… since this is a legendary sword, of course it has a name… Umm… <FONT color=#a82424>Jetcaliber</FONT>. Yes… that's the name of this sword.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant Pero$<BR>Haha. It's just your feelings.<BR>Come on, swing it around. Feel the power of this sword.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-g" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Merchant Pero$<BR>It's okay.<BR>You're only going to swing it around once, nothing is going to happen. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-h" mid="22"><![CDATA[<html>Not really….</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Merchant Pero$<BR>How is it? Doesn't your heart beat wildly since you're holding the legendary sword Jetcaliber? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-i" mid="24"><![CDATA[<html>Caldron Lid!</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Merchant Pero$<BR>If you buy the sword right now, I'll give it to you for <FONT color=#a82424> one million gold</FONT>! Too expensive? Then you have the option of a <FONT color=#a82424> 240 month instalment plan</FONT>. On top of that, I put in the legendary shield, <FONT color=#a82424>Caldron Lid</FONT>! This is a great opportunity.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-j" mid="26"><![CDATA[<html>(Decline)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Merchant Pero$<BR>All right. Now, sign this contract. 40 years of my merchant life, I've never sold an item this cheap.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-k" mid="28"><![CDATA[<html>(Decline)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Merchant Pero$<BR>Okay. If you buy the <FONT color=#a82424>Jetcaliber</FONT> right now, I'll sell it to you for <FONT color=#a82424>half a million gold</FONT>. I can't go lower than that!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-l" mid="30"><![CDATA[<html>(Decline)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Merchant Pero$<BR>Alright! You know how to bargain. Then, how about <FONT color=#a82424>100,000 gold</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-m" mid="32"><![CDATA[<html>(Decline)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Merchant Pero$<BR>How about <FONT color=#a82424>50,000 gold</FONT>…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-m" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-n" mid="34"><![CDATA[<html>(Too cheap! Suspicious!)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Merchant Pero$<BR>Biggest sale in 40 years! How about <FONT color=#a82424>500 gold</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-n" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-o" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Merchant Pero$<BR>Now I see that you're a penniless adventurer. You seemed like you had some money… Stop interfering with my business and go away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-o" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-p" mid="38"><![CDATA[<html>(Swing the sword one last time before returning it)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Merchant Pero$<BR>Wait, give me the <FONT color=#a82424>Jetcaliber</FONT> back. How dare you try to steal it….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-p" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-q" mid="40"><![CDATA[<html>Oh no!</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Merchant Pero$<BR>Snap.<BR><FONT color=#7e12d2>(Jetcaliber breaks)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-q" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-r" mid="42"><![CDATA[<html>I'm sorry.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Merchant Pero$<BR>Ahhhh!!!<BR>Jetcaliberrrrrr!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-r" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-s" mid="44"><![CDATA[<html>What. You just said 500 gold….</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Merchant Pero$<BR>You think apologies makes it all right! You just broke the legendary Jetcaliber… What are you going to do about it! The Jetcaliber worth <FONT color=#a82424>5 million gold</FONT> broke….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-s" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-t" mid="46"><![CDATA[<html>(I should first calm him down)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Merchant Pero$<BR>What does that matter!<BR>What are you going to do! You'll have to pay <FONT color=#a82424>5 million gold</FONT> right now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-t" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-u" mid="48"><![CDATA[<html>Umm… (Tell him my property's worth)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Merchant Pero$<BR>Okay. Getting angry doesn't solve the problem.<BR>So, how much do you have? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-u" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-v" mid="50"><![CDATA[<html>For now….</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Merchant Pero$<BR>… … Is that all you got?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-v" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-w" mid="52"><![CDATA[<html>Work?!</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Merchant Pero$<BR>With that, you won't be able to buy the accessories of the <FONT color=#a82424>Jetcaliber</FONT>!<BR>Oh well. You'll have to work your debt.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-w" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-x" mid="54"><![CDATA[<html>That's absurd….</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Merchant Pero$<BR>From today, you're going to be my messenger. If you don't like it, pay up the <FONT color=#a82424>5 million gold</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-x" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-y" mid="56"><![CDATA[<html>(Oh no… when am I going to pay that all back)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Merchant Pero$<BR>Now, we're wasting time.<BR> You'll have to work 60 years to pay back <FONT color=#a82424>5 million gold</FONT>, so brace yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-y" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-z" mid="58"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Merchant Pero$<BR>Your first assignment is a simple delivery. The destination was a bit dark, so I had a difficult time finding a messenger for the delivery.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-z" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="60"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Merchant Study I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="QW_38.dds" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Merchant Pero$<BR>When you go to the <FONT color=#a82424>Road to Death City</FONT>, a <FONT color=#a82424>Darkelf</FONT> will be waiting.<BR>Give her this box and come back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-b" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Merchant Pero$<BR>The essence of delivery is promptness, so run!<BR>What? Why are you frowning? If you have a problem, just pay <FONT color=#a82424>5 million gold</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-b" image="QW_38.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Merchant Pero$<BR>Don't go elsewhere, go straight to the <FONT color=#a82424>Road to Death City</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-1" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Darkelf Girl$<BR>### ? #### !?<BR><FONT color=#7e12d2>(Need to talk to Merchant Pero.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2" image="QW_38.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Merchant Pero$<BR>What? Already getting lazy!<BR>Go to the <FONT color=#a82424>Road to Death City</FONT> and make the delivery!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-a" mid="71"><![CDATA[<html>I can't understand you.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Darkelf Girl$<BR>### ? #### !?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-a" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-b" mid="73"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Darkelf Girl$<BR>What… You don't know Elf language?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-b" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-c" mid="75"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Darkelf Girl$<BR>Why are you so late! I've ordered this a long time ago….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-c" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-d" mid="77"><![CDATA[<html>Here it is.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Darkelf Girl$<BR>Well, fine. I already paid for it, so just give me the item.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-d" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-e" mid="79"><![CDATA[<html>(Darkelf ordering a whitening cream….)</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Darkelf Girl$<BR>Let's see. Three kinds of whitening cream, shampoo for making my hair soft, and the latest trend dress. All here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-e" image="" itemindex="">
+      <talk_answer link_index="n278_lady_darkelf-2-f" mid="81"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Darkelf Girl$<BR>What. Why are you looking at me like that? First time seeing a Darkelf use a whitening cream?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-2-f" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Darkelf Girl$<BR>Next time, deliver faster. If you're late one more time, you'll regret it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n278_lady_darkelf-3" image="" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$Darkelf Girl$<BR>When the new catalogue comes out, be sure to send it to me. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-a" mid="85"><![CDATA[<html>(Nod my head)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Merchant Pero$<BR>Did the delivery go well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-b" mid="87"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Merchant Pero$<BR>I'm not such a cold person.<BR>I'm strict when it comes to money. Let's see…,</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-c" mid="89"><![CDATA[<html>Only 1 gold?</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Merchant Pero$<BR>You went quite far, so I'll pay you <FONT color=#a82424> 1 gold</FONT>. I'm paying you well for a simple delivery, so be thankful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-d" mid="91"><![CDATA[<html>Are you giving it to me?</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Merchant Pero$<BR>What? You're too greedy. Go dig some ground and see if gold comes out.<BR>Now, with <FONT color=#a82424>10 silver</FONT>….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-e" mid="93"><![CDATA[<html>Huh….</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Merchant Pero$<BR>Of course I'm going to pay it toward your debt.<BR>If I credit 1 gold… Let's see. You still have <FONT color=#a82424> 4,999,999 gold</FONT> in debt.  </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-f" mid="95"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Merchant Pero$<BR>Haha, don't worry. You only have a little more to go, so cheer up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-g" mid="97"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-h" mid="99"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Merchant Pero$<BR>Stop resting and do the second delivery.<BR>There is no time to rest. You think making money is easy?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-3-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-3-!next" mid="101"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Merchant Pero$<BR>This job is to buy items for the nobles at the royal palace. The retainer is good, so if you do your job well, I'll pay you accordingly.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4861,4862,4863,4864,4865</exe>
+         <exe type="setquest">486</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400156</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="1">400156</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4861,4862,4863,4864,4865</exe>
+         <exe type="complete">486</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="z">0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="b">0,1,2</exelink>
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="b" />
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="c" />
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="d" />
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="e" />
+   <exelink qstep="2" npc="n278_lady_darkelf" sub="f">0,1,2</exelink>
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="d" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="e" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="f">0</exelink>
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="g">1</exelink>
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="h" />
+   <exelink qstep="3" npc="n277_bluff_dealers_pope" sub="!next" />
+   <journal_data recompense="1:4861,2:4862,3:4863,4:4864,5:4865" quest_title="상인수업Ⅰ" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="400156">
+      <journal index="1">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode />
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[Broken Jetcaliber]]></title>
+         <contents mid="103"><![CDATA[<html>Slightly swung the sword, but Merchant Pero's Jetcaliber broke. He insists on paying him <FONT color=#a82424>5 million gold</FONT>. Resolve the problem by talking with <FONT color=#a82424>Merchant Pero</FONT>.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Pero</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[Talk to Merchant Pero]]></destination>
+         <todo_msg mid="105"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_38.dds</contents_image>
+         <destination_pos>383,n278</destination_pos>
+         <destination_mode>custom:381@1,382@1,383@4</destination_mode>
+         <statemark_npcid>278</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[Delivery to the Road to Death City]]></title>
+         <contents mid="107"><![CDATA[<html>To repay the broken Jetcaliber, I'm in debt of 5 million gold. First, do as Merchant Pero says and deliver the item to the Darkelf at the Road to Death City.<BR><BR><FONT color=#086171>Hermalte Port(Dark Mine Entrance)</FONT> <FONT color=#a82424>→ Road to Death City</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[Deliver the item to the Road to Death City]]></destination>
+         <todo_msg mid="109"><![CDATA[Deliver the item to the Road to Death City]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[Talk to Merchant Pero]]></title>
+         <contents mid="111"><![CDATA[<html>Completed delivery to the Darkelf at the Road to Death City. Report back to <FONT color=#a82424>Merchant Pero</FONT>.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Pero</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[Talk to Merchant Pero]]></destination>
+         <todo_msg mid="113"><![CDATA[Return to Merchant Pero.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

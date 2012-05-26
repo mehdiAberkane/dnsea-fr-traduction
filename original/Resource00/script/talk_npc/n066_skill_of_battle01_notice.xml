@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n066_skill_of_battle01_notice</npcename>
+      <npcid>66</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Gosuk[sq461]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="23"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Gosuk$<BR>Good humans, good humans, there are good humans. I save good humans when me is stronger.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="24" link_target="sq11_461_skill_of_battle_01.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Gosuk United</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="25"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Gosuk$<BR>Good humans, good humans, there are good humans. I save good humans when me is stronger.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_461_skill_of_battle_01</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">461</chk>
+      </conditions>
+   </talk>

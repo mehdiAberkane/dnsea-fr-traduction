@@ -1,0 +1,299 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq12_7213_illegal_ticket</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7213</qid>
+      <designer>박정민</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[To get Harori's ticket]]></qkname>
+      <qnpc>
+         <npcid>304</npcid>
+         <npcename>n304_auction_manger_duwen</npcename>
+         <npckname>거래소 조합장 더웬</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-noquest" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Are you interested in Harori's fan meeting as well? I bought enough fan meeting tickets. Of course not for me, it's for selling.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="8"><![CDATA[<html>How are you?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#7e12d2>(Berlin is beating with a hammer in silence)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="10"><![CDATA[<html>Why are you angry with me?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Berlin$<BR>No, I'm not fine!, spit-spit.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="12"><![CDATA[<html>Yes, you do.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Berlin$<BR>I didn't get angry to you?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-d" mid="14"><![CDATA[<html>Tell me what's wrong with you. We're friends, aren't we?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Berlin$<BR>Don't pick a fight, I'm so irritated now?<BR>Now Harori… <FONT color=#7e12d2>(Berlin covers his mouth,)</FONT><BR>No, nothing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-d" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-e" mid="16"><![CDATA[<html>Yes!</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#7e12d2>(Berlin hesitates.)</FONT><BR>Are you gonna keep this a secret?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-f" mid="18"><![CDATA[<html>Are you a fan of Harori?!</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Blacksmith Berlin$<BR>As a matter of fact, there is a Harori's fan meeting in a couple of days.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-f" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-g" mid="20"><![CDATA[<html>Well...</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#7e12d2>(Berlin is pretty embarrassed)</FONT><BR>Hush! Keep your voice down, someone might hear.<BR>Anyway I wanted to buy one, but someone hoarded the tickets so I couldn't get any.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-h" mid="23"><![CDATA[<html>How much is it?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Blacksmith Berlin$<BR>Apparently, it is Exchange Deacon Deowen. He reselling the tickets at an unbelievable price. I can never buy at that price.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-i" mid="25"><![CDATA[<html>Gasp!</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Blacksmith Berlin$<BR>10,000 gold.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-i" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-j" mid="27"><![CDATA[<html>Mmm, isn't there another way?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Blacksmith Berlin$<BR>I really wanted to go there since it’s Harori's birthday fan meeting, phew. <FONT color=#7e12d2>(Berlin looks dejected.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-k" mid="29"><![CDATA[<html>I’ll give a try to persuade him.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Berlin$<BR>The notorious man never discounts the ticket price.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-l" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Blacksmith Berlin$<BR>Will you? Thank you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceptted" mid="34"><![CDATA[<html><FONT color=#086171>Accept quest</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$To get Harori's ticket$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Blacksmith Berlin$<BR>Please persuade Exchange Deacon Deowen and get the ticket anyhow. I beg you. Don't tell anybody that I'm finding the tickets, never!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-1" image="QN_shylock.dds" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-1-a" mid="57"><![CDATA[<html>But I don't have 10000 gold.</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Huh? Are you here to buy Harori fan meeting ticket?<BR><FONT color=#7e12d2>(Deowen looks at you up and down.)</FONT><BR>Give me 10000 gold, first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-1-a" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-1-b" mid="59"><![CDATA[<html>Mmm, can't we make a deal with other things?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Tsk, there are too many beggars.<BR>Are you asking me to give you the ticket for free? Do you have any idea how hard stocking up is ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-1-b" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-1-c" mid="60"><![CDATA[<html>Well, somehow.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Hmm, well, you're good at fighting, are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-1-c" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-1-d" mid="61"><![CDATA[<html>(It sounds quite expensive from the name)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Then, there is a mission you may be able to do for me. Find the emerald called Queen of Green at the Forsaken Islet. Well, it's not that valuable thing though.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-1-d" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-1-e" mid="62"><![CDATA[<html>I'll get you that. In return, you should give me the ticket.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Exchange Deacon Deowen$<BR>If you bring it to me, I’ll give you one ticket. What would you do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-1-e" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-2" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Exchange Deacon Deowen$<BR>I'm a man of my word.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-2" image="QW_30.dds" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Then, go to Forsaken Islet and find the emerald, Queen of Green.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-3" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-4" mid="74"><![CDATA[<html>Yes, I brought Queen of Green.</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Exchange Deacon Deowen$<BR>What? You came back already?<BR>You won't really say either you couldn’t go because you were so scared or you couldn't find it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4" image="QN_shylock.dds" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-4-a" mid="76"><![CDATA[<html>Give me a ticket now.</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Exchange Deacon Deowen$<BR><FONT color=#7e12d2>(Deowen looks at Queen of Green in admiration)</FONT><BR>This mysterious green gloss! This is definitely the Queen of Green! It was at the Forsaken Islet as a rumor!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4-a" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-4-b" mid="78"><![CDATA[<html>You told me that it's not that precious?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Yes, as I promised, I'll give you one.<BR>Now I got Queen of Green, I don't need to scalp.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-4-b" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-5" mid="80"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Cough! This's just a cheap jewel!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-5" image="QN_shylock.dds" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Even if you brought 10 of jewels like this, you won't be able to buy 10000 gold ticket! I showed you mercy.<BR><FONT color=#7e12d2>(Feeling deceived but passes Harori's fan meeting ticket.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-a" mid="83"><![CDATA[<html>I brought Harori's fan meeting ticket.</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Blacksmith Berlin$<BR>Oh, I prepared not to be disapointed whatever you say. That scrooge won't give you a ticket anyway.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-b" mid="85"><![CDATA[<html>(Passes Harori's fan meeting ticket)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Blacksmith Berlin$<BR>What? Did You really get the ticket?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-c" mid="87"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$To get Harori's ticket$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-c" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Blacksmith Berlin$<BR>Wahahaha! Definitely, this's Harori's fan meeting ticket!<BR>Thank you so much!<BR><FONT color=#7e12d2>(Berlin is so happy. You've established a closer relationship with Berlin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7213</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+         <exe type="recompense_view">72130,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">870</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200870</exe>
+         <exe type="addquestitem" num="1">300326</exe>
+         <exe type="huntitem" num="1" exe="5,6,8" onexe="">300326</exe>
+         <exe type="setstep">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="delquestitem" num="-1">300326</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setjornal">4</exe>
+         <exe type="setstep">5</exe>
+         <exe type="addquestitem" num="1">300327</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">72130,,,,,</exe>
+         <exe type="complete">7213</exe>
+         <exe type="delquestitem" num="-1">300327</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 91, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="l">2</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n304_auction_manger_duwen" sub="b" />
+   <exelink qstep="1" npc="n304_auction_manger_duwen" sub="c" />
+   <exelink qstep="1" npc="n304_auction_manger_duwen" sub="d" />
+   <exelink qstep="1" npc="n304_auction_manger_duwen" sub="e" />
+   <exelink qstep="1" npc="n304_auction_manger_duwen" sub="2">0,1,2,4,7</exelink>
+   <exelink qstep="3" npc="n304_auction_manger_duwen" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n304_auction_manger_duwen" sub="b" />
+   <exelink qstep="4" npc="n304_auction_manger_duwen" sub="5">0,1,2</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="b">0</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="c">1,2,3</exelink>
+   <journal_data recompense="72130" quest_title="암표 구하기" chapterid="" quest_level="26" quest_mark_type="10" use_item_list="300326,300327">
+      <journal index="1">
+         <contents_image>QN_shylock.dds</contents_image>
+         <destination_pos>11,n304</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>304</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[Talk to Exchange Deacon Deowen]]></title>
+         <contents mid="94"><![CDATA[<html>Get Harori's fan meeting ticket from Exchange Deacon Deowen.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Exchange Deacon Deowen</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Talk to Exchange Deacon Deowen]]></destination>
+         <todo_msg mid="96"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_30.dds</contents_image>
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="101"><![CDATA[Collect Queen of Green]]></title>
+         <contents mid="102"><![CDATA[<html>Go to Forsaken Islet and find an emerald called Queen of Green.<BR><BR><FONT color=#086171>Hermalte Port(Forsaken Islet Transport)</FONT> <FONT color=#a82424>→ Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="103"><![CDATA[Forsaken Islet]]></destination>
+         <todo_msg mid="104"><![CDATA[Go to Forsaken Islet]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_shylock.dds</contents_image>
+         <destination_pos>11,n304</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>304</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="107"><![CDATA[Pass Queen of Green]]></title>
+         <contents mid="108"><![CDATA[<html>Found Queen of Green. Give it to Exchange Deacon Deowen at Saint Haven.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Exchange Deacon Deowen</FONT></html>]]></contents>
+         <destination mid="109"><![CDATA[Talk to Exchange Deacon Deowen]]></destination>
+         <todo_msg mid="110"><![CDATA[Talk to Exchange Deacon Deowen at Saint Haven.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="113"><![CDATA[Pass Harori's fan meeting ticket]]></title>
+         <contents mid="114"><![CDATA[<html>Pass Harori's fan meeting ticket to Blacksmith Berlin.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="115"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="116"><![CDATA[Talk to Blacksmith Berlin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7212</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,79 @@
+   <talk>
+      <npcename>n013_cleric_tomas</npcename>
+      <npcid>13</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Cleric Thomas]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="8"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="9"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="ask_skill_1" mid="70"><![CDATA[<html>[Talk] How to learn skills?</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Fight till the end. Never say die. That is the true spirit of an adventurer!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="28"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Fight till the end. Never say die. That is the true spirit of an adventurer!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="108" link_target="mq05_093_review_the_current_time.xml"><![CDATA[<html>[Lv3] <FONT color=#a94407>Checking the time now.</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="mq05_121_lost_sacred_object2.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>Stolen Goods Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="mq05_102_evidence_of_pagan.xml"><![CDATA[<html>[Lv.2] <FONT color=#a94407>Disturbing Evidence</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="mq05_103_orb_of_vision1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a94407>Vision Orb I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="mq05_106_find_the_orb.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Finding the Orb</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="mq05_107_internal_enemy.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Hidden Enemy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="mq05_108_chase_and_chased.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>The Hunt</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="50" link_target="mq05_109_betrayal_of_the_wounds.xml"><![CDATA[<html>[Lv.8] <FONT color=#a94407>Wound of Betrayal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="mq05_110_girl_of_destiny.xml"><![CDATA[<html>[Lv.9] <FONT color=#a94407>Girl of Destiny</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="85" link_target="mq05_125_lost_sacred_object1.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>The Stolen Goods Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="97" link_target="mq05_126_lost_sacred_object2.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>The Stolen Goods Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="98" link_target="mq05_127_evidence_of_pagan.xml"><![CDATA[<html>[Lv.2] <FONT color=#a94407>Disturbing Evidence</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="mq05_128_orb_of_vision1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a94407>Vision Orb I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="mq05_130_find_the_orb.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Finding the Orb</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="101" link_target="mq05_131_internal_enemy.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>Hidden Enemy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="mq05_132_chase_and_chased.xml"><![CDATA[<html>[Lv.5] <FONT color=#a94407>The Hunt</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="mq05_133_betrayal_of_the_wounds.xml"><![CDATA[<html>[Lv.8] <FONT color=#a94407>Wound of Betrayal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="mq05_134_girl_of_destiny.xml"><![CDATA[<html>[Lv.9] <FONT color=#a94407>Girl of Destiny</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="sq05_155_remember.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Reveries</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="sq05_156_path_of_jake.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Jake's Trail </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="62" link_target="sq05_157_the_reverse.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Thomas' Task</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="sq05_162_good_arbeit.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>In The Name Of Justice</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="105"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Cleric Thomas$<BR>My brother...<BR>May the grace of the Goddess be with you...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_1" image="" itemindex="">
+         <talk_answer link_index="ask_skill_2" mid="72"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="71"><![CDATA[<html>$Cleric Thomas$<BR>Templar Knights are renowned for our diligence and skills. Train hard and don't let your fellow brothers down!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_2" image="" itemindex="">
+         <talk_answer link_index="ask_skill_3" mid="74"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="73"><![CDATA[<html>$Cleric Thomas$<BR>It is wise to review your skills from time to time. BR>[Press [<FONT color=#a82424>K</FONT>] to open the Skill Window icon and view what you have learnt so far.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_3" image="QS_skill_01.dds" itemindex="">
+         <talk_answer link_index="ask_skill_4" mid="76"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="75"><![CDATA[<html>$Cleric Thomas$<BR>Active Skills are the ones you have learnt, and are ready to be used.<BR>[ The '+' icon indicates the level of the skill can be increased.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_4" image="QS_skill_02.dds" itemindex="">
+         <talk_answer link_index="ask_skill_5" mid="78"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="77"><![CDATA[<html>$Cleric Thomas$<BR>Remember, some skills have their own limitations.<BR>[Consult a Master Cleric in any town to remove this skill limitation.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_5" image="QS_skill_03.dds" itemindex="">
+         <talk_answer link_index="back2" mid="80"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+         <talk_question mid="79"><![CDATA[<html>$Cleric Thomas$<BR>Be patient. Some skills require a certain pre-requisite before you can learn them <BR>[Skills marked in grey are beyond your current stats. Your level may be too low or you may not have enough Skill Points [SP].]</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="4" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="0" false="5">1</exe>
+         <exe type="conexe" true="0" false="6">2</exe>
+         <exe type="enterquest">mq05_101_lost_sacred_object1</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">4</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 123) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 101) == 1</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="back2">2</exelink>
+   </talk>

@@ -1,0 +1,244 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq09_7701_suspicious_assembly</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7701</qid>
+      <designer>김주연</designer>
+      <qlevel>33</qlevel>
+      <qdesc>용추종자 가면 400201</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Suspicious Assembly]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="7"><![CDATA[<html>(Let’s talk)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Royal Guard Joey$<BR><FONT color=#7e12d2>(Royal Guard Joey is thinking.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="9"><![CDATA[<html>Did Malcolm make trouble again?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Royal Guard Joey$<BR>Ah, you are <FONT color=#387206> {user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="11"><![CDATA[<html>Why don't you end your friendship with him?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Royal Guard Joey$<BR>Malcolm's problem is always same. It's like stomach cramps and headaches, the same since I was 8 years old. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="13"><![CDATA[<html>Did you get pills?</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-accepting-e" mid="14"><![CDATA[<html>(Touch Joey's forehead quietly)</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-accepting-f" mid="15"><![CDATA[<html>You shouldn't give up your life.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Royal Guard Joey$<BR>People always carry a burden which can be unloaded. But people can also get salvation as big as the burden is.<BR><FONT color=#7e12d2>(Royal Guard Joey looks peacefully strange.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-f" mid="17"><![CDATA[<html>(He didn't take pills)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Royal Guard Joey$<BR>Pills? <BR>Does someone feel sick?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-e" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-f" mid="19"><![CDATA[<html>(What do you think?)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Royal Guard Joey$<BR>What are you doing to me?<BR><FONT color=#7e12d2>(Royal Guard Joey's face turns red)</FONT><BR>This kind of touch will be better after we get closer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-f" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-g" mid="21"><![CDATA[<html>A religion?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Royal Guard Joey$<BR>I'm okay.<BR>I receive peace from a religion.<BR><FONT color=#7e12d2>(Joey's face is shiny)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-h" mid="23"><![CDATA[<html>Peace and Love? That's quite a suspicious name.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Royal Guard Joey$<BR>Yes, when I felt really bad, a cleric gave me a leaflet. When I visited Peace and Love prayer center, I heard really good sermons.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-i" mid="25"><![CDATA[<html>Hmm, what kind of sermons did you hear?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Royal Guard Joey$<BR>Remove doubt.<BR>The reason that our life is painful is doubt and hate<BR>{user_nick} should visit there and find peace of mind and heart.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-j" mid="27"><![CDATA[<html>(Joey keeps saying with a peaceful expression.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Royal Guard Joey$<BR>The Goddess is so far away that she can't take care of us. But when the time arrives, a new saviour will appear and save us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-k" mid="29"><![CDATA[<html>(It seems suspicious.)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Royal Guard Joey$<BR>The saviour looks like a dragon but we don't need to be scared. He will find people who pray diligently and bring them to heaven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-l" mid="31"><![CDATA[<html>Where is the assembly held?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Royal Guard Joey$<BR>If you’re okay, I'd like to go with you to the assembly. But I'm working today, I can't take you there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceptted" mid="33"><![CDATA[<html>Please tell me the exact location.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Royal Guard Joey$<BR>It will be held at Forsaken Islet Core. If you are interested in it, I'll let you know the location.<BR>(How about investigating this assembly?)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Royal Guard Joey$<BR><FONT color=#7e12d2>(Royal Guard Joey tells you about the location at Forsaken Islet Core)</FONT><BR>It shouldn't be difficult to find it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-a" mid="39"><![CDATA[<html>The assembly is held by Dragon Followers.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Royal Guard Joey$<BR>Ah, did you go to the assembly?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3" mid="41"><![CDATA[<html>(Passes him the Dragon Followers' masks)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Royal Guard Joey$<BR>
+What?! That's not true.<BR>
+The clerics gave me such a good sermon. It can't be a cult.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-a" mid="43"><![CDATA[<html>Why am I lying to you?</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-3-b" mid="44"><![CDATA[<html>I'm sorry but it's true.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Royal Guard Joey$<BR><FONT color=#7e12d2>(Royal Guard Joey looks at the mask with a disappointed face.)</FONT><BR>Did you get this at the assembly?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-b" mid="46"><![CDATA[<html>Don’t be so sad.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Royal Guard Joey$<BR>Then, I was taken in by the Dragon Followers' words.<BR><FONT color=#7e12d2>(Joey looks sad.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-c" mid="48"><![CDATA[<html>(Dragon Head?! It should be suspicious!)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Royal Guard Joey$<BR>Well, there were a few strange things.<BR>Instead of a sacred treasure, there was <FONT color=#a82424>a dragon head</FONT> in the chapel. Also the prayer center was located at a very secret place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-d" mid="50"><![CDATA[<html>It's not your fault for wanting to believe in something.</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-3-e" mid="51"><![CDATA[<html>I'm a fool.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Royal Guard Joey$<BR>I'm a fool as I couldn't get that kind of facts.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-f" mid="53"><![CDATA[<html>(Justice?)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Royal Guard Joey$<BR>Want to believe something… yes, I might be.<BR>I think there can be justice which gives people a rewarding feeling as deep as their beliefs.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-e" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-f" mid="55"><![CDATA[<html>(Good to know)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Royal Guard Joey$<BR>But it's too straigtforward!<BR>I think that I was so foolish.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-f" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-g" mid="57"><![CDATA[<html>(Anyway let's ignore.)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Royal Guard Joey$<BR>Well, it's too simple and selfish if someone can gain salvation by mere beliefs alone. Showing mercy to other people, this might open heaven's gates.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-g" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-h" mid="59"><![CDATA[<html>Will you feel rewarded by a word of thanks?</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-3-h" mid="60"><![CDATA[<html>Well, it's my duty. </html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Royal Guard Joey$<BR>I had uncovered a huge thing thanks to you.<BR>Plus, thank you for rescuing me from the cult group.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-h" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-i" mid="62"><![CDATA[<html>(There is no solution. Let's give up.)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Royal Guard Joey$<BR>Showing mercy on others, this is just like me.<BR>I'm giving a lot of kindness to Malcolm.<BR>I might be able to enter heaven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-i" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Royal Guard Joey$<BR><FONT color=#7e12d2>(Joey looks satisfied. You've established a closer relationship with Royal Guard Joey)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,7701, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">77010,,,,,</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6,7,8,9">42008</exe>
+         <exe type="addquestitem" num="1">400201</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>퀘스트 몬스터 용추종자 사냥 등록
+사냥시 용추종자 가면 입수
+가면을 입수하면 퀘스트 스텝이 2로 저널 스텝이 2로 바뀐다.</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>용추종자의 가면 삭제</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="delquestitem" num="-1">400201</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">7701</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceptted">0,1,5,2,4</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="c" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="d" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="e" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="f" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="f" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="g" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="h" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="h" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="i">0</exelink>
+   <journal_data recompense="" quest_title="수상한 집회" chapterid="" quest_level="33" quest_mark_type="15" use_item_list="400201">
+      <journal index="1">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Investigate a suspicious assembly.]]></title>
+         <contents mid="67"><![CDATA[<html>Go to <FONT color=#a82424>Forsaken Islet Core</FONT>and investigate a suspicious assembly.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Desolate Islet Transport)</FONT> <FONT color=#a82424>→ Forsaken Islet Core</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Investigate a suspicious assembly]]></destination>
+         <todo_msg mid="69"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Talk to Royal Guard Joey]]></title>
+         <contents mid="71"><![CDATA[<html>The suspicious assembly is held by Dragon Followers. Tell this to Royal Guard Joey and recommend him to get out of the suspicious prayer center.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Royal Guard Joey</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Talk to Royal Guard Joey]]></destination>
+         <todo_msg mid="73"><![CDATA[Go back to Royal Guard Joey at Saint Haven.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>33:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>590</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

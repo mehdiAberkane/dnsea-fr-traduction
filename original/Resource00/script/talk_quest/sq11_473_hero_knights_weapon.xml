@@ -1,0 +1,307 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_473_hero_knights_weapon</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>473</qid>
+      <designer>김인정</designer>
+      <qlevel>35</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Hero Knight's Weapon]]></qkname>
+      <qnpc>
+         <npcid>292</npcid>
+         <npcename>n292_sword_of_velskurd</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>49</npcid>
+         <npcename>n049_sainthaven_kid</npcename>
+         <npckname>까치머리 꼬마</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_boy_tei.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Recently, that troublemaker with the spiky hair is running around excited. I'm getting worried that he'll get into some trouble.<BR><FONT color=#7e12d2>(Need to talk to Spiky Haired Kid first)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n292_sword_of_velskurd-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$????$<BR><FONT color=#7e12d2>(Feel some disturbance, but nothing out of the ordinary)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-a" mid="8"><![CDATA[<html>That is…?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Spiky Haired Kid$<BR>The story I like the most among all the heroic epics is the story of <FONT color=#a82424>Velskud</FONT>, a heroic royal knight.<BR>I know everything about him. But, recently, I heard an interesting rumor regarding him. That is!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-a" image="QW_40.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-b" mid="10"><![CDATA[<html>At such a place?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Spiky Haired Kid$<BR>I heard a rumor that great weapon of Hero Knight Velskud is buried at the <FONT color=#a82424>Dark Overlord's Tower</FONT>, a battlefield during the Black Dragon Raid </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-c" mid="12"><![CDATA[<html>Huh? Why should I…</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Spiky Haired Kid$<BR>I would like to go by myself and find the weapon, but the grown-ups are stopping me from going. They say kids like me can't go.<BR>So, I was thinking if <FONT color=#387206>{user_nick}</FONT> could find that weapon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-d" mid="14"><![CDATA[<html>(How much reward)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Spiky Haired Kid$<BR><FONT color=#387206>{user_nick}</FONT> are an adventurer.<BR>Isn't taking on a quest and receiving a great sum of reward what adventurers do?<BR>So, I prepared a great reward!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-acceppted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Hero Knight's Weapon$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-1-a" mid="18"><![CDATA[<html>(Spiky Haired Kid is bragging)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Spiky Haired Kid$<BR>How's that? Haha! Isn't it a great reward?<BR>I've been saving my allowance for a month to request this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1-a" image="QW_40.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Spiky Haired Kid$<BR>Then, quickly go to the <FONT color=#a82424>Dark Overlord's Tower</FONT> and find the <FONT color=#a82424>Hero Knight's Weapon</FONT>!<BR>Hurry before someone else finds it~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_boy_tei.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Recently, that troublemaker with the spiky hair is running around excited. I'm getting worried that he'll get into some trouble.<BR><FONT color=#7e12d2>(Need to talk to Spiky Haired Kid first)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n292_sword_of_velskurd-1" image="" itemindex="">
+      <talk_answer link_index="n292_sword_of_velskurd-1-a" mid="22"><![CDATA[<html>(Approaches the item and digs it out)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$?????$<BR><FONT color=#7e12d2>(Let's look around slowly, there is something shining)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n292_sword_of_velskurd-1-a" image="QS_Default.dds" itemindex="300035">
+      <talk_answer link_index="n292_sword_of_velskurd-1-b" mid="83"><![CDATA[<html>(It seems to have been somewhat a fancy sword)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$?????$<BR><FONT color=#7e12d2>(Acquired a broken sword.</FONT><BR><FONT color=#7e12d2>Since it's damaged and worn, it could be seen as a chunk of metal.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n292_sword_of_velskurd-1-b" image="" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$?????$<BR><FONT color=#7e12d2>(Cannot find the rest of the broken piece)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n292_sword_of_velskurd-2" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$?????$<BR><FONT color=#7e12d2>(Now, it doesn't seem like there is anything more)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-a" mid="27"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Spiky Haired Kid$<BR>Huh, what is this? <FONT color=#7e12d2>(After handing over the acquired sword, kid's face becomes distorted)<BR>I asked for the </FONT><FONT color=#a82424>Hero Knight's Weapon</FONT>, not a chunk of metal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-a" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-b" mid="29"><![CDATA[<html>(Kid pulls his hair and contemplates)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Spiky Haired Kid$<BR>So… You mean this is the hero <FONT color=#a82424>Velskud</FONT>'s sword?<BR>Hmm, why is there only a broken sword left instead of an intact weapon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-b" image="QS_Default.dds" itemindex="300035">
+      <talk_answer link_index="n049_sainthaven_kid-2-c" mid="31"><![CDATA[<html>(Maybe Heraldry Scholar Stas might know…)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Spiky Haired Kid$<BR>…If I look at it closely, it kind of seems like a great sword?!<BR>Ahh, I don't know!!! <FONT color=#7e12d2>(The kid starts to sweat and cries out) </FONT>Why…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-c" image="QS_Default.dds" itemindex="300035">
+      <talk_answer link_index="n049_sainthaven_kid-2-d" mid="33"><![CDATA[<html>Should I ask someone who might know what had happened?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Spiky Haired Kid$<BR>Ahh….<BR><FONT color=#7e12d2>(Spiky Haired Kid is still agonizing.</FONT><BR><FONT color=#7e12d2>He is staring at the sword as if he's trying to melt it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-d" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-e" mid="35"><![CDATA[<html>I'll go and ask him.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Spiky Haired Kid$<BR>Haha, what are you talking about?<BR>Nobody knows better than I do about Hero knight Velskud!<BR><FONT color=#7e12d2>(Spiky Haired Kid had a very arrogant look)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-e" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Spiky Haired Kid$<BR>Who else would know since I don't? <BR><FONT color=#7e12d2>(Go to Heraldry Scholar Stas and find out what had happened to the Hero Knight's Weapon)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-3" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Spiky Haired Kid$<BR>Who else would know since I don't? <BR><FONT color=#7e12d2>(Go to Heraldry Scholar Stas and find out what had happened to the Hero Knight's Weapon)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="40"><![CDATA[<html>I'm here to ask you about the Hero Knight's Weapon…</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Hello, you look well.<BR>What can I do for you today?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="QN_knight_velskud.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="43"><![CDATA[<html>Why did he destroy his weapon himself?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Hmm, so the rumor was true indeed. The rumor about <BR><FONT color=#a82424>the weapon Velskud had destroyed himself lies somewhere around Dark Overlord's Tower </FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="QN_knight_velskud.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-c" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Heraldry Scholar Stas$<BR>There exists a tale. During Black Dragon Raid, there were always fierce battles one after the other.<BR>During one of the battles, <FONT color=#a82424>Velskud</FONT> and the leader <FONT color=#a82424>Geraint</FONT> were put in danger after being isolated within the enemy lines.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-c" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-d" mid="47"><![CDATA[<html>He must have been a strong and a responsible leader.</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Those two were great swordsmen, so together, they eliminated hundreds of monsters.<BR>However, <FONT color=#a82424>Geraint</FONT> gets injured while trying to protect Velskud from enemy ambush.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-e" mid="49"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Later, backup force came to rescue them but Velskud must have felt responsible for the injury Geraint took. <BR>He blamed himself, so he destroyed his sword and buried it at that battlefield.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-e" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4" mid="51"><![CDATA[<html>(Stas had a sad smile)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Velskud occasionally made remarks on Geraint.<BR><FONT color=#a82424>Among all the people, nobody is more honourable and talented as a swordsman than Geraint</FONT>…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Now, go back to <FONT color=#a82424>the kid who prides himself in knowing everything about Velskud</FONT> and tell him my story.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-4" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-4-a" mid="54"><![CDATA[<html>(Passes on Heraldry Scholar Stas' story)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Spiky Haired Kid$<BR>You came back!<BR>Surely, nobody knew why the weapon was destroyed, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-4-a" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-4-b" mid="56"><![CDATA[<html>But?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Spiky Haired Kid$<BR>Oh, I can't believe there is someone who knows something that I don't know!!<BR>That story must be a fake!<BR>But….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-4-b" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-4-c" mid="58"><![CDATA[<html>What's that got to do with the story being great?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Spiky Haired Kid$<BR>It's too great a story to be false!<BR>Hard to admit, since the story is so grandeur, it must be about the hero knight Velskud!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-4-c" image="QN_knight_velskud_silhouette.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-4-d" mid="60"><![CDATA[<html>(There is no cure for a fanatic)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Spiky Haired Kid$<BR>Don't be a man of small character and cling to those details.<BR>Haha, <FONT color=#a82424>Velskud</FONT>  is the best.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-4-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-4-e" mid="62"><![CDATA[<html>(It's a strange conclusion, but all is good)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Spiky Haired Kid$<BR>Anyway, did you say <FONT color=#a82424>Heraldry Scholar Stas</FONT>?<BR>I met a great competition haha!<BR>My heart toward Velskud will never be less than anyone else!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-4-e" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-4-f" mid="64"><![CDATA[<html>(Receive Reward)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-4-f" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$Spiky Haired Kid$<BR>I didn't forget to reward you!<BR>Haha, <FONT color=#a82424>Heraldry Scholar Stas</FONT>!! I'll be expecting you in future challenges. <FONT color=#7e12d2>(The kid is full of fighting spirit)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">473</exe>
+         <exe type="recompense_view">,4731,4732,4733,4734,4735</exe>
+         <exe type="talk" npc="n049_sainthaven_kid">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300035</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">300035</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4731,4732,4733,4734,4735</exe>
+         <exe type="complete">473</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n049_sainthaven_kid" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n049_sainthaven_kid" sub="acceppted">0,2</exelink>
+   <exelink qstep="1" npc="n292_sword_of_velskurd" sub="b">1,0,2</exelink>
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="b" />
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="c" />
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="d" />
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n049_sainthaven_kid" sub="b" />
+   <exelink qstep="4" npc="n049_sainthaven_kid" sub="c" />
+   <exelink qstep="4" npc="n049_sainthaven_kid" sub="d" />
+   <exelink qstep="4" npc="n049_sainthaven_kid" sub="e">0</exelink>
+   <exelink qstep="4" npc="n049_sainthaven_kid" sub="f">1</exelink>
+   <journal_data recompense="1:4731,2:4732,3:4733,4:4734,5:4735" quest_title="영웅 기사의 무기" chapterid="" quest_level="35" quest_mark_type="10" use_item_list="300035">
+      <journal index="1">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>404,n292</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1,404@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Hero Knight's Weapon]]></title>
+         <contents mid="67"><![CDATA[<html>Go to the Dark Overlord's Tower and find the Hero Knight's Weapon.<BR><BR><FONT color=#086171>Black Mountain(Dark Overlord's Gate)</FONT> <FONT color=#a82424>→ Dark Overlord's Tower</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Find the Hero Knight's Weapon at the Dark Overlord's Tower]]></destination>
+         <todo_msg mid="69"><![CDATA[Find the Hero Knight's Weapon at the Dark Overlord's Tower.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <destination_pos>11,n49</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>49</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Found Weapon]]></title>
+         <contents mid="71"><![CDATA[<html>Found the Hero Knight's Weapon. Give the Hero Knight's Weapon to the Spiky Haired Kid in Saint Haven.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Spiky Haired Kid</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Talk to Spiky Haired Kid]]></destination>
+         <todo_msg mid="73"><![CDATA[Bring the findings to the Spiky Haired Kid.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[History]]></title>
+         <contents mid="75"><![CDATA[<html>Go to Heraldry Scholar Stas and ask him why the Hero Knight's Weapon is destroyed.<BR><BR><FONT color=#086171>Saint Haven</FONT> → Heraldry Scholar Stas</html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="77"><![CDATA[Go to Heraldry Scholar Stas and ask about the Hero Knight's Weapon.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <destination_pos>11,n49</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>49</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Real Fan]]></title>
+         <contents mid="79"><![CDATA[<html>Return to Spiky Haired Kid and pass on Heraldry Scholar Stas' tale.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Spiky Haired Kid</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Talk to Spiky Haired Kid]]></destination>
+         <todo_msg mid="81"><![CDATA[Return to Spiky Haired Kid and pass on Heraldry Scholar Stas' tale.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>35:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>425</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

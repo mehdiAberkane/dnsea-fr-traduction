@@ -1,0 +1,283 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq32_8602_sick_tom</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8602</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>검정 소의 여물	300313</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Tom is sick]]></qkname>
+      <qnpc>
+         <npcid>166</npcid>
+         <npcename>n166_cow_cart</npcename>
+         <npckname>검은 소</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>62</npcid>
+         <npcename>n062_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-noquest" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Black Cow$<BR>Moo~~<BR><FONT color=#7e12d2>(A cow is eating fodder slowly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-noquest" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="84"><![CDATA[<html>$Master Archer Ithilien$<BR>Animals and plants have their own will. Their actions have their own meanings. <BR><FONT color=#7e12d2>(Can receive a quest from Trainer Lindsay)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-a" mid="6"><![CDATA[<html> Um. You want me to hear you out right? </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Trainer Lindsay$<BR>HELLO~ <FONT color=#387206>{user_nick}</FONT> How have you been? <BR>I have a concern. YOU, My friend. Friend listen to my story OK?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-b" mid="86"><![CDATA[<html>(Lindsay points to a horse)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>Yes! That's right. Good <FONT color=#387206>{user_class}</FONT>!<BR>I look after horses. New horse’s name is Tom.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-b" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-c" mid="89"><![CDATA[<html> Her? Who? </html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Trainer Lindsay$<BR>Tom is ouch! …Um… <FONT color=#7e12d2>(Lindsay is figuring out how to say it.)</FONT> Ah, sick! Tom is sick.<BR>Why is he sick? Friend, you go and ask her. Ask <FONT color=#a82424>her</FONT> why.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-acceppted" mid="31"><![CDATA[<html><FONT color=#086171>Quest has been accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Tom is sick$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Trainer Lindsay$<BR><FONT color=#a82424>Master Archer Ithilien</FONT>. An Elf. She knows well about animals.<BR>Ithilien should tell you. Please, do me a favor!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-1" image="" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Black Cow$<BR>Moo~~<BR><FONT color=#7e12d2>(A cow is eating fodder slowly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="94"><![CDATA[<html> There is a sick horse. </html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Master Archer Ithilien $<BR><FONT color=#387206>{user_nick}</FONT>.<BR>What brings you here? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-b" mid="96"><![CDATA[<html> Guess she can't communicate properly yet. </html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Master Archer Ithilien$<BR>Ah, I have seen <FONT color=#a82424>Trainer Lindsay </FONT>’s horse. It is a young horse named Tom. <BR>
+I have consulted her but guess she didn’t understand properly. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-c" mid="99"><![CDATA[<html> What method? </html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Master Archer Ithilien$<BR>Ok.<BR>
+Guess you haven’t used the method yet. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-d" mid="101"><![CDATA[<html> Me? </html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Master Archer Ithilien$<BR> The horse ate what he wasn’t supposed to eat. The leftover fodder from <FONT color=#a82424>Black Cow</FONT> will help. Can you get it instead? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-d" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-e" mid="103"><![CDATA[<Html> … A cow? </html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Master Archer Ithilien$<BR>Yes. Black Cow. If you go to <FONT color=#a82424>Prairie Town</FONT> or <FONT color=#a82424>Mana Ridge</FONT> you should see a ranch. <BR>Ask Black Cow for leftover fodder. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-e" image="" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Master Archer Ithilien$<BR>…Is there a problem? <BR><FONT color=#7e12d2>(Ithilien really wants me to ask a cow.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Master Archer Ithilien$<BR>Go to <FONT color=#a82424>Prairie Town</FONT> or <FONT color=#a82424>Mana Ridge</FONT> and see <FONT color=#a82424>Black Cow</FONT>.<BR>Leftover fodder from Black Cow can be used as medicine for horses. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-2" image="" itemindex="">
+      <talk_answer link_index="n166_cow_cart-2-c" mid="107"><![CDATA[<html> (Politely speak to him) </html>]]></talk_answer>
+      <talk_answer link_index="n166_cow_cart-2-a" mid="108"><![CDATA[<html> (Feels stupid talking to a cow) </html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Black Cow$<BR>Moo~~<BR><FONT color=#7e12d2>(A cow is eating fodder slowly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-2-a" image="" itemindex="">
+      <talk_answer link_index="n166_cow_cart-2-c" mid="110"><![CDATA[<html> (Moo Moo Moo) </html>]]></talk_answer>
+      <talk_answer link_index="n166_cow_cart-2-b" mid="111"><![CDATA[<html> (Still feels stupid. Don't want to talk to it) </html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html><FONT color=#7e12d2>(Looking at the innocent eyes of the cow, I feel relaxed and the cares of the world are slowly slipping away...</FONT><BR>
+<FONT color=#7e12d2>Who am I? Where am I?)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-2-b" image="" itemindex="">
+      <talk_answer link_index="n166_cow_cart-2-c" mid="113"><![CDATA[<html>(Just talk to him)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Black Cow$<BR>Moo~ Moo~~<BR><FONT color=#7e12d2>(I’ve even talked to a Goblin, what’s wrong with talking to a cow? Guess I have to leave my prejudice and just talk to him) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-2-c" image="" itemindex="">
+      <talk_answer link_index="n166_cow_cart-2-d" mid="115"><![CDATA[<html>(Take the fodder by force)</html>]]></talk_answer>
+      <talk_answer link_index="n166_cow_cart-2-e" mid="116"><![CDATA[<html>(Wait until the cow drops fodder)</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Black Cow$<BR>Moo~ Mooo~~<BR><FONT color=#7e12d2>(My mind is clearing whilst staring at the peaceful eyes of the cow.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-2-d" image="" itemindex="">
+      <talk_question mid="117"><![CDATA[<html>$Black Cow${sound:Minotauros_Bump_08_Shout.wav}<BR>
+Moooooooo!!!<BR><FONT color=#7e12d2>(The cow extensively swallows the fodder. He is not going to let me steal his fodder. I will probably get bitten by him if I try one more time.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-2-e" image="" itemindex="">
+      <talk_answer link_index="n166_cow_cart-2-f" mid="120"><![CDATA[<html>(Collect fodder that he spat out.)</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Black Cow$<BR>Mop? Moo Moo~ Ptooey! <BR>
+<FONT color=#7e12d2>(The cow kindly shares with me his fodder. How generous.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-2-f" image="" itemindex="">
+      <talk_question mid="121"><![CDATA[<html>$Black Cow$<BR>Moo, yum yum….<BR><FONT color=#7e12d2>(The cow cries softly. Think he is saying goodbye.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n166_cow_cart-3" image="" itemindex="">
+      <talk_question mid="122"><![CDATA[<html>$Black Cow$<BR>Moo, yumyum….<BR><FONT color=#7e12d2>(The cow cries softly. Let's go and see Trainer Lindsay.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$Master Archer Ithilien$<BR>Did you get the <FONT color=#a82424>Black Cow’s Fodder</FONT>? Give that to <FONT color=#a82424>Trainer Lindsay</FONT> please.<BR>It should help Tom with his stomachache. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-a" mid="126"><![CDATA[<html> This should help him. </html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Trainer Lindsay$<BR>
+My Friend! Welcome!<BR>And… Is that the present for Tom? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-b" mid="128"><![CDATA[<html>(Lindsay jumps around)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR>Wow, Great! Wonderful! Awesome!<BR>Tom fine now! You are a great friend! My best friend! I’m so happy!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-c" mid="130"><![CDATA[<html> He ate things that he shouldn't eat </html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Trainer Lindsay$<BR>So, why is he sick? Why?<BR>Do you know? Reason? What happen?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-d" mid="132"><![CDATA[<html> Humans and Horses are different. </html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Trainer Lindsay$<BR>Things that he shouldn’t eat? I don't know. <BR>I gave him lots of yummy food. He eat… ate… but why he sick? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-d" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-e" mid="134"><![CDATA[<html>(Can’t be bothered to think anymore)</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$Trainer Lindsay$<BR>Different? Um… <FONT color=#7e12d2>(She is figuring out hard but can’t seem to understand)</FONT><BR>Anyway! Tom is getting better. All good! Happy ending! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-e" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-f" mid="136"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-f" image="" itemindex="">
+      <talk_question mid="137"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR>Thank you! You like me. <BR>HAHAHA... did u fall in love at first sight? I like you too! Hooray! </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8602</exe>
+         <exe type="talk" npc="n062_trainer_lindsay">1</exe>
+         <exe type="recompense_view">86020,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300313</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">86020,,,,,</exe>
+         <exe type="delquestitem" num="-1">300313</exe>
+         <exe type="complete">8602</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 62, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="c">2</exelink>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="d" />
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n166_cow_cart" sub="c" />
+   <exelink qstep="2" npc="n166_cow_cart" sub="b" />
+   <exelink qstep="2" npc="n166_cow_cart" sub="c" />
+   <exelink qstep="2" npc="n166_cow_cart" sub="d" />
+   <exelink qstep="2" npc="n166_cow_cart" sub="e" />
+   <exelink qstep="2" npc="n166_cow_cart" sub="f">0,2,1</exelink>
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="c" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="d" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="e">0</exelink>
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="f">1,2,3</exelink>
+   <journal_data recompense="0:86020" quest_title="톰이 아파" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="300313">
+      <journal index="1">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Why is he sick?]]></title>
+         <contents mid="26"><![CDATA[<html>See Master Archer Ithilien and ask why Lindsay’s horse is sick. <BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien </FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk to Master Archer Ithilien]]></destination>
+         <todo_msg mid="28"><![CDATA[See Master Archer Ithilien and ask why Lindsay's horse is sick.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image />
+         <destination_pos>1,n166</destination_pos>
+         <destination_mode>custom:1@4,5@4,8@0,11@0,12@0,14@0,15@0</destination_mode>
+         <statemark_npcid>166</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="138"><![CDATA[Black Cow]]></title>
+         <contents mid="139"><![CDATA[<html>Get left over fodder of Black Cow from Prairie Town or Mana Ridge <BR>
+<BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Black Cow </FONT><BR><FONT color=#086171>Man Ridge </FONT> <FONT color=#a82424>→ Black Cow</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Black Cow]]></destination>
+         <todo_msg mid="77"><![CDATA[Get fodder from black ccow]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Talk to Trainer Lindsay]]></title>
+         <contents mid="75"><![CDATA[<html>Deliver fodder of Black Cow to Trainer Lindsay.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay </FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="79"><![CDATA[Deliver fodder of black cow to Trainer Lindsay]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>8601</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

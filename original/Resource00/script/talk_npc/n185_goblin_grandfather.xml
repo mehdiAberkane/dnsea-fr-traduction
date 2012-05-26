@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n185_goblin_grandfather</npcename>
+      <npcid>185</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Grandpa Goblin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="11"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Grandpa Goblin$<BR>Oh, Gosuk! Gobts! Gobzy! Goblynn! Gobba! Where are my poor grandchildren...?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="12" link_target="sq08_271_grandpa_goblin06.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Grandpa Goblin's Grief</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="sq08_316_find_the_grandson1.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Finding Little Gosuk I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="17" link_target="sq08_317_find_the_grandson2.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Finding Little Gosuk II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="13"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Grandpa Goblin$<BR>Oh, Gosuk! Gobts! Gobzy! Goblynn! Gobba! Where are my poor grandchildren...?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

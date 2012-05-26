@@ -1,0 +1,131 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq07_9101_decud_request</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9101</qid>
+      <designer>나은하</designer>
+      <qlevel>24</qlevel>
+      <qdesc>메인 퀘스트 깨어난 수호자 완료 후,
+데커드는 유저 때문에 전 재산의 반을 잃었다며 대화를 시작함.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Deckard's Request]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-accptted" mid="9"><![CDATA[<html>(Swipe off hand angrily)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Ahh.<BR><FONT color=#7e12d2>(Deckard suddenly put his hand on {user_nick}'s face and check carefully)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="14"><![CDATA[<html>Why are you looking at me like that?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hahaha… You've got a bad temper!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="16"><![CDATA[<html>So, why are you still asking me to do all kinds of things?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>No, I feel strange. You look so gentle and weak when you first come to Calderock Village. I doubt you can hold it for long.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="18"><![CDATA[<html>So, you are just crapping.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>That's because, if I said you can't make it from the start, you will be disappointed, isn't it? Moreover, you have recommendation letter, so, I was thinking of encouraging you first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-d" mid="20"><![CDATA[<html>You are betting with others on this matter?!</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hahaha, not exactly that.<BR><FONT color=#7e12d2>(Deckard tries hard to get that over)</FONT><BR>So, I bet with the others that you will run off fast.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-e" mid="22"><![CDATA[<html>(……)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Not betting, I'm just been concerned. <BR>But, if you become the Hero of Calderock, I'll also lost<FONT color=#a82424>half of my assets</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-f" mid="24"><![CDATA[<html>(If that's the case, why said all these…)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Keke, why are you so serious?<BR>I asked for you today,<BR>not because I have lost <FONT color=#a82424>half of my assets</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-f" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-g" mid="26"><![CDATA[<html>Yes, I understand.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hope everything will be <FONT color=#a82424>smooth</FONT> for you in the future.<BR>This is definitely not because I had used <FONT color=#a82424>the other half of my assets</FONT>to bet that you will have a great success. You understand what I mean?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-g" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-h" mid="29"><![CDATA[<html>Ok, whatever you say.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hope you can work hard for the world's love and peace!<BR>If I lost this time again, I would literally <FONT color=#a82424>lost everything</FONT>. Understand?<BR>I didn't say these because I'm afraid of bankruptcy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-h" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Haha… I'll depend on you!<BR><FONT color=#7e12d2>(You seem to got closer with Adventurer's Guild Master Deckard)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">9101</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">9101</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="accptted">0,1</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="d" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="e" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="f" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="g" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="h">0</exelink>
+   <journal_data recompense="" quest_title="데커드의 당부" chapterid="" quest_level="24" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Adventurer's Guild Master Deckard]]></title>
+         <contents mid="36"><![CDATA[<html><FONT color=#a82424>Talk to Adventurer's Guild Master Deckard</FONT><BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="38"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>218,237</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

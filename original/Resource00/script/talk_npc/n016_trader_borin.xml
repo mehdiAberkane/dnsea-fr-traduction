@@ -1,0 +1,55 @@
+   <talk>
+      <npcename>n016_trader_borin</npcename>
+      <npcid>16</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Blacksmith Borin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="trader" mid="47"><![CDATA[<html>[Trade]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Blacksmith Borin$<BR>What are you looking for?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="66" link_target="mq05_091_location_tracking.xml"><![CDATA[<html>[Lv1] <FONT color=#a94407>Re-search the location</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="63" link_target="mq05_092_tools_to_rebuild.xml"><![CDATA[<html>[Lv2] <FONT color=#a94407>Re-organize the equipments</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="sq05_153_gurafinder1.xml"><![CDATA[<html>[Lv.6] <FONT color=#086171>Sound Effects</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="19" link_target="sq05_154_gurafinder2.xml"><![CDATA[<html>[Lv.6] <FONT color=#086171>Liar liar, pants on fire!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="69" link_target="sq05_169_gurafinder1.xml"><![CDATA[<html>[Lv6] <FONT color=#086171>Finding Lies</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="72" link_target="sq05_170_borins_amazing_box1.xml"><![CDATA[<html>[Lv7] <FONT color=#086171>Borin's reliquary</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="sq05_158_borins_amazing_box1.xml"><![CDATA[<html>[Lv.7] <FONT color=#086171>Borin's Relic Box I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="sq05_159_borins_amazing_box2.xml"><![CDATA[<html>[Lv.7] <FONT color=#086171>Borin's Relic Box II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="39" link_target="sq05_164_secret_health_borin.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>[Title] [Immortal Lv1] Blacksmith Borin's Health Tips</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="nq12_7216_substitute.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>In A Pinch</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="nq32_8607_condition_of_love.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Love Expressions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="45"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="13"><![CDATA[<html>$Blacksmith Borin$<BR>Ouch, my back! A storm… must be heading this way soon. Ouch!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="trader" image="" itemindex="">
+         <talk_answer link_index="wbuy" mid="4"><![CDATA[<html>[Purchase/Repair Items]</html>]]></talk_answer>
+         <talk_answer link_index="itemupgrade" mid="5"><![CDATA[<html>[Enhance Item]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="60"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="48"><![CDATA[<html>$Blacksmith Borin$<BR>You are one frequent visitor.<BR>I hope you're gonna buy something this time!]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,1,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,2,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,3,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,4,100);</exe>
+         <exe type="conexe" true="1" false="6">0</exe>
+         <exe type="conexe" true="2" false="7">1</exe>
+         <exe type="conexe" true="3" false="8">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="custom">api_ui_OpenUpgradeItem(userObjID);</exe>
+         <exe type="conexe" true="11" false="0">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,5,100);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <exelink idx="wbuy">5</exelink>
+      <exelink idx="itemupgrade">9</exelink>
+   </talk>

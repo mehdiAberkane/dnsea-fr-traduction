@@ -1,0 +1,56 @@
+   <talk>
+      <npcename>n708_trader_molin</npcename>
+      <npcid>2</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Blacksmith Morin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="trader" mid="51"><![CDATA[<html>[Trade]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Blacksmith Morin$<BR>A weapon is like your own body, you should maintain your weapon the way you maintain your health.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="81" link_target="sq15_833_ancient_sword.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>The Ancient Sword</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="86" link_target="dq15_1029_making_money.xml"><![CDATA[<html>[A day] <FONT color=#086171>Good earning money</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="68" link_target="sq15_806_gem_cutter.xml"><![CDATA[<html>[Lv.43] <FONT color=#086171>Processed Gem</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="71" link_target="sq15_821_power_of_tetrastone.xml"><![CDATA[<html>[Lv.45] <FONT color=#086171>Power of the Tetra Stone</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="76" link_target="sq15_827_no_free.xml"><![CDATA[<html>[Lv.48] <FONT color=#086171>No Free Lunch in this World</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="93" link_target="sq15_864_another_sword.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>Another Fine Sword of Ancient</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="94" link_target="sq15_865_how_use.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>What's The Use?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="95" link_target="sq15_866_by_sword.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>Use of the sword</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="96"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Blacksmith Morin$<BR>Compared to these, it would be best if we could purchase more goods.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="trader" image="" itemindex="">
+         <talk_answer link_index="wbuy" mid="4"><![CDATA[<html>[Purchase/Repair Items]</html>]]></talk_answer>
+         <talk_answer link_index="itemupgrade" mid="5"><![CDATA[<html>[Enhance Item]</html>]]></talk_answer>
+         <talk_answer link_index="opencompounditem1" mid="24"><![CDATA[<html>[Item Production]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="63"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="44"><![CDATA[<html>$Blacksmith Morin$<BR>My skills are far superior to Dorin's or Corin's, isn't it?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,21,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,22,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,23,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,24,100);</exe>
+         <exe type="conexe" true="1" false="6">0</exe>
+         <exe type="conexe" true="2" false="7">1</exe>
+         <exe type="conexe" true="3" false="8">2</exe>
+         <exe type="conexe" true="4" false="11">3</exe>
+         <exe type="custom">api_ui_OpenUpgradeItem(userObjID);</exe>
+         <exe type="custom">api_ui_OpenCompound2Item(userObjID, 5001);</exe>
+         <exe type="conexe" true="12" false="0">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,25,100);</exe>
+         <exe type="custom">api_ui_OpenCompound2Item(userObjID, 1001);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <exelink idx="wbuy">5</exelink>
+      <exelink idx="itemupgrade">9</exelink>
+      <exelink idx="opencompounditem1">13</exelink>
+   </talk>

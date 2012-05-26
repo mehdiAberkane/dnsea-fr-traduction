@@ -1,0 +1,437 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_452_meet_lena</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>452</qid>
+      <designer>김주연</designer>
+      <qlevel>25</qlevel>
+      <qdesc>300037 레나의 손수건</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Meeting with the lady]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>47</npcid>
+         <npcename>n047_unknown_girl_lena</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>48</npcid>
+         <npcename>n048_maid_of_lena</npcename>
+         <npckname>왕성 하녀</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>50</npcid>
+         <npcename>n050_lena_of_hermalte</npcename>
+         <npckname>레나 아가씨</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>67</npcid>
+         <npcename>n067_lenas_hankie</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Mysterious Lady$<BR>
+…Please do not worry about me. <BR>
+<FONT color=#7e12d2>(You can start a quest if you go to General Douglas in Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Castle Maid$<BR>
+We have to leave soon, why isn’t she coming? <BR>
+<FONT color=#7e12d2>(You can start a quest if you go to General Douglas in Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n067_lenas_hankie-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$???$<BR>There’s nothing special.<BR>
+<FONT color=#7e12d2>( You can start a quest if you go to General Douglas in Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Mysterious Lady$<BR>
+Please don’t tell anyone that I’m here.<BR>
+<FONT color=#7e12d2>( You can start a quest if you go to General Douglas in Royal Castle)</FONT><BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="11"><![CDATA[<html> Excuse me? I don't follow you. </html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$General Douglas$<BR>I don’t know if Lena has arrived safely…. <BR><FONT color=#7e12d2>(He talks to himself quietly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Meeting with the lady$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="16"><![CDATA[<html> You are a kind father </html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$General Douglas$<BR>My <FONT color=#a82424>daughter</FONT>.<BR>I had to send her to safe place because of the compromised security in this city. I didn’t get to say goodbye to her and that holds me back a little. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="18"><![CDATA[<html> Should I go and see your daughter instead? </html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$General Douglas$<BR>Hahaha. No, not really. <BR>I never took good care of her due to my commitment to the city. <BR>
+I can’t leave this castle even if I wanted to see her…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="20"><![CDATA[<html> Ok </html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$General Douglas$<BR>Can you do that for me?<BR>I can rely on you. I think she would be near <FONT color=#a82424>Hermalte Port</FONT> by now. Please say goodbye to her for me. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n067_lenas_hankie-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There’s nothing special)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Castle Maid$<BR>We have to leave now, why isn’t she coming ….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Mysterious Lady$<BR>
+…Please don’t worry about me. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Mysterious Lady$<BR>
+Please don’t tell anyone that I’m here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Lena</FONT> went with a <FONT color=#a82424>Maid</FONT>.<BR>You should look for a girl wearing a rose-decorated dress at <FONT color=#a82424>Hermalte Port </FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2" image="" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-2-a" mid="27"><![CDATA[<html>By herself? Where did she go? </html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Castle Maid$<BR>Help me. My <FONT color=#a82424>Lady</FONT> went in three hours ago but she still hasn’t came out yet. <BR>
+I’m afraid something has happened to her… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2-a" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-3" mid="29"><![CDATA[<html>I’ll look for her don’t worry too much.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Castle Maid$<BR>I saw her heading towards the<FONT color=#a82424>Dark Mine</FONT> I couldn’t follow her because of the nearby monsters. She told me she had lost something, what should I do? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Castle Maid$<BR>Our lady has <FONT color=#a82424>red hair</FONT> with white skin.<BR>
+Please save her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n047_unknown_girl_lena-3-a" mid="32"><![CDATA[<html>No…. What did you lose to come here? </html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Mysterious Lady$<BR>Who are you? Oh no… a robber?!<BR><FONT color=#7e12d2>(Red hair with white skin, and wearing a rose decorated dress)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-3-a" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n047_unknown_girl_lena-4" mid="34"><![CDATA[<html>A handkerchief…let’s find it together.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Mysterious Lady$<BR>I’ve lost my <FONT color=#a82424>handkerchief</FONT>. <BR>It’s <FONT color=#a82424>the only thing that my mother has left me </FONT>, I can’t go back until I find it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-4" image="QS_Default.dds" itemindex="300037">
+      <talk_question mid="35"><![CDATA[<html>$Mysterious Lady$<BR>
+Thank you.<BR>
+It should be around here somewhere.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n067_lenas_hankie-4" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n067_lenas_hankie-4-get_item" mid="115"><![CDATA[<html>(Pick up the handkerchief)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There is a handkerchief on the floor)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n067_lenas_hankie-5" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(The place where the handkerchief was. There isn’t anything special.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-5" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n047_unknown_girl_lena-6" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Mysterious Lady$<BR>Oh, you found it! <BR>
+That’s my <FONT color=#a82424>handkerchief</FONT>. Thank you so much!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n047_unknown_girl_lena-6" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Mysterious Lady$<BR>I have to go back since I’ve found the handkerchief.<BR>My <FONT color=#a82424>maid</FONT>  must be worrying about me at <FONT color=#a82424>Hermalte Port</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-6" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-6-a" mid="44"><![CDATA[<html>Is she the daughter of General Douglas? </html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Castle Maid$<BR>Oh, you’ve came back!<BR>I heard the adventurer have found your handkerchief. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-6-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-6-b" mid="46"><![CDATA[<html>Good. I have something to deliver as well. </html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Castle Maid$<BR>Do you know her?<BR>Yes, she is the daughter of <FONT color=#a82424>General Douglas</FONT>, Lady <FONT color=#a82424>Lena</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-6-b" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Castle Maid$<BR>She is at the back hiding from the sea wind.<BR>She wanted to talk to you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-7" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Castle Maid $<BR>
+I was so worried.<BR>
+Thank you for returning her. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-7" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n050_lena_of_hermalte-7-a" mid="50"><![CDATA[<html>Yes I know.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Lena$<BR>Thanks you so much for helping me out at the <FONT color=#a82424>Dark Mine</FONT>.<BR>I’m <FONT color=#a82424>Lena Douglas</FONT>, the stepdaughter of <FONT color=#a82424>General Douglas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-7-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n050_lena_of_hermalte-7-b" mid="52"><![CDATA[<html>General has told me to say good bye to you and to take care of yourself. </html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Lena$<BR>Really?<BR>You must know my <FONT color=#a82424>father </FONT> to know my name. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-7-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n050_lena_of_hermalte-7-c" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Lena$<BR>Did you come all the way here to say that? <BR>Hmm…I thought my <FONT color=#a82424>father</FONT> wouldn’t think of me because he is always busy. But I thought wrong, hearing that he said such kind things. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-7-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Lena$<BR>Well, please tell my <FONT color=#a82424>father</FONT> I’ll take care of myself and thank him for me. I wish I could pay you back your favour one day, for your effort and hard work today. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n050_lena_of_hermalte-8" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Lena $<BR>I have to go now. <BR>Please send my <FONT color=#a82424>father</FONT> my gratitude. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8-a" mid="58"><![CDATA[<html>Well…(Tell him what happened)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$General Douglas$<BR>
+You took a while to say good bye. Did anything happen? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8-b" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$General Douglas$<BR>As you heard she is my <FONT color=#a82424>stepdaughter</FONT>. <BR>She thinks about her mother’s keepsake so much. Well, it could have been dangerous for her to lose the handkerchief at the place where the <FONT color=#a82424>kidnapping incident</FONT> had happened.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8-c" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$General Douglase$<BR>I thought it would’ve been an easy job, but thank you for your variety of work. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-8-d" mid="64"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-8-d" image="" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$General Douglas$<BR>Thank you so much for helping me out on this personal matter. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4521,4522,4523,4524,4525</exe>
+         <exe type="setquest">452</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="addquestitem" num="1">300037</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300037</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">8</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4521,4522,4523,4524,4525</exe>
+         <exe type="complete">452</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n048_maid_of_lena" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n047_unknown_girl_lena" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n067_lenas_hankie" sub="get_item">0,1,2</exelink>
+   <exelink qstep="5" npc="n047_unknown_girl_lena" sub="6">0,1,2</exelink>
+   <exelink qstep="6" npc="n048_maid_of_lena" sub="b">0,1</exelink>
+   <exelink qstep="7" npc="n050_lena_of_hermalte" sub="b" />
+   <exelink qstep="7" npc="n050_lena_of_hermalte" sub="c">0,1</exelink>
+   <exelink qstep="8" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="8" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="8" npc="n042_general_duglars" sub="d">1</exelink>
+   <journal_data recompense="1:4521,2:4522,3:4523,4:4524,5:4525" quest_title="아가씨와의 만남" chapterid="" quest_level="25" quest_mark_type="10" use_item_list="300037">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[General Douglas' request]]></title>
+         <contents mid="69"><![CDATA[<html><FONT color=#a82424>General Douglas</FONT> is worried about her daughter. Talk to <FONT color=#a82424>General Douglas</FONT>. <BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT><BR>
+ </html>]]></contents>
+         <destination mid="70"><![CDATA[General Douglas' request]]></destination>
+         <todo_msg mid="71"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n48</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>48</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Find Lena at Hermalte Port]]></title>
+         <contents mid="73"><![CDATA[<html> <FONT color=#a82424>Lena</FONT>, the daughter of General Douglas should be near Hermalte Port. Go there and pass on <FONT color=#a82424>General Douglas</FONT>' words.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Castle Maid </FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Find Lena at Hermalte Port]]></destination>
+         <todo_msg mid="75"><![CDATA[Please find Lena at Hermalte Port]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>273,n47</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@0</destination_mode>
+         <statemark_npcid>47</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Find Lena at Dark Mine]]></title>
+         <contents mid="77"><![CDATA[<html>Regarding to the maid, Lena has gone into the <FONT color=#a82424>Dark Mine</FONT> by herself. Go to Dark Mine and find her. <BR>
+ <BR>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Dark Mine </FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Find Lena in Dark Mine]]></destination>
+         <todo_msg mid="79"><![CDATA[Please find Lena in Dark Mine]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>273,n67</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@4,274@0</destination_mode>
+         <statemark_npcid>67</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[Find handkerchief in Dark Mine]]></title>
+         <contents mid="81"><![CDATA[<html> <FONT color=#a82424>Mysterious Lady</FONT> in <FONT color=#a82424>Dark Mine</FONT> have lost her <FONT color=#a82424>handkerchief</FONT>. She is not willing to leave unless she finds it. Look around for it. <BR>
+ <BR>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Dark Mine</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[Find handkerchief in Dark Mine]]></destination>
+         <todo_msg mid="83"><![CDATA[Search area]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>273,n47</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@0</destination_mode>
+         <statemark_npcid>47</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Conversation with Mysterious Lady]]></title>
+         <contents mid="85"><![CDATA[<html>Found the <FONT color=#a82424> handkerchief</FONT>  of <FONT color=#a82424>Mysterious Lady</FONT>. Return it to her.<BR><BR><FONT color=#086171>Hermalte Port → Dark Mine</FONT><FONT color=#a82424> → Mysterious Lady </FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Conversation with Mysterious Lady]]></destination>
+         <todo_msg mid="87"><![CDATA[Found the handkerchief. Talk to the lady.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n48</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>48</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Conversation with the Castle Maid]]></title>
+         <contents mid="89"><![CDATA[<html>Mysterious Lady fits the <FONT color=#a82424>Description of Lena</FONT> by <FONT color=#a82424>General Douglas</FONT>. Go back to <FONT color=#a82424>Hermalte Port </FONT> and find the <FONT color=#a82424>Castle Maid</FONT> to clarify with her.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Castle Maid </FONT><BR>
+ </html>]]></contents>
+         <destination mid="90"><![CDATA[Conversation with Castle Maid at Hermalte Port]]></destination>
+         <todo_msg mid="91"><![CDATA[Talk to Castel Maid at Hermalte Port]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>12,n50</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>50</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Conversation with Lena at Hermalte Port]]></title>
+         <contents mid="93"><![CDATA[<html> <FONT color=#a82424>Lena</FONT> wants to thank you for your help at the <FONT color=#a82424>Dark Mine</FONT>.Talk to her and deliver <FONT color=#a82424>General Douglas</FONT>' message to her.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Lady Lena</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Conversation with Lena at Hermalte Port]]></destination>
+         <todo_msg mid="95"><![CDATA[Talke to Lady Lena waiting at Hermalte Port]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[Conversation with General Douglas in Royal Castle]]></title>
+         <contents mid="97"><![CDATA[<html>Passed the words at the request of <FONT color=#a82424>General Douglas</FONT>. Report to him back in Saint Haven Royal Castle.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle </FONT> <FONT color=#a82424>→ General Douglas </FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[Conversation with Genrtal Dougals in Royal Castle]]></destination>
+         <todo_msg mid="99"><![CDATA[Talk in General Douglas in Royal Castle]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>451</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

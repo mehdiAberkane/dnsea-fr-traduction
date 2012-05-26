@@ -1,0 +1,20 @@
+﻿   <talk>
+      <npcename>n147_mailbox</npcename>
+      <npcid>147</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Mailbox]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="9" link_target="sq15_814_father_road.xml"><![CDATA[<html>[Quest] <FONT color=#086171>Father's Path</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="sq15_815_another_telejia.xml"><![CDATA[<html>[Quest] <FONT color=#086171>Another Theresa</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="sq15_816_for_the_parttime.xml"><![CDATA[<html>[Quest] <FONT color=#086171>Loving Advice</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="12" link_target="sq15_817_mothers_name.xml"><![CDATA[<html>[Quest] <FONT color=#086171>Mother's Name</FONT></html>]]></talk_answer>
+         <talk_answer link_index="open_mail" mid="6"><![CDATA[<html>[Open Mailbox]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Mailbox$<BR>This Mailbox is so pretty.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenMailBox(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="open_mail">1</exelink>
+   </talk>

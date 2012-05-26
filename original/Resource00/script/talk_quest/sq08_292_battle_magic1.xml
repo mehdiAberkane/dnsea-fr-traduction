@@ -1,0 +1,234 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_292_battle_magic1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>292</qid>
+      <designer>손원호</designer>
+      <qlevel>21</qlevel>
+      <qdesc>최근 캐더락 주변에 늘어난 마물들을 보며, 소서리스의 마법 한방으로 가볍게 날려버릴 수 있다고 오만 떠는 티아나. 그 하찮은 것들을 향해 무식하게 칼을 휘두르는 건 워리나 하는 일이라고 하는데. 무식한 싸움법 같은건 버리고, 우아한 마법을 사용하라고 권장하는 티아나. 동의하면 칭호 마족을 얻기 위한 첫번째 조건으로 기도하는 자의 안식처로 가서, 조건에 합당한 자인지 통과하라고 한다. 기도하는 자의 안식처를 S등급 이상으로 클리어하자.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>293</nextqid>
+      <nextqname>sq08_293_battle_magic2</nextqname>
+      <nextqnpc>n035_soceress_master_tiana</nextqnpc>
+      <qkname mid="1"><![CDATA[[Title] [Monster Lv1] Grace Under Pressure I]]></qkname>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-a" mid="6"><![CDATA[<html>Uh oh...she's in one of her moods...</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Tiana${action:Talk}<BR>I am sick of these silly adventurers with their giant swords and empty heads!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-b" mid="8"><![CDATA[<html>Well.. magic is just as important as strength.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Tiana$<BR>I heard that, you must be one of them and thinks brawn is better than magic, hm? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Tiana$<BR>I've seen those thugs with the huge swords or hammers or whatever scurrying all over town. Morons, alot of them!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-d" mid="14"><![CDATA[<html>How to fight a real battle?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Tiana$<BR>Sometimes, carrying a large weapon will only hurt your shoulders and tire you out. No one knows how to fight a real battle anymore... It's so sad...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-e" mid="16"><![CDATA[<html>cleaving enemies... is awesome.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Tiana$<BR>Of course! You apply pressure where it will do the most work for you. What's the point of cleaving an enemy completely in half, when the heart achieves at the same ends?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-f" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Tiana$<BR>Pah! magic will always be the superior weapon...destruction with the flick of a wrist. Hee hee.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-g" mid="19"><![CDATA[<html>I don't know...you're kind of scary sometimes...</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Tiana$<BR>Hmm... You have more of an open mind... Would you like a lesson?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-h" mid="21"><![CDATA[<html>Monster? Does that make me a monster?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Tiana$<BR>Really? (For just a moment, Tiana looks shocked.)<BR>...Hahahaha! If you take my lessons, I'll give you the Monster title… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-i" mid="23"><![CDATA[<html>Okay.. I'm interested!!</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Master Sorceress Tiana$<BR>...What? Why... No!<BR>The Monster title is for those who have shown their dominance over demonic forces. It can make your magic more powerful...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="25"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Basic Battle Strength I $</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QW_24.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="30"><![CDATA[<html>Yes, I am.</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Sorceress Tiana$<BR>I will give you a little test. No matter how much I like you, wasting time on someone with no chance of getting the titles. Are you familiar with the Death Basin?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="QW_24.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-b" mid="32"><![CDATA[<html>Condition? huh?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Sorceress Tiana$<BR>Good. You should have no problem clearing it. But, I'll put a condition on this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-b" image="QW_24.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-c" mid="34"><![CDATA[<html>Yes, sir.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Master Sorceress Tiana$<BR>Oh yes. Death Basin really proves nothing, unless you can do it with a certain criteria.<BR>(It sounds like Tiana wants you to get at least Rank C.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-c" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Master Sorceress Tiana$<BR>Great! Time to prepare, then. I'm not going to make this easy!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QW_24.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Master Sorceress Tiana$<BR>Don't tell me you don't know where the Death Basin is. No excuses.. you can just admit and give up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-a" mid="39"><![CDATA[<html>It's nothing!</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Sorceress Tiana$<BR>Hah! That was what I expected.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-b" mid="41"><![CDATA[<html>Alright, let's do it.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Master Sorceress Tiana$<BR>Since you've got the basics down, how about we move on to the first real challenge?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-c" mid="43"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-d" mid="48"><![CDATA[What..fight again?]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Sorceress Tiana$<BR>I know you have some ideas, but you're going to do much better for the elegance when you fight!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-e" mid="50"><![CDATA[<html>.. I have no idea..</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Sorceress Tiana$<BR>Oh... you know... movements must be graceful...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-e" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-f" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Sorceress Tiana$<BR>(She sighs.) Guess you're a little thick-skulled for such task, in the face of real danger.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-f" image="QW_24.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-g" mid="52"><![CDATA[<html>But stylish, elegant fighters will be able to survive?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Master Sorceress Tiana$<BR>There's an ancient demon called Scarlet Scythe in the depths of the Death Basin. It's known to be lightning fast and merciless.. Strength alone cannot beat it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-g" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-h" mid="54"><![CDATA[<html>You're not really going to send me to fight..are you?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Master Sorceress Tiana$<BR>If you do, you'll be the first! Haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3-h" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-3-!next" mid="56"><![CDATA[<html>If it hasn't?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Master Sorceress Tiana$<BR>Of course, I am! There's no reason to slack off in your training. If you have developed enough, you will stay victorious and unharmed.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2920,,,,,</exe>
+         <exe type="setquest">292</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="checkStageClearRank" rand="5" num="244" onexe="3,4" true="[=" xsi:nil="true" />
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2920,,,,,</exe>
+         <exe type="complete">292</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="i">0</exelink>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c">0,1,2</exelink>
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="b">0</exelink>
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="c">1</exelink>
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="e" />
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="f" />
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="g" />
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="h" />
+   <exelink qstep="3" npc="n035_soceress_master_tiana" sub="!next" />
+   <journal_data recompense="0:2920" quest_title="[칭호]「마족Lv1」전투의 기본은 마력Ⅰ" chapterid="" quest_level="21" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Talk to Master Sorceress Tiana]]></title>
+         <contents mid="59"><![CDATA[<html>Tiana has something to discuss with you...about a title. Go talk to her.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="61"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_24.dds</contents_image>
+         <destination_pos>244,0,0</destination_pos>
+         <destination_mode>custom:241@1,242@1,243@1,244@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Clear Death Basin at Rank C or higher.]]></title>
+         <contents mid="63"><![CDATA[<html>Tiana's wants you to prove that you have the  potential to obtain the Monster title. Clear the Death Basin at Rank C or higher.<BR><BR><FONT color=#086171>Lower Ridge</FONT> <FONT color=#a82424>→ Death Basin</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Clear Death Basin at Rank C or higher.]]></destination>
+         <todo_msg mid="65"><![CDATA[Clear Death Basin at Rank C or higher.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Talk to Master Sorceress Tiana]]></title>
+         <contents mid="67"><![CDATA[<html>You have passed the first test for Tiana's title. Go back to Master Sorceress Tiana in Calderock Village and start the second test.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="69"><![CDATA[You have passed Master Sorceress Tiana's first test.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>21:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

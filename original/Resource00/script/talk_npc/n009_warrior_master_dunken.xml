@@ -1,0 +1,70 @@
+   <talk>
+      <npcename>n009_warrior_master_dunken</npcename>
+      <npcid>9</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Warrior Duncan]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="ask_guild_1" mid="5"><![CDATA[<html>[Talk] Adventurer's Guild</html>]]></talk_answer>
+         <talk_answer link_index="ask_skill_1" mid="26"><![CDATA[<html>[Talk] How To Learn Skills?</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Warrior Duncan$<BR>Hey there. I'm Duncan, from Calderock Village. <BR>If you're wanna learn how to fight like a true warrior, I am the right person to ask.  </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ask_guild_1" mid="8"><![CDATA[<html>[Talk] Adventurer's Guild</html>]]></talk_answer>
+         <talk_answer link_index="ask_skill_trade" mid="21"><![CDATA[<html>[Talk] Learn Skills</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Master Warrior Duncan$<BR>Hey there. I'm Duncan, from Calderock Village. <BR>Who are you exactly?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_trade" image="" itemindex="">
+         <talk_answer link_index="002" mid="10"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Master Warrior Duncan$<BR>What the..? Unfortunately, I only train Warriors. In case you haven't noticed, you are a <FONT color=#387206>{user_class}</FONT>. The Master <FONT color=#a82424>{user_class} </FONT> is the one you should be looking for. Now go!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_guild_1" image="" itemindex="">
+         <talk_answer link_index="ask_guild_2" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Master Warrior Duncan$<BR>Adventurer's Guild? It's a group formed by mercenaries to help fellow mercenaries and adventurers.<BR> It originated from Saint Haven but many of us travel far and wide to help locals in their towns and cities.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_guild_2" image="" itemindex="">
+         <talk_answer link_index="back1" mid="14"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="13"><![CDATA[<html>$Master Warrior Duncan$<BR>We have various duties as well, but now is not the time to explain everything. <BR>You will find out in due time when you visit Saint Haven. Remember to drop by our headquaters there.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="22" link_target="mq01_003_red_emblem1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a94407>The Red Seal Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="mq01_015_red_emblem1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a94407>The Red Seal Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back2" mid="42"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="18"><![CDATA[<html>$Master Warrior Duncan$<BR>The will to fight triumphs any weapon and opponent. It's all in the attitude!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_1" image="" itemindex="">
+         <talk_answer link_index="ask_skill_2" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="27"><![CDATA[<html>$Master Warrior Duncan$<BR>A great warrior is constantly learning new<FONT color=#a82424>skills</FONT>.<BR>Press <FONT color=#a82424>[K]</FONT> to open the <FONT color=#a82424>Skill Window</FONT> to see what you have learnt.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_2" image="QS_skill_01.dds" itemindex="">
+         <talk_answer link_index="ask_skill_3" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="29"><![CDATA[<html>$Master Warrior Duncan$<BR><FONT color=#a82424>Skills</FONT> available to you are highlighted.  A '+' icon indicates the level of the skill can be increased.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_3" image="QS_skill_02.dds" itemindex="">
+         <talk_answer link_index="ask_skill_4" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="31"><![CDATA[<html>$Master Warrior Duncan$<BR>Skills with a <FONT color=#a82424>Red Skillbook Icon</FONT> indicates that the skill can learned from approriate book sources or through Master Warrior Duncan.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_4" image="QS_skill_03.dds" itemindex="">
+         <talk_answer link_index="ask_skill_5" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="33"><![CDATA[<html>$Master Warrior Duncan$<BR>Skills beyond your current stats are in grey.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_5" image="" itemindex="">
+         <talk_answer link_index="back3" mid="36"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+         <talk_question mid="35"><![CDATA[<html>$Master Warrior Duncan$<BR>This is child's play.<BR>You'll get the hang of it soon enough.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back1">2</exelink>
+      <exelink idx="back2">2</exelink>
+      <exelink idx="back3">2</exelink>
+   </talk>

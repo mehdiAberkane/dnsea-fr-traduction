@@ -1,0 +1,320 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_534_arrest_the_falsifier1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>534</qid>
+      <designer>김주연</designer>
+      <qlevel>24</qlevel>
+      <qdesc>피묻은 제퍼트의 군번줄	400130
+국왕 카시우스의 척서 400138
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>535</nextqid>
+      <nextqname>sq11_535_arrest_the_falsifier2</nextqname>
+      <nextqnpc>n041_duke_stwart</nextqnpc>
+      <qkname mid="1"><![CDATA[Arrest the falsifier ]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>271</npcid>
+         <npcename>n271_saint_guard</npcename>
+         <npckname>왕성 근위병 레이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Duke Stuart$<BR>There must me a treason inside the castle walls \.<BR><FONT color=#7e12d2>(Duke Stuart looks as if he is in a deep thought )</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Royal Guard Ray$<BR><FONT color=#7e12d2>(Royal Guard Ray is looking forward in the attention formation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-noquest" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Royal Guard Joey$<BR>  <FONT color=#a82424>Duke Stuart</FONT> inside the castle<FONT color=#382000>{user_nick}</FONT>is looking for you</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Duke Stuart$<BR>With the papers that you have brought I have declared that there is a treason inside the castle. Also,  <FONT color=#a82424>Abandoned Welton Hollow </FONT>has become in ruins for they have been digging up ancient artefacts.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Duke Stuart$<BR>If we close our eyes on those, the royal family will be shaken. You have always been faithful to the loyal family. I will give you an another chance to prove your loyalty so lead on catching the <FONT color=#a82424>the falsifier</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Find the falsifier$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="16"><![CDATA[<html>The royal seal?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Duke Stuart$<BR>This…? <BR>It is partially damaged, but its been written in a royal family style. It also contains the royal seal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-b" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Duke Stuart$<BR>This style of the royal seal is definitely Cassius'  <BR> How dare he touch the royal seal! <BR>How imprudent is he?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-b" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-c" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Duke Stuart$<BR>Also the document that has been falsified has been giving orders of an emergency digging that the king has never given. This point is similar in which <FONT color=#a82424>the Abandoned Welton Hollow</FONT> . Someone has definitely taken the King's authority</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-c" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Duke Stuart$<BR>I must punish  the person who has falsified the document.<BR>I will give you another chance to show me loyalty, help me arrest the  <FONT color=#a82424>falsifier</FONT>who has dirtied the family name .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-1" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Royal Guard Ray$<BR><FONT color=#7e12d2>(Royal Guard Ray is looking forward in the attention formation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Royal Guard Joey$<BR> <FONT color=#a82424>Duke Stuart </FONT>of the Inner palace <FONT color=#382000>{user_nick}</FONT>has been looking for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QS_Default.dds" itemindex="400138">
+      <talk_answer link_index="n041_duke_stwart-2-a" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Duke Stuart${action:Stand2}<BR>I will give you the royal message of the King Cassius. If one is not cooperative, show them the  <FONT color=#a82424>royal message of the king </FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Duke Stuart$<BR>The one who is in charge of security is <FONT color=#a82424>Royal Guard Ray</FONT>. He never leaves the castle so he doesn't need to be investigated, but he cannot avoid the questioning of losing the royal seal.  First let us question  <FONT color=#a82424>Ray</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n271_saint_guard-2-a" mid="29"><![CDATA[<html>Excuse me.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Royal Guard Ray$<BR><FONT color=#7e12d2>(Royal Guard Ray is looking forward in the attention formation)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n271_saint_guard-2-b" mid="31"><![CDATA[<html>(Shows him Cassius' letter) </html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Royal Guard Ray$<BR>I cannot talk while I am on duty.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2-b" image="QS_Default.dds" itemindex="400138">
+      <talk_answer link_index="n271_saint_guard-2-c" mid="33"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Royal Guard Ray$<BR>You have <FONT color=#a82424>the royal letter</FONT>.<BR>Do you have urgent business with me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2-c" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n271_saint_guard-2-d" mid="79"><![CDATA[<html>Do you suggest anyone by chance?</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Royal Guard Ray$<BR>
+Royal seal… hmm…<BR>
+By any chance…?<BR>
+<FONT color=#7e12d2>(Royal Guard Ray frowns)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-2-d" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n271_saint_guard-3" mid="35"><![CDATA[<html>That is Strange…. Is there no one to know where he is?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Royal Guard Ray$<BR>
+In fact… Among the force that guards the room of royal seal, there is a guy called<FONT color=#a82424>Jeffert</FONT>…. He suddenly disappeared.<BR>
+He has not came back to his troops either, now he is wanted for desertion.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-3" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Royal Guard Ray$<BR>the one on duty at the outer castle<FONT color=#a82424> royal guard Joey</FONT>seems to have told me that he saw him.<BR>
+it's better that you ask him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-a" mid="38"><![CDATA[<html>(Shows the Cassius' Royal letter)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Royal Guard Joey$<BR>I cannot talk while I am on duty.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-a" image="QS_Default.dds" itemindex="400138">
+      <talk_answer link_index="n252_saint_guard-3-b" mid="40"><![CDATA[<html>Would you know where the royal guard Jeffert would be ?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Royal Guard Ray이$<BR><FONT color=#a82424>You have the</FONT>royal letter.<BR>
+what is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-b" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-c" mid="81"><![CDATA[<html>No. I thank you.</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Royal Guard Ray$<BR>Jeffert, I think I have recently seen him hastily going to the Shadow Forest hill. Closed<FONT color=#a82424> Abandoned welton hollow side</FONT>So I was suspicious.<BR>
+Do you have any problem?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-c" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Royal Guard Ray$<BR>
+No problem.<BR>
+<FONT color=#7e12d2>(Royal Guard Ray facing front)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="QS_Default.dds" itemindex="400138">
+      <talk_question mid="68"><![CDATA[<html>$Duke Stuart$<BR>If one is not cooperative, show them the <FONT color=#a82424>royal letter</FONT>. For all the people concerned, ask for Jefferson's whereabouts. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-4" image="QW_31.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Royal Guard Joey$<BR>If you are talking about Jeffert, I have seen him going to the Shadow Forest Trail . I believed he was headed for <FONT color=#a82424>the  Abandoned Welton Hollow</FONT> which I thought was weird.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n271_saint_guard-4" image="QW_31.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Royal Guard Ray$<BR>I also think it is strange of Jeffert going to the Abandoned Welton Hollow <BR><FONT color=#7e12d2>(We have to go to the Abandoned Welton Hollow)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-5" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-5-a" mid="44"><![CDATA[<html>(Gives Jefferts serial number chain)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Duke Stuart$<BR>So I heard.<BR>
+Yes, traitor <FONT color=#a82424>Jeffort's</FONT>whereabouts is discovered?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-5-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-5-!next" mid="46"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5341,5342,5343,5344,5345</exe>
+         <exe type="setquest">534</exe>
+         <exe type="talk" npc="n041_duke_stwart">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400138</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">886</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="5,6,7">400130</exe>
+         <exe type="addquestitem" num="1">400130</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="setstep">5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200886</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>884</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5341,5342,5343,5344,5345</exe>
+         <exe type="complete">534</exe>
+         <exe type="delquestitem" num="-1">400130</exe>
+         <exe type="delquestitem" num="-1">400138</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="c" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n271_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n271_saint_guard" sub="c" />
+   <exelink qstep="2" npc="n271_saint_guard" sub="d" />
+   <exelink qstep="2" npc="n271_saint_guard" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="3" npc="n252_saint_guard" sub="c">0,2,8,3,1</exelink>
+   <exelink qstep="5" npc="n041_duke_stwart" sub="a">0</exelink>
+   <exelink qstep="5" npc="n041_duke_stwart" sub="!next">1,2,3</exelink>
+   <journal_data recompense="1:5341,2:5342,3:5343,4:5344,5:5345" quest_title="문서 위조범을 찾아라I" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="400130,400138">
+      <journal index="1">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[prosperous inTelejuor castle treason]]></title>
+         <contents mid="48"><![CDATA[<html>torn paper led to conclusion of the traitor inside the kingdom.<FONT color=#a82424>Let's talk with Duke Stuart</FONT>and hear the details.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Inside Saint Haven)</FONT> <FONT color=#a82424>→ Duke Stuart</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk with Duke Stuart]]></destination>
+         <todo_msg mid="50"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n271</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>271</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Talk with Royal Guard Ray]]></title>
+         <contents mid="52"><![CDATA[<html>The one in charge with the room with the royal seal is called Royal Guard Ray.<BR>
+Let's talk with  Royal guard Ray.<BR><BR><FONT color=#086171>Saint Haven세인트 헤이븐((Inside Saint Haven)</FONT> <FONT color=#a82424>→Royal guard Ray</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Talk with Royal Guard Ray]]></destination>
+         <todo_msg mid="54"><![CDATA[Talk with Royal Guard Ray]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Talk with Royal Guard Joey]]></title>
+         <contents mid="56"><![CDATA[<html>Lets ask    <FONT color=#a82424>Royal Guard Joey </FONT>  who is  guarding Saint Haven about Jeffert's whereabouts <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Royal Guard Joey</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk with Royal Guard Joey]]></destination>
+         <todo_msg mid="58"><![CDATA[Talk with Royal Guard Joey]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_31.dds</contents_image>
+         <destination_pos>313,0,0</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Chase the running Jeffert]]></title>
+         <contents mid="60"><![CDATA[<html>The suspect security Jeffert chased the running Jeffert to the <FONT color=#a82424>Abandoned Welton Hollow</FONT>. Lets follow him to the Abandoned Welton Hollow.<BR><BR><FONT color=#086171>The Foot of the Mountain (shadow forest outskirts)</FONT> <FONT color=#a82424>→ Abandoned Welton Hollow</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Chase the running Jeffert]]></destination>
+         <todo_msg mid="62"><![CDATA[Chase the running Jeffert at the running Jeffert]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Talk with Duke Stuart]]></title>
+         <contents mid="64"><![CDATA[<html>Blood stained Jeffert's serial number chain.  Lets deliver this inside the castle to <FONT color=#a82424>Duke Stuart</FONT>에게 전달하자.<BR><BR><FONT color=#086171>Saint Haven(Inside the Saint Haven castle)</FONT> <FONT color=#a82424>→  Royal Stewart</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Talk with Duke Stuart]]></destination>
+         <todo_msg mid="66"><![CDATA[Talk with Duke Stuart]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>533</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

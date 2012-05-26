@@ -1,0 +1,188 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq12_7201_blacksmith_family</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7201</qid>
+      <designer>나은하</designer>
+      <qlevel>24</qlevel>
+      <qdesc>*마이너스의 손 칭호가 있을 때 시작가능
+
+벨린에게 대장장이에 대한 사람들의 인식을 바꾸는 것을 도와달란 부탁을 받음.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Blacksmith's family]]></qkname>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceptted" mid="10"><![CDATA[<html>How, how did you know that?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Berlin$<BR>Ah, it's you, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-a" mid="15"><![CDATA[<html>Where did you get the embarrasing rumor?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Blacksmith Berlin$<BR>It's written on your head.<BR>It's you, <FONT color=#387206>{user_nick}</FONT>.<BR>You don't buy anything even a good weapon but sell only useless waste?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-b" mid="17"><![CDATA[<html>Cousins?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Berlin$<BR>An embarrasing rumor? <BR>Do you mean that my cousins told me a lie?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-c" mid="19"><![CDATA[<html>That's why you look same.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#a94407>All the blacksmiths in Prairie Town</FONT>, <FONT color=#a94407>Mana Ridge</FONT>, and <FONT color=#a94407>Calderock Village</FONT> are my younger cousins.  My elder cousins are running forges in the other area.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-d" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Blacksmith Berlin$<BR> Hey, what are you talking that we look same? <BR>
+We are all different if you take a closer look.</html>.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-e" mid="23"><![CDATA[<html>(I didn't know at all.)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Blacksmith Berlin$<BR>Dorin has mismatched eyebrows, Borin has a dimple on the left cheek. Corin has a scar on the shoulder due to a burn during childhood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-f" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Blacksmith Berlin$<BR>So we being different from those Warehouse <FONT color=#a82424>Clones</FONT>is not being done on purpose.<BR>So what are those <FONT color=#a82424>Clones</FONT>called again?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-f" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-g" mid="27"><![CDATA[<html>Misunderstood?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Blacksmith Berlin$<BR>I might have said something strange now.<BR>Anyway people tend to misunderstand my family members.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-g" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-h" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Berlin$<BR>Yes. They tell this kind of lies. We are <FONT color=#a82424>fussy crooks, </FONT> <FONT color=#a82424>dwarfs,</FONT>, and we break weapons during enhancement, <FONT color=#a82424>siphon off epic loot.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-h" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-i" mid="31"><![CDATA[<html>The fussy part seems true...</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Blacksmith Berlin$<BR>I won't hesitate to say this. Those rumors are not reliable at all. Their credibility is <FONT color=#a82424>0%</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-i" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-j" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Blacksmith Berlin$<BR>What you are talking about?! Is it wrong that my younger cousins are too tired of a bread-and-butter job to <FONT color=#a82424>smile</FONT> like girls at general store?]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-j" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-k" mid="35"><![CDATA[<html>Oh, no.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Blacksmith Berlin$<BR> They are all nice and warm people.<BR>
+Although we handle hard iron, we've got <FONT color=#a82424>delicate</FONT>, <FONT color=#a82424>fragile</FONT> hearts.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-k" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2" mid="37"><![CDATA[<html>(Listening to him, I don't know whose side he's taking.)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Blacksmith Berlin$<BR>So, don't say that, because it can hurt us. Fussy…. because of that kind of misunderstanding, <FONT color=#a94407>Dorin</FONT>and <FONT color=#a94407>Borin have never <FONT color=#a82424>dated someone</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-a" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Blacksmith Berlin$<BR> Looking at you, I can tell how big <FONT color=#a82424>the misconception and prejudice</FONT> about blacksmiths is in the world.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-b" mid="43"><![CDATA[<html>What cooperation?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Blacksmith Berlin$<BR>The misconception and prejudice must be fixed for improving the rights of blacksmiths.<BR> In that sense, I wanna ask you to <FONT color=#a82424>cooperate</FONT> with us.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-c" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Blacksmith Berlin$<BR> Please stay close to blacksmiths, watch how we work, run some errands for us, and let people know about us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-d" mid="47"><![CDATA[<html>What kind of benefits are you gonna provide me?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Blacksmith Berlin$<BR>We'll provide <FONT color=#a82424> convenience </FONT> as a reward for your cooperation to improve our rights.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-2-e" mid="50"><![CDATA[<html>(Means, you're going to think about it from now.)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Blacksmith Berlin$<BR>Hmm, I'm <FONT color=#a82424>thinking</FONT> about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2-e" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Blacksmith Berlin$<BR>Then, while I'm hammering iron. I'll think about what you can do.<BR>
+<FONT color=#7e12d2>(You've established a closer relationship with Blacksmith Berlin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7201</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">7201</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="f" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="g" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="h" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="i" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="j" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="k" />
+   <exelink qstep="1" npc="n091_trader_bellin" sub="2">0</exelink>
+   <exelink qstep="2" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="2" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="2" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="2" npc="n091_trader_bellin" sub="e">0</exelink>
+   <journal_data recompense="" quest_title="대장장이 일가" chapterid="" quest_level="24" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode />
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Talk to Blacksmith Berlin]]></title>
+         <contents mid="56"><![CDATA[<html>Let't talk to <FONT color=#a82424>Blacksmith Berlin</FONT> to solve the misunderstanding.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="58"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission>31</complete_mission>
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,265 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_476_dream_of_old_days</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>476</qid>
+      <designer>김인정</designer>
+      <qlevel>37</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Dream of the Old Days]]></qkname>
+      <qnpc>
+         <npcid>294</npcid>
+         <npcename>n294_tombstone</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>46</npcid>
+         <npcename>n046_cleric_master_enoc</npcename>
+         <npckname>상급 클레릭 에녹</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Merchant Kelly$<BR>How come there are so many customers who order items and don't pick them up.<BR><FONT color=#7e12d2>(Need to finish talking to Master Cleric Enoch)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n294_tombstone-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Unknown Tomb$<BR><FONT color=#7e12d2>(Unknown Tomb.</FONT><BR><FONT color=#7e12d2>Can't read the letters written on the tomb from wind and rain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-a" mid="8"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Cleric Enoch$<BR>Too many Clerics visit me everyday to learn about the holy spell. I can't leave for a bit.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-b" mid="10"><![CDATA[<html>Favor to do by today?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Cleric Enoch$<BR>Oh, thank goodness {user_nick} are here.<BR>I have something that needs to be done by today, but I was unable to leave and didn't know what to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-c" mid="12"><![CDATA[<html>What do you want me to do?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Cleric Enoch$<BR>If you have some time, do you mind doing me a favor?<BR>It's not a difficult task.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-c" image="QN_Sonya.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-d" mid="14"><![CDATA[<html>So I just need to put flowers at a tomb.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Cleric Enoch$<BR>Go to <FONT color=#a82424>Merchant Kelly</FONT> and receive white flowers that I ordered yesterday. Then, just put the flowers at the tomb in the <FONT color=#a82424>Ruins of Lost Time</FONT>. We don't have much time, so I'll tell you in more detail when you come back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-accepted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Dream of the Old Days$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1" image="QN_Sonya.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Master Cleric Enoch${action:Talk}<BR><FONT color=#a82424>The Ruins of Lost Time</FONT> is around the Ruins at Downstream near Hermalte Port.<BR>Oh, and before you go, don't forget to pick up the flowers from <FONT color=#a82424>Merchant Kelly</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-a" mid="21"><![CDATA[<html>I'm not here to buy something but to pick up something.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Merchant Kelly${action:Talk}<BR>Hello~!<BR>What would you like to buy?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-b" mid="23"><![CDATA[<html>I'm here to pick up the white flowers Enoch had requested.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant Kelly$<BR>Favor?<BR>Who's favor?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-b" image="QS_Default.dds" itemindex="300279">
+      <talk_answer link_index="n092_trader_kelly-2" mid="25"><![CDATA[<html>(Take this and go to the Ruins of Lost Time)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant Kelly$<BR>Oh, that flower is right here.<BR>I was wondering when you were going to pick the flowers up~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n294_tombstone-1" image="QN_Sonya.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Unknown Tomb$<BR><FONT color=#7e12d2>(Can't read the letters written on the tomb from wind and rain.</FONT><BR><FONT color=#7e12d2>Go to Merchant Kelly, pick up the white flowers and put them here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2" image="QW_47.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Merchant Kelly$<BR>Next time buy something~<BR><FONT color=#7e12d2>(I have to go to the Ruins of Lost Time and put the white flowers on some unknown tomb)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n294_tombstone-2" image="" itemindex="">
+      <talk_answer link_index="n294_tombstone-3" mid="28"><![CDATA[<html>(Puts down the flowers)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Unknown Tomb$<BR><FONT color=#7e12d2>(There is already a fresh set of white flowers in front of the unknown tomb.<BR>Somebody already put the flowers there)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n294_tombstone-3" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Unknown Tomb$<BR><FONT color=#7e12d2>(Finished cherishing.</FONT><BR><FONT color=#7e12d2>Report back to Master Cleric Enoch)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-a" mid="31"><![CDATA[<html>There were already some flowers there.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Cleric Enoch${action:Talk}<BR>Looks like you came back from the <FONT color=#a82424>Ruins of Lost Time</FONT>.<BR>Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-a" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-b" mid="33"><![CDATA[<html>Teramai?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Master Cleric Enoch$<BR>Really? Hmm, then that flower must be from <FONT color=#a82424>Teramai</FONT>.<BR>This year, he must have personally put the flowers there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-b" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-c" mid="35"><![CDATA[<html>Why are you putting flowers there?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Cleric Enoch$<BR>That's correct, the Pope <FONT color=#a82424>Teramai</FONT>.<BR>That's where Teramai's old friend and holy knight Guwayne is buried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-c" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-d" mid="37"><![CDATA[<html>His best friend became the Pope, why did they break away from each other?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Cleric Enoch$<BR>Guwayne was a very nice and honourable.<BR>So, when Teramai became the Pope, he cut ties with Teramai.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-d" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-e" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Cleric Enoch$<BR>During his youth years, Teramai and he promised to live for the poor.<BR>And Guwayne promised to become a holy knight to protect the weak.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-e" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-f" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Master Cleric Enoch$<BR>Teramai tried to build an orphanage to keep that promise. But, the nobles wanted to build a country house, so they took the land from Teramai. He tried hard, but a Cleric could not stand up against the nobles.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-f" image="QN_six_heroes_silhouette.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-g" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Cleric Enoch$<BR>After that, Teramai changed his mind and decided to become a holy knight. That was the fastest way to achieve rank and name for a Cleric. Not long after he became a holy knight, he participated in the <FONT color=#a82424>Dragon Raid</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-g" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-h" mid="45"><![CDATA[<html>But, you've declined the offer.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Cleric Enoch$<BR>After the dragon raid, he became the Pope. He finally had the power to do what he promised to do. So, <FONT color=#a82424>Teramai</FONT> called his friend Guwayne and offered him to become a Bishop. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-h" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-i" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Master Cleric Enoch${action:Talk}<BR>Yes, Guwayne thought Teramai had changed. But, even after becoming a Pope, <FONT color=#a82424>Teramai</FONT> didn't change at all. He always emphasized clerics to sacrifice and serve others, but he couldn't make it happen due to strong opposition.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-i" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-j" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Master Cleric Enoch$<BR>If they had talked seriously, they wouldn't have had this kind of a misunderstanding, but destiny is funny. Guwayne died shortly after, and Teramai lost the opportunity to achieve their dreams together.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-j" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-k" mid="51"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Master Cleric Enoch$<BR>He was very sad for a long time and one day, he left everything to the Bishop <FONT color=#a82424>Ignacio</FONT> and went on a journey. Not telling anyone where or why he was leaving.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-k" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-l" mid="53"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Cleric Enoch$<BR>Anyway, thank you for going there.<BR>This is my token of appreciation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-l" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-m" mid="55"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-m" image="" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Master Cleric Enoch${action:Talk}<BR>Next time, I might need your help again.<BR>Be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4761,4762,4763,4764,4765</exe>
+         <exe type="setquest">476</exe>
+         <exe type="talk" npc="n046_cleric_master_enoc">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300279</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">300279</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4761,4762,4763,4764,4765</exe>
+         <exe type="complete">476</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="accepted">1,2</exelink>
+   <exelink qstep="1" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="1" npc="n092_trader_kelly" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n294_tombstone" sub="3">2,0,1</exelink>
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="b" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="c" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="d" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="e" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="f" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="g" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="h" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="i" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="j" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="k" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="l">0</exelink>
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="m">1</exelink>
+   <journal_data recompense="1:4761,2:4762,3:4763,4:4764,5:4765" quest_title="그 시절의 꿈" chapterid="" quest_level="37" quest_mark_type="10" use_item_list="300279">
+      <journal index="1">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Commemorative Flowers]]></title>
+         <contents mid="58"><![CDATA[<html>Go to Merchant Kelly and pick up white flowers.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Pick up white flowers from Merchant Kelly]]></destination>
+         <todo_msg mid="60"><![CDATA[Receive white flowers from Merchant Kelly.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_47.dds</contents_image>
+         <destination_pos>471,n294</destination_pos>
+         <destination_mode>custom:471@4</destination_mode>
+         <statemark_npcid>294</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Unknown Tomb]]></title>
+         <contents mid="62"><![CDATA[<html>Received white flowers from Merchant Kelly. Leave the flowers in front of the tomb at the Ruins of Lost Time.<BR><BR><FONT color=#086171>Hermalte Port(Ruins at Downstream)</FONT> <FONT color=#a82424>→ The Ruins of Lost Time</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Explore the Ruins of Lost Time]]></destination>
+         <todo_msg mid="64"><![CDATA[Find the tomb at the Ruins of Lost Time and leave the flowers.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Tomb Owner]]></title>
+         <contents mid="66"><![CDATA[<html>Put the flowers in front of a tomb at the <FONT color=#a82424>Ruins of Lost Time</FONT>. Somebody came first and left flowers. Listen to the story of this tomb from Master Cleric Enoch.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk to Master Cleric Enoch]]></destination>
+         <todo_msg mid="68"><![CDATA[Report to Master Cleric Enoch.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>37:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

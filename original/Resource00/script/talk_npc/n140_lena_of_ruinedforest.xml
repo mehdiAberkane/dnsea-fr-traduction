@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n140_lena_of_ruinedforest</npcename>
+      <npcid>140</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Miss Lena]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Miss Lena$<BR>
+There are many choices to make in life, regardless of which you pick, you should be responsible for your own decisions.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_579_new_determin</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">579</chk>
+      </conditions>
+   </talk>

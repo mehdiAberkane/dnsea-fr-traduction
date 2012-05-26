@@ -1,0 +1,146 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3166_n409_mine_prop</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3166</qid>
+      <designer>손원호</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Guild Request] Best Dock]]></qkname>
+      <qnpc>
+         <npcid>409</npcid>
+         <npcename>n409_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting" image="GQ_prop.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>This world has many types of poison, but the strongest type belongs to the spider. However, if poison used from adult spiders is used for magic, it may be too toxic.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-a" image="GQ_prop.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-b" mid="98"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Is there any adventurer who is willing to go to <FONT color=#a82424>Black Mine</FONT> to obtain some <FONT color=#a82424>Small Spider Venom</FONT>? <FONT color=#7e12d2></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-b" image="GQ_prop.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-c" mid="102"><![CDATA[<html>Collect 5 Small Spider Venom</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR><FONT color=#7e12d2><FONT color=#2b2723>The venom extracted from the smallest spider, which is the size of its egg, is most suitable as a magic material.</FONT> </FONT><BR><FONT color=#7e12d2> Client: Lady Kayleen</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n409_guild_board-accepting-d" mid="11"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-accepting-d" image="GQ_prop.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$[Guild Request] The Strongest Poison$<BR>You accepted a Mission.<BR>Break the <FONT color=#2b2723>Black Mine's<FONT color=#a82424>Spider Eggs</FONT> and collect 5 <FONT color=#a82424>Small Spider Venom</FONT>.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-1" image="GQ_prop.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request] The Strongest Poison</FONT>.<BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2" image="GQ_prop_end.dds" itemindex="">
+      <talk_answer link_index="n409_guild_board-2-a" mid="22"><![CDATA[<html>[Completed]<FONT color=#086171>The Strongest Poison</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Adventurers who have completed the Mission, please stamp the Mission posting below to receive your reward.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n409_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n409_guild_board-2-b" image="GQ_prop_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>An Adventurer's Mission has been completed.<BR><BR><FONT color=#a82424>[Adventurer's Guild Commission Board]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3166, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">31660,,,,,</exe>
+         <exe type="huntitem" num="5" exe="5,6,7" onexe="">300231</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">3166</exe>
+         <exe type="recompense">31660,,,,,</exe>
+         <exe type="delquestitem" num="-1">300231</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n409_guild_board" sub="c">3</exelink>
+   <exelink qstep="accepting" npc="n409_guild_board" sub="d">0,1,4,2</exelink>
+   <exelink qstep="2" npc="n409_guild_board" sub="a">1</exelink>
+   <exelink qstep="2" npc="n409_guild_board" sub="b">0,2</exelink>
+   <journal_data recompense="31660" quest_title="[길드의뢰] 최고의 독" chapterid="" quest_level="24" quest_mark_type="19" use_item_list="300231">
+      <journal index="1">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>274,0,0</destination_pos>
+         <destination_mode>custom:271@1,272@4,272@4,273@4,274@4</destination_mode>
+         <statemark_npcid>409</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Collect 5 Small Spider Venom]]></title>
+         <contents mid="43"><![CDATA[<html>Go to Black Mine and break the Spider Eggs, collect <FONT color=#a82424>5 Small Spider Venom</FONT>.<BR><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Black Mine</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Collect] Black Mine]]></destination>
+         <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_guild_board.dds</contents_image>
+         <destination_pos>12,n409</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>409</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report Mission completion to the Adventurer's Guild Commission Board]]></title>
+         <contents mid="47"><![CDATA[<html>Report Mission Completion to the Adventurer's Guild Commission Board at Hermalte Port.<BR><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Adventurer's Guild Commission Board</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Report Mission completion to the Adventurer's Guild Commission Board]]></destination>
+         <todo_msg mid="49"><![CDATA[An Adventurer's Mission has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3163</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

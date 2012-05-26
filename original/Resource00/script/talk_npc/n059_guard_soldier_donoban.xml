@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n059_guard_soldier_donoban</npcename>
+      <npcid>59</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Guard Donovan]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="2"><![CDATA[<html>$Guard Donovan$<BR>Hello there. This is the renowned fortress that everyone calls Calderock Village.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

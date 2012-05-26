@@ -1,0 +1,163 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3273_n410_etomb_drop</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3273</qid>
+      <designer>김주연</designer>
+      <qlevel>32</qlevel>
+      <qdesc>도마뱀 꼬리 400168</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Guild Request] Find the Taste of Home]]></qkname>
+      <qnpc>
+         <npcid>410</npcid>
+         <npcename>n410_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>I have left for~ 10 years. <BR>
+It is understandable that I really miss home, isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-a" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-b" mid="70"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Because I miss the taste of home, thus I left a message on the Commission Board. <BR>Everyone can understand it right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-b" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-c" mid="72"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>
+To tell the truth, when I was young, I was good at nothing except eating. That explains why till now, I am still traveling around. After what I've said, I hope you will accept my request……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-c" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-d" mid="74"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>At my hometown, we grill Lizard Tails to eat. When you chew it, the fragrance that emerges is not something which anyone can comprehend. Yes, I think so too. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-d" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-e" mid="76"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>No matter who, please help me to gather some Lizard Tails, especially <FONT color=#a82424>Looter Blue-scaled Lizardman</FONT>'s tail. <BR><FONT color=#7e12d2> Client: 美食家米勒</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-accepting-f" mid="11"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-accepting-f" image="GQ_item.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$[Guild Request] Find the Taste of Home$<BR>Go to <FONT color=#a82424>Spirit Grave Tomb</FONT> to hunt <FONT color=#a82424>Looter Blue-scaled Lizardman</FONT>, and collect<FONT color=#2b2723> Lizard Tail</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-1" image="GQ_item.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request] Find the Taste of Home</FONT>. <BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2" image="GQ_prop_end.dds" itemindex="">
+      <talk_answer link_index="n410_guild_board-2-a" mid="22"><![CDATA[<html>[Completed] <FONT color=#086171>Find the Taste of Home</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Adventurers who have completed the Mission, please stamp the Mission posting below to receive your reward.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n410_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n410_guild_board-2-b" image="GQ_prop_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>An Adventurer's Mission has been completed.<BR><BR><FONT color=#a82424>[Adventurer's Guild Commission Board]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">400168</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3273, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">32730,,,,,</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">400168</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="6">1002</exe>
+         <exe type="conexe" true="7,8,9" false="10,11">0</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">400168</exe>
+         <exe type="conexe" true="7,8,9" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="13">201002</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1002);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">32730,,,,,</exe>
+         <exe type="complete">3273</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="e">3</exelink>
+   <exelink qstep="accepting" npc="n410_guild_board" sub="f">0,1,4,12,5,2</exelink>
+   <exelink qstep="2" npc="n410_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n410_guild_board" sub="b">1</exelink>
+   <journal_data recompense="32730" quest_title="[길드의뢰] 고향의 맛을 찾아서" chapterid="" quest_level="32" quest_mark_type="19" use_item_list="400168">
+      <journal index="1">
+         <contents_image>QW_37.dds</contents_image>
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@3,372@0,373@0,374@0</destination_mode>
+         <statemark_npcid>410</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Go to Spirit Grave Tomb and collect Lizard Tail]]></title>
+         <contents mid="43"><![CDATA[<html>Go to Spirit Grave Tomb and hunt Looter Blue-scaled Lizardman to collect Lizard Tail. <BR><BR><FONT color=#086171>Hermalte Port (Ruined Riverbanks) </FONT><FONT color=#a82424>→ Spirit Grave Tomb</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Collect] Spirit Grave Tomb]]></destination>
+         <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_guild_board.dds</contents_image>
+         <destination_pos>12,n410</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>410</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report Mission Completion to the Adventurer's Guild Commission Board at Hermalte Port]]></title>
+         <contents mid="47"><![CDATA[<html>Report Mission Completion to the Adventurer's Guild Commission Board near Ruined Riverbanks at Hermalte Port. <BR><BR><FONT color=#086171>Hermalte Port (Ruined Riverbanks) </FONT><FONT color=#a82424>→ Adventurer's Guild Commission Board</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Report Mission Completion to the Adventurer's Guild Commission Board at Hermalte Port]]></destination>
+         <todo_msg mid="49"><![CDATA[An Adventurer's Mission has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3271</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

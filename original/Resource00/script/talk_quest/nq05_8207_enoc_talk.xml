@@ -1,0 +1,96 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq05_8207_enoc_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8207</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Teramai]]></qkname>
+      <qnpc>
+         <npcid>46</npcid>
+         <npcename>n046_cleric_master_enoc</npcename>
+         <npckname>상급 클레릭 에녹</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-a" mid="6"><![CDATA[<html>What kind of rumor did you hear?</html>]]></talk_answer>
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-b" mid="7"><![CDATA[<html>Why don't you trust the rumor?</html>]]></talk_answer>
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-c" mid="8"><![CDATA[<html>What is the Pope Teramai doing now?</html>]]></talk_answer>
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-d" mid="9"><![CDATA[<html>Did you participate in the Dragon Raid? I wanna hear his story.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Enoch$<BR>Pope Teramai participated in Dragon Raid as one of the Legendary Six Heroes. He gathered the army for the Dragon Raid and he is respected because of his polite character. There are a lot of rumors about his non-existence but nothing is worth believing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Master Cleric Enoch$<BR>I don't want to mention any rumors because they are so ridiculous. So don't believe in any of those either. They will make you seem foolish.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Cleric Enoch$<BR>
+According to the Order's secret, he regularly sends his attendant. The attendant will arrive soon, I will ask him how to deal with this problem.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Cleric Enoch$<BR>
+He never mentions about what he's doing now but I believe he needs to handle an urgent matter. He is definitely prioritizing safety and faith for everyone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Cleric Enoch$<BR>He is very polite and easy-going. Once there was a big struggle between Clerics and Sorceresses but the Pope knelt down to Karacule and asked for a truce. I have no idea what Soceresses think of that. But most people feels he did this because of the greater good..</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 8207, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 46, 160 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 46, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 46, 80 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 46, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 46, 320 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="a">1,2,0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="b">3,0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="c">4,0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="d">5,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 테라마이에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>46:8800:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

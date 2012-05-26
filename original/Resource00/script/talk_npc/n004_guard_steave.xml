@@ -1,0 +1,123 @@
+   <talk>
+      <npcename>n004_guard_steave</npcename>
+      <npcid>4</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Vigilante Leader Steve]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest_001" mid="44"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Vigilante Leader Steve ${action:Talk}<BR>We take it upon ourselves to guard this town and protect our villagers. We may not have any extensive military training but nonetheless, we take our job seriously. This is where we grew up after all.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="54" link_target="mq01_001_lost_girl2.xml"><![CDATA[<html>[Lv.1] <FONT color=#a82424>The Mystery of the Missing Girl Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="mq01_002_scattered_evidence.xml"><![CDATA[<html>[Lv.2] <FONT color=#a82424>Scattered Clues</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="mq01_003_red_emblem1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a82424>The Red Seal Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="mq01_004_red_emblem1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a82424>The Red Seal Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="49" link_target="mq01_006_escape_of_the_catacomb.xml"><![CDATA[<html>[Lv.5] <FONT color=#a82424>The Catacombs Escape</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="50" link_target="mq01_007_whereabouts_girl1.xml"><![CDATA[<html>[Lv.5] <FONT color=#a82424>Seeking The Girl Part 1</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="mq01_008_whereabouts_girl2.xml"><![CDATA[<html>[Lv.5] <FONT color=#a82424>Seeking The Girl Part 2 </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="mq01_009_please_save_my_girl.xml"><![CDATA[<html>[Lv.8] <FONT color=#a82424>Call Of Duty</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="mq01_010_girl_of_destiny.xml"><![CDATA[<html>[Lv.9] <FONT color=#a82424>Girl of Destiny </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="mq01_012_lost_girl1.xml"><![CDATA[<html>[Lv.1] <FONT color=#a82424>The Mystery of the Missing Girl Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="122" link_target="mq01_013_lost_girl2.xml"><![CDATA[<html>[Lv.1] <FONT color=#a82424>The Mystery of the Missing Girl Part 2</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="128" link_target="mq01_014_scattered_evidence.xml"><![CDATA[<html>[Lv.2] <FONT color=#a82424>Scattered Clues</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="129" link_target="mq01_015_red_emblem1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a82424>The Red Seal Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="130" link_target="mq01_016_red_emblem1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a82424>The Red Seal Part 1 </FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="131" link_target="mq01_018_escape_of_the_catacomb.xml"><![CDATA[<html>[Lv.5] <FONT color=#a82424>The Catacombs Escape</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="132" link_target="mq01_019_whereabouts_girl.xml"><![CDATA[<html>[Lv.5] <FONT color=#a82424>Seeking The Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="133" link_target="mq01_020_please_save_my_girl.xml"><![CDATA[<html>[Lv.8] <FONT color=#a82424>Call of Duty</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="134" link_target="mq01_021_girl_of_destiny.xml"><![CDATA[<html>[Lv.9] <FONT color=#a82424>Girl of Destiny</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="135" link_target="nq28_6201_matchmaking.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Matchmaking</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="127"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Vigilante Leader Steve ${action:Talk}<BR></html>We are grateful for your kind help around Prairie Town.]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest_90" mid="86"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="99"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="87"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="59"><![CDATA[<html>$Vigilante Leader Steve ${action:Talk}<BR>I'm usually wary around strangers but I feel so at ease with you, for some reason. <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest_60" mid="88"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="100"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="89"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="62"><![CDATA[<html>$Vigilante Leader Steve ${action:Talk}<BR>You have done so much for the people of Prairie Town <FONT color=#387206>{user_nick}</FONT>. I thank you on their behalf.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest_30" mid="90"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="101"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="91"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="65"><![CDATA[<html>$Vigilante Leader Steve ${action:Talk}<BR>If I'd met you in a less chaotic time,  I believe we could be great buddies.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest_0" mid="92"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="102"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="93"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="68"><![CDATA[<html>$Vigilante Leader Steve ${action:Talk}<BR>We take it upon ourselves to guard this town and protect our villagers. We may not have any extensive military training but nonetheless, we take our job seriously. This is where we grew up after all.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="94"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="95"><![CDATA[<html>[Don't give gift.]</html>]]></talk_answer>
+         <talk_question mid="71"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="96"><![CDATA[<html>(Previous)</html>]]></talk_answer>
+         <talk_question mid="74"><![CDATA[<html>$Vigilante Leader Steve $<BR>Why… this is such a heartwarming gift.<BR>Thank you so much.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="137" link_target="sq_967_xmas_steave.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="nq28_6202_steave_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Prairie Town</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="105" link_target="nq28_6203_steave_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="106" link_target="nq28_6204_steave_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Hobbies</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="107" link_target="nq28_6205_steave_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Steve's Ideal Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="108" link_target="nq28_6206_steave_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Future</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="123" link_target="nq28_6212_steave_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Steve's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="124" link_target="nq28_6213_steave_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Steve's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="125"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="103"><![CDATA[<html>$Vigilante Leader Steve $<BR>To be honest, I want to take a break from fighting. But looking at the situation with Rose, I realise we must continue our cause so...<BR>the people around me will not suffer anymore.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 4 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 4 );</exe>
+         <exe type="talk">gift</exe>
+         <exe type="conexe" true="15" false="14">4</exe>
+         <exe type="conexe" true="15" false="16">5</exe>
+         <exe type="talk">quest</exe>
+         <exe type="enterquest">mq01_001_lost_girl1</exe>
+         <exe type="conexe" true="13" false="18">6</exe>
+         <exe type="conexe" true="13" false="15">7</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 6201) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 4 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 4 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 4 ) >= 30</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 24) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 1) == 1</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+      </conditions>
+      <exelink idx="quest_001">17</exelink>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="quest_90">17</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="quest_60">17</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="quest_30">17</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="quest_0">17</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+      <exelink idx="back_talk">1</exelink>
+   </talk>

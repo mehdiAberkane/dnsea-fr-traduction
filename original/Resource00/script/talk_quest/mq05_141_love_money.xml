@@ -1,0 +1,372 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_141_love_money</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>141</qid>
+      <designer>김인정</designer>
+      <qlevel>5</qlevel>
+      <qdesc>오브의 안전을 위해 회랑으로 갔다는 제이크의 소식을 듣고, 길이 엇갈린 소서리스는 오브의 안전을 전하기 위해 회랑으로 향한다. 소식을 전하고 마을로 온 소서리스에게 타라는 오브가 사라졌다는 소식을 전한다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>142</nextqid>
+      <nextqname>mq05_142_snatch_orb</nextqname>
+      <nextqnpc>n012_sorceress_master_cynthia</nextqnpc>
+      <qkname mid="1"><![CDATA[Richie Rich]]></qkname>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>14</npcid>
+         <npcename>n014_cleric_cedric</npcename>
+         <npckname>클레릭 세드릭   (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라   (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>314</npcid>
+         <npcename>n314_cleric_jake</npcename>
+         <npckname>클레릭 제이크</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Master Sorceress Cynthia$<BR> The mana flow seems something odd these days...<BR><FONT color=#7e12d2>(You can obtain the quest from Sorceress Tara.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-noquest" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Cleric Cedric$<BR>Is the Vision Orb really safe? Where? <BR>Are you sure it's in a safe place?<BR><FONT color=#7e12d2>(You can obtain the quest from Sorceress Tara.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n314_cleric_jake-noquest" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Cleric Jake$<BR>I'm trying to gather our men so that we can find the <FONT color=#a82424>Vision Orb</FONT>.<BR><FONT color=#7e12d2>(You can obtain the quest from Sorceress Tara.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-a" mid="82"><![CDATA[<html>Are you talking about Cleric Cedric?</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Sorceress Tara$<BR>Oh, I almost forgot.. A Cleric was looking for you... <BR>his name...? Ced... Ced... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-a" image="QN_Npc_Cl_Fallen_Cedric.dds" itemindex="">
+      <talk_question mid="83"><![CDATA[<html>$Sorceress Tara$<BR>Oh, yes, that's it. <FONT color=#a82424>Cleric Cedric</FONT>. Hee hee, that <FONT color=#2b2723>Cleric with the bowl-cut</FONT> was looking all over for you. Since I'm not allowed to talk to outsiders, I told him that i would let you know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-a" mid="6"><![CDATA[<html>What kind of favor?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Cleric Cedric$<BR>I'm sorry, wait a min. I have a favor to ask you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-a" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-b" mid="8"><![CDATA[<html> Jake? </html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Cleric Cedric$<BR>It's about <FONT color=#a82424>Jake</FONT>... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-b" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Cleric Cedric$<BR>Yes. Jake just returned, he didn't know that the Orb has been found and gathers our brothers to aid the search. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-c" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-d" mid="72"><![CDATA[<html>(Yawn... Feeling a bit lazy here...)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Cleric Cedric$<BR>Could you please find him and let him know that the Orb has been found already?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-d" image="" itemindex="">
+      <talk_answer link_index="n014_cleric_cedric-1-e" mid="12"><![CDATA[<html>I accept!</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Cleric Cedric$<BR>As you know, I don't have much. But if you help Cleric Jake, you will receive a <FONT color=#a82424>generous reward</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-1-e" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Cleric Cedric$<BR>Thanks, I'm counting on you.<BR>He probably hasn't left <FONT color=#a82424>Blizzard Plain</FONT> yet. Please hurry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-1" image="" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$ Sorceress Tara${action:Talk}<BR>Seems a little cold weather on cold days like this. Hee hee.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Master Sorceress Cynthia$<BR>The flow of man is something odd about, these days. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n314_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="86"><![CDATA[<html>$Cleric Jake$<BR>I'm trying to gather our men to find the <FONT color=#a82424>Vision Orb</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n014_cleric_cedric-2" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Cleric Cedric$<BR>Cleric Jake said, he will gather our brothers and depart from <FONT color=#a82424>Blizzard Plain</FONT> soon. Please, deliver my message quickly.<BR>Catch him before he leaves.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n314_cleric_jake-2" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n314_cleric_jake-2-a" mid="16"><![CDATA[<html>I already found the Orb!</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Cleric Jake$<BR>I'm getting our men together so that we can help find the <FONT color=#a82424>Vision Orb</FONT>.<BR>Please give me a minute. I need to organize everyone so we can head to the Silent Monastery...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n314_cleric_jake-2-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n314_cleric_jake-2-b" mid="18"><![CDATA[<html>Yes, for sure.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Cleric Jake$<BR>I see. That... is a relief.<BR>Is the Orb in a safe place?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n314_cleric_jake-2-b" image="" itemindex="">
+      <talk_answer link_index="n314_cleric_jake-3" mid="87"><![CDATA[<html>Yes... You do that!</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Cleric Jake$<BR>Oh, that's good. <BR>Well.. then, I'll go back and inform the others.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3-a" mid="25"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Sorceress Tara${action:Talk}<BR>Where have you been?<BR>I've been looking all over for you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n015_sorceress_tara-3-b" mid="29"><![CDATA[<html>What?! But Cynthia said she was going to keep it safe!</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Sorceress Tara$<BR>The Orb is missing.. Again! Our <FONT color=#a82424>Vision Orb</FONT>... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-b" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n015_sorceress_tara-3-c" mid="31"><![CDATA[<html>No, I'm really not! Okay?!</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-3-c" mid="88"><![CDATA[<html>Hey...</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Sorceress Tara$<BR>Strange is.. The secret that Cynthia was hiding the <FONT color=#a82424>Vision Orb</FONT>. How did the culprit know that? You... aren't, or are you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-c" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-3-d" mid="33"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Sorceress Tara$<BR>I'm glad, I didn't really thought you could have done it. No matter how desperate you are for money...<BR>seems like everyone is on the edge right now… you should go see <FONT color=#a82424>Master Sorceress Cynthia</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-3-d" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Sorceress Tara$<BR>Be careful, i think <FONT color=#a82424>Master Sorceress Cynthia</FONT> is really upset right now!<BR>She's suspicious of you, thinking if you could have sold it off in order to pay off your gambling debt!<BR><FONT color=#7e12d2>(She talks in a whisper.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n314_cleric_jake-3" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="89"><![CDATA[<html>$Cleric Jake$<BR><FONT color=#387206>{user_nick}</FONT>, thank you so much. So kind of you to deliver the news over.<BR>No wonder the <FONT color=#a82424>Blue-Haired Sorceress</FONT> in Mana Ridge is always worried about you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-4" image="QN_SoceressCynthia.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Sorceress Tara$<BR><FONT color=#a82424>Master Sorceress Cynthia</FONT> is extremely upset, be careful!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="39"><![CDATA[<html>Not me, I didn't do it!</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR><FONT color=#382000><FONT color=#387206>{user_nick}</FONT>!</FONT> YOU!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-b" mid="41"><![CDATA[<html>I told you, It wasn't me.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Enough of your lies! How could you even think of stealing the Orb? It's valuable, but still! How?! I want it back right this second!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-c" mid="43"><![CDATA[<html>(What the...)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Sorceress Cynthia$<BR>It...really wasn't you?<BR><FONT color=#7e12d2>(She glares at you in puzzel.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-d" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Sorceress Cynthia$<BR>No...I suppose not.<BR>I wonder.. even you aren't silly enough to <FONT color=#a82424>risk my wrath</FONT>... right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-e" mid="76"><![CDATA[<html>I...may...have given Cleric Cedric...the impression...</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Master Sorceress Cynthia$<BR>But how would anyone known that the Orb was with me?<BR>Unless...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-f" mid="47"><![CDATA[<html>That's just great...</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Master Sorceress Cynthia$<BR>I knew it! You absolutely can't do anything right, can you? <BR>*Sigh* But now is not the time for that. I'll just punish you later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-!next" mid="78"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">141</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">141</exe>
+         <exe type="recompense">1410,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="a">0</exelink>
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="b" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="c" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="d" />
+   <exelink qstep="1" npc="n014_cleric_cedric" sub="e">0,1</exelink>
+   <exelink qstep="2" npc="n314_cleric_jake" sub="b" />
+   <exelink qstep="2" npc="n314_cleric_jake" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="b" />
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="c" />
+   <exelink qstep="3" npc="n015_sorceress_tara" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="f">1</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="!next">0</exelink>
+   <journal_data recompense="1410" quest_title="부자가 좋아" chapterid="1" quest_level="5" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Cl_Fallen_Cedric.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,n14</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>14</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Talk to Cleric Cedric]]></title>
+         <contents mid="50"><![CDATA[<html>Cleric Cedric is looking for you. Leave town and meet him on Frost Hill.<BR><BR><FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→ Cleric Cedric</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk to Cleric Cedric]]></destination>
+         <todo_msg mid="52"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>7,n314</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>314</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string>고요한 수도원 회랑
+n206_cleric_jake : 제이크 등장 </trigger_string>
+         <maptool_index />
+         <title mid="53"><![CDATA[Inform Cleric Cedric]]></title>
+         <contents mid="54"><![CDATA[<html>Tell Cleric Jake at Blizzard Plain that the Orb has already been found.<BR><BR><FONT color=#086171>Blizzard Plain</FONT> <FONT color=#a82424>→ Cleric Jake</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Deliver the news to Cleric Cedric at Blizzard Plain]]></destination>
+         <todo_msg mid="56"><![CDATA[Meet Cleric Cedric at Blizzard Plain]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_SoceressTara.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n15</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>15</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Talk to Sorceress Tara]]></title>
+         <contents mid="58"><![CDATA[<html>Cleric Jake promises alot of money! Tell Sorceress Tara the good news.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Sorceress Tara</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Return to Mana Ridge and inform Sorceress Tara the good news.]]></destination>
+         <todo_msg mid="60"><![CDATA[Talk to Sorceress Tara]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Talk to Master Sorceress Cynthia]]></title>
+         <contents mid="62"><![CDATA[<html>You are being accused of stealing the Vision Orb. Talk toMaster Sorceress Cynthia and convince her how wrong and unfair she is!<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="64"><![CDATA[Go to Cynthia and tell her how wrong and unfair she is.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>140</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

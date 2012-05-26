@@ -1,0 +1,140 @@
+﻿   <talk>
+      <npcename>n100_event_ilyn</npcename>
+      <npcid>100</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Events Planner Irine]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="75"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="130"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="20"><![CDATA[<html>$Events Planner Irine${action:Talk}<BR>Hi, <FONT color=#382000><FONT color=#387206>{user_class} {user_nick}</FONT> </FONT>!<BR>I'm Irine, the Events Planner.<BR>If you have any questions about events, just let me know!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="194"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="195"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="196"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="131"><![CDATA[<html>$Events Planner Irine${action:Talk}<BR><FONT color=#387206>{user_nick}</FONT>, please take care of yourself in your journey. <BR>It will pain me to see you get hurt, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="197"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="198"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="199"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="132"><![CDATA[<html>$Events Planner Irine${action:Talk}<BR>Hi, <FONT color=#387206>{user_nick}</FONT>. You look great as always. Feel free to ask me anything about events.<BR>We have an event lined up. We hope you will like it, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="200"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="201"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="202"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="133"><![CDATA[<html>$Events Planner Irine${action:Talk}<BR>How nice of you to drop by today.<BR>I hope you like the events I've prepared, <FONT color=#387206>{user_nick}</FONT>. Would you like to see the current events?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="203"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="204"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="205"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="134"><![CDATA[<html>$Events Planner Irine${action:Talk}<BR>Hi, <FONT color=#382000><FONT color=#387206>{user_class} {user_nick}</FONT> </FONT>!<BR>I'm Irine, the Events Planner.<BR>If you have any questions about events, just let me know!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="206"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="207"><![CDATA[<html>[Don't Give Gift.]</html>]]></talk_answer>
+         <talk_question mid="162"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="208"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="177"><![CDATA[<html>$Events Planner Irine$<BR>Are you saying… it's for me? <BR>Irine is so touched!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="343" link_target="sq_995_skill_reset.xml"><![CDATA[<html>[Event] <FONT color=#086171>Skill Reset Event</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="124" link_target="nq25_5001_lets_be_a_friend.xml"><![CDATA[<html>[Lv.1] <FONT color=#086171>Getting to Know You</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="127" link_target="sq08_254_sparta.xml"><![CDATA[<html>[Lv.10] <FONT color=#086171>Sparta Goblin</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="283" link_target="sq08_361_entry_finish.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Completed Entries</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="284" link_target="sq08_362_unexpected_result.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Unexpected</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="285" link_target="sq08_363_way_of_fashionreader.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Living the Fashionista's Life</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="68" link_target="sq08_364_untiring_girl.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Tireless Girls</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="304" link_target="sq08_340_change_job1.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gifts </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="69" link_target="sq08_341_change_job2.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gifts</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="70" link_target="sq08_342_change_job3.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gifts</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="71" link_target="sq08_343_change_job4.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gifts</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="358" link_target="sq08_379_change_job5.xml"><![CDATA[<html>[Lv15] <FONT color=#086171>Irine's previous gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="314" link_target="nq25_5094_abandoned_infant1.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Drifting Children?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="315" link_target="nq25_5095_abandoned_infant2.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Drifting Children ? </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="316" link_target="nq25_5096_salvation_children.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Support for the Children</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="317" link_target="nq25_5097_left_in_the_basket.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Children Left Behind</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="318" link_target="nq25_5098_the_family.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>The Children's Families</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="213" link_target="nq32_8601_my_name.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>My Name</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="319" link_target="nq25_5099_bad_dreaming.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Nightmare of Kids</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="324"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="34"><![CDATA[<html>$Events Planner Irine$<BR>Hi, <FONT color=#382000><FONT color=#387206>{user_class} {user_nick}</FONT> </FONT>!<BR>I'm Irine, the Events Planner.<BR>If you have any questions about events, just let me know!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="event" mid="136"><![CDATA[<html>[Talk] About Events</html>]]></talk_answer>
+         <talk_answer link_index="helper" mid="137"><![CDATA[<html>[Talk] Events Planner Irine </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="336" link_target="sq_959_xmas_ilyn.xml"><![CDATA[<html> [Talk] <FONT color=#086171> Merry Christmas </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="216" link_target="nq25_5002_ilyn_talk.xml"><![CDATA[<html>[Talk] Favorite Weather</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="217" link_target="nq25_5003_ilyn_talk.xml"><![CDATA[<html>[Talk] Favorite Place</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="218" link_target="nq25_5004_ilyn_talk.xml"><![CDATA[<html>[Talk] Favorite Color</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="219" link_target="nq25_5005_ilyn_talk.xml"><![CDATA[<html>[Talk] Hobbies</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="220" link_target="nq25_5006_ilyn_talk.xml"><![CDATA[<html>[Talk]  Work</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="221" link_target="nq25_5007_ilyn_talk.xml"><![CDATA[<html>[Talk] Interests</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="222" link_target="nq25_5008_ilyn_talk.xml"><![CDATA[<html>[Talk] About {user_nick}</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="223" link_target="nq25_5009_ilyn_talk.xml"><![CDATA[<html>[Talk] Recent Worries</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="224" link_target="nq25_5010_ilyn_talk.xml"><![CDATA[<html>[Talk] Favorite Person</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="225" link_target="nq25_5011_ilyn_talk.xml"><![CDATA[<html>[Talk] Plans for the Future</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="295" link_target="nq25_5012_ilyn_30_reward.xml"><![CDATA[<html>[Talk] Irine's Gift I</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="296" link_target="nq25_5013_ilyn_60_reward.xml"><![CDATA[<html>[Talk] Irine's Gift II</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="333" link_target="nq25_5014_ilyn_90_reward.xml"><![CDATA[<html>[Talk] Unexpected Gift</html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="334"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="135"><![CDATA[<html>$Events Planner Irine$<BR>Do you have any questions for me?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="event" image="QM_black_Dragon.dds" itemindex="">
+         <talk_answer link_index="event_1" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="24"><![CDATA[<html>$Events Planner Irine$<BR>Long ago, the <FONT color=#a82424>Black Dragon Karas</FONT> devastated the whole of Lagendia. Cities and towns were destroyed and countless lives were lost. It was a sad period indeed.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="event_1" image="QN_six_heroes_silhouette.dds" itemindex="">
+         <talk_answer link_index="event_2" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="28"><![CDATA[<html>$Events Planner Irine$<BR>Lagendia only found peace when the <FONT color=#a82424>Six Legendary Heroes</FONT> raided and killed the Black Dragon. Years have passed since then but the fear is not easily erased in the people's minds.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="event_2" image="" itemindex="">
+         <talk_answer link_index="back_event_2" mid="61"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="60"><![CDATA[<html>$Events Planner Irine$<BR>The Royal Family tried to boost the people's morale by planning and organising events for them.<BR>Now, 50 years later, it has become a tradition.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="helper" image="" itemindex="">
+         <talk_answer link_index="helper_1" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="30"><![CDATA[<html>$Events Planner Irine$<BR>I was sent from the Royal Castle of Saint Haven to plan events which celebrate the traditions of Lagendia. The Black Dragon reign nearly destroyed the traditions and culture of this world!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="helper_1" image="" itemindex="">
+         <talk_answer link_index="back_helper_1" mid="33"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="32"><![CDATA[<html>$Irine$<BR>Visit me often, and I can share with you the events I have lined up!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 100 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 100 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 5001) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 100 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 100 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 100 ) >= 30</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 923) == 1</chk>
+      </conditions>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="back_talk">1</exelink>
+      <exelink idx="back_event_2">1</exelink>
+      <exelink idx="back_helper_1">1</exelink>
+   </talk>

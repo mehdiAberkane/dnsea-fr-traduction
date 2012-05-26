@@ -1,0 +1,65 @@
+   <talk>
+      <npcename>n707_sidel</npcename>
+      <npcid>707</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Cidel]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Cidel$<BR>Magic is really amazing.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="8" link_target="mq15_703_wild_cat_girl.xml"><![CDATA[<html>[Lv.40] <FONT color=#a94407>Wildcat Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="mq15_704_missing_natives.xml"><![CDATA[<html>[Lv.40] <FONT color=#a94407>The Disappearing Aborigines</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="mq15_706_elders_amulet.xml"><![CDATA[<html>[Lv.42] <FONT color=#a94407>Chief's Charm Necklace</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="12" link_target="mq15_707_unkind_reunion.xml"><![CDATA[<html>[Lv.42] <FONT color=#a94407>Hostile Reunion</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="mq15_708_uncertain_information.xml"><![CDATA[<html>[Lv.42] <FONT color=#a94407>The Suspicious Spy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="17" link_target="mq15_709_rescue_natives.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>Save the Aborigines</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="mq15_710_most_important_thing.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>The Most Precious Thing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="mq15_711_disease.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>Green Disease</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="mq15_712_karahan_recipe.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>Karahan's Recipe</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="mq15_713_across_mind.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>Complex Feelings</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="mq15_715_hidden_legacy.xml"><![CDATA[<html>[Lv.44] <FONT color=#a94407>Hidden Heritage</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="mq15_717_for_my_friend.xml"><![CDATA[<html>[Lv.46] <FONT color=#a94407>For Friends</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="mq15_719_dark_past.xml"><![CDATA[<html>[Lv.46] <FONT color=#a94407>The Past of Darkness</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="mq15_721_native_medicine.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>The Aborigines' Medicine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="mq15_723_succession.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>Inheritance</font></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="mq15_726_boy_and_girl.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>Met a girl and a boy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="mq15_727_mystery_man.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>Met a strange man</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="mq15_730_rescue_natives.xml"><![CDATA[<html>[Lv42] <FONT color=#a94407>Rescue natives</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="81" link_target="mq15_734_lost.xml"><![CDATA[<html>[Lv44] <FONT color=#a94407>Can't access</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="93" link_target="mq15_738_tears.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>Drop tears</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="96" link_target="mq15_740_past_story.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>Story of the Past</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="mq15_742_genius.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Genius</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="mq15_744_record_end.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Stop The Record</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="9"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Cidel$<BR>It is extremely worrying to see our teacher's health deteriorating day by day. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest2" mid="64"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="46"><![CDATA[<html>$Cidel$<BR>Acceding to our teacher's dying wish, we should become Sorcerers that do not put FairyStar's name to shame. <BR>Time will tell, my teacher...<BR>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest2" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="65" link_target="mq15_9200_lament_for_farewell1.xml"><![CDATA[<html>[Lv50] <FONT color=#a94407>The elegy for her I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="74" link_target="mq15_9201_lament_for_farewell2.xml"><![CDATA[<html>[Lv50] <FONT color=#a94407>The elegy for her II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="75" link_target="mq15_9202_lament_for_farewell3.xml"><![CDATA[<html>[Lv50] <FONT color=#a94407>The elegy for her III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="76" link_target="mq15_9203_lament_for_farewell4.xml"><![CDATA[<html>[Lv50] <FONT color=#a94407>The elegy for her Ⅳ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="77" link_target="sq15_879_his_trace.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>His trace</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="88" link_target="sq15_880_the_defeat.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>Painful defeat</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="sq15_881_gain_power.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>The power what he got</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="sq15_853_beyond_the_abyss.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>the place of bottomliss pit</FONT></html>]]></talk_answer>
+         <talk_answer link_index="002" mid="91"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="61"><![CDATA[<html>$Cidel$<BR>
+I always get help from you. Thank you.<BR>
+And… Sorry.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="2" false="0">1</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 723) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 744) == 1</chk>
+      </conditions>
+   </talk>

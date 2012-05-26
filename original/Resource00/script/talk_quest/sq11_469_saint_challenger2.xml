@@ -1,0 +1,355 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_469_saint_challenger2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>469</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Reborn Orc Krema]]></qkname>
+      <qnpc>
+         <npcid>243</npcid>
+         <npcename>n243_orc_oneeye</npcename>
+         <npckname>김오크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>98</npcid>
+         <npcename>n098_warrior_master_lodrigo</npcename>
+         <npckname>상급 워리어 로드리고</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Orc Krema$<BR>Where am I? Who am I?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-a" mid="7"><![CDATA[<html>A letter? Not a challenge?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Warrior Rodrigo$<BR>While you were away <FONT color=#a82424>The second letter</FONT> from Orc Kream have arrived. I don't know why he keeps sending it to me!!! It's really annoying.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-b" mid="9"><![CDATA[<html>(Read the letter)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Warrior Rodrigo$<BR>You can read the detail.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-b" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Orc Krema's letter$<BR><FONT color=#387206>Hi. {user_nick}. Weather here is so beautiful just like a dancer dancing on the beach. But Dark Mountain is nearby so the smell of sulphur is pretty strong.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-c" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html><FONT color=#382000>$Orc Krena's Letter$<BR></FONT><FONT color=#387206>I thought very carefully after seeing you. I think we were very close friends before I lost my memory. I forgot everything but still remember your name. Your name is the only thing I remember.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html><FONT color=#382000>$Orc Krema's Letter$<BR></FONT><FONT color=#387206>So I want to ask you a favor since we are good friends. </FONT><BR><FONT color=#387206>You are going to do me a favor right?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-f" mid="17"><![CDATA[<html>(Give back the letter)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html><FONT color=#382000>$Orc Krrema's Letter$<BR></FONT><FONT color=#387206>Let's talk about the detail at <FONT color=#a82424>Dark Mountain</FONT></FONT><FONT color=#387206>in person. It's  rude to talk about it by letter. <BR><BR>▶ Regards, Your dear friend Orc Krema from Dark Mountain</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-g" mid="19"><![CDATA[<html>He is misunderstanding.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Warrior Rodrigo$<BR>What… Were you friend with Orc Krema?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-h" mid="21"><![CDATA[<html>Well I'm not sure whether call that amazing...</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Warrior Rodrigo$<BR>But Orc Krema is pretty amazing. He still remembers the name of his rival after losing his memory.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Reborn Orc Krema$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-1-a" mid="26"><![CDATA[<html>Isn't it 'Friends and wines get better as they are older' ?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Master Warrior Rodrigo$<BR><FONT color=#a82424>Friends and wines are better as they are expensive.</FONT> <BR>Care for your friends.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1-a" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Huh, go to <FONT color=#a82424>Dark Mountain</FONT> where your friend, Orc Krema is waiting.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-1" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Orc Krema$<BR>I want to knit!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Orc Krema is waiting for you at <FONT color=#a82424>Dark Mountain</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-a" mid="31"><![CDATA[<html>You told me to come!</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Orc Krema$<BR>Oh, my friend <FONT color=#382000>{user_nick}!<BR></FONT>I'm so glad I met you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-a" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-b" mid="33"><![CDATA[<html>That's because you always challenge me whenever you see me.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Orc Krema$<BR>I'm sure we were <FONT color=#a82424>Best Friends</FONT>. My heart is pounding and my muscles are twitching since you came.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-b" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-c" mid="35"><![CDATA[<html>… Yeah. Whatever.. </html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Orc Krema$<BR>Challenge?! I never could have done a such a thing like that. We can talk but why use our fists? <BR>I don't understand this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-c" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-d" mid="37"><![CDATA[<html>What favor?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Orc Krema$<BR>I wrote you a letter because I have a favor to ask.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-d" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-e" mid="39"><![CDATA[<html>Something special?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Orc Kim$<BR>I started to get my memories back but it's little vague… I'm not sure but I think I have left <FONT color=#a82424>something special</FONT> at Fortress of Dark Overlord Army.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-e" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-f" mid="41"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Orc Kream$<BR>I don't know what it is but I think it means a lot. Without that I don't think I will get my memories back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-f" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-g" mid="43"><![CDATA[<html>No! Also I'm not even your friend!</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Orc Krema$<BR>You are going to help me because you are my friend right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-g" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-h" mid="45"><![CDATA[<html>… Well, should I do you a favor?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Orc Krema$<BR>Oh… If you did me a favor I was going to give you <FONT color=#a82424>the treasure of Orc Krema</FONT>…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-h" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-2-i" mid="47"><![CDATA[<html>I hope so. (It's too cheesy right now.)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Orc Krema$<BR>Yes. You are my best friend. I'm sure I'll get my memories back when I get the missing item back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-2-i" image="QW_43.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Orc Krema$<BR>My lost item should be at far inside of <FONT color=#a82424>Fortress of Dark Overlord Army</FONT>. Be careful, it's a dangerous place!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-3" image="QW_43.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Orc Krema$<BR><FONT color=#a82424>Fortress of Dark Overlord Army</FONT>! I'm so glad that you are going to that dangerous place. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-a" mid="52"><![CDATA[<html>Is that what you were looking for?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Orc Krema$<BR>Oh! You came back safely.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-a" image="QS_Default.dds" itemindex="300092">
+      <talk_answer link_index="n243_orc_oneeye-4-b" mid="54"><![CDATA[<html>(Give him his weapon)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Orc Krema$<BR>That….That's a weapon? <BR>This was my special item…….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-b" image="QS_Default.dds" itemindex="300092">
+      <talk_answer link_index="n243_orc_oneeye-4-c" mid="56"><![CDATA[<html>So? Are you getting your memories back?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Orc Krema$<BR>Ah.. This touch, color….<BR>And this taste! <BR>This must be my weapon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-c" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-d" mid="58"><![CDATA[<html>… Are you ok?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Orc Krema$<BR>Come on, I don't get my memories back just like this. It's not a cartoon.… <FONT color=#7e12d2>(Orc Krema covers his head as if he is in lots of pain)</FONT> <BR>Arghhhhhhhh!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-d" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-e" mid="60"><![CDATA[<html>….Hey?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Orc Krema$<BR>… …</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-e" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-f" mid="62"><![CDATA[<html>What? Do you have your memories back?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Orc Krema$<BR>Hahaha, how dare you to touch me with a hand of human. Do you want to visit hell today?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-f" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-g" mid="64"><![CDATA[<html>Liar…. You've lost your memories.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Orc Krema$<BR>Hut. I never lose my memory. <BR>I just….. Yes… just had a nap standing up!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-g" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-h" mid="66"><![CDATA[<html>Anyway why did the weapon got dropped there?</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Orc Krema$<BR>I would chop your head off, but I'll forgive you this time, finding my father's weapon back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-h" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-i" mid="68"><![CDATA[<html>Oh I get the idea.</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Orc Krema$<BR>… I went to challenge Dark Overload but I got knocked out by his minions on the way… That didn't happen!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-i" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-j" mid="71"><![CDATA[<html>I'm busy just give me the treasure.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Orc Krema$<BR>Haha…If I took this much of damage… those monsters would be...<FONT color=#7e12d2>(Living very happily ever after)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-j" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-k" mid="73"><![CDATA[<html>If I did you a favor you would give me the treasure of Orc family.</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Orc Krema$<BR>Treasure? What are you talking about? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-k" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-l" mid="75"><![CDATA[<html>Hey, I don't mean that.</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Orc Krema$<BR>Hahaha, you were also after our family treasure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-l" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-m" mid="77"><![CDATA[<html>You said you'd give it to me!</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Orc Krema$<BR>Oh you are a man of small character. <BR>Do you want our family treasure that bad?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-m" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-n" mid="79"><![CDATA[<html>Forget it. Don't worry about it.</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Orc Krema$<BR>Well, in that case, wait! I keep my words.<BR><BR><FONT color=#7e12d2>(Orc Krema searches his underwear)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-n" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-o" mid="81"><![CDATA[<html>I don't want it!</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Orc Krema$<BR>Oh, I almost had it….Our family treasure, <FONT color=#a82424>100 years old pea.</FONT> It never goes away no matter how long you chew it for. So I had it somewhere in my <FONT color=#a82424>underwear</FONT>…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-o" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-p" mid="83"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[$Orc Krena$<BR>Too bad, if you don't like it. Take this instead of the treasure.<BR><BR><FONT color=#7e12d2>(Orc Krema searches his pocket)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-p" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-q" mid="85"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-q" image="" itemindex="">
+      <talk_answer link_index="n243_orc_oneeye-4-r" mid="87"><![CDATA[<html>Hey Are you going to challenge me again?</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Orc Krema$<BR>Since we solved our grudge, now it's time to see who the winner is!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n243_orc_oneeye-4-r" image="QN_NPC_Warrior_Lodrigo.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Orc Krema$<BR>Since we solved our grudge, now it's time to see who the winner is!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4691,4692,4693,4694,4695</exe>
+         <exe type="setquest">469</exe>
+         <exe type="talk" npc="n098_warrior_master_lodrigo">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5,6">1131</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300092</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201131</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1131);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">469</exe>
+         <exe type="recompense">,4691,4692,4693,4694,4695</exe>
+         <exe type="delquestitem" num="1">300092</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="h">0</exelink>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n098_warrior_master_lodrigo" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="b" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="c" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="d" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="e" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="f" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="g" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="h" />
+   <exelink qstep="2" npc="n243_orc_oneeye" sub="i">0,2,7,1</exelink>
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="b">2</exelink>
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="c" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="d" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="e" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="f" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="g" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="h" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="i" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="j" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="k" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="l" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="m" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="n" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="o" />
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="p">1</exelink>
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="q">0</exelink>
+   <exelink qstep="4" npc="n243_orc_oneeye" sub="r" />
+   <journal_data recompense="1:4691,2:4692,3:4693,4:4694,5:4695" quest_title="부활한 김오크" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="300092">
+      <journal index="1">
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode />
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Conversation with Master Warrior Rodrigo]]></title>
+         <contents mid="91"><![CDATA[<html>Orc Krema sent a letter. Ask Rodrigo about the letter.<BR> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Warrior Rodrigo</FONT><BR> </html>]]></contents>
+         <destination mid="92"><![CDATA[Conversation with Master Warrior Rodrigo]]></destination>
+         <todo_msg mid="93"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_Orc_Oneeye.dds</contents_image>
+         <destination_pos>13,n243</destination_pos>
+         <destination_mode />
+         <statemark_npcid>243</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[Talk to Orc Kim]]></title>
+         <contents mid="96"><![CDATA[<html>According to the letter, Orc Kim will be waiting at the Black Mountain. Let's go and meet him.<BR><BR><FONT color=#086171>Black Mountain</FONT> <FONT color=#a82424>→ Orc Kim</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[Talk to Orc Kim]]></destination>
+         <todo_msg mid="98"><![CDATA[Go to Black Mountain and talk to Orc Kim.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_43.dds</contents_image>
+         <destination_pos>432,0,0</destination_pos>
+         <destination_mode>custom:431@1,432@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[Find Orc Kim's Valuable]]></title>
+         <contents mid="100"><![CDATA[<html>Orc Kim, who had lost his memory, believes he had lost something very valuable around Fortress of Dark Overlord Army. Find out what's the precious item Orc Kim is looking for.<BR><BR><FONT color=#086171>Black Mountains (Dark Overlord's Gate)</FONT> <FONT color=#a82424>→Fortress of the Dark Overlord Army</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[Find Orc Kim's Valuable]]></destination>
+         <todo_msg mid="102"><![CDATA[Go to Fortress of Dark Overlord Army and find Orc Kim's lost valuable!]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QM_Orc_Oneeye.dds</contents_image>
+         <destination_pos>13,n243</destination_pos>
+         <destination_mode />
+         <statemark_npcid>243</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="103"><![CDATA[Talk to Orc Kim]]></title>
+         <contents mid="104"><![CDATA[<html>It seems that Orc Kim's valuable was a weapon. Return to Orc Kim and confirm.<BR><BR><FONT color=#086171>Black Mountain</FONT> <FONT color=#a82424>→ Orc Kim</FONT></html>]]></contents>
+         <destination mid="105"><![CDATA[Talk to Orc Kim]]></destination>
+         <todo_msg mid="106"><![CDATA[Return to Orc Kim and talk to him.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>468</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,141 @@
+﻿   <talk>
+      <npcename>n040_king_casius</npcename>
+      <npcid>40</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[King Cassius]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="10"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="11"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$King Cassius$<BR>We pray for a hero to save us now… Oh if only King Cassius and King Peter are still alive...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="king1" mid="12"><![CDATA[<html>[Talk] <FONT color=#086171>King Peter</FONT></html>]]></talk_answer>
+         <talk_answer link_index="king2" mid="21"><![CDATA[<html>[Talk] <FONT color=#086171>King Cassius</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="118" link_target="sq_972_xmas_casius.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="97" link_target="nq16_6602_casius_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Saint Haven Fortress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="98" link_target="nq16_6603_casius_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Royal Family</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="nq16_6604_casius_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Six Heroes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="nq16_6605_casius_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Dragons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="101" link_target="nq16_6606_casius_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="110" link_target="nq16_6612_casius_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Cassius's Gift ?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="111" link_target="nq16_6613_casius_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Cassius's Gift I?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="115" link_target="nq16_6614_casius_90_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>An Unexpected Gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="116"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$King Cassius$<BR>I won't allow you to stare directly at me… no matter what your reasons...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="31" link_target="mq11_401_castle_sainthaven.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Saint Haven Fortress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="mq11_402_town_of_death.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Town of Death</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="mq11_408_soaring_black_arkmonarch.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Tale of Courage</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="mq11_409_remainder_works.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Unfinished Business</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="mq11_410_sea_monsters_soul.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Being Human</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="64" link_target="mq11_428_revive_serpentra.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>New Crisis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="65" link_target="mq11_429_guardian_geraint.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Guardian Geraint</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="66" link_target="mq11_430_trace_apostle.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Whereabouts of Apostle's </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="mq11_431_next_town.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Pollution</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="180" link_target="mq11_433_by_a_head.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>Narrowly Missed</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="181" link_target="mq11_435_meet_general.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>Met General</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="182" link_target="mq11_442_soaring_and_falling.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>One is Supposed to Fall</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="183" link_target="mq11_443_settlement.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Settled</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="189" link_target="mq11_382_second_step.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Work Starts Now</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="190" link_target="mq11_386_data_retrieval.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Restarting Data Search</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="191" link_target="mq11_392_facing_the_enemy.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>The Enemy is Near</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="192" link_target="mq11_393_reason_of_doubt.xml"><![CDATA[<html>[Lv36] <FONT color=#a94407>Why Don’t You Believe Me?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="193" link_target="mq11_395_realize_foreboding.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Bad Premonitions are Accurate</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="194" link_target="mq11_398_lose_or_shorn.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Lost it</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="71" link_target="nq16_6601_dreaming_boy.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Dreaming Boy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="152" link_target="sq11_680_thrives_on_adventure.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Wanted To Risk</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="153" link_target="sq11_681_look_like_natural.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>With No One's Knowledge</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="154" link_target="sq11_682_liberty_boy.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>Boy with Freedom</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="155" link_target="sq11_683_secret_friend1.xml"><![CDATA[<html>[Lv.26]<FONT color=#086171> Secret Friend I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="156" link_target="sq11_684_secret_friend2.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Secret Friend II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="157" link_target="sq11_685_secret_friend3.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Secret Friend III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="158" link_target="sq11_686_secret_friend4.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Secret Friend IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="159" link_target="sq11_687_secret_friend5.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Secret Friend V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="160" link_target="sq11_688_secret_friend6.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Secret Friend VI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="161" link_target="sq11_689_secret_friend7.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Secret Friend VII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="162" link_target="sq11_690_cheated_me.xml"><![CDATA[<html>[Lv.29] <FONT color=#086171>Fooled by Accident</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="163" link_target="sq11_691_sorrow_of_king.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Cassius's Sadness</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="164" link_target="sq11_692_deep_consider.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>Deep Thoughts</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="165" link_target="sq11_693_cookie_of_king.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>Cassius's Snacks</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="166" link_target="sq11_694_joy_and_horror.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Joey's Summer Special Collection</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="167" link_target="sq11_695_good_donald.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>He's a Good Man After All</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="168" link_target="sq11_696_secret_thing.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Secrets Manifested</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="169" link_target="sq11_697_horror_again.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Another Summer Special Collection</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="170" link_target="sq11_698_bad_donald.xml"><![CDATA[<html>[Lv.34]<FONT color=#086171> The True Colors of Donald</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="171" link_target="sq11_699_farewell_robinson.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Farewell, Secret Friend</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="195"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$King Cassius$<BR>You seem like a good person.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="king1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="23"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="17"><![CDATA[<html>$King Cassius$<BR> <FONT color=#a82424>Lagendia</FONT> first received unity under <FONT color=#a82424>King Peter</FONT>. His legacy has spurred me to fight for Lagendia but Jim… I do not want Jim to fight.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="king2" image="" itemindex="">
+         <talk_answer link_index="talk" mid="24"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$King Cassius$<BR>After the rule of<FONT color=#a82424>King Peter</FONT> the throne went to <FONT color=#a82424>King Cassius</FONT> who continued striving for peace. Jim really likes this story./html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="75"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="76"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="77"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="74"><![CDATA[<html>$King Cassius$<BR>Would you mind stopping your adventures to stay by my side?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="79"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="80"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="81"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="78"><![CDATA[<html>$King Cassius$<BR>If I knight you, will you promise not to leave this kingdom and stay to protect it? <BR>You will not refuse this offer… right?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="83"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="84"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="85"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="82"><![CDATA[<html>$King Cassius$<BR>Ah finally! You're late...<BR>I've been waiting so long for you...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="87"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="88"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="89"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="86"><![CDATA[<html>$King Cassius$<BR>Ahem...<BR>Hello there…  I have been waiting for your arrival...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="91"><![CDATA[<html>[Gifts]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="92"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="90"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="94"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="93"><![CDATA[<html>$King Cassius$<BR>Th-this is f-for me?<BR>This cannot be found in the palace...<BR>Thank you. I will never forget your loyalty to Lagendia.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 40 );</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 40 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 6601) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 40 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 40 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 40 ) >= 30</chk>
+      </conditions>
+      <exelink idx="back_talk">1</exelink>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+   </talk>

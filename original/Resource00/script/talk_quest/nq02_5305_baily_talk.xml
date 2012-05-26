@@ -1,0 +1,103 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq02_5305_baily_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5305</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Robbery]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>In actual fact, there's been an increase of robbery cases in Calderock Village recently.<BR>Ms. May says the bowl for Hound's Nutritious Food has stolen… Hmm, why would they want to steal that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="11"><![CDATA[<html>That's because everyone's careless</html>]]></talk_answer>
+      <talk_answer link_index="n028_scholar_bailey-accepting-d" mid="12"><![CDATA[<html>It's because of the thief</html>]]></talk_answer>
+      <talk_answer link_index="n028_scholar_bailey-accepting-f" mid="13"><![CDATA[<html>It's because the number of adventurers are growing</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>In short, a lot of nonsense stuff have going missing.<BR>What is going on here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-c" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Really? Everyone's so busy with all the new adventurers that they kept losing stuff?<BR>Haha, everyone should start watching out for each other.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-c" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>But should there be a thief amongst us…<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey's face darkens)</FONT><BR>Then we need to find a solution. This is so worrying.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-e" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>… The thief is indeed amongst us?<BR>He could be an outsider, but he's definitely here somewhere.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-e" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I do not wish to suspect others…<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey's face darkens)</FONT><BR>This is so worrying.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-g" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The adventurers have done so much for Calderock Village, I should not suspect them.<BR>But some old folks here have warned not to trust them too much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-g" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>… But it's sad if people do not trust each other.<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey sighs)</FONT><BR>Can I trust you? Please do not betray my trust.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5305, 0, 1, 1, 0); </exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 28, 30 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 28, 150 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 28, 300 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="b">1,0</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="d">2,0</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="f">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 도난사건" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>28:5250:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

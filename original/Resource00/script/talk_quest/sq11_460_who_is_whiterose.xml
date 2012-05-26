@@ -1,0 +1,452 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_460_who_is_whiterose</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>460</qid>
+      <designer>김인정</designer>
+      <qlevel>27</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Identity of White Rose]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>64</npcid>
+         <npcename>n064_whilerose_lena</npcename>
+         <npckname>하얀 장미의 기사</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$White Rose Knight$<BR>What? I have nothing to talk about. Go away.<BR><FONT color=#7e12d2>(You can start a quest from Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Duke Stuart${action:Talk}<BR>I'm going to tell everyone who that thief is very soon. Look forward to it.<BR><FONT color=#7e12d2>(You can start a quest from Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Lady Lena${action:Talk}<BR>I have something on that's very annoying so I can't talk to you right now.<BR><FONT color=#7e12d2>(You can start a quest from Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$General Douglas${action:Talk}<BR>Duke Stuart has a very evil speculation. It's serious.<BR><FONT color=#7e12d2>(You can start a quest from Heraldry Scholar Stas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-a" mid="10"><![CDATA[<html>(Thanks for caring…)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I was very worried about the <FONT color=#a82424>black mail</FONT> that <FONT color=#a82424>White Rose Knight</FONT> has sent you.<BR>I'm glad that you are alright.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-a" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-b" mid="13"><![CDATA[<html>Duke Stuart?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I hear that <FONT color=#a82424>Duke Stuart</FONT> is after the thief and he should see an achievement soon.<BR>Although the thief is not harming ordinary people but a criminal is a criminal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-c" mid="16"><![CDATA[<html>(I don't know what it is but it bothers me…)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Yes. I heard he found the useful evidence this time.<BR>I heard it from the returning Royal Guard.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-d" mid="18"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Identity of White Rose백장미의 정체$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-d" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Uhm? What kind of evidence?<BR>Hmm… I don't know that. If you're curious ask <FONT color=#a82424>Duke Stuart</FONT> yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="21"><![CDATA[<html>Duke Stuart?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I hear that <FONT color=#a82424>Duke Stuart</FONT> is after the thief and he should see an achievement soon.<BR>Although the thief is not harming ordinary people but a criminal is a criminal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-b" mid="24"><![CDATA[<html>(I don't know what it is but it bothers me…)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Yes. I heard he found the useful evidence this time.<BR>I heard it from the returning Royal Guard.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>I don't know what the evidence is.<BR>
+If you're curious ask <FONT color=#a82424>Duke Stuart</FONT> yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Duke Stuart${action:Talk}<BR>I'm going to tell everyone who that thief is very soon. Look forward to it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="127"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Duke Stuart</FONT> has a ridiculous speculation.<BR>He is going to arrest <FONT color=#a82424>Lena</FONT>. It's getting serious.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="" itemindex="">
+      <talk_question mid="128"><![CDATA[<html>$Lady Lena${action:Talk}<BR><FONT color=#a82424>Duke Stuart</FONT> is suspicious of me so I can't talk to anyone for awhile. <BR>It will create another misunderstanding.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-1" image="" itemindex="">
+      <talk_question mid="129"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>I have nothing to say.<BR>Go and do your job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Uhm? What kind of evidence?<BR>Hmm… I don't know that. If you're curious ask <FONT color=#a82424>Duke Stuart</FONT> yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Duke Stuart</FONT> has a ridiculous speculation.<BR>He is going to arrest <FONT color=#a82424>Lena</FONT>. It's getting serious.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Lady Lena${action:Talk}<BR><FONT color=#a82424>Duke Stuart</FONT> is suspicious of me so I can't talk to anyone for awhile. <BR>It will create another misunderstanding.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>I have nothing to say.<BR>Go and do your job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-a" mid="33"><![CDATA[<html>(The Duke is excited)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Duke Stuart$<BR>I can catch that <FONT color=#a82424>annoying criminal</FONT> soon.<BR>I'll tell you since you are involved in this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-b" mid="36"><![CDATA[<html>Is that the handkerchief of White Rose?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Duke Stuart${action:Talk}<BR>Well… We have found a <FONT color=#a82424>handkerchief</FONT> that noble women use.<BR>At the place where you were threatened by White Rose. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-c" mid="38"><![CDATA[<html>(The duke laughs with confidence)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Duke Stuart$<BR>That's it. And the handkerchief that the guards have brought is the property of <FONT color=#a82424>a lady I know</FONT> of.<BR>I asked <FONT color=#a82424>the owner of this handkerchief</FONT> and she doesn't even know she has lost it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-c" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-d" mid="41"><![CDATA[<html>(For some reason, I know who that owner is)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Duke Stuart$<BR>By looking at the situation, that person was there. So we have to suspect the owner of the handkerchief.<BR>She also mentioned that she never been there, but she won't be able to provide us an alibi.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-d" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-e" mid="43"><![CDATA[<html>What? Lady Lena?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Duke Stuart$<BR>I never thought the thief would be <FONT color=#a82424>the step-daughter of General Douglas</FONT>.<BR>Women are scary. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-e" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-f" mid="45"><![CDATA[<html>That…that's my handkerchief.</html>]]></talk_answer>
+      <talk_answer link_index="n041_duke_stwart-2-f" mid="46"><![CDATA[<html>It's not the property of Lady Lena.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Duke Stuart$<BR>Why?<BR><FONT color=#7e12d2>(The Duke is looking at this way. Lady Lena would get arrested this way.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-f" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-g" mid="49"><![CDATA[<html>I'm the one who dropped the handkerchief.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Duke Stuart$<BR>What are you talking about?<BR>
+<FONT color=#7e12d2>(The Duke jumps with surprise)</FONT><BR>Explain it to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-g" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-h" mid="51"><![CDATA[<html>I got it from Lady Lena as a gift.</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Duke Stuart$<BR>What?!<BR>Why do you have the property of a noble lady?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-h" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-i" mid="53"><![CDATA[<html>It's the handkerchief with rose decorations right? It's about this big and the color is….</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Duke Stuart$<BR>You're just saying without any proof…it doesn't make sense!<BR><FONT color=#7e12d2>(The duke is shocked)</FONT><BR>
+Show me the evidence! Show me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-i" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n041_duke_stwart-2-j" mid="55"><![CDATA[<html>(The Duke crunches the handkerchief feeling uncomfortable)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Duke Stuart$<BR><FONT color=#7e12d2>(The Duke looks at the handkerchief with disappointment)<BR></FONT>Damn…was it you who dropped the handkerchief? How ironic...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-j" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2-k" mid="57"><![CDATA[<html>(He seems very upset) Sorry.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Duke Stuart$<BR>I can't believe this! Well if you say so, I can't arrest <FONT color=#a82424>Lena</FONT> right now. <BR>I would have to ask her for an interview as a <FONT color=#a82424>testifier</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2-k" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Duke Stuart$<BR>
+It's ok, leave!<BR>…I thought I could yell out to <FONT color=#a82424>General Douglas</FONT> but it's not going to happen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Duke Stuart$<BR>Go away! Don't even think about talking to <FONT color=#a82424>Lena</FONT> and make a plan<BR>I thought I could yell out to <FONT color=#a82424>General Douglas</FONT> but it's not going to happen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Lady Lena$<BR>…I'm not off the accusation yet.<BR>If you don't want anymore trouble, meet my father first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="62"><![CDATA[<html>(General talks with no doubt)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$General Douglas$<BR>Oh, you went to <FONT color=#a82424>Duke Stuart </FONT> and defended Lena!<BR>How could a fragile girl like Lena do such a thing like that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="64"><![CDATA[<html>That's good.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$General Douglas${action:Talk}<BR><FONT color=#a82424>Lena</FONT> is getting grounded for a while.<BR>She would get some interviews but those kind of speculations will disappear eventually.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QS_Default.dds" itemindex="300037">
+      <talk_answer link_index="n042_general_duglars-4" mid="67"><![CDATA[<html>(General is wondering)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$General Douglas$<BR>However… I still don't know why <FONT color=#a82424>Lena</FONT> has given you a gift. <BR>Lena is a shy girl, so it is unusual of her to give somebody a gift.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$General Douglas$<BR>Anyway thank you so much.<BR><FONT color=#a82424>Lena</FONT> will be thanking you deep in her heart.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4" image="QN_Npc_White-Rose_Lena.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-4-a" mid="70"><![CDATA[<html>What do you mean?</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Lady Lena${action:Talk}<BR>You wouldn't understand.<BR>That <FONT color=#a82424>White Rose Thief</FONT> would be talking out loudly but a <FONT color=#a82424>noble lady</FONT> can't.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4-a" image="QW_28.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Lady Lena$<BR>The Duke will doubt us if we are seen together. <BR>
+I have nothing to say. However if you see the thief at <FONT color=#a82424>the place where they found the handkerchief</FONT>, please send him my regard.<BR>
+※ <FONT color=#7e12d2>Can't proceed in a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-5" image="QW_28.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Lady Lena${action:Talk}<BR>Can you send my regards to <FONT color=#a82424>the thief</FONT>, if you meet him?<BR>At <FONT color=#a82424>Dark Overload Keep</FONT>, the place where they found the handkerchief.<BR>
+※ <FONT color=#7e12d2>Can't proceed in a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-a" mid="74"><![CDATA[<html>It was really you, Lady Lena.</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>Let me introduce myself.<BR>My name is <FONT color=#a82424>Lena</FONT>.<BR>The step-daughter of <FONT color=#a82424>General Douglas</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-a" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-b" mid="76"><![CDATA[<html>It's not that I want to catch you but I want to know the truth.</html>]]></talk_answer>
+      <talk_answer link_index="n064_whilerose_lena-5-c" mid="77"><![CDATA[<html>Because you said you'd stop kidnapping.</html>]]></talk_answer>
+      <talk_answer link_index="n064_whilerose_lena-5-e" mid="78"><![CDATA[<html>Well, I just felt I had to.</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$White Rose Knight$<BR>I thought you knew already.<BR>…I want to ask you something.<BR>
+Why did you help me? Didn't you want to catch me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-b" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-g" mid="80"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$White Rose Knight$<BR>Well, you make sense.<BR>I'll share what I have found out.<BR>
+About <FONT color=#a82424>the memo in the ring</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-c" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-d" mid="82"><![CDATA[<html>How come it doesn't mean anything?</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$White Rose Knight$<BR>Well, you remember what I've said.<BR>
+Yes, I'm going to stop kidnapping Dragon Followers.<BR>It doesn't mean anything to me anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-d" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-g" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$White Rose Knight$<BR>My purpose was to avenge my parents' death and find the truth of their death.<BR>
+I finally found the answer. By <FONT color=#a82424>the memo of the ring</FONT>… I'll share what I've found out so listen carefully.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-e" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-f" mid="86"><![CDATA[<html>Not really….</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$White Rose Knight$<BR>What? You're weird.<BR>
+Are you going to act like my Prince Charming? You're funny.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-f" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-g" mid="88"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$White Rose Knight$<BR>Don't think I'm going to thank you.<BR>…Instead, I'll share what I've found out with you.<BR>
+About the <FONT color=#a82424>memo in the ring</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-g" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-h" mid="90"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$White Rose Knight$<BR>The memo in the ring was the <FONT color=#a82424>list</FONT> of <FONT color=#a82424>Dragon Followers</FONT>. It's a record of their names and locations so I needed the palace's record book to find out who those people were.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-h" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-i" mid="92"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$White Rose Knight$<BR>From the book, I've followed the people who were still alive and who I could meet. So I found the people who killed my parents 15 years ago. Some of them have left this place and some are missing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-i" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-j" mid="94"><![CDATA[<html>What do you want find out from them?</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$White Rose Knight$<BR>However, some of them still live here.<BR>
+Pretending as ordinary people with decent jobs.<BR>I found some people who were coming out of Dragon Followers and I'm going to try and <FONT color=#a82424>confront</FONT> them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-j" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-k" mid="96"><![CDATA[<html>(Her eyes are filled with anger)</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$White Rose Knight$<BR>Isn't that obvious? I want to know the person who lead the <FONT color=#a82424>case</FONT><FONT color=#a82424> 15 years ago</FONT>... <FONT color=#a82424>Executives</FONT> of Dragon Followers.<BR>I'm not interested in minors.<BR>
+I want to find the person who ordered the killing of my parents.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-k" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-l" mid="98"><![CDATA[<html>So is that why you don't need to kidnap anymore?</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$White Rose Knight$<BR>I'm going to find out.<BR>
+Why my parents are dead.<BR>What did they do to deserve to die...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-l" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-m" mid="100"><![CDATA[<html>(I think that's her way of caring)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$White Rose Knight$<BR>There's no point going after a pawn.<BR>
+I must find the <FONT color=#a82424>head</FONT> of <FONT color=#a82424>Dragon Followers</FONT>.<BR>Don't get involved anymore.<BR>
+I don't want to put you in danger..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-m" image="" itemindex="">
+      <talk_answer link_index="n064_whilerose_lena-5-n" mid="102"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n064_whilerose_lena-5-n" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$White Rose Knight${action:Talk}<BR>You did help me but I'm not going to say <FONT color=#a82424>thank you</FONT>.<BR>However, I'll pay back the <FONT color=#a82424>debt</FONT> I owe you.<BR>
+Promise….</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4601,4602,4603,4604,4605</exe>
+         <exe type="setquest">460</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4601,4602,4603,4604,4605</exe>
+         <exe type="complete">460</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="d">1,2,3</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="c" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="d" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="e" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="f" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="f" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="g" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="h" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="i" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="j" />
+   <exelink qstep="2" npc="n041_duke_stwart" sub="k">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n133_lena_duglars" sub="a">0,1</exelink>
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="b" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="c" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="e" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="g" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="d" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="g" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="f" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="g" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="h" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="i" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="j" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="k" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="l" />
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="m">0</exelink>
+   <exelink qstep="5" npc="n064_whilerose_lena" sub="n">1</exelink>
+   <journal_data recompense="1:4601,2:4602,3:4603,4:4604,5:4605" quest_title="백장미의 정체" chapterid="" quest_level="27" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="106"><![CDATA[Intention of the thief]]></title>
+         <contents mid="107"><![CDATA[<html>Talk to Heraldry Scholar Stas.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="108"><![CDATA[Conversation with Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="109"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="110"><![CDATA[Lethal Evidence]]></title>
+         <contents mid="111"><![CDATA[<html>Duke Stuart found an evidence regarding White Rose Thief. Talk to Duke Stuart.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Duke Stuart</FONT></html>]]></contents>
+         <destination mid="112"><![CDATA[Conversation with Duke Stuart]]></destination>
+         <todo_msg mid="113"><![CDATA[Ask what Duke Stuart has as evidence.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="114"><![CDATA[Prejury]]></title>
+         <contents mid="115"><![CDATA[<html>The evidence of Lady Lena is the thief has disappeared. Meet with General Douglas and Lady Lena.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="116"><![CDATA[Conversation with General Douglas]]></destination>
+         <todo_msg mid="117"><![CDATA[Accusation on Lena has disappeared. Talk to General Douglas]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="118"><![CDATA[Lady Lena's handkerchief]]></title>
+         <contents mid="119"><![CDATA[<html>Talk to Lady Lena about her handkerchief.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#086171>→ Lady Lena</FONT></html>]]></contents>
+         <destination mid="120"><![CDATA[Conversation with Lady Lena]]></destination>
+         <todo_msg mid="121"><![CDATA[Talk to Lady Lena about the handkerchief]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_28.dds</contents_image>
+         <destination_pos>283,n64</destination_pos>
+         <destination_mode>custom:281@1,282@1,283@1</destination_mode>
+         <statemark_npcid>64</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="122"><![CDATA[Waiting person]]></title>
+         <contents mid="123"><![CDATA[<html>Go to the place where the Duke's men found the handkerchief, the place where you met White Rose Knight the last time.<BR>
+※ <FONT color=#7e12d2>Can't proceed in a party.</FONT><BR><BR><FONT color=#086171>Dark Mountain(Dark Overload Gate)</FONT> <FONT color=#a82424>→ Dark Overload Keep</FONT></html>]]></contents>
+         <destination mid="124"><![CDATA[(1 person) Meet with White Rose Knight at Dark Overload Keep]]></destination>
+         <todo_msg mid="125"><![CDATA[Meet someone at Dark Overload Keep]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>459</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

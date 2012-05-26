@@ -1,0 +1,274 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_377_test_academic1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>377</qid>
+      <designer>곽노찬</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>378</nextqid>
+      <nextqname>sq08_378_test_academic2</nextqname>
+      <nextqnpc>n392_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[[Occupation Change] Qualified I]]></qkname>
+      <qnpc>
+         <npcid>392</npcid>
+         <npcename>n392_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>779</npcid>
+         <npcename>n779_jasmin</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-a" mid="6"><![CDATA[<html>I'm sad that I haven't made much progress.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Jasmine${sound:npc_CG_Jasmin_sp_01.ogg}<BR><FONT color=#387206>{user_nick}</FONT>, it's been a while since you went to the past on Apocalypse.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-b" mid="8"><![CDATA[<html>I wouldn't have passed the test without your help. I'm still not confident….</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Academic Jasmine$<BR>You know it's not an easy task.<BR>But you successfully passed the [<FONT color=#a82424>101 training program for the Academics time traveling</FONT>], so you're do fine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-c" mid="10"><![CDATA[<html>Retake the test?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Academic Jasmine$<BR>Haha…. Then do you want to make a bet?<BR>Try the final test one more time without my help.<BR>If you pass, I'll give you a great present.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-d" mid="12"><![CDATA[<html>Oh… okay! I'll take it!</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Academic Jasmine$<BR>Yes, think about what you did.<BR>I did help you with some parts, but that was a very small portion.<BR>My sister <FONT color=#387206>{user_nick}</FONT>, you can pass the test by yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n392_academic_station-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$[Occupation Change] Qualified I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-party_check_1" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Academic Jasmine$<BR>Then I'll start up the final test program at the Academic Station.<BR>When you're ready, connect to the program.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-a" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-1-changemap" mid="78"><![CDATA[<html>(Connects to the program)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Academic Station${sound:npc_Jasmin_qu377_01.ogg}<BR>▶ <FONT color=#086171>Loading the final test of the Academic Training Program.</FONT><BR>▷ <FONT color=#7e12d2>Be warned, there may be a partial system failure.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_07.ogg}<BR><FONT color=#387206>{user_nick}</FONT>, you have to leave your party in order to connect to the program.<BR><BR>※ <FONT color=#7e12d2>Cannot proceed while in a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-1" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Academic Jasmine$<BR><FONT color=#7e12d2>(Jasmine is having a serious talk with Velskud)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-a" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Velskud$<BR>Jasmine… Is your plan for the best?<BR>I'm not certain the path we're taking is the right one.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-b" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Academic Jasmine$<BR>Velskud, we have to do this.<BR>This is the only way to rescue many organisms in pain and suffering to safety.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-c" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Velskud$<BR>I don't think it's right to sacrifice <FONT color=#a82424>them</FONT> for our people here.<BR>
+Isn't better to take everyone on the Apocalypse to the past and relocate them?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-d" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Academic Jasmine$<BR>Is it because of Geraint? You're being pretty sympathetic.<BR>But, my decision won't change.<BR>For me, <FONT color=#a82424>people here</FONT> are precious, not them in the past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-e" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Academic Jasmine$<BR>As you know, there is a lot of flaw in traveling to the past.<BR>Among those problems, the most critical one is that a person living in two different time cannot be in the same time and space. I don't exactly know the mechanism but, because of that, <FONT color=#a82424>grandpa Kevin</FONT> lost his physical body… and never could come back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-f" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Academic Jasmine$<BR>So, if everyone here goes to the past, there will be many who will disappear.<BR>
+There will only be a few who can stay in the past.<BR>Species who live more than 50 years, including you, Velskud cannot go back to the past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-f" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-g" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Velskud$<BR>………….<BR><FONT color=#7e12d2>(Velskud becomes silent)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-g" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-h" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu377_02.ogg}<BR>You see? This is the only way we can choose.<BR><FONT color=#a82424>Creating a new peaceful Altea</FONT>….<BR>It's possible with the help of Monolith's power.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-h" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-i" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Velskud$<BR>What if we fail, what do we do?<BR>Do you have any other plan in mind?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-i" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-j" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Academic Jasmine$<BR>I don't want to think about failing.<BR>But, in case that happens…<BR>we'll have to use the last resort.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-j" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-k" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Velskud$<BR>Last resort?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-k" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-l" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Academic Jasmine$<BR>I'm going to take everyone into the past where I believe is safe for us to live.<BR>In theory, if we gather every <FONT color=#a82424>Lebrium</FONT> spread out in this world, we can take everyone in this world and go back up to 50 years in the past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-l" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-m" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Velskud$<BR>Didn't you just say relocating into the past is impossible?<BR>That a person in the past and in the future cannot share one time and space….<BR>……Jasmine…, you're not thinking…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-m" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n779_jasmin-2-n" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Academic Jasmine$<BR>Yes, that's why I don't want to go to that last resort.<BR>I just want to creat a new world and live here with everyone.<BR><FONT color=#387206>{user_nick}</FONT>…. She succeeding the mission is the only way to minimize the sacrifice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-2-n" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Velskud$<BR>Jasmine, you're truly a scary human.<BR>
+…But have it your way.<BR>
+As you carried the burden of choosing this world's future, you were given your duties and the right to make a choice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n779_jasmin-3" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Velskud$<BR>
+<FONT color=#7e12d2>(Velskud and Jasmine stopped talking)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-3" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-3-a" mid="56"><![CDATA[<html>Thanks to you Jasmine.</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu377_03.ogg}<BR>
+I'm proud of you, sister!<BR>I knew you could do it by yourself!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-3-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-3-b" mid="58"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Academic Jasmine$<BR>No, <FONT color=#387206>{user_nick}</FONT>. It was you who made it.<BR>You are more than qualified.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-3-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n392_academic_station-3-c" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Academic Jasmine$<BR>Now, as I promised, I will give you a present!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n392_academic_station-3-c" image="" itemindex="">
+      <talk_answer link_index="n392_academic_station-3-!next" mid="62"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">3770,,,,,</exe>
+         <exe type="setquest">377</exe>
+         <exe type="talk" npc="n392_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="talk" npc="n392_academic_station">a</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13023,1);</exe>
+         <exe type="talk" npc="n392_academic_station">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3770,,,,,</exe>
+         <exe type="complete">377</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n392_academic_station" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n392_academic_station" sub="party_check_1">0</exelink>
+   <exelink qstep="1" npc="n392_academic_station" sub="changemap">2</exelink>
+   <exelink qstep="2" npc="n779_jasmin" sub="b" />
+   <exelink qstep="2" npc="n779_jasmin" sub="c" />
+   <exelink qstep="2" npc="n779_jasmin" sub="d" />
+   <exelink qstep="2" npc="n779_jasmin" sub="e" />
+   <exelink qstep="2" npc="n779_jasmin" sub="f" />
+   <exelink qstep="2" npc="n779_jasmin" sub="g" />
+   <exelink qstep="2" npc="n779_jasmin" sub="h" />
+   <exelink qstep="2" npc="n779_jasmin" sub="i" />
+   <exelink qstep="2" npc="n779_jasmin" sub="j" />
+   <exelink qstep="2" npc="n779_jasmin" sub="k" />
+   <exelink qstep="2" npc="n779_jasmin" sub="l" />
+   <exelink qstep="2" npc="n779_jasmin" sub="m" />
+   <exelink qstep="2" npc="n779_jasmin" sub="n">0,1</exelink>
+   <exelink qstep="3" npc="n392_academic_station" sub="b" />
+   <exelink qstep="3" npc="n392_academic_station" sub="c">0</exelink>
+   <exelink qstep="3" npc="n392_academic_station" sub="!next">1</exelink>
+   <journal_data recompense="3770" quest_title="[전직] 자격은 충분합니다Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom:13023@3</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Qualified I]]></title>
+         <contents mid="66"><![CDATA[<html>Connect to the Academic Station.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[(Single Player) Connect to the Academic Station]]></destination>
+         <todo_msg mid="68"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>13023,n779</destination_pos>
+         <destination_mode>custom:13023@1</destination_mode>
+         <statemark_npcid>779</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Qualified II]]></title>
+         <contents mid="70"><![CDATA[<html>Academic Jasmine and Velskud are having a conversation. Listen to their conversation.<BR><BR><FONT color=#086171>Calderock Village(Academic Station)</FONT> <FONT color=#a82424>→ Velskud/Academic Jasmine</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[(Single Player) Talk to Velskud]]></destination>
+         <todo_msg mid="72"><![CDATA[Listen to the conversation between Velskud and Jasmine.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>8,n392</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>392</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Qualified III]]></title>
+         <contents mid="74"><![CDATA[<html>Passed the test. Connect to the Academic Station and report to Jasmine.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Academic Station</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Connect to the Academic Station]]></destination>
+         <todo_msg mid="76"><![CDATA[Connect to the Academic Station and report to Jasmine.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

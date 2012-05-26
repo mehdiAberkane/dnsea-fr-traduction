@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n078_dream_chandler</npcename>
+      <npcid>78</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Master Warrior Chandler]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Master Warrior Chandler$<BR>We will not allow Cadillac Pass to fall in the hands of monsters.<BR>We need more fighters with courage like yours, young adventurer.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

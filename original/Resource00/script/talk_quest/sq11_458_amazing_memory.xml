@@ -1,0 +1,281 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_458_amazing_memory</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>458</qid>
+      <designer>김인정</designer>
+      <qlevel>27</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>459</nextqid>
+      <nextqname>sq11_459_complete_decode</nextqname>
+      <nextqnpc>n133_lena_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Amazing memory]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>61</npcid>
+         <npcename>n061_kidnaped_trader_dorin</npcename>
+         <npckname>대장장이 도린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Lady Lena$<BR>I'm helping my father with his work. If you have any report for him, please leave it with me.<BR><FONT color=#7e12d2>(You can start a quest from Blacksmith Berlin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>There are lots of horrible incidents in and out of the castle. I can't let my <FONT color=#a82424>Lena</FONT> go outside like this.<BR><FONT color=#7e12d2>(You can start a quest from Blacksmith Berlin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Dorin$<BR>What, how come it's not breaking. Pweet!<BR><FONT color=#7e12d2>(You can start a quest from Blacksmith Berlin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Heraldry Scholar Stash$<BR>What's up? If you are looking for a job go somewhere else.<BR><FONT color=#7e12d2>(You can start a quest from Blacksmith Berlin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="10"><![CDATA[<html>(Their personalities seems all identical…)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Berlin$<BR>Dorin contacted me to give you this.<BR>He asks me to do all the non-helping things just because we are brothers. <BR>
+<FONT color=#7e12d2>(Berlin spits on the ground)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="QW_30.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="12"><![CDATA[<html> Forsaken Islet? </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Berlin$<BR>You asked Dorin what the message was, right? He told me to meet him at <FONT color=#a82424>Forsaken Islet</FONT> because he remembered.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="14"><![CDATA[<html>I better go to Forsaken Islet.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Berlin$<BR>Yes, I don't know why but he has been there once and he liked the place enough to work alone, since it's so quiet and peaceful. He is weird, just like Borin in Mana Ridge.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceppted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Amazing memory$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="QW_30.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Berlin$<BR>
+well, go to <FONT color=#a82424>Forsaken Islet</FONT> and meet Dorin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-1-a" mid="21"><![CDATA[<html>What are you doing here?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blakcsmith Dorin$<BR>Here you are! I have been waiting for you for so long.<BR>Pweet!<BR>
+<FONT color=#7e12d2>(Dorin spits on the ground)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1-a" image="" itemindex="">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-1-b" mid="23"><![CDATA[<html>Do you remember now?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Blacksmith Dorin$<BR>This place is so quiet it's the perfect place to develop my spirit of art. I figured this out when I got kidnapped.<BR>So I remembered the message in the <FONT color=#a82424>ring</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1-b" image="QS_Default.dds" itemindex="300254">
+      <talk_answer link_index="n061_kidnaped_trader_dorin-1-c" mid="25"><![CDATA[<html>(Doring hands me the message with arrogance)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Blacksmith Dorin$<BR>That's why I called you! Do you think I'm that free? <BR>Here, I've written it down for you. Take it and leave!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-1-c" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Blacksmith Dorin$<BR><FONT color=#7e12d2>(Dorin has such a bad handwriting, it's impossible to read it.)</FONT><BR>What? You can't understand? Well, take it to <FONT color=#a82424>Heraldry Scholar</FONT> in <FONT color=#a82424>Saint Haven</FONT> and ask.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Lady Lena$<BR>I'm helping my father with his work. If you have any report for him, please leave it with me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$General Douglas$<BR>There are lots of horrible incidents in and out of the castle. I can't let my <FONT color=#a82424>Lena</FONT> go outside like this.<BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n061_kidnaped_trader_dorin-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Dorin$<BR>I have to work now so leave.<BR>Ask <FONT color=#a82424>Heraldry Scholar</FONT> about the memo, it will be much easier.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="33"><![CDATA[<html>Can you read it?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldry Scholar Stash${action:Talk}<BR>Hmm…? Is this a memo?<BR>
+Which part is the memo?<BR>I thought you brought a Goblin's useless cloth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="35"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Hmm… I'll try. It seems like a memo of someone's memory so I can't just find out its overall content without some effort. Keep that in mind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Well, here's the original. I have the copy. Give me some time with this.<BR><FONT color=#7e12d2>(Report to General Douglas about the memo)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Heraldry Scholar Stas$<BR><FONT color=#7e12d2>(Stas is busy decoding the memo.<BR>Better report to General Douglas about this)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$General Douglas${action:Talk}<BR>Oh, do you have something to report?<BR>Is it important?...Sorry I'm getting ready for the important meeting. I don't have time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Geeneral Douglas$<BR>If you have something for me, please give it to my daughter.<BR><FONT color=#a82424>Lena</FONT> is being an excellent assistant. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>Lena</FONT> is so smart and hardworking. She is still young. She is a perfect daughter for me. Hahaha.<BR>Well, can you give the report to <FONT color=#a82424>Lena</FONT>, since I'm so busy at the moment please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-4-a" mid="43"><![CDATA[<html>Please give this report to General.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Lady Lena${action:Talk}<BR>I'm helping my father since he is such a busy man.<BR>All I do is take mails and schedule his meetings but as long as my <FONT color=#a82424>father</FONT> is happy, I'm happy too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4-a" image="QS_Default.dds" itemindex="300254">
+      <talk_answer link_index="n133_lena_duglars-4-b" mid="45"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Lady Lena$<BR>It's a dirty memo. but… <FONT color=#7e12d2>(Lena looks at the memo)</FONT> …I don't know, it must be important. I'll make sure my <FONT color=#a82424>father</FONT> gets this memo.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-4-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-4-!next" mid="47"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4581,4582,4583,4584,4585</exe>
+         <exe type="setquest">458</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300254</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4581,4582,4583,4584,4585</exe>
+         <exe type="complete">458</exe>
+         <exe type="delquestitem" num="-1">300254</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceppted">1,2</exelink>
+   <exelink qstep="1" npc="n061_kidnaped_trader_dorin" sub="b" />
+   <exelink qstep="1" npc="n061_kidnaped_trader_dorin" sub="c">2,0,1</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n133_lena_duglars" sub="b">0</exelink>
+   <exelink qstep="4" npc="n133_lena_duglars" sub="!next">2,1</exelink>
+   <journal_data recompense="1:4581,2:4582,3:4583,4:4584,5:4585" quest_title="놀라운 기억력" chapterid="" quest_level="27" quest_mark_type="10" use_item_list="300254">
+      <journal index="1">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@4</destination_mode>
+         <statemark_npcid>61</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Blacksmith on Forsaken Islet]]></title>
+         <contents mid="50"><![CDATA[<html>Go to <FONT color=#a82424>Forsaken Islet</FONT> and meet with Blacksmith Dorin. Ask him about the memo.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port (Ship to Forsaken Islet)</FONT> <FONT color=#a82424>→ Forsaken Islet → Blacksmith Dorin</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[(1 person)Conversation with Blacksmith Dorin]]></destination>
+         <todo_msg mid="52"><![CDATA[Talk to Blacksmith Dorin at Forsaken Islet]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Request Memo Decoding]]></title>
+         <contents mid="54"><![CDATA[<html>Go to Heraldry Scholar Stas and decode the memo.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Conversation with Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="56"><![CDATA[Request Memo Decoding to Heraldry Scholar Stas]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Report to General Douglas in Royal Castle.]]></title>
+         <contents mid="58"><![CDATA[<html>Report to General Douglas while the scholar decodes the memo.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> → General Douglas</html>]]></contents>
+         <destination mid="59"><![CDATA[Conversation with General Douglas]]></destination>
+         <todo_msg mid="60"><![CDATA[Deliver the memo to General Douglas]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[General's assistant]]></title>
+         <contents mid="62"><![CDATA[<html>Deliver the memo to Lady Lene, step-daughter of the general.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ Lady Lena</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Conversation with Lady Lena]]></destination>
+         <todo_msg mid="64"><![CDATA[Deliver the memo to Lady Lena]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>457:463</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

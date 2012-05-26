@@ -1,0 +1,360 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_496_dark_armor1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>496</qid>
+      <designer>손원호</designer>
+      <qlevel>29</qlevel>
+      <qdesc>세인트 헤이븐의 대장장이 앞을 지나가면, 유저가 특이한 갑옷을 입고 있다는 것을 눈치챈다. 꼬치꼬치 캐뭍는 벨린. 캐더락의 코린이 강철 피부를 완성했다는 사실에 경쟁의식을 느끼는데… 강철 피부 따위보다 훨씬 견고한, 그것은 어둠의 방패라고 이야기하는데. 어떤 재료로 갑옷을 만드는 것이 아니라, 어떤 기운을 모아 갑옷을 만드는 만큼 제작에 큰 어려움이 있다고 한다. 군말없이 그를 돕자. 
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>497</nextqid>
+      <nextqname>sq11_497_dark_armor2</nextqname>
+      <nextqnpc>n091_trader_bellin</nextqnpc>
+      <qkname mid="1"><![CDATA[[Title] [Immortal Lv3] Shadow Armor I]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-noquest" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Stella$<BR>Lately, I like younger kids better that older people.<BR><FONT color=#7e12d2>(You can acquire a quest from Black smith Berlin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="8"><![CDATA[<html>Ah… Hello.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Berlin$<BR>What? Do you want anything?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="10"><![CDATA[<html>(He is harsh…)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Berlin$<BR>You look like a rookie. I don't have time to waste on you. Go away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="12"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Berlin$<BR>Hmm? Wait there for a second! … What is that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-d" mid="14"><![CDATA[<html>This is the Immortal Lv2 from Calderock Village.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Berlin$<BR>What you are wearing <FONT color=#a82424>underneath the clothes</FONT>. It looks like a feather… That's protecting you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-e" mid="16"><![CDATA[<html>From Blacksmith Corin of Calderock Village…</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Blacksmith Berlin$<BR>What? You have <FONT color=#a82424>Title of Immortal</FONT>? A kid like you? Who did you get it from?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-f" mid="18"><![CDATA[<html>Why would I lie?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant Berlin$<BR><FONT color=#a82424>Corin</FONT>, that fool made that?<BR>I'll kill you if you are lying!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-g" mid="20"><![CDATA[<html>Is there a problem?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Berlin$<BR>Yes. True. Corin made this…. He got to <FONT color=#a82424>Immortal Lv2</FONT> before me… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-h" mid="22"><![CDATA[<html>Shadow Armor?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Belin$<BR>No! I'm not going to lose against Corin. With the <FONT color=#a82424>Shadow Armor</FONT>, I'm making now, it will give me immortal power!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-i" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Blacksmith Berlin$<BR>Only stupid blacksmiths think that better maTelejual makes better armor. But you have to think outside of the box to get one step closer to the title of immortal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-j" mid="26"><![CDATA[<html>It's amazing. Is that possible?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Berlin$<BR><FONT color=#a82424>Shadow Armor</FONT> is a armor that surrounds your body with shadows and protects from enemy. Shadows cover you from the enemy and dodge the attacks of enemy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-k" mid="28"><![CDATA[<html>The way to catch shadows?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Blacksmith Berlin$<BR>What? are you doubting me? Of course it's possible but no one has the made it yet. No has ability to catch the shadow. But I have found the way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-l" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Blacksmith Berlin$<BR>Um… I should get your help since we're talking about this. I'll tell you <FONT color=#a82424>the way to catch the Shadow</FONT>. If we succeed, I'll give you <FONT color=#a82424>Title of Higher Immortal</FONT>. How's that sound?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-acceptted" mid="32"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Shadow Armor$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-a" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Blacksmith Berlin$<BR>Normally, we can see shadows when there are light. But recently, the monster called Darkhaze at <FONT color=#a82424>Collapsed Mine</FONT> can make shadows by himself. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-a" image="QS_Default.dds" itemindex="300081">
+      <talk_answer link_index="n091_trader_bellin-1-b" mid="44"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Blacksmith Berlin$<BR>So if it has the shape you can put it in this <FONT color=#a82424>bottle</FONT>. This is the special bottle from a sorceress so it won't be able to escape.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-b" image="QW_29.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-1-c" mid="117"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Blacksmith Berlin$<BR>Go to <FONT color=#a82424>Collapsed Mine</FONT>, kill Dark haze and fill this bottle with <FONT color=#a82424>Smoke of shadow</FONT>! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-1-c" image="" itemindex="">
+      <talk_question mid="118"><![CDATA[<html>$Blacksmith Berlin$<BR>You can see Darkhaze by <FONT color=#a82424>Secret road</FONT> of Collapsed Mine so you have to choose the right road. Please hurry I don't want to stay behind of Corin!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_question mid="112"><![CDATA[<html>$Master Sorceress Stella$<BR>I like younger kids more than older people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-2" image="QW_29.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Blacksmith Berlin$<BR>I can't lose to Corin… Hurry, make a move to <FONT color=#a82424>Collapsed Mine</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Master Sorceress Stella$<BR>What a stingy man. I thought he was rich because he was a blacksmith, he only gives me 10 sliver for that bottle?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3" image="QS_Default.dds" itemindex="300081">
+      <talk_answer link_index="n091_trader_bellin-3-a" mid="51"><![CDATA[<html>(Give the bottle)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Blacksmith Berlin$<BR>By the look of you it must been a tough fight. <BR>So, did you bring back the <FONT color=#a82424>Smoke of shadow</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-b" mid="53"><![CDATA[<html>(Waiting)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Blacksmith Berlin$<BR>Yes… This is the shadow. Now I can form a shape in this box. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-c" mid="120"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Blacksmith Berlin$<BR>… … What?<BR><FONT color=#7e12d2>(Berlin shakes the bottle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-c" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-d" mid="55"><![CDATA[<html>What's wrong?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Blacksmith Berlin$<BR>… … Damn! <BR>This is not enough!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-d" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-e" mid="57"><![CDATA[<html>That was the full bottle.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Blacksmith Berlin$<BR>What's wrong? I could only make an armor size of my hand! Why did you bring so little?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-e" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-f" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Blacksmith Berlin$<BR>Hm… <FONT color=#a82424>Stella</FONT> that con sorceress… She said I can put anything in it, but it's not!!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-f" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-g" mid="61"><![CDATA[<html>Who should I go to?</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Blacksmith Berlin$<BR>Go get me a <FONT color=#a82424>new bottle</FONT> right now!!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-g" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-3-h" mid="63"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Blacksmith Berlin$<BR>How Stupid are you? How many sorceresses are there in Saint Heaven…I bought the bottle from <FONT color=#a82424>Master Sorceress Stella</FONT>. Go to her and get me a new bottle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-3-h" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Blacksmith Berlin$<BR>Corin… Just wait a little. I'll complete Shadow Armor.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Merchant Berlin$<BR>Don't tell me you don't know where <FONT color=#a82424>Stella</FONT> is…. She's right there!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-a" mid="68"><![CDATA[<html>Blacksmith Berlin have sent me.</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Master Sorceress Stella$<BR>Oh, you're cute. What's up?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-b" mid="70"><![CDATA[<html>The bottle is has faults in it so he wants to exchange it.</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Master Sorceress Stella$<BR>Hm. What does he want from me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-c" mid="72"><![CDATA[<html>Eh.… That's because it can only hold very small amount….</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Master Sorceress Stella$<BR>What? He wanted the bottle which can hold everything so I made him one. What's wrong with it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-d" mid="74"><![CDATA[<html>Yes indeed.</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Master Sorceress Stella$<BR>If he wanted something like that, he should have told me earlier. He should've asked <FONT color=#a82424>the bottle which can hold limitless and </FONT> everything.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4-e" mid="76"><![CDATA[<html>Th…Thank you;</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Master Sorceress Stella$<BR>Why am I complaining it to you…. It costs extra but I'll do it for free because I like cute little face of yours. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-e" image="QS_Default.dds" itemindex="300081">
+      <talk_answer link_index="n045_soceress_master_stella-4-f" mid="78"><![CDATA[<html>Thank you</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#7e12d2>(She whispers the spell and blow into the bottle)</FONT><BR><BR>Here, you can put as much as you want now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4-f" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Master Sorceress Stella$<BR>Make sure you tell him. <BR>It's not free anymore!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-5" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Master Sorceress Stella$<BR>Recently, I like younger kids more than older people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-a" mid="84"><![CDATA[<html>It's not free anymore.</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Blacksmith Berlin$<BR>So, did she give you one?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-b" mid="86"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Blacksmith Berlin$<BR>Of course she would say that. She is like a greedy fox. I'll never do business with them when I'm done with this. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-!next" mid="88"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">4960,,,,,</exe>
+         <exe type="setquest">496</exe>
+         <exe type="talk" npc="n091_trader_bellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">849</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300079</exe>
+         <exe type="delcount">.</exe>
+         <exe type="addquestitem" num="1">300081</exe>
+         <exe type="huntitem" num="1" exe="3,4,6" onexe="">300079</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200849</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300079</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">4960,,,,,</exe>
+         <exe type="complete">496</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="l">0</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="a">7</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="b">0,8,2,9,1</exelink>
+   <exelink qstep="1" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="a">2</exelink>
+   <exelink qstep="3" npc="n091_trader_bellin" sub="b" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="c" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="d" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="e" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="f" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="g" />
+   <exelink qstep="3" npc="n091_trader_bellin" sub="h">0,1</exelink>
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="e" />
+   <exelink qstep="4" npc="n045_soceress_master_stella" sub="f">0,1</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="b">0</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="!next">1</exelink>
+   <journal_data recompense="0:4960" quest_title="[칭호]「불사Lv3」어둠의 갑옷Ⅰ" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="300079&#xD;&#xA;">
+      <journal index="1">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode />
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Conversation with Blacksmith Berlin]]></title>
+         <contents mid="91"><![CDATA[<html>Blacksmith Berlin is experimenting the new title of immortal. Talk to Berlin.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Conversation with Blacksmith Berlin]]></destination>
+         <todo_msg mid="93"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_29.dds</contents_image>
+         <destination_pos>294,0,0</destination_pos>
+         <destination_mode>custom:291@1,292@4,293@4,294@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Collect the Smoke of Shadow]]></title>
+         <contents mid="95"><![CDATA[<html>To complete his experiment he needs the smoke of shadow. Go to Collapsed Mine, kill Darkhaze and collect the Smoke of shadow.<BR><FONT color=#7e12d2>※ You only can meet with Darkhaze by the secret road of Collapsed Mine.</FONT><BR><BR><FONT color=#086171>Hermalte Port(Dark Mine Entrance)</FONT> <FONT color=#a82424>→ Collapsed Mine</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[Collect the Smoke of Shadow]]></destination>
+         <todo_msg mid="97"><![CDATA[Go to Collapsed Mine and collect the Smoke of Shadow]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode />
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="99"><![CDATA[Conversation with Blacksmith Berlin]]></title>
+         <contents mid="100"><![CDATA[<html>Collected the Smoke of Shadow in the bottle. Return to Saint Haven and deliver to Blacksmith Berlin.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="101"><![CDATA[Conversation with Blacksmith Berlin]]></destination>
+         <todo_msg mid="102"><![CDATA[Collected the Smoke of Shadow. Return to Blacksmith Berlin]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode />
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[Conversation with Master Sorceress Stella]]></title>
+         <contents mid="105"><![CDATA[<html>The bottle was too small to collect the smoke. Go to Master Sorceress Stella and get a new bottle.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[Conversation with Master Sorceress Stella]]></destination>
+         <todo_msg mid="107"><![CDATA[Go to Master Sorceress Stella and get a new bottle]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode />
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[Conversation with Blacksmith Berlin]]></title>
+         <contents mid="109"><![CDATA[<html>Got the limitless bottle by Stella's magic. Report to Blacksmith Berlin.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[Conversation with Blacksmith Berlin]]></destination>
+         <todo_msg mid="111"><![CDATA[Return to Blacksmith Berlin]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>289</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

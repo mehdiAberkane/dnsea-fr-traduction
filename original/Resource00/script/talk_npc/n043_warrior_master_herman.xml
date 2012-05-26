@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n043_warrior_master_herman</npcename>
+      <npcid>43</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Master Warrior Herman]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="2"><![CDATA[<html>$Master Warrior Herman$<BR>We Warriors shall not bend the the evils of the Dragons. Believe in these strong arms and fight to the end! </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

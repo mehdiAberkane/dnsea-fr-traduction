@@ -1,0 +1,193 @@
+   <talk>
+      <npcename>n036_adventurer_guildmaster_gunter</npcename>
+      <npcid>36</npcid>
+      <startexe>12</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Gunther]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="guild_menu1" mid="4"><![CDATA[<html>[Guild Menu]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="134"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Adventurer's Guild Gunther${action:Refusal}<BR>We are receiving rescue requests everywhere… but we're too short-handed to help. Argh!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="talk_1" mid="6"><![CDATA[<html>[Talk] Creating a Guild</html>]]></talk_answer>
+         <talk_answer link_index="talk_2" mid="112"><![CDATA[<html>[Talk] Joining a Guild</html>]]></talk_answer>
+         <talk_answer link_index="talk_3" mid="113"><![CDATA[<html>[Talk] Withdrawing from a Guild</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="426" link_target="sq_984_xmas_gunter.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="231" link_target="nq37_9151_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Saint Haven</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="232" link_target="nq37_9152_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Dragon Raid</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="233" link_target="nq37_9153_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Barnac</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="234" link_target="nq37_9154_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Narsilia</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="235" link_target="nq37_9155_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Karacule</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="236" link_target="nq37_9156_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Teramai</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="237" link_target="nq37_9157_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About {user_nick}</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="238" link_target="nq37_9158_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Geraint</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="239" link_target="nq37_9159_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Dragons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="240" link_target="nq37_9160_gunter_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Lotus Marsh</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="421" link_target="nq37_9161_gunter_30_reward.xml"><![CDATA[<html>[Talk]<FONT color=#086171> Gunther's Gift Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="422" link_target="nq37_9162_gunter_60_reward.xml"><![CDATA[<html>[Talk]<FONT color=#086171> Gunther's Gift Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="423"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>A Guild is where players pledge their loyalty and allegience to each other. A Guild opens up a wide array of possibilities in your journey.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="115"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Creating a Guild$<BR><FONT color=#a82424>To create</FONT> a Guild, you will need <FONT color=#a82424>gold</FONT>. You cannot belong to any other Guilds as well. As the <FONT color=#a82424>Guild master</FONT> of your newly formed Guild, you are free to invite players into your Guild.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_2" image="" itemindex="">
+         <talk_answer link_index="talk" mid="116"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Joining a Guild$<BR>Ask the <FONT color=#a82424>Guild master</FONT> or Guild admin members for an invite. <BR>To invite a player into the Guild, use [Invite] on your Guild tab, or right click on the player you wish to invite and select [Guild Invite].</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_3" image="" itemindex="">
+         <talk_answer link_index="talk" mid="117"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$Withdrawing from a Guild$<BR>To <FONT color=#a82424>withdraw</FONT> from a Guild, select <FONT color=#a82424>Withdraw from Guild</FONT>.  from the <FONT color=#a82424>Guild Menu</FONT>. The Guild masters can only leave after delegating his/her position to a Guild member.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="no_guild" image="" itemindex="">
+         <talk_answer link_index="no_guild_0" mid="118"><![CDATA[<html>[Create Guild]</html>]]></talk_answer>
+         <talk_answer link_index="back_no_guild" mid="119"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="30"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>Hmmm, I see you do not have a Guild now.<BR> Would you like to join one or <FONT color=#a82424>form</FONT> a <FONT color=#a82424>Guild</FONT>?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_man" image="" itemindex="">
+         <talk_answer link_index="guild_man_3" mid="120"><![CDATA[<html>[Check Guild Points]</html>]]></talk_answer>
+         <talk_answer link_index="guild_man_2" mid="121"><![CDATA[<html>[Withdraw from Guild]</html>]]></talk_answer>
+         <talk_answer link_index="back_guild_man" mid="122"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>You are currently in a Guild.<BR>You may check your <FONT color=#a82424>Guild Points</FONT> or  <FONT color=#a82424>withdraw</FONT> from the Guild.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_master" image="" itemindex="">
+         <talk_answer link_index="guild_admin" mid="124"><![CDATA[<html>[Manage Guild]</html>]]></talk_answer>
+         <talk_answer link_index="guild_master_3" mid="123"><![CDATA[<html>[Check Guild Points]</html>]]></talk_answer>
+         <talk_answer link_index="back_guild_master" mid="125"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="60"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hello <FONT color=#a82424>Guild master</FONT>! You are authorised to <FONT color=#a82424>Manage Guild</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_admin" image="" itemindex="">
+         <talk_answer link_index="guild_admin_5" mid="128"><![CDATA[<html>[Expand Guild]</html>]]></talk_answer>
+         <talk_answer link_index="guild_mark" mid="437"><![CDATA[<html>[Guild Emblem]</html>]]></talk_answer>
+         <talk_answer link_index="guild_admin_1" mid="129"><![CDATA[<html>[Disband Guild]</html>]]></talk_answer>
+         <talk_answer link_index="guild_master" mid="438"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="82"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>Hello <FONT color=#a82424>Guild master</FONT>! You are authorised to <FONT color=#a82424>Manage Guild</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="164" link_target="sq11_518_quest_general.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>General's Request</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="165" link_target="sq11_519_boom_artist.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Bomb Expert</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="166" link_target="sq11_520_remove_enemy.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Uproot</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="136" link_target="sq11_522_demoralize.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Boosting Morale</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="153" link_target="sq11_523_formidable_enemy.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Defend Against The Dark!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="154" link_target="sq11_524_effective_attack.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Effective Attack</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="155" link_target="sq11_479_catastrophic_rain1.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Tragedy Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="173" link_target="sq11_480_catastrophic_rain2.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Tragedy Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="174" link_target="sq11_481_catastrophic_rain3.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Tragedy Part 3</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="175" link_target="sq11_513_birth_of_abyss1.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>Birth of Abyss I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="190" link_target="sq11_508_strange_asking1.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Strange Request I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="191" link_target="sq11_509_strange_asking2.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Strange Request II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="203" link_target="sq11_580_treasure_of_the_spirits.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Treasure of the Spirits</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="204" link_target="sq11_581_search_an_absconder.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Searching for A Missing Person</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="205" link_target="sq11_477_proof_of_real_adventurer.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Proof of a True Adventurer</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="220" link_target="sq11_605_time_to_relax.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Unexpected</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="195" link_target="sq11_516_beast_from_the_hell.xml"><![CDATA[<html>[Nest] <FONT color=#086171>Beast from Hell</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="208" link_target="sq11_597_lord_manticore_1.xml"><![CDATA[<html>[Nest] <FONT color=#086171>Swallowing The Light I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="424"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="135"><![CDATA[<html>$Adventurer's Guild Gunther${action:Talk}<BR>Looking for a job?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="395"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="guild_menu_90" mid="396"><![CDATA[<html>[Guild Menu]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="397"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="398"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="242"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>I see the true spirit of the adventurer in you. You are worthy to be my successor!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="399"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="guild_menu_60" mid="400"><![CDATA[<html>[Guild Menu]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="401"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="402"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="243"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>Sigh, if I were 10 years younger and not burdened with this old, weak body, I'd join you in the fight against evil!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="403"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="guild_menu_30" mid="404"><![CDATA[<html>[Guild Menu]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="405"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="406"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="244"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Hello there,{user_nick}! Hah, I may be old, but my memory's still good!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="407"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="guild_menu_0" mid="408"><![CDATA[<html>[Guild Menu]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="409"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="410"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="245"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>Why, hello there...{user_nick}, I believe? Ahhh, meeting new people is fun, but memorizing names is not! </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="411"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="412"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="246"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="413"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="249"><![CDATA[<html>$Adventurer's Guild Gunther${action:Talk}<BR>Ahhh, souvenirs from your adventure isn't it?<BR>I'll make sure the Adventurer's Guild knows about your kind contribution.<BR>Thanks.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="guild_war_fail" image="" itemindex="">
+         <talk_answer link_index="guild_master" mid="442"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="441"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>※ <FONT color=#7e12d2>It is not the time for Guild battle registration yet. Your application has been received.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 0);</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 1);</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 2);</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 3);</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 4);</exe>
+         <exe type="conexe" true="8" false="7">0</exe>
+         <exe type="conexe" true="9" false="10">1</exe>
+         <exe type="talk">no_guild</exe>
+         <exe type="talk">guild_master</exe>
+         <exe type="talk">guild_man</exe>
+         <exe type="custom">api_ui_OpenGuildMgrBox(userObjID, 5);</exe>
+         <exe type="conexe" true="13" false="0">2</exe>
+         <exe type="conexe" true="16" false="14">3</exe>
+         <exe type="conexe" true="17" false="15">4</exe>
+         <exe type="conexe" true="18" false="19">5</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 36 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 36 );</exe>
+         <exe type="talk">gift</exe>
+         <exe type="openshop">38000</exe>
+         <exe type="conexe" true="11" false="26">6</exe>
+         <exe type="talk">guild_war_fail</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_guild_GetGuildMemberRole(userObjID) == 0</chk>
+         <chk type="custom">api_guild_GetGuildMemberRole(userObjID) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 523) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 36 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 36 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 36 ) >= 30</chk>
+         <chk type="custom">api_guildwar_IsPreparation(userObjID) == 1</chk>
+      </conditions>
+      <exelink idx="guild_menu1">6</exelink>
+      <exelink idx="back_talk">12</exelink>
+      <exelink idx="no_guild_0">1</exelink>
+      <exelink idx="back_no_guild">12</exelink>
+      <exelink idx="guild_man_3">4</exelink>
+      <exelink idx="guild_man_2">3</exelink>
+      <exelink idx="back_guild_man">12</exelink>
+      <exelink idx="guild_master_3">4</exelink>
+      <exelink idx="back_guild_master">12</exelink>
+      <exelink idx="guild_admin_5">5</exelink>
+      <exelink idx="guild_mark">24</exelink>
+      <exelink idx="guild_admin_1">2</exelink>
+      <exelink idx="back_quest">12</exelink>
+      <exelink idx="guild_menu_90">6</exelink>
+      <exelink idx="present_90">20,21</exelink>
+      <exelink idx="guild_menu_60">6</exelink>
+      <exelink idx="present_60">20,21</exelink>
+      <exelink idx="guild_menu_30">6</exelink>
+      <exelink idx="present_30">20,21</exelink>
+      <exelink idx="guild_menu_0">6</exelink>
+      <exelink idx="present_0">20,21</exelink>
+      <exelink idx="gift">22,23</exelink>
+      <exelink idx="back_present_ui">12</exelink>
+      <exelink idx="back_gift">12</exelink>
+   </talk>

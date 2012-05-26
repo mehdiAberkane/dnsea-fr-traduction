@@ -1,0 +1,115 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq22_7906_pope_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7906</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About first love]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="8"><![CDATA[<html>Are you kidding?</html>]]></talk_answer>
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="9"><![CDATA[<html>…Are you serious?</html>]]></talk_answer>
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-g" mid="10"><![CDATA[<html>Do you like gold more than your girl friend?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Pero$<BR>Huh? My first love? Hahaha, my first love is money. <BR>When I first saw this 1gold, I felt shock as if I got hit by a lightening and was touched. Hence, I felt in love with money with all my heart. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Pero$<BR>
+I’m not joking, I’m serious.<BR>There are different kinds of people in this world and one of them is like me… the money-loving kind. <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant Pero$<BR>
+...Why are you looking at me like that?<BR>Everyone thinks I’m obsessed with money, but who in the world doesn’t like money! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Merchant Pero$<BR>Out of all who claim to love money, I am the one who loves money the most. But hey, I've never cheated anyone! <BR><FONT color=#7e12d2>(Pero speaks aggressively) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant Pero$<BR>Of course I’m being serious. Don’t look at me that way. You can only make money on your own. There are sayings like... <BR>Singles make a gold but couples spend a gold. That is so true </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Merchant Pero$<BR>I’m not being single because I am not good at relationships. It is because I can make more money while staying single… <BR><FONT color=#7e12d2>(Pero is giving ridiculous excuses)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Merchant Pero$<BR>If I make lots of money, a girlfriend will come along automatically. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-h" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant Pero $<BR>I can state 20 reasons why gold is better than having a girlfriend right now. You can have 10 or 20 gold but they won't become jealous of each other. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-i" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant Pero$<BR>Also gold don’t eat gold. Girlfriends? They eat gold, of course they do. <BR>Otherwise, people in relationships will not need to buy lace handkerchiefs or designer bags for their girlfriends. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-i" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Merchant Pero$<BR>...What? If you make lot of gold, you can have a girlfriend? No way in the world that is the true. <BR>I am married with gold. Gold is me and I am gold. <BR><FONT color=#7e12d2>(Pero is giving excuses.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7906, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 100 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 277, -100 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="d">2,4,0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="g">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 첫사랑 이야기" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>277:9000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>
