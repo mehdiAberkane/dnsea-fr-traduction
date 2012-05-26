@@ -57,14 +57,14 @@
 <message mid="303"><![CDATA[Field level too low; unable to join party.]]></message>
 <message mid="304"><![CDATA[Character level too low; unable to join party.]]></message>
 <message mid="305"><![CDATA[Passwords incorrect; unable to join party.]]></message>
-<message mid="306"><![CDATA[Unable to leave party.]]></message>
+<message mid="306"><![CDATA[Impossible de quitter le groupe.]]></message>
 <message mid="307"><![CDATA[Unable to start game.]]></message>
 <message mid="308"><![CDATA[Unable to invite to party.]]></message>
-<message mid="309"><![CDATA[Character already in a party; unable to invite.]]></message>
+<message mid="309"><![CDATA[Personnage déjà dans un groupe; impossible d'inviter.]]></message>
 <message mid="310"><![CDATA[Character's field level is too low; unable to invite to party.]]></message>
 <message mid="311"><![CDATA[Character's level is too low; unable to invite to party.]]></message>
 <message mid="312"><![CDATA[Character has already been invited.]]></message>
-<message mid="313"><![CDATA[Character does not exist.]]></message>
+<message mid="313"><![CDATA[Le personnage n'existe pas.]]></message>
 <message mid="314"><![CDATA[Failed to kick party member.]]></message>
 <message mid="315"><![CDATA[Failed to set new party leader.]]></message>
 <message mid="316"><![CDATA[Failed to change channel.]]></message>
