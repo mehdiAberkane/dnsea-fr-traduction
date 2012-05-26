@@ -3,21 +3,21 @@
 <Category index="0" Title="Basic Control Guide"><![CDATA[<html>
 Utilisez la touche <font color="yellow">[H]</font> pour ouvrir le guide des contrôles de base.<br>
 <br>
-<font color="red">[Character Movement]</font><br>
-<font color="yellow">[W]</font> : Forward<br>
-<font color="yellow">[S]</font> : Backward<br>
-<font color="yellow">[A]</font> : Left<br>
-<font color="yellow">[D]</font> : Right<br>
-<font color="yellow">[E]</font> : Auto Run<br>
-<font color="yellow">[Space]</font> : Jump<br>
-<font color="yellow">[Mouse Movement]</font> : Change view (visual angle) <br>
+<font color="red">[Mouvement du Personnage]</font><br>
+<font color="yellow">[W]</font> : Avant<br>
+<font color="yellow">[S]</font> : Arrière<br>
+<font color="yellow">[A]</font> : Gauche<br>
+<font color="yellow">[D]</font> : Droite<br>
+<font color="yellow">[E]</font> : Courir Auto<br>
+<font color="yellow">[Space]</font> : Saut<br>
+<font color="yellow">[Mouse Movement]</font> : Changer de vue (angle visuel) <br>
 <br>
-<font color="red">[Switch to battle mode]</font><br>
-Use <font color="yellow">[Tab]</font> to toggle between battle / non-battle mode.<br>
+<font color="red">[Passer en mode combat]</font><br>
+Utilisez <font color="yellow">[Tab]</font> pour basculer entre le mode combat / non-combat.<br>
 <br>
 <font color="red">[Combat Method]</font><br>
-<font color="yellow">[Left Mouse Button]</font> : Basic Attack <br>
-<font color="yellow">[Right Mouse Button]</font> : Special Attack<br>
+<font color="yellow">[Left Mouse Button]</font> : Attaque Basique <br>
+<font color="yellow">[Right Mouse Button]</font> : Attaque Spéciale<br>
 <font color="yellow">[Number Key 1~0]</font> : Use skill / item in quick slot<br>
 <font color="yellow">[~]</font> : Toggle between quick slot bars<br>
 <br>
