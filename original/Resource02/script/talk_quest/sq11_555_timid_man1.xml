@@ -1,0 +1,235 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_555_timid_man1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>555</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>556</nextqid>
+      <nextqname>sq11_556_timid_man2</nextqname>
+      <nextqnpc>n133_lena_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Timid Man I]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>280</npcid>
+         <npcename>n280_saint_guard</npcename>
+         <npckname>왕성 근위병 말콤</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Royal Guard Malcolm$<BR>Is the lady here yet… Mumbling…. It's scary here… What if monsters come out… Mumbling.<BR><FONT color=#7e12d2>(Looks like he's waiting for someone)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Missy Lena$<BR>We meet so often in the castle.<BR>If you need a job, why don't you go outside the castle?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="8"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Royal Guard Joy$<BR>Hey, could you do me a favor?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="10"><![CDATA[<html>That's not good.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Royal Guard Joy$<BR>I have a friend who's in charge of the area close to here, but he said he was going to meet someone and deviated from his post.<BR>
+But, he hasn't come back after a long time had passed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="12"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Royal Guard Joy$<BR>Yes, soon, he might be prosecuted as a deserter. I need to get him back before that happens….<BR>
+But I also can't leave my post.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="14"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Royal Guard Joy$<BR>I'm also worried something might have happened to him.<BR>Please bring my <FONT color=#a82424>friend</FONT> back for me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceppted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Timid Man I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QW_34.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Royal Guard Joy$<BR>My friend is <FONT color=#a82424>Royal Guard Malcolm</FONT>.<BR>He said he'll be at the <FONT color=#a82424>Flooded Downstream</FONT>. Please find him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Missy Lena${action:Talk}<BR>We meet so often in the castle.<BR>If you need a job, why don't you go outside the castle?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-1-a" mid="21"><![CDATA[<html>(Explains the situation)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Royal Guard Malcolm$<BR>Who, who are you!<BR><FONT color=#7e12d2>(Scared guard shouts)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1-a" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-1-b" mid="25"><![CDATA[<html>What? A lady?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Royal Guard Malcolm$<BR>Oh, okay. Joy sent you.<BR>Oh, no… So, my <FONT color=#a82424>lady</FONT> must not be coming….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1-b" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-1-c" mid="27"><![CDATA[<html>Who were you going to meet?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Royal Guard Malcolm$<BR>Umm… I was going to meet somebody here today.<BR>
+I'm going to wait until she comes. I… I will never leave!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1-c" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-1-d" mid="29"><![CDATA[<html>(Malcolm shouts excitedly)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Royal Guard Malcolm$<BR>My fair <FONT color=#a82424>noble</FONT> lady!<BR>I told her how I felt about her and gave her a very expensive <FONT color=#a82424>necklace</FONT> as a present. I was so nervous.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1-d" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-1-e" mid="32"><![CDATA[<html>If you don't go back soon, you'll be prosecuted as a deserter.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Royal Guard Malcolm$<BR>I asked her if she accepts my feelings, wear that <FONT color=#a82424>necklace</FONT> and come out here.<BR>
+If she declines… I asked her to decline my feelings here. So, I'll keep on waiting!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1-e" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-1-f" mid="34"><![CDATA[<html>(Malcolm starts thinking)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Royal Guard Malcolm$<BR>I… am… not… afraid… of that. <FONT color=#7e12d2>(It is indeed scary becoming a deserter)</FONT> What should I do? I can't leave until she comes…. I used my monthly salary to buy that necklace….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1-f" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-1-g" mid="36"><![CDATA[<html>What should I tell her?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Royal Guard Malcolm$<BR>Umm… I have a request.<BR>
+I'll be waiting here a little longer, so could you go to the <FONT color=#a82424>lady</FONT> and give her a message?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1-g" image="" itemindex="">
+      <talk_answer link_index="n280_saint_guard-1-h" mid="38"><![CDATA[<html>Okay. Who's that lady?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Royal Guard Malcolm$<BR>Accept my feelings…. Or… umm, <FONT color=#7e12d2>(Malcolm hesitates)</FONT> Umm, get my necklace back… That's kind of expensive… <FONT color=#7e12d2>(Can't hear him very well since he's mumbling)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-1-h" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Royal Guard Malcolm$<BR>She comes to the Saint Haven <FONT color=#a82424>Castle</FONT> very often. Her name is <FONT color=#a82424>Missy Lena</FONT>…. I fell in love at the first sight of her fire-red hair and pure white dress. Haha, well, thank you!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n280_saint_guard-2" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Royal Guard Malcolm$<BR>Please go to the Saint Haven Castle and pass on my message to <FONT color=#a82424>Missy Lena</FONT>. If she declines my feelings, I would at least like my necklace back…. I'm not moving until you come back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Royal Guard Joy$<BR>Did you meet <FONT color=#a82424>Malcolm</FONT>?<BR>If he doesn't come back soon, he really will become a deserter…. I'm so worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2-a" mid="44"><![CDATA[<html>(Explains the situation)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Missy Lena${action:Talk}<BR>What is it? If you need someone to play with, find someone else.<BR>I have a lot to think about, so I'm not able to play with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2-b" mid="47"><![CDATA[<html>(Lena takes out a necklace)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Missy Lena$<BR>What? What love confession?<BR>…Oh, then this necklace is….<FONT color=#7e12d2> (Lena searches her pocket)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2-b" image="QS_Default.dds" itemindex="300255">
+      <talk_answer link_index="n133_lena_duglars-2-c" mid="49"><![CDATA[<html>You… didn't know…. (What a pity)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Missy Lena$<BR>One day, I went to see a military parade and some soldier gave me this necklace and ran away. I think he said something... but I couldn't hear what he was saying, so I just forgot about him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2-c" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2-d" mid="51"><![CDATA[<html>He at least wants his necklace back…</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Missy Lena${action:Talk}<BR>He didn't even explain himself clearly, and just ran away.<BR>These day, I have much worries to take care of, so I can't take care of these small things.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2-d" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2-e" mid="53"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Missy Lena$<BR>Is there a reason for me to go in person?<BR>Since you came to pass on his words, could you, <FONT color=#a82424>instead</FONT> of me, return to him and give him the necklace?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2-e" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2-!next" mid="55"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5551,5552,5553,5554,5555</exe>
+         <exe type="setquest">555</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5551,5552,5553,5554,5555</exe>
+         <exe type="addquestitem" num="1">300255</exe>
+         <exe type="complete">555</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceppted">1,2</exelink>
+   <exelink qstep="1" npc="n280_saint_guard" sub="b" />
+   <exelink qstep="1" npc="n280_saint_guard" sub="c" />
+   <exelink qstep="1" npc="n280_saint_guard" sub="d" />
+   <exelink qstep="1" npc="n280_saint_guard" sub="e" />
+   <exelink qstep="1" npc="n280_saint_guard" sub="f" />
+   <exelink qstep="1" npc="n280_saint_guard" sub="g" />
+   <exelink qstep="1" npc="n280_saint_guard" sub="h">0,1</exelink>
+   <exelink qstep="2" npc="n133_lena_duglars" sub="b" />
+   <exelink qstep="2" npc="n133_lena_duglars" sub="c" />
+   <exelink qstep="2" npc="n133_lena_duglars" sub="d" />
+   <exelink qstep="2" npc="n133_lena_duglars" sub="e">0</exelink>
+   <exelink qstep="2" npc="n133_lena_duglars" sub="!next">1,2</exelink>
+   <journal_data recompense="1:5551,2:5552,3:5553,4:5554,5:5555" quest_title="소심한 남자Ⅰ" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_34.dds</contents_image>
+         <destination_pos>343,n280</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1</destination_mode>
+         <statemark_npcid>280</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Never Coming Back]]></title>
+         <contents mid="58"><![CDATA[<html>It seems Royal Guard Malcolm isn't returning. Go to the Flooded Downstream and look for him.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Entrance to the Ruins at Downstream)</FONT> <FONT color=#a82424>→ Flooded Downstream</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Find the Royal Guard at the Flooded Downstream]]></destination>
+         <todo_msg mid="60"><![CDATA[Find the Royal Guard at the Flooded Downstream]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode />
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Love for Missy Lena]]></title>
+         <contents mid="62"><![CDATA[<html>Royal Guard Malcolm says Missy Lena and he made a promise. He says he won't return until he at least gets his necklace back, so return to the castle and pass on the message to <FONT color=#a82424>Missy Lena</FONT>.<BR><BR><FONT color=#086171>Saint Haven Castle</FONT> <FONT color=#a82424>→ Missy Lena</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Missy Lena at the castle]]></destination>
+         <todo_msg mid="64"><![CDATA[Pass on Malcolm's message to Missy Lena at the castle]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>460</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

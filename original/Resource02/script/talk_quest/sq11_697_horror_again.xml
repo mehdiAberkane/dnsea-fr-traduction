@@ -1,0 +1,253 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_697_horror_again</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>697</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>698</nextqid>
+      <nextqname>sq11_698_bad_donald</nextqname>
+      <nextqnpc>n042_general_duglars</nextqnpc>
+      <qkname mid="1"><![CDATA[Another summer breeze]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>452</npcid>
+         <npcename>n452_robinson</npcename>
+         <npckname>가난뱅이 소년</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR>Oh, it's you.<BR>The king likes you very much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n452_robinson-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Poor Kid$<BR>
+The reality isn't as easy as I thought.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Guard Joey$<BR>
+Is it because of my night shift this week?<BR>
+I don't feel well again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-a" mid="11"><![CDATA[<html>What's the problem?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$King Cassius$<BR>It's a big problem.<BR>What should we do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-b" mid="14"><![CDATA[<html>He should be fine.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$King Cassius$<BR>It's about my poor friend… He is not coming to see me anymore.<BR>Do you think something might have happened to him? What do you think?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-c" mid="16"><![CDATA[<html>Do you know where he is?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$King Cassius$<BR>I don't have to get dressed. I just like hanging out with him…..<BR>Why isn't he coming? Can you go and see if he is ok?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-d" mid="18"><![CDATA[<html>(Cassius asks sincerely)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$King Cassius$<BR>I don't know where he is since I haven't heard from him at all.<BR>it's a big concern.. What should I do? Is there a way?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Another summer breeze$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$King Cassius$<BR>I would have spotted him if he came to see me….<BR><FONT color=#7e12d2>(Talk to Guard Joey, he might have seen something)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n452_robinson-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Poor Kid${action:Talk}<BR>The reality isn't easy as I thought.<BR>Isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$General Douglas$<BR>Oh, it's you.<BR>The king likes you very much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-a" mid="26"><![CDATA[<html>Don't you see ghosts anymore?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Guard Joey$<BR>
+Is it because of my night shift this week?<BR>
+I don't feel well again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-b" mid="29"><![CDATA[<html>(There's no point not eating.)</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-1-b" mid="30"><![CDATA[<html>(Something is strange but leave it.)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Guard Joey$<BR>What are you talking about? I bought some very expensive medicine so I couldn't even have lunch this week. The medication should work since it's so expensive!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-c" mid="32"><![CDATA[<html>Why?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Guard Joey$<BR>…Uhm. Ghost…?<BR>Ah, I think there is a ghost around here.<BR><FONT color=#7e12d2>(Joey trembles in fear)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-c" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2" mid="34"><![CDATA[<html>It could be.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Guard Joey$<BR>I didn't see it again but my friend, Malcolm saw the same ghost as me!<BR>The ghost looks like the<FONT color=#a82424>King</FONT>. Hoo…<BR>
+Do you think I'm affected because I'm talking about this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="QW_38.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Guard Joey${action:Talk}<BR>Malcolm saw the ghost at <FONT color=#a82424>Road to City of Death</FONT>.<BR>Should I buy him another medication?….<BR>
+He is like a kid.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n452_robinson-2" image="" itemindex="">
+      <talk_answer link_index="n452_robinson-2-a" mid="38"><![CDATA[<html>Why?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Poor Kid$<BR>The reality isn't easy as I thought.<BR><FONT color=#7e12d2>(Poor Kid takes a big breath.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n452_robinson-2-a" image="" itemindex="">
+      <talk_answer link_index="n452_robinson-2-b" mid="40"><![CDATA[<html>(He is the one whom Malcolm saw.)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Poor Kid${action:Talk}<BR>I thought they won't harass the king if I didn't go.<BR>I was still worried so I went sneaked in to the castle and watched Donald from behind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n452_robinson-2-b" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n452_robinson-2-c" mid="43"><![CDATA[<html>What?!</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Poor Kid$<BR>I don't think Donald has given up on his plan.<BR>
+He is going to take out my friend, the King and get rid of him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n452_robinson-2-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n452_robinson-3" mid="45"><![CDATA[<html>Let’s tell him.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Poor Kid$<BR>If that's the case, shouldn't we tell the General regardless of evidence?<BR>It worries me a lot. Can't we can't do anything by ourselves?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n452_robinson-3" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Poor Kid${action:Stand2}<BR>I saw it at a glance but Donald had a crew.<BR>Hurry up and inform <FONT color=#a82424>General Douglas</FONT> before it's too late!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="49"><![CDATA[<html>Emergency?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$General Douglas$<BR>Oh, it's you!<BR>We have an emergency situation right now and I was looking for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-!next" mid="51"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">697</exe>
+         <exe type="recompense_view">6970,,,,,</exe>
+         <exe type="talk" npc="n040_king_casius">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6970,,,,,</exe>
+         <exe type="complete">697</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 270 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="c" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n452_robinson" sub="b" />
+   <exelink qstep="2" npc="n452_robinson" sub="c" />
+   <exelink qstep="2" npc="n452_robinson" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="a">0</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="!next">1,2</exelink>
+   <journal_data recompense="0:6970" quest_title="또 다른 납량특집" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[To find a witness]]></title>
+         <contents mid="54"><![CDATA[<html>Ask Guard Joey if he has seen Poor Kid.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Guard Joey</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Conversation with Guard Joey]]></destination>
+         <todo_msg mid="56"><![CDATA[Talk to Guard Joey]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_38.dds</contents_image>
+         <destination_pos>384,n452</destination_pos>
+         <destination_mode>custom:381@1,382@1,383@1,384@1</destination_mode>
+         <statemark_npcid>452</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[On Road to City of Death]]></title>
+         <contents mid="58"><![CDATA[<html>Someone spotted a ghost resembling the King at Road to City of Death. Poor Kid should be there.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Dark Mines)</FONT> <FONT color=#a82424>→ Road to City of Death(Poor Kid)</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Find Poor Kid in Road to City of Death]]></destination>
+         <todo_msg mid="60"><![CDATA[Go to Road to City of Death and look for Poor Kid.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[To General Douglas]]></title>
+         <contents mid="63"><![CDATA[<html>Guard Donald is planning something bad. Report to General Douglas.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Conversation with General Douglas]]></destination>
+         <todo_msg mid="65"><![CDATA[Report to General Dougals]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>696</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,43 @@
+   <talk>
+      <npcename>n734_darklair_tarte</npcename>
+      <npcid>734</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Dark Officer Mocha]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="opencompounditem2" mid="8"><![CDATA[<html>[Enchance Suffix]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_22" mid="12"><![CDATA[<html>[Goddess Shop]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Dark Officer Mocha$<BR>
+Hi Im Dark Officer Mocha from Goddess Shadow Body. I was deployed here to suppport the Adventurers who are out of the Boundary of Darkness.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="7"><![CDATA[<html>$Dark Officer Mocha$<BR>
+Hi Im Dark Officer Mocha from Goddess Shadow Body. I was deployed here to suppport the Adventurers who are out of the Boundary of Darkness.<BR>
+※ <FONT color=#7e12d2>You can use Suffix Enhancement once you reach LV 50.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenCompound2Item(userObjID, 2001);</exe>
+         <exe type="conexe" true="9" false="5">1</exe>
+         <exe type="conexe" true="10" false="6">2</exe>
+         <exe type="conexe" true="11" false="7">3</exe>
+         <exe type="conexe" true="12" false="8">4</exe>
+         <exe type="conexe" true="13" false="13">5</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,17001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,17002,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,17003,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,17004,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,17005,100);</exe>
+      </executions>
+      <conditions>
+         <chk type="lvl" op=">=">50</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <exelink idx="opencompounditem2">3</exelink>
+      <exelink idx="shop_open_22">4</exelink>
+   </talk>

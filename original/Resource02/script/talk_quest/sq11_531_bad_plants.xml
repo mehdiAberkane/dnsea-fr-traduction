@@ -1,0 +1,165 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_531_bad_plants</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>531</qid>
+      <designer>김인정</designer>
+      <qlevel>29</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Harmful Plants]]></qkname>
+      <qnpc>
+         <npcid>98</npcid>
+         <npcename>n098_warrior_master_lodrigo</npcename>
+         <npckname>상급 워리어 로드리고</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-a" mid="6"><![CDATA[<html>Is there any good deed I can do?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Warrior Rodrigo$<BR>It's good that you found me.<BR>Are you looking for tasks to do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-b" mid="8"><![CDATA[<html>( Wild Flower Garden…I seem to recall something, I'll keep silent first)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Warrior Rodrigo${action:talk}<BR>I had wanted to train at the empty space in the front, but a <FONT color=#a82424>Wild Flower</FONT> Garden has formed there.<BR> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Warrior Rodrigo$<BR>This must be the monsters wanting to control the group of <FONT color=#a82424>Wild Flowers</FONT> , to use plants as weapons!<BR> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-d" mid="12"><![CDATA[<html>What do you want?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Anyway, let's make some <FONT color=#a82424>herbicide</FONT> quickly to destroy those <FONT color=#a82424>Wild Flowers</FONT>.<BR> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="QW_29.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-e" mid="14"><![CDATA[<html>I understand..</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Warrior Rodrigo$<BR>To make herbicide, go to <FONT color=#a82424>Lost Tunnels</FONT> to obtain <FONT color=#a82424>Ogre Buwoo</FONT>'s Ogre Medicine.<BR>It will surely be very effective.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-accepted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Harmful Plants$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1" image="QW_29.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Master Warrior Rodrigo$<BR>It's the <FONT color=#a82424>Ogre Buwoo</FONT> at the <FONT color=#a82424>Lost </FONT><FONT color=#a82424>Tunnels</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-a" mid="22"><![CDATA[<html>(How can it be swallowed by wild flowers)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Warrior Rodrigo${action:talk}<BR>Oh, you're back! <BR>Let's take action immediately before <FONT color=#a82424>Wild Flowers</FONT> occupy the entire <FONT color=#a82424>Saint Haven</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-a" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-b" mid="24"><![CDATA[<html>(I am passing out due to this smell anyway)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Hmmm…I can smell the strong medicine from a far distance….<BR>If the Ogre's Medicine is mixed into the herbicide, the <FONT color=#a82424>Wild Flowers</FONT> will surely be defeated.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-b" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-c" mid="26"><![CDATA[<html>(Although I don't know what it means, but he seems pretty satisfied)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Master Warrior Rodrigo$<BR>No matter how sly the monsters are, we will never be defeated!<BR> There will always be a way out!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-c" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-2-d" mid="28"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-2-d" image="QN_NPC_Warrior_Lodrigo.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Master Warrior Rodrigo$<BR>Hurry to <FONT color=#a82424>Wild Flower</FONT> Garden to take a look.<BR>Thanks for the hard work, my friend.<BR><FONT color=#7e12d2>(Rodrigo is preparing the medicine and herbicide)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5311,5312,5313,5314,5315</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2">858</exe>
+         <exe type="addquestitem" num="1">400107</exe>
+         <exe type="huntitem" num="1" exe="4,5,6" onexe="">400107</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n098_warrior_master_lodrigo">1</exe>
+         <exe type="setquest">531</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2">200858</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400107</exe>
+         <exe type="complete">531</exe>
+         <exe type="recompense">,5311,5312,5313,5314,5315</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="accepted">8,7,1,9,3</exelink>
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="b" />
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="c">2</exelink>
+   <exelink qstep="2" npc="n098_warrior_master_lodrigo" sub="d">0,1</exelink>
+   <journal_data recompense="1:5311,2:5312,3:5313,4:5314,5:5315" quest_title="해로운 식물" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="400107">
+      <journal index="1">
+         <contents_image>QW_29.dds</contents_image>
+         <destination_pos>294,0,0</destination_pos>
+         <destination_mode>custom:291@1,292@1,293@1,294@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Ogre Buwoo's Medicine]]></title>
+         <contents mid="32"><![CDATA[<html><FONT color=#a82424>Master Warrior Rodrigo</FONT>To manufacture the Spitflower herbicide, I need <FONT color=#a82424>Ogre Buwoo</FONT>'s medicine.<BR><BR><FONT color=#086171>Hermalte Port (Dark Mines)</FONT> <FONT color=#a82424>→ Lost Tunnels</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Defeat Lost Tunnels' Ogre Buwoo]]></destination>
+         <todo_msg mid="34"><![CDATA[Defeat Lost Tunnels' Ogre Buwoo and retrieve the medicine.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>
+         <destination_pos>11,n98</destination_pos>
+         <destination_mode />
+         <statemark_npcid>98</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Pungent Smell]]></title>
+         <contents mid="37"><![CDATA[<html>Pass Ogre Buwoo's Medicine to <FONT color=#a82424>Master Warrior Rodrigo</FONT>.<BR>
+ <BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Warrior Rodrigo</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Speak with Master Warrior Rodrigo]]></destination>
+         <todo_msg mid="39"><![CDATA[Report to Master Warrior Rodrigo.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,106 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq37_9154_gunter_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9154</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Queen Narsilla]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Adventurer’s Guild Master Gunther$ <BR>
+Queen of the Elves, Nerwin was her name at that time, was beautiful and well mannered. <BR>
+ <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="9"><![CDATA[<html> But she became the Queen of Elves. </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="10"><![CDATA[<html> She was talking nonsense. </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="11"><![CDATA[<html> Just like an Elf. </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="12"><![CDATA[<html> I don't understand at all. </html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Adventurer’s Guild Master Gunther$ <BR>
+I’ve asked her why we do we have to fight. And I remember her saying, if there is a hand to dispose, there must be a hand to collect. Her Telegia is to be the collecting hand. <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Ithilien had said, she had found the true Telegia at the end of war. I think the job of collecting was a step towards her true Telegia. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Adventurer’s Guild Master Gunther$ <BR>
+Is that how you understand? I wish your listening skill was half as good as your fighting skills. That would help a lot. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Adverturer’s Guild Master Gunther$<BR>
+Yes, she was the real Elf... beautiful and mysterious. <FONT color=#7e12d2> (Gunther stares into the distance, eyes brimming with nostalgia.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+There are things that you can’t understand unless you want to know. Open your heart to understand the meaning. In that way you will feel the true meaning. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 9154, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 320 ); </exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 36, 320 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 160 ); </exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 36, 160 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="b">1,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">2,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">3,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="e">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 나르실리아에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>36:5600:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

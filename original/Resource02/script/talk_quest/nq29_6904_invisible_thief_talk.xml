@@ -1,0 +1,95 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq29_6904_invisible_thief_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6904</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Something You Want]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-a" mid="8"><![CDATA[<html>How about the latest Fashion Goddess magazin?</html>]]></talk_answer>
+      <talk_answer link_index="n255_invisible_thief-accepting-c" mid="9"><![CDATA[<html>You like Fresh Meat Pie?</html>]]></talk_answer>
+      <talk_answer link_index="n255_invisible_thief-accepting-e" mid="10"><![CDATA[<html>Sorceress education material?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Invisible Thief$<BR>Things that I desired for? Is there such thing?<BR>If there is, are you going to buy for me?<BR>I'm the successor of Phantom Thief Shupin!! I get the things I desired by stealing ok!<BR>Understood?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-b" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Invisible Thief$<BR>Isn't that something girls would like to read? Why are you asking me about this stuff...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-b" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Invisible Thief$<BR>Well, I'll still read it though, erm, but not because I like it, I just want to know what's in trend... Why are you looking at me like that... <BR><FONT color=#7e12d2>(Invisible Thief is explaining himself seriously, seems like that's something he wants)</FONT><BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-d" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Invisible Thief$<BR><FONT color=#2b2723>Fresh Meat Pie IS GOOD! How boring it would be without meat in this world~<BR>Wahaha, ah, but please take away the onion and garlic.<BR></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-d" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Invisible Thief$<BR>I like something plain without spices.<BR><FONT color=#7e12d2>（Invisible Thief seems to be in good mood)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-e" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Invisible Thief$<BR><FONT color=#7e12d2><FONT color=#2b2723>I understand magic even though I'm not trained. What do you think I'm made of?<BR>Hur!</FONT><BR><FONT color=#7e12d2>（Invisible Thief is feeling annoyed.）</FONT><BR></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6904, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 255, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 255, 400 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 255, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="c">2,0</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="e">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 가지고 싶은 것" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>255:5000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

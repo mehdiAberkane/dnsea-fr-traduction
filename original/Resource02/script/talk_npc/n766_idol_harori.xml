@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n766_idol_harori</npcename>
+      <npcid>766</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Idol Harori]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Idol Harori$<BR>I am the angelic and lovely<FONT color=#a94407>★</FONT>Idol Harori! <BR>  Will you listen to my singing♪?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="enterquest">sq15_789_unexpected_girl</exe>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="enterquest">sq15_792_nobody_there</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">789</chk>
+         <chk type="hasquest">792</chk>
+      </conditions>
+   </talk>

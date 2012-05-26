@@ -1,0 +1,93 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq11_5704_lily_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5704</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Rose]]></qkname>
+      <qnpc>
+         <npcid>7</npcid>
+         <npcename>n007_lily</npcename>
+         <npckname>릴리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-accepting" image="" itemindex="">
+      <talk_answer link_index="n007_lily-accepting-a" mid="6"><![CDATA[<html>I think she's very pretty.</html>]]></talk_answer>
+      <talk_answer link_index="n007_lily-accepting-b" mid="7"><![CDATA[<html>Rose isn't really my type...</html>]]></talk_answer>
+      <talk_answer link_index="n007_lily-accepting-c" mid="8"><![CDATA[<html>Yeah, I'm sure she's very pretty.</html>]]></talk_answer>
+      <talk_answer link_index="n007_lily-accepting-d" mid="9"><![CDATA[<html>I hear she isn't that pretty.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Lily$<BR>My sister's really pretty! There's nobody prettier than her in the whole entire town! You think so too, don't you, <FONT color=#387206>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Lily$<BR>You're so smart, <FONT color=#387206>{user_nick}</FONT>. Everyone who sees my sister says that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Lily$<BR>Just you wait, <FONT color=#387206>{user_nick}</FONT>! You'll realize Rose's the prettiest, too!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Lily$<BR>Yeah, my sister is the prettiest!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Lily$<BR>That's not true! There's not nobody more pretty than Rose!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5704, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 7, 320 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 7, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 7, 100 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 7, 380 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n007_lily" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n007_lily" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n007_lily" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n007_lily" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 로제에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>7:4750:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

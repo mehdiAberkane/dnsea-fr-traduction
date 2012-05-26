@@ -1,0 +1,210 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_361_entry_finish</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>361</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>메이의 대작	400256</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Completed Entry]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Event Planner$<BR>The deadline for the Royal Art Contest is coming to a close,<BR>please prepare your artwork soon if you're interested.<BR><FONT color=#7e12d2>(Obtain quest from Calderock Village's Merchant May)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>M-masterpiece?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR>Sigh, taking my past failures as a lesson, I must complete a masterpiece this time round.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>Erm, what's this?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>Come, behold my masterpiece!<BR><FONT color=#7e12d2>(May brings out an enormous painting with weird blotches of colors. I can't make out what it is.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>Yes, it's extravagent.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant May$<BR>It's a painting of grazing cows on the green meadow. Isn't it perfect?<FONT color=#7e12d2>(May looks as if she's gonna eat me alive)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="13"><![CDATA[<html>(Nod slightly)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant May$<BR>There wasn't enough green paint in the end so I took a bit of black and red instead, isn't it beautiful? I'm so proud of myself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="15"><![CDATA[<html>How do I send this in?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant May$<BR>I got to clean up the mess I made at the shop. Could you send in this painting for me.<BR><FONT color=#7e12d2>(May stretches lazily)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="QN_Npc_NPC_EventRed.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-f" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Event Planner May$<BR><FONT color=#a82424>Event Planner Irine</FONT> is the one in charge of all royal events right?<BR>Please hand the painting to Sister Irine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_NPC_EventRed.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Merchant May$<BR>I'm starting on my cleaning up, so please hand my masterpiece to Sister <FONT color=#a82424>Irine</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="22"><![CDATA[<html>No, I'm on behalf of May.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Event Planner Irine$<BR>Hi, {user_nick}?<BR>Do you wish to participate in the contest too, <FONT color=#387206>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2" mid="24"><![CDATA[<html>(Take out May's masterpiece)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Event Planner Irine$<BR>Ah, I see. I'll take a look at May's work then.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-a" mid="26"><![CDATA[<html>(Irine's reaction doesn't differ too much from the rest)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Event Planner Irine$<BR><FONT color=#7e12d2>(Irine looks at May's masterpeice with a stiff face)</FONT><BR>T-this is..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-b" mid="28"><![CDATA[<html>She said it's a landscape painting.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Event Planner Irine$<BR>This, an abstract painting?<BR>Or still-life painting?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-c" mid="30"><![CDATA[<html>No, she said it's a scenery of the green meadow.</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Event Planner Irine$<BR>Landscape painting, you mean a scene of a <FONT color=#a82424>massacre</FONT> somewhere?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3" mid="32"><![CDATA[<html>You'll handle it?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Event Planner Irine$<BR>Right, I understand. This painting's overly special for the ordinary category, I'll take care it, don't worry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Event Planner Irine$<BR>I'll do my best for May's painting to be selected, please convey that to <FONT color=#a82424>May</FONT>.<BR><FONT color=#7e12d2>(Irine's voice is full of spirit)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="35"><![CDATA[<html>That wasn't too difficult, but I'm not sure why, Irine's reaction was... weird.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Merchant May$<BR>Ah, you're back?<BR>A simple errand, not too hard right.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="37"><![CDATA[<html>She wants me to tell you, she'll do her best for your painting to be selected.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Merchant May$<BR>Hmm? What about's Irine's reaction?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="39"><![CDATA[<html>(May seems to feel good)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Merchant May$<BR>Oh my, Sister Irine really said that!<BR>I must've misunderstood her in the past,<BR>I thought she was just a spoilt lady in a miniskirt!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="41"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Merchant May$<BR>Hoho, I'll be waiting for the good results!<BR><FONT color=#7e12d2>(May starts to hum while cleaning the shop)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3611,3612,3613,3614,3615</exe>
+         <exe type="setquest">361</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="addquestitem" num="1">400256</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400256</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3611,3612,3613,3614,3615</exe>
+         <exe type="complete">364</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="2" npc="n100_event_ilyn" sub="c" />
+   <exelink qstep="2" npc="n100_event_ilyn" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="d">1,2</exelink>
+   <journal_data recompense="1:3611,2:3612,3:3613,4:3614,5:3615" quest_title="출품작 완성" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="400256">
+      <journal index="1">
+         <contents_image>QN_Npc_NPC_EventRed.dds</contents_image>
+         <destination_pos>8,n100</destination_pos>
+         <destination_mode>custom:21@0,13014@0,2@0,3@0,6@0,7@0,4@0,9@0,10@0,12@0,13@0,24@0,1@4,5@4,8@4,11@4,13601@2,13602@2</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Talk to Event Planner Irine]]></title>
+         <contents mid="45"><![CDATA[<html>Hand May's masterpiece to <FONT color=#a82424>Event Planner Irine</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Event Planner Irine</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Talk to Event Planner Irine]]></destination>
+         <todo_msg mid="47"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="49"><![CDATA[<html>Tell <FONT color=#a82424>Merchant May</FONT> the artwork has been sent in.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="51"><![CDATA[Talk to Merchant May.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>360</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,47 @@
+   <talk>
+      <npcename>n156_cleric_jake</npcename>
+      <npcid>156</npcid>
+      <startexe>3</startexe>
+      <npckname mid="1"><![CDATA[Cleric Jake]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Cleric Jake$<BR>Is there something wrong?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_102_evidence_of_pagan</exe>
+         <exe type="conexe" true="1" false="5">0</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="enterquest">mq05_107_internal_enemy</exe>
+         <exe type="conexe" true="8" false="6">2</exe>
+         <exe type="conexe" true="9" false="7">3</exe>
+         <exe type="conexe" true="10" false="11">4</exe>
+         <exe type="enterquest">mq05_122_comeback2</exe>
+         <exe type="enterquest">mq05_112_doubt</exe>
+         <exe type="enterquest">mq05_113_orb_of_vision1</exe>
+         <exe type="conexe" true="14" false="12">5</exe>
+         <exe type="conexe" true="15" false="13">6</exe>
+         <exe type="conexe" true="16" false="17">7</exe>
+         <exe type="enterquest">mq05_127_evidence_of_pagan</exe>
+         <exe type="enterquest">mq05_128_orb_of_vision1</exe>
+         <exe type="enterquest">mq05_131_internal_enemy</exe>
+         <exe type="conexe" true="20" false="18">8</exe>
+         <exe type="conexe" true="21" false="19">9</exe>
+         <exe type="conexe" true="22" false="0">10</exe>
+         <exe type="enterquest">mq05_136_comeback2</exe>
+         <exe type="enterquest">mq05_137_doubt</exe>
+         <exe type="enterquest">mq05_138_orb_of_vision1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">102</chk>
+         <chk type="hasquest">107</chk>
+         <chk type="hasquest">122</chk>
+         <chk type="hasquest">112</chk>
+         <chk type="hasquest">113</chk>
+         <chk type="hasquest">127</chk>
+         <chk type="hasquest">128</chk>
+         <chk type="hasquest">131</chk>
+         <chk type="hasquest">136</chk>
+         <chk type="hasquest">137</chk>
+         <chk type="hasquest">138</chk>
+      </conditions>
+   </talk>

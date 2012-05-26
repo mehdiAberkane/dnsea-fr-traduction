@@ -1,0 +1,19 @@
+   <talk>
+      <npcename>n434_light_pole</npcename>
+      <npcid>434</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Scattered Debris
+Broken Sealed Box
+(Death City Gates)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(It's covered in dust)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_640_like_a_dream</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">640</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,258 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_007_whereabouts_girl1</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>7</qid>
+      <designer>김주연</designer>
+      <qlevel>5</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>8</nextqid>
+      <nextqname>mq01_008_whereabouts_girl2</nextqname>
+      <nextqnpc>n004_guard_steave</nextqnpc>
+      <qkname mid="1"><![CDATA[Seeking The Girl Part 1]]></qkname>
+      <qnpc>
+         <npcid>145</npcid>
+         <npcename>n145_prairie_guard_pesent</npcename>
+         <npckname>프레리 타운 자경단원(mq039_카타콤 배치)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>146</npcid>
+         <npcename>n146_prairie_guard_pesent</npcename>
+         <npckname>프레리 타운 자경단원(mq039_카타콤 배치)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[Talk to Vigilante Leader Steve]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-accepting-acceptted" mid="103"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Vigilante Leader Steve$<BR>Could <FONT color=#a82424>Timothy</FONT> and <FONT color=#a82424>Rose</FONT> have fled during your battle with <FONT color=#a82424>Minotaur Umrak</FONT> at <FONT color=#a82424>Catacombs</FONT>...? But why did they not return to town...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QW_3.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2" mid="6"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>No way… I'm worried they did not get out of <FONT color=#a82424>Catacombs</FONT>. I'll have to send my team up to the <FONT color=#a82424>Catacombs</FONT> for an investigation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1" image="" itemindex="">
+      <talk_question mid="89"><![CDATA[<html>$Prairie Town Guard$<BR>Thank you for bringing peace to Prairie Town, adventurer! Thanks so much!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-a" image="" itemindex="">
+      <talk_question mid="95"><![CDATA[<html>$Prairie Town Guard$<BR>Shortly before you came I've combed through the area and there's no sign of <FONT color=#a82424>Rose</FONT>Rose</FONT> and <FONT color=#a82424>Rose</FONT>Timothy</FONT>… We should go deeper in to find them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-b" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Prairie Town Guard$<BR>I wonder where <FONT color=#a82424>Timothy</FONT> has gone to?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-c" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Prairie Town Guard$<BR>The Mayor was so worried about <FONT color=#a82424>Rose</FONT> he couldn't sleep well.<BR>His health was bad to begin with, I hope he doesn't fall ill.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-d" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Prairie Town Guard$<BR>Area clear! <FONT color=#a82424>Rose</FONT>and <FONT color=#a82424>Timothy</FONT> are not here, sir!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n145_prairie_guard_pesent-1-e" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Prairie Town Guard$<BR>I did not see <FONT color=#a82424>Rose</FONT> or <FONT color=#a82424>Timothy</FONT> here. Where have they gone to...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n146_prairie_guard_pesent-1" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n146_prairie_guard_pesent-1-a" mid="99"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Prairie Town Guard$<BR>No signs of <FONT color=#a82424>Rose</FONT> and <FONT color=#a82424>Timothy</FONT> anywhere…Where else can they go to… There's only one place left but we can't possibly face <FONT color=#a82424>Minotaur Umrak</FONT> on our own.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n146_prairie_guard_pesent-1-a" image="" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$Prairie Town Guard$<BR>Adventurer, please clean up the evil forces before we continue our search.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="QW_3.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Thanks for the help, adventurer.<BR>Please explore <FONT color=#a82424>Catacombs</FONT> once again to find <FONT color=#a82424>Rose</FONT> and <FONT color=#a82424>Timothy</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-a" mid="81"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>Welcome back, adventurer. I've been expecting you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-a" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-b" mid="83"><![CDATA[<html>Chased by something?</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Vigilante Leader Steve$<BR>While you were searching in the Catacombs with my team, I heard from <FONT color=#a82424>Guard Dickinson</FONT>. He spotted <FONT color=#a82424>Rose</FONT> and <FONT color=#a82424>Timothy</FONT> fleeing towards the direction of <FONT color=#a82424>Shadow Forest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-b" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-c" mid="85"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Vigilante Steve$<BR>Yes. However the appearances were not clear. If <FONT color=#a82424>Rose</FONT> and <FONT color=#a82424>Timothy</FONT> did flee towards that direction, <FONT color=#a82424>Guard Darcy</FONT> stationed at <FONT color=#a82424>Shadow Forest</FONT> may have seen them too. Please ask Darcy on their whereabouts.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3-c" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-3-!next" mid="87"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7</exe>
+         <exe type="talk" npc="n004_guard_steave">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,5,4">148</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="random_coice" rand="10,20,30,40">7,8,9,10</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">1</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">a</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">b</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">c</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">d</exe>
+         <exe type="talk" npc="n145_prairie_guard_pesent">e</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,71,72,72,72</exe>
+         <exe type="complete">7</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n004_guard_steave" sub="2">2,0,1</exelink>
+   <exelink qstep="1" npc="n145_prairie_guard_pesent">6</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="3" npc="n004_guard_steave" sub="c">0</exelink>
+   <exelink qstep="3" npc="n004_guard_steave" sub="!next">1</exelink>
+   <journal_data recompense="1:71,2:72" quest_title="소녀의 행방Ⅰ" chapterid="1" quest_level="5" quest_mark_type="1" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Talk to Vigilante Leader Steve]]></title>
+         <contents mid="53"><![CDATA[<html><FONT color=#a82424>Vigilante Leader Steve</FONT> said Rose and Timothy never returned to town. Let's talk to Steve.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="55"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_3.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>64,0,0</destination_pos>
+         <destination_mode>custom:61@1,62@1,64@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>카타콤</desc_location>
+         <step_action>사냥</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster>카타콤 미노타우르스 1</hunt_monster>
+         <hunt_monsterindex>148</hunt_monsterindex>
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Searching Catacombs]]></title>
+         <contents mid="57"><![CDATA[<html>Although I doubt that Rose and Timothy managed to get out of the Catacombs, Steve requests that I explore the site again.<BR><BR><FONT color=#086171>Wind Forest (Catacombs Entrance)</FONT> <FONT color=#a82424>→ Catacombs</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Searching Catacombs]]></destination>
+         <todo_msg mid="59"><![CDATA[Locate Rose and Timothy's whereabouts at Catacombs.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-384,1911</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location>카타콤</get_location>
+         <start_npc />
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>자경단장 스티브</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Talk to Vigilante Leader Steve]]></title>
+         <contents mid="61"><![CDATA[<html>I searched through the entire Catacombs but there was no signs of Rose and Timothy.<BR>Return to Prairie Town and look for <FONT color=#a82424>Vigilante Leader Steve</FONT>.<BR><BR><FONT color=#086171>Prairie Town </FONT> <FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="63"><![CDATA[Timothy and Rose could not be found. Go back to Vigilante Leader Steve.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>6</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

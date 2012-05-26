@@ -1,0 +1,191 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_681_look_like_natural</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>681</qid>
+      <designer>김인정</designer>
+      <qlevel>25</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[It Looks Natural]]></qkname>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>440</npcid>
+         <npcename>n440_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$King Cassius$<BR>
+…Nothing to say….<BR>Go away….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-a" mid="10"><![CDATA[<html>What is going on?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$King Cassius$<BR>You came. I have been waiting for you</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-b" mid="12"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$King Cassius$<BR>I..I have found it.<BR>How I can travel freely.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-c" mid="14"><![CDATA[<html>Seeing is believing?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$King Cassius$<BR>Seeing is believe… believe…?<BR>
+What was it? I..I remembered it till just now, seeing…?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-d" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$King Cassius$<BR>Yes, that's it..<BR>Ohoh. What clever people!!<BR>
+<FONT color=#7e12d2>(Cassius praises)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-e" mid="62"><![CDATA[<html>Yes? Where?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$King Cassius$<BR> Anyway  I will tell you the groundbreaking way.<BR> I want you to go now!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$It looks real$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QW_27.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$King Cassius$<BR><FONT color=#a82424>Black Mine</FONT>! This way to the Black Mine!<BR>
+…Be impressed with my marvelous discovery!! Now!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-1" image="" itemindex="">
+      <talk_answer link_index="n440_king_casius-1-a" mid="64"><![CDATA[<html>(King Cassius is strange)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$???$<BR>…Go.<BR>Stop irritating me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-1-a" image="" itemindex="">
+      <talk_answer link_index="n440_king_casius-2" mid="66"><![CDATA[<html>(Ignored by King Cassius)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$???$<BR>Go back. I am only here because of money.<BR>Heh… Stop it. Why are you talking still?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-2" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$???$<BR>
+Get lost!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-a" mid="69"><![CDATA[<html>(Tell him what you have seen)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$King Cassius$<BR>Well? How does my plan look?<BR>What did you see exactly at the Black Mine?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-b" mid="71"><![CDATA[<html>Is it a no?!</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$King Cassius$<BR>Oh. You have seen it.<BR>It is perfect if in your eyes, the one in<FONT color=#a82424>Black Mine</FONT>looked the same as me!<BR><FONT color=#7e12d2>(Cassius is happy)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-c" mid="74"><![CDATA[<html>Very similar.</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$King Cassius$<BR>It is not me. I met him accidently when I left the palace, but he has the same face as me , isn't it right?<BR> I thought I was looking at the mirror.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-c" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-d" mid="76"><![CDATA[<html>(A strange plan is going on?)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$King Cassius$<BR>That's why I gave you my clothes and tried to disguise you.<BR>Since you fell for it the plan seems to be a big success. I am pleased...<BR>
+<FONT color=#7e12d2>(Cassius is very pleased)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-d" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-e" mid="78"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-e" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$King Cassius$<BR>If I tell him to remain in my position, I wouldn't be noticed?<BR>I can freely travel without getting caught.<BR><FONT color=#7e12d2>(Cassius is highly anticipated.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">681</exe>
+         <exe type="talk" npc="n040_king_casius">1</exe>
+         <exe type="recompense_view">6810,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6810,,,,,</exe>
+         <exe type="complete">681</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 270 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n440_king_casius" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n040_king_casius" sub="b" />
+   <exelink qstep="2" npc="n040_king_casius" sub="c" />
+   <exelink qstep="2" npc="n040_king_casius" sub="d">0</exelink>
+   <exelink qstep="2" npc="n040_king_casius" sub="e">2,1</exelink>
+   <journal_data recompense="0:6810" quest_title="감쪽 같다" chapterid="" quest_level="25" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>274,n440</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@1</destination_mode>
+         <statemark_npcid>440</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Cassius' Plan]]></title>
+         <contents mid="49"><![CDATA[<html>King Cassius wants to meet once more at the Black Mine.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port (Entrance of Black Mine)</FONT> <FONT color=#a82424>→ Black Mine(King Cassius)</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Talk to King Cassius at the Black Mine]]></destination>
+         <todo_msg mid="51"><![CDATA[Meet King Cassius at the Black Mine]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode />
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Talk to King Cassius at the Black Mine]]></title>
+         <contents mid="57"><![CDATA[<html>Cassius from Dark Mine doesn't seem right. Return to the Palace, meet King Cassius and find out what happened.<BR><BR><FONT color=#086171>Saint Haven Castle</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to King Cassius at the Black Mine]]></destination>
+         <todo_msg mid="59"><![CDATA[Talk to King Cassius back at the Saint Haven Palace]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>680</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

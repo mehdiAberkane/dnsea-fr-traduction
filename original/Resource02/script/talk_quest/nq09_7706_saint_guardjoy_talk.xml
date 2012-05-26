@@ -1,0 +1,93 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq09_7706_saint_guardjoy_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7706</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Friend Malcolm]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="7"><![CDATA[<html>You're really loyal although it's not your work.</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="8"><![CDATA[<html>Aren't you being too kind to him?</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="9"><![CDATA[<html>There will be someone who would take care of Malcolm instead of you.</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="10"><![CDATA[<html>Give up</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Royal Guard Joey$<BR>Malcolm is a close friend from childhood. But he always gets into trouble so I have to always take care of him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Royal Guard Joey$<BR>I'm born to be loyal. I want to be a loyal man and I'm trying to be. But I feel it's so tough recently. What can I do to make him behave properly? Haah.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Royal Guard Joey$<BR>Well, I'm so worried about him. And this is my shortcoming. Sometimes I decide to be selfish and live for myself but I end up taking care of his chores as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Royal Guard Joey$<BR>I think so. But everyone failed to take care of him as they grew tired of him. They gave up on him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Royal Guard Joey$<BR>Well, if it were possible, I would give up on him. If I gave him up, he wouldn't live for even a day. Plus, I don't want to be a betrayer who gives up an old friend.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7706, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 252, 180 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 252, 180 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 252, 80 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 252, 180 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 친구 말콤에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>252:4050:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

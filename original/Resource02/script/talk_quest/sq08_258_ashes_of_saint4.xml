@@ -1,0 +1,262 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_258_ashes_of_saint4</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>258</qid>
+      <designer>김주연</designer>
+      <qlevel>13</qlevel>
+      <qdesc>클라라의 묘지 필요</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Ashes of a Saint IV]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드   (프레리)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>204</npcid>
+         <npcename>n204_grave_of_clara</npcename>
+         <npckname>클라라의 무덤</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인  (캐더락 클레릭 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Mayor Harold$<BR>Welcome to our town. Although we are not wealthy, but I'm sure you can find what you want here. .<BR>(You must completely finish the conversation with Master Cleric Jermain at Calderock Village.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="10"><![CDATA[<html> (You tell him what happened in the Forest of Death) </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Cleric Jermain$<BR>How are things at Forest of Death?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Cleric Jermaine$<BR>Thanks to you my Master can finally rest in peace.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Ashes of a Saint IV$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-a" mid="24"><![CDATA[<html>Yes, but what happened to Leon's wife?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Master Cleric Jermain$<BR>If all goes well, my Master should able to rest in peace.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-b" mid="26"><![CDATA[<html>Very strange indeed.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Master Cleric Jermain$<BR>10 years ago after Clara left the village, we did not hear any news from her at all. All this time, she has never came to look or visit her husband before.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-c" mid="28"><![CDATA[<html>So no one knows where she is…??</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Cleric Jermain$<BR>Maybe we should look for Clara and her daughter, and hand them Leon's keepsake.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-c" image="QW_PrairieTown.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-d" mid="30"><![CDATA[<html>I think you can find some news of them at Prairie Town</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Cleric Jermain$<BR>Leon wrote in his journal that he fled with his wife and daughter to the west. The closest town west of Calderock Village is Prairie Town.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2" mid="32"><![CDATA[<html>Yes, I'm will make a trip to Prairie Town.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Cleric Jermain$<BR>Sorry to bother you, but would you mind passing on the news. Due to the increasing of wounded people here, I could not leave this place. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n204_grave_of_clara-1" image="QN_TombStone01.dds" itemindex="">
+      <talk_question mid="87"><![CDATA[<html>$Clara's Grave$<BR>Here lies our good and beautiful Clara.<BR>Sweet wife to Leon, and brave mother to Rose.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="88"><![CDATA[<html>$Mayor Harold$<BR>Welcome to our town. Although we are not wealthy, but I'm sure you can find what you want here. .<BR>(You must completely finish the conversation with Master Cleric Jermain at Calderock Village.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Master Cleric Jermaine$<BR>Mayor Harold of Prairie Town would be the man to look for.<BR>Please visit him and ask if he knows anything first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-check" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Mayor Harold$<BR>Huff… What happen? <BR>(Mayor sigh with an anxious face)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-a" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-b" mid="42"><![CDATA[<html>I was hoping to find her daughter who came here about 10 years ago</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Mayor Harold$<BR>uh, anything that I can help you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-b" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-c" mid="44"><![CDATA[<html>I'm here to deliver Leon's personal belongings.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Mayor Harold$<BR>(Mayor seems bothered.)<BR>Why do you want to know so much?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-c" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-d" mid="46"><![CDATA[<html> (Harold, looked into the sky with eyes filled with regrets.) </html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Mayor Harold$<BR>Guess Leon didn’t survive in the end… Like you mentioned, yes the woman and her daugther came here 10 years ago.<BR>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-d" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-e" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Mayor Harold$<BR>Clara was on her way here when she was badly assault by monsters. Before she died, she entrusted her daughter to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-e" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-f" mid="50"><![CDATA[<html> How's the daughter? </html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Mayor Harold$<BR>She left the town to lure those monsters away… She threw herself overthe cliffs. Clara wanted her daughther to be safe... she protected her till the very end.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-f" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-g" mid="53"><![CDATA[<html>What?! You mean Rose was their daughter?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Mayor Harold$<BR>Rose is the name I gave my granddaughter, I gave it to her wanting her to live a normal and happy life. Seems like fate has already made plans for her...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-g" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-h" mid="55"><![CDATA[<html>How about Clara? What happened to her body?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Mayor Harold$<BR>Yes, that poor little child is the Prophet. She's not even here now so no one is able to receive the belongings you have brought.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-h" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-i" mid="57"><![CDATA[<html>Where's her remains located? I shall leave these belongings there.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Mayor Harold$<BR>We collected the body under the cliff and buried her in our village cemetery...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-i" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-3" mid="59"><![CDATA[<html> Yes, sir. </html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Mayor Harold$<BR>Since there's no one to receive it, you may dedicated it to the grave.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-2-j" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-2-b" mid="90"><![CDATA[<html>I'm here hoping to find the woman and her daugther who passed by this town 10 years ago</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Mayor Harold$<BR>Oh, {user_nick}. Why are you back here again?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Chief Harold$<BR>Indeed that family have an ill-fated life because of some Ancients' lineage. If I had known, I would have taken Rose to Saint Haven Church .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n204_grave_of_clara-3" image="" itemindex="">
+      <talk_answer link_index="n204_grave_of_clara-3-a" mid="62"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n204_grave_of_clara-3-a" image="" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Clara's Grave$<BR>Here lies our good and beautiful Clara.<BR>Sweet wife to Leon, and brave mother to Rose.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">258</exe>
+         <exe type="recompense_view">,2581,2582,2583,2584,2585</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">258</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="5" false="3">0</exe>
+         <exe type="conexe" true="5" false="4">1</exe>
+         <exe type="talk" npc="n001_elder_harold">a</exe>
+         <exe type="talk" npc="n001_elder_harold">j</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2581,2582,2583,2584,2585</exe>
+         <exe type="complete">258</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="check">2</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="c" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="d" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="e" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="f" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="g" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="h" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="i" />
+   <exelink qstep="2" npc="n001_elder_harold" sub="3">0,1</exelink>
+   <exelink qstep="2" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="3" npc="n204_grave_of_clara">0</exelink>
+   <exelink qstep="3" npc="n204_grave_of_clara" sub="a">1</exelink>
+   <journal_data recompense="1:2581,2:2582,3:2583,4:2584,5:2585" quest_title="스승의 유해Ⅳ" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Talk to Master Cleric Jermain]]></title>
+         <contents mid="76"><![CDATA[<html>Discuss what needs to be done with <FONT color=#a82424>Leon's keepsakes</FONT> with <FONT color=#a82424>Jermain</FONT>.<BR><BR>Calderock Village<FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[Talk to Master Cleric Jermain]]></destination>
+         <todo_msg mid="78"><![CDATA[Talk to Master Cleric Jermain]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Elder_Harold.dds</contents_image>
+         <destination_pos>1,n1</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>1</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Talk to Harold, the Mayor of Prairie Town]]></title>
+         <contents mid="80"><![CDATA[<html>Find <FONT color=#a82424>Mayor Harold</FONT> at <FONT color=#a82424>Prairie Town</FONT> and enquire about the mother and daughter who came to town about 10 years ago. <BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Mayor Harold</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Harold, the Mayor of Prairie Town]]></destination>
+         <todo_msg mid="82"><![CDATA[Talk to Harold, the Mayor of Prairie Town]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_TombStone01.dds</contents_image>
+         <destination_pos>1,n204</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>204</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Find Clara's grave.]]></title>
+         <contents mid="84"><![CDATA[<html>Knowing that <FONT color=#a82424>Rose</FONT>, the Prophet, is the daughter of Leon and Clara, you also realised that there's no one left to receive Leonard's belongings in <FONT color=#a82424>Prairie Town</FONT>. Leave the belongings on <FONT color=#a82424>Clara's Grave</FONT>.<BR><BR><FONT color=#086171>Prairie Town</FONT><FONT color=#a82424> → Clara's Grave</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Find Clara's grave.]]></destination>
+         <todo_msg mid="86"><![CDATA[Visit Clara's Grave and leave Leon's belongings there.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>257</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,93 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq25_5006_ilyn_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5006</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Work]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="7"><![CDATA[<html>I don't know, but it looks wonderful.</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="8"><![CDATA[<html>Wow! It's so amazing to know that you actually memorized all the guides of those events!</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="9"><![CDATA[<html>Well, actually I have no interest in the events.</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-accepting-d" mid="10"><![CDATA[<html>It seems hard to travel all over the world.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Events Planner Irine$<BR>My job is to host events for the royal family and the people in the town. To bring them fun and joy through the events.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Events Planner Irine$<BR>Most people do not understand the value of my work. But I think this really is a good job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Events Planner Irine$<BR>Keke… Ok, this is gonna be a secret... I'm actually very forgetful, so I hide the event guides here.<FONT color=#7e12d2>(Irine points to the memo inside the trumpet.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Events Planner Irine$<BR>There actually people who are not interested in the events. But <FONT color=#387206>{user_nick}</FONT>, we would hope that more event lovers would come to participate.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Events Planner Irine$<BR>It's really not an easy job to stand outside here, sometimes even in a rainy day, or to travel distances frequently. But I'm so glad to have your encouragement, <FONT color=#387206>{user_nick}</font>.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5006, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 100, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 100, 200 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 100, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 100, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 자신의 일에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>100:9000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

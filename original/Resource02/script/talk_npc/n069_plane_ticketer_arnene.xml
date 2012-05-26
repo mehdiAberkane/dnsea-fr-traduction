@@ -1,0 +1,97 @@
+﻿   <talk>
+      <npcename>n069_plane_ticketer_arnene</npcename>
+      <npcid>69</npcid>
+      <startexe>3</startexe>
+      <npckname mid="1"><![CDATA[Ticket Agent Arnen]]></npckname>
+      <talk_paragraph index="001" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Ticket Agent Arnen$<BR>So sorry! The <FONT color=#a82424>Nautilus</FONT> arc is badly damaged in the crash. Ship repairs are our priority now. Please visit <FONT color=#a82424>Hubert</FONT> if you need anything.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="QW_SaintHaven.dds" itemindex="">
+         <talk_answer link_index="changemap" mid="6"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_answer link_index="completecutscene" mid="9"><![CDATA[<html></html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Ticket Agent Arnen$<BR>Welcome to the Nautilus. We will be heading to <FONT color=#a82424>Saint Haven</FONT> soon.<BR>Ticket price is <FONT color=#a82424>5 Silvers</FONT>. Would you like to board the ship?<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="QW_AirShip.dds" itemindex="">
+         <talk_question mid="5"><![CDATA[<html>$Ticket Agent Arnen$<BR>I'm sorry. It seems you do not have enough money on you. A boarding ticket costs <FONT color=#a82424>5 Silvers</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="mq401_1" image="" itemindex="">
+         <talk_answer link_index="mq401_a" mid="37"><![CDATA[<html>Bring me to Saint Haven.</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Ticket Agent Arnen$<BR>Thank you for your help! The <FONT color=#a82424>Nautilus</FONT> is now safely repaired and ready to fly again!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="mq401_a" image="" itemindex="">
+         <talk_answer link_index="mq401_b" mid="38"><![CDATA[<html>There is still work to be done.</html>]]></talk_answer>
+         <talk_answer link_index="go_saint" mid="39"><![CDATA[<html>Of course! I'm ready to board!</html>]]></talk_answer>
+         <talk_question mid="14"><![CDATA[<html>$Ticket Agent Arnen$<BR>You must have a boarding ticket to ride the Nautilus. But since you helped in her repairs, I'll give you a free ride just this once as a token of appreciation. Do you want to <FONT color=#a82424>board</FONT> the <FONT color=#a82424>Nautilus</FONT>?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="mq401_b" image="" itemindex="">
+         <talk_question mid="17"><![CDATA[<html>$Ticket Agent Arnen$<BR>I see. I will try to delay the departure so please tell me when you're ready.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party_member" image="" itemindex="">
+         <talk_question mid="21"><![CDATA[<html>$Ticket Agent Arnen$<BR>Sorry but this is a ticket for one. Your friends are not allowed to board<BR><FONT color=#7e12d2>[Please leave your party before boarding the Nautilus.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="go_saint" mid="51"><![CDATA[<html>[Purchase Ticket to Saint Haven]</html>]]></talk_answer>
+         <talk_question mid="42"><![CDATA[<html>$Ticket Agent Arnen$<BR>Please confirm your destination before purchasing a ticket. <BR>Our flights travel to Saint Haven and Lotus Marsh.<BR>?<FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_saint" image="QW_SaintHaven.dds" itemindex="">
+         <talk_answer link_index="004" mid="53"><![CDATA[<html>I want to select another destination.</html>]]></talk_answer>
+         <talk_answer link_index="move_saint" mid="54"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_question mid="45"><![CDATA[<html>$Ticket Agent Arnen$<BR><FONT color=#a82424><FONT color=#2b2723>Welcome, we will be heading for</FONT><FONT color=#a82424>Saint Haven</FONT><FONT color=#2b2723> shortly. The <BR></FONT><FONT color=#a82424>Ticket</FONT><FONT color=#2b2723> price is </FONT><FONT color=#a82424>5 Silvers</FONT><FONT color=#2b2723>. <BR>Are you sure you want to ride the airship?<BR>?</FONT><FONT color=#7e12d2>Please leave your party before boarding.</FONT></FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_lotusmarsh" image="QW_LotusMarshTown.dds" itemindex="">
+         <talk_answer link_index="004" mid="55"><![CDATA[<html>I want to select another destination.</html>]]></talk_answer>
+         <talk_answer link_index="move_lotus" mid="56"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_question mid="48"><![CDATA[<html>$Ticket Agent Arnen$<BR><FONT color=#a82424><FONT color=#2b2723>Welcome, we will be heading for</FONT><FONT color=#a82424>Lotus Marsh</FONT><FONT color=#2b2723> shortly. The <BR></FONT><FONT color=#a82424>Ticket</FONT><FONT color=#2b2723> price is </FONT><FONT color=#a82424>10 Silvers</FONT><FONT color=#2b2723>. <BR>Are you sure you want to ride the airship?<BR>?</FONT><FONT color=#7e12d2>Please leave your party before boarding.</FONT></FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="mq432_1" image="" itemindex="">
+         <talk_answer link_index="mq401_b" mid="61"><![CDATA[<html>Still have something to do.</html>]]></talk_answer>
+         <talk_answer link_index="go_saint_q432" mid="62"><![CDATA[<html>Yes. I want to check in.</html>]]></talk_answer>
+         <talk_question mid="58"><![CDATA[<html>$Plane Ticketer Arnene$<BR>From Caderock Gate's adventurers' help, the airship can fly normally. You can take the airship to Saint Heaven for free.<BR>Will you <FONT color=#a82424>get on</FONT>the <FONT color=#a82424>Albastros ship</FONT>?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">003</exe>
+         <exe type="conexe" true="9" false="23">1</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+         <exe type="conexe" true="16" false="2">2</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 500 );</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,96,true);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,11,1);</exe>
+         <exe type="conexe" true="10" false="0">3</exe>
+         <exe type="talk">mq401_1</exe>
+         <exe type="conexe" true="12" false="15">4</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,97,true);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID, 13015, 1);</exe>
+         <exe type="conexe" true="13" false="25">1</exe>
+         <exe type="talk">party_member</exe>
+         <exe type="conexe" true="6,7" false="15">4</exe>
+         <exe type="conexe" true="18" false="4">7</exe>
+         <exe type="talk">004</exe>
+         <exe type="conexe" true="20" false="2">6</exe>
+         <exe type="conexe" true="21,22" false="15">4</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 1000 );</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID, 15, 1);</exe>
+         <exe type="conexe" true="24" false="17">8</exe>
+         <exe type="talk">mq432_1</exe>
+         <exe type="conexe" true="13" false="8">8</exe>
+      </executions>
+      <conditions>
+         <chk type="lvl" op=">=">24</chk>
+         <chk type="custom">api_quest_GetQuestStep(userObjID, 401) == 1</chk>
+         <chk type="custom">api_user_EnoughCoin(userObjID, 500 ) == 1</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, 401, 1) == 2</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 701) == 1</chk>
+         <chk type="custom">api_user_EnoughCoin(userObjID, 1000 ) == 1</chk>
+         <chk type="lvl" op=">=">40</chk>
+         <chk type="custom">api_quest_GetQuestStep(userObjID, 432) == 2</chk>
+      </conditions>
+      <exelink idx="changemap">5</exelink>
+      <exelink idx="completecutscene">14</exelink>
+      <exelink idx="go_saint">11</exelink>
+      <exelink idx="go_saint">11</exelink>
+      <exelink idx="move_saint">5</exelink>
+      <exelink idx="move_lotus">19</exelink>
+      <exelink idx="go_saint_q432">11</exelink>
+   </talk>

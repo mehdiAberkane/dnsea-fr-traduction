@@ -1,0 +1,94 @@
+   <talk>
+      <npcename>n255_invisible_thief</npcename>
+      <npcid>255</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Invisible Thief]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="25"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$???$<BR>...<BR><FONT color=#7e12d2>[You cannot shake off the feeling that there might be something there....]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="26" link_target="sq08_302_ring_thief2.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Hiding in Plain Sight</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="sq08_303_ring_thief3.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>The Invisible Man</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="sq08_333_invisible_body1.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Invisible Body I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="sq08_334_invisible_body2.xml"><![CDATA[<html>[Lv.21]<FONT color=#086171> Invisible Body II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="sq08_336_invisible_body3.xml"><![CDATA[<html>[Lv.21]<FONT color=#086171> Invisible Body III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="nq29_6901_the_phantom_thief.xml"><![CDATA[<html>[Lv.21] <FONT color=#086171>Phantom Thief</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="39"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$???$<BR>...<BR><FONT color=#7e12d2>[You cannot shake off the feeling that there might be something there....]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="92" link_target="sq_969_xmas_invisible_thief.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="80" link_target="nq29_6902_invisible_thief_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Reasons Behind A Thief</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="81" link_target="nq29_6903_invisible_thief_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Sorceress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="82" link_target="nq29_6904_invisible_thief_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Desire</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="83" link_target="nq29_6905_invisible_thief_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Ideal Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="84" link_target="nq29_6906_invisible_thief_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Destination</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="nq29_6912_invisible_thief_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Invisible Thief's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="90"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="41"><![CDATA[<html>$Invisible Thief$<BR>My breathing excercises and patience have paid off well eh?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="49"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="50"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="51"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="44"><![CDATA[<html>$Invisible Thief$<BR>Weird… Nowadays, I think I'd like to be your legendary friend than a legendary thief. <BR>Weird eh?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="52"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="53"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="54"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Invisible Thief$<BR>I think I told you what you need to know about the Phantom Thief already. <BR>Sheesh….</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="56"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="57"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="58"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="59"><![CDATA[<html>$Invisible Thief$<BR>The Phantom Thief again?<BR>You can't get enough of his stories, can you?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="60"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="61"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="62"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="63"><![CDATA[<html>$Invisible Thief$<BR>Hmm... You want to hear more about Phantom Chupin?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="70"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="64"><![CDATA[<html>$Invisible Thief$<BR>You're giving me this? I can't remember the last time I received a gift from anyone...<BR><FONT color=#7e12d2>[The Invisible Thief sounds really delighted.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="71"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present" mid="72"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="67"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 255 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 255 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 6901) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 255 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 255 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 255 ) >= 30</chk>
+      </conditions>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="back_talk">1</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="back_gift">1</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present">1</exelink>
+   </talk>

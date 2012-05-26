@@ -1,0 +1,94 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq04_5509_adellin_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5509</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Eureke]]></qkname>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-a" mid="7"><![CDATA[<html>There's nothing you can do since is already a past.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-b" mid="8"><![CDATA[<html>But weren't you and Eureke always faithful to each other and happy back then?</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-c" mid="9"><![CDATA[<html>Even if you did, you would still be regretting like now.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-d" mid="10"><![CDATA[<html>If you were faithful during those times, I think there should be no regrets or guilt.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Archer Adelynn$<BR><FONT color=#7e12d2>(Adelynn looks a little sad.)</FONT> Eureke was a bit immature, but a good man. Sometimes I think I would've treated him better if I knew then what I know now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Archer Adelynn$<BR>Yes, we can't turn back lost time. Because of this, I seem to regret more.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Archer Adelynn$<BR>Yes, we were happy, even though there are also many things I regret. I was always filled with happiness back then. Hearing your words, perhaps regrets are just memories that's been torn out in the course of time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Archer Adelynn$<BR>You think so? Well, I guess it's rare to not have any regrets when you look back the past. Maybe we were born to live through these imperfect moments, living in such regrets.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Archer Adelynn$<BR>During those times, I was as faithful as I can be. My mind was filled with him. But looking back now, I feel gaps between us.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5509, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33,80 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 33, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 320 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 80 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 160 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="a">1,2,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="b">3,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="c">4,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="d">5,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 유릭에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>33:12000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

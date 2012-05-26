@@ -1,0 +1,313 @@
+   <talk>
+      <npcename>n409_guild_board</npcename>
+      <npcid>409</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Black Mines Entrance]]></npckname>
+      <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="4" link_target="gq11_3161_n409_mine_normal.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Mapography I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="5" link_target="gq11_3162_n409_mine_hunt.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Source</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="6" link_target="gq11_3163_n409_mine_drop.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Ominous Black Ore</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq11_3164_n409_mine_hard.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>The Black Mine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq11_3165_n409_mine_boss.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Wanted: Numhark</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq11_3166_n409_mine_prop.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Simply The Best</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="gq11_3167_n409_mine_master.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Money Matters I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq11_3170_n409_mine_rank.xml"><![CDATA[<html>[Lv.24] <FONT color=#7e12d2>Assaults I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="gq11_3201_n409_sink_normal.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Mapography V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="gq11_3202_n409_sink_hunt.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Jealousy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="gq11_3203_n409_sink_drop.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Harori's Jewel Collection</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="gq11_3204_n409_sink_hard.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Miner's Wish</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="gq11_3205_n409_sink_boss.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Wanted: Ogre Buwoo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="gq11_3206_n409_sink_prop.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Obligations</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="gq11_3207_n409_sink_master.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Fake Diamonds</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq11_3210_n409_sink_rank.xml"><![CDATA[<html>[Lv.28] <FONT color=#7e12d2>Assaults V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="gq11_3169_n409_mine_abyss.xml"><![CDATA[<html>[Lv.31] <FONT color=#7e12d2>Into the Abyss: Defeat Numhark</FONT><FONT color=#7e12d2></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="gq11_3209_n409_sink_abyss.xml"><![CDATA[<html>[Lv.31] <FONT color=#7e12d2>Into the Abyss: Defeat Self Righteous Dark Hayes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="gq11_3281_n409_cityfront_normal.xml"><![CDATA[<html><FONT color=#2b2723>[Lv.34] </FONT><FONT color=#086171> Loving Pair </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="gq11_3282_n409_cityfront_hunt.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Weed Escape!</FONT><FONT color=#7e12d2></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="39" link_target="gq11_3283_n409_cityfront_drop.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>A Hungry Mind</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="40" link_target="gq11_3284_n409_cityfront_hard.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>The Last Laugh</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="gq11_3285_n409_cityfront_boss.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Wanted: Impostor Kayleen</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="42" link_target="gq11_3286_n409_cityfront_prop.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Finding Hidden Chuckie </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="43" link_target="gq11_3287_n409_cityfront_master.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Weaker Than You II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="gq11_3290_n409_cityfront_rank.xml"><![CDATA[<html>[Lv.34] <FONT color=#7e12d2>Assault III </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="gq11_3321_n409_citygate_normal.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Show Me!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="49" link_target="gq11_3322_n409_citygate_hunt.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Safe Walkway</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="50" link_target="gq11_3323_n409_citygate_drop.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Hound in My Head</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="gq11_3324_n409_citygate_hard.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Long Distance </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="gq11_3325_n409_citygate_boss.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Wanted: Tiny Half Golem</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="gq11_3326_n409_citygate_prop.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Finding Hidden Chuckie VII </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="gq11_3327_n409_citygate_master.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Preacher of Love</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="gq11_3330_n409_citygate_rank.xml"><![CDATA[<html>[Lv.36] <FONT color=#7e12d2>Assault VII </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="57" link_target="gq11_3351_n409_ntomb_normal.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Mapography XI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="gq11_3352_n409_ntomb_hunt.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Lena's Charity Event</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="59" link_target="gq11_3353_n409_ntomb_drop.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Healing Meat</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="gq11_3354_n409_ntomb_hard.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Geraints II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="61" link_target="gq11_3355_n409_ntomb_boss.xml"><![CDATA[<html>[Lv.38]<FONT color=#086171> Wanted: Firestone Mine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="62" link_target="gq11_3356_n409_ntomb_prop.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Finding Hidden Chuckie X</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="63" link_target="gq11_3357_n409_ntomb_master.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Property Boundaries</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="64" link_target="gq11_3360_n409_ntomb_rank.xml"><![CDATA[<html>[Lv.38] <FONT color=#7e12d2>Assault X </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="66" link_target="gq11_3289_n409_cityfront_abyss.xml"><![CDATA[<html>[Lv.39]<FONT color=#7e12d2> Into the Abyss: Defeat Imposter Kayleen</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="gq11_3329_n409_citygate_abyss.xml"><![CDATA[<html>[Lv.39] <FONT color=#7e12d2>Into the Abyss: Defeat Tiny Half Golem</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="68" link_target="gq11_3359_n409_ntomb_abyss.xml"><![CDATA[<html>[Lv.39] <FONT color=#7e12d2>Into the Abyss: Defeat Abandoned Firestone Mine </FONT><FONT color=#086171></FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>The following requests have been received.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>No requests have been received at the moment.<BR><BR><FONT color=#086171>?When will the dragons appear? - A Level 40 Player </FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_27" mid="207"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_29" mid="208"><![CDATA[<html>[Lv.28] Lost Tunnels</html>]]></talk_answer>
+         <talk_answer link_index="stage_38" mid="209"><![CDATA[<html>[Lv34] Road to Death City</html>]]></talk_answer>
+         <talk_answer link_index="stage_42" mid="210"><![CDATA[<html>[Lv36]Road to Death City</html>]]></talk_answer>
+         <talk_answer link_index="stage_44" mid="211"><![CDATA[<html>[Lv38] Nameless Tyrant Tomb</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="212"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_27" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="213" link_target="gq11_3161_n409_mine_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Mapography I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="214" link_target="gq11_3162_n409_mine_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Source</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="215" link_target="gq11_3163_n409_mine_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Ominous Black Ore</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="216" link_target="gq11_3164_n409_mine_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>Scouting Black Mine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="217" link_target="gq11_3165_n409_mine_boss.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Most Wanted: Numhark</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="218" link_target="gq11_3166_n409_mine_prop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Simply The Best</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="219" link_target="gq11_3167_n409_mine_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>Money Matters I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="220" link_target="gq11_3170_n409_mine_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2> Assaults I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="221" link_target="gq11_3169_n409_mine_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into The Abyss: Defeat Numharoko</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_27" mid="222"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="78"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Black Mines</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_29" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="223" link_target="gq11_3201_n409_sink_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Mapography V </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="224" link_target="gq11_3202_n409_sink_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Jealousy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="225" link_target="gq11_3203_n409_sink_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Harori's Jewel Collection</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="226" link_target="gq11_3204_n409_sink_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>Miner's Wish</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="227" link_target="gq11_3205_n409_sink_boss.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Wanted: Ogre Buwoo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="228" link_target="gq11_3206_n409_sink_prop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Obligations</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="229" link_target="gq11_3207_n409_sink_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>Fake Diamonds</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="230" link_target="gq11_3210_n409_sink_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assaults V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="231" link_target="gq11_3209_n409_sink_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Self Righteous Dark Hayes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_29" mid="232"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="79"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Collasped Mine</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_38" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="233" link_target="gq11_3281_n409_cityfront_normal.xml"><![CDATA[<html><FONT color=#2b2723>[Normal] </FONT><FONT color=#086171>Loving Pair </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="234" link_target="gq11_3282_n409_cityfront_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Weed Escape!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="235" link_target="gq11_3283_n409_cityfront_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>A Hungry Mind</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="236" link_target="gq11_3284_n409_cityfront_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>The Last Laugh</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="237" link_target="gq11_3285_n409_cityfront_boss.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Wanted: Impostor Kayleen</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="238" link_target="gq11_3286_n409_cityfront_prop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Finding Hidden Chuckie III </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="239" link_target="gq11_3287_n409_cityfront_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>Weaker Than You II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="240" link_target="gq11_3290_n409_cityfront_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="241" link_target="gq11_3289_n409_cityfront_abyss.xml"><![CDATA[<html>[Abyss]<FONT color=#7e12d2> Into the Abyss: Defeat Imposter Kayleen</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_38" mid="242"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="80"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Road of Death City</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_42" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="243" link_target="gq11_3321_n409_citygate_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Show Me!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="244" link_target="gq11_3322_n409_citygate_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Safe Walkway</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="245" link_target="gq11_3323_n409_citygate_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Hound in my Head</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="246" link_target="gq11_3324_n409_citygate_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>Long Distance </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="247" link_target="gq11_3325_n409_citygate_boss.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Wanted: Tiny Half Golem</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="248" link_target="gq11_3326_n409_citygate_prop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Finding Hidden Chuckie VII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="249" link_target="gq11_3327_n409_citygate_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>Preacher of Love</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="250" link_target="gq11_3330_n409_citygate_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault VII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="251" link_target="gq11_3329_n409_citygate_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Tiny Half Golem</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_42" mid="252"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="81"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Death City Gates</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_44" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="253" link_target="gq11_3351_n409_ntomb_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Mapology XI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="254" link_target="gq11_3352_n409_ntomb_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Lena's Charity Event</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="255" link_target="gq11_3353_n409_ntomb_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Healing Meat</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="256" link_target="gq11_3354_n409_ntomb_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>Geraints II </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="257" link_target="gq11_3355_n409_ntomb_boss.xml"><![CDATA[<html>[Hunt]<FONT color=#086171> Wanted: Abandoned Firestone Mine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="258" link_target="gq11_3356_n409_ntomb_prop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Finding Hidden Chuckie X </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="259" link_target="gq11_3357_n409_ntomb_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>Property Boundaries</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="260" link_target="gq11_3360_n409_ntomb_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault X</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="261" link_target="gq11_3359_n409_ntomb_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Abandoned Firestone Mine </FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="262"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="82"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Tyrant's Grave</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv24" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_27" mid="265"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="266"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="264"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv28" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_27" mid="268"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_29" mid="269"><![CDATA[<html>[Lv.28] Lost Tunnels</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="270"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="267"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv34" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_27" mid="272"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_29" mid="273"><![CDATA[<html>[Lv.28] Lost Tunnels</html>]]></talk_answer>
+         <talk_answer link_index="stage_38" mid="274"><![CDATA[<html>[Lv34] Road of Death City</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="275"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="271"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv36" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_27" mid="277"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_29" mid="278"><![CDATA[<html>[Lv.28] Lost Tunnels</html>]]></talk_answer>
+         <talk_answer link_index="stage_38" mid="279"><![CDATA[<html>[Lv34] Road of Death City</html>]]></talk_answer>
+         <talk_answer link_index="stage_42" mid="280"><![CDATA[<html>[Lv36] Death City Gates</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="281"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="276"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="9" false="2">0</exe>
+         <exe type="conexe" true="10" false="3">1</exe>
+         <exe type="conexe" true="11" false="4">2</exe>
+         <exe type="conexe" true="12" false="5">3</exe>
+         <exe type="conexe" true="13" false="6">4</exe>
+         <exe type="conexe" true="14" false="7">5</exe>
+         <exe type="conexe" true="15" false="8">6</exe>
+         <exe type="conexe" true="16" false="17">7</exe>
+         <exe type="enterquest">gq11_3161_n409_mine_normal</exe>
+         <exe type="enterquest">gq11_3162_n409_mine_hunt</exe>
+         <exe type="enterquest">gq11_3163_n409_mine_drop</exe>
+         <exe type="enterquest">gq11_3164_n409_mine_hard</exe>
+         <exe type="enterquest">gq11_3165_n409_mine_boss</exe>
+         <exe type="enterquest">gq11_3166_n409_mine_prop</exe>
+         <exe type="enterquest">gq11_3167_n409_mine_master</exe>
+         <exe type="enterquest">gq11_3170_n409_mine_rank</exe>
+         <exe type="conexe" true="25" false="18">8</exe>
+         <exe type="conexe" true="26" false="19">9</exe>
+         <exe type="conexe" true="27" false="20">10</exe>
+         <exe type="conexe" true="28" false="21">11</exe>
+         <exe type="conexe" true="29" false="22">12</exe>
+         <exe type="conexe" true="30" false="23">13</exe>
+         <exe type="conexe" true="31" false="24">14</exe>
+         <exe type="conexe" true="32" false="33">15</exe>
+         <exe type="enterquest">gq11_3201_n409_sink_normal</exe>
+         <exe type="enterquest">gq11_3202_n409_sink_hunt</exe>
+         <exe type="enterquest">gq11_3203_n409_sink_drop</exe>
+         <exe type="enterquest">gq11_3204_n409_sink_hard</exe>
+         <exe type="enterquest">gq11_3205_n409_sink_boss</exe>
+         <exe type="enterquest">gq11_3206_n409_sink_prop</exe>
+         <exe type="enterquest">gq11_3207_n409_sink_master</exe>
+         <exe type="enterquest">gq11_3210_n409_sink_rank</exe>
+         <exe type="conexe" true="35" false="34">16</exe>
+         <exe type="conexe" true="36" false="37">17</exe>
+         <exe type="enterquest">gq11_3169_n409_mine_abyss</exe>
+         <exe type="enterquest">gq11_3209_n409_sink_abyss</exe>
+         <exe type="conexe" true="45" false="38">18</exe>
+         <exe type="conexe" true="46" false="39">19</exe>
+         <exe type="conexe" true="47" false="40">20</exe>
+         <exe type="conexe" true="48" false="41">21</exe>
+         <exe type="conexe" true="49" false="42">22</exe>
+         <exe type="conexe" true="50" false="43">23</exe>
+         <exe type="conexe" true="51" false="44">24</exe>
+         <exe type="conexe" true="52" false="53">25</exe>
+         <exe type="enterquest">gq11_3281_n409_cityfront_normal</exe>
+         <exe type="enterquest">gq11_3282_n409_cityfront_hunt</exe>
+         <exe type="enterquest">gq11_3283_n409_cityfront_drop</exe>
+         <exe type="enterquest">gq11_3284_n409_cityfront_hard</exe>
+         <exe type="enterquest">gq11_3285_n409_cityfront_boss</exe>
+         <exe type="enterquest">gq11_3286_n409_cityfront_prop</exe>
+         <exe type="enterquest">gq11_3287_n409_cityfront_master</exe>
+         <exe type="enterquest">gq11_3290_n409_cityfront_rank</exe>
+         <exe type="conexe" true="61" false="54">26</exe>
+         <exe type="conexe" true="62" false="55">27</exe>
+         <exe type="conexe" true="63" false="56">28</exe>
+         <exe type="conexe" true="64" false="57">29</exe>
+         <exe type="conexe" true="65" false="58">30</exe>
+         <exe type="conexe" true="66" false="59">31</exe>
+         <exe type="conexe" true="67" false="60">32</exe>
+         <exe type="conexe" true="68" false="69">33</exe>
+         <exe type="enterquest">gq11_3321_n409_citygate_normal</exe>
+         <exe type="enterquest">gq11_3322_n409_citygate_hunt</exe>
+         <exe type="enterquest">gq11_3323_n409_citygate_drop</exe>
+         <exe type="enterquest">gq11_3324_n409_citygate_hard</exe>
+         <exe type="enterquest">gq11_3325_n409_citygate_boss</exe>
+         <exe type="enterquest">gq11_3326_n409_citygate_prop</exe>
+         <exe type="enterquest">gq11_3327_n409_citygate_master</exe>
+         <exe type="enterquest">gq11_3330_n409_citygate_rank</exe>
+         <exe type="conexe" true="77" false="70">34</exe>
+         <exe type="conexe" true="78" false="71">35</exe>
+         <exe type="conexe" true="79" false="72">36</exe>
+         <exe type="conexe" true="80" false="73">37</exe>
+         <exe type="conexe" true="81" false="74">38</exe>
+         <exe type="conexe" true="82" false="75">39</exe>
+         <exe type="conexe" true="83" false="76">40</exe>
+         <exe type="conexe" true="84" false="85">41</exe>
+         <exe type="enterquest">gq11_3351_n409_ntomb_normal</exe>
+         <exe type="enterquest">gq11_3352_n409_ntomb_hunt</exe>
+         <exe type="enterquest">gq11_3353_n409_ntomb_drop</exe>
+         <exe type="enterquest">gq11_3354_n409_ntomb_hard</exe>
+         <exe type="enterquest">gq11_3355_n409_ntomb_boss</exe>
+         <exe type="enterquest">gq11_3356_n409_ntomb_prop</exe>
+         <exe type="enterquest">gq11_3357_n409_ntomb_master</exe>
+         <exe type="enterquest">gq11_3360_n409_ntomb_rank</exe>
+         <exe type="conexe" true="88" false="86">42</exe>
+         <exe type="conexe" true="89" false="87">43</exe>
+         <exe type="conexe" true="90" false="91">44</exe>
+         <exe type="enterquest">gq11_3289_n409_cityfront_abyss</exe>
+         <exe type="enterquest">gq11_3329_n409_citygate_abyss</exe>
+         <exe type="enterquest">gq11_3359_n409_ntomb_abyss</exe>
+         <exe type="conexe" true="0" false="92">45</exe>
+         <exe type="conexe" true="95" false="93">46</exe>
+         <exe type="conexe" true="96" false="94">47</exe>
+         <exe type="conexe" true="97" false="98">48</exe>
+         <exe type="talk">lv36</exe>
+         <exe type="talk">lv34</exe>
+         <exe type="talk">lv28</exe>
+         <exe type="talk">lv24</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3161</chk>
+         <chk type="hasquest">3162</chk>
+         <chk type="hasquest">3163</chk>
+         <chk type="hasquest">3164</chk>
+         <chk type="hasquest">3165</chk>
+         <chk type="hasquest">3166</chk>
+         <chk type="hasquest">3167</chk>
+         <chk type="hasquest">3170</chk>
+         <chk type="hasquest">3201</chk>
+         <chk type="hasquest">3202</chk>
+         <chk type="hasquest">3203</chk>
+         <chk type="hasquest">3204</chk>
+         <chk type="hasquest">3205</chk>
+         <chk type="hasquest">3206</chk>
+         <chk type="hasquest">3207</chk>
+         <chk type="hasquest">3210</chk>
+         <chk type="hasquest">3169</chk>
+         <chk type="hasquest">3209</chk>
+         <chk type="hasquest">3281</chk>
+         <chk type="hasquest">3282</chk>
+         <chk type="hasquest">3283</chk>
+         <chk type="hasquest">3284</chk>
+         <chk type="hasquest">3285</chk>
+         <chk type="hasquest">3286</chk>
+         <chk type="hasquest">3287</chk>
+         <chk type="hasquest">3290</chk>
+         <chk type="hasquest">3321</chk>
+         <chk type="hasquest">3322</chk>
+         <chk type="hasquest">3323</chk>
+         <chk type="hasquest">3324</chk>
+         <chk type="hasquest">3325</chk>
+         <chk type="hasquest">3326</chk>
+         <chk type="hasquest">3327</chk>
+         <chk type="hasquest">3330</chk>
+         <chk type="hasquest">3351</chk>
+         <chk type="hasquest">3352</chk>
+         <chk type="hasquest">3353</chk>
+         <chk type="hasquest">3354</chk>
+         <chk type="hasquest">3355</chk>
+         <chk type="hasquest">3356</chk>
+         <chk type="hasquest">3357</chk>
+         <chk type="hasquest">3360</chk>
+         <chk type="hasquest">3289</chk>
+         <chk type="hasquest">3329</chk>
+         <chk type="hasquest">3359</chk>
+         <chk type="lvl" op=">=">38</chk>
+         <chk type="lvl" op=">=">36</chk>
+         <chk type="lvl" op=">=">34</chk>
+         <chk type="lvl" op=">=">28</chk>
+      </conditions>
+      <exelink idx="back_stage_27">91</exelink>
+      <exelink idx="back_stage_29">91</exelink>
+      <exelink idx="back_stage_38">91</exelink>
+      <exelink idx="back_stage_42">91</exelink>
+   </talk>

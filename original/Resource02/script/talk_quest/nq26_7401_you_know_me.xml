@@ -1,0 +1,115 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq26_7401_you_know_me</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7401</qid>
+      <designer>김주연</designer>
+      <qlevel>27</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The other side of me]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Lady Lena$<BR><FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-b" mid="8"><![CDATA[<html>Ah… Excuse me.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Lady Lena$<BR>Well, can’t we say hello? It’s not like we don’t know each other. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-c" mid="10"><![CDATA[<html>Sorry, I was in a hurry. </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Lady Lena$<BR>I heard that you told the Duke you got a handkerchief from me when he was accusing me for theft. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-d" mid="12"><![CDATA[<html>Is that so?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Lady Lena$<BR>Haha, you were in a hurry even though it wasn’t related to you. You’re cute. <BR> Anyway, we officially became friends after that incident. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-acceptted" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Lady Lena$<BR>So I wish we could say hello if we meet again. Of course, only if you would like to. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-1-a" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Lady Lena$<BR>Well, it’s ok if we become friends unofficially. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Lady Lena$<BR>I’ve said what I wanted to say to you, so you can go now. <BR>
+<FONT color=#7e12d2>(Think Lady Lena and I got closer.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7401</exe>
+         <exe type="talk" npc="n133_lena_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">7401</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n133_lena_duglars" sub="a">0</exelink>
+   <journal_data recompense="" quest_title="또 다른 나를 아는 당신" chapterid="" quest_level="27" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="19"><![CDATA[Talk to Lady Lena]]></title>
+         <contents mid="20"><![CDATA[<html>Lady Lena wants to speak with you. Go and see her. <BR>
+ <BR>
+<FONT color=#086171>Saint Haven Palace </FONT> <FONT color=#a82424>→ Lena</FONT></html>]]></contents>
+         <destination mid="21"><![CDATA[Talk to Lady Lena]]></destination>
+         <todo_msg mid="22"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>27:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>460</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

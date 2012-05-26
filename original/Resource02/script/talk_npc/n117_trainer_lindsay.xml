@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n117_trainer_lindsay</npcename>
+      <npcid>117</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Trainer Lindsay [Captain Darlant's Base]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>Huh? You've come to see ME? HAHAHA!<BR>Cool, we shall meet at<FONT color=#a82424>Saint Haven</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">nq32_8606_good_glass</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">nq32_8605_picnic_together</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">8606</chk>
+         <chk type="hasquest">8605</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,264 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_663_stray_love</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>663</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Trace of love]]></qkname>
+      <qnpc>
+         <npcid>422</npcid>
+         <npcename>n422_light_pole</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n422_light_pole-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Muddy ground.<BR>Can't find anything special.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Kelly${action:Talk}<BR>Regarding the memo~<BR>…<FONT color=#7e12d2>Kept the promise. Delivered to the person</FONT>… It's very strange.<BR>
+Right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-b" mid="9"><![CDATA[<html>(Kelly is in doubt)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Kelly$<BR>That's strange.<BR>He didn't make the delivery…..Hmm...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-acceptted" mid="11"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Trace of Love$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-a" mid="13"><![CDATA[<html>The delivery could have been made.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Kelly$<BR>Do you think someone have taken the keepsakes because it's a treasure?<BR>
+But then why did it say it has been delivered? It's a little strange.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-b" mid="15"><![CDATA[<html>Why, what?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant Kelly$<BR>
+No way. The cleric was released after the death of the tyrant. There is no way they've met….<BR>
+Ah!! That's right!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-c" mid="17"><![CDATA[<html>What's the only way?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Merchant Kelly$<BR>
+Of couse. The will and keepsakes were for King Rodain from Lucifina. However, both of them were dead when the cleric tried to deliver. Then there is only one way to deliver!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-c" image="QW_44.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Merchant Kelly${action:Talk}<BR>Hahaha~ That's giving it to the grave!<BR>I'm sure! There must be a will and keepsake somewhere in <FONT color=#a82424>Nameless Tyrant Tomb</FONT>~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n422_light_pole-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(Muddy ground.</FONT><BR>
+<FONT color=#7e12d2>Can't find anything special.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2" image="QW_44.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Merchant Kelly$<BR>Please go to <FONT color=#a82424>Nameless Tyrant Tomb</FONT> and find the end of this trace of love.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n422_light_pole-2" image="" itemindex="">
+      <talk_answer link_index="n422_light_pole-2-a" mid="22"><![CDATA[<html>(Looks carefully)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(Muddy ground.</FONT><BR>
+<FONT color=#7e12d2>Can't find anything special.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n422_light_pole-2-a" image="QS_Default.dds" itemindex="300363">
+      <talk_answer link_index="n422_light_pole-2-b" mid="24"><![CDATA[<html>(Read the letter)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There is a very old letter and rosary)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n422_light_pole-2-b" image="" itemindex="">
+      <talk_answer link_index="n422_light_pole-2-c" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Old letter$<BR>…We went through lot of pain just because we were in love, however my immense joy made up for the pain. So please don't grief my death. Don't be angry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n422_light_pole-2-c" image="" itemindex="">
+      <talk_answer link_index="n422_light_pole-2-d" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Old letter$<BR>Please believe in our eternal love in the life after death and don't fall in grief.<BR>I'll be leaving first waiting happily to see you again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n422_light_pole-2-d" image="QS_Default.dds" itemindex="300363">
+      <talk_answer link_index="n422_light_pole-3" mid="30"><![CDATA[<html>(Couldn’t read more)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Old letter$<BR>
+I'm leaving my precious rosary to you. Please don't forget my love for you even if the world betrays you and there are no more justice. Just like you believe in the presence of the Goddess, remember my presence… my love.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n422_light_pole-3" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(There is nothing left)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3-a" mid="33"><![CDATA[<html>(Kelly makes a somber expression)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Merchant Kelly$<BR>
+There really was a will and keepsake.<BR>
+At the tomb of the king…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3-b" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Merchant Kelly$<BR>
+Lucifina was happy being with him.<BR>
+Even though everyone was against them, torturing them, hating them, they were happy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3-c" mid="38"><![CDATA[<html>But that doesn't bring a dead person back.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Merchant Kelly$<BR>However, the king used black magic after her death.<BR>
+He could not forgive this world for taking Lucifina away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3-c" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3-d" mid="40"><![CDATA[<html>Did Lucifina want that?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Merchant Kelly$<BR>
+You can't explain love by anything~<BR>
+He was in love with Lucifina so much so he couldn't make a correct decision.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3-d" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3-e" mid="42"><![CDATA[<html>If that's what love is, I don't need it.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Merchant Kelly$<BR>If you look at the will, Lucifina didn't want her husband to fall in grief. However the will couldn't reach the King and he ruined the world…. It's very sad.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3-e" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3-f" mid="44"><![CDATA[<html>(Kelly takes a big breath)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Merchant Kelly$<BR>Um… There are other forms of love. And true love makes this world more beatiful. I don't know what that is to be honest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3-f" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3-g" mid="46"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3-g" image="QN_Npc_Cian.dds" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3-h" mid="48"><![CDATA[<html>(…Let's just run away.)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Merchant Kelly${action:Talk}<BR>Oh! Adventurer!!<BR>
+How about your love? What happened to the <FONT color=#a82424>warrior</FONT> you talked about?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3-h" image="" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Merchant Kelly$<BR>Hey!! <FONT color=#387206>{user_nick}</FONT>, wait~!!<BR>Come on… I can't sleep if I'm curious! Please~</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6630,,,,,</exe>
+         <exe type="setquest">663</exe>
+         <exe type="talk" npc="n092_trader_kelly">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6630,,,,,</exe>
+         <exe type="complete">663</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="1" npc="n092_trader_kelly" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n422_light_pole" sub="b" />
+   <exelink qstep="2" npc="n422_light_pole" sub="c" />
+   <exelink qstep="2" npc="n422_light_pole" sub="d" />
+   <exelink qstep="2" npc="n422_light_pole" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="3" npc="n092_trader_kelly" sub="c" />
+   <exelink qstep="3" npc="n092_trader_kelly" sub="d" />
+   <exelink qstep="3" npc="n092_trader_kelly" sub="e" />
+   <exelink qstep="3" npc="n092_trader_kelly" sub="f">0</exelink>
+   <exelink qstep="3" npc="n092_trader_kelly" sub="g">1</exelink>
+   <exelink qstep="3" npc="n092_trader_kelly" sub="h" />
+   <journal_data recompense="0:6630" quest_title="사랑의 행방" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Merchant Kelly's last favour]]></title>
+         <contents mid="52"><![CDATA[<html>Listen to Merchant Kelly's story.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Conversation with Merchant Kelly]]></destination>
+         <todo_msg mid="54"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_44.dds</contents_image>
+         <destination_pos>444,n422</destination_pos>
+         <destination_mode>custom:441@1,442@1,443@1,444@4</destination_mode>
+         <statemark_npcid>422</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[To find the will and keepsake]]></title>
+         <contents mid="56"><![CDATA[<html>Find the will and keepsake from Nameless Tyrant Tomb.<BR><BR>
+<FONT color=#086171>Hermalte Port(Dark Mine Entrance)</FONT><FONT color=#a82424> → Nameless Tyrant Tomb</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Find the will and keepsake from Nameless Tyrant Tomb]]></destination>
+         <todo_msg mid="58"><![CDATA[Find the will and keepsake from Nameless Tyrant Tomb]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Form of love]]></title>
+         <contents mid="60"><![CDATA[<html>Found the will and keepsake. Return to Merchant Kelly.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Conversation with Merchant Kelly]]></destination>
+         <todo_msg mid="62"><![CDATA[Found the will and keepsake, report to Merchant Kelly]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class>2</user_class>
+      <prev_quest>662</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,259 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_803_best_bodybuilder</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>803</qid>
+      <designer>김인정</designer>
+      <qlevel>42</qlevel>
+      <qdesc>가디언 칵퉤꽃 줄기	300433</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Best Bodybuilder]]></qkname>
+      <qnpc>
+         <npcid>714</npcid>
+         <npcename>n714_cleric_yohan</npcename>
+         <npckname>상급 클레릭 요한</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>715</npcid>
+         <npcename>n715_adventurer_guildmaster_hose</npcename>
+         <npckname>모험자 길드장 호세</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-noquest" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Master Cleric Yohan$<BR>I always pray and keep working out.<BR>If I lose my tempo, my body and heart would be messed up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-a" mid="6"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Guildmaster Jose$<BR>Ahhhheee….<BR><FONT color=#7e12d3>(Jose's worrying about something with weird sounds)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-a" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-b" mid="8"><![CDATA[<html>Are you kidding me?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Guildmaster Jose$<BR>My wife's just been here, and she said that my stomach sticks out.<BR>She requested me to work out to be like Master Cleric Yohan, or she's going to kick me out. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-c" mid="10"><![CDATA[<html>…….</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Guildmaster Jose$<BR>You don't know my wife.<BR>I complained bad tastes of her food once, and I had to sleep outside of my house!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-acceptted" mid="22"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Best Bodybuilder$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-a" mid="47"><![CDATA[<html>(…You asked me a lot)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Guildmaster Jose$<BR>I have something that I need your help.<BR>Please go and get some secret methods of keeping the body in shape.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-a" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Guildmaster Jose$<BR>My family's peace depends on this.<BR>
+Now, go to <FONT color=#a82425>Master Cleric Yohan</FONT> and ask the secret!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-a" mid="51"><![CDATA[<html>N, no. I didn't even think about it.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Cleric Yohan$<BR>Ah, <FONT color=#387207>{user_nick}</FONT>.<BR>
+You finally decide to be with me to live for God for a whole life.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-a" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-b" mid="54"><![CDATA[<html>In fact…</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Cleric Yohan$<BR>Okay….<BR>
+<FONT color=#7e12d3>(Yohan looks quite disappointed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-c" mid="56"><![CDATA[<html>What kind of answer?</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Master Cleric Yohan$<BR>You must be here to ask my secret method to keep my body in shape. It happens usually.<BR>
+And I usually answer like this.<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2" mid="58"><![CDATA[<html>(Hmm. Work out and drink boiled water…)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Master Cleric Yohan$<BR>Pray everyday sincerely, and work out everyday…<BR>And you drink boiled water with spit flowers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2" image="" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Master Cleric Yohan$<BR>Hm? You don't have anything to ask?<BR>
+Why don’t people ask about Goddess's profound miracle.<BR><FONT color=#7e12d3>(Yohan sighs out)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-a" mid="63"><![CDATA[<html>(Tell him what I heard)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Guildmaster Jose$<BR>So, you've been there? <FONT color=#7e12d3>(Jose receives me with great joy)<BR></FONT>What's the secret?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-b" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Guildmaster Jose$<BR>What? Pray sincerely? And what?! Work out everyday?<BR><FONT color=#7e12d3>(Jose gets wrinkles in the middle of forehead)</FONT> …it's impossible!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-c" mid="68"><![CDATA[<html>(I think I just got a job)</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Guildmaster Jose$<BR>Damn! I can't do that! It can't be the secret! <BR>…But I can drink<FONT color=#a82424>boiled water with spit flowers</FONT> .<BR>
+<FONT color=#7e12d3>(Jose looks like he's going to ask me something)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2-c" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3" mid="70"><![CDATA[<html>(See. I got a job)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Guildmaster Jose$<BR>Now. Go and beat <FONT color=#a82424>{monster:1406}</FONT> and get some spit flowers' stems.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3" image="QW_52.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Guildmaster Jose$<BR>Go to <FONT color=#a82424>Ancient Library</FONT>and get 5 numbers of the spit flowers' stems. Hurry up friend!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-4" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-4-a" mid="73"><![CDATA[<html>Sure.</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Guildmaster Jose$<BR>You brought all of <FONT color=#a82425>spit flowers' stems</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-4-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-4-b" mid="75"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-4-b" image="" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$Guildmaster Jose$<BR>Haha, so I can be like a bodybuilder if I drink this!<BR>Expect the shape of my changed body!!<BR>
+<FONT color=#7e12d3>(Jose looks confident)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">803</exe>
+         <exe type="talk" npc="n715_adventurer_guildmaster_hose">1</exe>
+         <exe type="recompense_view">8030,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1405</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201405</exe>
+         <exe type="addquestitem" num="1">300433</exe>
+         <exe type="huntitem" num="5" exe="6,7,8" onexe="">300433</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">803</exe>
+         <exe type="delquestitem" num="-1">300433</exe>
+         <exe type="recompense">8030,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="c">2</exelink>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="b" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="c" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n715_adventurer_guildmaster_hose" sub="b" />
+   <exelink qstep="2" npc="n715_adventurer_guildmaster_hose" sub="c" />
+   <exelink qstep="2" npc="n715_adventurer_guildmaster_hose" sub="3">0,2,3,5,1</exelink>
+   <exelink qstep="4" npc="n715_adventurer_guildmaster_hose" sub="a">2</exelink>
+   <exelink qstep="4" npc="n715_adventurer_guildmaster_hose" sub="b">0,1</exelink>
+   <journal_data recompense="0:8030" quest_title="몸짱의 비밀" chapterid="" quest_level="42" quest_mark_type="10" use_item_list="300433">
+      <journal index="1">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Secret Method]]></title>
+         <contents mid="37"><![CDATA[<html>Ask Master Cleric Yohan about the secret method to keep the body in shape.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Cleric Yohan</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Talk with Master Cleric Yohan]]></destination>
+         <todo_msg mid="39"><![CDATA[Talk with Master Cleric Yohan]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image />
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[To Guildmaster Jose]]></title>
+         <contents mid="41"><![CDATA[<html>Tell Guildmaster Jose about Master Cleric Yohan's secret method.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Guildmaster Jose</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Report to Guildmaster Jose]]></destination>
+         <todo_msg mid="43"><![CDATA[Go back to Guildmaster Jose and report it.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>523,0,0</destination_pos>
+         <destination_mode>custom:521@3,522@3,523@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[spit flowers' stems]]></title>
+         <contents mid="79"><![CDATA[<html>Collect spit flowers' stems in Ancient Library.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Ancient Library]]></destination>
+         <todo_msg mid="81"><![CDATA[Collect spit flowers' stems in Ancient Library.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image />
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Report]]></title>
+         <contents mid="83"><![CDATA[<html>Quest's complete. Go back to Lotus Marsh's Guildmaster Jose.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Guildmaster Jose</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Report to Guildmaster Jose]]></destination>
+         <todo_msg mid="85"><![CDATA[Report to Guildmaster Jose.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>42:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>802</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

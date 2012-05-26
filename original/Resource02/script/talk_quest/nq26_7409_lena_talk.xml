@@ -1,0 +1,96 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq26_7409_lena_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7409</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Reasons for cross dressing]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-a" mid="6"><![CDATA[<html>Who is Knight White Rose? </html>]]></talk_answer>
+      <talk_answer link_index="n133_lena_duglars-accepting-b" mid="7"><![CDATA[<html>But you are that….</html>]]></talk_answer>
+      <talk_answer link_index="n133_lena_duglars-accepting-c" mid="8"><![CDATA[<html>I’m not too sure but you would still look pretty even if you dress as a boy. </html>]]></talk_answer>
+      <talk_answer link_index="n133_lena_duglars-accepting-d" mid="9"><![CDATA[<html>You have a bad habit of talking about yourself as a someone else. </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Lady Lena$<BR>Huh? When did I dress as a boy? <FONT color=#7e12d2>(Lena puts her fan on her lips)</FONT> There many people around here. Someone may think I am the Knight White Rose. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Lady Lena$<BR>
+Well, it’s not me right here but it could be me last night or maybe you? Hahaha! <FONT color=#7e12d2>(Lena is joking but she is enjoying it) </FONT><BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Lady Lena$<BR>Shh! I don’t want to talk about it with you. Get some more wits! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Lady Lena$<BR>
+Was I that pretty? I mean am I? I like that, thank you! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Lady Lena$<BR>What a boring person you are. I bet you suck at puzzles. I’m too tired to talk to a boring person. Leave me alone. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7409, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 133, 200 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 133, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 133, 400 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 133, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 남장을 하는 이유에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>133:15000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

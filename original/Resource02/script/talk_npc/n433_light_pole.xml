@@ -1,0 +1,28 @@
+   <talk>
+      <npcename>n433_light_pole</npcename>
+      <npcid>433</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Broken Sealed Box
+(Death City Gates)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(Nothing of particular interest here)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="5" false="2">0</exe>
+         <exe type="conexe" true="6" false="3">1</exe>
+         <exe type="conexe" true="7" false="4">2</exe>
+         <exe type="conexe" true="8" false="0">3</exe>
+         <exe type="enterquest">sq11_662_old_promise</exe>
+         <exe type="enterquest">sq11_639_lucifina_soul_jar</exe>
+         <exe type="enterquest">sq11_646_destroyed_sealing_box</exe>
+         <exe type="enterquest">sq11_660_find_the_seal</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">662</chk>
+         <chk type="hasquest">639</chk>
+         <chk type="hasquest">646</chk>
+         <chk type="hasquest">660</chk>
+      </conditions>
+   </talk>

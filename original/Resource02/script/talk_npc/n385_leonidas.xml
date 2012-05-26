@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n385_leonidas</npcename>
+      <npcid>385</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Leonidas Goblin]]></npckname>
+      <talk_paragraph index="001" image="QM_Goblin_Xerxes.dds" itemindex="">
+         <talk_answer link_index="talk" mid="13"><![CDATA[<html>[Talk] <FONT color=#086171>Why are you here?</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Leonidas Goblin$<BR>We are Sparta Goblins!<BR>We shall destroy the evil King Kuse Kuse! </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="talk1" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Leonidas Goblin$<BR>I am King Leonidas, ruler of all the Sparta Goblins.<BR>There used to be 300 of us but the evil King Kuse Kuse brought 500 mercenaries to crush my goblins! </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk1" image="" itemindex="">
+         <talk_question mid="8"><![CDATA[<html>$Leonidas Goblin$<BR>This is our home! We, the Sparta Goblins will have our revenge on King Kuse Kuse!<BR>? <FONT color=#7e12d2> To fight the Kuse Kuse goblins, please enter via the Wonderful Theme Park entrance.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

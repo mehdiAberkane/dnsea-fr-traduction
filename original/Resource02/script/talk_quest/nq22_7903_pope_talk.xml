@@ -1,0 +1,102 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq22_7903_pope_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7903</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Reason to start the business]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="8"><![CDATA[<html>Long long time ago...</html>]]></talk_answer>
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="9"><![CDATA[<html>I've been through so many hardships.</html>]]></talk_answer>
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="10"><![CDATA[<html>I just happened to get here.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Pero$<BR>How I started business? Hmm...<BR>I don't remember exactly. While selling this and that, I came here.<BR>How about you? Why did you become an adventurer?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Merchant Pero$<BR>I didn't ask you about where you're born?<BR>Don't give me a biography. Are you one of the Six Heroes?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Merchant Pero$<BR>Why don’t you tell me Goddess Altea walked on the earth when you born?! Tsk.<BR><FONT color=#7e12d2>(Pero mocks)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant Pero$<BR>Why are you crying even though you haven't gone through that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Merchant Pero$<BR>
+You, this is...(Pero's voice is trembling)…Are you gonna publish your biography to sell?<BR>Show it to me when you've finished it. If it looks good, let's sign an exclusive contract with me .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant Pero$<BR>Oh, do you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Merchant Pero$<BR>Hahaha. Selecting a job is just the same as it. You expect a fateful encounter in agony, but no. All somehow manage to live and do their jobs somehow.<BR>Hahaha.<BR><FONT color=#7e12d2>(No dream, no hope in his story.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7903, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 100 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 277, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 200 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 277, -100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="a">1,2,0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="c">3,4,0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="e">5,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 장사를 시작하게 된 계기" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>277:3000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

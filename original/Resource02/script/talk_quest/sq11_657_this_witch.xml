@@ -1,0 +1,246 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_657_this_witch</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>657</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>658</nextqid>
+      <nextqname>sq11_658_pop_angelica</nextqname>
+      <nextqnpc>n046_cleric_master_enoc</nextqnpc>
+      <qkname mid="1"><![CDATA[Some witch]]></qkname>
+      <qnpc>
+         <npcid>425</npcid>
+         <npcename>n425_light_pole</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>46</npcid>
+         <npcename>n046_cleric_master_enoc</npcename>
+         <npckname>상급 클레릭 에녹</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Couldn't find anything special)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Cleric Enoch$<BR>The king, called a tyrant was excommunicated by the church.<BR>It worries me that there are still some people who are looking into that case.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Some witch$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-1-a" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Cleric Enoch$<BR>The tyrant was a wise man, but since he got married he started to change. Their marriage didn’t last long. However, it was long enough to change the wise king into a tyrant.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-1-b" mid="17"><![CDATA[<html>Deserted Woods?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Cleric Enoch$<BR>There is an <FONT color=#a82424>excommunicated cleric</FONT> related to those two people, and he left many reports and documents regarding his punishment.<BR>Most of them were collected and burnt but some are still left in Deserted Woods.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1-b" image="QW_45.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-1-c" mid="57"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Master Cleric Enoch$<BR>Before <FONT color=#a82424>Ghost Town of Deserted Woods</FONT> became the base of monsters, he was the cleric of the town.<BR>So that's why there are some leftover documents.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1-c" image="QW_45.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Cleric Enoch${action:Talk}<BR>So please go to <FONT color=#a82424>Ghost Town of Deserted Woods</FONT>and check if there are any documents of the cleric. It may become an important evidence.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-1" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Couldn't find anything special)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2" image="QW_45.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Master Cleric Enoch$<BR>So please go to <FONT color=#a82424>Ghost Town of Deserted Woods</FONT>and check if there are any documents of the cleric. It may become an important evidence.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-2" image="" itemindex="">
+      <talk_answer link_index="n425_light_pole-2-a" mid="30"><![CDATA[<html>(Look carefully)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Old documents pile$<BR><FONT color=#7e12d2>(There are piles of old documents.</FONT><BR>
+<FONT color=#7e12d2>A pile of documents which seem to belong to the cleric.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-2-a" image="" itemindex="">
+      <talk_answer link_index="n425_light_pole-2-b" mid="58"><![CDATA[<html>(Continue to read)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Old Documents Pile$<BR>…… So I asked the Lord.<BR>
+Two people got married in the House of Holy Goddess.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-2-b" image="" itemindex="">
+      <talk_answer link_index="n425_light_pole-3" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Old Documents Pile$<BR>Prince <FONT color=#a82424>Rodain</FONT> and <FONT color=#a82424>Lucifina</FONT>'s classes are very different.<BR>However, the marriage in the House of Goddess is more sacred than the Kingdom, isnt it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-3" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Old Documents Pile$<BR><FONT color=#7e12d2>(The document is worn out, cannot be read anymore.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-a" mid="34"><![CDATA[<html>Yes, there was a letter.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Master Cleric Enoch$<BR>Did you have a safe trip?<BR>Was there anything useful?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-b" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Master Cleric Enoch$<BR>Marriage? …Oh, that incident.<BR>I guess the reason the cleric got excommunicated was because of the part he played in this marriage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-b" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-c" mid="38"><![CDATA[<html>So it was the cleric who organised the marriage.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Master Cleric Enoch$<BR>It's not known but the King's name was Rodain and he fell in love with a commoner, Lucifina. At the end, the prince secretly got married with her against the will of the church.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-c" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-d" mid="40"><![CDATA[<html>Well, maybe.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Master Cleric Enoch$<BR>Yes. I think the woman, Lucifina made Prince Rodain a tyrant. She was a witch. If not, how could a man change that quickly?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-d" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-e" mid="63"><![CDATA[<html>Looking at the documents I think it was his will.</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Master Cleric Enoch$<BR>I think the emcommunicated cleric was also fooled by the witch.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-e" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-f" mid="65"><![CDATA[<html>Dragon Followers' Ceremony?</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Cleric Enoch${action:Talk}<BR>No one knows if they were really fooled or not.<BR>…Anyway it is said that the witch was involved with the <FONT color=#a82424>Dragon Followers</FONT>. The reason the king was called a tyrant was because he held a ceremony for the Dragon Followers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-f" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-g" mid="67"><![CDATA[<html>What is that??</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Master Cleric Enoch$<BR>Oh!! That…!<BR>
+There is a one thing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-g" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-h" mid="69"><![CDATA[<html>Oh that's a problem</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Master Cleric Enoch$<BR>It is rumoured that the tyrant <FONT color=#a82424>made a deal with the Dragon Followers</FONT>, and held ceremonies of heresy. He went on trial because of that.<BR>If the people who are after this case have the record of the trial… they may have found the location of <FONT color=#a82424>Equipments of Heresy</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-h" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-i" mid="71"><![CDATA[<html>Aren’t those records being kept in the archive of the church?</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Master Cleric Enoch$<BR>Yes. If someone is after this case, they are after the Equipments of Heresy.<BR>They are very expensive items with evil magic.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-i" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-j" mid="73"><![CDATA[<html>(Enoch seems serious)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Master Cleric Enoch$<BR>It used to be but some part of <FONT color=#a82424>Trial Record of Heresy</FONT> went missing.<BR>We thought it was gone for good but I think there is a possibility that the records still exist somewhere.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-j" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-!next" mid="42"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6570,,,,,</exe>
+         <exe type="setquest">657</exe>
+         <exe type="talk" npc="n046_cleric_master_enoc">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6570,,,,,</exe>
+         <exe type="complete">657</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n046_cleric_master_enoc" sub="b" />
+   <exelink qstep="1" npc="n046_cleric_master_enoc" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n425_light_pole" sub="b" />
+   <exelink qstep="2" npc="n425_light_pole" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="b" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="c" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="d" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="e" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="f" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="g" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="h" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="i" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="j">0</exelink>
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="!next">1</exelink>
+   <journal_data recompense="0:6570" quest_title="어떤 마녀" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Confirmation]]></title>
+         <contents mid="45"><![CDATA[<html>Listen to Master Cleric Enoch's story.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Conversation with Master Cleric Enoch]]></destination>
+         <todo_msg mid="47"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_45.dds</contents_image>
+         <destination_pos>453,n425</destination_pos>
+         <destination_mode>custom:451@1,452@1,453@1</destination_mode>
+         <statemark_npcid>425</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Excommunication]]></title>
+         <contents mid="49"><![CDATA[<html>Go to Ghost Town of Deserted Woods and look for the records of excommunicated cleric.<BR>
+ <BR>
+<FONT color=#086171>Black Mountain(Deserted Woods)</FONT> <FONT color=#a82424>→ Ghost Town of Deserted Woods</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Explore Ghost Town of Deserted Woods]]></destination>
+         <todo_msg mid="51"><![CDATA[Look for the old documents in Ghost Town of Deserted Woods]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Confirmation]]></title>
+         <contents mid="53"><![CDATA[<html>Confirmed the old documents. Return to Master Cleric Enoch and report.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Conversation with Master Cleric Enoch]]></destination>
+         <todo_msg mid="55"><![CDATA[Return to Master Cleric Enoch and report what you saw.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest>656</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

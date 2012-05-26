@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n080_dream_lucia</npcename>
+      <npcid>80</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Master Sorceress Lucia]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Master Sorceress Lucia$<BR>Hmph! You fool! You dare interrupt my beauty sleep!<BR>I'll burn you!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

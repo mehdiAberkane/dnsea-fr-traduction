@@ -1,0 +1,175 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_818_ancient_draft</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>818</qid>
+      <designer>나은하</designer>
+      <qlevel>45</qlevel>
+      <qdesc>고대인의 설계도	고대인들의 문장학 지식을 바탕으로 만들어진 설계도. 고대인들의 문장학 지식을 연구하는 중요한 자료가 될 것 같다.	300448</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>819</nextqid>
+      <nextqname>sq15_819_tetra_stone</nextqname>
+      <nextqnpc>n710_scholar_hancock</nextqnpc>
+      <qkname mid="1"><![CDATA[Ancient Draft]]></qkname>
+      <qnpc>
+         <npcid>710</npcid>
+         <npcename>n710_scholar_hancock</npcename>
+         <npckname>문장학자 핸콕</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldist Hancock$<BR>
+Don't irritate me if it's not about a sentence itself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Heraldist Hancock$<BR>I'm researching the ancients' sentence skills. Recently I found out that the ancient ruins' guardian's heart is the sentence that the ancients made. I thought that I could get something if I researched it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Heraldist Hancock$<BR>However, there was a limit to know all of things about the ancients' skills with only that. Guardian's heart has a complicated structure that the current heraldry cannot explain for.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-b" image="QS_Default.dds" itemindex="300448">
+      <talk_answer link_index="n710_scholar_hancock-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Heraldist Hancock$<BR>To research the ancients' sentence skills, we need a<FONT color=#a82425>the ancients' draft</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-c" image="QS_Default.dds" itemindex="300448">
+      <talk_answer link_index="n710_scholar_hancock-accepting-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Heraldist Hancock$<BR>That's why I'm looking for a  <FONT color=#a82425>the ancients' draft</FONT> around here. Can you help me to do this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Ancient Draft$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1" image="QW_55.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Heraldist Hancock$<BR> The ancients usually put important documents into <FONT color=#a82424>dead note</FONT>. Go to <FONT color=#a82424>East Ancient Armory</FONT> and beat up <FONT color=#a82424>{monster:1553}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-a" mid="20"><![CDATA[<html>(Give him the ancient's draft)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldist Hancock$<BR>Have you found the ancient's draft?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-b" mid="24"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldist Hancock$<BR>Hmm, this must be the ancients' draft. Wait a minute. I'll check this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-b" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-c" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Heraldist Hancock$<BR><FONT color=#7e12d3>(Heraldist Hancock's checking the ancients' draft)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-c" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-d" mid="28"><![CDATA[<html>Unknown material?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Heraldist Hancock$<BR>I don't think it takes much time to interpret it. But there is an <FONT color=#a82425>unknown-material</FONT>inside of this draft.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-d" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-e" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldist Hancock$<BR>It is called Tetrastone. I think it's impossible to make this now. How can I get this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-e" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-f" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Heraldist Hancock$<BR>Wait.<BR><FONT color=#7e12d3>(Hancock's checking with a magnifying glass)</FONT><BR>Oh, great! I found out where I can get this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-f" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-!next" mid="34"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8180,,,,,</exe>
+         <exe type="setquest">818</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">1552</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201552</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300448</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n710_scholar_hancock">1</exe>
+         <exe type="addquestitem" num="1">300448</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300448</exe>
+         <exe type="recompense">8180,,,,,</exe>
+         <exe type="complete">818</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n710_scholar_hancock" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n710_scholar_hancock" sub="acceptted">1,2,3,4,8</exelink>
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="a">0</exelink>
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="b" />
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="c" />
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="d" />
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="e" />
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="f">1</exelink>
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="!next">2</exelink>
+   <journal_data recompense="8180" quest_title="고대인의 설계도" chapterid="" quest_level="45" quest_mark_type="10" use_item_list="300448">
+      <journal index="1">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:551@3,552@3,553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[the ancients' draft I]]></title>
+         <contents mid="37"><![CDATA[<html>Heraldist Hancock said that the ancients' draft is needed for heraldry research. Go to East Ancient Armory and beat up {monster:1552} and get the ancients' draft.<BR><BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[East Ancient Armory]]></destination>
+         <todo_msg mid="39"><![CDATA[New Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>15,n710</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>710</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[the ancients' draft II]]></title>
+         <contents mid="41"><![CDATA[<html>I just got the ancients' draft. Go back to Lotus Marsh's Heraldist Hancock.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Heraldist Hancock</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Talk with Heraldist Hancock]]></destination>
+         <todo_msg mid="43"><![CDATA[Go back to Lotus Marsh's Heraldist Hancock]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>45:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

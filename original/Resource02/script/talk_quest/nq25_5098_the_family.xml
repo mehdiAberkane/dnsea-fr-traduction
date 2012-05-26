@@ -1,0 +1,199 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq25_5098_the_family</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5098</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Family of the Kids]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="30"><![CDATA[<html>What do you think we need?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Events Planner Irine$<BR><FONT color=#387206>{user_nick}</FONT>, how do you think we should make the kids at the<BR><FONT color=#a82424>Center of the Forsaken Islet</FONT> to long for what they missed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="99"><![CDATA[<html>I guess you are right.</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Events Planner Irine$<BR>I think the thing that they long for would be...<BR>their family, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="101"><![CDATA[<html>(Irine is disappointed.)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Events Planner Irine$<BR>I've found out that the parents of those abandoned kids would have been attacked by the monsters. I'm sure it leaves a deep bad scar in their heart after having been through such tragedy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-d" mid="188"><![CDATA[<html>Family... belongings?</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$Events Planner Irine$<BR>Anyway, if we can find some <FONT color=#a82424>family belongings</FONT> that were scattered after the monsters' attack, we can probably use that to bring the kids back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-e" mid="197"><![CDATA[<html>Yes, sir.</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Events Planner Irine${action:Talk}<BR>Yes! That shall work!<BR>First, we'll need the belongings they had before they lost their parents.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceppted" mid="103"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Kids Left Behind$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="202"><![CDATA[<html>I'll get going then.</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Events Planner Irine$<BR>Please defeat the monsters at <FONT color=#a82424>Center of the Forsaken Islet</FONT> and find the <FONT color=#a82424>family belongings</FONT>.<BR>When you bring those back, I'll try approaching the kids with them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="" itemindex="">
+      <talk_question mid="203"><![CDATA[<html>$Events Planner Irine$<BR>I'll leave everything to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="" itemindex="">
+      <talk_question mid="126"><![CDATA[<html>$Events Planner Irine$<BR>Please defeat the monsters at <FONT color=#a82424>Center of the Forsaken Islet</FONT> and find the <FONT color=#a82424>family belongings</FONT>.<BR>When you bring those back, I'll try approaching the kids with them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-a" mid="206"><![CDATA[<html>Here it is.</html>]]></talk_answer>
+      <talk_question mid="205"><![CDATA[<html>$Events Planner Irine$<BR>You're back! Please give them to me.<BR>I'll try to bring the kids back with these.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-b" mid="208"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-b" image="" itemindex="">
+      <talk_question mid="209"><![CDATA[<html>$Events Planner Irine$<BR>We shall save even just one kid who shivers in fear.<BR><FONT color=#7e12d2>(Irine carefully holds the belongings.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">5098</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="recompense_view">50980,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="3" op="[">300322</chk>
+         <chk type="questitem" num="3" op="[">300323</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="15">926</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="16">921</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10,12,13,14">931</exe>
+         <exe type="huntitem" num="3" exe="" onexe="">300322</exe>
+         <exe type="huntitem" num="3" exe="" onexe="">300323</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300324</exe>
+         <exe type="addquestitem" num="1">300322</exe>
+         <exe type="addquestitem" num="1">300323</exe>
+         <exe type="addquestitem" num="1">300324</exe>
+         <exe type="huntall">12,13,14</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="8" false="">0</exe>
+         <exe type="conexe" true="9" false="">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="15">200926</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="16">200921</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10,12,13,14">200931</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">50980,,,,,</exe>
+         <exe type="delquestitem" num="-1">300322</exe>
+         <exe type="delquestitem" num="-1">300323</exe>
+         <exe type="delquestitem" num="-1">300324</exe>
+         <exe type="complete">5098</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 100, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn" sub="a">0,2,3,4,17,18,19,5,6,7,11,1</exelink>
+   <exelink qstep="3" npc="n100_event_ilyn" sub="a">0</exelink>
+   <exelink qstep="3" npc="n100_event_ilyn" sub="b">1,2,3,4,5</exelink>
+   <journal_data recompense="0:50980" quest_title="아이들의 가족" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="300322,300323,300324">
+      <journal index="1">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:11@1,1@1,5@1,8@1</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="211"><![CDATA[Irine's Advice]]></title>
+         <contents mid="212"><![CDATA[<html>Hear Events Planner Irine's story.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT></html>]]></contents>
+         <destination mid="213"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="214"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[At Center of the Forsaken Islet]]></title>
+         <contents mid="85"><![CDATA[<html>Find the kids' family belongings at Center of the Forsaken Islet. You will be able to do so by defeating the monsters.<BR><BR><FONT color=#086171>Hermalte Port (Transport Ship for Forsaken Islet)</FONT> <FONT color=#a82424>→ Center of the Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Defeat the monsters at Center of the Forsaken Islet]]></destination>
+         <todo_msg mid="87"><![CDATA[Please find the family belongings at Center of the Forsaken Islet.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:11@1,1@1,5@1,8@1</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Irine's Worry]]></title>
+         <contents mid="89"><![CDATA[<html>You have gathered all the belongings. Report to Events Planner Irine.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="91"><![CDATA[Please return to Events Planner Irine and report the situation.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>5097</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

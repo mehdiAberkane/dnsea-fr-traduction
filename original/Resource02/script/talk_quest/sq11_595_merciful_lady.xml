@@ -1,0 +1,153 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_595_merciful_lady</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>595</qid>
+      <designer>김인정</designer>
+      <qlevel>33</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Voluntary Acts of Missy Lena]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Missy Lena${action:Talk}<BR>We won the war, but many soldiers are wounded. This is a problem in <FONT color=#a82424>Saint Haven</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-b" mid="10"><![CDATA[<html>That's great.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Missy Lena$<BR>I am the daughter of the General, and as a noble, it's my duty to take care of the soldiers.<BR>It's little but I want to help with the donation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-b" image="QW_37.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-c" mid="13"><![CDATA[<html>What are you asking for?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Missy Lena$<BR>But I think it's too little to give some money, so I shall also provide medicine.<BR><FONT color=#a82424>At Spirit Grave Tomb</FONT>I hired soldiers to collect Spirit's Tears… but they can't fight.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-c" image="QW_37.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-d" mid="15"><![CDATA[<html>OK.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Missy Lena$<BR>So you shall go first to <FONT color=#a82424>Spirit Grave Tomb</FONT> to clear the monsters. Once done, my soldiers will collect some medicine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-acceppted" mid="17"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Voluntary Acts of Missy Lena$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="QW_37.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Missy Lena${action:Talk}<BR><FONT color=#a82424>Just go to check Spirit Grave Tomb</FONT>until the end, that's it.<BR>I will wait for you here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2-a" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Missy Lena$<BR>Ah, you're great. Haha .<BR> If we have many Adventurers like you, we might not be worried about monsters' attack.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2-b" mid="25"><![CDATA[<html>You're welcome</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Missy Lena$<BR><FONT color=#387206>{user_nick}</FONT> I collected medicine because of you. Thank you.<BR>It will be really helpful for the wounded soldiers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-2-c" mid="27"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-2-c" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Missy Lena${action:Talk}<BR>Then, see you.<BR>I hope you don't lose your kind heart.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="stageConstructionLevel" op="]=">0</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">,5951,5952,5953,5954,5955</exe>
+         <exe type="setquest">595</exe>
+         <exe type="conexe" true="6,3,4" false="">0</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n133_lena_duglars">1</exe>
+         <exe type="delcount">.</exe>
+         <exe type="checkStageClearRank" rand="6" num="374" onexe="2" true="[=" xsi:nil="true" />
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5951,5952,5953,5954,5955</exe>
+         <exe type="complete">595</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 133, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="acceppted">1,5,7</exelink>
+   <exelink qstep="2" npc="n133_lena_duglars" sub="b">0</exelink>
+   <exelink qstep="2" npc="n133_lena_duglars" sub="c">1,2</exelink>
+   <journal_data recompense="1:5951,2:5952,3:5953,4:5954,5:5955" quest_title="아가씨의 봉사활동" chapterid="" quest_level="33" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_37.dds</contents_image>
+         <destination_pos>374,0,0</destination_pos>
+         <destination_mode>custom:371@3,372@3,373@3,374@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Check Spirit Grave Tomb]]></title>
+         <contents mid="30"><![CDATA[<html>Missy Lena hired the soldiers to collect medicine. Go to <FONT color=#a82424>Spirit Grave Tomb</FONT> to defeat the monsters to help the soldiers collect medicine.<BR><BR><FONT color=#086171>Hermalte Port (River Ruins Gate)</FONT> <FONT color=#a82424>→Spirit Grave Tomb</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Clear Spirit Grave Tomb]]></destination>
+         <todo_msg mid="32"><![CDATA[Check Spirit Grave Tomb]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode />
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Report to Missy Lena]]></title>
+         <contents mid="34"><![CDATA[<html>Let's go to Missy Lena at Saint Haven Royal Palace to report.<BR><BR><FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Missy Lena</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Report to Missy Lena]]></destination>
+         <todo_msg mid="36"><![CDATA[Report to Missy Lena at Saint Haven Royal Palace]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>33:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>564</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

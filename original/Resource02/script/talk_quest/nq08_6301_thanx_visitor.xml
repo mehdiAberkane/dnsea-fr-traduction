@@ -1,0 +1,135 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq08_6301_thanx_visitor</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6301</qid>
+      <designer>김인정</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Gracious Guest]]></qkname>
+      <qnpc>
+         <npcid>201</npcid>
+         <npcename>n201_darklair_millefeuille</npcename>
+         <npckname>어둠의 여신관 밀피유</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-a" mid="182"><![CDATA[<html>(Priestess of Darkness Mio is tilting her head sideways like she can't remember something)</html>]]></talk_answer>
+      <talk_question mid="181"><![CDATA[<html>$Priestess of Darkness Mio$<BR>We the <FONT color=#a82424>Priestess of Darkness</FONT> is here to stop the world from being contaminated.<BR>It is a very hard yet important mission?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-b" mid="184"><![CDATA[<html>Hey, it's okay now.</html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$Priestess of Darkness Mio${action:Talk}<BR>Well it is hard. Even I barely became a priestess, I get scared easy, I'm not much of a help here. All I can do is to stand here and stop nightmares from getting out. Whew...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-b" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-acceppted" mid="186"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="185"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Hm… We started suffering with trying with just our power, <FONT color=#a82424>Castia</FONT> had to call for help to adventurers.<BR><FONT color=#387206>Aren't you here for the same reason, {user_nick}?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-1" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-1-a" mid="190"><![CDATA[<html>(Priestess of Darkness Mio smiling innocently)</html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Thank you for helping us and purging the <FONT color=#a82424>Boundary of Darkness </FONT>.<BR>I was repulsed to foreigners, not anymore after spending time with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-1-a" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-1-b" mid="192"><![CDATA[<html>Vigilance is not a bad thing.</html>]]></talk_answer>
+      <talk_answer link_index="n201_darklair_millefeuille-1-c" mid="193"><![CDATA[<html>Yes, very particular.</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Priestess of Darkness Mio$<BR>We should have brought adventurers in to help us already, this is so nice..<BR><FONT color=#a82424>Castia</FONT> is too square!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-1-b" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-1-d" mid="195"><![CDATA[<html>(Priestess of Darkness Mio smiles)</html>]]></talk_answer>
+      <talk_question mid="194"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Oh! Of course I like <FONT color=#a82424>Castia</FONT> too! She's smart and always has a point.<BR>She doesn't always makes mistakes as I am.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-1-c" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-1-d" mid="197"><![CDATA[<html>(Priestess of Darkness Mio smiles)</html>]]></talk_answer>
+      <talk_question mid="196"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Yes, she's a really nice person, but she sometimes seems to be too cold.<BR>Well, it's much better than always making mistakes like me. Hehehe!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-1-d" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-1-e" mid="199"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="198"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Anyways, I'm so glad so many adventurers came to help us!<BR>Since I'm just a normal <FONT color=#a82424>Priestess of Darkness</FONT>, all that I can do is just watch.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-1-e" image="QN_darklair_millefeuille.dds" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-1-f" mid="201"><![CDATA[<html>Sure, I'm excited.</html>]]></talk_answer>
+      <talk_question mid="200"><![CDATA[<html>$Priestess of Darkness Mio${action:Talk}<BR>I will be hearing many stories outside of the world as well as aski for many favors.<BR>Good, right? Happy? …Uh, No? <FONT color=#7e12d2>(Priestess of Darkness Mio having a dope face)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-1-f" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-1-g" mid="206"><![CDATA[<html>Bye.</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Priestess of Darkness Mio$<BR>I'm excited too. I'm just an ordinary Piestess of Darkness, so I'm a coward.<BR>I hope many brave adventurers visit us. Farewell!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-1-g" image="" itemindex="">
+      <talk_question mid="207"><![CDATA[<html><FONT color=#7e12d2>(Priestess of Darkness Mio waving her hand with innocent smile.</FONT><BR><FONT color=#7e12d2>It feels like Priestess of Darkness Mio and my relationship has gotten little bit more closer)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">6301</exe>
+         <exe type="talk" npc="n201_darklair_millefeuille">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">6301</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n201_darklair_millefeuille" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n201_darklair_millefeuille" sub="b" />
+   <exelink qstep="1" npc="n201_darklair_millefeuille" sub="c" />
+   <exelink qstep="1" npc="n201_darklair_millefeuille" sub="d" />
+   <exelink qstep="1" npc="n201_darklair_millefeuille" sub="d" />
+   <exelink qstep="1" npc="n201_darklair_millefeuille" sub="e" />
+   <exelink qstep="1" npc="n201_darklair_millefeuille" sub="f">0</exelink>
+   <exelink qstep="1" npc="n201_darklair_millefeuille" sub="g" />
+   <journal_data recompense="" quest_title="고마운 손님" chapterid="" quest_level="15" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_darklair_millefeuille.dds</contents_image>
+         <destination_pos>29,n201</destination_pos>
+         <destination_mode>custom:1@0,5@0,11@4,23@4,15@0,30@4,31@4</destination_mode>
+         <statemark_npcid>201</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Let's hear Priestess of Darkness Mio's story.]]></title>
+         <contents mid="84"><![CDATA[<html>Let's hear Heraldry Scholar Baileys question.<BR><BR><FONT color=#086171>The Boundary of Darkness Watchtower </FONT><FONT color=#a82424>? Priestess of Darkness Mio</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Talk to Priestess of Darkness Mio]]></destination>
+         <todo_msg mid="86"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>367</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

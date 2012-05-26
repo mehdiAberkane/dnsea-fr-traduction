@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n476_the_light</npcename>
+      <npcid>476</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Light of Fate]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There is a bright burst of light, </FONT><BR>
+<FONT color=#7e12d2>causing you to be unable to get closer.)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">sq15_763_truly_power</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">763</chk>
+      </conditions>
+   </talk>

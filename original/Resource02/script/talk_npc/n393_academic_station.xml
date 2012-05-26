@@ -1,0 +1,55 @@
+﻿   <talk>
+      <npcename>n393_academic_station</npcename>
+      <npcid>393</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Academic Station]]></npckname>
+      <talk_paragraph index="001" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="50"><![CDATA[<html>[Learing skill]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Academic Station$<BR>▶ <FONT color=#086171>The system is running on local interface.</FONT><BR>▷ <FONT color=#7e12d2>For network activation user identification is neccessary.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="7" link_target="mq11_432_here_sainthaven.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>It's Saint Heaven</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="mq11_433_by_a_head.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>It's by a whisker</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="mq11_434_so_cool_girl.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>Cold</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="mq11_435_meet_general.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>Met General</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="mq11_436_not_same.xml"><![CDATA[<html>[Lv26] <FONT color=#a94407>Different Thoughts I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="mq11_437_cooperatively.xml"><![CDATA[<html>[Lv26] <FONT color=#a94407>Cooperative</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="mq11_438_fleet_of_foot.xml"><![CDATA[<html>[Lv28] <FONT color=#a94407>Move quickly</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="mq11_439_good_data.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Date's victory</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="mq11_441_end_in_failure.xml"><![CDATA[<html>[Lv30]<FONT color=#a94407>Failure</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="mq11_442_soaring_and_falling.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>One is Supposed to Fall</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="mq11_382_second_step.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Work Starts Now</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="mq11_383_riskful_meet.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Unsafe Meeting</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="mq11_384_fairystars_prescribe.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Dark Tower's Prescription</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="mq11_386_data_retrieval.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Restarting Data Search</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="mq11_387_temporarily_cure.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Looking for a temporary medicine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="mq11_388_homesick_to_future.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Flash back to the future</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="39" link_target="mq11_389_commentary_of_geraint.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>Geraint says</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="40" link_target="mq11_390_monoris_guardian.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>Who is the guardian of Monolith</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="mq11_391_black_medicine.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>Searching for a Black Cure</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="42" link_target="mq11_392_facing_the_enemy.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>The Enemy is Near</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="43" link_target="mq11_393_reason_of_doubt.xml"><![CDATA[<html>[Lv36] <FONT color=#a94407>Why Don’t You Believe Me?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="mq11_394_deep_anxiety.xml"><![CDATA[<html>[Lv36] <FONT color=#a94407>Worries End</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="mq11_395_realize_foreboding.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Bad Premonitions are Accurate</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="mq11_396_last_hope.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>It's the last hope</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="mq11_397_but_unbowed.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Do not lose</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="mq11_398_lose_or_shorn.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Lost it</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="49" link_target="mq11_399_go_mate_with.xml"><![CDATA[<html>[Lv38] <FONT color=#a94407>Is he friend?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="34"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Academic Station${action:Talk}<BR><FONT color=#086171>Connect…………….<BR>Welcome Academic Station. ver.2.1.1.</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>(C) Berlin Corporation. All Right Reserved.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_question mid="51"><![CDATA[<html>$Strange construction$<BR><FONT color=#7e12d2>(A thing never seen is standing<BR>It's for resting one's chin on one's hand or for a bird to take a rest)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+   </talk>

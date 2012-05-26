@@ -1,0 +1,152 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_294_about_emblem</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>294</qid>
+      <designer>김인정</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[What is a Heraldry?]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="150"><![CDATA[<html> What do you mean? </html>]]></talk_answer>
+      <talk_question mid="149"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>It seems like I have not seen you here before. <BR>You look like a diligent adventurer. I do know the places around here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="156"><![CDATA[<html> (Listen on for more stories) </html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$ Heraldry Scholar Bailey$<BR>So you have come across <FONT color=#a82424>Plates</font> huh. I have been working on  <FONT color=#a82424>Heraldry</font> for a long time now. <BR>Plates are essentially required to create Crest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceppted" mid="158"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="157"><![CDATA[<html>$What are Heraldry?$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="162"><![CDATA[<html>What is a Plate?</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>You must be interested. Let me explain more in detail..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="164"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Plates are strange things engraved with patterns. You can gain them while adventuring. They have no power by themselves.  But when you combine Plates with <FONT color=#a82424>Jewels</font> they will form a powerful <FONT color=#a82424>Heraldry</font>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="166"><![CDATA[<html>(Hear what are Heraldry)</html>]]></talk_answer>
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="181"><![CDATA[<html>(Hear what are Jewels)</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>You can gain Plates from Monsters, <FONT color=#a82424>Nest</font>, <FONT color=#a82424>Colosseum</font> and <FONT color=#a82424>Dark Lair</font>. All you need is luck and take on the challenge.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="168"><![CDATA[<html>How do I make a Heraldry?</html>]]></talk_answer>
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="182"><![CDATA[<html>(Hear what are Jewels)</html>]]></talk_answer>
+      <talk_question mid="167"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>There are two generouss of Heraldry. <FONT color=#a82424>Enhancement Heraldry</font> increases the power of specific skills. The other is the <FONT color=#a82424>Skill Heraldry</font> which teaches you a new Skill or increase the power of your current skils.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-e" mid="173"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>There are several types of Jewels. When Dragons and monsters die, their essence turns into a Jewel. The source of Jewel can be trace to their originator, the Goddess Altea.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="174"><![CDATA[<html>How do I make a Heraldry?</html>]]></talk_answer>
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="183"><![CDATA[<html>(Hear what are Heraldry)</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Jewels can be found all over the world. They are filled with powerful energy and can be used to unlock the various power.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-g" mid="176"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Each <FONT color=#a82424>Plate needs to be combined with a specific Jewel</font> in order to make a Heraldry. The combination will determine the power of the Heraldry and grant different abilities to those who possess it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-g" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-h" mid="185"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="184"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>During your adventures, collect Plates and talk to Scholars such as me I each town to help with <FONT color=#a82424>[Heraldry Production]</font>. I'm they will me glad to help in the production.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-h" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-i" mid="178"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-i" image="" itemindex="">
+      <talk_question mid="179"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>Please remember that combining a <FONT color=#a82424>Plate</font> and a <FONT color=#a82424>Jewel</font> will produce a <FONT color=#a82424>heraldry</font>. The powers are hidden within.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">294</exe>
+         <exe type="recompense_view">2940,,,,,</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2940,,,,,</exe>
+         <exe type="complete">294</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceppted">0,2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="h">0</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="i">1</exelink>
+   <journal_data recompense="0:2940" quest_title="문장이란 무엇인가" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Heraldry Scholar Bailey's Information]]></title>
+         <contents mid="84"><![CDATA[<html>Talk to Heraldry Scholar Bailey about Plates, Jewels, and Heraldry.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Talk to Heralry Scholar Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="86"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

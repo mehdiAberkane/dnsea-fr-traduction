@@ -1,0 +1,99 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq20_5803_kevin_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5803</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Hubert]]></qkname>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-a" mid="9"><![CDATA[<html>Priestess of Darkness Miok</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-c" mid="10"><![CDATA[<html>Shortcake</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-e" mid="11"><![CDATA[<html>Shaver</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Kevin$<BR>Uncle Hubert... Well... he an uncle to me.<BR>He is so nice that he would always look out for me, I'm quite thankful. But he do too much nagging, even more than my mum did!!<BR>Anyway... I wish to give Uncle Hubert a gift. What should I give him?<BR>Do you have any good ideas?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-b" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Kevin$<BR>Priestess of Darkness Miok? Minotaur Health Drink you mean?<BR>Ehh... In Oh! Goddess, it says that you'll become a cow if you drink that too much... is that's true?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-b" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Kevin$<BR>Sister May said that it's better to become a Goblin than a cow, so she is actually selling Goblin Apples!<BR>But I think it's because she can't find any milk.<BR>Erm...Priestess of Darkness Miok...<BR>I hope he'll like it... <FONT color=#7e12d2>(Kevin counting his coin.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-d" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Kevin$<BR>Yes! You noticed that too?? Uncle Hubert seems to love sweet stuff!<BR>There was once I saw him finishing up the entire jar of honey! Kekeke.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-d" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Kevin$<BR>He is so much a kid, isn't him?<BR><FONT color=#7e12d2>(Woo, that's Kevin talking?)</FONT><BR>I should get him a shortcake sprinkled with pepper! Hehe. He would be SO surprised!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-e" image="QN_crew_kevin.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-f" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Kevin$<BR>Shaver? Erm... that's expensive... <BR><FONT color=#7e12d2>(Kevin is in distress.)</FONT> I probably can't afford to get him one even if I save 429 months worth of allowance.<BR>Sigh...Should I ask Sister May for a discount?<BR>Or, maybe a 10-blade shaver instead of a 13-blade one...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-f" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Kevin$<BR>Erm, they normally say that it's the thought that counts!<BR>Perhaps I can get him a Hound-skin gloves!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5803, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint(userObjID, 29, 100);</exe>
+         <exe type="custom">api_npc_AddFavorPoint(userObjID, 29, 300);</exe>
+         <exe type="custom">api_npc_AddFavorPoint(userObjID, 29, 200);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="c">2,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="e">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 비행선 엔지니어 휴버트에 대해" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>29:2250:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

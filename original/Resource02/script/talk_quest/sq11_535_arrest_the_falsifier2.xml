@@ -1,0 +1,239 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_535_arrest_the_falsifier2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>535</qid>
+      <designer>김주연</designer>
+      <qlevel>24</qlevel>
+      <qdesc>용추종자의 가면	400131</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Arrest the falsifier II]]></qkname>
+      <qnpc>
+         <npcid>272</npcid>
+         <npcename>n272_blood_sq535</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n272_blood_sq535-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Some type of blood$<BR><FONT color=#7e12d2>(There is a dark red blood. It looks as those of an animal.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting" image="QS_Default.dds" itemindex="400130">
+      <talk_answer link_index="n041_duke_stwart-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Duke Stuart$<BR>Even though you gave me a bloodstained serial number chain, the investigation went on. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-b" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Duke Stuart$<BR>
+Seeing the fact that Jeffert the traitor didn't use the Hermalte Port, he should still be near Saint Haven. But no traces of his were found in other places near Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-b" image="QW_31.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-c" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Duke Stuart$<BR>IF he is indeed alive, he would be hidden somewhere in Abandoned Welton Hollow.<BR>Go back to <FONT color=#a82424> Abandoned Welton Hollow</FONT>and search the place thoroughly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-acceptted" mid="11"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Find the falsifier II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="QS_Default.dds" itemindex="400130">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="13"><![CDATA[yes, there was nothing removed from the scene]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Duke Stuart$<BR><FONT color=#7e12d2>(The duke grabbed a serial number with a handkerchief under his hand)</FONT><BR>It looks as it is Jeffert's serial number.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-b" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Duke Stuart$<BR>When you were gone, the royal palace investigation team gained a valuable information. Traitor Jeffert still hasn’t used Hermalte Port to run off to Rotosmoash.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-c" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>Not only $Duke Stuart$<BR>, did the investigators and other Royal guards sent out highly trained hounds , we could not locate Jeffert in this area. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-c" image="QW_31.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Duke Stuart$<BR> With this in mind, if the person was still here , they would most likely be hiding around <FONT color=#a82424>Abandoned Welton Hollow</FONT> .<BR>Go Again to <FONT color=#a82424>Abandoned Welton Hollow</FONT>and investigate the place thoroughly. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n272_blood_sq535-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Some type of blood$<BR><FONT color=#7e12d2>(There are dark colored blood. It looks as those of an animal.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n272_blood_sq535-2" image="" itemindex="">
+      <talk_answer link_index="n272_blood_sq535-3" mid="21"><![CDATA[<html>(Search the remains)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Some type of blood$<BR><FONT color=#7e12d2>(There are dark colored blood that's dried. The area near contains rags and armor of a  Saint Haven royal guard) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QW_31.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Duke Stuart$<BR>Quickly travel to the <FONT color=#a82424> Abandoned Welton Hollow</FONT>.<BR>and bring the traitor Jeffert.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n272_blood_sq535-3" image="QS_Default.dds" itemindex="400131">
+      <talk_question mid="23"><![CDATA[<html>$Some type of blood$<BR><FONT color=#7e12d2>(I earned a red mask near the rags of armor. Let's deliver this to Duke Stuart) </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4" mid="25"><![CDATA[<html>(Hand over the red mask)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Duke Stuart$<BR>Have you found any trace of the traitor?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4" image="QS_Default.dds" itemindex="400131">
+      <talk_answer link_index="n041_duke_stwart-4-a" mid="27"><![CDATA[<html>There was a mask and rags of armor.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Duke Stuart$<BR><FONT color=#7e12d2>(Duke Stuart touched the red marks with his clothes on)</FONT><BR>This is the mask of youngchuyoungja. <BR>Was this the only thing that was left behind?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-a" image="QS_Default.dds" itemindex="400131">
+      <talk_answer link_index="n041_duke_stwart-4-b" mid="29"><![CDATA[<html>Do you think there is a mastermind?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Duke Stuart$<BR>Guess the traitor received the god's judgment. <BR>However, we could have questioned about who else was involved which is unfortunate.  Someone who is only a royal guard cannot think of something like this. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-b" image="QS_Default.dds" itemindex="400131">
+      <talk_answer link_index="n041_duke_stwart-4-c" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Duke Stuart$<BR>You are brilliant but also foolish. <BR>You said that <FONT color=#a82424>yongchujongja jag mask </FONT>was here.<BR>That means someone else from the cult was involved.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-c" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-d" mid="33"><![CDATA[<html>(In the duke's eyes I saw cold angry light)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Duke Stuart$<BR>They may have as lizards, cut their tails and hid , however they will be found and will be punished for  disdaining the royal family.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-d" image="QS_Default.dds" itemindex="400131">
+      <talk_answer link_index="n041_duke_stwart-4-e" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Duke Stuart$<BR> Outrageous followers. How dare they afflict their hands on the royal family. <BR><FONT color=#7e12d2>(Duke Stuart looks at the mask with a cold expression )</FONT><BR>I say, give this one a reward and burn this glove! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-e" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-4-f" mid="37"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-4-f" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Duke Stuart$<BR>Thank you, adventurer.<BR>Rest until I call you again. /html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5351,5352,5353,5354,5355</exe>
+         <exe type="setquest">535</exe>
+         <exe type="talk" npc="n041_duke_stwart">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">400131</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">400131</exe>
+         <exe type="setstep">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5351,5352,5353,5354,5355</exe>
+         <exe type="complete">535</exe>
+         <exe type="delquestitem" num="-1">400131</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="c">0,1</exelink>
+   <exelink qstep="2" npc="n272_blood_sq535" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n041_duke_stwart" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="4" npc="n041_duke_stwart" sub="c" />
+   <exelink qstep="4" npc="n041_duke_stwart" sub="d" />
+   <exelink qstep="4" npc="n041_duke_stwart" sub="e">0</exelink>
+   <exelink qstep="4" npc="n041_duke_stwart" sub="f">1,2</exelink>
+   <journal_data recompense="1:5351,2:5352,3:5353,4:5354,5:5355" quest_title="문서 위조범을 찾아라Ⅱ" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="400131">
+      <journal index="1">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Talk with Duke Stuart]]></title>
+         <contents mid="50"><![CDATA[<html>hand over Jeffert's serial number chain which was found at the entry of Abandoned Welton Hollow to Duke Stuart.<BR>
+Let's talk with Stuart.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven(Inside the kingdom of Saint Haven)</FONT> <FONT color=#a82424>→ Duke Stuart</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk with Duke Stuart]]></destination>
+         <todo_msg mid="52"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_31.dds</contents_image>
+         <destination_pos>313,0,0</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@4</destination_mode>
+         <statemark_npcid>272</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Searching the Abandoned Welton Hollow]]></title>
+         <contents mid="40"><![CDATA[<html>According to the investigator of royal intelligence, traitor Jeffert did not run off to Rotosmoash using Hermalte Port. <FONT color=#a82424>Let's search</FONT>Abandoned Welton Hollow.<BR>
+ <BR>
+<FONT color=#086171>dark foot of the mountain</FONT> <FONT color=#a82424>→Abandoned Welton Hollow</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Searching the Abandoned Welton Hollow]]></destination>
+         <todo_msg mid="42"><![CDATA[Search the traitor Jefffert at the Abandoned Welton Hollow]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Talk with Duke Stuart]]></title>
+         <contents mid="44"><![CDATA[<html>Found <FONT color=#a82424>Red Mask</FONT> near the ripped apart armor . Lets give this to Duke Stuart.<BR><BR><FONT color=#086171>Saint Haven(Inside Saint Haven)</FONT> <FONT color=#a82424>→Duke Stuart</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Talk with Duke Stuart]]></destination>
+         <todo_msg mid="46"><![CDATA[Go back to Duke Stuart]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>534</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

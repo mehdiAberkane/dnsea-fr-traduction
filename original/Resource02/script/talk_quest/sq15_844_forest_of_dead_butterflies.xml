@@ -1,0 +1,333 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_844_forest_of_dead_butterflies</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>844</qid>
+      <designer>나은하</designer>
+      <qlevel>46</qlevel>
+      <qdesc>수다쟁이 책 닥터는 왜 지금은 나비들은 그곳에 없고 죽은 나비 유층과 나비 번데기들만 있는지 의아해한다. 그는 나비유충의 잔해를 모아서 타마라에게 전해주고 그것을 분석해서 이유를 알아봐달라고 한다.
+다시 용추종자 점거지로 가서 나비유충의 잔해를 모아서 타마라에게 가져가서 조사를 의뢰한다.
+상급 소서리스 타마라는 나비유충의 잔해를 분석하기 위해서 고대의 무기고 서쪽에서 고대의 시약을 가져와달란 부탁을 한다. 상급 소서리스 타마라는 나비들의 유충이 정체불명의 물질에 오염되어 있다는 사실을 밝혀낸다.
+
+퀘스트아이템
+나비 유충 잔해	300468
+나비 번데기 잔해	300469
+고대의 시약	300470
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>845</nextqid>
+      <nextqname>sq15_845_supernatral_separator</nextqname>
+      <nextqnpc>n713_soceress_tamara</nextqnpc>
+      <qkname mid="1"><![CDATA[Forest of dead butterflies]]></qkname>
+      <qnpc>
+         <npcid>703</npcid>
+         <npcename>n703_book_doctor</npcename>
+         <npckname>수다쟁이 책 닥터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>712</npcid>
+         <npcename>n712_archer_zenya</npcename>
+         <npckname>상급 아처 제냐</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-noquest" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Master Archer Zenya$<BR>Did you ask to Chatterbox Book Doctor about the forest of butterflies?<BR>Why don't you keep the promise?<BR><FONT color=#7e12d3>(※ You can acquire a quest from Chatterbox Book Doctor)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Tamara$<BR>Not long ago, Chatterbox Book Doctor said something weird.<BR>Like a forest of butterflies. <BR>
+<FONT color=#7e12d3>(※ You can acquire a quest from Chatterbox Book Doctor)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-noquest" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Ehem, there's nothing that I don't know.<BR>I've been searching on the native's legend about the forest of butterflies.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-accepting" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-accepting-a" mid="14"><![CDATA[<html>(Say that I'll cooperate)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Chatterbox Book Doctor$<BR>We need to investigate on the forest of butterflies more deeply.<BR>I'll give you the remains of butterflies larvae and remains of butterflies pupae, so I need you to cooperate with me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-accepting-b" mid="16"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Forest of dead butterflies$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Master Archer Zenya$<BR>Did you ask to Chatterbox Book Doctor about the forest of butterflies?<BR>Why don't you keep the promise?<BR><FONT color=#7e12d3>(※ You should finish talking with Chatterbox Book Doctor)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Master Sorceress Tamara$<BR>Not long ago, Chatterbox Book Doctor said something weird.<BR>Like a forest of butterflies. <BR>
+<FONT color=#7e12d3>(※ You should finish talking with Chatterbox Book Doctor)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Chatterbox Book Doctor$<BR>I think you can find the reason why we can't see butterflies around here if you investigate on the remains of larvae and pupae. I think those are the reason of the disappearance of the forest of butterflies.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Please deliver them to <FONT color=#7e12d3>Master Sorceress Tamara</FONT>. She might know with those evidences about why the butterflies died .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-a" mid="27"><![CDATA[<html>No, no. I'm full now….</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Sorceress Tamara$<BR>Welcome back! Would you have some my dinner cooked with a new recipe ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-b" mid="29"><![CDATA[<html>(Shake my head strongly)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Sorceress Tamara$<BR>Yeah?<BR><FONT color=#7e12d3>(Tamara looks disappointed)</FONT><BR>But this must be so delicious so have a bite?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-c" mid="31"><![CDATA[<html>Well…! I have something to ask you.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hmm, well. <BR><FONT color=#7e12d3>(Tamara looks at {user_nick} with a sad look. I might eat some bites of her food. )</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-d" mid="33"><![CDATA[<html>(Tell the about Chatterbox Book Doctor's saying)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Master Sorceress Tamara$<BR>Ask?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-e" mid="35"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Sorceress Tamara$<BR>The forest of butterflies? I didn't believe that.<BR>But anyway you want to know about why butterflies died?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-e" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-f" mid="37"><![CDATA[<html>(Give her the remains of butterflies larvae and pupae)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Sorceress Tamara$<BR>Can I see the remains first?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-f" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-3" mid="39"><![CDATA[<html>Where can I get a reagent?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hmm, I can find the reason if I extract the remains and put them separate. But I need <FONT color=#a82425>an ancient reagent</FONT>to research on it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3" image="QN_Npc_Lotus_ArcherZenya.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Master Sorceress Tamara$<BR>The ancient reagent is from East Ancient Armory's {monster:1576}. Oh, but you'd better drop by to<FONT color=#a82425>Zenya</FONT>. Zenya's also quite interested in this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-3" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-3-a" mid="43"><![CDATA[<html>(Tell the previous situation)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Archer Zenya$<BR>Ah, <FONT color=#387207>{user_nick}</FONT>! Have you investigated on the forest of butterflies as well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-3-a" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-3-b" mid="46"><![CDATA[<html>(Ask why he's interested in the forest of butterflies)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Archer Zenya$<BR>It might have disappeared..<BR><FONT color=#7e12d3>(Zenya looks disappointed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-3-b" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-4" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Archer Zenya$<BR>Ah, I have my reason.<BR>But before hearing this, why don't you go to keep your promise with Tamara?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-4" image="QW_55.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Master Archer Zenya$<BR>Tamara would have told you to go to <FONT color=#a82425>East Ancient Armory</FONT> and find an ancient reagent.<BR>Don't be lazy. I also want to know why the butterflies died.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-a" mid="53"><![CDATA[<html>(Give her an ancient reagent)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Sorceress Tamara$<BR>Everything's ready except the reagent, did you bring it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-b" mid="55"><![CDATA[<html>Huh?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#7e12d3>(Tamara boiled the remains of butterflies and the reagent)</FONT><BR>But you, aren't you hungry now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-c" mid="57"><![CDATA[<html>Ah, I'm still full!</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-5-c" mid="58"><![CDATA[<html>I'm okay. I'm not hungry now.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Master Sorceress Tamara$<BR>You don't still want to eat my food?<BR><FONT color=#7e12d3>(Tamara looks at me with a smile. I think I should eat the food now..)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-d" mid="60"><![CDATA[<html>(To escape from her eyes, see the test tube)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Master Sorceress Tamara$<BR>It's weird. Why everyone in this town is all full now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-e" mid="62"><![CDATA[<html>What's this?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#7e12d3>(Something odd liquids appear in the test tube)</FONT><BR>Hmm, this shouldn't be from insects.<BR>Wait a minute. I might know this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-e" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-f" mid="64"><![CDATA[<html>Supernatural separation equipment…?</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#7e12d3>(Tamara smells the liquid)</FONT><BR>Yes, I know this.<BR>But to be sure, I need a supernatural separation equipment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-f" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-!next" mid="66"><![CDATA[<html><FONT color=#086172>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8440,,,,,</exe>
+         <exe type="setquest">844</exe>
+         <exe type="talk" npc="n703_book_doctor">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="[">300468</chk>
+         <chk type="questitem" num="1" op="[">300469</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="4" false="">0</exe>
+         <exe type="conexe" true="5" false="">1</exe>
+         <exe type="addquestitem" num="1">300468</exe>
+         <exe type="addquestitem" num="1">300469</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">300468</exe>
+         <exe type="delquestitem" num="-1">300469</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1576</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201576</exe>
+         <exe type="addquestitem" num="1">300470</exe>
+         <exe type="huntitem" num="1" exe="6,7,8" onexe="">300470</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300470</exe>
+         <exe type="recompense">8440,,,,,</exe>
+         <exe type="complete">844</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n703_book_doctor" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n703_book_doctor" sub="b">1,2</exelink>
+   <exelink qstep="1" npc="n703_book_doctor" sub="2">0,1,2,3</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="d" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="e" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="f">2,3</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n712_archer_zenya" sub="b" />
+   <exelink qstep="3" npc="n712_archer_zenya" sub="4">0,1,2,3,5</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="a">0</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="d" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="e" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="f">1</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="!next">2</exelink>
+   <journal_data recompense="8440" quest_title="나비들이 죽어가는 숲" chapterid="" quest_level="46" quest_mark_type="10" use_item_list="300468,300469,300470">
+      <journal index="1">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Missing butterflies]]></title>
+         <contents mid="70"><![CDATA[<html>Chatterbox Book Doctor's curious about why butterflies disappeared around here. Let's talk with Chatterbox Book Doctor.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Karacule's cabin)</FONT><FONT color=#a82425> → Chatterbox Book Doctor</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Talk with Chatterbox Book Doctor]]></destination>
+         <todo_msg mid="72"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[The reason why butterflies disappeared?]]></title>
+         <contents mid="75"><![CDATA[<html>Chatterbox Book Doctor asked me to ask to Master Sorceress Tamara about why butterflies disappeared around this place. Let's talk with Master Sorceress Tamara.<BR><BR><FONT color=#086171>Lotus Marsh</FONT><FONT color=#a82425> → Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk with Lotus Marsh's Master Sorceress Tamara]]></destination>
+         <todo_msg mid="77"><![CDATA[Talk with Lotus Marsh's Master Sorceress Tamara]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_ArcherZenya.dds</contents_image>
+         <destination_pos>15,n712</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>712</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Talk with Master Archer Zenya]]></title>
+         <contents mid="80"><![CDATA[<html>Master Sorceress Tamara asked me to tell Master Archer Zenya about the forest of butterflies. Let's go to Master Archer Zenya.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Archer Zenya</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk with Master Archer Zenya]]></destination>
+         <todo_msg mid="82"><![CDATA[Talk with Master Archer Zenya.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:551@3,552@3,553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Ancient reagent]]></title>
+         <contents mid="85"><![CDATA[<html>Beat up East Ancient Armory's {monster:1576} and get an ancient reagent. <BR><BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT><FONT color=#a82425> → East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Collect an ancient reagent in East Ancient Armory]]></destination>
+         <todo_msg mid="87"><![CDATA[Collect an ancient reagent in East Ancient Armory]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[Talk with Master Sorceress Tamara]]></title>
+         <contents mid="93"><![CDATA[<html>I just got an ancient reagent. Let's go back to Lotus Marsh's Master Sorceress Tamara.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Talk with Lotus Marsh's Master Sorceress Tamara]]></destination>
+         <todo_msg mid="95"><![CDATA[Talk with Lotus Marsh's Master Sorceress Tamara.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>46:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>843</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

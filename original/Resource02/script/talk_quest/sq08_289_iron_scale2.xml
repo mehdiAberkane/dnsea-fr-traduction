@@ -1,0 +1,219 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_289_iron_scale2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>289</qid>
+      <designer>손원호</designer>
+      <qlevel>11</qlevel>
+      <qdesc>단단한 하피 깃털로 제작하는 코린. 하지만 만든 갑옷은 금새 찢어지고 실험은 실패. 다시 고민에 빠지는 코린. 바람에 눕는 갈대를 떠올리며 이번엔 부드러운 깃털을 써보자고 제안한다. 다시 부드러운 깃털을 얻으러 탄식의 협곡으로 가자. 부드러운 하피 깃털로 피부와 같은 얇은 갑옷을 제작하는데 성공하는 코린. 그 답례로 주인공에게 입혀준다. 불사 Lv2 칭호 획득.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Title] [Immortal Lv2] Steel Skin II]]></qkname>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-a" mid="6"><![CDATA[<html>Huh?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Corin$<BR>(Corin has been thinking hard.) I don't expect you to understand our interest. Just as the reeds bend in the wind ... (His eyes light up.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-b" mid="8"><![CDATA[<html>So…</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Corin$<BR>Of course! The reason reeds can stand strong winds is not because of their strength. It's because of their flexibility! They bend instead of breaking!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-c" mid="10"><![CDATA[<html>So...now you need soft harpy feathers?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Corin$<BR>The harpy feathers...broke when I stabbed...the vest. If they had bent instead, I'm certain it would have worked!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-d" mid="12"><![CDATA[<html> Yes, sir. </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Corin$<BR>Yes! Absolutely! Bring me only soft feathers this time. I know this will work!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[[Defense Lv. 2] Steel Skin II]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n025_trader_corin-1-a" mid="17"><![CDATA[<html>Have a little faith!</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Corin$<BR>Just like before, go defeat Coldtime Harpy in the Sigh Canyon. This time, bring back the soft harpy feathers. Don't get confused!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-a" image="QS_Default.dds" itemindex="300078">
+      <talk_question mid="18"><![CDATA[<html>$Blacksmith Corin$<BR>I know the soft harpy feathers will work. I'm sure!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="QW_14.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Corin$<BR>Why are you still here? Once you bring back those soft harpy feathers, we can test the new armor! Aren't you excited?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3" image="QS_Default.dds" itemindex="300078">
+      <talk_answer link_index="n025_trader_corin-3-a" mid="21"><![CDATA[<html>(You hand him the soft harpy feathers.)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Blacksmith Corin$<BR>That was fast. Let's see those feathers!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-b" mid="23"><![CDATA[<html>Yeah, have fun, bye...</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Blacksmith Corin$<BR>Oh my... (Corin waggles the wispy feathers with one hand.)<BR>Light, soft, flexible...perfect for armor! I can't wait to test it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-c" mid="26"><![CDATA[<html>If you think...</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Blacksmith Corin$<BR>(He weaves the feathers into a vest in a flash.)<BR><BR>Hey! It's ready. Here, put this on.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-c" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-d" mid="28"><![CDATA[<html>Wait! I don't need anymore holes in me! No!</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Blacksmith Corin$<BR>(He tackles you with amazing speed and wrestles the vest on you. As you get up, he grabs his spear.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-d" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-e" mid="30"><![CDATA[<html>Huh? I'm...I'm okay. I'm okay!</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Blacksmith Corin$<BR>(Corin drives the spear into you. The vest flexes, but does not break. You feel nothing.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-e" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-f" mid="32"><![CDATA[<html>Nope! I'm fine!</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Blacksmith Corin$<BR>You're fine? No injuries? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-f" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-g" mid="34"><![CDATA[<html>Congratulations! </html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Blacksmith Corin$<BR>Oh! Finally… I have completed the Immortal armor! Light as a feather, and stronger than steel! I've done it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-g" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-h" mid="36"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Blacksmith Corin$<BR>Thank you so much for your help. Here, take this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-h" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-i" mid="38"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-i" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-3-j" mid="40"><![CDATA[<html>Understood.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Blacksmith Corin$<BR>Your Immortal title should be stronger now. While visiting other towns, please check if their blacksmiths needs any help as well. Alright?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-3-j" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Blacksmith Corin$<BR>If your Immortal title is ever completed..! Haha! I'd love to see that!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2890,,,,,</exe>
+         <exe type="setquest">289</exe>
+         <exe type="talk" npc="n025_trader_corin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>300078</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">371</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">372</exe>
+         <exe type="huntitem" num="1" exe="6,7,8" onexe="">300078</exe>
+         <exe type="addquestitem" num="1">300078</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200371</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">200372</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300078</exe>
+         <exe type="recompense">2890,,,,,</exe>
+         <exe type="complete">289</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="a">0,2,3,9,10,4,1</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="b" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="c" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="d" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="e" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="f" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="g" />
+   <exelink qstep="3" npc="n025_trader_corin" sub="h">1</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="i">0,2</exelink>
+   <exelink qstep="3" npc="n025_trader_corin" sub="j" />
+   <journal_data recompense="0:2890" quest_title="[칭호]「불사Lv2」강철 피부Ⅱ" chapterid="" quest_level="11" quest_mark_type="10" use_item_list="300078">
+      <journal index="1">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Talk to Blacksmith Corin]]></title>
+         <contents mid="47"><![CDATA[<html>Corin couldn't make his armor using tough harpy feathers. Find out if he needs any other materials.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Blacksmith Corin</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk to Blacksmith Corin]]></destination>
+         <todo_msg mid="49"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_14.dds</contents_image>
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Obtaining Soft Harpy Feathers]]></title>
+         <contents mid="52"><![CDATA[<html>Corin now thinks he can make armor using Soft Harpy Feathers. Defeat Coldtime Harpy in the Sigh Canyon and obtain some feathers.<BR><BR><FONT color=#086171>Cristal Stream (Sigh Canyon Entrance)</FONT> <FONT color=#a82424>→ Sigh Canyon</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Obtaining Soft Harpy Feathers]]></destination>
+         <todo_msg mid="54"><![CDATA[Obtain Soft Harpy Feathers from the Sigh Canyon.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Talk to Blacksmith Corin]]></title>
+         <contents mid="57"><![CDATA[<html>You have the Soft Harpy Feathers from Coldtime Harpy. Bring them to Corin at Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Blacksmith Corin</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to Blacksmith Corin]]></destination>
+         <todo_msg mid="59"><![CDATA[Bring the feathers to Blacksmith Corin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>11:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>288</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

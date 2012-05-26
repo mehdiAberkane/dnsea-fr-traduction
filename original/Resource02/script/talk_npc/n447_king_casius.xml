@@ -1,0 +1,19 @@
+   <talk>
+      <npcename>n447_king_casius</npcename>
+      <npcid>447</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[King Cassius
+(Dark Overlord Parade Ground)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$King Cassius$<BR>The soldiers suffered a horrifying attack in the dark here.<BR>
+How sad.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_691_sorrow_of_king</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">691</chk>
+      </conditions>
+   </talk>

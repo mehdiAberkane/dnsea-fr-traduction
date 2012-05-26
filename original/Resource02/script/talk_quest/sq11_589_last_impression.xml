@@ -1,0 +1,234 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_589_last_impression</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>589</qid>
+      <designer>김인정</designer>
+      <qlevel>37</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Untransmitted Heart]]></qkname>
+      <qnpc>
+         <npcid>196</npcid>
+         <npcename>n196_mailbox</npcename>
+         <npckname>우편함</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Mailbox$<BR><FONT color=#7e12d2>(The mailbox is closed.<BR>There are letters inside.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Kelly ${action:Talk}<BR>I made a friend through<FONT color=#a82424>Oh My Goddess!</FONT>.<BR>I don't know why my friend stops talking to me but I wish my friend happiness.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-b" mid="9"><![CDATA[<html>Do you want me to go check?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Kelly $<BR>I really hope to talk to my friend someday….<BR>Did my friend get my scrap book? What if my friend wants to reply ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-b" image="QN_Npc_Postbox.dds" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-c" mid="11"><![CDATA[<html>OK.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Kelly $<BR>Could you? Please, go check if there is a reply.<BR>I guess there is nothing inside since my friend said it's not possible to reply anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-d" mid="13"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Untransmitted Heart$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-d" image="QW_42.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Merchant Kelly $<BR>I won't send letters to the <FONT color=#a82424>Gates to City of Death</FONT>.<BR>Hmmph… it was really a good friend… I feel sad….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-a" mid="16"><![CDATA[<html>(Kelly is worried)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Merchant Kelly $<BR>The only thing I can do is to hope for my friend's happiness.<BR>I really wish I will be able to talk to my friend someday….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-a" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Merchant Kelly $<BR>…Anytime you are free, please check if there is any<FONT color=#a82424>reply</FONT>.<BR>Well, it won't happen I think but just in case.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-1" image="QN_Npc_Postbox.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Mailbox$<BR><FONT color=#7e12d2>(The mailbox is closed.<BR>There are letters inside.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2" image="QW_42.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Merchant Kelly $<BR>Anytime you are free please go to<FONT color=#a82424>Gates to City of Death</FONT>to check if there is reply.<BR>I know there won't be any reply……I feel sad….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-2" image="QS_Default.dds" itemindex="300284">
+      <talk_answer link_index="n196_mailbox-3" mid="21"><![CDATA[<html>(Read a message)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Mailbox$<BR><FONT color=#7e12d2>(There is a rough message in the mailbox.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-3" image="QN_Teleju.dds" itemindex="">
+      <talk_answer link_index="n196_mailbox-3-a" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Dark Elf Girl$<BR>Hello, <FONT color=#a82424>Kelly</FONT>?<BR>Thank you that you were worried about me, thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-3-a" image="QN_Teleju.dds" itemindex="">
+      <talk_answer link_index="n196_mailbox-3-b" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Dark Elf Girl$<BR>…I can't be your friend anymore but I will keep your gift forever.<BR>I really wish we can be really good friends but..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-3-b" image="QN_Teleju.dds" itemindex="">
+      <talk_answer link_index="n196_mailbox-3-c" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Dark Elf Girl$<BR>You and my other friend, can we meet again?<BR>I will go find you again when it's peaceful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-3-c" image="QN_Teleju.dds" itemindex="">
+      <talk_answer link_index="n196_mailbox-3-d" mid="29"><![CDATA[<html>(Nothing else on the message)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Dark Elf Girl$<BR>Thank you for being my friend.<BR>
+Good bye.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-3-d" image="QN_Sonya.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Mailbox$<BR>(The friend of Merchant Kelly was probably Dark Elf.<BR>Nothing else is there.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n196_mailbox-4" image="QN_Npc_Postbox.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Mailbox$<BR><FONT color=#7e12d2>(Nothing else in the mailbox.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4" image="QS_Default.dds" itemindex="300284">
+      <talk_answer link_index="n092_trader_kelly-4-a" mid="33"><![CDATA[<html>It was in a mailbox.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Merchant Kelly $<BR>You are back?<BR>What… What is that? A <FONT color=#a82424>message</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-b" mid="35"><![CDATA[<html>(Kelly reads the message carefully)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Merchant Kelly $<BR><FONT color=#7e12d2>(Opens the message)</FONT>I don't know why my friend wants to stop being friends with me but I hope we will talk again.<BR>I will pray for my friend's happiness.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-c" mid="37"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-c" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Merchant Kelly ${action:Talk}<BR>Thank you for helping me.<BR>Good bye~</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">589</exe>
+         <exe type="recompense_view">,5891,5892,5893,5894,5895</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300284</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300284</exe>
+         <exe type="complete">589</exe>
+         <exe type="recompense">,5891,5892,5893,5894,5895</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 92, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="c">1</exelink>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="d">0,2,3</exelink>
+   <exelink qstep="1" npc="n092_trader_kelly" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n196_mailbox" sub="3">0</exelink>
+   <exelink qstep="3" npc="n196_mailbox" sub="b" />
+   <exelink qstep="3" npc="n196_mailbox" sub="c" />
+   <exelink qstep="3" npc="n196_mailbox" sub="d">2,0,1</exelink>
+   <exelink qstep="4" npc="n092_trader_kelly" sub="b">2</exelink>
+   <exelink qstep="4" npc="n092_trader_kelly" sub="c">0,1,3</exelink>
+   <journal_data recompense="1:5891,2:5892,3:5893,4:5894,5:5895" quest_title="전할 수 없는 마음" chapterid="" quest_level="37" quest_mark_type="10" use_item_list="300284">
+      <journal index="1">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Worry of Merchant Kelly ]]></title>
+         <contents mid="40"><![CDATA[<html>Merchant Kelly is worried about her penpal friend. Let's talk with her more.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Talk to Merchant Kelly]]></destination>
+         <todo_msg mid="42"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_42.dds</contents_image>
+         <destination_pos>423,n196</destination_pos>
+         <destination_mode>custom:421@1,422@1,423@4</destination_mode>
+         <statemark_npcid>196</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[At Gates to City of Death]]></title>
+         <contents mid="44"><![CDATA[<html>Let's go to Gates to City of Death to see if there is any reply.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Black Mine Gate)</FONT> <FONT color=#a82424>→ Gates to City of Death →Mailbox</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Check the mailbox at Gates to City of Death]]></destination>
+         <todo_msg mid="46"><![CDATA[Find the mailbox at Gates to City of Death to see if there is any reply]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Hello, Friend Dark Elf]]></title>
+         <contents mid="48"><![CDATA[<html>Got a message. Let's go to Saint Haven to tell Merchant Kelly about this.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to Merchant Kelly ]]></destination>
+         <todo_msg mid="50"><![CDATA[Give the message to Merchant Kelly at Saint Haven]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>37:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>588</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,234 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_644_more_clue</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>644</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>645</nextqid>
+      <nextqname>sq11_645_paganish_name</nextqname>
+      <nextqnpc>n041_duke_stwart</nextqnpc>
+      <qkname mid="1"><![CDATA[More evidence]]></qkname>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>427</npcid>
+         <npcename>n427_triana</npcename>
+         <npckname>아처 트리아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-noquest" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Archer Triana$<BR>
+We are seeing each other pretty often.<BR><FONT color=#7e12d2>(※Have to talk to Duke Stuart.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Duke Stuart$<BR>About the Royal Coat of Arms ring you brought.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-b" mid="23"><![CDATA[<html>(Duke frowns)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Duke Stuart$<BR>I don't know why <FONT color=#a82424>Royal coat of arms ring</FONT>was there .<BR>More investigation is needed…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-acceptted" mid="25"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$More evidence$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="110"><![CDATA[<html>Yes. (Except a strange Elf... )</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Duke Stuart$<BR>Have you not seen anything else at Ghost Town of Deserted Woods?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="QW_45.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2" mid="112"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Duke Stuart$<BR>Can you go to <FONT color=#a82424>Ghost Town of Deserted Woods</FONT>and investigate one more time?<BR>I need to know why those items were there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-1" image="" itemindex="">
+      <talk_question mid="113"><![CDATA[<html>$Archer Triana$<BR>
+We are seeing each other pretty often.<BR>
+Are you stalking me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QW_45.dds" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$Duke Stuart${action:Stand2}<BR><FONT color=#a82424>Seach the Ghost Town of Deserted Woods</FONT>more thoroughly. You are my last hope.<BR><BR><FONT color=#7e12d2>※Cannot proceed with quest in current party status.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-2" image="" itemindex="">
+      <talk_answer link_index="n427_triana-2-a" mid="116"><![CDATA[<html>What?! No!!</html>]]></talk_answer>
+      <talk_answer link_index="n427_triana-2-a" mid="117"><![CDATA[<html>I have not, no sir.</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Archer Triana$<BR>Ah, here you are again.<BR>Have you been following me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-2-a" image="" itemindex="">
+      <talk_answer link_index="n427_triana-2-b" mid="119"><![CDATA[<html>(What are you talking about?)</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Archer Triana${action:Talk}<BR>Why do you always appear wherever I go?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-2-b" image="" itemindex="">
+      <talk_answer link_index="n427_triana-2-c" mid="121"><![CDATA[<html>Stop with the weird talk.</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Archer Triana$<BR>A love between a human and  elf will only be a tragedy.<BR>
+Please give up on me now!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-2-c" image="" itemindex="">
+      <talk_answer link_index="n427_triana-2-d" mid="123"><![CDATA[<html>It's nothing like that!!</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Archer Triana$<BR>I guess it is hard to give up on me.<BR>I will not annoy you.<BR>However give it some thought and make a smart decision.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-2-d" image="" itemindex="">
+      <talk_answer link_index="n427_triana-2-e" mid="125"><![CDATA[<html>Before that, have you found anything nearby?</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Archer Triana$<BR>…Whoo, if you insist on saying that.<BR>It is a relief.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-2-e" image="" itemindex="">
+      <talk_answer link_index="n427_triana-2-f" mid="127"><![CDATA[<html>(Read the letter)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Archer Triana${action:Talk}<BR>Actually I found the letter belonging to the Cleric.<BR>Do you want to read this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-2-f" image="" itemindex="">
+      <talk_answer link_index="n427_triana-2-g" mid="129"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Cleric's Letter$<BR>……I asked the bishop about this.<BR>
+The two people got married at the sacred Goddess' home.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-2-g" image="" itemindex="">
+      <talk_answer link_index="n427_triana-3" mid="131"><![CDATA[<html>(Cannot read more)</html>]]></talk_answer>
+      <talk_question mid="130"><![CDATA[<html>$Cleric's Letter$<BR>The statuses of Prince Rodain and Lucifina are very different.<BR>
+However could a marriage under a Goddess' home is more sacred than the royal power?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-3" image="" itemindex="">
+      <talk_answer link_index="n427_triana-3-a" mid="133"><![CDATA[<html>(Give the letter back)</html>]]></talk_answer>
+      <talk_question mid="132"><![CDATA[<html>$Archer Triana$<BR>Have you seen the letter?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n427_triana-3-a" image="" itemindex="">
+      <talk_question mid="134"><![CDATA[<html>$Archer Triana$<BR>Then, I will go.<BR>Just in case I don't know, if you have feelings for me please give up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-3-a" mid="136"><![CDATA[<html>Is that right?</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Duke Stuart$<BR>
+Hmm? Rodain and Lucifina?<BR>
+…I never heard those names in the royal family tree but it's strange.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-3-b" mid="138"><![CDATA[<html>Are you sure?</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Duke Stuart${action:Stand2}<BR>It's not possible that I don't remember it.<BR>Hmm, it's hard to find someone like me who knows the family tree of the royal family so well.<BR><FONT color=#7e12d2>(Duke Stuart is skimming through a huge book.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-3-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-3-!next" mid="140"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">644</exe>
+         <exe type="recompense_view">6440,,,,,</exe>
+         <exe type="talk" npc="n041_duke_stwart">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6440,,,,,</exe>
+         <exe type="complete">644</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n427_triana" sub="b" />
+   <exelink qstep="2" npc="n427_triana" sub="c" />
+   <exelink qstep="2" npc="n427_triana" sub="d" />
+   <exelink qstep="2" npc="n427_triana" sub="e" />
+   <exelink qstep="2" npc="n427_triana" sub="f" />
+   <exelink qstep="2" npc="n427_triana" sub="g" />
+   <exelink qstep="2" npc="n427_triana" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n041_duke_stwart" sub="b">0</exelink>
+   <exelink qstep="3" npc="n041_duke_stwart" sub="!next">1</exelink>
+   <journal_data recompense="0:6440" quest_title="더 많은 단서들" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode />
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[More Evidence]]></title>
+         <contents mid="89"><![CDATA[<html>Continue talking to Duke Stuart.<BR><BR><FONT color=#086171>Inside Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Duke Stuart</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Duke Stuart]]></destination>
+         <todo_msg mid="91"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_45.dds</contents_image>
+         <destination_pos>453,n427</destination_pos>
+         <destination_mode>custom:451@1,452@1,453@1</destination_mode>
+         <statemark_npcid>427</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[One More Time]]></title>
+         <contents mid="93"><![CDATA[<html>Duke Stuart wants to know why the Royal Coat of Arms ring was at Ghost Town of Deserted Woods. Let's investigate Ghost Town of Deserted Woods again.<BR><BR><FONT color=#7e12d2>※ Cannot proceed with quest in current party status.</FONT><BR><BR><FONT color=#086171>Foothills of Black Mountain(Deserted Woods)</FONT> <FONT color=#a82424>→ Ghost Town of Deserted Woods</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[(Solo) Explore Ghost Town of Deserted Woods]]></destination>
+         <todo_msg mid="95"><![CDATA[Search Ghost Town of Deserted Woods again.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode />
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[What letter]]></title>
+         <contents mid="97"><![CDATA[<html>Archer Triana reads Cleric's Letter. Let's inform Duke Stuart about this letter.<BR><BR><FONT color=#086171>Inside Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Duke Stuart</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[Talk to Duke Stuart]]></destination>
+         <todo_msg mid="99"><![CDATA[Give the letter to Duke Stuart.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest>643</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

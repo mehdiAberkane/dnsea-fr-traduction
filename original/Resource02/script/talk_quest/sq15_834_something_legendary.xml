@@ -1,0 +1,158 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_834_something_legendary</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>834</qid>
+      <designer>김인정</designer>
+      <qlevel>46</qlevel>
+      <qdesc>버려진 책	300460
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>835</nextqid>
+      <nextqname>sq15_835_just_novel</nextqname>
+      <nextqnpc>n711_warrior_fedro</nextqnpc>
+      <qkname mid="1"><![CDATA[Something Legendary]]></qkname>
+      <qnpc>
+         <npcid>711</npcid>
+         <npcename>n711_warrior_fedro</npcename>
+         <npckname>상급 워리어 페드로</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-a" mid="6"><![CDATA[<html>I've never heard of it.</html>]]></talk_answer>
+      <talk_answer link_index="n711_warrior_fedro-accepting-b" mid="7"><![CDATA[<html>Yes, of course.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Warrior Pedro$<BR>Have you ever heard about three legendary arms of the ancients?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-b" mid="9"><![CDATA[<html>(I think I might have heard…)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Warrior Pedro$<BR>The ancients had a big war in the past. During the war, the ancients made three legendary arms which were <BR><FONT color=#a82424>Baralika the Hurricane</FONT>, <FONT color=#a82424>Sitar the Thunder</FONT>, and <FONT color=#a82425>Teorbo the Lightening</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-c" mid="11"><![CDATA[<html>(Pedro looks at the sky with a depressed look)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Warrior Pedro$<BR>I heard that Baralika the Hurricane was totally broken by some traveler. And Sitar the Thunder was missing….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-d" mid="13"><![CDATA[<html>Where is it?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Warrior Pedro$<BR>But, fortunately I heard that someone around here is keeping <FONT color=#a82425>Teorbo the Lightening</FONT> now.<BR>So I want you to go there and get the arm before someone breaks the arm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Something Legendary$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1" image="QW_56.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Master Warrior Pedro$<BR>Teorbo the Lightening is sealed somewhere in<FONT color=#a82425>West Ancient Armory</FONT>. Hurry up. You should keep Baralika the Hurricane before someone takes it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-2" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-2-a" mid="18"><![CDATA[<html>No, there wasn't it there.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Warrior Pedro$<BR><FONT color=#387207>{user_class} {user_nick}</FONT>!<BR>Have you got Teorbo the Lightening?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-2-a" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-2-b" mid="20"><![CDATA[<html>But I got this instead of it….</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Master Warrior Pedro$<BR>What?! I can't believe it?! <BR>Did I … know wrong?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-2-b" image="QS_Default.dds" itemindex="300460">
+      <talk_answer link_index="n711_warrior_fedro-2-c" mid="25"><![CDATA[<html>(Pedro opens the book carefully)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Master Warrior Pedro$<BR>Hmm? Old book?<BR>It looks something special.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-2-c" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-2-!next" mid="27"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8340,,,,,</exe>
+         <exe type="setquest">834</exe>
+         <exe type="talk" npc="n711_warrior_fedro">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1611</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201611</exe>
+         <exe type="addquestitem" num="1">300460</exe>
+         <exe type="huntitem" num="30000" exe="" onexe="7,8,9">300460</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8340,,,,,</exe>
+         <exe type="delquestitem" num="-1">300460</exe>
+         <exe type="complete">834</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="acceptted">1,2,3,4,6</exelink>
+   <exelink qstep="2" npc="n711_warrior_fedro" sub="b" />
+   <exelink qstep="2" npc="n711_warrior_fedro" sub="c">0</exelink>
+   <exelink qstep="2" npc="n711_warrior_fedro" sub="!next">1,2</exelink>
+   <journal_data recompense="8340" quest_title="찾아낸 것은 전설의 무언가" chapterid="" quest_level="46" quest_mark_type="10" use_item_list="300460">
+      <journal index="1">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>563,0,0</destination_pos>
+         <destination_mode>custom:561@1,562@1,563@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Three Legendary Arms]]></title>
+         <contents mid="31"><![CDATA[<html>Master Warrior Pedro got a information that in West Ancient Armory, there is Teorbo the Lightening. He asked me to keep it in advance someone took it.<BR>
+<BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ West Ancient Armory</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Find something in West Ancient Armory]]></destination>
+         <todo_msg mid="33"><![CDATA[Search to West Ancient Armory]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_WarriorFedro.dds</contents_image>
+         <destination_pos>15,n711</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>711</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="34"><![CDATA[A book left]]></title>
+         <contents mid="35"><![CDATA[<html>In West Ancient Armory, there wasn't Teorbo the Lightening. But I got an old book that someone left it. Take this to Lotus Marsh.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Warrior Pedro</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[Talk with Master Warrior Pedro]]></destination>
+         <todo_msg mid="37"><![CDATA[Deliver the old book to Master Warrior Pedro]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>46:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

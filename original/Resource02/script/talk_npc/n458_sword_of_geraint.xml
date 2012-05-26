@@ -1,0 +1,33 @@
+   <talk>
+      <npcename>n458_sword_of_geraint</npcename>
+      <npcid>458</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Geraint's Sword]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html><FONT color=#7e12d2>(Something seems familiar, is it my misconception?)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="solo" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d2>(If you hadn't not come alone, you would not be able to see the details.)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="enterquest">sq15_756_turn_defeat</exe>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="enterquest">sq15_757_stronger_powers</exe>
+         <exe type="conexe" true="6" false="9">2</exe>
+         <exe type="enterquest">sq15_758_ordeal_and_answer</exe>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="talk">solo</exe>
+         <exe type="conexe" true="10" false="2">4</exe>
+         <exe type="enterquest">sq15_754_as_you_wish</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">756</chk>
+         <chk type="hasquest">757</chk>
+         <chk type="hasquest">758</chk>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+         <chk type="hasquest">754</chk>
+      </conditions>
+   </talk>

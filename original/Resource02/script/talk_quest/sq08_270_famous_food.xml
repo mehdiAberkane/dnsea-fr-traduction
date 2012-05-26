@@ -1,0 +1,243 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_270_famous_food</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>270</qid>
+      <designer>김인정</designer>
+      <qlevel>12</qlevel>
+      <qdesc>메이의 의뢰.
+숲의 성역에서 하운드 퇴치.
+하운드의 먹이를 구해가서 메이에게 전달.
+전달한 후, 하운드의 영양식 습득.
+하운드의 영양식을 가지고 숲의 영역으로 다시 감.
+하운드가 1회 더 생성됨.
+메이에게 돌아가 보고.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Famous Dish]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html> Yes. </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR>I've been thinking... With all the chaos going on, I'm not surprised that merchants coming from Saint Haven to trade are getting lesser, it's a sign that we should start worrying, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html> Prairie Town ...? </html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant May$<BR>Maybe there's something I could to do to bring in more business.<BR>I received a new recipe from a friend living in Prairie Town Supposedly, it's very tasty AND nutritious!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="10"><![CDATA[<html> You need help? </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant May$<BR>Yes. However, I'm a bit short on ingredients for it. Everything seems to be not enough these days. Not like I able to fight those monster for such stuff...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$The Famous Dish$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QW_15.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Merchant May$<BR>Would you please go to the <FONT color=#a82424>Forest Sanctuary</FONT> and hunt Ancient Temple Armored Hound? They have the Hound Food I need for the recipe. 5 should be a good start.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QS_Default.dds" itemindex="300065">
+      <talk_answer link_index="n026_trader_may-2-classc" mid="15"><![CDATA[<html>Hound Food for people...?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant May$<BR>You're back! Let me have that Hound Food.<BR>My friend suggested calling this dish "Food for Obedience". Sounds awesome, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="QW_PrairieTown.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="17"><![CDATA[<html> Well ... I'll think about it again. </html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Merchant May$<BR>Of course! People were raving about it in Prairie Town. I hear even wild Hound will follow you like puppies once you eat this! Isn't that cool?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QW_PrairieTown.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="19"><![CDATA[<html> Weird. </html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Merchant May$<BR>Of course! People were raving about it in Prairie Town. I hear even wild Hound will follow you like puppies once you eat this! Isn't that cool?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n026_trader_may-2-d" mid="21"><![CDATA[<html> (Merchant May created a bizarre chemicals) </html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant May$<BR>Alright, let me just mix this all up...<BR>(May pours a thick, slimy liquid over the Hound Feed and starts to stir. The smell is strong.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QM_HoundNormal.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-e" mid="23"><![CDATA[<html> No, I would think is possible .... </html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant May$<BR>Hm… this sound weird and smelly funny to me. Well, I guess it tastes better than it smells.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-e" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-f" mid="25"><![CDATA[<html> React? What am I suppose to do? </html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant May$<BR>Oh, whatever. If you're not going to eat it, can you at least test it for me? I want to know if its special effect works.<BR>Take the Food for Obedience to the Forest Sanctuary and see how the Hound will react.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-f" image="QW_15.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Merchant May$<BR>Nothing! All you have to do is to carry Food for Obedience in your pocket and go to the Forest Sanctuary. If the Hound are friendly to you, we'll know it works. Now hurry!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_15.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Merchant May$<BR>Nothing! All you have to do is to carry Food for Obedience in your pocket and go to the Forest Sanctuary. If the Hound are friendly to you, we'll know it works. Now hurry!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QM_HoundNormal.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-a" mid="29"><![CDATA[<html>Well, if by "nice to you", you meant "trying to chomp me up", then...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Merchant May$<BR>How's the result? Were the Hound nice to you?<BR>(May looks at you filled with expectation in the eyes.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-b" mid="31"><![CDATA[<html>Maybe...you should just stick to selling your usual goods.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Merchant May$<BR>Re...really? Uhh...<BR>(May sound really disappointed.)<BR>I guess I should have knew it. It smells so bad, why would anyone eat it? I think Doris tricked me...some friend she is...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-c" mid="33"><![CDATA[<html>(May rummages around in her pockets.)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Merchant May$<BR>I guess so. Well, thank you for your hard work.<BR>Guess I owe you one, even though this experiment was a waste of time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-d" mid="35"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-d" image="QN_NPC_Engineer_Hubert.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Merchant May$<BR>What am I going to do with leftovers? Even Hound won't eat this…<BR>Should I sell them to Airship Engineer Hubert...?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">270</exe>
+         <exe type="recompense_view">,2701,2702,2703,2704,2705</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">382</exe>
+         <exe type="huntitem" num="5" exe="4,5,6" onexe="">300065</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300065</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200382</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="2" false="3">1</exe>
+         <exe type="talk" npc="n026_trader_may">a</exe>
+         <exe type="talk" npc="n026_trader_may">b</exe>
+         <exe type="delquestitem" num="-1">300065</exe>
+         <exe type="addquestitem" num="1">300066</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2701,2702,2703,2704,2705</exe>
+         <exe type="complete">270</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="c">1</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">0,2,9,3,8</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="classc">0</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d" />
+   <exelink qstep="2" npc="n026_trader_may" sub="e" />
+   <exelink qstep="2" npc="n026_trader_may" sub="f">4,5,6,7</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="b" />
+   <exelink qstep="4" npc="n026_trader_may" sub="c">0</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="d">1</exelink>
+   <journal_data recompense="1:2701,2:2701,3:2703,4:2704,5:2705" quest_title="소문난 요리" chapterid="" quest_level="12" quest_mark_type="10" use_item_list="300065, 300066">
+      <journal index="1">
+         <contents_image>QW_15.dds</contents_image>
+         <destination_pos>124,0,0</destination_pos>
+         <destination_mode>custom:121@1,122@3,123@3,124@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[May's Challenge]]></title>
+         <contents mid="39"><![CDATA[<html>Go to the <FONT color=#a82424>Forest Sanctuary</FONT>, hunt Ancient Temple Armored Hound, and collect their Hound Feed.<BR><BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Collect Hound Feed at the Forest Sanctuary]]></destination>
+         <todo_msg mid="41"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Food Delivery]]></title>
+         <contents mid="43"><![CDATA[<html>You've got all the Hound Feed that Merchant May wanted. Return to <FONT color=#a82424>Merchant May</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Report to Merchant May]]></destination>
+         <todo_msg mid="45"><![CDATA[Report to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_15.dds</contents_image>
+         <destination_pos>122,0,0</destination_pos>
+         <destination_mode>custom:121@4,122@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Reaction's of Hound]]></title>
+         <contents mid="47"><![CDATA[<html><FONT color=#a82424>Merchant May</FONT> has given you a serving of her aromatic Food for Obedience. Take it to the <FONT color=#a82424>Forest Sanctuary</FONT> and see how the wild Hound react.<BR><BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Forest Sanctuary</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[See how the Hound react at the Forest Sanctuary]]></destination>
+         <todo_msg mid="49"><![CDATA[See how the Hound react at the Forest Sanctuary]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Disappointing Dish]]></title>
+         <contents mid="51"><![CDATA[<html>The Food for Obedience didn't seem to do anything useful. Report your result to <FONT color=#a82424>Merchant May</FONT> in Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Report to Merchant May]]></destination>
+         <todo_msg mid="53"><![CDATA[Report to Merchant May]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>12:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

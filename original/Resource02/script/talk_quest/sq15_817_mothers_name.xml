@@ -1,0 +1,146 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_817_mothers_name</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>817</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Mother's Name]]></qkname>
+      <qnpc>
+         <npcid>147</npcid>
+         <npcename>n147_mailbox</npcename>
+         <npckname>우편함</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-accepting" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-accepting-a" mid="6"><![CDATA[<html>(Read the letter)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Post Box$<BR>You've got a letter from Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-accepting-acceptted" mid="61"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Mother's Name$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-a" mid="8"><![CDATA[<html>(Father…?)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Father's letter$<BR><FONT color=#7e12d2>{user_nick}, I've heard a lot about you.</FONT><BR>
+<FONT color=#7e12d3>I'm so glad that you've been raising our family's name. I visited there when I heard that you were going to leave Saint Haven, but I was late.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-a" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-b" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Father's letter$<BR><FONT color=#7e12d2>The thing that I'm going to tell you now is about the truth you have to know.</FONT><BR><FONT color=#7e12d3>You might think that I betrayed your real mother Eclair…, but it's not true. She was… not the person who couldn't be with me in the first place.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-b" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-c" mid="12"><![CDATA[<html>My mother is… Priestess of Darkness…?!</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Father's letter$<BR><FONT color=#7e12d2>Eclair is the guardian of pledge succeeded by the ancient times.</FONT><BR>
+<FONT color=#7e12d3>She's Priestess of Darkness observing whether the evil power's spreading or not in the border of darkness.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-c" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-d" mid="75"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Father's letter$<BR>
+<FONT color=#7e12d3>When I was a traveler, I met your mother. She saved me wandering around the border of darkness. She and I loved each other… but I couldn't let her be with me because she's a guardian of pledge.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-d" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-e" mid="77"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Father's letter$<BR>
+<FONT color=#7e12d3>So, she left me. At that moment, I couldn't notice that I had you. And I didn't know why she didn't tell me about you….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-e" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-f" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Father's letter$<BR><FONT color=#7e12d3>Someday, Eclair gave me a letter saying that she wanted me to raise you. It was quite long after when she left to the border of darkness. And…</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-f" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-g" mid="18"><![CDATA[<html>(Close the letter)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Father's letter$<BR>
+<FONT color=#7e12d2>Your mother is still alive.</FONT><BR>
+<FONT color=#7e12d3>Someday… you'll see her. I wanted to tell you this truth.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-g" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-h" mid="24"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-h" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>${user_nick}$<BR>
+Mother… I'll meet you soon.<BR>
+But, now…</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">817</exe>
+         <exe type="talk" npc="n147_mailbox">1</exe>
+         <exe type="recompense_view">8170,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8170,,,,,</exe>
+         <exe type="complete">817</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n147_mailbox" sub="a">2</exelink>
+   <exelink qstep="accepting" npc="n147_mailbox" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n147_mailbox" sub="b" />
+   <exelink qstep="1" npc="n147_mailbox" sub="c" />
+   <exelink qstep="1" npc="n147_mailbox" sub="d" />
+   <exelink qstep="1" npc="n147_mailbox" sub="e" />
+   <exelink qstep="1" npc="n147_mailbox" sub="f" />
+   <exelink qstep="1" npc="n147_mailbox" sub="g">0</exelink>
+   <exelink qstep="1" npc="n147_mailbox" sub="h">1</exelink>
+   <journal_data recompense="8170" quest_title="어머니의 이름" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Postbox.dds</contents_image>
+         <destination_pos>15,n147</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>147</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[A letter]]></title>
+         <contents mid="65"><![CDATA[<html>I've got a letter from Saint Haven.<BR>
+Let's read it.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Post Box</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Read a letter in Lotus Marsh's Post Box]]></destination>
+         <todo_msg mid="67"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

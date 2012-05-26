@@ -1,0 +1,192 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_346_curtain_of_abyss</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>346</qid>
+      <designer>김인정</designer>
+      <qlevel>20</qlevel>
+      <qdesc>심연의 장막 아이템 처리에 따라 변경.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>347</nextqid>
+      <nextqname>sq08_347_decuman_filed</nextqname>
+      <nextqnpc>n199_darklair_castia</nextqnpc>
+      <qkname mid="1"><![CDATA[Abyss Stigma]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Priestess of Darkness Castia$<BR>We have guarded the seal here for a long time... But we can't safeguard for long with just our strength.<BR>Darkness is getting deeper and monsters are getting too strong for us to manage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-a" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-acceppted" mid="8"><![CDATA[<html> Yes, I get it. </html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Priestess of Darkness Castia$<BR>So we started recruiting skilled adventurers to help us.<BR>We hope... You can help us keep the Boundary of Darkness sealed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Please defeat the monster at the Boundary of Darkness to prevent fallen nighmares from coming out to the outside world.<BR>I believe you will do well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="QS_Default.dds" itemindex="337772545">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="14"><![CDATA[<html> Yes, I get it. </html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Entry to Boundary of Darkness requires a special charm called <FONT color=#a82424>Abyss Stigma</FONT>. This can be obtained from <FONT color=#a82424>Priestess of Darkness Shea</FONT>. Enter Boundary of Darkness with Tent of the Abyss and stop this endless nightmares.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QN_darklair_chou.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="19"><![CDATA[<html>(Understood condition)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Tent of the Abyss$<BR><FONT color=#7e12d2>※ Party of 4 is recommended for entry to Boundary of Darkness — Dark Lair.<BR> ※ You must have a Abyss Stigma  to enter the Boundary of Darkness..</FONT><BR><FONT color=#7e12d2> ※ Tent of the Abyss can be obtained from Priestess of Darkness Shea.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2" mid="21"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Abyss Stigma$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-a" mid="22"><![CDATA[<html>Oh, where can I receive a Abyss Stigma?</html>]]></talk_answer>
+      <talk_answer link_index="n199_darklair_castia-2-b" mid="43"><![CDATA[<html>What is a round?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Priestess of Darkness Castia$<BR>The Dark Lair which we have guarded can be access through <FONT color=#a82424>Dark Lair Gateway</FONT>. Your goal is to reach <FONT color=#a82424>5th round</FONT> of <FONT color=#a82424> Dark Lair</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-a" image="QN_darklair_chou.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Abyss Stigma can be attained through <FONT color=#a82424>Priestess of Darkness Shea</FONT>.<BR>Remember that you can only get up to<FONT color=#a82424>2 per day</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-c" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Priestess of Darkness Castia$<BR>It's hard to find your own way in fallen nightmare. Fighting against the monsters is the only way out. <FONT color=#a82424>Destory all</FONT> monsters to accomplish <FONT color=#a82424>one round</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-d" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Priestess of Darkness Castia$<BR>With repeating rounds of fights, you will be able to access the deeper ground of nightmare. Another pack of monsters will appear. The number of rounds you can take... depends on your ability.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-d" image="QW_DarkLair.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Ah, there is one thing to keep in mind. With every 5 rounds, you will encounter a stronger monster. Please remain vigilant.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-a" mid="26"><![CDATA[<html>(Castia is smiling)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Ah, Adventurer!<BR>I am really gladful that you have make your way back safe, without being corrupted by the fallen nightmare.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-a" image="QS_Default.dds" itemindex="337772545">
+      <talk_answer link_index="n199_darklair_castia-3-b" mid="28"><![CDATA[<html>Future? It's not the end</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Even with a <FONT color=#a82424>Abyss Stigma</FONT>, you could still be transformed to a monster. <BR>Please stay vigilant and hope that you will remain safe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-!next" mid="30"><![CDATA[<html><FONT color=#086171>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n199_darklair_castia-1-a", npc_talk_target);</exe>
+         <exe type="setquest">346</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="recompense_view">3460,,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="4,5,6">100128</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setquest">346</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3460,,,,,</exe>
+         <exe type="complete">346</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n199_darklair_castia" sub="acceppted">1,0</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c">2</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="2">7,0,3,1</exelink>
+   <exelink qstep="2" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="2" npc="n199_darklair_castia" sub="d" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="b">0</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="!next">1</exelink>
+   <journal_data recompense="3460" quest_title="심연의 장막" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>23,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[First Mission for the Dark Lair]]></title>
+         <contents mid="32"><![CDATA[<html>Talk to <FONT color=#a82424>Priestess of Darkness Castia</FONT> at the Boundary of Darkness to hear about her request.<BR><BR><FONT color=#086171>the Boundary of Darkness Watchtower</FONT> <FONT color=#a82424>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Talk to Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="34"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_DarkLair.dds</contents_image>
+         <destination_pos>12004,0,0</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0,12004@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[To The Fifth Land]]></title>
+         <contents mid="36"><![CDATA[<html>Purify 5 or more rounds in Boundary of Darkness - Dark Lair.<BR><BR><FONT color=#7e12d2>? Party of 4 is recommended for entry to the Boundary of Darkness.<BR>? Abyss Stigma is required for entry to the Boundary of Darkness.<BR>※ Abyss Stigma can be obtained from Priestess of Darkness Shea.</FONT><BR><BR><FONT color=#086171>Dark Lair Gateway</FONT> <FONT color=#a82424>→ Dark Lair Round 5</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Purify Dark Lair -  Round 5]]></destination>
+         <todo_msg mid="38"><![CDATA[Purify Round 5 or over in the Boundary of Darkness - Dark Lair.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>23,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Report to Priestess of Darkness Castia]]></title>
+         <contents mid="40"><![CDATA[<html>Quest complete. Report to Priestess of Darkness Castia.<BR><BR><FONT color=#086171>the Boundary of Darkness Watchtower</FONT> <FONT color=#a82424>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Talk to Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="42"><![CDATA[Quest complete. Report to Priestess of Darkness Castia.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>345</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n166_cow_cart</npcename>
+      <npcid>166</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Black Carbon]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Carbono Blacko$<BR>*Munch Munch*<BR>[The animal keeps a watchful eye on you while chewing.]</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">nq32_8602_sick_tom</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">8602</chk>
+      </conditions>
+   </talk>

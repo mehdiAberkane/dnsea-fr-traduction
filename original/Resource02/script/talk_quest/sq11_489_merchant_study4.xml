@@ -1,0 +1,287 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_489_merchant_study4</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>489</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc>불사의 결정	400160
+황금이 담긴 주머니	400161
+
+
+썩은 사과를 진흙을 바꾸기는 했다. 이제 진흙을 황금으로 바꾸기만 하면 되는데 …. 
+ 진흙을 채취했다고하는 상급 소서리스 스텔라는 그 진흙을 젊어지는 묘약을 제조하는 데 사용한다고 한다.
+또 다른 재료인 불사의 결정을 구해오면 황금하고 바꿔줄 수도 있다고 하는데 ….</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Merchant Lesson IV]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-noquest" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Merchant Popi$<BR>Trading a rotten apple with gold. It's impossible.<BR><FONT color=#7e12d2>(Talk to Master Sorceress Stella)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="7"><![CDATA[<html>I have something that I want to trade with a gold.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Sorceress Stella$<BR>Hi, adventurer. What brings you here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="9"><![CDATA[<html>(Guess the trade is not on..)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Sorceress Stella$<BR>This… is… mud chunk…..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="11"><![CDATA[<html>Huh? Valuable?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Sorceress Stella$<BR>It's the <FONT color=#a82424>mud of Dark Mountain</FONT>!!! Where did you get this valuable mud? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="13"><![CDATA[<html>Can I trade for a gold?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Sorceress Stella$<BR>You can look younger if you make a potion younger. It is popular among noble ladies. Of course, it's just mud to the people who don't know the value.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Sorceress Stella$<BR>Hmm… Gold? <BR>It is valuable but it's not worthy do trade with gold. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-f" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Sorceress Stella$<BR>But there isn't a way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-g" mid="19"><![CDATA[<html>Really?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Sorceress Stella$<BR>To make a potion, we need <FONT color=#a82424>Crystal of Immortal</FONT> but it's hard to find. If you get me a Crystal of Immortal, I'll trade for a gold.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant Lesson Ⅳ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QW_46.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Sorceress Stella$<BR>You can find Crystal of Immortal, hunting near <FONT color=#a82424>Sunken Cargo Vessel</FONT>. I heard <FONT color=#a82424>Harpy's lady boss Canna</FONT> keeps <FONT color=#a82424>Crystal of Immortal</FONT> in her body after collecting dead sailors' spirit.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Sorceress Stella$<BR><FONT color=#a82424>2 Crystal of Immortal</FONT>and gold! Remember please.<BR>Good luck. Cute adventurer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Merchant Pope$<BR>I'll give you 3 days to trade a rotten apple with gold. If you successfully trade, you win. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_46.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Sorceress Stella$<BR>You can find Crystal of Immortal, hunting near <FONT color=#a82424>Sunken Cargo Vessel</FONT>. I heard <FONT color=#a82424>Harpy's lady boss Canna</FONT> keeps <FONT color=#a82424>Crystal of Immortal</FONT> in her body after collecting dead sailors' spirit.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Sorceress Stella$<BR>Did you get the Crystal of immortal? You are amazing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="30"><![CDATA[<html><FONT face=Arial size=2>(Receive Gold)</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Sorceress Stella$<BR>Here is the gold I promised. I don't know where you going to use it but use it wisely.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Sorceress Stella$<BR>I'll see you sometime soon, cute adventurer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Sorceress Stella$<BR>Weren't you going to use this gold somewhere? I think out business is done…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4" image="" itemindex="400161">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-a" mid="34"><![CDATA[<html>(Give the gold)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Merchant Popi$<BR>What? Did you really trade the rotten apple with gold?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-b" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Merchant Popi$<BR>This…This is real gold! <BR>You… are awesome. You really did trade with gold!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-c" mid="38"><![CDATA[<html>Oh.. Thank god.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Merchant Popi$<BR>Great talent. <BR>Anyway I'll take away your debt as I promised.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-d" mid="40"><![CDATA[<html>Chief sword…..wait…Jetcaliver?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Merchant Popi$<BR>Not a bad deal.<BR>I traded <FONT color=#a82424>15 sliver</FONT> cheap sword for a gold.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-e" mid="42"><![CDATA[<html>Oh… I can't take this!</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Merchant Popi$<BR>Hahaha! That's life.<BR>The name, <FONT color=#a82424>Jetcaliver</FONT> is a funny name. How could you be fooled by that? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-f" mid="44"><![CDATA[<html>Don't open your mouth!</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Merchant Popi$<BR>W….Wait! Relax! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-g" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Merchant Popi$<BR>it's too late to be angry. Deal is a deal so I can't give you back the gold but I'll give you this instead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-h" mid="48"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-i" mid="50"><![CDATA[<html>No thanks.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Merchant Popi$<BR>Well we are done…. Do you want to have a look at other products sir?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-i" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-j" mid="52"><![CDATA[<html>I don't need it!</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Merchant Popi$<BR>Ah this is product was used by ancient people and <FONT color=#a82424>Storm</FONT> ….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-j" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Merchant Popi$<BR>Come again whenever you need something! Hahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>n045_soceress_master_stella</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4891,4892,4893,4894,4895</exe>
+         <exe type="setquest">489</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="2" op="]=">400160</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">400160</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="8">1197</exe>
+         <exe type="conexe" true="5,6,7" false="">0</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="5,6,7" false="9,4">0</exe>
+         <exe type="addquestitem" num="1">400160</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201197</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>400161</comment>
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400160</exe>
+         <exe type="addquestitem" num="1">400161</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4891,4892,4893,4894,4895</exe>
+         <exe type="complete">489</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="a">0,2,3,10,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="d" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="e" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="f" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="g">0</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="h">1</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="i" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="j" />
+   <journal_data recompense="1:4891,2:4892,3:4893,4:4894,5:4895" quest_title="상인 수업Ⅳ" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="400160,400161">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode />
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Conversation with Master Sorceress Stella]]></title>
+         <contents mid="55"><![CDATA[<html>She can't trade mud with gold but if you get her another ingredient to make a potion she will trade with gold. Talk to <FONT color=#a82424>Master Sorceress Stella</FONT>.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Conversation with Master Sorceress Stella]]></destination>
+         <todo_msg mid="57"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_46.dds</contents_image>
+         <destination_pos>463,0,0</destination_pos>
+         <destination_mode>custom:461@1,462@1,463@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Hunt Harpy's lady boss Canna at Sunken Cargo Vessel]]></title>
+         <contents mid="59"><![CDATA[<html>If you find Crystal of Immortal from Sunken Cargo Vessel, you can trade with gold. Hunt <FONT color=#a82424>Harpy's Ladyboss Canna</FONT> and collect <FONT color=#a82424>2</FONT> Crystal of Immortals.<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Hermalte Port(Transporation ship to Forsaken Islet)</FONT> <FONT color=#a82424>→ Sunken Cargo Vessel</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Hunt Harpy's lady boss Canna at Sunken Cargo Vessel]]></destination>
+         <todo_msg mid="61"><![CDATA[Hunt Harpy's lady boss Canna at Sunken Cargo Vessel]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode />
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Conversation with Master Sorceress Stella]]></title>
+         <contents mid="63"><![CDATA[<html>Collected 2 Crystals of Immortals. Take it to <FONT color=#a82424>Master Sorceress Stella</FONT> and trade with a gold.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Conversation with Master Sorceress Stella]]></destination>
+         <todo_msg mid="65"><![CDATA[Return to Master Sorceress Stella]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode />
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Conversation with Merchant Popi]]></title>
+         <contents mid="67"><![CDATA[<html>Successfully traded the rotten apple with gold. Return to <FONT color=#a82424>Merchant Popi</FONT>.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Popi</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Conversation with Merchant Popi]]></destination>
+         <todo_msg mid="69"><![CDATA[Return to Merchant Popi and talk to him]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>488</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

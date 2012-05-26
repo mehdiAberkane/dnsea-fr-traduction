@@ -1,0 +1,186 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_484_catastrophic_rain4</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>484</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Catastrophic Rain IV]]></qkname>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting" image="QW_35.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Do you remember the <FONT color=#a82424>Dried Marissa Spring</FONT>? There exists strange rocks called <FONT color=#a82424>Rune Shards</FONT>. I believe there will be evidence of experiments ancient people had done over the ruins.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I believe especially the <FONT color=#a82424>Rune Shards</FONT> are closely related to <FONT color=#a82424>the accident</FONT>. Nobody knows for sure what had happened over there. Some speculations include explosions, internal fight between the ancient people, etc..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-c" mid="10"><![CDATA[<html>Weapon? What kind of weapon?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Heraldry Scholar Stas$<BR>But many researchers think that happened while making some kind of a <FONT color=#a82424>weapon</FONT>. <FONT color=#7e12d2>(Stas goes over his records and contemplates on some idea)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-d" mid="12"><![CDATA[<html>Hard to believe.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I believe that's the Black Dragon. <FONT color=#7e12d2>(Stas carefully looks around)</FONT> …Shh! It's just a hypothesis. As I said before, from speculation, the Black Dragon from <FONT color=#a82424>50 years ago</FONT> is close to some sort of a <FONT color=#a82424>manmade creature</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-e" mid="14"><![CDATA[<html>Alright</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I know it's a bit farfetched. But I continue to study to find the <FONT color=#a82424>evidence</FONT>.<BR>Will you help me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Catastrophic Rain IV$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QW_35.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Heraldry Scholar Stas${action:talk}<BR>Then hurry to the <FONT color=#a82424>Dried Marissa Spring</FONT> and collect about 5 <FONT color=#a82424>Rune Shards</FONT>.<BR>From that, my hypothesis could turn into conviction.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="20"><![CDATA[<html>(Stas carefully looks around)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldry Scholar Stas$<BR>The Royal Castle is trying to cover up the battle with the monster. But as I have fought in the battle <FONT color=#a82424>50 years ago</FONT>, I hear things from people. I knew you also fought in the recent battle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Heraldry Scholar Stas${action:talk}<BR>I saw it 50 years ago. Royal Knight <FONT color=#a82424>Velskud</FONT> betraying us… I couldn't believe my eyes.<BR> But that incident was covered up and everyone considers him as a <FONT color=#a82424>Hero</FONT>? In that sense, I couldn't tell the truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Heraldry Scholar Stas$<BR>People needed a hero after war.<BR>But, the shape of the <FONT color=#a82424>Black Dragon</FONT>, or the contaminated blood coming out from him when he was injured… I can't get the out of my head. I've seen it before.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-d" mid="26"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I was studying on the <FONT color=#a82424>Catastrophic Rain</FONT> when I was a junior researcher. That was it.<BR>But during the chaos, <FONT color=#a82424>Velskud</FONT>vanished, and I searched all sorts of materials. So I sometimes was misunderstood as a <FONT color=#a82424>dragon follower</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-e" mid="28"><![CDATA[<html>Hypothesis?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Heraldry Scholar Stas$<BR>But I received a top that the <FONT color=#a82424>Black Dragon</FONT> that appeared recently was in fact, <FONT color=#a82424>Velskud</FONT>. He took control of the Black Dragon's jewel and borrowing the ancient power, became the Black Dragon. <BR>Then, I was able to found my hypothesis.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-f" mid="30"><![CDATA[<html>Then, the accident that occurred in the ancient times?!</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldry Scholar Stas$<BR>As I said before, the <FONT color=#a82424>Black Dragon</FONT> from 50 years ago might also be manmade.<BR>Like Velskud, that Black Dragon from 50 years ago, might have been made a long time ago with the help of <FONT color=#a82424>ancient people</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-g" mid="32"><![CDATA[<html>Wow… Amazing story.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Indeed. I believe it's due to that <FONT color=#a82424>experiment</FONT>.<BR>Also, they say we eliminated the Black Dragon, but since we didn't inflict as much damage as last time, it might still be alive.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-g" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-h" mid="34"><![CDATA[<html>(Stas searched his pocket)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Is every dragon made? I'm not sure. What would a person need to become a dragon after acquiring the <FONT color=#a82424>jewel</FONT>. Why did the ancient experiment left such a devastating <FONT color=#a82424>ruins</FONT>… Now is the time to study that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-h" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-i" mid="36"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-i" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Heraldry Scholar Stas${action:talk}<BR>After I told you everything, I feel much better!<BR>Thanks for everything. Goodbye.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4841,4842,4843,4844,4845</exe>
+         <exe type="huntitem" num="5" exe="2,3,4" onexe="">400193</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n088_scholar_starshy">1</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,484, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400193</exe>
+         <exe type="recompense">,4841,4842,4843,4844,4845</exe>
+         <exe type="complete">484</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n088_scholar_starshy" sub="acceptted">6,7,1,8,5</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="g" />
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="h">1</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="i">0,2</exelink>
+   <journal_data recompense="1:4841,2:4842,3:4843,4:4844,5:4845" quest_title="재앙의 비 IV" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="400193">
+      <journal index="1">
+         <contents_image>QW_35.dds</contents_image>
+         <destination_pos>354,0,0</destination_pos>
+         <destination_mode>custom:351@4,352@4,353@4,354@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Collect Rune Shards]]></title>
+         <contents mid="40"><![CDATA[<html>Collect 5 Rune Shards from Dried Marissa Spring.<BR><BR><FONT color=#086171>Black Mountain(Deserted Wood Path)</FONT> <FONT color=#a82424>→ Dried Marissa Spring</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Collect Rune Shards]]></destination>
+         <todo_msg mid="42"><![CDATA[Collect Rune Shards from Dried Marissa Spring.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode />
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Certain Hypothesis]]></title>
+         <contents mid="44"><![CDATA[<html>Collected all the Rune Shards. Pass it on to Heraldry Scholar Stas and talk to him.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Report to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="46"><![CDATA[ Give the Rune Shards to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>481</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,139 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq02_5301_baily_question</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5301</qid>
+      <designer>김인정</designer>
+      <qlevel>9</qlevel>
+      <qdesc>천조각 추적자 칭호 있을 때.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Very Profound Question]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="150"><![CDATA[<html>(Heraldry Scholar Bailey is saying things he always says.)</html>]]></talk_answer>
+      <talk_question mid="149"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>People think that Ancient Magic or Divine Magic are the answers to the world's problems.<BR>But... that simply isn't true.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="152"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The actual <FONT color=#a82424>desire to learn</FONT> is what enables people to understand the ways of the world.<BR><FONT color=#a82424>Knowledge</FONT> what truly makes everything clear.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-c" mid="154"><![CDATA[<html>Ok..So what do you want me to help you in?</html>]]></talk_answer>
+      <talk_question mid="153"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Therefore, we should never stop having <FONT color=#a82424>questions about all things in the world</FONT>.<BR>Do you understand, my dear adventurer?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceptted" mid="156"><![CDATA[<html>Yes, ask away.</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I actually had a question for a while now...<BR>I'm asking because I see that <FONT color=#a82424>Cloth Chaser</FONT> title on you, but...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QM_GoblinGreen.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="162"><![CDATA[<html>Umm... I g-guess?</html>]]></talk_answer>
+      <talk_question mid="160"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>As you know, Goblins truly practice the ways of nature with their whole being by wearing just a single <FONT color=#a82424>Loincloth</FONT>.<BR>They are quite the frugal race.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="164"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>However, they also carry <FONT color=#a82424>Old Headbands</FONT> and <FONT color=#a82424>Protection Talismans</FONT>.<BR>I've seen plenty of adventurers who kill Goblins just to sell those items.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="166"><![CDATA[<html>... (Heraldry Scholar Bailey sounds quite serious.)</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Those Goblins...<FONT color=#7e12d2> (Heraldry Scholar Bailey stares at you with a serious face.)</FONT><BR><FONT color=#a82424>Where</FONT> do you think they keep those items...?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="168"><![CDATA[<html>Somewhere you can't see...</html>]]></talk_answer>
+      <talk_answer link_index="n028_scholar_bailey-1-e" mid="169"><![CDATA[<html>I doubt they have pockets.</html>]]></talk_answer>
+      <talk_question mid="167"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I thought you would know because you've been collecting <FONT color=#a82424>Loincloths</FONT>.<BR>Does it have a... pocket? How are the pockets attached?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-d" image="QM_GoblinGreen.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="173"><![CDATA[<html>You are going write a report?</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Somewhere you can't see?! A hidden pocket on such a small cloth! That's truly shocking.<BR>Amazing... I should do a detailed research and write up a report.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-e" image="QM_GoblinGreen.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="174"><![CDATA[<html>Why... why would you research something like that?</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>No pockets? If not inside pockets, where do they hide their items?! How?!<BR>Hmm... truly mysterious indeed. I will have to go see how it looks like under the cloth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-g" mid="176"><![CDATA[<html>That's true... (So what "way" is that?)</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The greed for truth and knowledge is what truly reveals the way of the world.<BR>I mentioned it before, but how can one find out about anything if one does not question?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-g" image="" itemindex="">
+      <talk_question mid="179"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Thank you for the information. I'll be asking you many more things in the future. I have so much questions about the world that I want the answer to. Hahaha.<BR><FONT color=#7e12d2>(It appears that you've gotten closer with Heraldry Scholar Bailey.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">5301</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">5301</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="g">0</exelink>
+   <journal_data recompense="" quest_title="몹시 심오한 의문" chapterid="" quest_level="9" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Heraldry Scholar Bailey's Question]]></title>
+         <contents mid="84"><![CDATA[<html>Let's listen to Heraldry Scholar Bailey's question.<BR><BR><FONT color=#086171>Calderock Village </FONT><FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="86"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>9:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission>79</complete_mission>
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,305 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq28_6201_matchmaking</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6201</qid>
+      <designer>김주연</designer>
+      <qlevel>15</qlevel>
+      <qdesc>잡화점 호감도 2000(10퍼센트) 이상</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Matchmaking]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>자경단장 스티브</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Vigilante Leader Steve $<BR>Any news on <FONT color=#a82424>Rose</FONT>? <BR>I guess the only thing I can do in the village is just wait.<BR><FONT color=#7e12d2>※ You can start the Quest by talking to Merchant May.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>(Awww! What to do... eyes have been met with May's.)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR>!!! <FONT color=#387206>{user_nick}</FONT>?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>(Got a feeling that something annoying she is going to ask.)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>I've got something to say.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>(Probably another strange request...)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant May$<BR>There's this special article inside the limited summer issue of <FONT color=#a82424>Oh! Goddess</FONT>. It's called "<FONT color=#a82424>How to Make the Man Yours in 10 Days</FONT>".</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant May$<BR>Besides having this weird Orc on the cover of this special limited issue, it's actually packed with juicy contents.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant May$<BR>Anyway, I was thinking of a friend really need these advise to get the man she liked. <BR>You know <FONT color=#a82424>Doris</FONT> from Prairie Town?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-f" mid="17"><![CDATA[<html>Okay...</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Merchant May$<BR>She's my best friend and she's actually in love with that guy, <FONT color=#a82424>Steve</FONT>, who lives in the same town.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-f" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-g" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Merchant May$<BR>If she is to follows what the magazine says, she'll be able to leave the singledom club soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="21"><![CDATA[<html>I'm busy.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant May$<BR>Hey! Why not we join hands to help this poor, single soul?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-a" mid="26"><![CDATA[<html>Ermm... (Actually...)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Merchant May$<BR>Great, I have a trustworthy helper.<BR>Good luck to us, hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-a" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-b" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Merchant May$<BR>Well, having a crush is no fun, let's stir up the feelings of <FONT color=#a82424>Steve</FONT> first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-b" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-c" mid="30"><![CDATA[<html>Me?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Merchant May$<BR> <FONT color=#387206>{user_nick}</FONT>, would you please go to <FONT color=#a82424>Vigilante Leader Steve </FONT> and ask him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-d" mid="32"><![CDATA[<html>Err, okay...I'll go.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Merchant May$<BR>Do you like me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Merchant May$<BR>Ask him discreetly so that he won't notice. Then, just listen to what he says clearly.<BR>Expert like me will be interpreting.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Vigilante Leader Steve $<BR>Any news on <FONT color=#a82424>Rose</FONT>? <BR>I guess the only thing I can do in the village is just wait.<BR><FONT color=#7e12d2>? You must talk to Merchant May to proceed with the Quest.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Merchant May$<BR>Having a crush is no fun, why not you go ask <FONT color=#a82424>Vigilante Leader Steve </FONT> what he thinks about Doris.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-a" mid="37"><![CDATA[<html>Nice weather today, huh? (Not really…)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Vigilante Leader Steve $<BR>Yes? How can I help you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-a" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-b" mid="39"><![CDATA[<html>Well... do you have a girlfriend?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Vigilante Leader Steve $<BR>Yes, though it's not as good as it was before, the weather is still nice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-b" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-c" mid="41"><![CDATA[<html>You do have an ideal type of girl in mind, right?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Vigilante Leader Steve $<BR>What!? A girlfriend???<BR>Uhh…Erm… There's too much work to do, I've never thought about dating…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-c" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-d" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Vigilante Leader Steve $<BR>Erm… My ideal girl…<BR>I haven't really thought about that.<BR>I guess it would be nice to have someone that I can connect with and make me smile.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-d" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-e" mid="45"><![CDATA[<html>Well, I'm just curious, you see? (Need to ask about Doris...)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Vigilante Leader Steve$<BR>Why are you asking these weird questions all of a sudden?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-e" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-f" mid="47"><![CDATA[<html>How about Irine?</html>]]></talk_answer>
+      <talk_answer link_index="n004_guard_steave-2-h" mid="94"><![CDATA[<html>How about Doris?</html>]]></talk_answer>
+      <talk_answer link_index="n004_guard_steave-2-g" mid="95"><![CDATA[<html>How about Lily?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Vigilante Leader Steve$<BR>Yeah, as I'm quite an introvert,<BR>I'll prefer someone who is outgoing and friendly...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-f" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-e" mid="97"><![CDATA[<html>(Back)</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Vigilante Leader Steve$<BR>Irine...?<BR>She's a nice lady, gentle to the kids and kind to the people. But, she's not really my type.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-g" image="QN_Lily.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-e" mid="99"><![CDATA[<html>(Back)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Vigilante Leader Steve$<BR>…Lily!?<BR>You have GOT to be kidding…<BR>Lily is just a 7 year old girl!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-h" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n004_guard_steave-2-i" mid="49"><![CDATA[<html>Hmm... Well… I remembered that there's something that I have to take care of, I must get going now.</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Vigilante Leader Steve$<BR>Doris? She's like a little sister to me. <BR>She's really cute, it makes me laugh just by looking at her. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-2-i" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Vigilante Leader Steve$<BR>It's rare that you have a boring side, <FONT color=#387206>{user_nick}</FONT>. Have nice day my friend.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-3" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Vigilante Leader Steve$<BR>It's rare that you have a boring side, <FONT color=#387206>{user_nick}</FONT>. Have nice day my friend.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="53"><![CDATA[<html>Of course. (Guess he probably didn't notice...)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Merchant May$<BR>He didn't notice anything when you asked, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="55"><![CDATA[<html>He just thinks of her as a little sister.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Merchant May$<BR>So what does he think of Doris?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="57"><![CDATA[<html>(He dosen't seem to be interested in her at all…)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Merchant May$<BR>Great! <BR>I was worried that he doesn't have interest in Doris at all.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="59"><![CDATA[<html>(Actually, there's Irine…)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Merchant May$<BR>Ahh…but of course, who else could there be in such a small town?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-e" mid="61"><![CDATA[<html>(...)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Merchant May$<BR><FONT color=#a82424>Doris</font> has big eyes, a cute slim face, and is reasonably tall… Hmm… Doris could've made a better idol than even Harori.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-e" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-f" mid="64"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Merchant May$<BR>Well, from what I had read in some magazines, relationships that start off as a <FONT color=#a82424>big brother and little sister</FONT> thing may turn into a romantic relationship. At least Steve doesn't hate Doris, so the possibility is still there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-g" mid="66"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Merchant May$<BR>Now that we understand the situation, it's time to come up with a strategy for them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-g" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-h" mid="68"><![CDATA[<html>Well, okay...</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Merchant May$<BR>I'll call for you when I'm ready. So just remain on standby, alright?<BR><FONT color=#7e12d2>(Feeling a little worried about Vigilante Leader Steve.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-h" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-j" mid="72"><![CDATA[<html>...(What's that?)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Merchant May$<BR>May<FONT color=#a82424>☆</FONT> ..., Cross! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-i" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-k" mid="74"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Merchant May$<BR>Oh... <FONT color=#387206>{user_nick}</FONT>, you don't even look at magazines?<BR>You don't even know the current trend. You are supposed to cross your arms like this and shout! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-j" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-l" mid="76"><![CDATA[<html>{user_nick}... (Ah...)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Merchant May$<BR>May <FONT color=#a82424>☆</FONT>!! <FONT color=#7e12d2>(Clenches her first.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-k" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(Together)</FONT> <FONT color=#a82424>Crossssss</FONT>! </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">6201</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">6201</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="b" />
+   <exelink qstep="1" npc="n026_trader_may" sub="c" />
+   <exelink qstep="1" npc="n026_trader_may" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n004_guard_steave" sub="b" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="c" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="d" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="e" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="f" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="h" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="g" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="e" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="e" />
+   <exelink qstep="2" npc="n004_guard_steave" sub="i">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d" />
+   <exelink qstep="3" npc="n026_trader_may" sub="e" />
+   <exelink qstep="3" npc="n026_trader_may" sub="f" />
+   <exelink qstep="3" npc="n026_trader_may" sub="g">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="h" />
+   <exelink qstep="3" npc="n026_trader_may" sub="j" />
+   <exelink qstep="3" npc="n026_trader_may" sub="k" />
+   <exelink qstep="3" npc="n026_trader_may" sub="l" />
+   <journal_data recompense="" quest_title="메이와 함께 중매를" chapterid="" quest_level="15" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="82"><![CDATA[<html><FONT color=#a82424>Merchant May</FONT> has something to say. Go and listen (though unwillingly) to what she has to say.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="84"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Guard_Steave.dds</contents_image>
+         <destination_pos>1,n4</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>4</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Talk to Vigilante Leader Steve]]></title>
+         <contents mid="86"><![CDATA[<html>Go ask <FONT color=#a82424>Vigilante Leader Steve</FONT> discreetly at Prairie Town on what he think of Doris.<BR> <BR><FONT color=#086171>Prairie Town </FONT><FONT color=#a82424>→ Vigilante Leader Steve</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Talk to Vigilante Leader Steve]]></destination>
+         <todo_msg mid="88"><![CDATA[Please ask Vigilante Leader Steve at Prairie Town what he thinks of Doris.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Talk to Merchant May at Calderock Village]]></title>
+         <contents mid="90"><![CDATA[<html>Vigilante Leader Steve thinks of Doris as a cute little sister. Tell <FONT color=#a82424>Merchant May</FONT> at Calderock Village what he thinks.<BR> <BR><FONT color=#086171>Calderock Village </FONT><FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="91"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="92"><![CDATA[Please get back to Merchant May at Calderock Village and talk to her.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>26:2000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

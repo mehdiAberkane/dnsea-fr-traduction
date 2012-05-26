@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n050_lena_of_hermalte</npcename>
+      <npcid>50</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Missy Lena]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Missy Lena$<BR>Ssshhh, please don't tell anyone you've seen me here.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Lena$<BR>I hope you will aid my father. He's doing all he can for Saint Haven</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="enterquest">sq11_452_meet_lena</exe>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="talk">002</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">452</chk>
+         <chk type="custom">api_quest_MarkingCompleteQuest(userObjID,452) ==  1</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,156 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_542_revenge</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>542</qid>
+      <designer>김주연</designer>
+      <qlevel>28</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Revenge]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="6"><![CDATA[<html>Yes, it is .</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Guard Joey$<BR><FONT color=#382000>{user_nick}</FONT>, have you ever participated in attacking Dark Overlord Keep.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="8"><![CDATA[<html>It was unfortunate.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Guard Joey$<BR>Then, you have seen who have became dark skeleton's because of the worshiper bro summoner.<BR><FONT color=#7e12d2>(Guard Joey's eyes are sad)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="10"><![CDATA[<html>I don't know what to say….</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Guard Joey$<BR>One of them was my younger brother. However as my younger brother was turning into a monster I could not go anywhere but here. Protecting this place is my duty. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Guard Joey$<BR> I want to revenge for my younger brother, but  I cannot leave here for  I am a guard. So I am asking you a favor even though I shouldn't </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-e" mid="31"><![CDATA[<html>(Guard Joey's voice is shaking from anger)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Guard Joey$<BR>
+Behalf of me, please the one that made my brother <FONT color=#a82424>worshiper bro summoner</FONT>Please kill him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Revenge$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QW_43.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Guard Joey$<BR>Thank you!<BR>  Promise me  you will kill <FONT color=#a82424> Dark Overlord Keep</FONT>'s <FONT color=#a82424>worshipper bro summoner</FONT>. Then my younger brother will sleep in peace.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-a" mid="17"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Guard Joey$<BR>Have you eliminated <FONT color=#a82424>worshiper bro summoner</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-b" mid="19"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-b" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Guard Joey$<BR>Thank you. <BR>Now my brother can rest in peace.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5421,5422,5423,5424,5425</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,542, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="huntmon" num="1" party="1" exe="5,6,7" onexe="">1130</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">201130</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1130);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5421,5422,5423,5424,5425</exe>
+         <exe type="complete">542</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceptted">1,2,3,9,4,8</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="a">0</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="b">1</exelink>
+   <journal_data recompense="1:5421,2:5422,3:5423,4:5424,5:5425" quest_title="복수" chapterid="" quest_level="28" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_43.dds</contents_image>
+         <destination_pos>432,0,0</destination_pos>
+         <destination_mode>custom:431@3,432@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="21"><![CDATA[Revenge of Guard Joey]]></title>
+         <contents mid="22"><![CDATA[<html>Guard Joey asked to go eliminate <FONT color=#a82424> Dark Overlord Keep</FONT>'s <FONT color=#a82424>worshiper bro summoner</FONT> . Let's go to Dark Overlord Keep.<BR><BR><FONT color=#086171>Dark Woods(Dark Overlord Keep Entrance)</FONT> <FONT color=#a82424>→ Dark Overlord Keep</FONT></html>]]></contents>
+         <destination mid="23"><![CDATA[Eliminate worshiper bro summoner]]></destination>
+         <todo_msg mid="24"><![CDATA[Go to  Dark Overlord Keep]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode />
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Talk with Guard Joey]]></title>
+         <contents mid="26"><![CDATA[<html>Killed worshiper bro summoner. <FONT color=#a82424>Let's tell Kingdom guard Joey</FONT>that we had revenged.<BR>
+ <BR>
+<FONT color=#086171>Inside Saint Haven Kingdom</FONT> <FONT color=#a82424>→ Kingdom Guard Joey</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk with Guard Joey]]></destination>
+         <todo_msg mid="28"><![CDATA[Go to Saint Haven's Guard Joey]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>523</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

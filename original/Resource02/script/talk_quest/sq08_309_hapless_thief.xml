@@ -1,0 +1,329 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_309_hapless_thief</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>309</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Hapless Thief]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>266</npcid>
+         <npcename>n266_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR>Ugh~ the guy who stole my food will get such a whooping from me if I catch him. <BR><FONT color=#7e12d2>(Obtain the quest from Master Sorceress Tiana.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-noquest" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Invisible Thief$<BR>What a horrible smell? Why will anyone make such a strange food?<BR><FONT color=#7e12d2>(Obtain the quest from Master Sorceress Tiana.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-a" mid="8"><![CDATA[<html>Me?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Tiana${action:talk}<BR>I have heard of the story and I cannot leave <FONT color=#a82424>Dark Tower Magic Institute</font> smelling like this. Can you make me some <FONT color=#a82424>Deodorant</font> to get rid of the smell? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-a" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-b" mid="10"><![CDATA[<html>Hmm…Alright.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Tiana$<BR>Even if it's just a thief, there is no way I can allow Dark Tower to smell like a garbage dump. Got it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-c" mid="12"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$The Unlucky Thief$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Tiana$<BR><FONT color=#a82424>Merchant May</font> might be able to make the <FONT color=#a82424>Deodorant</font>. <BR>But that girl is so busy with cooking lately, I'm not sure if she has the time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="16"><![CDATA[<html>Okay…sure</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Tiana$<BR><FONT color=#a82424>Merchant May</font> might be able to make the <FONT color=#a82424>Deodorant</font>. <BR>But that girl is so busy with cooking lately, I'm not sure if she has the time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Tiana${action:talk}<BR>The last time <FONT color=#a82424>Merchant May</font> made that Nutritious Hound Feed, the smelly stink up the whole place for a month. <BR>Who on earth keeps making those things right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Merchant May$<BR>Ugh~ the guy who stole my food will get such a whooping from me if I catch him! <BR><FONT color=#7e12d2>(Talk to Master Sorceress Tiana.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Invisible Thief$<BR>What a horrible smell? Why will anyone make such a strange food??<BR><FONT color=#7e12d2>(Talk to Master Sorceress Tiana.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Tiana$<BR>The last time <FONT color=#a82424>May</font> made that Nutritious Hound Feed, the smelly stink up the whole place for a month. Who on earth keeps making those things right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="22"><![CDATA[<html> (May looks puzzled) </html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Merchant May${action:talk}<BR>Yes? Is someone making <FONT color=#a82424>Nutritious Hound Feed</font>? It wasn't me me this time. Does anyone know the recipe you ask? I bet it must <FONT color=#a82424>Doris</font> from <FONT color=#a82424>Prairie Town</font>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="24"><![CDATA[<html>(May search for her award winning cookbook)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Merchant May$<BR>Anyway, I will make a <FONT color=#a82424>Super Strong Cleanser</font>. <BR>It will be edible and it can clear out the odour from within the body. So…I need something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QS_Default.dds" itemindex="400108">
+      <talk_answer link_index="n026_trader_may-2-c" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(Flips open her Cookbook) Now…we need some <FONT color=#a82424>Blizzard Sorceress Tarantula Extract</font>. Can you go get some for me please? I'm really very busy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="28"><![CDATA[<html>Sure…where can I get the Blizzard Sorceress Tarantula Extract? </html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Merchant May${action:Angry}<BR>Well ~ I had all the preparation for the cooking competition ready and someone just stole it. <BR> I'm going to hunt down that lousy thief!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QM_Spider_Black.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Merchant May$<BR>Hunt <FONT color=#a82424>Blizzard Tarantulas</font> in the <FONT color=#a82424>Dark Tower Magic Institute</font>. Kill about 20 and I'll be able to make the extract.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_21.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Merchant May$<BR>Hunt <FONT color=#a82424>Blizzard Tarantulas</font> in the <FONT color=#a82424>Dark Tower Magic Institute</font>. Kill about 20 and I'll be able to make the extract.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-3" image="QW_21.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Master Sorceress Tiana$<BR>Did you find May? It is unacceptable for <FONT color=#a82424>Dark Tower Magic Institute</font> to smell like Hound's Food. So please hurry with the preparation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-3" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-3-a" mid="33"><![CDATA[<html>Alright. I will be back.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Invisible Thief$<BR>Ew ~ I smelly terrible! If I'm not invisible, I would have drawn attention of all the monsters and I'll be in danger now. How is it going with the help?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-3-a" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Invisible Thief$<BR>I will be waitingfor his return. Hope the monsters don't find out where I am.<BR> <FONT color=#7e12d2>(Continue to grumble)</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-a" mid="36"><![CDATA[<html>(Pass May the Spider Extract)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Merchant May${action:talk}<BR>Oh, I'm so busy. Why did someone steal my food? I won't mind giving them some if they have just asked. Hmph! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="QS_Default.dds" itemindex="300215">
+      <talk_answer link_index="n026_trader_may-5" mid="38"><![CDATA[<html>(Seems inedible for humans)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Merchant May$<BR>Oops! Wait a minute ~ It is almost done. <FONT color=#7e12d2>(Pour the Spider Extract into a gentle pot of boiling liquid. The color mysteriously changed darker)</font>  <BR>It’s finished! There may be side effects and I have not tried it yet. Good luck!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="QW_21.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Merchant May$<BR>See you again!<BR><FONT color=#7e12d2>(Return to the Invisible Thief at the Dark Tower Magic Institute.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-5" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-5-a" mid="41"><![CDATA[<html> ... Here. (This smells weird) </html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Invisible Thief$<BR>What is that sweet smell? Did you bring the <FONT color=#a82424>Deodorant</font> that will free me from the smell? Come on…give it to me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-5-a" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-6" mid="43"><![CDATA[<html>(Looks on without reaction.)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Invisible Thief$<BR>Ahhh..I feel much better! It's really despairing to live smelling so bad. I will learn and reflect from this bad mistake and maybe I will turn over a new leaf.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-6" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Invisible Thief$<BR>Well, Goodbye Young Adventurer! If fate permits we shall meet again! <BR><FONT color=#7e12d2>(sound of fading footsteps)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-a" mid="46"><![CDATA[<html>May told me he is the thief who stole her food.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Sorceress Tiana$<BR>What happened to the <FONT color=#a82424>Strange Odour</font>? What? It has disappeared? …Hmm, I wish we had caught the thief but it seems nothing is exactly stolen anyway.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-b" mid="48"><![CDATA[<html>Sob Sob (Softly)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Sorceress Tiana${action:talk}<BR>Really? So you did not bring it too him? <BR>Use it to catch a thief…that jerk.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-b" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-c" mid="50"><![CDATA[<html>(Tiana break into a delightful look)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Sorceress Tiana$<BR>Anyway the smell at the <FONT color=#a82424>Dark Tower Magic Institute</font> is finally gone. Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-6-d" mid="52"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-6-d" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Master Sorceress Tiana${action:talk}<BR>Hmmm… Anyway I'm wondering what the <FONT color=#a82424>thief</font> is planning. There are hardly anything valuable worth stealing in Calderock.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3091,3092,3093,3094,3095</exe>
+         <exe type="setquest">309</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="20" party="1" exe="" onexe="1">507</exe>
+         <exe type="addquestitem" num="1">400108</exe>
+         <exe type="huntitem" num="20" exe="3,6,7" onexe="">400108</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="1">200507</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400108</exe>
+         <exe type="addquestitem" num="1">300215</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300215</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3091,3092,3093,3094,3095</exe>
+         <exe type="complete">309</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="c">1,2,3</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d">4,0,8,2,5</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="5">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n266_invisible_thief" sub="6">0,1,2</exelink>
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="c">0</exelink>
+   <exelink qstep="6" npc="n035_soceress_master_tiana" sub="d">1</exelink>
+   <journal_data recompense="1:3091,2:3092,3:3093,4:3094,5:3095" quest_title="불운한 도둑" chapterid="" quest_level="18" quest_mark_type="10" use_item_list="400108,300215">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Tiana's Request]]></title>
+         <contents mid="56"><![CDATA[<html>Master Sorceress Tiana would like to discuss the strange odour in Dark Tower Magic Institute<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="58"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[May's Secret]]></title>
+         <contents mid="60"><![CDATA[<html>Go ask how to make a Deodorant.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→May</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="62"><![CDATA[Talk to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>154,0,0</destination_pos>
+         <destination_mode>custom:151@3,152@3,153@3,154@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Blizzard Sorceress Tarantula Extract]]></title>
+         <contents mid="65"><![CDATA[<html>Defeat Blizzard Sorceress Tarantulas in the Dark Tower Magic Institute and get some Blizzard Sorceress Tarantula Spider Extract.<BR><BR><FONT color=#086171>Cristal Stream → Blizzard Plain (Wizards of the road)</FONT> <FONT color=#a82424>→ Dark Tower Magic Institute</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Defeat monsters in the Dark Tower Magic Institute]]></destination>
+         <todo_msg mid="67"><![CDATA[Go to Dark Tower Magic Institute and defeat Blizzard Sorceress Tarantulas.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Super Strong Cleanser]]></title>
+         <contents mid="69"><![CDATA[<html>Return to Merchant May and deliver the Spider Extract to receive the Super Strong Cleanser.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ May</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="71"><![CDATA[Quest is completed. Please report to Merchant May.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>153,n266</destination_pos>
+         <destination_mode>custom:151@1,152@1,153@1</destination_mode>
+         <statemark_npcid>266</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Odour Removal]]></title>
+         <contents mid="73"><![CDATA[<html>Merchant May has given you the Super Strong Cleanser. Return to Dark Tower Magic Institute and deliver it to the Invisible Thief.<BR><BR><FONT color=#086171>Cristal Stream → Blizzard Plain (Wizards of the road)</FONT> <FONT color=#a82424>→ Dark Tower Magic Institute</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk to the Invisible Thief]]></destination>
+         <todo_msg mid="75"><![CDATA[Talk to Invisible Thief in Dark Tower Magic Institute]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Complete Cleansing]]></title>
+         <contents mid="77"><![CDATA[<html>The odour has been successfully been removed from the Dark Tower Magic Institute. Return to Master Sorceress Tiana.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="79"><![CDATA[Report to Master Sorceress Tiana.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>18:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>308</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

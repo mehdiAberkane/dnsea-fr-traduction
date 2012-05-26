@@ -1,0 +1,94 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq32_8702_lindsay_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8702</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Events Planner Irine]]></qkname>
+      <qnpc>
+         <npcid>62</npcid>
+         <npcename>n062_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-a" mid="7"><![CDATA[<html> Each person has different aptitudes </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-accepting-b" mid="8"><![CDATA[<html> You are cute too. </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-accepting-c" mid="9"><![CDATA[<html> You are pretty. </html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Trainer Lindsay$<BR>ME wanted to be an events planner. But I failed the test. Woo…<BR>
+Events Planner Irine is cute. I’m not cute. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Trainer Lindsay$<BR>Aptitude? Don’t I have the aptitude to be an events planner? <BR>Why?...I don’t understand. Isn’t love enough to be an events planner? <BR><FONT color=#7e12d2>(Lindsay seems upset.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR>Really? Thank you~!! <FONT color=#7e12d2>(Lindsay is very happy.)</FONT><BR>YOU are cute too!! Like….like…<BR>
+<FONT color=#7e12d2>(Lindsay struggles for the right word.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Trainer Lindsay$<BR>Am I pretty?<BR>Umm… but I like to be cute! Tell me I’m cute!! Please.<BR><FONT color=#7e12d2>(She still seems happy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-d" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Trainer Lindsay$<BR>Yeah!!<BR>
+YOU look like a baby Orc!<BR><FONT color=#7e12d2>(I think that’s a compliment)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 8702, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 62, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 62, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 62, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="c">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 이벤트 도우미" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>62:5000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,254 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_627_lost_crown</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>627</qid>
+      <designer>김주연</designer>
+      <qlevel>37</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>628</nextqid>
+      <nextqname>sq11_628_urgent_message</nextqname>
+      <nextqnpc>n281_darkelf_teleju</nextqnpc>
+      <qkname mid="1"><![CDATA[Lost Crown]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>330</npcid>
+         <npcename>n330_darkelf_alice</npcename>
+         <npckname>다크엘프 앨리스(sq628)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Dark Elf Teri$<BR>It's okay that I am being chased. However I cannot help my people from getting hurt…I don’t….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Dark Elf Alice$<BR>Teri … Are you okay…<BR><FONT color=#7e12d2>(Familiar Dark Elf looks very sad.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="8"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Royal Guard Joey$<BR>Ah, dear Adventurer. Didn't I tell you about the story of the Dark Elf?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="10"><![CDATA[<html>Extraordinary Dark Elf?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Royal Guard Joey$<BR>This time I saw the Dark Elf at Death City Entrance.<BR>Hmm… a lot of Dark Elves live here… what should I say? It is said to be an Extraordinary Dark Elf.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="12"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Lost Crown$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Royal Guard Joey$<BR>
+Anyway Dark Elves are dangerous, so if you are at <FONT color=#a82424> Hermalte Port </FONT> and you see a Dark Elf, hurry up and run~ .<BR>It may attack you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Royal Guard Joey$<BR>
+Anyway Dark Elves are dangerous, so if you are at <FONT color=#a82424> Hermalte Port </FONT> and you see a Dark Elf, hurry up and run~ .<BR>It may attack you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Dark Elf Alice$<BR>Teri … Are you okay…<BR><FONT color=#7e12d2>(Familiar Dark Elf looks sad)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-a" mid="17"><![CDATA[<html>Concern?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Dark Elf Teri$<BR>…There is something of concern.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-b" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Dark Elf Teri$<BR>Yeah. The servant helped me to run away, but I'm still very worried….<BR>If you can go and see if they are alive, will you be caught?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-c" mid="21"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Dark Elf Teri${sound:npc_Teri_qu627_01_a.ogg}<BR><FONT color=#387206>{user_nick}</FONT>, I know it's dangerous but can you help me?<BR>Go to Death City Entrance and see if my servant Alice is safe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-d" mid="23"><![CDATA[<html>(Teri looks depressed)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Dark Elf Teri$<BR>It will be nice if you can bring Alice…<BR>I don't know if she can run.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-d" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Dark Elf Teri$<BR>Alice dresses differently from other Dark Elves because of her shiny clothes.<BR>Thank you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Dark Elf Teri$<BR>Check on my servant Alice at Death City Entrance.<BR>She got into a lot of trouble trying to help me escape… I am really really worried about her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-2-a" mid="64"><![CDATA[<html>You know Teri?!</html>]]></talk_answer>
+      <talk_answer link_index="n330_darkelf_alice-2-a" mid="65"><![CDATA[<html>Teri asked me for a favour ….</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Dark Elf Alice$<BR>…Useless<FONT color=#387206> {user_class}</FONT> has appeared.<BR>I don't have time for you so go.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2-a" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-2-b" mid="67"><![CDATA[<html>Do you know me?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Dark Elf Alice$<BR>What? Teri …?! <FONT color=#7e12d2>(Alice smiles)</FONT> Ahah… luckily Teri is safe!<BR>I see. You must be the friend <FONT color=#387206>{user_class}</FONT> whom Teri has been speaking of?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2-b" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-2-c" mid="69"><![CDATA[<html>Yeah!</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Dark Elf Alice$<BR>Teri told me  "<FONT color=#a82424>Alice, this is a secret but I have a friend named {user_class} .</FONT>" and told me your story.<BR>Your name is <FONT color=#387206> {user_nick}</FONT> ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2-c" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-2-d" mid="71"><![CDATA[<html>For now…</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Dark Elf Alice$<BR>Hoot. You look as Teri described. Hmm… <FONT color=#7e12d2>(Alice laughs)<BR></FONT>Anyway Teri is living okay without any problems?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2-d" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-2-e" mid="73"><![CDATA[<html>Coming?</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Dark Elf Alice$<BR>Then go back before others find out, and tell Teri my story.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2-e" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-2-f" mid="75"><![CDATA[<html>But Teri is ….</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Dark Elf Alice$<BR>Go?! What are you talking about! <BR>Why should I follow <FONT color=#387206> {user_class}</FONT> ? As the Dark Elf Queen's faithful servant, I should keep this place safe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2-f" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-2-g" mid="77"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Dark Elf Alice$<BR>Go to my master Teri. Alice should go to Teri and should take care of the servants who have been seperated. Now go to Teri and come back to the Royal Kingdom.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2-g" image="" itemindex="">
+      <talk_question mid="78"><![CDATA[<html>$Dark Elf Alice$<BR>Please her tell.<BR>Until Teri comes back... Alice will be waiting.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-3" image="" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Dark Elf Alice$<BR>Tell Teri this. I will get Dark Elves who support Teri, so hurry up and come back….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-a" mid="82"><![CDATA[<html>I have met her.</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Dark Elf Teri$<BR>Ah~ you are here!! I have been waiting!!<BR>How is it? Did you meet... Alice?<FONT color=#7e12d2> (Teri asks carefully)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-b" mid="84"><![CDATA[<html>(Alice speaks first)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Dark Elf Teri$<BR>Gasp~You met~her~<FONT color=#7e12d2> (Teri jumps happily)<BR></FONT>…Why didn't you come together? Maybe… She is hurt…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-c" mid="86"><![CDATA[<html>(Teri cries sadly)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Dark Elf Teri${sound:npc_Teri_qu627_02_b.ogg}<BR>Oh… I, I… do not want my people to get hurt…<BR>*Sob*… I don't have to be queen… Malaju can be Queen, I am okay.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-!next" mid="88"><![CDATA[<html><FONT color=#086171>(Receive Reward) </FONT></html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,6271,6272,6273,6274,6275</exe>
+         <exe type="setquest">627</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>죽음의 도시 입구 3번 스테이지.
+(다크엘프 앨리스- Darkelf_Blue 몹을 npc로) 앨리스가 적절한 구석에 서 있음.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">627</exe>
+         <exe type="recompense">,6271,6272,6273,6274,6275</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="c">1,2</exelink>
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="c" />
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n330_darkelf_alice" sub="b" />
+   <exelink qstep="2" npc="n330_darkelf_alice" sub="c" />
+   <exelink qstep="2" npc="n330_darkelf_alice" sub="d" />
+   <exelink qstep="2" npc="n330_darkelf_alice" sub="e" />
+   <exelink qstep="2" npc="n330_darkelf_alice" sub="f" />
+   <exelink qstep="2" npc="n330_darkelf_alice" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="3" npc="n281_darkelf_teleju" sub="c">1</exelink>
+   <exelink qstep="3" npc="n281_darkelf_teleju" sub="!next">0</exelink>
+   <journal_data recompense="1:6271,2:6272,3:6273,4:6274,5:6275" quest_title="빼앗긴 왕좌" chapterid="" quest_level="37" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Talk to Dark Elf Teri]]></title>
+         <contents mid="52"><![CDATA[<html>Talk to <FONT color=#a82424>Dark Elf Teri</FONT> at Hermalte Port.<BR><BR><FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Dark Elf Teri</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Talk to Dark Elf Teri]]></destination>
+         <todo_msg mid="54"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_42.dds</contents_image>
+         <destination_pos>423,n330</destination_pos>
+         <destination_mode>custom:421@1,422@1,423@1</destination_mode>
+         <statemark_npcid>330</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Talk to Dark Elf Alice]]></title>
+         <contents mid="56"><![CDATA[<html>Go to Teri's servant Dark Elf Alice at <FONT color=#a82424>Death City Entrance</FONT>.<BR><BR><FONT color=#086171>Hermalte Port (Entrance of Black Mine)</FONT> <FONT color=#a82424>→ Death City Entrance</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Dark Elf Alice]]></destination>
+         <todo_msg mid="58"><![CDATA[Meet Dark Elf Alice at Death City Entrance.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Talk to Dark Elf Teri]]></title>
+         <contents mid="60"><![CDATA[<html>Talk to and give Alice's Message to <FONT color=#a82424>Dark Elf Teri</FONT> at Hermalte Port. <BR>
+<BR><FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Dark Elf Teri</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Dark Elf Teri]]></destination>
+         <todo_msg mid="62"><![CDATA[Report to Dark Elf Teri at Hermalte Port.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>37:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>626</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,117 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq23_6510_kalaen_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6510</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] A secret dream]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-a" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I am one of the best Sorceress in Saint Haven. Although I didn’t officially take on the Dark Tower name, I was one of the students that Master Karacule approved of. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-b" mid="9"><![CDATA[<html>You should consider your age.</html>]]></talk_answer>
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-d" mid="10"><![CDATA[<html>Wake up!</html>]]></talk_answer>
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-g" mid="11"><![CDATA[<html>It's good to have a dream.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Despite my power and beauty, I am a very innocent woman. You know? <BR>I am sure that someday, a handsome prince will come and fall in love with me. <BR><FONT color=#7e12d2>(Kayleen looks dreamily into the distance.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-c" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+You are so mean! For a woman, no matter how old she is, she is still a 17 year old girl inside that body. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-c" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+How come you {user_class} don’t know that? <BR><FONT color=#7e12d2>(Kayleen looks hysterical.)</FONT><BR>
+I have told you my secret dream, but I think I shouldn’t have. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-e" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Court Sorceress Kayleen$<BR>What? Even though you know it is just a dream, it is very important. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-f" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Court Sorceress Kayleen $<BR>
+How come you {user_class} don’t know that? Everyone has a dream that isn’t realistic. People need something to depend on like a fantasy or lie. You are so cold blooded. <BR><FONT color=#7e12d2>(Kayleen looks hysterical.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-f" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I have told you my secret dream, but I think I shouldn’t have. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-h" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Yeah?<BR>I know it’s funny that I have a long kept dream. It’s not like I’m going to be kidnapped like a princess from a fairytale. <BR>If a Sorceress like me gets kidnapped, there will need to be at least a dozen heroes to save me. Hahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-i" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+Yes but little dreams like this make our lives incredibly happy. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-i" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+I hope you remember that. Even after you become the best in the world, in order to proceed forward, you need to have another dream. Life is boring without a dream. Don’t you think so? <BR><FONT color=#7e12d2>(Kayleen gives a warm smile.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6510, 0, 1, 1, 0); </exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 38, 300 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 38,400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 38, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="b">1,0</exelink>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="d">2,0</exelink>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="g">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 오래 간직한 꿈" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>38:19000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

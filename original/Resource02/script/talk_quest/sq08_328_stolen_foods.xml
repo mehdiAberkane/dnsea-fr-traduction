@@ -1,0 +1,190 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_328_stolen_foods</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>328</qid>
+      <designer>김주연</designer>
+      <qlevel>18</qlevel>
+      <qdesc>브로의 주머니 400133
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Stolen Ingredients]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(May's face is tear drench.)</FONT><BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>Who would come in the night and stole from you...</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant May$<BR>All the samples and ingredients were stolen. All my efforts in preparing the dish. What should I do now? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="10"><![CDATA[<html>What about the items in the shop?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant May$<BR>Someone…a rival! They must have feared my cooking and that I will win the competition. That is why they stole it all. <FONT color=#7e12d2>(May's imagination started to run wild.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="12"><![CDATA[<html> That is weird. </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Merchant May$<BR>Only the ingredients for my new dish has been stolen.<BR>And…my kitchen is filled with the smell of  <FONT color=#a82424>Hound's Food</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merchant May$<BR>These things happens sometime but I must be professional and not lose my cool. Can you help to get some more of the same ingredients as last time?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Stolen Ingredients$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QS_Default.dds" itemindex="400133">
+      <talk_answer link_index="n026_trader_may-2" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant May$<BR>Please help to gather more <FONT color=#a82424>Brethren Mages Pouches</FONT> from the <FONT color=#a82424>Silent Monastery Main Hall</FONT>. I will use my other secret stash of ingredients to start preparing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QW_22.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Merchant May$<BR>The thieves will get a terrible stomachahe for doing this to me. <BR> Leaving the stench of Hound's Food before running off. Please help to gather <FONT color=#a82424>Brethren Mages Pouches</FONT> from the <FONT color=#a82424>Silent Monastery Main Hall</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="21"><![CDATA[<html>Are you crying?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(May looks up from tasting her dish and murmurs.)</FONT><BR>My tears just won't stop running. I might have added too much spices…Boo Hoo~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="QS_Default.dds" itemindex="400133">
+      <talk_answer link_index="n026_trader_may-3-b" mid="23"><![CDATA[<html>(You give her the Brethren Mage pouches.)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant May$<BR>I'm not crying! I'm just…tearing…Boo Hoo~ <BR>Guess I put too much…nevermind. I'll use the spices you just brought back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="25"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Merchant May$<BR>Do not worry, now I can complete my <FONT color=#a82424>Jaw Aching Rubber Spaghetti</FONT> in time to be crowned the Best General Store in Calderock. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3281,3282,3283,3284,3285</exe>
+         <exe type="setquest">328</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>사냥 등록 400133</comment>
+      <conditions>
+         <chk type="questitem" num="3" op="]=">400133</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="3" exe="" onexe="7">400133</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">558</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">559</exe>
+         <exe type="addquestitem" num="1">400133</exe>
+         <exe type="conexe" true="8,9,10" false="5">0</exe>
+         <exe type="conexe" true="8,9,10" false="">0</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200558</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200559</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3281,3282,3283,3284,3285</exe>
+         <exe type="complete">328</exe>
+         <exe type="delquestitem" num="-1">400133</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="2">0,2,3,11,12,4,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="c">1,2</exelink>
+   <journal_data recompense="1:3281,2:3282,3:3283,4:3284,5:3285" quest_title="털렸다 잡화점" chapterid="" quest_level="18" quest_mark_type="10" use_item_list="400133">
+      <journal index="1">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="28"><![CDATA[<html>May's ingredients has been stolen! Talk to Merchant May. <BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="30"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_22.dds</contents_image>
+         <destination_pos>164,0,0</destination_pos>
+         <destination_mode>custom:161@3,162@3,163@3,164@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Collect Brethren Mages Pouches at the Silent Monastery Main Hall]]></title>
+         <contents mid="32"><![CDATA[<html>May's ingredients for the Jaw Aching Rubber Spaghetti has been stolen. Gather more Brethren Mages Pouches from the <FONT color=#a82424>Silent Monastery Main Hall</FONT>.<BR> <BR><FONT color=#086171>Blizzard Plain ( Silent Monastery Entrance)</FONT><FONT color=#a82424> → Silent Monastery Main Hall</FONT><BR </html>]]></contents>
+         <destination mid="33"><![CDATA[Collect 3 Brethren Mages Pouches]]></destination>
+         <todo_msg mid="34"><![CDATA[Collect Brethren Mages Pouches at the Silent Monastery Main Hall]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="36"><![CDATA[<html>You have the Brethren Mages Pouches. Deliver them to <FONT color=#a82424>May</FONT> at Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="38"><![CDATA[Return to May at Calderock Village and talk to her.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>18:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>327</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

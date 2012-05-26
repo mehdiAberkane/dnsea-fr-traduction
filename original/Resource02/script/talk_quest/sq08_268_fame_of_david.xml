@@ -1,0 +1,627 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_268_fame_of_david</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>268</qid>
+      <designer>김인정</designer>
+      <qlevel>22</qlevel>
+      <qdesc>아르젠타에게 의뢰 수락
+수정개울에서 데이비드와 대화
+캐더락관문 데커드, 메이, 티아나와 대화.
+수정개울에서 데이비드와 대화
+수정개울에서 퍼거스와 대화
+다크스프림 퇴치
+퍼거스와 대화
+데이비드와 대화
+아르젠타에게 보고. 보상.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Reputation]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>202</npcid>
+         <npcename>n202_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(수정개울)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>23</npcid>
+         <npcename>n023_ranger_fugus</npcename>
+         <npckname>정찰병 퍼거스     (수정개울)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. Do you realize what kind of high reputations I have now?<BR><FONT color=#7e12d2>(Quest from Argenta in Gray Ruins needed to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>How is Silver Swordswoman doing? Things going well for her?<BR><FONT color=#7e12d2>(Quest from Argenta in Gray Ruins needed to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Scout Fergus$<BR>Never let you guards down, no matter what happen.<BR><FONT color=#7e12d2>(Quest from Argenta in Gray Ruins needed to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>Do you have any business to talk about?<BR><FONT color=#7e12d2>(Quest from Argenta in Gray Ruins needed to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-noquest" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Tiana$<BR>Out of my way if you got nothing to say to me<BR><FONT color=#7e12d2>(Quest from Argenta in Gray Ruins needed to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-clevel" mid="11"><![CDATA[<html>(You start to talk)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Argenta$<BR><FONT color=#7e12d2>(Argenta has an unhappy expression on her face.</FONT><BR><FONT color=#7e12d2>She doesn't looks good)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Argenta$<BR>I see you have plenty of work on hand. Find me when you have cleared them.<BR><FONT color=#7e12d2>(This quest requires more main scenario and sub quests to be more proceeded)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-c" mid="14"><![CDATA[<html> Oh ... you mean Adventurer David? </html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Argenta$<BR>It's you. I've been waiting to talk to you.<BR>About that <FONT color=#a82424>weakling</FONT>, is that something you brought along with you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="16"><![CDATA[<html> Ugh! That, it's ...! </html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Argenta$<BR>I couldn't care less about the name. He is plain annoying and irritating. I couldn't even eat my meal in peace and quiet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="18"><![CDATA[<html>I don't know where it is.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Argenta$<BR>Please clean up your own mess that you have made, I do not want to see them lying around all the time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="20"><![CDATA[<html>Cristal Stream...?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Argenta$<BR>Do I really need to teach you every single thing? <BR>…I've heard disordered footstep sound stopping near <FONT color=#a82424>Cristal Stream</FONT>, so it should be there. Go take a look.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="QW_CristalStream.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-g" mid="22"><![CDATA[<html>I will go take a look at Cristal Stream anyways.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Argenta$<BR>Of course you are going to do it, rightt?<BR>You are the one who brought that annoying pest along with you, Now run along!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="24"><![CDATA[<html><FONT color=#086171>(Accept quest.)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html> $Reputation$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QW_CristalStream.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Argenta$<BR>Really, <FONT color=#382000>{user_nick}</FONT>, is not easy having you as a slave, you know?<BR>Hurry to <FONT color=#a82424>Cristal Stream</FONT> and show that little one what he deserved.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Scout Fergus$<BR>I've heard stories about you, <FONT color=#a82424>Adventurer David</FONT>. You are much more brillant than those said rumors. I have a business to take care… I'm thinking about requesting it to <FONT color=#a82424>Adventurer David</FONT>. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-a" mid="28"><![CDATA[<html>(Ignores and talk about Argenta)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Self-Acclaimed Adventurer David${action:talk}<BR>Oh! Look who's here? Isn't this the right hand man and follower of the <FONT color=#a82424>Great Adventurer David</FONT>, <FONT color=#382000>{user_nick}</FONT>? Ha. Ha. Ha. Very nice to see you!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-b" mid="30"><![CDATA[<html>…She said… no.</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Adventurer David$<BR>Lady <FONT color=#a82424>Argenta</FONT> finally has started to notice me, <FONT color=#a82424>The Great Adventurer David</FONT>! Ha… Took little longer than I expected, but elegant women are cuter when they act tough. Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-b" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-c" mid="32"><![CDATA[<html>Uggh… (Delusional can be one serious illness)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Adventurer David$<BR>Tsk. You have a long way to go, <FONT color=#382000>{user_nick}</FONT>! Don't be so obvious, you <FONT color=#a82424>Newbie</FONT>. Heh. Heh. Heh. Lady <FONT color=#a82424>Argenta</FONT>'s <FONT color=#a82424>dainty, kind, and innocent love</FONT> hidden behind her shyness!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-c" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-d" mid="34"><![CDATA[<html>(Adventurer David is living in his perfect dream world)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. I am sure guys like you, who has been never been loved by proud lady, have no idea about pure love and their complexed impressions? You should just look at my <FONT color=#a82424>Great Love</FONT> and feel inferiority! Ha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-d" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-e" mid="36"><![CDATA[<html>Why would I want to do that?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Adventurer David$<BR>Okay!! I will clearly let you know for sure this time! You must know the Adventurer's Guild Master Deckard in Calderock Village even you are a newbie, right? Go and enquire about the reputation I have in this town.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-e" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-1-f" mid="38"><![CDATA[<html>(Little annoying, but I guess it's time for me to give him some reality check.)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. You won't be having such disbelief face confirm you are presented with the truth. You will want to go to Lady Argenta and praise me. Heh… Go, Go on already!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-1-f" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Adventurer David${action:talk}<BR>Don't forget!! Adventurer's Guild Master is someone who cannot be left out when people of Calderock Village talk about Adventurers!! <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT>! I don't deal with just anyone!! Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>How is Silver hair Swordswoman doing? Everything okay?<BR><FONT color=#7e12d2>(Need go to Adventurer David in Cristal Stream)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$Merchant May$<BR>Yes? How can I help you?<BR><FONT color=#7e12d2>(Need go to Adventurer David in Cristal Stream)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="169"><![CDATA[<html>$Master Sorceress Tiana$<BR>Leave me alone if you have nothing to say.<BR><FONT color=#7e12d2>(Need go to Adventurer David in Cristal Stream)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-2" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Adventurer David${action:talk}<BR>Don't forget!! Adventurer's Guild Master is someone who cannot be left out when people of Calderock Village talk about Adventurers!! <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT>! I don't deal with just anyone!! Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="43"><![CDATA[<html>He claims himself as the greatest adventurer.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>What did you ask…. Who? <FONT color=#a82424>Adventurer David</FONT>?<BR>Adventurer David… Ah, That guy!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="45"><![CDATA[<html>His reputation, fine?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hm? Well, I don't know much. But he never caused any trouble and his reputation is not so bad. He may not be a bad adventurer after all.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="47"><![CDATA[<html> ... S.. surprising. </html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Why do you look so surprised. Haha. He has successfully completed all his mission and he also help out with all little favors asked by villagers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>If you cannot believe me, listen to them yourself. I heard he did a nice job on what <FONT color=#a82424>Merchant May</FONT> asked to do. You should try visit her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>If you are concern about Adventurer' Adventurer David's reputation, go talk to <FONT color=#a82424>Merchant May</FONT>. It should be best to hear it from the people who handed him a job. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="51"><![CDATA[<html>Did he really help you?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Merchant May$<BR>Yes? You mean <FONT color=#a82424>Adventurer David</FONT>? Ah, Of course I know very well!!<BR>He even helped me out in my shop yesterday.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="53"><![CDATA[<html> ... Yeah. (disbelief) </html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Merchant May$<BR>Hey, your words are not making any sense. There is a reason why I requested to an adventurer. Why would they get paid without getting the job done straight? I paid only because he was worth every penny!! Hoho.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="55"><![CDATA[<html> I do not think that way. </html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Merchant May$<BR>Especially, when I asked him to bring a <FONT color=#a82424>Hound</FONT> last time, he has done it extremely nice. Hoho. However, it was covered with <FONT color=#a82424>Spider Web</FONT>... As I hear, that's a new <FONT color=#a82424>trend</FONT> to bath Hound in <FONT color=#a82424>Saint Haven</FONT>, right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="57"><![CDATA[<html>…Sounds more like messenger rather than adventurer.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Merchant May$<BR>He also makes good <FONT color=#a82424>bouquets</FONT>, and picked up fruits for me as well. Um... and... Um...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Merchant May${action:talk}<BR>Anyways, he seem like a great guy. Hoho. I also referred him to a <FONT color=#a82424>Master Sorceress Tiana</FONT> since she was looking for a help too. Why don't you go talk to <FONT color=#a82424>Tiana</FONT> as well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Merchant May$<BR><FONT color=#a82424>Master Sorceress Tiana</FONT> should have also given <FONT color=#a82424>Adventurer David</FONT> a job. Why don't you also talk to Tiana to find out more about Adventurer David's reputation?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="QS_Default.dds" itemindex="300064">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="61"><![CDATA[<html>I guess we do know each other….</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Master Sorceress Tiana$<BR>Ah, The adventurer who has brought <FONT color=#a82424>Pure White Orb</FONT>? Why are you asking about <FONT color=#a82424>Adventurer David</FONT>? Do you guys know each other?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-b" mid="63"><![CDATA[<html> It's surprising ... .... </html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Master Sorceress Tiana$<BR>Really? He looked <FONT color=#2b2723>pretty goofy but was quite capable. I would have not used him if <FONT color=#a82424>Merchant May</FONT> didn't recommand him…. He actually had pretty good sense.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-c" mid="65"><![CDATA[<html> No. Just ....finding out more (I'm kind of surprised ....) </html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Sorceress Tiana$<BR>What's that weird expression? Did he run away with your money or something?<BR>Anyways, I don't know what you want to hear from me, but he was doing a pretty good job on what I asked him to do. Yeah, that guy named <FONT color=#a82424>Adventurer David</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-d" mid="67"><![CDATA[<html>(Again, I feel like he's more of messenger boy than an adventurer.)</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Master Sorceress Tiana$<BR>He was watering my garden as well as sorting 3 dried roots each pouch…. He was quite meticulous. He also <BR>cooks pretty good.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-e" mid="69"><![CDATA[<html> No, not exactly. </html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Master Sorceress Tiana$<BR>He was cook pretty good food with stinky blue cheese. He was pretty capable unlike how he looks.<BR>Why? Are you trying to assign him a job as well?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-e" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Master Sorceress Tiana$<BR>So.. Anything else that you wish to ask? Else run along now.<BR><FONT color=#7e12d2>(Go back to Cristal Stream to see Adventurer David)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>What have ou heard about Adventurer David's reputation? …Why are you still look so surprised? Haha.<BR><FONT color=#7e12d2>(Must go back to Cristal Stream to see Adventurer David)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Merchant May$<BR>Adventurer David is really a nice adventurer. I would have hired him as messenger boy for my shop if possible. Hoho.<BR><FONT color=#7e12d2>(Must go back to Cristal Stream to see Adventurer David)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Master Sorceress Tiana$$<BR>Why are you curious and asking around about this guy named Adventurer David?<BR><FONT color=#7e12d2>(Must go back to Cristal Stream to see Adventurer David)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-5-a" mid="75"><![CDATA[<html>Yea… Everything thinks that you are a good person.</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Adventurer David$<BR>How was it? Now you see what kind of reputation I hold? Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-5-b" mid="77"><![CDATA[<html>(His arrogance has grown even stronger)</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Adventurer David${action:talk}<BR>You just found out?! Heh. Heh. Heh. Is never too late to realize by greatness, for that, I am willing to  forgive you! Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-5-b" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-6" mid="79"><![CDATA[<html>No, I am not really curious enough to hear….</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Adventurer David$<BR>I was having very serious conversation with <FONT color=#a82424>Scout Fergus</FONT> here about my greatness. Heh. Heh. Heh. You curious and interested in the coversation with Scout Fergus? Heh… Well, I will give you the privilege to hear the stories! Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-6" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Adventurer David$<BR>Ha… You are such an ignorant. Heh. Heh. Heh. Once you here stories from <FONT color=#a82424>Scout Fergus</FONT>, you will also find out how great I am.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-a" mid="83"><![CDATA[<html> Ah, yes .... It's ... about a man named Adventurer David. </html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Scout Fergus$<BR>Ah, it you! <FONT color=#382000>{user_class}</FONT> <FONT color=#382000>{user_nick}</FONT>. Thank you for putting so much effort for Calderock Village. We, scouts, feel less burden with your help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-b" mid="85"><![CDATA[<html> Okay .... </html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Scout Fergus$<BR>I have heard about adventurer <FONT color=#a82424>Adventurer David</FONT>. I don't really know about him since I have been here at Cristal Stream the whole time, but he seems hold good reputation in town. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-b" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-c" mid="87"><![CDATA[<html>…What did he say about himself?</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Scout Fergus$<BR>I was about to hand him a job. It's about defeating <FONT color=#a82424>Shadow Dark Scream</FONT> at <FONT color=#a82424>Sanctuary Core</FONT>. For his reputation, he should be up to the job, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-c" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-6-d" mid="89"><![CDATA[<html>(This doesn’t feel good)</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Scout Fergus$<BR>He assures that it will be a piece of cake. Haha. I'm relieved. He said he need a person who can help out some <FONT color=#a82424>chores</FONT>… Why not you tag along to <FONT color=#a82424>past some time</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-6-d" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$Scout Fergus$<BR>Ah, I just saw <FONT color=#a82424>Adventurer David</FONT> satisfactory smile. Haha. He seems pleased to have you as companion on this trip, <FONT color=#382000>{user_nick}</FONT>. He wants to leave right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-7" image="QW_25.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Scout Fergus$<BR>Aren't you suppose to go help <FONT color=#a82424>Adventurer David</FONT> with him slay Shadow Dark Scream in <FONT color=#a82424>Sanctuary Core</FONT>? I heard that's how it is decided…. You should check with <FONT color=#a82424>Adventurer David</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-a" mid="94"><![CDATA[<html> Take care of yourself, it's not just you alone. </html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Adventurer David${action:talk}<BR>Heh… I was about to head towards <FONT color=#a82424>Sanctuary Core</FONT>. I will <FONT color=#a82424>specially</FONT> take you with me. Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-b" mid="96"><![CDATA[<html>Yeah, I think you should do this alone.</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Adventurer David$<BR>Wh, Wh, What do you mean! What if I get a scratch while fighting <FONT color=#a82424> Shadow Dark Scream</FONT>? I need someone to put some ointment! I... I am not <FONT color=#a82424>trying to take you because I feared Shadow Dark</FONT>!!! Don't be full of yourself!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-b" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-7-c" mid="171"><![CDATA[<html> Ugh. (So I'm going after all?) </html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Adventurer David$<BR>You merciless guy!! Are you going to betray Scout Fergus's pure heart?! Look at his hopeful eyes! Come on, let's go to <FONT color=#a82424> Sanctuary Core</FONT>!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-7-c" image="QW_25.dds" itemindex="">
+      <talk_question mid="172"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh.<BR>…I will <FONT color=#a82424>follow behind</FONT>. No more question, let's just move on.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-8" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-8-a" mid="173"><![CDATA[<html>Ugh. (Feels like I am the one doing it!)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Adventurer David$<BR>I'm not ready yet. Why don't you go to <FONT color=#a82424>Sanctuary Core</FONT> first and just pretend to lure <FONT color=#a82424>Shadow Dark Scream</FONT>out !! Me, the great Adventurer David, will appear when the monster strikes and kill it with ONE blow!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-8-a" image="QW_25.dds" itemindex="">
+      <talk_question mid="174"><![CDATA[<html>$Adventurer David$<BR>Are you that touched that I'll be behind to protect you? Heh. Heh. Heh. Okay. Get  going to <FONT color=#a82424>Sanctuary Core</FONT> now. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-9-a" mid="102"><![CDATA[<html> Yes? It is all a lie! </html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Scout Fergus$<BR><FONT color=#a82424>Adventurer David</FONT> has just told me all about it. You guys manage to slay the Shadow Dark Scream? Haha. Seriously, Adventurer David is amazing. And I heard you,<FONT color=#382000>{user_nick}</FONT>, were trembling with fear and even pass out... Are you feeling better now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9-a" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-9-b" mid="104"><![CDATA[<html>(What!! I was the one who kill the monster!!)</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Scout Fergus$<BR>Hahaha. Don't be shamed. Haha. Even excellent adventurers get scared sometimes. It's okay! There is no doubt you, <FONT color=#382000>{user_nick}</FONT>, are still a hero of Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-9-b" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Scout Fergus$<BR>Your eyes are filled with tears. Was it that scary? Haha. Good to know you are back safely, <FONT color=#a82424>Adventurer David</FONT> was worried sick of you, <FONT color=#382000>{user_nick}</FONT>. …Anyways <FONT color=#a82424>Adventurer David</FONT> is just awesome! I was so surprised!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-a" mid="107"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. Check with <FONT color=#a82424>Scout Fergus</FONT>.<BR>You late, again! Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-a" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-b" mid="109"><![CDATA[<html>I thought I'm the one who finishes the job?</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Adventurer David$<BR>Don't give me those eyes! This is a <FONT color=#a82424>war</FONT>… That's right! Most important things to adventurers are <FONT color=#a82424>media play</FONT>! fame! Heh. Heh. Heh…. I won't lose to such newbie like you who don't know anything! Heh. Heh. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-b" image="" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-c" mid="111"><![CDATA[<html> Can anyone tell me what's going on? </html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Adventurer David${action:talk}<BR>This is called <FONT color=#a82424>strategy! </FONT> strategy! Heh. Heh. Heh. How dare you showing off yourself front of me without even knowing this <FONT color=#a82424>basic tactic</FONT> of being an adventurer. I cannot believe this. You are shame. Heh. I won't lose against the newbie!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n202_slave_david-9-d" mid="113"><![CDATA[<html>Why don't you talk to  Argenta personally….</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Adventurer David$<BR>How dare you to tell me not to go near Lady <FONT color=#a82424>Argenta</FONT>? You will pay for what you have done! Heh. Heh. Heh. Just you wait!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-9-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. Please let my beautiful Lady <FONT color=#a82424>Argenta</FONT>know I said hello. Tell her that I, <FONT color=#a82424>Adventurer David</FONT>, will visit her after I rip you apart, <FONT color=#382000>{user_nick}</FONT>, in person!! Ha. Ha. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n202_slave_david-10" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$Adventurer David$<BR>Heh. Heh. Heh. Please let my beautiful Lady <FONT color=#a82424>Argenta</FONT>know I said hello. Tell her that I, <FONT color=#a82424>Adventurer David</FONT>, will visit her after I rip you apart, <FONT color=#382000>{user_nick}</FONT>, in person!! Ha. Ha. Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10" image="QW_25.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-a" mid="117"><![CDATA[<html>(Explains the situation)</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Argenta$<BR>Finally you are back! I always thought it was you whenever i heard footstep near <FONT color=#a82424>Cristal Stream</FONT>.<BR>What is it? You got tricked to going <FONT color=#a82424>Sanctuary Core</FONT> by <FONT color=#a82424>yourself</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-a" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-b" mid="119"><![CDATA[<html>I didn't get fooled… I mean.. Yah I did….</html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Argenta$<BR>This world is full of <FONT color=#a82424>fools</FONT>? You, <FONT color=#a82424>fool</FONT>, and that Adventurer David something <FONT color=#a82424>fool</FONT>. I think you are the best <FONT color=#a82424>fool</FONT> for being fooled by a <FONT color=#a82424>fool</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-c" mid="121"><![CDATA[<html>(Trying to claim your innocence.)</html>]]></talk_answer>
+      <talk_question mid="120"><![CDATA[<html>$Argenta$<BR>There's nothing we can do now. I'll we be leaving for <FONT color=#a82424>Saint Haven</FONT> soon, Just ignore such fellows like him.<BR>Slaves like you just can't seem to do a proper job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-d" mid="123"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-d" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$Argenta$<BR>You are such a bother. You are like a kid playing in a pool, can't relax having you around. I need a <FONT color=#a82424>new slave</FONT> before we head out to <FONT color=#a82424>Saint Haven</FONT>. For the time being, you work hard and don't be lazy.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 267 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 217 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 236 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="conexe" true="3" false="7">1</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+         <exe type="setquest">268</exe>
+         <exe type="recompense_view">,2681,2682,2683,2684,2685</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+         <exe type="conexe" true="3" false="2">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">7</exe>
+         <exe type="setjornal">7</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">8</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="5,3,4">712</exe>
+         <exe type="setstep">9</exe>
+         <exe type="setjornal">9</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200712</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 712);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="9">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">10</exe>
+         <exe type="setjornal">10</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="10">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2681,2682,2683,2684,2685</exe>
+         <exe type="complete">268</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="clevel">0</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="g">5</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">4,6</exelink>
+   <exelink qstep="1" npc="n202_slave_david" sub="b" />
+   <exelink qstep="1" npc="n202_slave_david" sub="c" />
+   <exelink qstep="1" npc="n202_slave_david" sub="d" />
+   <exelink qstep="1" npc="n202_slave_david" sub="e" />
+   <exelink qstep="1" npc="n202_slave_david" sub="f">0,1</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d">0,1</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n202_slave_david" sub="b" />
+   <exelink qstep="5" npc="n202_slave_david" sub="6">0,1</exelink>
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="b" />
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="c" />
+   <exelink qstep="6" npc="n023_ranger_fugus" sub="d">0,1</exelink>
+   <exelink qstep="7" npc="n202_slave_david" sub="b" />
+   <exelink qstep="7" npc="n202_slave_david" sub="c">2,6,0,1</exelink>
+   <exelink qstep="9" npc="n023_ranger_fugus" sub="b" />
+   <exelink qstep="9" npc="n202_slave_david" sub="b" />
+   <exelink qstep="9" npc="n202_slave_david" sub="c" />
+   <exelink qstep="9" npc="n202_slave_david" sub="d">0,1</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="c">0</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="d">1</exelink>
+   <journal_data recompense="1:2681,2:2682,3:2683,4:2684,5:2685" quest_title="허풍선이의 평판" chapterid="" quest_level="22" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_CristalStream.dds</contents_image>
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[Argenta's Depression]]></title>
+         <contents mid="128"><![CDATA[<html><FONT color=#a82424>Argenta</FONT> seems to be uncomfortable having <FONT color=#a82424>Adventurer David</FONT> wandering around her. Let's go to <FONT color=#a82424>Cristal Stream</FONT> and talk to Adventurer David.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Adventurer David</FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[Talk to Adventurer David at Cristal Stream]]></destination>
+         <todo_msg mid="130"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="131"><![CDATA[Reputation of Adventurer David I]]></title>
+         <contents mid="132"><![CDATA[<html><FONT color=#a82424>Adventurer David</FONT> wants you to go to Calderock Village and ask <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT> about his reputation. It's annoying, but let's just do what he say.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="133"><![CDATA[Talk to Adventurer's Guild Master Deckard in Calderock Village]]></destination>
+         <todo_msg mid="134"><![CDATA[Please go talk to Adventurer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,-4179,2192</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="135"><![CDATA[Reputation of Adventurer David II]]></title>
+         <contents mid="136"><![CDATA[<html>Deckard asks you to talk to people who gave Adventurer David a job to hear about his reputation. Let's hear it from <FONT color=#a82424>Merchant May</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT><FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="137"><![CDATA[Talk to Merchant May in Calderock Village]]></destination>
+         <todo_msg mid="138"><![CDATA[Please go talk to Merchant May.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="139"><![CDATA[Reputation of Adventurer David III]]></title>
+         <contents mid="140"><![CDATA[<html>Adventurer David's reputation is surprisingly decent. However, it feels like he is more of messenger boy than an adventurer. Let's go talk to <FONT color=#a82424>Master Sorceress Tiana</FONT> to verify Adventurer David's reputation as Merchant May suggested.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="141"><![CDATA[Talk to Tiana in Calderock Village]]></destination>
+         <todo_msg mid="142"><![CDATA[Please go talk to Master Sorceress Tiana.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="143"><![CDATA[Reputation of Adventurer David IV]]></title>
+         <contents mid="144"><![CDATA[<html>Enough of <FONT color=#a82424>Adventurer David</FONT>'s reputation. Let's go back to Adventurer David in <FONT color=#a82424>Cristal Stream</FONT>.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Adventurer David</FONT></html>]]></contents>
+         <destination mid="145"><![CDATA[Talk to Adventurer David at Cristal Stream]]></destination>
+         <todo_msg mid="146"><![CDATA[Please go report to Adventurer David at Cristal Stream.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_ranger_fugus.dds</contents_image>
+         <destination_pos>4,n23</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>23</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="147"><![CDATA[Reputation of Adventurer David V]]></title>
+         <contents mid="148"><![CDATA[<html>It seems like Adventurer David was bragging to <FONT color=#a82424>Scout Fergus</FONT> while I was gone. Kind of annoying but let's just talk to <FONT color=#a82424>Scout Fergus</FONT>.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Scout Fergus</FONT></html>]]></contents>
+         <destination mid="149"><![CDATA[Talk to Scout Fergus.]]></destination>
+         <todo_msg mid="150"><![CDATA[Please go talk to Scout Fergus at Cristal Stream.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="151"><![CDATA[Adventurer David's rant]]></title>
+         <contents mid="152"><![CDATA[<html>In Scout Fergus's word, <FONT color=#a82424>Adventurer David</FONT> has promise to go to <FONT color=#a82424> Sanctuary Core</FONT>. Let's confirm with Adventurer David.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Adventurer David</FONT></html>]]></contents>
+         <destination mid="153"><![CDATA[Talk to Adventurer David at Cristal Stream]]></destination>
+         <todo_msg mid="154"><![CDATA[Please confirm the truth with Adventurer David at Cristal Stream.]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <contents_image>QW_25.dds</contents_image>
+         <destination_pos>254,0,0</destination_pos>
+         <destination_mode>custom:251@1,252@1,253@1,254@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="155"><![CDATA[Uncertain departure]]></title>
+         <contents mid="156"><![CDATA[<html>Being forced to go <FONT color=#a82424> Sanctuary Core</FONT> and defeat <FONT color=#a82424>Shadow Dark Scream</FONT>. Let's just ignore Adventurer David even though he claims that he will be right behind.<BR><BR><FONT color=#086171> Gray Ruins(Sanctuary Entrance)</FONT> <FONT color=#a82424>→ Sanctuary Core</FONT></html>]]></contents>
+         <destination mid="157"><![CDATA[Defeat Shadow Dark Scream]]></destination>
+         <todo_msg mid="158"><![CDATA[Please defeat Shadow Dark Scream at Sanctuary Core.]]></todo_msg>
+      </journal>
+      <journal index="9">
+         <contents_image>QN_Slave_David.dds</contents_image>
+         <destination_pos>4,n202</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>202</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="159"><![CDATA[Despicable Adventurer David]]></title>
+         <contents mid="160"><![CDATA[<html>David who said he would come to Sanctuary Core did not come. Return to <FONT color=#a82424>Cristal</FONT> <FONT color=#a82424>Stream</FONT> and ask <FONT color=#a82424>Adventurer David</FONT> why.<BR>
+ <BR>
+<FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ David </FONT></html>]]></contents>
+         <destination mid="161"><![CDATA[Talk to Adventurer David at Cristal Stream]]></destination>
+         <todo_msg mid="162"><![CDATA[Please go talk to Adventurer David back in Cristal Stream.]]></todo_msg>
+      </journal>
+      <journal index="10">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="163"><![CDATA[One step too late!]]></title>
+         <contents mid="164"><![CDATA[<html>Adventurer David took a step ahead and went around spreading lies, now mistook Adventurer David as a brave adventurer. It's very depressing but since nothing can be done about this, let's go back to <FONT color=#a82424>Gray Ruins</FONT> and report to <FONT color=#a82424>Argenta</FONT>.<BR><BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="165"><![CDATA[Talk to Argenta at Gray Ruins]]></destination>
+         <todo_msg mid="166"><![CDATA[Update Argenta in Gray Ruins about the situation.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>267</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

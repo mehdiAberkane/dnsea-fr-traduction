@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n198_saint_guard</npcename>
+      <npcid>198</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Royal Guard Malcolm [Spirit of the Grave]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Royal Guard Malcolm$<BR>Ahhh, what a flaming red beauty! <BR><FONT color=#7e12d2>[Malcolm seems completely lovestruck.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_593_clumsy_romanticist</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">593</chk>
+      </conditions>
+   </talk>

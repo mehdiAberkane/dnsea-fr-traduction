@@ -1,0 +1,253 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_637_hinderer_entrance</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>637</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>638</nextqid>
+      <nextqname>sq11_638_reason_paganism</nextqname>
+      <nextqnpc>n038_royal_magician_kalaen</nextqnpc>
+      <qkname mid="1"><![CDATA[Intruder Alert]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>420</npcid>
+         <npcename>n420_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Cleric Ethan$<BR>If you stay here, people will know you as a <FONT color=#a82424>Dragon Follower</FONT>.<BR>Go somewhere else.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-a" mid="7"><![CDATA[<html>You have not given up?!</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I have thought about Nameless Tyrant Spellbook for awhile.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-b" mid="9"><![CDATA[<html>(Another errand)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Be quiet! It's disappointing to hear that after coming all the way here!<BR>Listen to me. I have thought about it~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Intruder Alert$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Court Sorceress Kayleen$<BR>It's kind of weird. The way I see it, for a servant to become a Queen is barely possible, and there is no Lucifina mentioned in any records.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="17"><![CDATA[<html>Once a memory is gone, it cannot be found.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Court Sorceress Kayleen$<BR>The Lucifina girl's memory may have been lost with the husband.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="QW_44.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-c" mid="19"><![CDATA[<html>Huh? Go again? I don't want to!</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Can't give up right? Start from the beginning.<BR>
+One more time!! Start back from Nameless Tyrant Tomb. Hohhohoho.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2" mid="64"><![CDATA[<html>Hmph. I can go.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+Think about it, <FONT color=#387206>{user_nick}</FONT>.<BR>
+Wouldn't it be better to get rich by finding a magic book than being a carp keeping quiet about it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-1" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Cleric Ethan$<BR>If you stay here people will think you are a <FONT color=#a82424>Dragon Follower</FONT>.<BR>Go somewhere else.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="QW_44.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Good thinking. Now go to <FONT color=#a82424>Nameless Tyrant Tomb</FONT> and find any evidence you can!<BR><BR>
+<FONT color=#7e12d2>※ Cannot proceed with quest in current party status.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-2" image="" itemindex="">
+      <talk_answer link_index="n420_edan-2-a" mid="31"><![CDATA[<html>Huh?! What? Dragon Followers?!</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Familiar Cleric$<BR>
+So you finally appeared, Dragon Follower!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-2-a" image="" itemindex="">
+      <talk_answer link_index="n420_edan-2-b" mid="33"><![CDATA[<html>Wait! I am not a Dragon Follower?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Familiar Cleric$<BR>
+I have been following you, and I know you are looking for dark magic stuff and a magic book!<BR>
+Now, admit your guilt!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-2-b" image="" itemindex="">
+      <talk_answer link_index="n420_edan-2-c" mid="66"><![CDATA[<html>Really! I gambled before but I never put on a mask!</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Strange Cleric$<BR>Don’t lie to me!<BR><FONT color=#7e12d2>(It's an uncomfortable atmosphere as he flares at somebody.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-2-c" image="" itemindex="">
+      <talk_answer link_index="n420_edan-2-d" mid="68"><![CDATA[<html>Argh! Don't Talk!!</html>]]></talk_answer>
+      <talk_answer link_index="n420_edan-2-d" mid="69"><![CDATA[<html>Okay that's me!</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Familiar Cleric$<BR>
+What? Gambling? Hey you are the amazing casino p…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-2-d" image="" itemindex="">
+      <talk_answer link_index="n420_edan-2-e" mid="71"><![CDATA[<html>(He finally said it, what an idiot)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Familiar Cleric$<BR>
+Wow, with the gambling fees you owe... I think I saw you in the wanted posters.<BR>
+Casino Princess<FONT color=#387206> {user_nick}</FONT>….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-2-e" image="" itemindex="">
+      <talk_answer link_index="n420_edan-2-f" mid="73"><![CDATA[<html>Okay. Bye~</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>My bad manners.<BR>I am<FONT color=#a82424>Cleric Ethan</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-2-f" image="" itemindex="">
+      <talk_answer link_index="n420_edan-2-g" mid="75"><![CDATA[<html>We, well I lost my way…ahaha.</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Cleric Ethan$<BR>What's the reason for being here?<BR>Here is where the Dragon Followers come and go.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-2-g" image="" itemindex="">
+      <talk_answer link_index="n420_edan-3" mid="35"><![CDATA[<html>Oh~ okay. I understand!</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Cleric Ethan$<BR>So I see. Exit is that way.<BR>
+Don't come here again. Also forget what  I said earlier.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n420_edan-3" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>I believe you have given up gambling. Well goodbye~.<BR><FONT color=#7e12d2>(Cleric is looking for Dragon Followers here. I think it will help when I report this to Kayleen.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-a" mid="38"><![CDATA[<html>Yes. Actually……</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Court Sorceress Kayleen$<BR>What this time?Anything special?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-b" mid="40"><![CDATA[<html>(Pant! I didn't say anything?!)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Court Sorceress Kayleen$<BR>What? Cleric appeared and talked about Dragon Followers?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-c" mid="42"><![CDATA[<html>(I think something bad happened.)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>Okay, if the memory is gone, I figured the Dragon Followers have been involved. Hohoho, I thought of something because of you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-!next" mid="50"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">637</exe>
+         <exe type="recompense_view">6370,,,,,</exe>
+         <exe type="talk" npc="n038_royal_magician_kalaen">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6370,,,,,</exe>
+         <exe type="complete">637</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n420_edan" sub="b" />
+   <exelink qstep="2" npc="n420_edan" sub="c" />
+   <exelink qstep="2" npc="n420_edan" sub="d" />
+   <exelink qstep="2" npc="n420_edan" sub="d" />
+   <exelink qstep="2" npc="n420_edan" sub="e" />
+   <exelink qstep="2" npc="n420_edan" sub="f" />
+   <exelink qstep="2" npc="n420_edan" sub="g" />
+   <exelink qstep="2" npc="n420_edan" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="c">0</exelink>
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="!next">1</exelink>
+   <journal_data recompense="0:6370" quest_title="방해꾼 등장" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode />
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Too early to quit]]></title>
+         <contents mid="52"><![CDATA[<html>Let Court Sorceress Kayleen continue the conversation.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Court Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Talk to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="54"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_44.dds</contents_image>
+         <destination_pos>444,n420</destination_pos>
+         <destination_mode>custom:441@1,442@1,443@1,444@1</destination_mode>
+         <statemark_npcid>420</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[New Evidence]]></title>
+         <contents mid="56"><![CDATA[<html>Nameless Tyrant Tomb New Evidence.<BR>
+<BR><FONT color=#7e12d2>※ Cannot start quest in current party status.</FONT><BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Entrance of the Black Mine)</FONT> <FONT color=#a82424>→ Nameless Tyrant Tomb</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[(Solo) Searching Nameless Tyrant Tomb]]></destination>
+         <todo_msg mid="58"><![CDATA[Go search the Nameless Tyrant Tomb again.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode />
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Cleric and Joe]]></title>
+         <contents mid="60"><![CDATA[<html>Met Cleric. Let's report to Court Sorceress Kayleen of Saint Haven Royal Palace.<BR><BR><FONT color=#086171>Inside Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Court Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="62"><![CDATA[Report to Court Sorceress Kayleen]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level>3</user_worldzone_level>
+      <user_class />
+      <prev_quest>636</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

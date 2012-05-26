@@ -1,0 +1,16 @@
+   <talk>
+      <npcename>n361_item_destroy</npcename>
+      <npcid>361</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Disassembler]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="opendisjointitem" mid="7"><![CDATA[<html>[Activate the Disassembler.]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html><FONT face=Arial size=2>$Disassembler$</FONT><BR>[This is a powerful ancient machinery.]<BR>[Items put within the Disassembler will be dismantled into its original raw form.]<BR> <BR>※ <FONT color=#7e12d2>[Note: Success may vary]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenDisjointItem(userObjID);</exe>
+      </executions>
+      <conditions />
+      <exelink idx="opendisjointitem">1</exelink>
+   </talk>

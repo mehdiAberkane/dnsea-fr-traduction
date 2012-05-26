@@ -1,0 +1,95 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq07_9103_decud_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9103</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Recent interests]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>I'll get rid of those small monsters.</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="7"><![CDATA[<html>What about Irine's bear...?</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="8"><![CDATA[<html>Okay, I didn't hear anything you said.</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="9"><![CDATA[<html>Why are there monsters so many here?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Recent interests? Well, Irine's bear…ah, no, please take it that you have not heard of this. Anyway I'm worried that there are too many monsters around here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hahaha! You are so cool!! Yes, I'll get a lot of chores for you, so please look forward to it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Umm, don't mind that. Anyway I have a chore for you. <FONT color=#7e12d2>(Deckard starts to look into some paper bunches. Let's avoid him.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>
+Umm? Did I tell you before? By the way, I have a paper for you... well, here it is... no, it's disappeared. If you come back later, I'll give it to you. <FONT color=#7e12d2>(Deckard plays at being innocent.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Perhaps too many soldiers who followed Dark Elf Elena left here. I'm worried that monsters would attack this place.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 9103, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 200 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 24, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="b">2,3,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="c">4,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="d">5,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 최근의 관심사에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>24:3000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

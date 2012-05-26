@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n308_migratory_harpy</npcename>
+      <npcid>308</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Migratory Bird Harpy]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Migratory Bird Harpy$<BR>Get out of my way! I'm late as it is!<BR>I don't want to wait till next year for my holiday.<BR> </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq08_357_clearance_sale2</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">357</chk>
+      </conditions>
+   </talk>

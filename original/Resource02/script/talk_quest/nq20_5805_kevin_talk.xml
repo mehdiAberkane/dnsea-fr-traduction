@@ -1,0 +1,106 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq20_5805_kevin_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5805</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc>NPC 호감도 조건
+
+29 : NPC No
+45% : 호감도 최대치의 %
+-1 : 고정
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Favorite Food]]></qkname>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-a" mid="7"><![CDATA[<html>Meat that can be digested easily.</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-d" mid="8"><![CDATA[<html>I'm on a diet...</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-f" mid="9"><![CDATA[<html>Pie crumbs.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Kevin$<BR>Meat Pie! Meat Pie is the best!! Hehe. Wine Priestess of Darkness Miok is good too, but...<BR>Meat Pie is still what I loves!! There's nothing better than meat that can be digested easily.<BR>How about you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-b" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Kevin$<BR>Meat, meat that can be digested easily~ <BR>It's really really nice to have that warm, juicy bite on a meat pie!<BR><FONT color=#7e12d2>(Kevin seems happy to just imagine about it.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-c" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Kevin$<BR>Ah, do you think the rumor is for real?<BR>You know, Merchant May's Special Meat Pie? They are saying that it's not made out of meat, in fact...<BR><FONT color=#7e12d2>(Kevin looks around)</FONT> It's actually made out of Spitting Flowers smuggled from Saint Haven! Isn't that shocking?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-c" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Kevin$<BR>What if the rumor is true? Is it safe to eat? Spitflower... <BR><FONT color=#7e12d2>(Kevin looks quite worried.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-e" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Kevin$<BR>On diet?! <FONT color=#7e12d2>(Kevin looks at you.)</FONT><BR>But, why do you need to?! Look at those muscles on your waist! Muscles!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-e" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Kevin$<BR>How could you go on a diet when there are such a lot of delicious foods in the world? Just try it once~ <BR>Meat Pies!<BR><FONT color=#7e12d2>(Kevin starts to praise the Meat Pie.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-f" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Kevin$<BR>Erm, that's nice too, but...<BR>Why not eating an actual pie? You'll look so poor when you eat the pie crumbs with your fingers.<BR><FONT color=#7e12d2>(Kevin gives you the pity look.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>1. 호감도 300상승
+2. 비호감도 30상승
+3. 호감도 -150하락</comment>
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5805, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 29, 300 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 29, 30 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 29, -150 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="d">2,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="f">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 좋아하는 음식" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>29:5250:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

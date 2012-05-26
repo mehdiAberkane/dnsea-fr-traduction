@@ -1,0 +1,210 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_362_unexpected_result</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>362</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>상금 주머니	400289
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Unexpected]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Event Planner Irine$<BR>The results of the Art Contest organised by the royal family will be announced soon.<BR>Good luck to all!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html> What happened? </html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR> <FONT color=#7e12d2>(May seems vaguely irritated)</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html> Oh, yeah? </html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>Well, today is the announcement of the results for the Royal Art contest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>Don't pin your expectations too high...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant May$<BR>Spoken like a true idiot. <BR> I'm so nervous that I'm going to die.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="13"><![CDATA[<html>Oh…really...</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant May$<BR>WHAT?!<BR><FONT color=#7e12d2>(May suddenly screams)</font>.<BR>Huff, of course I know you are my slave. But you can't calm me down either...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="15"><![CDATA[<html>Stop calling me a slave!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant May$<BR>So my slave, <FONT color=#387206>{user_nick}</font>, I want you to go to Irine and find out more about the results.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Unexpected$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(May did not hear a word)</font> <BR>Come on! Go to Irine and find out about the contest results.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="20"><![CDATA[<html>Yes. So did May win anything for her artwork?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Event Planner Irine$<BR>Ah, are you here for the contest result?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-b" mid="22"><![CDATA[<html>Huh?  She won a prize?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Event Planner Irine$<BR><FONT color=#7e12d2>(Irine embarrassed smile)</font> <BR> Yes, she did win a prize.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-b" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-c" mid="24"><![CDATA[<html>So…what did she win?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Event Planner Irine$<BR><FONT color=#7e12d2>(Irine gives a perplexed look)</font><BR>Well, she didn't win a prize for painting...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-d" mid="26"><![CDATA[<html>Not for painting….what do you mean?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Event Planner Irine$<BR>The contest consist of Fashion Design and Pattern Design competition. Her entry was exhibited in the <FONT color=#a82424>Fashion Design</font> .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-d" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-e" mid="28"><![CDATA[<html>I see…so congratulations to her?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Event Planner Irine$<BR>Yes, it would not stand a chance in the other category. <BR><FONT color=#7e12d2>(Irine smiles apologetically)</font>.<BR>The shocking color combination and patterns in her work has garnered high appraisals from the judges.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-e" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2" mid="30"><![CDATA[<html> (Receives award) </html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Event Planner Irine$<BR> <FONT color=#387206>{user_nick}</font> , you should go and deliver this news to May and her prize money as well.<FONT color=#7e12d2>(Irine nods)</font>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Event Planner Irine$<BR>May will be happy with the news. <FONT color=#7e12d2>Go and share the news with May)</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="33"><![CDATA[<html>Well, you did win. </html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Merchant May$<BR>How? Am I the grand winner?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="QN_Event_Red.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="35"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(Explain to May about what Irine did to her entry)</font>. <BR> Irine submitted my artwork to the Fashion Design Competition?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="37"><![CDATA[<html>Don't be too upset.../html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Merchant May$<BR> <FONT color=#7e12d2>(May hangs her head and shoulders started to shake)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="39"><![CDATA[<html> (This is making me feel bad) </html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Merchant May$<BR>Upset?<BR><BR> <FONT color=#7e12d2>(May suddenly look up beaming.)</font> <BR> Finally! My fashion sense is being appreciated by the world. I have always dream that this day will come.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-e" mid="41"><![CDATA[<html>(May grabs the prize from you.)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Merchant May$<BR>Give me my prize winning! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-f" mid="43"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-f" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Merchant May$<BR>Haha, now the world will learn about my talent! <BR> Wait and see! <BR> <FONT color=#7e12d2></font></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3621,3622,3623,3624,3625</exe>
+         <exe type="setquest">362</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400289</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3621,3622,3623,3624,3625</exe>
+         <exe type="complete">362</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="c" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="d" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="e" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d" />
+   <exelink qstep="2" npc="n026_trader_may" sub="e">0</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="f">1,2</exelink>
+   <journal_data recompense="1:3621,2:3622,3:3623,4:3624,5:3625" quest_title="예상밖의 성과" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="400289&#xD;&#xA;">
+      <journal index="1">
+         <contents_image>QN_Npc_NPC_EventRed.dds</contents_image>
+         <destination_pos>8,n100</destination_pos>
+         <destination_mode>custom:21@0,13014@0,2@0,3@0,6@0,7@0,4@0,9@0,10@0,12@0,13@0,24@0,1@4,5@4,8@4,11@4,13601@2,13602@2</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Talk to Event Planner Irine]]></title>
+         <contents mid="46"><![CDATA[<html>Find out the art contest result from <FONT color=#a82424>Irine</FONT> at Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Event Planner Irine</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Talk to Event Planner Irine]]></destination>
+         <todo_msg mid="48"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="50"><![CDATA[<html>Tell May that she won a prize in the contest.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="52"><![CDATA[Talk to Merchant May.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>361</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

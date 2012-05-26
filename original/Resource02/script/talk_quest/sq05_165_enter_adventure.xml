@@ -1,0 +1,143 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_165_enter_adventure</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>165</qid>
+      <designer>김인정</designer>
+      <qlevel>8</qlevel>
+      <qdesc>모험자 길드원과 대화
+길드 게시판과 대화</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Guild Introduction]]></qkname>
+      <qnpc>
+         <npcid>342</npcid>
+         <npcename>n342_guild_gorden</npcename>
+         <npckname>모험자 길드원 고든</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>400</npcid>
+         <npcename>n400_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html> {ui_string: 1200001} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html> {ui_string: 1200002} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html> {ui_string: 1200003} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> {ui_string: 1200004} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html> {ui_string: 1200005} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-accepting" image="" itemindex="">
+      <talk_answer link_index="n342_guild_gorden-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Member Gordon$<BR><FONT color=#382000>{user_class} {user_nick}</FONT><BR>How's life as an adventurer so far?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n342_guild_gorden-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Member Gordon$<BR>As an adventurer, from time to time you will feel lost. It's called <FONT color=#a82424>adventurer</FONT> <FONT color=#a82424>slump</FONT>, it's quite common actually.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n342_guild_gorden-accepting-c" mid="10"><![CDATA[<html>How to accept Quest?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Member Gordon${action:Talk}<BR>You can try taking <FONT color=#a82424>commissions</FONT> from the <FONT color=#a82424>Adventurer's Guild Commission Board</FONT>. Our commission postings are concise so it should not cause any confusion at all.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-accepting-c" image="QW_BlizzardPlain.dds" itemindex="">
+      <talk_answer link_index="n342_guild_gorden-accepting-d" mid="12"><![CDATA[<html>What are Guild Commission?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Member Gordon$<BR>In the areas outside of town that connect to various dungeons, you'll be able to find the <FONT color=#a82424> Adventurer's Guild Commission Board </FONT>. Nearest you can find are in <FONT color=#a82424>Blizzard Plain</FONT>. There are boards by the <FONT color=#a82424>Secret Path</FONT> and the <FONT color=#a82424>Silent Monastery Gate</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n342_guild_gorden-accepting-e" mid="14"><![CDATA[<html> Okay. </html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Member Gordon$<BR>From the  Adventurer's Guild Commission Board, you can choose jobs that  <FONT color=#a82424>suit your skills</FONT> from the various postings. Our varity of Quests range from slaying monsters to finding lost kittens. Sometimes Adventurer's Guild Commission Board may have <FONT color=#a82424>secret quest</FONT> hidden in them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n342_guild_gorden-accepting-f" mid="16"><![CDATA[<html>Alright, will do so.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Member Gordon${action:Talk}<BR>Upon <FONT color=#a82424>completetion of all listed quest</FONT> on a Board, a secret quest may appear. Of course, which Boards has it, is a mystery. You have to try it yourself if you are interested.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-accepting-f" image="QS_Default.dds" itemindex="300227">
+      <talk_answer link_index="n342_guild_gorden-accepting-g" mid="18"><![CDATA[<html> Alright. </html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Adventurer's Guild Member Gordon$<BR>Oh, while heading towards that direction, can you do me a favor? I have a <FONT color=#a82424>Beginner Adventurer Commission</FONT>. Can you post this on the Guild Commission Board?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n342_guild_gorden-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Guild Introduction$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n342_guild_gorden-1" image="QW_BlizzardPlain.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Member Gordon${action:Talk}<BR>Great. Please go to the <FONT color=#a82424>Guild Commission Board</FONT> located near the <FONT color=#a82424>Secret Path</FONT>. There's no need to report back once you are done.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-1" image="QN_guild_board.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-1-a" mid="23"><![CDATA[<html>(Posting quest form.)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR><FONT color=#7e12d2>(Different commission forms are found posted here and there. Seems forms have been teared off, and some have been doddled on.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-1-a" image="" itemindex="">
+      <talk_answer link_index="n400_guild_board-1-b" mid="25"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-1-b" image="QS_Default.dds" itemindex="300227">
+      <talk_question mid="26"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR><FONT color=#7e12d2>(You post the Beginner Adventurer Commission. Looking at the Board, you see some commissions you are able to accept. Take a look at the Board again if you want a commission.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,1651,1651,1651,1652,1653</exe>
+         <exe type="setquest">165</exe>
+         <exe type="talk" npc="n342_guild_gorden">1</exe>
+         <exe type="addquestitem" num="1">300227</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,1651,1651,1651,1652,1653</exe>
+         <exe type="delquestitem" num="-1">300227</exe>
+         <exe type="complete">165</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n342_guild_gorden" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n342_guild_gorden" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n400_guild_board" sub="a">0</exelink>
+   <exelink qstep="1" npc="n400_guild_board" sub="b">1,2</exelink>
+   <journal_data recompense="3:1651,4:1652,5:1653" quest_title="모험자 입문" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="300227">
+      <journal index="1">
+         <contents_image>QN_guild_board.dds</contents_image>
+         <destination_pos>7,n400</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>400</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[Introduction to the Guild]]></title>
+         <contents mid="29"><![CDATA[<html>Attach the commission to the Adventurer's Guild Commission Board outside the <FONT color=#a82424>Secret Path</FONT>.<BR> <BR><FONT color=#086171>Blizzard Plain</FONT> <FONT color=#a82424>→Secret Path</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[Check the Guild Commission Board for the Secret Path]]></destination>
+         <todo_msg mid="31"><![CDATA[Go to the Guild Commission Board for the Secret Path.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>8:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3:4:5</user_class>
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

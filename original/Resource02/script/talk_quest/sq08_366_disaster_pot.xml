@@ -1,0 +1,350 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_366_disaster_pot</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>366</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Disaster Crock]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR>I think Deckard wanted to buy the Sapphire Crock badly. He took it home to see if it fits into the décor and insisted that I've already sold it to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-noquest" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Master Cleric Jermain$<BR>Hmm, I'm having bad toothache lately. I've always been thorough with my dental care, how strange this is. Oh, Adventurer's Guild Master Deckard has been looking for you. Did he find you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-noquest" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Tiana$<BR>I'll be pretty busy with the Supermodel Contest, so don't bother me. If you feel bored, find that old man with the mustache to play with.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="9"><![CDATA[<html>Care to explain?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>I'm in deep trouble!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="11"><![CDATA[<html>What is gone?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>It's gone!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="QS_Default.dds" itemindex="300315">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="13"><![CDATA[<html>What's that?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>The Sapphire Crock!<BR><FONT color=#7e12d2>(Sounds familiar)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="15"><![CDATA[<html>Huh?!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>That thing is  cursed!<BR>It brings fortune to the owner, but brings mishap to others.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="17"><![CDATA[<html>(A scream is heard out of nowhere.)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>That's the reason why I must find it at once...<BR>(A handful of Deckard's hair falls out.)<BR>Huh! What's this? NOOOOOOOOO!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Disaster Crock$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="21"><![CDATA[<html>Er… I'm not sure?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>I just heard a loud scream. Who was that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Sounded like Master Sorceress Tiana?<BR>Something terrible must have happened, please check it out.<BR><FONT color=#7e12d2>(Have a bad feeling about this.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Merchant May$<BR>I seem to be very lucky lately!<BR>I was cleaning up the store yesterday, and I discovered an old coin. It turns out to be a very valuable antique coin!<BR> <FONT color=#7e12d2>(Happily cleaning the antiques.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Cleric Jermain$<BR>(Kept quiet with a stern look.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-a" mid="26"><![CDATA[<html>What's the big deal?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Master Sorceress Tiana$<BR>My goodness, what's that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-b" mid="28"><![CDATA[<html>Heck, it's just a minor pimple?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Sorceress Tiana$<BR>My... My face... PIMPLE!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-c" mid="30"><![CDATA[<html>And what about training Sorceresses?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Sorceress Tiana$<BR>A minor pimple?! A pimple on my taintless face, and you say it's minor?! Oh no... What should I do to enter the Supermodel Contest?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-1-d" mid="32"><![CDATA[<html>How irresponsible are you?!</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Sorceress Tiana$<BR>Ha, I'm not the only trainer in the world! They can pickup the skills from <FONT color=#a82424>Cynthia</FONT> or <FONT color=#a82424>Stella</FONT> or someone else! Or better still, study on their own! Slackers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2" mid="34"><![CDATA[<html>You know, Jermain is right there, listening.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Master Sorceress Tiana$<BR>Shut up! I am depressed because of the <FONT color=#a82424>pimple</FONT> to my taintless face. For that, I can be a little irresponsible!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Master Sorceress Tiana$<BR>That Cleric doesn't bother me. He's been sulking in silent since yesterday. <FONT color=#7e12d2>(Keep in mind that Master Cleric Jermain is unusually quiet.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="37"><![CDATA[<html>Well, what happened to you?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Cleric Jermain$<BR>(Jermain holds his chin and did not say anything.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="39"><![CDATA[<html>That's why you need to brush regularly.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Cleric Jermain$<BR><FONT color=#7e12d2>(Jermain hesitates for a long time before he start speaking with his hand covering his mouth.)</FONT><BR>Sorry... but my teeth hurts...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-c" mid="41"><![CDATA[<html>Woot! You tooth fell out?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Master Cleric Jermain$<BR>I do of course! But when I was brushing yesterday, one of my teeth fell out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-d" mid="43"><![CDATA[<html>Hmm, is it due to the Sapphire Jar?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Cleric Jermain$<BR>I have been suffering from the toothache all these whiles and it seems to get worst.<BR>Somehow, <FONT color=#a82424>the whole town</FONT> is full of sick and injured people lately.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-d" image="QS_Default.dds" itemindex="300315">
+      <talk_answer link_index="n034_cleric_master_germain-2-e" mid="45"><![CDATA[<html>Yes, May wanted it.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Cleric Jermain$<BR>The Sapphire Jar?!<BR>What do you mean?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-e" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3" mid="47"><![CDATA[<html>(Jermain screaming with his missing teeth)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Master Cleric Jermain$<BR>What?! My master tried to seal it in the Forest of Death, yet you brought it back for May?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Master Cleric Jermain$<BR>Now, the disaster is just minor, but soon, they will turn into calamities! Quick, get the jar back from May!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="50"><![CDATA[<html>Jermain needs the Sapphire jar.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Merchant May$<BR>Hi <FONT color=#387206>{user_nick}</font>!<BR><FONT color=#7e12d2>(May seems very happy)</font><BR>What brings you here today?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="52"><![CDATA[<html>I did try that.</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Merchant May$<BR>What? Out of the question! I have been working hard to get this!<BR>How can Jermain be so selfish!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="QS_Default.dds" itemindex="300315">
+      <talk_answer link_index="n026_trader_may-3-c" mid="54"><![CDATA[<html>(May insisted)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Merchant May$<BR>SHOO! Good things happened to me ever since I possess this jar! You can't expect me to let it go just like that!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="56"><![CDATA[<html>Did you know about the Supermodel Competition? I heard it's opened for registration!</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Merchant May$<BR><BR><FONT color=#7e12d2>(You saw Socceress Tiana who was a challenger of the Supermodel Competition, and you recall the Supermodel Competition.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-e" mid="58"><![CDATA[<html>But, it would be a good opportunity to show your beauty and talent.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Merchant May$<BR>Not that I would care. Fashion and other shallow pursuits is no longer what I concerned. I just want to be an <FONT color=#a82424>intelligent and elegant</FONT> woman. (May strokes the jar.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-e" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-f" mid="60"><![CDATA[<html>It would be a loss for all humanity.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Merchant May$<BR>Erm, that seems right. <FONT color=#7e12d2>(May start to look a little interested)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-g" mid="62"><![CDATA[<html>The world of fashion needs you!</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Merchant May$<BR>Well, <FONT color=#a82424>the benefit of mankind</FONT> is important, but my personal pursuits are important too! Please don't blame me for being selfish...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-g" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-h" mid="64"><![CDATA[<html>Yes! But, you'll need to dump the Sapphire Jar, right?</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Merchant May$<BR>(May wiped her tears.)<BR>That's so true! I can't just buried my beauty and talents!<BR>Alright! I have decided to enter the Supermodel Competition!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-h" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-i" mid="66"><![CDATA[<html>You should win the contest base on solely your own beauty and not the luck it brings you!</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Merchant May$<BR>Why? That's expensive stuff.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-i" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-4" mid="68"><![CDATA[<html>(May hands you the Sapphire Jar.)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Merchant May${action:Talk}<BR><FONT color=#7e12d2>(May seems to have a soft ear)</FONT><BR>OF COURSE! My image is the most important!<BR>Here, take and dump this!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="69"><![CDATA[<html>$Merchant May$<BR>Argh, that's dirty! Take that away now!<BR>(May flipping an issue of "Fashion Goddess" which seems like an issue of 10 years ago.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4" image="QS_Default.dds" itemindex="300315">
+      <talk_answer link_index="n034_cleric_master_germain-5" mid="71"><![CDATA[<html>(Hands the jar over)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Master Cleric Jermain$<BR>Did you bring the Sapphire Jar?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-5" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-5-a" mid="73"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Master Cleric Jermain$<BR><FONT color=#7e12d2>(Jermain speaking with his missing teeth)</font> <BR>Now, this has to be taken back to the Forest of Death...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-5-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-5-b" mid="75"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-5-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>I got a funny feeling that this jar is kind of cursed.<BR> It seems to bring <FONT color=#a82424>disaster</font> to the Calderock Village…<BR>(Jermain accepted but cannot help feeling that way)</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3661,3662,3663,3664,3665</exe>
+         <exe type="setquest">366</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">300315</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="delquestitem" num="-1">300315</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3661,3662,3663,3664,3665</exe>
+         <exe type="complete">366</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="1" npc="n035_soceress_master_tiana" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="e" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d" />
+   <exelink qstep="3" npc="n026_trader_may" sub="e" />
+   <exelink qstep="3" npc="n026_trader_may" sub="f" />
+   <exelink qstep="3" npc="n026_trader_may" sub="g" />
+   <exelink qstep="3" npc="n026_trader_may" sub="h" />
+   <exelink qstep="3" npc="n026_trader_may" sub="i" />
+   <exelink qstep="3" npc="n026_trader_may" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n034_cleric_master_germain" sub="a">0</exelink>
+   <exelink qstep="5" npc="n034_cleric_master_germain" sub="b">1,2</exelink>
+   <journal_data recompense="1:3661:,2:3662,3:3663,4:3664,5:3665" quest_title="재난 단지" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="300315">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Tiana's Scream]]></title>
+         <contents mid="78"><![CDATA[<html>Find out why Master Sorceress Tiana has screamed.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="80"><![CDATA[Quest has been added..]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Talk to Master Cleric Jermain]]></title>
+         <contents mid="82"><![CDATA[<html>Talk to Master Cleric Jermain.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Talk to Master Cleric Jermain]]></destination>
+         <todo_msg mid="84"><![CDATA[Talk to Master Cleric Jermain.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="86"><![CDATA[<html>Try to get back the Sapphire Jar from May.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT><BR> <BR> </html>]]></contents>
+         <destination mid="87"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="88"><![CDATA[Talk to Merchant May.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="89"><![CDATA[Talk to Master Cleric Jermain]]></title>
+         <contents mid="90"><![CDATA[<html>Bring the Sapphire Jar to Master Cleric Jermain.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT><BR> <BR> </html>]]></contents>
+         <destination mid="91"><![CDATA[Talk to Master Cleric Jermain]]></destination>
+         <todo_msg mid="92"><![CDATA[Talk to Master Cleric Jermain.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>365</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

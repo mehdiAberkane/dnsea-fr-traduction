@@ -1,0 +1,165 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_526_talisman_kid</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>526</qid>
+      <designer>김인정</designer>
+      <qlevel>26</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Talisman Kid]]></qkname>
+      <qnpc>
+         <npcid>49</npcid>
+         <npcename>n049_sainthaven_kid</npcename>
+         <npckname>까치머리 꼬마</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-a" mid="6"><![CDATA[<html>Nope nothing like that!</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Messy-haired Kid$<BR>Hey~You again! Unsatisfied Adventurer!!<BR>You are  running around  <FONT color=#a82424>Saint Haven</FONT>because of job?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-b" mid="8"><![CDATA[<html>What promise?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Messy-haired Kid$<BR>Hey~What~It says on your face!! Haha. <BR>Don't be like that. Would you do me a favor?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-c" mid="10"><![CDATA[<html>And?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Messy-haired Kid$<BR> After hearing <FONT color=#a82424>Royal Guard Ray</FONT> 's story , they are bringing in guards from far away!<BR>There is going to be a  <FONT color=#a82424>war</FONT>!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-d" mid="12"><![CDATA[<html>a charm?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Messy-haired Kid$<BR>Actually I am friendly with  <FONT color=#a82424>Roy</FONT> . So I want him to not get hurt and come back. Haha.<BR>With that thought I want to make him a  <FONT color=#a82424>talisman</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-d" image="QN_Sonya.dds" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-e" mid="14"><![CDATA[<html>(It sounds like a superstition, but it might help to calm the mind….)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Messy-haired Kid$<BR>It is said that from the <FONT color=#a82424>Deserted Island</FONT>'s <FONT color=#a82424>Lizardman</FONT> tail, you will not get hurt if you keep it inside your clothes!  <FONT color=#a82424>Merchant Kelly </FONT> told me this. Hehe. I promise you~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-f" mid="16"><![CDATA[<html>Okay. I'll do it.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Messy-haired Kid$<BR>So I want you to bring me back Lizardman's <FONT color=#a82424>tail</FONT>to use as a talisman! For Roy and the other men~! I will reward you with what I have.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-accepting-accepted" mid="18"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Talisman kid$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-1" image="QW_30.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Messy-haired Kid$<BR>It is the<FONT color=#a82424>Deserted Island</FONT>'s <FONT color=#a82424>Lizardman</FONT>!  Bring me back <FONT color=#a82424>30</FONT> tails.<BR>More than that…hmm.. Well I can't afford to give you more above that…He.He.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-a" mid="21"><![CDATA[<html>I am not going to lower the price even if you say that!</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Messy-haired Kid$<BR>Wow~ you look handsome but you work really hard!<BR>I can promise you, adventurer you will become a huge hero! I promise you~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-a" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-b" mid="23"><![CDATA[<html>(The kids searches the pocket and gives something)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Messy-haired Kid$<BR>…What a cheap guy...<BR>Well, a promise is a promise. Here is the reward I promised!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-b" image="" itemindex="">
+      <talk_answer link_index="n049_sainthaven_kid-2-c" mid="25"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n049_sainthaven_kid-2-c" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Messy-haired Kid$<BR>If I take this Lizardman tail, Uncle Roy and others will safely come back. Hehe. Certainly right?<BR>
+<FONT color=#7e12d2>(Kids eye sparkle with hope)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5261,5262,5263,5264,5265</exe>
+         <exe type="setquest">526</exe>
+         <exe type="talk" npc="n049_sainthaven_kid">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">864</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400104</exe>
+         <exe type="huntitem" num="30" exe="4,5,6" onexe="">400104</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200864</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5261,5262,5263,5264,5265</exe>
+         <exe type="complete">526</exe>
+         <exe type="delquestitem" num="-1">400104</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n049_sainthaven_kid" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n049_sainthaven_kid" sub="accepted">1,3,9,8,2</exelink>
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="b">0</exelink>
+   <exelink qstep="2" npc="n049_sainthaven_kid" sub="c">2,1</exelink>
+   <journal_data recompense="1:5261,2:5262,3:5263,4:5264,5:5265" quest_title="어린 믿음" chapterid="" quest_level="26" quest_mark_type="10" use_item_list="400104">
+      <journal index="1">
+         <contents_image>QW_30.dds</contents_image>
+         <destination_pos>301,0,0</destination_pos>
+         <destination_mode>custom:301@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Talisman Kid]]></title>
+         <contents mid="28"><![CDATA[<html>Messy-haired Kid is planning to make a talisman for a close guard. Find<FONT color=#a82424>Deserted island</FONT>'s <FONT color=#a82424>Lizardman </FONT>and collect 30 tails<BR>
+<BR><FONT color=#086171>Hermarte Port(ship to deserted island)</FONT> <FONT color=#a82424>→ Deserted island</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Collect  Lizardman tail at a  Deserted Island]]></destination>
+         <todo_msg mid="30"><![CDATA[Give the Lizardman tail to Messy-haired Kid]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_boy_tei.dds</contents_image>
+         <destination_pos>11,n49</destination_pos>
+         <destination_mode />
+         <statemark_npcid>49</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Hope of the Kid]]></title>
+         <contents mid="32"><![CDATA[<html><FONT color=#a82424>body</FONT><FONT color=#a82424> lizardman tail</FONT>are collected. Give it to Messy-haired Kid of Saint Haven.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> →Messy-haired Kid</html>]]></contents>
+         <destination mid="33"><![CDATA[Talk with Talisman Kid]]></destination>
+         <todo_msg mid="34"><![CDATA[Give the Lizardman tail to Messy-haired Kid]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>26:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>457</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

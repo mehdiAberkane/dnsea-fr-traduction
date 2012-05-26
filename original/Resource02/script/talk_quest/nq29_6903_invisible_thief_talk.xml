@@ -1,0 +1,115 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq29_6903_invisible_thief_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6903</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Sorceress]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Invisible Thief$<BR>Ah~ Those pretentious women, no one is more calculative than them!!!<BR>It's really irritating! In the first place, men should be allowed to learn magic, and I'll not end up iin this state!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-b" mid="11"><![CDATA[<html><FONT size=2 face=Arial>Er.. There must be some reason to it...</FONT></html>]]></talk_answer>
+      <talk_answer link_index="n255_invisible_thief-accepting-e" mid="12"><![CDATA[<html>But, it's still a wrong thing to be thief.</html>]]></talk_answer>
+      <talk_answer link_index="n255_invisible_thief-accepting-h" mid="13"><![CDATA[<html>Dreams will come true</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Invisible Thief$<BR>Long long long ago, there wasn't just woman disciples that the Wise had. But why?!! Now only the women!!<BR>Oww~That's maddening!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-c" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Invisible Thief$<BR>This is how you think? There's some reason to it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-d" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Invisible Thief$<BR>… This is not some non-fiction novel, reason, what kind of damn reason?<BR>Heck.<FONT color=#7e12d2> (He snares.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-d" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Invisible Thief$<BR>If there's really some reason, I would very much want to know. You are really forgiving, ain't you?<BR><FONT color=#7e12d2> (Invisible Thief starts to get unhappy)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-f" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Invisible Thief$<BR>Ah~ Who doesn't know that? But I'm no ordinary thief.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-g" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Invisible Thief$<BR>I'm an artist with a thief's title!! You know? Successing the Phantom Thief Shupin's will to make theft an art… Erm? So is this the reason?<BR><FONT color=#7e12d2>(Invisible Thief goes into confusion)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-g" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Invisible Thief$<BR>Recently, I feel so tired, not doing much stealing. Anyway, there's nothing here for me to steal isn't it?<BR><FONT color=#7e12d2>(Invisible Thief seems to be unhappy)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-i" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Invisible Thief$<BR>Re…Really? Heh heh.<BR>Since you said that, it seems really the case… right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-j" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Invisible Thief$<BR>I'll ultimately return to my original body and become a sorcerer right?<BR>Erm… But, it's better still to succeed Phantom Thief's will.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-j" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Invisible Thief$<BR>Isn't there a way that could kill two birds with one stone? Hehehe.<BR><FONT color=#7e12d2>(Invisible Thief seems to happier now)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6903, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 255, 20 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 255, 10 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 255, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="b">1,0</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="e">2,0</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="h">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 소서리스" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>255:3000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

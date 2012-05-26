@@ -1,0 +1,24 @@
+   <talk>
+      <npcename>n249_saint_guard</npcename>
+      <npcid>249</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Royal Guard Roy]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Royal Guard Roy$<BR>The safety of Saint Haven is now in our hands. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="sq11_471_for_mama.xml"><![CDATA[<html><FONT color=#2b2723>[Lv.29] </FONT><FONT color=#086171>For Mother</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="sq11_512_best_medicine.xml"><![CDATA[<html><FONT color=#2b2723>[Lv.30] </FONT><FONT color=#086171>The Best Elixir</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="sq11_509_strange_asking2.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Strange Request II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="sq11_576_in_a_dilemma.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>The Dilemma</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="sq11_578_brand.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171>Brand Mark</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="sq11_577_second_informer.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171>The Second Informant</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="42"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Royal Guard Roy$<BR>Do your duty, and spread the stories of your courage.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

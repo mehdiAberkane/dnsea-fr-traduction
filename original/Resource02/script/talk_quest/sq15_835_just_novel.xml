@@ -1,0 +1,199 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_835_just_novel</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>835</qid>
+      <designer>김인정</designer>
+      <qlevel>46</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>836</nextqid>
+      <nextqname>sq15_836_opening_is_like_that</nextqname>
+      <nextqnpc>n711_warrior_fedro</nextqnpc>
+      <qkname mid="1"><![CDATA[Just Novel]]></qkname>
+      <qnpc>
+         <npcid>711</npcid>
+         <npcename>n711_warrior_fedro</npcename>
+         <npckname>상급 워리어 페드로</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting" image="QW_56.dds" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Warrior Pedro$<BR>Well. I heard that in<FONT color=#a82425>West Ancient Armory</FONT>, there is Teorbo the Lightening….<BR>But I couldn't find it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Just Novel$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1" image="QN_Npc_Lotus_WarriorFedro.dds" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-1-a" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Warrior Pedro$<BR>This old book that you took here… is.<BR>Not about Teorbo the Lightening unfortunately.<BR><FONT color=#7e12d3>(Pedro can't let his eyes out of the book)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1-a" image="QW_56.dds" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-2" mid="43"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Warrior Pedro$<BR>But I can't give up. There must be something in <FONT color=#a82425>West Ancient Armory</FONT> that you missed. I want you to go there and search more carefully again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-2" image="QN_Npc_Lotus_WarriorFedro.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Master Warrior Pedro$<BR>The information that I got wouldn't be wrong. So Teorbo the Lightening must be around<FONT color=#a82424>West Ancient Armory</FONT>.<BR><FONT color=#7e12d3>(Pedro looks at the book again with a determined look)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3" image="QN_Npc_Lotus_WarriorFedro.dds" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-a" mid="48"><![CDATA[<html>(Peek at the book)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Warrior Pedro$<BR>Hmm. Wow… Oh! This plot!!<BR>
+<FONT color=#7e12d3>(Master Warrior Pedro's concentrating on the book)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-a" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-b" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Old Book's Plot$<BR><FONT color=#a82424>……</FONT><FONT color=#a82424>The man with a dazzling blond hair grabs her hands slowly..</FONT><BR>
+<FONT color=#a82425>He was totally exhausted after a battle as his blood-soaked sword.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-b" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-c" mid="52"><![CDATA[<html>(It sounds like a love story)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Old Book's Plot$<BR><FONT color=#a82424>Kara's heart starts beating fast.</FONT><BR>
+<FONT color=#a82425>She closed her eyes as he comes closer to her. At that moment……</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-c" image="QN_Npc_Lotus_WarriorFedro.dds" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-d" mid="54"><![CDATA[<html>I just came here.</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Master Warrior Pedro$<BR>What the!!! Who tore off the other pages?!<BR><FONT color=#7e12d2>(Pedro didn't notice that {user_nick} is around him)<BR></FONT>Huh? <FONT color=#387207>{user_nick}</FONT>? When did you back?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-d" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-e" mid="56"><![CDATA[<html>I don't think there is the arm.</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Master Warrior Pedro$<BR>Haha, you've been there fast.<BR>Have you found Teorbo the Lightening?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-e" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-f" mid="58"><![CDATA[<html>(Pedro looks like he already gave up)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Master Warrior Pedro$<BR>Okay, well done.<BR>
+It seems there's nothing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-f" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-g" mid="60"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-3-g" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-3-!next" mid="62"><![CDATA[<html>(He's suspicious)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Master Warrior Pedro$<BR>Rather, hmm… the old book that you found…. I want to research on the book.<BR>Hmm, it's a little bit suspicious so don't get me wrong.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8350,,,,,</exe>
+         <exe type="setquest">835</exe>
+         <exe type="talk" npc="n711_warrior_fedro">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="checkStageClearRank" rand="6" num="563" onexe="3,4,5" true="[=" xsi:nil="true" />
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8350,,,,,</exe>
+         <exe type="complete">835</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n711_warrior_fedro" sub="2">0,1,2</exelink>
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="b" />
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="c" />
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="d" />
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="e" />
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="f">0</exelink>
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="g">1</exelink>
+   <exelink qstep="3" npc="n711_warrior_fedro" sub="!next" />
+   <journal_data recompense="8350" quest_title="그것은 그냥 소설" chapterid="" quest_level="46" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lotus_WarriorFedro.dds</contents_image>
+         <destination_pos>15,n711</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>711</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Tenacity]]></title>
+         <contents mid="65"><![CDATA[<html>Master Warrior Pedro's looking for Teorbo the Lightening. Let's talk with him.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Warrior Pedro</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk with Master Warrior Pedro]]></destination>
+         <todo_msg mid="67"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>563,0,0</destination_pos>
+         <destination_mode>custom:561@1,562@1,563@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Once Again]]></title>
+         <contents mid="69"><![CDATA[<html>Master Warrior Pedro asked me to search to West Ancient Armory again.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ West Ancient Armory</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Search to West Ancient Armory]]></destination>
+         <todo_msg mid="71"><![CDATA[Search to West Ancient Armory once again.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lotus_WarriorFedro.dds</contents_image>
+         <destination_pos>15,n711</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>711</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Nothing]]></title>
+         <contents mid="73"><![CDATA[<html>In West Ancient Armory, there's no Teorbo the Lightening. Go back to Lotus Marsh's Master Warrior Pedro.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Warrior Pedro</FONT></html>]]></contents>
+         <destination mid="74"><![CDATA[Talk with Master Warrior Pedro]]></destination>
+         <todo_msg mid="75"><![CDATA[Report to Master Warrior Pedro.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>46:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>834</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

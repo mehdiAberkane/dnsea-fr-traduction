@@ -1,0 +1,184 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_530_decayed_field2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>530</qid>
+      <designer>김인정</designer>
+      <qlevel>29</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Change II]]></qkname>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Archer Ithilien${action:talk}<BR>Elves don't forget anything, so all memories of the beautiful sceneries from ancient past are as clear as though those are scenes from yesterday.<BR>I don't know if it is a good thing to live with so much memories.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-a" image="QW_32.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-b" mid="8"><![CDATA[<html>(Master Archer Ithilien looks regretful.)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Archer Ithilien$<BR><FONT color=#a82424>River Ruins</FONT>... is a depressing name, isn't it? It was previously given a lovely name by the <FONT color=#a82424>Water Wisp/FONT>. Now, nobody remembers it anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Decayed Field II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QM_Ghoul_Gray.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-1-a" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Archer Ithilien$<BR>Elves and kind adventurers no longer stay in a place that is now ruins.<BR>But the lost spirits who have turned into <FONT color=#a82424>Ghoul</FONT> still linger there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2" mid="21"><![CDATA[<html>I understand.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Archer Ithilien$<BR>Let's lay the souls of those smelly and poisonous <FONT color=#a82424>Souls</FONT> to rest.<BR>Remaining in that place is not the best option for them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QW_32.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Archer Ithilien${action:talk}<BR>Return quickly after you have put 30 <FONT color=#a82424>Venomous Ghoul</FONT> to rest at <BR><FONT color=#a82424>River Ruins</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-a" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Master Archer Ithilien$<BR>Ah, you are back. You seem to be surrounded by the scent of a clear spring.<BR>
+It is just like the time when the <FONT color=#a82424>Water Wisp</FONT> was still alive……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-b" mid="28"><![CDATA[<html>I see, that's how it is.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Archer Ithilien${action:talk}<BR>Although I have lived longer than you, I don't feel that changes are always for the better.<BR>Sometimes I really envy those who have no knowledge of the wonders in the past.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-c" mid="30"><![CDATA[<html>(Master Archer Ithilien smiles.)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Archer Ithilien$<BR>However, I believe the memories deep in my heart hold their own meaning.<BR>To <FONT color=#a82424>the Elves</FONT>,  <FONT color=#a82424>Guardian</FONT>…. Is it also fate to watch over the changes?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-c" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-3-d" mid="32"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-3-d" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Master Archer Ithilien$<BR>Although there's no way to know if the future of this world will become better or turn worse, <BR>at the least, I who has ample <FONT color=#a82424>time</FONT>, I will stand watch here with hope.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">530</exe>
+         <exe type="recompense_view">,5301,5302,5303,5304,5305</exe>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n044_archer_master_ishilien-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5301,5302,5303,5304,5305</exe>
+         <exe type="huntmon" num="30" party="1" exe="4,5,6" onexe="">904</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200904</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 904);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5301,5302,5303,5304,5305</exe>
+         <exe type="complete">530</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n044_archer_master_ishilien" sub="2">1,7,2,3</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="c">0</exelink>
+   <exelink qstep="3" npc="n044_archer_master_ishilien" sub="d">1</exelink>
+   <journal_data recompense="1:5301,2:5302,3:5303,4:5304,5:5305" quest_title="변하는 것 Ⅱ" chapterid="" quest_level="29" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode />
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Ithilien's Invitation]]></title>
+         <contents mid="36"><![CDATA[<html>Master Archer Ithilien is seeking my help.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Speak with Master Archer Ithilien.]]></destination>
+         <todo_msg mid="38"><![CDATA[Accept Mission.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_32.dds</contents_image>
+         <destination_pos>324,0,0</destination_pos>
+         <destination_mode>custom:321@3,322@3,323@3,324@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[(Continue)]]></title>
+         <contents mid="40"><![CDATA[<html>Master Archer Ithilien feels pity for the lingering ghouls in the <FONT color=#a82424>River Ruins</FONT>. Let's put <FONT color=#a82424>Venomous Ghouls</FONT> to rest, as per her request.<BR><BR><FONT color=#086171>Hermalte Port (River Ruins)</FONT> <FONT color=#a82424>→ River Ruins</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Destroy the monsters at  River Ruins.]]></destination>
+         <todo_msg mid="42"><![CDATA[Put the Venomous Ghouls at River Ruins to rest.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode />
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Hope]]></title>
+         <contents mid="44"><![CDATA[<html>Completed the quest to destroy monsters at <FONT color=#a82424>River Ruins</FONT>. Report back to <FONT color=#a82424>Master Archer Ithilien</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Report to Master Archer Ithilien]]></destination>
+         <todo_msg mid="46"><![CDATA[Completed the mission. Report to Master Archer Ithilien.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>29:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>529</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

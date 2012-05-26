@@ -1,0 +1,255 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_357_clearance_sale2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>357</qid>
+      <designer>김주연</designer>
+      <qlevel>10</qlevel>
+      <qdesc>배달중인 가방	400252
+대금 주머니 400260</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Never Say Never II]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>308</npcid>
+         <npcename>n308_migratory_harpy</npcename>
+         <npckname>철새 하피</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n308_migratory_harpy-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Migratory Harpy$<BR>What is it? Is this the first time seeing a Harpy?<BR>I'm busy preparing to travel so go away.<BR><FONT color=#7e12d2>(Obtain quest by talking to Merchant May in Calderock Village.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html> What….?(Vaguely anxious) </html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(May's face is filled with joy) <BR></font>Hello my faithful delivery servant, {user_nick}! Good news!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html> I'm glad. </html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>I finally have customers who are interested in buying bags.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>That's good.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant May$<BR>But there is a problem. I have a customer who lives very faraway. It will be dangerious for a <FONT color=#a82424>gentle girl</font> like me to travel there. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="13"><![CDATA[<html>Yeah right, go on….</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant May$<BR>What? Haha, I must have heard you wrongly right?.<BR> <FONT color=#7e12d2>(May glares with scary eyes)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant May$<BR>My ears are kind of bad today and I'm hearing funny sounds.<BR>Anyway my customer lives in <FONT color=#a82424>Sigh Canyon</font>. There is a friendly atmosphere there. Go over there and deliver 30 bags to them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$A Strange Customer$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QW_14.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Merchant May$<BR>Go on and make the delivery to Sigh Canyon. The customers might be unusual but don't be surprised. Remember to collect the payment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n308_migratory_harpy-1" image="" itemindex="">
+      <talk_answer link_index="n308_migratory_harpy-1-a" mid="21"><![CDATA[<html>Oh! A harpy!</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Migratory Harpy$<BR>Oh! It's a human!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n308_migratory_harpy-1-a" image="" itemindex="">
+      <talk_answer link_index="n308_migratory_harpy-1-b" mid="23"><![CDATA[<html>No Way! My customer is a harpy?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Migratory Harpy$<BR><FONT color=#7e12d2>(The Harpy is jittery)</font><BR>So….you are the one selling bags?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n308_migratory_harpy-1-b" image="" itemindex="">
+      <talk_answer link_index="n308_migratory_harpy-1-c" mid="25"><![CDATA[<html>30 traveling bags, right?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Migratory Harpy$<BR>Hmmm, never seend a bag carrying Harpy before?<BR>Come one, just give me the 10 bags I ordered.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n308_migratory_harpy-1-c" image="" itemindex="">
+      <talk_answer link_index="n308_migratory_harpy-1-d" mid="27"><![CDATA[<html>But…you ordered 30 bags didn't you?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Migratory Harpy$<BR>What do you mean? I ordered <FONT color=#a82424>10</font> only.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n308_migratory_harpy-1-d" image="" itemindex="">
+      <talk_answer link_index="n308_migratory_harpy-1-e" mid="29"><![CDATA[<html>(You hand her 30 bags.)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Migratory Harpy$<BR>Woah…I only ordered 10.<BR> Are you trying to cheat me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n308_migratory_harpy-1-e" image="" itemindex="">
+      <talk_answer link_index="n308_migratory_harpy-2" mid="32"><![CDATA[<html>(You hand her only 10 bags.)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Migratory Harpy$<BR>Are you kidding me?<BR>You Cheat!<BR>This is the last time I'm believing in humans.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n308_migratory_harpy-2" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Migratory Harpy$<BR>Here is the money.<BR>I'm off travelling with my luggage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3" mid="35"><![CDATA[<html>Actually, only 10 bags were sold.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Merchant May$<BR>Everything ok?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="37"><![CDATA[<html>What's the problem?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Merchant May$<BR>Let's see how much is collected...<BR><FONT color=#7e12d2>(May looks in the pouch.)</font> <BR>Oh my gosh!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="41"><![CDATA[<html>What's inside?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Merchant May$<BR>Did you check what was inside when you receive it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="43"><![CDATA[<html>No I did not.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Merchant May${action:Angry}<BR>You stupid idiot! <BR><FONT color=#7e12d2>(May threw the pebbles at you)</font> <BR>I'm so dead. All my purchases are scammed!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="45"><![CDATA[<html>Uhhh….I'm sorry.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Merchant May$<BR>I should not have trusted the Harpy or YOU!<BR>I'm doom.<BR>Now I cannot even pay the warehouse storage fee.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-e" mid="47"><![CDATA[<html>Well…you want some money?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Merchant May$<BR>Sorry is that all?<BR>How much can you afford to pay me?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-f" mid="49"><![CDATA[<html>This is ridiculous...</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Merchant May$<BR>Your money cannot ease the psychological damage I have suffered.<BR> Even if you have Priestess of Darkness Miolions of <FONT color=#a82424>gold</font>, it will not be enough. I don't believe you have that much either.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-f" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-g" mid="51"><![CDATA[<html>Okay…is there something else you want instead of money?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(May starts to cry)</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-g" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-h" mid="53"><![CDATA[<html>(Look at the contract with the signature.)</html>]]></talk_answer>
+      <talk_answer link_index="n026_trader_may-3-i" mid="54"><![CDATA[<html>(You sign it.)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(May wipes her tears and speaks in a teary voice.)</font><BR>Indeed this should have been done earlier. <BR> So please <FONT color=#a82424>sign</font> this and I'll forget the psychological damage I suffered earlier.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-h" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-i" mid="56"><![CDATA[<html>(I have a bad feeling about signing this.)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(May quickly hides the paper)</font> <BR> Come on, please sign! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-i" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-j" mid="58"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Merchant May$<BR>Haha, I finally succeeded! <BR><FONT color=#387206>{user_nick}</FONT> is now May's lifetime servant. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-j" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-k" mid="60"><![CDATA[<html>What unfair contract is this?!.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Merchant May$<BR> I always wanted to have slaves! <BR> <FONT color=#7e12d2>(May is unable to distinguish between employees and slaves)</font> <BR> And now I've got one. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-k" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-l" mid="62"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-l" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Merchant May$<BR>Give me the money.<BR><FONT color=#7e12d2>(May put out her hand to your face.Time to consider avoiding her in future)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">357</exe>
+         <exe type="recompense_view">,3571,3572,3573,3574,3575</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">400260</exe>
+         <exe type="delquestitem" num="10">400252</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">357</exe>
+         <exe type="recompense">,3571,3572,3573,3574,3575</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n308_migratory_harpy" sub="b" />
+   <exelink qstep="1" npc="n308_migratory_harpy" sub="c" />
+   <exelink qstep="1" npc="n308_migratory_harpy" sub="d" />
+   <exelink qstep="1" npc="n308_migratory_harpy" sub="e" />
+   <exelink qstep="1" npc="n308_migratory_harpy" sub="2">0,1,2,3</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="3">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d" />
+   <exelink qstep="3" npc="n026_trader_may" sub="e" />
+   <exelink qstep="3" npc="n026_trader_may" sub="f" />
+   <exelink qstep="3" npc="n026_trader_may" sub="g" />
+   <exelink qstep="3" npc="n026_trader_may" sub="h" />
+   <exelink qstep="3" npc="n026_trader_may" sub="i" />
+   <exelink qstep="3" npc="n026_trader_may" sub="i" />
+   <exelink qstep="3" npc="n026_trader_may" sub="j" />
+   <exelink qstep="3" npc="n026_trader_may" sub="k">1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="l">0,2</exelink>
+   <journal_data recompense="1:3571,2:3572,3:3573,4:3574,5:3575" quest_title="떨이 세일Ⅱ" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="400252,400260">
+      <journal index="1">
+         <contents_image>QW_14.dds</contents_image>
+         <destination_pos>118,n308</destination_pos>
+         <destination_mode>custom:117@1,118@1</destination_mode>
+         <statemark_npcid>308</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Strange Customer]]></title>
+         <contents mid="65"><![CDATA[<html>Deliver the bags to the customer in the Sigh Canyon.<BR><BR><FONT color=#086171>Cristal Stream (Sigh Canyon Entrance) </FONT><FONT color=#a82424>→ Sigh Canyon</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Deliver bags to the Sigh Canyon]]></destination>
+         <todo_msg mid="67"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="69"><![CDATA[<html>Deliver received payment to <FONT color=#a82424>May</FONT> at Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="71"><![CDATA[Talk to Merchant May.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>356</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

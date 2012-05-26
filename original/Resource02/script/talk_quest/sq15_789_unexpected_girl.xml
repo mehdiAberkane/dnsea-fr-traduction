@@ -1,0 +1,255 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_789_unexpected_girl</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>789</qid>
+      <designer>김인정</designer>
+      <qlevel>43</qlevel>
+      <qdesc>고대인의 질긴 종이	300418
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Unexpected Girl]]></qkname>
+      <qnpc>
+         <npcid>722</npcid>
+         <npcename>n722_cat_mewmew</npcename>
+         <npckname>만능 고양이 냥냥</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>766</npcid>
+         <npcename>n766_idol_harori</npcename>
+         <npckname>아이돌 하로리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-noquest" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Idol Harori$<BR>I'm~ Harori~! What made you come here~?<BR><FONT color=#7e12d3>(Talk with All-round Cat)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-a" mid="6"><![CDATA[<html>Do you have other things to ask me?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$All-round Cat$<BR>I guess she'll do this king of thing again.<BR>I'm so worried. Everyday is like on the battlefield.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-acceppted" mid="10"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Unexpected Girl$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-1" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-1-a" mid="12"><![CDATA[<html>A flower to wear in her hair?!</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$All-round Cat$<BR>I need you !!  You have a quick wit?<BR>In fact, she wants to have a big flower to wear it in her hair~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-1-a" image="QS_Default.dds" itemindex="300418">
+      <talk_answer link_index="n722_cat_mewmew-2" mid="16"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$All-round Cat$<BR>We can't buy it in this kind of countryside. I should make it by myself.<BR>If you bring the material, I'll make it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-1" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Idol Harori$<BR>Hehe~ I'm Harori~ What's wrong~?<BR><FONT color=#7e12d3>(Talk with All-round Cat)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2" image="QW_56.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$All-round Cat${action:Talk}<BR>Go to <FONT color=#a82425>West Ancient Armory</FONT> and get an Ancient tough paper!!<BR>Ancient tough papers are useful for making a flower, clothes, and hat too~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-3" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-3-a" mid="42"><![CDATA[<html>(She's so cute girl.)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$???$<BR>Oops~  fancy <FONT color=#387206>{user_class}</FONT>, it's good to see you here~<BR>It's like our <FONT color=#a94407>des</FONT><FONT color=#086171>☆</FONT><FONT color=#a82425>tiny</FONT>?!<BR>
+♥</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-3-a" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-3-b" mid="44"><![CDATA[<html>I'm <FONT color=#387207>{user_nick}</FONT>.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Idol Harori$<BR>My name is <FONT color=#a82424>Harori</FONT>♬~ Hehe.<BR>In Alteia Land, I'm the most popular <FONT color=#7e12d2>Id</FONT><FONT color=#a94407>☆</FONT><FONT color=#7e12d2>o</FONT><FONT color=#a94407>★</FONT><FONT color=#7e12d3>l</FONT><FONT color=#a94407>♡</FONT>♪</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-3-b" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-3-c" mid="46"><![CDATA[<html>I'm looking for an ancient tough paper.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Idol Harori$<BR>Hmm~ by the way, what made you come here~?<BR>Harori wants to help <FONT color=#387207>{user_nick}</FONT>~ I want to help even for a small thing~ hehe☆.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-3-c" image="QS_Default.dds" itemindex="300418">
+      <talk_answer link_index="n766_idol_harori-3-d" mid="48"><![CDATA[<html>Yes. I was asked by the cat~</html>]]></talk_answer>
+      <talk_answer link_index="n766_idol_harori-3-d" mid="49"><![CDATA[<html>The cat asked me to get it.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Idol Harori$<BR>Are you saying the thing that is able to make various things?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-3-d" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-3-e" mid="51"><![CDATA[<html>Do you know the cat?!</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Idol Harori$<BR>The cat? …wow~ do you mean the cat is <FONT color=#a82424>All-round Cat</FONT>?<BR>
+Really~? Oops….<BR><FONT color=#7e12d3>(Harori's asking me with a serious look)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-3-e" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-3-f" mid="53"><![CDATA[<html>(Harori's eyes're glittering)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Idol Harori$<BR>Yeah~ … <FONT color=#7e12d3>(Harori smiles)<BR></FONT>I heard that my cat could've died because of me. So I felt bad and I just came here to be responsible for her.<BR>
+But… now I can understand why my cat did that kind of thing. She used you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-3-f" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-4" mid="55"><![CDATA[<html>(Scary)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Idol Harori$<BR>Yeah~ my cat did<FONT color=#a82425>ly★in★g</FONT>to me~?<BR>Harori was deceived by her☆ haha♥</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-4" image="QN_Npc_nyangnyang.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Idol Harori${action:Talk}<BR>Here is an Ancient tough paper that I just got from here.<BR>Deliver it to<FONT color=#a82424>All-round Cat</FONT> <FONT color=#a82424>safely</FONT>♥.<BR><FONT color=#7e12d3>(She smiles but I don't see it's a smile)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-4" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-4-a" mid="58"><![CDATA[<html>The lady is... Harori?!</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$All-round Cat$<BR>You brought it? I was waiting!! Hurry up!!<BR>You don't even imagine how she's so hot-tempered.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-4-a" image="QN_Npc_Idol_haloli.dds" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-4-b" mid="60"><![CDATA[<html>I met her.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$All-round Cat$<BR>Oops!!!!! <FONT color=#7e12d3>(The cat's startled shouting some weird sounds)<BR></FONT>H, how did you know?! Where… did you find the name? …</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-4-b" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-4-c" mid="62"><![CDATA[<html>What?!</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$All-round Cat$<BR>You did tell everything to her?!<BR>
+I'm just xxxxed up!! You can't complete this quest!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-4-c" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-4-d" mid="64"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-4-d" image="QN_Npc_Idol_haloli.dds" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$All-round Cat$<BR>My lady will definitely come to kill me.<BR>(Trembling)… good bye! bye bye!!<BR><FONT color=#7e12d3>(The cat's taking her luggage in a hurry)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">7890,,,,,</exe>
+         <exe type="setquest">789</exe>
+         <exe type="talk" npc="n722_cat_mewmew">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">1611</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6">201611</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300418</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">789</exe>
+         <exe type="delquestitem" num="-1">300418</exe>
+         <exe type="recompense">7890,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n722_cat_mewmew" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n722_cat_mewmew" sub="acceppted">1,2</exelink>
+   <exelink qstep="1" npc="n722_cat_mewmew" sub="2">0,2,3,1</exelink>
+   <exelink qstep="3" npc="n766_idol_harori" sub="b" />
+   <exelink qstep="3" npc="n766_idol_harori" sub="c" />
+   <exelink qstep="3" npc="n766_idol_harori" sub="d" />
+   <exelink qstep="3" npc="n766_idol_harori" sub="d" />
+   <exelink qstep="3" npc="n766_idol_harori" sub="e" />
+   <exelink qstep="3" npc="n766_idol_harori" sub="f" />
+   <exelink qstep="3" npc="n766_idol_harori" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n722_cat_mewmew" sub="b" />
+   <exelink qstep="4" npc="n722_cat_mewmew" sub="c">2</exelink>
+   <exelink qstep="4" npc="n722_cat_mewmew" sub="d">0,1</exelink>
+   <journal_data recompense="0:7890" quest_title="뜻밖의 그녀" chapterid="" quest_level="43" quest_mark_type="10" use_item_list="300418">
+      <journal index="1">
+         <contents_image>QN_Npc_nyangnyang.dds</contents_image>
+         <destination_pos>14,n722</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>722</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[What to request]]></title>
+         <contents mid="26"><![CDATA[<html>Talk with All-round Cat.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf</FONT> <FONT color=#a82425>→ All-round Cat</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk with All-round Cat]]></destination>
+         <todo_msg mid="28"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>563,0,0</destination_pos>
+         <destination_mode>custom:561@1,562@1,563@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[West Ancient Armory]]></title>
+         <contents mid="30"><![CDATA[<html>Search an Ancient tough paper in West Ancient Armory. Strong monsters would have this.<BR><BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ West Ancient Armory</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[West Ancient Armory]]></destination>
+         <todo_msg mid="32"><![CDATA[Go to West Ancient Armory]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Idol_haloli.dds</contents_image>
+         <destination_pos>563,n766</destination_pos>
+         <destination_mode>custom:561@1,562@1,563@3</destination_mode>
+         <statemark_npcid>766</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Unacquainted Girl]]></title>
+         <contents mid="68"><![CDATA[<html>You found a strange girl in West Ancient Armory. Talk with her.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ West Ancient Armory(Idol Harori)</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk with Harori in West Ancient Armory]]></destination>
+         <todo_msg mid="70"><![CDATA[Talk with Harori in West Ancient Armory]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_nyangnyang.dds</contents_image>
+         <destination_pos>14,n722</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>722</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[To All-round Cat]]></title>
+         <contents mid="72"><![CDATA[<html>I ran into Idol Harori. Deliver the item she gave me to All-round Cat.<BR><BR><FONT color=#086171>Riverwart Wharf</FONT> <FONT color=#a82425>→ All-round Cat</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk with All-round Cat]]></destination>
+         <todo_msg mid="74"><![CDATA[Report to All-round Cat]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>43:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>788</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

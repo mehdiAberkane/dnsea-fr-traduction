@@ -1,0 +1,217 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_753_wordless_mom</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>753</qid>
+      <designer>김인정</designer>
+      <qlevel>44</qlevel>
+      <qdesc>맹약의 문장 300447</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>754</nextqid>
+      <nextqname>sq15_754_as_you_wish</nextqname>
+      <nextqnpc>n199_darklair_castia</nextqnpc>
+      <qkname mid="1"><![CDATA[[Changing job] Wordless Mom]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>459</npcid>
+         <npcename>n459_eclair</npcename>
+         <npckname>어둠의 여신관 에클레르</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n459_eclair-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Priestess of Darkness Eclair$<BR>…….<BR><FONT color=#7e12d3>(says nothing with a disconsolate look)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-a" mid="7"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Priestess of Darkness Castia$<BR>With what you brought, I can make<FONT color=#a82425>Crest of Pledge</FONT> but it is impossible to put it in your body.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-acceptted" mid="9"><![CDATA[<html><FONT color=#086172>Quest accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Wordless Mom$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="11"><![CDATA[<html>I'm not concerned with secular affairs anymore. But…</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Priestess of Darkness Castia$<BR>The one who can do this is only your mother Priestess of Darkness<FONT color=#a82424> Eclair</FONT>.<BR>You must want to see your mother not only for the strong power.<BR><FONT color=#7e12d3>(Castia stares at me with deep eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Relationships cannot be separated. It is like a path so even though it looks going to different ways, it will be connected in the end. In the huge world, the path is just connecting to new ones. It doesn’t vanished.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QN_Npc_eclairer.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2" mid="16"><![CDATA[<html>…How can I meet her?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Eclair and your relationship is also supposed to be connected like this. This is also from Goddess blessing… Longing for blood ties is surely natural if you were born by Goddess so don't feel shame. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n459_eclair-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Priestess of Darkness Eclair$<BR>…….<BR><FONT color=#7e12d3>(says nothing with a disconsolate look.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2" image="QN_Npc_eclairer.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Priestess of Darkness Castia$<BR>You can go to <FONT color=#a82424>Pezadelo Gateway</FONT>with Crest of Pledge…<BR>
+Maybe <FONT color=#a82425>Eclair</FONT> might be waiting for you at there.<BR>
+With the attraction from the deep blood tie.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n459_eclair-2" image="" itemindex="">
+      <talk_answer link_index="n459_eclair-2-a" mid="20"><![CDATA[<html>Are you Eclair… ?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$???$<BR><FONT color=#7e12d3>(It feels so comfortable seeing with her. She's standing sorrowfully)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n459_eclair-2-a" image="" itemindex="">
+      <talk_answer link_index="n459_eclair-3" mid="22"><![CDATA[<html>Eclair, right?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$???$<BR>…….<BR><FONT color=#7e12d3>(Despite stepping to her, she doesn't say anything but looks at him sorrowfully)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n459_eclair-3" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Priestess of Darkness Eclair${action:Talk}<BR>……At the Sanctum… wait……please….<BR><FONT color=#7e12d3>(She disappeared with a tiny voice)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3" image="QN_Npc_eclairer.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-a" mid="26"><![CDATA[<html>(Castia sighs in a low voice)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Priestess of Darkness Castia$<BR>You met Eclair but she just disappeared?<BR>I can't believe….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-b" mid="28"><![CDATA[<html>Can't I meet her again?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Eclair broke a taboo. So she is isolated deep in the Sanctum preventing Border of Darkness from spreading. I thought she could get out of there for a short moment but this isn't the time for that now….<FONT color=#7e12d3>(Castia's face grew solemn)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-c" mid="30"><![CDATA[<html>Isn't there any ways?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Yes… there is still a way.<BR>I'm not sure but… It is only you who can do that.<BR>
+Because you are a Eclair's boy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-d" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Priestess of Darkness Castia$<BR>The dimension's crack happens only in Border of Darkness but sometimes it reaches to Light Land beyond the line.<BR>If some requirements are ready, you can find the crack and sneak into it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-d" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-e" mid="50"><![CDATA[<html>(Maybe because of Green Dragon's jewel…)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Do you know Lotus Marsh's <FONT color=#a82425>Riverwart Wharf</FONT>? I can feel something cracking the dimension around the area. Some strong power continuously influences on it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-e" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-f" mid="52"><![CDATA[<html>So at there?!</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Because of that, the part of Border of Darkness is reaching to that place so many Priestesses of Darkness is devoting to preventing spreading. It should be banned to go there… but you are the except.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-f" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-!next" mid="32"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">753</exe>
+         <exe type="talk" npc="n199_darklair_castia">1</exe>
+         <exe type="recompense_view">7530,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300447</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">753</exe>
+         <exe type="recompense">7530,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n199_darklair_castia" sub="a">2</exelink>
+   <exelink qstep="accepting" npc="n199_darklair_castia" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n459_eclair" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="d" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="e" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="f">1</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="!next">0</exelink>
+   <journal_data recompense="0:7530" quest_title="[전직] 침묵의 재회" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="300447">
+      <journal index="1">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>30,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,29@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Conversation]]></title>
+         <contents mid="34"><![CDATA[<html>Talk with Priestess of Darkness Castia.<BR>
+ <BR>
+<FONT color=#086171>Border of Darkness Surpah watchtower</FONT> <FONT color=#a82425>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Talk with Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="36"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_eclairer.dds</contents_image>
+         <destination_pos>30,n459</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,29@4,30@4,31@4</destination_mode>
+         <statemark_npcid>459</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[The Person who is missed]]></title>
+         <contents mid="38"><![CDATA[<html>Meet Priestess of Darkness Eclair at Pezadelo Gateway.<BR><BR><FONT color=#086171>Pezadelo Gateway</FONT> <FONT color=#a82425>→ Priestess of Darkness Eclair</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk with Eclair at Pezadelo Gateway]]></destination>
+         <todo_msg mid="40"><![CDATA[Meet Priestess of Darkness Eclair at Pezadelo Gateway.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>30,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,29@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Sad Parting]]></title>
+         <contents mid="43"><![CDATA[<html>Couldn't talk with Eclair. Go back to Priestess of Darkness Castia and explain the situation and ask what to do.<BR><BR><FONT color=#086171>Border of Darkness Surpah watchtower</FONT> <FONT color=#a82425>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Talk with Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="45"><![CDATA[Talk with Priestess of Darkness Castia again.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>44:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest>752</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

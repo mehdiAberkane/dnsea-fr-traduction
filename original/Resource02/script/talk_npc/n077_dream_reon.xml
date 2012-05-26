@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n077_dream_reon</npcename>
+      <npcid>77</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Leon]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Leon$<BR>I'll protect my daughter with my life.<BR>I will never ever give her to them.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

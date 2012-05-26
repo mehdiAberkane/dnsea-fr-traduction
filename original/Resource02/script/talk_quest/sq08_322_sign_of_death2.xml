@@ -1,0 +1,156 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_322_sign_of_death2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>322</qid>
+      <designer>곽노찬</designer>
+      <qlevel>20</qlevel>
+      <qdesc>400126 오염된 거미의 체액</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Aura of Death II]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I have finished analysing the samples.<BR>The blood contain the same aura similar to the monsters found in the <FONT color=#a82424>Forest of Death</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="QS_Default.dds" itemindex="400126">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>We need more research data to confirm this.<BR>Sorry, once again can you go to Death Basin and collect 10 <FONT color=#a82424>Contaminated Spider's Bodily Fluid</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Aura of Death II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QS_Default.dds" itemindex="400126">
+      <talk_question mid="16"><![CDATA[<html>$Heraldry Scholar Bailey$<BR><FONT color=#a82424>Contaminated Spider's Bodily Fluid</FONT> can be obtained from either Contaminated Tarantula or Contaminated Spotted Spider. Only <FONT color=#a82424>10</FONT> Contaminated Spider's Bodily Fluid is required. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QS_Default.dds" itemindex="400126">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Haha...You have collected all Contaminated Spider's Bodily Fluid. <BR>Please wait while I cross reference the sample between Elena's pollutants and the Hobgoblin blood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="31"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-c" mid="33"><![CDATA[<html>Not a good sign….</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Well, this is expected.<BR>The same substance has been detected in <FONT color=#a82424>Elena</FONT>'s pollutant, Hobgoblin Blood, and Contaminated Spider's Bodily Fluid.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-c" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-d" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The contamination at Forest of death is worst than expected because of Elena's pollutants.<BR>This is getting more serious and beyond my control.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-d" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>While I work with <FONT color=#a82424>Master Sorceress Tiana</FONT> to decipher the research documents, please buy us sometime by fending off the monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="prob">800</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">,3221,3222,3223,3224,3225</exe>
+         <exe type="setquest">322</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">653</exe>
+         <exe type="huntitem" num="10" exe="5,6,7" onexe="">400126</exe>
+         <exe type="addquestitem" num="1">400126</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">654</exe>
+         <exe type="conexe" true="4" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200653</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200654</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3221,3222,3223,3224,3225</exe>
+         <exe type="complete">322</exe>
+         <exe type="delquestitem" num="-1">400126</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceptted">1,2,9,11,12,3,8</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="a">0</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b">1,2</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="d" />
+   <journal_data recompense="1:3221,2:3222,3:3223,4:3224,5:3225" quest_title="죽음의 기운Ⅱ" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="400126">
+      <journal index="1">
+         <contents_image>QW_24.dds</contents_image>
+         <destination_pos>244,0,0</destination_pos>
+         <destination_mode>custom:241@3,242@3,243@3,244@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Collect 10 Contaminated Spider's Bodily Fluid]]></title>
+         <contents mid="39"><![CDATA[<html>Collect Contaminated Spider's Bodily Fluid by defeating Contaminated Sorceress Tarantula or Contaminated Spotted Spider at Death Basin.<BR><BR><FONT color=#086171>Lower Ridge(Forest of Death Entrance) </FONT><FONT color=#a82424>→ Death Basin</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Collect 10 Contaminated Spider's Bodily Fluid]]></destination>
+         <todo_msg mid="41"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Talk to Heraldry Scholar Bailey]]></title>
+         <contents mid="43"><![CDATA[<html>You have collected Contaminated Spider's Bodily Fluid. Deliver the Contaminated Spider's Bodily Fluid to Heraldry Scholar Bailey.<BR> <BR><FONT color=#086171>Calderick Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="45"><![CDATA[Collected all Contaminated Spider's Bodily Fluid. Please return to Heraldry Scholar Bailey.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>321</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

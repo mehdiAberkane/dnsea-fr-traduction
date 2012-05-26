@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n265_invisible</npcename>
+      <npcid>265</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Transparent Prop NPC [Bomb Box]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Saint Haven Elite Soldier$<BR>We are not allowed to chat during working hours.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="4"><![CDATA[<html>$Saint Haven Elite Soldier$<BR>This mine has been overrun by monsters.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">sq11_518_quest_general</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">518</chk>
+      </conditions>
+   </talk>

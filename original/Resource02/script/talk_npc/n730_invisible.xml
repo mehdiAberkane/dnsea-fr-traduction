@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n730_invisible</npcename>
+      <npcid>730</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[The larva of butterfly remains]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There is nothing special)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">sq15_843_forest_of_butterflies</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">843</chk>
+      </conditions>
+   </talk>

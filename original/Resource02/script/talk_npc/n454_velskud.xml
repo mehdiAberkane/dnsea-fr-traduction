@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n454_velskud</npcename>
+      <npcid>454</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Velskud]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Velskud$<BR>……Hmmph, useless fellow.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq15_755_shoadow_of_dark_night</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">755</chk>
+      </conditions>
+   </talk>

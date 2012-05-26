@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n310_saint_guard</npcename>
+      <npcid>310</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Royal Guard Joey [Hermalte Port]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Royal Guard Joey$<BR>They seem to be in trouble… I hope they'll be okay...<BR> </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">nq12_7221_hero</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">7221</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,99 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq37_9156_gunter_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9156</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Teramai]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html> A person has one or two weak points. </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="8"><![CDATA[<html> What happened because of fishing? </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="9"><![CDATA[<html> Fishing.. What a good hobby. </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="10"><![CDATA[<html> I also like fishing. </html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+He was a great cleric. He took care of his men and other people. If he liked fishing a bit lesser, I think he would have become a much greater person. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Well, that was the only weak side of him. Other than that, he was great in every aspect. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+The night before our d-day, he went night fishing. However, that fishing session went way too well, so he only came back in the nick of time. <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Good hobby? You say it too easily. Lose that habit of speaking so casually because you haven’t been through any of it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Well, I’m sorry, I really hate fishing after that incident. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 9156, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 160 ); </exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 320 );  </exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 36, 320 ); </exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 36, 160 ); </exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 테라마이에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>36:8800:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

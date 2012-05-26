@@ -1,0 +1,202 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_332_challenge_of_catchef2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>332</qid>
+      <designer>김주연</designer>
+      <qlevel>19</qlevel>
+      <qdesc>뉴 끈적끈적 파스타	400135
+냥냥의 샐러드	400136
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Chef Nye Nye's Challenge II]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>268</npcid>
+         <npcename>n268_catchef_note</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n268_catchef_note-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Nye Nye's Note$<BR>I will conquer the hearts of not just the Brethren but also my lady with my glorious dish! <BR><FONT color=#7e12d2>(Begin quest by talking to May in Calderock Village.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR>(She throws the Brethren Bites , one by one, into a large cauldron.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>It's almost done.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="11"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Chef Nye Nye's Challenge II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2" mid="13"><![CDATA[<html>(Muttering about sauce that's flowing out, you take the dish.)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant May$<BR>I've done my part! Now its up to you to give it to the Brethren before it gets cold. <BR>(May gives you a wink.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Merchant May$<BR>Sigh, what a sight it will be to see the Brethren at the Silent Monastery Main Hall go into a joyous frenzy over my special.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n268_catchef_note-2" image="QS_Default.dds" itemindex="400135">
+      <talk_answer link_index="n268_catchef_note-2-a" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Nye Nye's Note$<BR>I must say, the Brethren went wild the moment they smelled May's dish. It is as if they went feral.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n268_catchef_note-2-a" image="QS_Default.dds" itemindex="400135">
+      <talk_answer link_index="n268_catchef_note-3" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Nye Nye's Note$<BR>The aroma is so powerful, even Manticore would come running for it. Whoa, It's actually kinda scary, I'm so getting out of here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n268_catchef_note-3" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Nye Nye's Note$<BR>I'll just leave my dish here for the Brethren. Do me a favor., will you? Please keep today's match a secret. It's not easy finding a job these days.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="21"><![CDATA[<html>Why, you're grinning ear to ear.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant May$<BR>(She's smiling as if she's already the winner.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="23"><![CDATA[<html>Well, it was...</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant May$<BR>I knew it! I won!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="25"><![CDATA[<html>(You give her the dish Nye Nye made.)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant May$<BR>Your expression gave you away, (laughs). I bet the Brethren were overjoyed. Hmm, have you something for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="QS_Default.dds" itemindex="400136">
+      <talk_answer link_index="n026_trader_may-3-d" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Merchant May$<BR>(She nibbles and frowns.) <BR>This is not too shabby, I'll say. Let's jsut keep today's match a little secret between you and me. It's such a waste to cause a talented chef to lose their job because of my stupendous talents..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-e" mid="29"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-e" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Merchant May$<BR>You did great! I'll let you know first the moment I come up with some new amazing recipe!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3321,3322,3323,3324,3325</exe>
+         <exe type="setquest">332</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>냥냥의 셀러드 습득.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">400136</exe>
+         <exe type="delquestitem" num="-1">400135</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3321,3322,3323,3324,3325</exe>
+         <exe type="complete">332</exe>
+         <exe type="delquestitem" num="-1">400135</exe>
+         <exe type="delquestitem" num="-1">400136</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n268_catchef_note" sub="3">0,1,2,3</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="e">1,2,3</exelink>
+   <journal_data recompense="1:3321,2:3322,3:3323,4:3324,5:3325" quest_title="요리사 냥냥의 도전장Ⅱ" chapterid="" quest_level="19" quest_mark_type="10" use_item_list="400135,400136">
+      <journal index="1">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="33"><![CDATA[<html>The dish is done. Talk to <FONT color=#a82424>Merchant May</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="35"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_22.dds</contents_image>
+         <destination_pos>163,n268</destination_pos>
+         <destination_mode>custom:161@1,162@1,163@4</destination_mode>
+         <statemark_npcid>268</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Chef Nye Nye's Challenge II]]></title>
+         <contents mid="37"><![CDATA[<html><FONT color=#a82424>Merchant May</FONT> is cooking off against Nye Nye. Whoever makes the dish the Brethren likes better, wins. Take May's dish to the <FONT color=#a82424>Silent Monastery Main Hall</FONT> and let the Brethren judge.<BR><BR><FONT color=#086171>Blizzard Plain (Silent Monastery Gate)</FONT> <FONT color=#a82424>→ Silent Monastery Main Hall</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Chef Nye Nye's Challenge II]]></destination>
+         <todo_msg mid="39"><![CDATA[Visit the Silent Monastery Main Hall and check out the Brethren reaction to May's dish.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="41"><![CDATA[<html>May's dish whipped up the Brethren into such a violent frenzy that it frightened off Nye Nye before he could taste it.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="43"><![CDATA[Return and tell May what you saw.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>19:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>331</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

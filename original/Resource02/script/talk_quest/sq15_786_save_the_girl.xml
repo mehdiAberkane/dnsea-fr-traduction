@@ -1,0 +1,160 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_786_save_the_girl</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>786</qid>
+      <designer>김인정</designer>
+      <qlevel>42</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>787</nextqid>
+      <nextqname>sq15_787_self_defence_for_cat</nextqname>
+      <nextqnpc>n722_cat_mewmew</nextqnpc>
+      <qkname mid="1"><![CDATA[Save the Girl]]></qkname>
+      <qnpc>
+         <npcid>722</npcid>
+         <npcename>n722_cat_mewmew</npcename>
+         <npckname>만능 고양이 냥냥</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-a" mid="6"><![CDATA[<html>What?! Where did she go?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$All-round Cat$<BR>Oh my God!! I'm in the big trouble. My lady..hasn't come back!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting-a" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$All-round Cat$<BR>She said she's going to Dragon-followers Territory… but I thought<FONT color=#a82424>Oh, please. You can't be serious.</FONT>. And I sent her… but it looks like I should've thought<FONT color=#a82425>Oh, please. Don't go!</FONT>!! I think she really went to the area.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-c" mid="10"><![CDATA[<html>(The cats looks like she's afraid of the lady more than monsters.)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$All-round Cat$<BR>Honestly, she could beat such weak dragon-followers up easily….but if I don't go to <BR>save her <FONT color=#a82425>, I'm afraid of her future troubles</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086172>Quest accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Save the Girl$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-1" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-1-a" mid="31"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$All-round Cat$<BR>Now go to <FONT color=#a82425>Dragon-followers Territory</FONT>and beat monsters up.<BR>While you're doing that<BR>
+…I'll save my lady.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-1-a" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$All-round Cat$<BR>Hurry up. She might time with a stopwatch for me.<BR>Gee, do you really think that she's doing that now? <FONT color=#a82425>Gee, I hope that she's not such a scary lady.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-2-a" mid="17"><![CDATA[<html>Why did you save her…</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$All-round Cat$<BR>I saved her safely thanks to you.<BR>She stayed there so comfortably served by dragon-followers..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2-a" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-2-b" mid="19"><![CDATA[<html>So, what made her go there?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$All-round Cat$<BR>When I just got there, she pretended as a weak lady but <FONT color=#a82425>kicked </FONT>the monsters out.<BR>She's a frightening lady. If I were kicked by her, I wouldn't have survived.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2-b" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-2-c" mid="34"><![CDATA[<html>Yeah. Thanks.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$All-round Cat$<BR>She enjoys meeting people and monsters so she goes anywhere.<BR>Anyway, thanks for this again. You're such a good girl that I can distribute on of my silvervines.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2-c" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-2-d" mid="36"><![CDATA[<html>What kind story is it?!</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$All-round Cat$<BR>Ah, there's something that I want to tell you.<BR>
+Are you free? Please listen to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2-d" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-2-!next" mid="21"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">7860,,,,,</exe>
+         <exe type="setquest">786</exe>
+         <exe type="checkStageClearRank" rand="6" num="542" onexe="4,3,5" true="[=" xsi:nil="true" />
+         <exe type="setstep">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n722_cat_mewmew">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7860,,,,,</exe>
+         <exe type="complete">786</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n722_cat_mewmew" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n722_cat_mewmew" sub="acceptted">1,2,6</exelink>
+   <exelink qstep="2" npc="n722_cat_mewmew" sub="b" />
+   <exelink qstep="2" npc="n722_cat_mewmew" sub="c" />
+   <exelink qstep="2" npc="n722_cat_mewmew" sub="d">0</exelink>
+   <exelink qstep="2" npc="n722_cat_mewmew" sub="!next">1</exelink>
+   <journal_data recompense="0:7860" quest_title="아가씨를 구해줘" chapterid="" quest_level="42" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>542,0,0</destination_pos>
+         <destination_mode>custom:541@3,542@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Save the Girl]]></title>
+         <contents mid="24"><![CDATA[<html>All-round Cat's lady is trapped in Dragon-followers Territory. Go first to Dragon-followers Territory and beat monsters up and then the cat will save her.<BR><BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Dragon-followers Territory</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Beat monsters up in Dragon-followers Territory]]></destination>
+         <todo_msg mid="26"><![CDATA[Go to Dragon-followers Territory]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_nyangnyang.dds</contents_image>
+         <destination_pos>14,n722</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>722</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[To All-round Cat]]></title>
+         <contents mid="28"><![CDATA[<html>Go back to All-round Cat and check the lady is okay.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf</FONT> <FONT color=#a82425>→ All-round Cat</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Talk with All-round Cat]]></destination>
+         <todo_msg mid="30"><![CDATA[Report to All-round Cat]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>42:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>785</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

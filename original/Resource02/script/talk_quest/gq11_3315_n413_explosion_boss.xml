@@ -1,0 +1,154 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3315_n413_explosion_boss</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3315</qid>
+      <designer>김주연</designer>
+      <qlevel>36</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Mission] Wanted : Cyclops Patchwork]]></qkname>
+      <qnpc>
+         <npcid>413</npcid>
+         <npcename>n413_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n413_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html><FONT color=#2b2723>$Adventurer's Guild Commission Board $<BR></FONT><FONT color=#a82424>Wanted : Cyclops Patchwork </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n413_guild_board-accepting-b" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>
+You must know the one-eyed moster.<BR>
+  I don’'t think they have become a huge orge because of curse or black magic. It must be a symptom caused by a disease.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n413_guild_board-accepting-c" mid="68"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>
+ Everything can be explained by academic theories or rules. Ogre Barbarian in  Explosion Zone in Withered Leaves Forest is not cyclops, the mythical character. It is just a patient suffering from Cyclopia</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-accepting-c" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n413_guild_board-accepting-d" mid="66"><![CDATA[<html>Clear the boss, Cyclops Patchwork </html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>I need someone who can collect information to back up my theory. If you can knock down Cyclops Patchwork, then I will go take some samples from it.<BR><FONT color=#7e12d2>▶ Client : A fan of Descartes</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n413_guild_board-accepting-e" mid="11"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-accepting-e" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$[Mission] Wanted : Cyclops Patchwork$<BR><FONT color=#2b2723> You accepted a mission.<BR><FONT color=#a82424> Clear </FONT><FONT color=#a82424> Cyclops Patchwork </FONT> at Explosion Zone in Withered Leaves Forest.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-1" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board $<BR>Currently in progress: <FONT color=#a82424>[Mission] Wanted : Cyclops Patchwork </FONT> .<BR><BR>※ <FONT color=#7e12d2> Only one mission can be undertaken from the same bulletin board at any time. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-2" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n413_guild_board-2-a" mid="22"><![CDATA[<html>[Mission completed] <FONT color=#086171>Wanted : Cyclops Patchwork</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Adventurers who have completed the Mission, please stamp the Mission posting below to receive your reward.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n413_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n413_guild_board-2-b" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>An Adventurer's Mission has been completed.<BR><BR><FONT color=#a82424>[Adventurer's Guild Commission Board]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3315, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">33150,,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="5,6,7" onexe="">1081</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">201081</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1081);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">33150,,,,,</exe>
+         <exe type="complete">3315</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n413_guild_board" sub="d">3</exelink>
+   <exelink qstep="accepting" npc="n413_guild_board" sub="e">0,1,4,8,2</exelink>
+   <exelink qstep="2" npc="n413_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n413_guild_board" sub="b">1</exelink>
+   <journal_data recompense="33150" quest_title="[길드의뢰] 현상수배 : 사이클롭스 패치워크" chapterid="" quest_level="36" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@3</destination_mode>
+         <statemark_npcid>413</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[ Defeat Cyclops Patchwork at  Explosion Zone in Withered Leaves Forest]]></title>
+         <contents mid="43"><![CDATA[<html> Defeat Cyclops Patchwork at  Explosion Zone in Withered Leaves Forest.<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Foothills of Black Mountain (Dark Jungle Path)  </FONT><FONT color=#a82424>→ Explosion Zone in Withered Leaves Forest </FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Hunt] Explosion Zone in Withered Leaves Forest]]></destination>
+         <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_guild_board.dds</contents_image>
+         <destination_pos>13,n413</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>413</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report Mission completion to the Adventurer's Guild Commission Board]]></title>
+         <contents mid="47"><![CDATA[<html>Report completed mission to Adventurer's Guild Commission Board in Black Mountain.<BR><BR><FONT color=#086171>Black Mountain (Dark Jungle Path) </FONT><FONT color=#a82424>→ Adventurer's Guild Commission Board </FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Report to the Adventurer's Guild Commission Board]]></destination>
+         <todo_msg mid="49"><![CDATA[An Adventurer's Mission has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3312</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,253 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_629_retreat_teleju</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>629</qid>
+      <designer>김주연</designer>
+      <qlevel>37</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>630</nextqid>
+      <nextqname>sq11_630_determination</nextqname>
+      <nextqnpc>n281_darkelf_teleju</nextqnpc>
+      <qkname mid="1"><![CDATA[Retreat]]></qkname>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>331</npcid>
+         <npcename>n331_elite_soldier</npcename>
+         <npckname>왕성 근위병(sq629)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>332</npcid>
+         <npcename>n332_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주(sq629)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Dark Elf Teri$<BR>It's okay that they are chasing after me. However I do not want my people to die and get hurt...<BR>
+<FONT color=#7e12d2>※Can start quest after talking to General Douglas</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n332_darkelf_teleju-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Dark Elf Teri$<BR>It's okay that they are chasing after me. However I do not want my people to die and get hurt...<BR>
+<FONT color=#7e12d2>※Can start quest after talking to General Douglas</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n331_elite_soldier-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Royal Guards$<BR>On orders of General Douglas!<BR>
+<FONT color=#7e12d2>※Can start quest after talking to General Douglas</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QW_29.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="54"><![CDATA[<html>Have to inform the soldiers.</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$General Douglas$<BR>Dark Elves left for Collapsed Mine….<BR>
+It's big news.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="QW_29.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="56"><![CDATA[<html>Of course.</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$General Douglas$<BR>Okay. I will send reinforcements to Collapsed Mine.<BR>I would like you to come with me. Is it okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="58"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Retreat$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_29.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$General Douglas$<BR>Then hurry to <FONT color=#a82424>Collapsed Mine</FONT>.<BR>It's not a place where difficult monsters appear… so it won't be difficult.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Dark Elf Teri$<BR>It's okay that they are chasing after me.<BR>
+However I do not want my people to die and get hurt...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n331_elite_soldier-1" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Royal Guards$<BR>It's important to stop the Dark Elves!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n332_darkelf_teleju-1" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Dark Elf Teri${action:Sad}<BR>I did not know … It was this bad…<BR>*Sob*….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n331_elite_soldier-2" image="" itemindex="">
+      <talk_answer link_index="n331_elite_soldier-2-a" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Royal Guards$<BR>…It's a bad situation.<BR>I will report to you after taking care of the incident.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n331_elite_soldier-2-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Royal Guards$<BR>I will report to<FONT color=#a82424>General Douglas</FONT>. Adventurer should keep the place safe from monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n331_elite_soldier-3" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html><FONT color=#7e12d2>(Royal Guards are busy taking care of the injuried...<BR>I see something familiar nearby. Let's take a look.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n332_darkelf_teleju-3" image="" itemindex="">
+      <talk_answer link_index="n332_darkelf_teleju-3-a" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Dark Elf Teri${action:Sad}<BR><FONT color=#387206>{user_nick}</FONT> what should I do…?<BR>I saw everything here. *Sob*…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n332_darkelf_teleju-3-a" image="" itemindex="">
+      <talk_answer link_index="n332_darkelf_teleju-3-b" mid="25"><![CDATA[<html>(Teri keeps crying)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Dark Elf Teri$<BR>*Sob*… When I arrived here, my kind are here and there…*sob*…<BR>I could only help my people nearby. *Sob*…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n332_darkelf_teleju-3-b" image="" itemindex="">
+      <talk_answer link_index="n332_darkelf_teleju-4" mid="27"><![CDATA[<html>Shh! You can also be caught this way.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Dark Elf Teri${action:Sad}<BR>*Sob*…<BR>I did not want my people to get hurt so I ran away from the royal throne… and this happens! *Sob*….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n332_darkelf_teleju-4" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Dark Elf Teri$<BR>*Sob*… Of, of course not… *sob*…<BR>For now let's go back to  <FONT color=#a82424>Hermalte Port </FONT>.<BR>
+I want to think of a plan.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$General Douglas$<BR>I just heard about the battle of Collapsed Mine.<BR>Another attack will be done so I will get an army for a Total War.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-a" mid="31"><![CDATA[<html>Then what will you do?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Dark Elf Teri$<BR>It's okay that they are chasing after me.<BR>
+However I do not want my people to die and get hurt...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-b" mid="33"><![CDATA[<html>(Decision is made?)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Dark Elf Teri$<BR>Again I will go to… Alice.<BR>I want to go back and live quitely, but I realised I can't.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-!next" mid="35"><![CDATA[<html><FONT color=#086171>(Receive Reward) </FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,6291,6292,6293,6294,6295</exe>
+         <exe type="setquest">629</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,6291,6292,6293,6294,6295</exe>
+         <exe type="complete">629</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="2" npc="n331_elite_soldier" sub="a">0,1</exelink>
+   <exelink qstep="3" npc="n332_darkelf_teleju" sub="b" />
+   <exelink qstep="3" npc="n332_darkelf_teleju" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="b">0</exelink>
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="!next">1</exelink>
+   <journal_data recompense="1:6291,2:6292,3:6293,4:6294,5:6295" quest_title="퇴각" chapterid="" quest_level="37" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_29.dds</contents_image>
+         <destination_pos>291,0,0</destination_pos>
+         <destination_mode>custom:291@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Go to Collapsed Mine]]></title>
+         <contents mid="37"><![CDATA[<html>Receive word from General Douglas. Go to <FONT color=#a82424>Collapsed Mine</FONT>and stop Dark Elves' attack.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port (Entrance of Black Mine) </FONT><FONT color=#a82424>→ Collapsed Mine</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Go to Collapsed Mine]]></destination>
+         <todo_msg mid="39"><![CDATA[Stop the Dark Elves at Collapsed Mine.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>291,n331</destination_pos>
+         <destination_mode>custom:291@1</destination_mode>
+         <statemark_npcid>331</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Talk to Royal Guards]]></title>
+         <contents mid="41"><![CDATA[<html>Stopped the Dark Elves but damage received was too great. Let's talk to <FONT color=#a82424>Royal Guards</FONT>. <BR><BR><FONT color=#086171>Hermalte Port (Entrance of Black Mine)</FONT> <FONT color=#a82424>→ Collapsed Mine(Royal Guards)</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Talk to Royal Guards]]></destination>
+         <todo_msg mid="43"><![CDATA[Talk to Royal Guards at Collapsed Mine.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>291,n332</destination_pos>
+         <destination_mode>custom:291@1</destination_mode>
+         <statemark_npcid>332</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Talk to Dark Elf Teri]]></title>
+         <contents mid="45"><![CDATA[<html>I can see the impact this attack has on Teri. Looks like she has been coming here secretly. Talk to Teri.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port (Entrance of Black Mine)</FONT> <FONT color=#a82424>→ Collapsed Mine(Dark Elf Teri)</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Talk to Dark Elf Teri]]></destination>
+         <todo_msg mid="47"><![CDATA[Talk to Dark Elf Teri at Collapsed Mine.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[ Talk to Teri at Hermalte Port ]]></title>
+         <contents mid="49"><![CDATA[<html>Go back to Hermalte Port and talk to <FONT color=#a82424>Dark Elf Teri</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port  </FONT><FONT color=#a82424>→ Dark Elf Teri</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Talk to Teri at Hermalte Port]]></destination>
+         <todo_msg mid="51"><![CDATA[Talk to Dark Elf Teri back at Hermalte Port.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>37:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>628</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

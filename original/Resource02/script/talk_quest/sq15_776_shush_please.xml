@@ -1,0 +1,153 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_776_shush_please</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>776</qid>
+      <designer>김인정</designer>
+      <qlevel>44</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Shush please]]></qkname>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-a" mid="50"><![CDATA[<html>What's' wrong?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hey… I need a help.<BR><FONT color=#7e12d3>(Tamara looks nervous)</FONT><BR>
+Can you listen to me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-a" image="QW_56.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-b" mid="52"><![CDATA[<html>What?! Why?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Master Sorceress Tamara$<BR>Don't ask anything. Go to <FONT color=#a82424>West Ancient Armory</FONT>and save the <FONT color=#a82425>Goblin trapped</FONT>.<BR>It would be my first and last request…!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceppted" mid="54"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Shush please$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="QW_56.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Tamara$<BR>Ah… don't ask me please! Please! Do me a favor…!!<BR><FONT color=#7e12d2>(Tamara looks like she's about to cry now)<BR></FONT>Just, save it quickly! Go to <FONT color=#a82425>West Ancient Armory</FONT> and save the Goblin trapped there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-a" mid="58"><![CDATA[<html>What happened??</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Master Sorceress Tamara$<BR>You came!!<BR>Hu… I'm relieved now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-b" mid="61"><![CDATA[<html>What?!</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Master Sorceress Tamara$<BR>Honestly, the Goblin was…<BR>
+<FONT color=#7e12d3>(Tamara can't speak out easily)<BR></FONT>was… a human.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-c" mid="63"><![CDATA[<html>You spelled him?!</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Master Sorceress Tamara$<BR>He was a traveler far away from here. He didn't want to eat my food again?!<BR>I was angry and I did it to him…!!<BR>
+<FONT color=#7e12d3>(Tamara turns red)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-d" mid="65"><![CDATA[<html>(She's so scary)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Sorceress Tamara$<BR>I, I didn't mean it… but when I come to myself, <FONT color=#a82425>I stepped on him after making him a Goblin</FONT>!! And I threw him to Ancient Armory! That's shame on me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-e" mid="67"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-e" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Master Sorceress Tamara$<BR>You must keep this secret. Okay~?<BR>
+I'll always take care of myself not to be so angry..<BR><FONT color=#7e12d3>(Tamara smiles at me. Scary)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">7760,,,,,</exe>
+         <exe type="setquest">776</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7760,,,,,</exe>
+         <exe type="complete">776</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceppted">1,2</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="d">0</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="e">1</exelink>
+   <journal_data recompense="0:7760" quest_title="비밀이에요" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>563,0,0</destination_pos>
+         <destination_mode>custom:561@1,562@1,563@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[From West Ancient Armory]]></title>
+         <contents mid="27"><![CDATA[<html>Go to West Ancient Armory and save the trapped goblin.<BR><BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ West Ancient Armory</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Save the trapped goblin in West Ancient Armory]]></destination>
+         <todo_msg mid="29"><![CDATA[Save the trapped goblin in West Ancient Armory]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Report to Master Sorceress Tamara]]></title>
+         <contents mid="31"><![CDATA[<html>I saved the goblin. Report to Master Sorceress Tamara.<BR>
+<BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Talk with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="33"><![CDATA[Report to Master Sorceress Tamara]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>44:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>775</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

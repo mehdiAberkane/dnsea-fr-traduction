@@ -1,0 +1,200 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_056_grandpa_goblin03</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>56</qid>
+      <designer>김주연</designer>
+      <qlevel>8</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Grandpa Goblin's Complains III]]></qkname>
+      <qnpc>
+         <npcid>171</npcid>
+         <npcename>n171_goblin_grandfather</npcename>
+         <npckname>고블린 할배</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Grandpa Goblin$<BR>Grandpa Goblin has done nothing wrong. He's just trying to find his missing grandchildren...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting" image="QW_5.dds" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-a" mid="52"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Grandpa Goblin$<BR>Grandpa Goblin found out where his eldest grandchild, Gosuk, is!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-b" mid="58"><![CDATA[<html>Alright, I'll find your first grandson.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Grandpa Goblin$<BR>I heard my first grandson's at <FONT color=#a82424>Ancient Temple Excavation Site</FONT>. He has a habit of throwing stones when he's scared, but he's really kind. Please find him back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-c" mid="54"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Grandpa Goblin's Complains III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-c" image="QM_goblin_son1.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Grandpa Goblin$<BR>The eldest <FONT color=#a82424>Gosuk</FONT> has a habit of throwing stones when he's scared, but he's really kind. Please find him back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-1" image="QW_5.dds" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-1-a" mid="44"><![CDATA[<html>Alright, I'll find your first grandson.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Grandpa Goblin$<BR>I heard my first grandson's at <FONT color=#a82424>Ancient Temple Excavation Site</FONT>. He has a habit of throwing stones when he's scared, but he's really kind. Please find him back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-1-a" image="QM_goblin_son1.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Grandpa Goblin$<BR>Although the eldest <FONT color=#a82424>Gosuk</FONT> tends to throw stones at others, he's not a bad Goblin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-2" image="QW_5.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Grandpa Goblin$<BR>I heard my first grandson's at <FONT color=#a82424>Ancient Temple Excavation Site</FONT>. Although he tends to throw stones at others, he's not a bad Goblin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-3" image="QM_goblin_son1.dds" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-3-a" mid="28"><![CDATA[<html>He aims well with his stones.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Grandpa Goblin$<BR>Kind human! You're really kind!<BR>My grandson Gosuk is back!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-3-a" image="QM_goblin_son1.dds" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-3-b" mid="30"><![CDATA[<html>(Grandpa Goblin twindles his thumbs)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Grandpa Goblin$<BR>Sorry… He's just too frightened. Although my first grandson's back, I still worry for the other two.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-3-b" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-3-c" mid="32"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-3-c" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-3-d" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Grandpa Goblin$<BR>Grandpa Goblin is still missing two grandchildren. Those red monsters took them!<BR><FONT color=#7e12d2>(Grandpa Goblin begins to tremble.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-3-d" image="" itemindex="">
+      <talk_question mid="49"><![CDATA[<html>$Grandpa Goblin$<BR>Thank you for helping Grandpa Goblin. Gosuk hasn't seen his brothers though. Other goblins may have seen them.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">56</exe>
+         <exe type="recompense_view">,561,562,562,562</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,561,562,562,562</exe>
+         <exe type="complete">56</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n171_goblin_grandfather" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n171_goblin_grandfather" sub="c">0,2</exelink>
+   <exelink qstep="1" npc="n171_goblin_grandfather" sub="a">0</exelink>
+   <exelink qstep="3" npc="n171_goblin_grandfather" sub="b">0</exelink>
+   <exelink qstep="3" npc="n171_goblin_grandfather" sub="c">1</exelink>
+   <exelink qstep="3" npc="n171_goblin_grandfather" sub="d" />
+   <journal_data recompense="1:561,2:562" quest_title="고블린 할배의 하소연Ⅲ" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QM_goblin_son1.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>73,0,0</destination_pos>
+         <destination_mode>custom:71@1,72@1,73@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Go to Ancient Temple Excavation Site and rescue Grandpa Goblin's eldest grandson, Gosuk]]></title>
+         <contents mid="37"><![CDATA[<html>Go to <FONT color=#2b2723><FONT color=#a82424>Ancient Temple Excavation Site</FONT></FONT> and rescue the eldest grandson, Gosuk.<BR><BR><FONT color=#7e12d2></FONT><BR><FONT color=#086171>Wind Forest (Wind Forest Temple)<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Ancient Temple Excavation Site</FONT></FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[(Lv. 8) Go to Ancient Temple Excavation Site and rescue Grandpa Goblin's eldest grandson, Gosuk]]></destination>
+         <todo_msg mid="39"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Goblin_Grandfa.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>2,-1705,1915</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>171</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Confirm with Grandpa Goblin if Gosuk has returned safely]]></title>
+         <contents mid="41"><![CDATA[<html>I brought the eldest grandson <FONT color=#a82424>Gosuk</FONT> to a safe location within Shadow Forest Core. Return to <FONT color=#a82424>Grandpa Goblin at Shadow Forest</FONT> and confirm if Gobby has returned safely.<BR><BR><FONT color=#086171>Shadow Forest</FONT> <FONT color=#a82424>→ Grandpa Goblin</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Confirm with Grandpa Goblin if Gosuk has returned safely]]></destination>
+         <todo_msg mid="43"><![CDATA[Please talk to Grandpa Goblin at Shadow Forest.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>8:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>55</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

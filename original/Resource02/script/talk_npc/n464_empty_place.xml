@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n464_empty_place</npcename>
+      <npcid>464</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Karahan]]></npckname>
+      <talk_paragraph index="001" image="QN_Npc_Charty.dds" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Karahan$<BR><FONT color=#7e12d2>(Karahan and Charty are having a conversation)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq15_711_disease</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">711</chk>
+      </conditions>
+   </talk>

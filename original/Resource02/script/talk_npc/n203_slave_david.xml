@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n203_slave_david</npcename>
+      <npcid>203</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Adventurer David]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Adventurer David$<BR>Well, what are you looking at? I… I'm just conserving energy!<BR>[David is trembling in fear.]</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq08_286_argenta_slave</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">286</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,147 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_319_suppress_the_remnants</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>319</qid>
+      <designer>곽노찬</designer>
+      <qlevel>20</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Defeating the Army]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>What happened?(Asking this once again)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Howdy! Glad that you are here.<BR>I have been short-handed lately.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="8"><![CDATA[<html>You need manpower to keep those monsters in check..</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Since the last battle with the Dark Elves, the number of monsters seems to have reduced briefly.<BR>But somehow they are back in numbers again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="10"><![CDATA[<html>Well, sometimes it happens I supposed</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>That's right, I have notice it too…Haha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="12"><![CDATA[<html>Anyway this is a daily affair.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Huh? What do you mean daily affair?<BR>Anyways defeat 10 <FONT color=#a82424>Headquarter Goblin Slingers</FONT> at <FONT color=#a82424>Road of No Return</FONT>. This will be just a simple warm up for an Elite like you correct? Haha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="14"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Defeating the Army$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QW_23.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hahaha, off you go to the <FONT color=#a82424>Road of No Return</FONT>. And since you are there....<BR><FONT color=#7e12d2>(Deckard start to flip through his To-Do List. Let's get going.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="17"><![CDATA[<html>Rome is not built in one day you know...</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Back so soon? I have yet to prep your next assignment<BR>You sure have become better.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="19"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>This is all for your own good…Haha! Here is the next job.<BR><FONT color=#7e12d2>(Deckard start to flip through his To-Do List AGAIN. Let's get going.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3191,3192,3193,3194,3195</exe>
+         <exe type="setquest">319</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+         <exe type="huntmon" num="10" party="1" exe="4,5,6" onexe="">604</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200604</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 604);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3191,3192,3193,3194,3195</exe>
+         <exe type="complete">319</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="e">1,3,7,2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="a">0</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
+   <journal_data recompense="1:3191,2:3192,3:3193,4:3194,5:3195" quest_title="잔당 토벌" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_23.dds</contents_image>
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@3,172@3,173@3,174@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Defeat 10 Headquarter Goblin Slinger]]></title>
+         <contents mid="27"><![CDATA[<html>Defeat 10 Headquarter Goblin Slinger at Road of No Return.<BR><BR><FONT color=#086171>Cristal Stream (Sigh Canyon Entrance) </FONT><FONT color=#a82424>→ Road of No Return</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Defeat 10 Headquarter Goblin Slinger]]></destination>
+         <todo_msg mid="29"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></title>
+         <contents mid="31"><![CDATA[<html>Report to Adventurer's Guild Master Deckard in Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="33"><![CDATA[Please go talk to Adventurer's Guild Master Deckard in Calderock Village]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>215,234</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

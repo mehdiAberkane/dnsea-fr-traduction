@@ -1,0 +1,339 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_856_all_clear</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>856</qid>
+      <designer>김인정</designer>
+      <qlevel>50</qlevel>
+      <qdesc>민속풍 주머니	300485
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>857</nextqid>
+      <nextqname>sq15_857_regrettable_thing</nextqname>
+      <nextqnpc>n714_cleric_yohan</nextqnpc>
+      <qkname mid="1"><![CDATA[No One's Here]]></qkname>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>714</npcid>
+         <npcename>n714_cleric_yohan</npcename>
+         <npckname>상급 클레릭 요한</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hmm~ Today's cooking fails as well.<BR>I don't know what I've done wrong~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting" image="QW_58.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="6"><![CDATA[<html>Maybe.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>What's happening with the people of Town of Isla Natives vanishing here and there?<BR>Is it related to the incident that happened a long time ago?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-b" mid="132"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Master Cleric Johan$<BR>There isn't any detailed recording of it….<BR>We should talk to someone who knows the incident well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$No One's Here$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-checkquest" mid="97"><![CDATA[<html>Medicine?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>Maybe there is a secret we are not aware of.<BR>Hmm… The most wise person in Lotus Marsh is <FONT color=#a82424>Karacule</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-a" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-c" mid="99"><![CDATA[<html>I'll go.</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Master Cleric Johan$<BR>But we can't ask Karacule anymore…<BR>
+So, we should go to <FONT color=#a82424>Master Sorceress Tamara</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-b" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-c" mid="134"><![CDATA[<html>I'll go.</html>]]></talk_answer>
+      <talk_question mid="133"><![CDATA[<html>$Master Cleric Johan$<BR>Tamara studied about medicine under Karacule.<BR>
+We better ask <FONT color=#a82424>Master Sorceress Tamara</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-d" mid="136"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Master Cleric Johan$<BR>If the remaining people were not killed by the Asahi tribe…<BR>Where would they go…? There must be something we are missing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-d" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_question mid="137"><![CDATA[<html>$Master Cleric Johan$<BR>While you are away to see Master Sorceress Tamara, I will gather some people from the Adventurer's Guild.<BR>I should make some medicine before I go there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="">
+      <talk_question mid="75"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hmm~ What should I do? I failed another dinner.<BR>I don't know what I've done wrong….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_question mid="138"><![CDATA[<html>$Master Cleric Johan$<BR>Have you been to <FONT color=#a82424>Master Sorceress Tamara</FONT>?<BR>I shall contact the Adventurer's Guild.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-a" mid="140"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hmm~ I failed another dinner.<BR>I don't know what I've done wrong…. Should I add this?<BR>
+<FONT color=#7e12d2>(Tamara puts a frog into the dish)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-b" mid="142"><![CDATA[<html>No!! I'm here for something else!</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-2-b" mid="143"><![CDATA[<html>(Pretend not to see anything)</html>]]></talk_answer>
+      <talk_question mid="141"><![CDATA[<html>$Master Sorceress Tamara$<BR>Oh, it's {user_nick}?! Are you here for my cooking?<BR>Well, if you want I could share a plate.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-c" mid="145"><![CDATA[<html>(It's not the matter of ingredients…)</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>Well, you don't have to so negative about it. I know my food smells like dog food!<BR>I put the best ingredients in, so what's wrong?<BR><FONT color=#7e12d2>(Tamara looks at the recipe mumbling)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-d" mid="147"><![CDATA[<html>(Explain the situation)</html>]]></talk_answer>
+      <talk_question mid="146"><![CDATA[<html>$Master Sorceress Tamara$<BR>Ah!! Why are you here anyway?<BR><FONT color=#7e12d2>(Tamara asks)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-d" image="QW_58.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-e" mid="149"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="148"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#a82424>Town of Isla Natives</FONT>? …Oh, that place.<BR>I've been there once to find ingredients for magic potions before.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-e" image="QW_58.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-f" mid="151"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="150"><![CDATA[<html>$Master Sorceress Tamara$<BR>When I was there, Dragon Followers and the Asahi tribe were already there so I couldn't find any Natives.<BR>According to Karacule, there were few Natives who remained to protecting the totem.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-f" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-g" mid="153"><![CDATA[<html>That's weird</html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$Master Sorceress Tamara$<BR>When we were there, we couldn't find them.<BR>
+Maybe the totem were stolen by Dragon Followers.<BR>However, we had no clue where those Natives have gone to.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-g" image="QN_LM_Nativeman_B.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-3" mid="155"><![CDATA[<html>What is that?</html>]]></talk_answer>
+      <talk_question mid="154"><![CDATA[<html>$Master Sorceress Tamara$<BR>…Yes. It is weird. It is still suspicious.<BR>I heard that Natives are vanishing now, so there must be something going on.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3" image="QW_58.dds" itemindex="">
+      <talk_question mid="156"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>…There is a saying, if you want the dragon, go to the Dragon's Nest! To find out the truth, you have to search the place.<BR>
+Go to <FONT color=#a82424>Town of Isla Natives</FONT> once again, there must be some clue.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-a" mid="158"><![CDATA[<html>I found this.</html>]]></talk_answer>
+      <talk_question mid="157"><![CDATA[<html>$Master Sorceress Tamara$<BR>How was it? Did you hear anything from them?<BR>
+Or did you find any clues?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-a" image="QS_Default.dds" itemindex="300485">
+      <talk_answer link_index="n713_soceress_tamara-4-b" mid="160"><![CDATA[<html>This smells like Johan's medicine.</html>]]></talk_answer>
+      <talk_question mid="159"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hmm? This… <FONT color=#a82424>Rucita</FONT> has clothes made out of same fabric, it's the traditional bag of Natives.<BR>What do you have in there? <FONT color=#7e12d2>(Tamara snifs the bag)</FONT><BR>
+Medicine? It smells like herbs.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-b" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-c" mid="162"><![CDATA[<html>(Tamara takes a deep breath)</html>]]></talk_answer>
+      <talk_question mid="161"><![CDATA[<html>$Master Sorceress Tamara$<BR>So what you are saying is...… This is the medicine that you received from <FONT color=#a82424>Johan</FONT>.<BR>And this bag belongs to the Native you delivered to. <FONT color=#7e12d2>(Tamara in a deep thought)</FONT><BR>
+Hmm… I don't feel good about this….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-d" mid="165"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Master Sorceress Tamara$<BR>Well, I guess Natives are monsterizing due to some causes.<BR>It is very unfortunate but if they were attacked by monsters, there must be some evidence left.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-d" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5" mid="167"><![CDATA[<html>Ok</html>]]></talk_answer>
+      <talk_question mid="166"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>I need to take a look at this in more detail. I will suggest this to the Fairystar Body.<BR>Go to Master Cleric Johan and let him know about this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hmm… I'm sorry for the news but I hope Johan won't be too depressed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-5-a" mid="170"><![CDATA[<html>(Give him the bag)</html>]]></talk_answer>
+      <talk_question mid="169"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>I have asked the Adventurer's Guild to go to <FONT color=#a82424>Town of Isla Natives</FONT> but they couldn't find any of my people.<BR>
+It is weird but, did they get better in such a short time?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5-a" image="QS_Default.dds" itemindex="300485">
+      <talk_answer link_index="n714_cleric_yohan-5-b" mid="172"><![CDATA[<html>(Share Tamara's words)</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Master Cleric Johan$<BR>This…?!<BR>It was my medicine in this bag….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5-b" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-5-c" mid="174"><![CDATA[<html>How is that possible?</html>]]></talk_answer>
+      <talk_question mid="173"><![CDATA[<html>$Master Cleric Johan$<BR>People turning into monsters… How… (Johan can't continue)<BR>However, Tamara makes sense.<BR>
+If that happened after the Dragon Followers and Asahi tribe entered the land, it might have because of them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-5-d" mid="176"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Master Cleric Johan$<BR>Maybe they used our tribe totem.<BR>It is their hobby to misuse totems with black magic.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5-d" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-5-!next" mid="178"><![CDATA[<html><FONT color=#086171>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">856</exe>
+         <exe type="talk" npc="n714_cleric_yohan">1</exe>
+         <exe type="recompense_view">8560,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="hascomq">732</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n714_cleric_yohan">a</exe>
+         <exe type="talk" npc="n714_cleric_yohan">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">1768</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">201768</exe>
+         <exe type="addquestitem" num="1">300485</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8560,,,,,</exe>
+         <exe type="complete">856</exe>
+         <exe type="delquestitem" num="-1">300485</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="b">2</exelink>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="checkquest">2</exelink>
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="c" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="c" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="d" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="e" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="f" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="g" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="3">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="d" />
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n714_cleric_yohan" sub="b" />
+   <exelink qstep="5" npc="n714_cleric_yohan" sub="c" />
+   <exelink qstep="5" npc="n714_cleric_yohan" sub="d">0</exelink>
+   <exelink qstep="5" npc="n714_cleric_yohan" sub="!next">1,2</exelink>
+   <journal_data recompense="8560" quest_title="아무도 없다" chapterid="" quest_level="50" quest_mark_type="10" use_item_list="300485">
+      <journal index="1">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="127"><![CDATA[Johan's Story]]></title>
+         <contents mid="128"><![CDATA[<html><FONT color=#a82424><FONT color=#2b2723>Talk to Master Cleric Johan.<BR><BR></FONT><FONT color=#086171>Lotus Marsh</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Master Cleric Johan</FONT></FONT></html>]]></contents>
+         <destination mid="129"><![CDATA[Conversation with Master Cleric Johan]]></destination>
+         <todo_msg mid="130"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="180"><![CDATA[Tamara's idea]]></title>
+         <contents mid="181"><![CDATA[<html>Ask Master Sorceress Tamra's idea.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="182"><![CDATA[Conversation with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="183"><![CDATA[Go to Master Sorceress Tamara.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_58.dds</contents_image>
+         <destination_pos>582,0,0</destination_pos>
+         <destination_mode>custom:581@3,582@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="189"><![CDATA[Scout Town of Isla Natives]]></title>
+         <contents mid="190"><![CDATA[<html>Look for a clue to figure out why people are missing.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Town of Ilsa Natives)</FONT> <FONT color=#a82424>→ Town of Isla Natives</FONT></html>]]></contents>
+         <destination mid="191"><![CDATA[Scout Town of Isla Natives]]></destination>
+         <todo_msg mid="192"><![CDATA[Go to Town of Isla Natives]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="193"><![CDATA[Master Sorceress Tamara's Analysis]]></title>
+         <contents mid="194"><![CDATA[<html>Natives are not here. Found a familiar looking bag from a monster. Return to Master Sorceress Tamara.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="195"><![CDATA[Conversation with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="196"><![CDATA[Report to Master Sorceress Tamara]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="184"><![CDATA[Conversation with Master Cleric Johan]]></title>
+         <contents mid="185"><![CDATA[<html>Return to Master Cleric Johan, show him the bag and deliver Tamara's words.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> → Master Cleric Johan</html>]]></contents>
+         <destination mid="186"><![CDATA[Conversation with Master Cleric Johan]]></destination>
+         <todo_msg mid="187"><![CDATA[Return to Master Cleric Johan]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>50:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>855</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

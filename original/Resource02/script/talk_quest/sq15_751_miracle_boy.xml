@@ -1,0 +1,245 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_751_miracle_boy</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>751</qid>
+      <designer>김인정</designer>
+      <qlevel>44</qlevel>
+      <qdesc>허무의 불순물	300378</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>752</nextqid>
+      <nextqname>sq15_752_secret_of_eclair</nextqname>
+      <nextqnpc>n199_darklair_castia</nextqnpc>
+      <qkname mid="1"><![CDATA[[Changing job] Miracle boy]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Priestess of Darkness Castia$<BR>A ray of light in this endless darkness….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-a" mid="7"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Karacule$<BR>Dragons are making troubles in many ways to people in the world. I'm worried about the natives.<BR>Ah, didn't you say you were infected by black dragons' blood?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-b" mid="18"><![CDATA[<html>What do you think of the reason?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Karacule$<BR>As you can see, normal people are far vulnerable to be changed monsters because of dragons' high infectiousness.<BR>But in case of you…it seems the infection doesn't grow up fast.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-c" mid="20"><![CDATA[<html>(Karacule is now lost in thought deeply.)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Karacule$<BR>It is hard for me to distinguish all diseases of people, even for the dragons too.<BR>
+…Anyway you'd better keep you eyes on yourself. For yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-d" mid="22"><![CDATA[<html>It might be because of my mother…</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Karacule$<BR>You got something in your mind? The reason why you are different from others.<BR>…Never think about giving shit like Goddess's blessing.<BR>
+I don't believe it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-e" mid="25"><![CDATA[<html>I've heard my mother was a dark priestess.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Karacule$<BR>
+Mother? You think this is somewhat related to your mother?<BR>
+Pah, so you're going to say that you and your mother are one of dragons?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-f" mid="27"><![CDATA[<html>Is it so unusual?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Karacule$<BR>A dark priestess? <FONT color=#7e12d3>(Karacule shows incredulous looks.)</FONT>Your mother is the protector of pledge?<BR>Oh, I can’t believe the dark priestess gave birth. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-g" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Karacule$<BR>It's quite unsual. There was a never happening like that. Hmm… the dark priestess's boy comes to this religious place, this would be destiny. However, I can't grasp everything of the dark priestess's power even though I'm a Fairystar.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-accepting-acceptted" mid="9"><![CDATA[<html><FONT color=#086172>Quest accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Miracle boy$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="QN_darklair_castia.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Karacule$<BR><FONT color=#a82424>The border of darkness, Surpah</FONT> You know how to get to the watchtower?<BR>At there, you need to find <FONT color=#a82425>Priestess of Darkness Castia</FONT>.<BR>This happening is related to them so go and ask them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="QW_DarkVillage.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="12"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Priestess of Darkness Castia$<BR>What made you visit here in dark priestess's place? You are the priest following Artea Priestess in Light Land.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="14"><![CDATA[<html>You don't believe me.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Priestess of Darkness Castia$<BR>…Your mother was a protector of pledge?<BR>
+<FONT color=#7e12d3>(Castia is a bit shaken up and in the meantime she looks him suspiciously)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="31"><![CDATA[<html>You don't know the name Eclair?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Priestess of Darkness Castia$<BR>We gave up living as a human to prevent spreading of<FONT color=#a82425>the border of darkness</FONT><BR>That…we never heard of that name.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-d" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Priestess of Darkness Castia$<BR><FONT color=#a82424>Eclair</FONT>? …You, You are <FONT color=#a82424>Eclair's</FONT>…?<BR>
+<FONT color=#7e12d3>(Castia is lost in thought deeply)<BR></FONT>I can't keep this back to you because you already know the name. But I can't just believe you right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-d" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2" mid="35"><![CDATA[<html>What kind of the test is it?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Priestess of Darkness Castia$<BR><FONT color=#387207>{user_nick}</FONT>didn't become an evil because of your relatedness with dark priestess' blood, even though you were contaminated by dragons' blood. <BR>
+So sorry for that but, we need to test a little.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-a" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Priestess of Darkness Castia$<BR>The border of darkness <FONT color=#a82424>Purify Pezadelo of Hatred</FONT>within <FONT color=#a82424>10 rounds</FONT>.<BR>If you are the real successor of the special blood, you would get something while purifying it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-a" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Ah, you might know but if you want to enter Pezadelo of Hatred,<FONT color=#a82424>Abyssal Veil</FONT>is needed.<BR>
+ <BR>
+<FONT color=#7e12d2>※ You can get Abyssal Veil from Priestess of Darkness Shoo.</FONT><BR><FONT color=#7e12d2>※ When you complete the quest, you can get one Abyssal veil as a reward.<BR><BR></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-a" mid="39"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Oh. You get the <FONT color=#a82424> Impunity of Vanity</FONT><BR>
+<FONT color=#7e12d3>(Castia is surprised.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-b" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Impunity of Vanity is generated when our guardians of pledge purify the border of darkness. <BR>
+Our special constitution that prevents us from going back to the human world is making them when crashing  the darkness energy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-c" mid="43"><![CDATA[<html>(Castia sighs)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Priestess of Darkness Castia$<BR>…Somehow you were right. You have the same attribute of priestess of darkness in some parts.<BR>
+I can't believe <FONT color=#a82425>Eclair's</FONT> baby was survived and came back here….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-!next" mid="45"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">751</exe>
+         <exe type="recompense_view">7510,,,,,</exe>
+         <exe type="talk" npc="n701_oldkarakule">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>다크레어 개편으로 인해 조건문 3 사용하지 않음</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">100250</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">100213</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300378</exe>
+         <exe type="huntitem" num="1" exe="" onexe="4,5,6">300378</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">751</exe>
+         <exe type="recompense">7510,,,,,</exe>
+         <exe type="delquestitem" num="-1">300378</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n701_oldkarakule" sub="g">1</exelink>
+   <exelink qstep="accepting" npc="n701_oldkarakule" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="d" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="2">0,2,8,1</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="c">1</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="!next">0,2</exelink>
+   <journal_data recompense="0:7510" quest_title="[전직] 기적의 아이" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="300378&#xD;&#xA;">
+      <journal index="1">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>30,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,15@0,29@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[To Priestess of Darkness Castia]]></title>
+         <contents mid="48"><![CDATA[<html>Go to Surpah's watchtower throughout the channel of Border of Darkness Surpah, let's talk with Priestess of Darkness Castia.<BR>
+ <BR>
+<FONT color=#7e12d2>※ In the top right side of channel selection bar, you can select the channel of Border of Darkness Surpah and move on.</FONT><BR>
+ <BR>
+<FONT color=#086171>Border of Darkness Surpah Watchtower</FONT> <FONT color=#a82425>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk with Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="50"><![CDATA[Talk with Priestess of Darkness Castia.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_DarkLair.dds</contents_image>
+         <destination_pos>12011,0,0</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0,12011@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Purify Pezadelo of Hatred]]></title>
+         <contents mid="52"><![CDATA[<html>To clear Priestess of Darkness Castia's doubt, purify Pezadelo of Hatred for more than 10 rounds.<BR><BR><FONT color=#7e12d2>※ It is recommended to make up 4 players in a party in Border of Darkness.<BR>※ You need Abyssal Veil to enter Border of Darkness.<BR>※ You can get Abyssal Veil from Priestess of Darkness Shoo.</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>Pezadelo's gate</FONT> <FONT color=#a82424>→ Pezadelo of Hatred 10 rounds</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Pezadelo of Hatred up to 10 rounds ]]></destination>
+         <todo_msg mid="54"><![CDATA[Purify Pezadelo of Hatred up to 10 rounds.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>30,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,15@0,29@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Impunity of Vanity]]></title>
+         <contents mid="56"><![CDATA[<html>I got Impunity of Vanity. This will clear Priestess of Darkness Castia's doubt so let's deliver it to her.<BR>
+ <BR>
+<FONT color=#086171>Border of Darkness Surpah watchtower</FONT> <FONT color=#a82425>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk with Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="58"><![CDATA[You got Impunity of Vanity. Report it to Priestess of Darkness Castia.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>44:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest>716</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

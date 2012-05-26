@@ -1,0 +1,197 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_808_memory_box</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>808</qid>
+      <designer>김인정</designer>
+      <qlevel>42</qlevel>
+      <qdesc>낡은 장난감 칼	300440
+토속적인 목걸이	300441
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>809</nextqid>
+      <nextqname>sq15_809_friend_trace</nextqname>
+      <nextqnpc>n714_cleric_yohan</nextqnpc>
+      <qkname mid="1"><![CDATA[Memory Box]]></qkname>
+      <qnpc>
+         <npcid>714</npcid>
+         <npcename>n714_cleric_yohan</npcename>
+         <npckname>상급 클레릭 요한</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>771</npcid>
+         <npcename>n771_memorial_point</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n771_memorial_point-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR><FONT color=#7e12d3>(It doesn't look something special)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="7"><![CDATA[<html>What're you worrying about?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Cleric Yohan$<BR><FONT color=#7e12d2>(Master Cleric Yohan seems to consider something deeply)<BR></FONT>Oh, <FONT color=#387207>{user_nick}</FONT>.<BR>I didn't notice that you came here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Cleric Yohan$<BR>I was looking back my memories. I lived once in Riverwart before.<BR>
+At that time, my friend and I buried our precious thing on the ground.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-c" mid="11"><![CDATA[<html>Oh.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Cleric Yohan$<BR>We promised that we should dig it up when we get old…<BR>
+But a few days later, our country were invaded by <FONT color=#a82425>Asai tribe</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Cleric Yohan$<BR>At that time, I should've run away from my country and after that I couldn't meet my friend again.<BR>
+And our promise just buried into the ground.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-e" mid="15"><![CDATA[<html>Yes, he would.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Cleric Yohan$<BR>But these days, I feel like it's my duty to find our treasure.<BR>
+If my friend is alive, he may think the same as mine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-f" mid="17"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Cleric Yohan$<BR>So if you don't mind, can you find it instead of me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Memory Box$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1" image="QW_51.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Master Cleric Yohan$<BR>My country where I grew up is called <FONT color=#a82425>Riverwart Village Ruins</FONT>.<BR>Just walk along the path and then look around the edges. You might find the place where it was buried. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n771_memorial_point-1" image="" itemindex="">
+      <talk_answer link_index="n771_memorial_point-1-a" mid="22"><![CDATA[<html>(Dig up the pile of earth)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$???$<BR><FONT color=#7e12d3>(I can see something stick out between grass thickets.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n771_memorial_point-1-a" image="" itemindex="">
+      <talk_answer link_index="n771_memorial_point-2" mid="24"><![CDATA[<html>(Take these all)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(I got a box from here.</FONT><BR>
+<FONT color=#7e12d3>In the box, there were a worn-out toy knife and a necklace which looks like natives' one )</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n771_memorial_point-2" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Memory Place$<BR><FONT color=#7e12d3>(There is nothing inside of this box)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-a" mid="28"><![CDATA[<html>Here you are.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Cleric Yohan$<BR>You've been there?<BR>
+Did you find it well? I was thinking that I didn't explain it fully…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-a" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-b" mid="30"><![CDATA[<html>This was buried with the knife</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Cleric Yohan$<BR>Oh. I believed that this toy knife buried there.<BR>
+But this necklace…?<BR>
+<FONT color=#7e12d3>(He looks sideways)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-c" mid="32"><![CDATA[<html>(Yohan looks confused)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Cleric Yohan$<BR>That's strange. What my friend and I buried were all toys.<BR>
+But the necklace… I'm sure that he's been there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-!next" mid="34"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8080,,,,,</exe>
+         <exe type="setquest">808</exe>
+         <exe type="talk" npc="n714_cleric_yohan">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300440</exe>
+         <exe type="addquestitem" num="1">300441</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8080,,,,,</exe>
+         <exe type="complete">808</exe>
+         <exe type="delquestitem" num="-1">300440</exe>
+         <exe type="delquestitem" num="-1">300441</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n771_memorial_point" sub="2">0,1,2,3</exelink>
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="b" />
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="c">0</exelink>
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="!next">1,2,3</exelink>
+   <journal_data recompense="0:8080" quest_title="추억의 물건" chapterid="" quest_level="42" quest_mark_type="10" use_item_list="300440,300441">
+      <journal index="1">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,n771</destination_pos>
+         <destination_mode>custom:511@1</destination_mode>
+         <statemark_npcid>771</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[From Riverwart Village Ruins]]></title>
+         <contents mid="37"><![CDATA[<html>Find things that Master Cleric Yohan buried in Riverwart Village Ruins's memory place.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Riverwart Village Ruins</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Find the memory box in Riverwart Village Ruins]]></destination>
+         <todo_msg mid="39"><![CDATA[Find the thing Yohan buried in Riverwart Village Ruins]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Deliver to Master Cleric Yohan]]></title>
+         <contents mid="41"><![CDATA[<html>I got all the things from the box. Let's deliver them to Lotus Marsh's Master Cleric Yohan.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Cleric Yohan</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Talk with Master Cleric Yohan]]></destination>
+         <todo_msg mid="43"><![CDATA[Report to Master Cleric Yohan]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>42:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

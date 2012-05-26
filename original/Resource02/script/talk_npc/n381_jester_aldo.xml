@@ -1,0 +1,48 @@
+   <talk>
+      <npcename>n381_jester_aldo</npcename>
+      <npcid>381</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Aldo the Clown]]></npckname>
+      <talk_paragraph index="001" image="QW_WoderfulThemePark.dds" itemindex="">
+         <talk_answer link_index="quest" mid="20"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="21"><![CDATA[<html>[Talk] <FONT color=#086171>Wonderful Theme Park</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Aldo the Clown$<BR>Welcome to the <FONT color=#a82424> Wonderful Theme Park</FONT>! You will find many <FONT color=#7e12d2>amazing adventures</FONT> waiting for you right here! <BR><FONT color=#7e12d2>※ Press [O] key to open the Community window and check your theme park clearance in the Dungeon tab.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="QW_WoderfulThemePark.dds" itemindex="">
+         <talk_answer link_index="001" mid="22"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Aldo the Clown$<BR>Are you ready to enjoy another <FONT color=#a82424>Special Adventure</FONT> at the Wonderful Theme Park?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="QW_WoderfulThemePark.dds" itemindex="">
+         <talk_answer link_index="sparta1" mid="23"><![CDATA[<html>[Talk] <FONT color=#086171>Lv.10~31 Sparta Goblin</FONT></html>]]></talk_answer>
+         <talk_answer link_index="road1" mid="24"><![CDATA[<html>[Talk] <FONT color=#086171>Lv.20~50 Bumpy Road</FONT></html>]]></talk_answer>
+         <talk_answer link_index="treasure1" mid="25"><![CDATA[<html>[Talk] <FONT color=#086171>Lv.20~50 Monastery Treasures</FONT></html>]]></talk_answer>
+         <talk_answer link_index="boss1" mid="26"><![CDATA[<html> [Talk] <FONT color=#086171>Lv.10~23 Boss Rush </FONT></html>]]></talk_answer>
+         <talk_answer link_index="boss2" mid="33"><![CDATA[<html> [Talk] <FONT color=#086171>Lv.24~39 Challenge of Calderock Village </FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="34"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Aldo the Clown$<BR>Each <FONT color=#a82424>Special Adventure</FONT> requires <FONT color=#a82424>1 Wonderful Theme Park Entry Ticket</FONT>. So what shall it be today?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="sparta1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="28"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="14"><![CDATA[<html>$Aldo the Clown$<BR><FONT color=#a82424>300</FONT> <FONT color=#a82424>Sparta Goblins</FONT> are on their way to Canyon Ville!<BR>Stand brave and fight against those vile creatures!<BR>? <FONT color=#7e12d2>You must be Lv.10 - Lv.31 to enter the Sparta Goblin stage.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="road1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="29"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="16"><![CDATA[<html>$Aldo the Clown$<BR>Ahhh, life is a <FONT color=#a82424>Bumpy Road</FONT> indeed.<BR> Hmmm, I wonder what kinds of <FONT color=#a82424>traps</FONT> are in stall for you. Make it through this adventure alive within <FONT color=#a82424>4 minutes</FONT> and you will be handsomely rewarded for your bravery.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="treasure1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="30"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="18"><![CDATA[<html>$Aldo the Clown$<BR>There are rumours that there's a treasure trove in an ancient monastery. There had better be A LOT of treasure to make fighting the hordes of monsters worthwhile. But well, like they say, <FONT color=#a82424>No Risk! No Rewards!</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="boss1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="38"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="35"><![CDATA[<html>$Aldo the Clown$<BR>Win a series of one-to-one battles with the boss in Prairie Town or Mana Ridge! Isn't that too easy for you?!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="boss2" image="" itemindex="">
+         <talk_answer link_index="talk" mid="39"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="36"><![CDATA[<html>$Aldo the Clown$<BR>Win a series of one-to-one battles with the boss in Calderock Village! For the warriors who have conquered Calderock Village, this should be a piece of cake!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

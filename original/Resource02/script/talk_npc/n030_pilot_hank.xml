@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n030_pilot_hank</npcename>
+      <npcid>30</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Pilot Hank]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="2"><![CDATA[<html>$Pilot Hank${action:Talk}<BR></html>Hic… it was hic…m-my fault the Nautilus is b-broken.. I'll fix it a-after… hic… my dr-rink…hic…]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

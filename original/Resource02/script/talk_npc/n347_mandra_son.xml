@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n347_mandra_son</npcename>
+      <npcid>347</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Mandra]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Mandra$<BR>I'm the prince of nature. Haha!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq_990_happy_xmas</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">990</chk>
+      </conditions>
+   </talk>

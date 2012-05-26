@@ -1,0 +1,46 @@
+   <talk>
+      <npcename>n358_farm</npcename>
+      <npcid>358</npcid>
+      <startexe>6</startexe>
+      <npckname mid="1"><![CDATA[Tori the Farm Manager]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="farmarea" mid="169"><![CDATA[<html>[Enter Farm]</html>]]></talk_answer>
+         <talk_answer link_index="buy" mid="15"><![CDATA[<html>[Shop Trade/Fix Item]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="101"><![CDATA[<html>[Conversation]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Tori the Farm Manager${action:Talk}<BR>Being productive in peace is also a good experience for combat.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="33"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Tori the Farm Manager${action:Talk}<BR>Harvesting crops or catching a big fish can only be done in farming district. With those crops and fish, you can make a delicious dish.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="buy" image="" itemindex="">
+         <talk_answer link_index="farmshop" mid="164"><![CDATA[<html>Equipment/Farming shop</html>]]></talk_answer>
+         <talk_answer link_index="cookshop" mid="165"><![CDATA[<html>Cooking Shop</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="166"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="145"><![CDATA[<html>$Tori the Farm Manager$<BR>Haha! Choose what you want.<BR>We have many good products today~</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party" image="" itemindex="">
+         <talk_answer link_index="001" mid="171"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="170"><![CDATA[<html>$Tori the Farm Manager$<BR>You have to be not in a party to enter the farm.<BR><BR>※ <FONT color=#7e12d2>You can't enter the farm in party mode.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="farm" image="" itemindex="">
+         <talk_question mid="174"><![CDATA[<html>$Tori the Farm Manager$<BR>※ <FONT color=#7e12d2>[Lv24] Once you have completed the Farm District Grand Open Quest, you can enter the farm district directly through NPC.</FONT><BR>※ <FONT color=#7e12d2>[Lv24] You can acquire Farm District Grand Open Quest from Event Planner Irene.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,45001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,45002,100);</exe>
+         <exe type="conexe" true="5" false="4">0</exe>
+         <exe type="talk">party</exe>
+         <exe type="custom">api_quest_OpenFarmAreaList (userObjID);</exe>
+         <exe type="conexe" true="0" false="7">1</exe>
+         <exe type="talk">farm</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 664) == 1</chk>
+      </conditions>
+      <exelink idx="farmarea">3</exelink>
+      <exelink idx="farmshop">1</exelink>
+      <exelink idx="cookshop">2</exelink>
+   </talk>

@@ -1,0 +1,107 @@
+   <talk>
+      <npcename>n201_darklair_millefeuille</npcename>
+      <npcid>201</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Priestess of Darkness Mio]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="auction_001" mid="3"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="4"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="8"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Priestess of Darkness Mio${action:Talk}<BR>Hmmm, what was I doing just now?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="about_auction" mid="6"><![CDATA[<html>[Talk] Trading House</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="91" link_target="sq_968_xmas_millefeuille.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="84" link_target="nq08_6302_millefeuille_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Mio's Worries</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="85" link_target="nq08_6303_millefeuille_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Dispatch</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="86" link_target="nq08_6304_millefeuille_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Goodies</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="87" link_target="nq08_6305_millefeuille_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Young David's Adventures</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="88" link_target="nq08_6306_millefeuille_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About the Veil of Abyss</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="nq08_6312_millefeuille_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Mio's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="51"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Oh, you want to talk?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="15" link_target="sq08_352_beyond_the_nightmare.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>Nightmare from Beyond</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="40" link_target="nq08_6301_thanx_visitor.xml"><![CDATA[<html>[Lv.20] <FONT color=#086171>Gracious Guest</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="41"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Priestess of Darkness Mio$<BR>You're gonna help me? Hey, that's awesome!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="about_auction" image="" itemindex="">
+         <talk_answer link_index="talk" mid="52"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="44"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Erm? Which means the Trading House is a convenient channel for selling stuff, if you pass me your item, I will sell for you! … That will comes with some admin fee of course, hee hee!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="auction_0" mid="53"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="54"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="55"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="56"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="46"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Darn, what was I supposed to do again…?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="auction_30" mid="57"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="58"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="59"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="60"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="61"><![CDATA[<html>$Priestess of Darkness Mio$<BR>I recognise you,<FONT color=#387206>{user_nick}</FONT>. Sister <FONT color=#a82424>Castia</FONT> tells me you come here rather often.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="auction_60" mid="62"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="63"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="64"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="65"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="66"><![CDATA[<html>$Priestess of Darkness Mio$<BR>You seem to be visiting my sisters Castia and Shu a lot.<BR>…You must do the same for me as well, promise?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="auction_90" mid="67"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="68"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="quest" mid="69"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="70"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="71"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Hmmm, do you think you can pop by to see me first instead of my sisters?<BR>I don't like to be alone...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="79"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present" mid="80"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="74"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="gift_back" mid="81"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="77"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Oh it's really pretty! Is it really for me? <BR>Thank you so much!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenMarket(userObjID);</exe>
+         <exe type="conexe" true="3" false="0">0</exe>
+         <exe type="conexe" true="6" false="4">1</exe>
+         <exe type="conexe" true="7" false="5">2</exe>
+         <exe type="conexe" true="8" false="9">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 201 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 201 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 6301) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 201 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 201 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 201 ) >= 30</chk>
+      </conditions>
+      <exelink idx="auction_001">1</exelink>
+      <exelink idx="back_talk">2</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="auction_0">1</exelink>
+      <exelink idx="present_0">10,11</exelink>
+      <exelink idx="auction_30">1</exelink>
+      <exelink idx="present_30">10,11</exelink>
+      <exelink idx="auction_60">1</exelink>
+      <exelink idx="present_60">10,11</exelink>
+      <exelink idx="auction_90">1</exelink>
+      <exelink idx="present_90">10,11</exelink>
+      <exelink idx="gift">12,13</exelink>
+      <exelink idx="back_present">2</exelink>
+      <exelink idx="gift_back">2</exelink>
+   </talk>

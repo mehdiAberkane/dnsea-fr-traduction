@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n292_sword_of_velskurd</npcename>
+      <npcid>292</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Velskud's Sword]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$????$<BR><FONT color=#7e12d2>[Your nerves are tingling instinctively, but you can't really pin-point the reason behind it.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_473_hero_knights_weapon</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">473</chk>
+      </conditions>
+   </talk>

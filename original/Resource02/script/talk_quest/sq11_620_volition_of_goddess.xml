@@ -1,0 +1,185 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_620_volition_of_goddess</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>620</qid>
+      <designer>김인정</designer>
+      <qlevel>39</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Goddess's Will]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="6"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Dishonest Merchant Pero$<BR>We meet again, <FONT color=#387206>{user_nick}</FONT>!!<BR>
+This is a sign of a special relationship, don't you think so?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="72"><![CDATA[<html>… (Would this be really little?)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+I plan to conquer Saint Haven with this poppy's power, but I don't have enough money. Hmm hmm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="74"><![CDATA[<html>Yes. That's right.</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Hmm… just that, this place…. <FONT color=#a82424>they created</FONT>Abyss around this place, right?<BR>
+I heard that they got stronger than last time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="76"><![CDATA[<html>At the new Abyss place too?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Dishonest Merchant Pero$<BR>As you can see from getting the Goddess' Tears, there is an aura at the Abyss where Altea Goddess is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="78"><![CDATA[<html>I… see.</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Ah, it's not Goddess's Tears this time. <FONT color=#a82424>Its called</FONT>Goddess's Will.<BR>
+You can feel it already from it's name… How is it? It seems very important, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="80"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Anyway this is not something you can get from anywhere.<BR>
+The nightmare may consume Goddess Altea now but the moment she tries to wake up and the will of mercy works, that's when the jewel is made!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-g" mid="82"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Dishonest Merchant Pero$<BR>But, after a day, it melts because of the Abyss's force. So, before that day ends<FONT color=#a82424>you have to obtain Goddess's Will</FONT>from Abyss.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-h" mid="86"><![CDATA[<html>What's the reward?</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Dishonest Merchant Pero$<BR>If I get to the place, I am going to stalk Abyss everyday, <FONT color=#a82424>and when I find </FONT> Goddess's Will, I'll tell you right away! And then you can go and get it!! How does that sound?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="99"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Goddess's Will$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="88"><![CDATA[<html>This is not even fun or impressive.</html>]]></talk_answer>
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="102"><![CDATA[<html>What is the price?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Reward…? What reward…?<BR>
+ Bring back Goddess's Will! Why? You don't want it? Can't you just feel it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-b" mid="90"><![CDATA[<html>(Of course I will give it!!)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Huh, never had this situation. Really, you have to get that price?<BR>
+…Sigh, fine. I guess …I will give you the reward.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-c" mid="92"><![CDATA[<html>What kind of materials do you have?</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Fine. If you get the Goddess's Will, I will show you my special collection!! This kind of chance doesn't come everyday!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-open_shop" mid="94"><![CDATA[<html>[Abyss Market Trade]</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Dishonest Merchant Pero$<BR>I have some great items. Haha…. It's not like I don't want to explain it...<BR>
+Don't give me that suspicious look.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-2-a" mid="95"><![CDATA[<html>Eh, it's alright.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Now, you feel like you are wide awake, right? Now don't you want to just  hurry and get Goddess's Will and give it me? Don't you? <BR>
+Muhahahaha!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-2-b" mid="101"><![CDATA[<html><FONT color=#086171>(Get Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2-b" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Your reaction is boring, hmph..<BR> Anyway, since I'm going to start, get ready.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6200,,,,,</exe>
+         <exe type="setquest">620</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="conexe" true="5" false="2">0</exe>
+         <exe type="conexe" true="6" false="3">1</exe>
+         <exe type="conexe" true="7" false="4">2</exe>
+         <exe type="conexe" true="8" false="8">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,16001);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,16002);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,16003);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,16004);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6200,,,,,</exe>
+         <exe type="complete">620</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="h">0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="open_shop">0,1</exelink>
+   <exelink qstep="2" npc="n277_bluff_dealers_pope" sub="a">0</exelink>
+   <exelink qstep="2" npc="n277_bluff_dealers_pope" sub="b">1</exelink>
+   <journal_data recompense="0:6200" quest_title="여신의 의지" chapterid="" quest_level="39" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode />
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Goddess Will's story]]></title>
+         <contents mid="53"><![CDATA[<html>Go to Dishonest Merchant Pero and listen to Goddess Will's story.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Dishonest Merchant Pero</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to Dishonest Merchant Pero]]></destination>
+         <todo_msg mid="55"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>39:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>603</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

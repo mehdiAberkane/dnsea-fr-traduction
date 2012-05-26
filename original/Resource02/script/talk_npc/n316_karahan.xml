@@ -1,0 +1,14 @@
+   <talk>
+      <npcename>n316_karahan</npcename>
+      <npcid>316</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Sorcerer Karahan]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Strange Man${action:Talk}<BR>
+Hehe</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

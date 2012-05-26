@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n773_miracle_point</npcename>
+      <npcid>773</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Evidence of a Miracle (Ancient Library)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(A flower is seen blossoming in a strange spot, </FONT><BR>
+<FONT color=#7e12d2>other than that, there is nothing noteworthy)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq15_810_evidence_of_miracle</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">810</chk>
+      </conditions>
+   </talk>

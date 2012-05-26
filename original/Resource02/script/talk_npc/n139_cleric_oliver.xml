@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n139_cleric_oliver</npcename>
+      <npcid>138</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Cleric Oliver]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Cleric Oliver$<BR>Oh my, I thought I was a goner for sure!!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_578_brand</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">578</chk>
+      </conditions>
+   </talk>

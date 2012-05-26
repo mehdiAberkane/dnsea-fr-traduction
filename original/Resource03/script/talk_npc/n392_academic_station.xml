@@ -1,0 +1,42 @@
+   <talk>
+      <npcename>n392_academic_station</npcename>
+      <npcid>392</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Academic Station]]></npckname>
+      <talk_paragraph index="001" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="39"><![CDATA[<html>[Learing skill]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Academic Station$<BR>▶ <FONT color=#086171>The system is running on local interface.</FONT><BR>▷ <FONT color=#7e12d2>For network activation user identification is neccessary.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="42" link_target="sq08_377_test_academic1.xml"><![CDATA[<html>[Previous] <FONT color=#086171>Well-deserved I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="43" link_target="sq08_378_test_academic2.xml"><![CDATA[<html>[Previous] <FONT color=#086171>Well-deserved II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="mq08_225_get_back.xml"><![CDATA[<html>[Lv12] <FONT color=#a94407>Get back the thing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="mq08_226_unexpected_situation.xml"><![CDATA[<html>[Lv14] <FONT color=#a94407>Unexpected situation</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="mq08_227_lack_of_data.xml"><![CDATA[<html>[Lv14] <FONT color=#a94407>Data is not enough</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="mq08_228_out_of_fuel.xml"><![CDATA[<html>[Lv14] <FONT color=#a94407>Shortage of Output</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="17" link_target="mq08_229_go_see.xml"><![CDATA[<html>[Lv14] <FONT color=#a94407>Now go to meet</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="mq08_230_cant_change.xml"><![CDATA[<html>[Lv14] <FONT color=#a94407>Cannot Be Changed Easily</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="mq08_231_destroy_the_target.xml"><![CDATA[<html>[Lv16] <FONT color=#a94407>Destroy the object</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="mq08_232_ucan_be_strong.xml"><![CDATA[<html>[Lv16] <FONT color=#a94407>Can be strong</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="mq08_235_how_to_find.xml"><![CDATA[<html>[Lv20] <FONT color=#a94407>Searching For Methods</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="mq08_236_ending.xml"><![CDATA[<html>[Lv22] <FONT color=#a94407>Conclusion is set.</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="mq08_237_rouse.xml"><![CDATA[<html>[Lv22] <FONT color=#a94407>Open one's eyes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="sq08_379_change_job5.xml"><![CDATA[<html>[Lv15] <FONT color=#086171>Irine's previous gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="34"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Academic Station${action:Talk}<BR><FONT color=#086171>Connect…………….<BR>Welcome Academic Station. ver.2.1.1.</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>(C) Berlin Corporation. All Right Reserved.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_question mid="36"><![CDATA[<html>$Strange construction$<BR><FONT color=#7e12d2>(A thing never seen is standing<BR>It's for resting one's chin on one's hand or for a bird to take a rest)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+   </talk>

@@ -1,0 +1,91 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq08_6302_millefeuille_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6302</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Priestess of Darkness Mio's Problem]]></qkname>
+      <qnpc>
+         <npcid>201</npcid>
+         <npcename>n201_darklair_millefeuille</npcename>
+         <npckname>어둠의 여신관 밀피유</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-a" mid="7"><![CDATA[<html>You seem a bit lazy</html>]]></talk_answer>
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-b" mid="8"><![CDATA[<html>You are working hard</html>]]></talk_answer>
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-d" mid="9"><![CDATA[<html>No, that's not true</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Do you think the reason behind priestesses look like we're not doing anything is because I am useless unlike other priestesses?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Priestess of Darkness Mio$<BR>I see how you've seen me as... Adventurer...<BR>Disappointed...<BR><FONT color=#7e12d2>(Priestess of Darkness Mio seems to be mad)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-c" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Priestess of Darkness Mio$<BR>I try hard on my own, but Castia and Shualways treat me like a little one. <BR>Well, it is the truth that I'm the youngest. Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Priestess of Darkness Mio$<BR>I try hard on my own, but Castia and Shualways treat me like a little one. <BR>Well, it is the truth that I'm the youngest. Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Hm... I feel like you are just giving me an okay answer. That's just my thought, right?<BR>Hehe. I'm still happy. You are trying to cheer me up, right?<BR><FONT color=#7e12d2>(Priestess of Darkness Mio smiles innocently)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6302, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 201, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 201, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 201, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n201_darklair_millefeuille" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n201_darklair_millefeuille" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n201_darklair_millefeuille" sub="d">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 밀피유의 고민" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>201:1000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

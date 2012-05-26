@@ -1,0 +1,154 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_586_good_motive</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>586</qid>
+      <designer>김인정</designer>
+      <qlevel>35</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Goodness Motive]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="7"><![CDATA[<html>(Listen the story)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Guard Joey$<BR>Adventure, good to see you again.<BR>We are planning to make a community for <FONT color=#a82424>Money</FONT>….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="9"><![CDATA[<html>You are very kind.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Guard Joey$<BR><FONT color=#a82424>Guard Roy</FONT>,he is my friend, he's very kind and takes care of people. I think I need to learn from him since he helps wounded friends.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="12"><![CDATA[<html>That's good work.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Guard Joey$<BR>I think so too. He's sometime immature but really warm person.<BR>However, he's collecting money for his friends who are wounded. I want to help also.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="14"><![CDATA[<html>Yes? Well… (Not listening)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Guard Joey$<BR>Wow~ we understand easily each other! Right. It's good thing?!<BR>So you can help me, right? Haha. I already knew you would.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceppted" mid="16"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Goodness Motive$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QW_40.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Guard Joey$<BR>Hurry now to go to<FONT color=#a82424>Dark Overlord Tower</FONT> to collect some <FONT color=#a82424>Scrap metals</FONT>for me.<BR>I heard Duke Stuart is also collecting scrap metals, so I am planning to sell those to make money. Please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-a" mid="19"><![CDATA[<html>(Joey smiles)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Guard Joey$<BR>You collected it.<BR>Your help for kind works… you're very respectable!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-a" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-b" mid="21"><![CDATA[<html>(Give what you collected)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Guard Joey$<BR>I will use this for a good thing.<BR>My friend <FONT color=#a82424>Roy</FONT>will be happy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-c" mid="23"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-c" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Guard Joey$<BR>Thank you.<BR>I will ask other if they will help me or not. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">586</exe>
+         <exe type="recompense_view">,5861,5862,5863,5864,5865</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">1063</exe>
+         <exe type="addquestitem" num="1">300282</exe>
+         <exe type="huntitem" num="10" exe="5,6,7" onexe="">300282</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">201063</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5861,5862,5863,5864,5865</exe>
+         <exe type="delquestitem" num="-1">300282</exe>
+         <exe type="complete">586</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 252, 270 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceppted">0,2,9,4,8</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="b">0</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="c">1,2,3</exelink>
+   <journal_data recompense="1:5861,2:5862,3:5863,4:5864,5:5865" quest_title="몹시 선량한 동기" chapterid="" quest_level="35" quest_mark_type="10" use_item_list="300282">
+      <journal index="1">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>404,0,0</destination_pos>
+         <destination_mode>custom:401@3,402@3,403@3,404@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Collect Scrap Metals]]></title>
+         <contents mid="27"><![CDATA[<html>Got a request from Guard Joey. Let's go to <FONT color=#a82424>Dark Overlord Tower</FONT>to collect scrap metals.<BR><BR><FONT color=#086171>Black Mountain Dark Overlord Gate)</FONT> <FONT color=#a82424>→ Dark Overlord Tower</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Dark Overlord Tower]]></destination>
+         <todo_msg mid="29"><![CDATA[Collect Scrap Metals at Dark Overlord Tower]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode />
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Report to Guard Joey]]></title>
+         <contents mid="31"><![CDATA[<html>Let's bring what collected scrap metals to Guard Joey.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Guard Joey</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Report to Guard Joey]]></destination>
+         <todo_msg mid="33"><![CDATA[Bring to Guard Joey collected scrap metals]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>35:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>560</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n774_lotte_the_girl</npcename>
+      <npcid>774</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Adventurer Lottie (East Ancient Armory )]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Adventurer Lottie$<BR>I spent so much effort dolling up……<BR>
+<FONT color=#7e12d2> (An unfamiliar adventurer pacing up and down)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">sq15_812_unbreakable_vow</exe>
+         <exe type="enterquest">sq15_813_beautiful_misunderstanding</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">812</chk>
+         <chk type="hasquest">813</chk>
+      </conditions>
+   </talk>

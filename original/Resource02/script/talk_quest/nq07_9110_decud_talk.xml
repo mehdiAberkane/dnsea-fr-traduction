@@ -1,0 +1,96 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq07_9110_decud_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9110</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] The family]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>I'm sorry</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="7"><![CDATA[<html>I don’t know what to say to you.</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="8"><![CDATA[<html>That's very sad. Did you take revenge on the monster?</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="9"><![CDATA[<html>You should be very sad. Will you go on your adventures after that experience?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Well, once I had a family. My wife was not that pretty but small and cute. She was my co-worker as well. But she was killed by monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>
+Yes, sorry. The officials who were responsibile for getting my wife killed said the same thing. They just paid lip service. Boy, that's why I don’t like the word 'sorry'. Well… it's close to the anniversary of my wife's death.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>
+It's a thing of the past.  Don't cry about it! People should enjoy their lives. Well… it's close to the anniversary of my wife's death.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>
+No, I missed the monster sadly. I chased it for a long time though, before I missed its trace. I found something but it doesn't seem that I need to tell you about it. Well…it's close to the anniversary of my wife's death.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>There is no pain which isn't unforgettable. If there is, people can't live. The reason for continuing adventures is to catch the monster which killed my wife. But I failed to find it. Well...it's close to the anniversary of my wife's death.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 9110, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 24, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 가족에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>24:17000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

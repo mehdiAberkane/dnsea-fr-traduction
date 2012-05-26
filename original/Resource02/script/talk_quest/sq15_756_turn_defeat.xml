@@ -1,0 +1,292 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_756_turn_defeat</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>756</qid>
+      <designer>김인정</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>757</nextqid>
+      <nextqname>sq15_757_stronger_powers</nextqname>
+      <nextqnpc>n458_sword_of_geraint</nextqnpc>
+      <qkname mid="1"><![CDATA[[Changing job] Turn Defeat]]></qkname>
+      <qnpc>
+         <npcid>455</npcid>
+         <npcename>n455_velskud</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>458</npcid>
+         <npcename>n458_sword_of_geraint</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>711</npcid>
+         <npcename>n711_warrior_fedro</npcename>
+         <npckname>상급 워리어 페드로</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Velskud$<BR>…hah. Useless boy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n458_sword_of_geraint-noquest" image="QP_Geraint_sword.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d3>(I can see something familiar. It must be illusion)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-a" mid="8"><![CDATA[<html>Dark Knight?!</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Warrior Pedro$<BR><FONT color=#a82425>Dark Knight</FONT>was the one who messed up around Saint Haven?<BR>I don't have any idea why he was spotted here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n711_warrior_fedro-accepting-b" mid="10"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Turn defeat$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-accepting-b" image="QW_55.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Warrior Pedro$<BR>The rumor is spreading because of the chaotic atmosphere in the world. I don't believe it's Dark Knight.<BR>The most doubtful thing is he was around such<FONT color=#a82424>East Ancient Armory</FONT>.<BR><BR><FONT color=#7e12d3>※ This quest cannot be continued if you have a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n711_warrior_fedro-1" image="QW_55.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Warrior Pedro$<BR>The world is getting chaotic so weird rumors appear and appear..<BR>Dark Knight might not be around such <FONT color=#a82424>East Ancient Armory</FONT>place.<BR><BR><FONT color=#7e12d3>※ This quest cannot be continued if you have a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n458_sword_of_geraint-1" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$???$<BR><FONT color=#7e12d3>(I can see something stuck in the land.<BR>It looks familiar but may be illusion)<BR></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-1" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-1-a" mid="15"><![CDATA[<html>What do I do this for…?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Velskud$<BR><FONT color=#387207>{user_nick}</FONT><BR>Why are you fighting this? For what?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-1-a" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-1-b" mid="18"><![CDATA[<html>I want to be a brave man beyond Barnac.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Velskud$<BR>Okay. Why do you travel while helping people that you're not related? To get legendary arms?<BR>Or, you want to be a hero everyone admires?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-1-b" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n455_velskud-1-c" mid="21"><![CDATA[<html>By traveling, I believe I may meet my father.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Velskud$<BR><FONT color=#a82424>Barnac</FONT>…?<BR>
+You want to be beyond Barnac?<BR><FONT color=#7e12d3>(Velskud scoffs at me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-1-c" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-1-d" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Velskud$<BR>To meet your father…?<BR>What a ridiculous and worthless goal it is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-1-d" image="QN_warrior_barnak_silhouette.dds" itemindex="">
+      <talk_answer link_index="n455_velskud-1-e" mid="25"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Velskud$<BR>With the worthless goal, you want to be beyond <FONT color=#a82425>Barnac</FONT>?<BR>
+Hah, you never be beyond Barnac. Don't you think you can't even survive now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-1-e" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Velskud$<BR>The weakest boy bothers me!<BR>Let's find out how much you're weak!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-2" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Velskud$<BR>Huh. I'm going to teach you, trash. The difference of power!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-3" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-3-a" mid="29"><![CDATA[<html>Urrr…. I'm going to be stronger continuously!</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Velskud$<BR>
+You're acting like a baby. Don't you ever think that how dare you are to talk about Barnac with the funny few skills?<BR>
+How about calling you baby?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-3-a" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-3-b" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Velskud$<BR>
+Yeah. Barnac is now too old, so you're waiting for a few years to be beyond him after he dies.<BR>
+That would be easy to be beyond him.<BR>
+That's so you. Hahaha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-3-b" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-3-c" mid="68"><![CDATA[<html>The thing that I have to give up…?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Velskud$<BR>
+Novice.<BR>
+If you don't ever figure out what to give up, you will lose bigger one. If you can't realize it, you will just remain as a starving coyote wandering around for food.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-3-c" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-3-d" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Velskud$<BR>You don't think that you can be stronger if you enhance power and skills without any plans, do you…?<BR>
+Get rid of worthless skills and focus on ones that are really helpful for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-3-d" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-3-e" mid="71"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Velskud$<BR>What you really need is balancing the power and skills to be fit to your ability. And then, find out what should be focused on and train them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-3-e" image="" itemindex="">
+      <talk_answer link_index="n455_velskud-3-f" mid="75"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Velskud$<BR>
+Those specialized skills are going to melt into you, and they will give you stronger power. This is called EX. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-3-f" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Velskud$<BR>Many fools cannot understand this before they experience by themselves.<BR>They don't know the difference of power and their limitations.<BR>So…, let me check you again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n455_velskud-4" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Velskud$<BR>This is the difference of power.<BR>
+The gap between your ideal and reality.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n458_sword_of_geraint-5" image="QP_Geraint_sword.dds" itemindex="">
+      <talk_answer link_index="n458_sword_of_geraint-5-a" mid="38"><![CDATA[<html>(Step closer and check it)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html><FONT color=#7e12d3>(Velskud's just gone. There's Jereint Sword fixed in front on my eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n458_sword_of_geraint-5-a" image="" itemindex="">
+      <talk_answer link_index="n458_sword_of_geraint-5-!next" mid="42"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">756</exe>
+         <exe type="recompense_view">7560,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7560,,,,,</exe>
+         <exe type="complete">756</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="a">1</exelink>
+   <exelink qstep="accepting" npc="n711_warrior_fedro" sub="b">0</exelink>
+   <exelink qstep="1" npc="n455_velskud" sub="b" />
+   <exelink qstep="1" npc="n455_velskud" sub="c" />
+   <exelink qstep="1" npc="n455_velskud" sub="d" />
+   <exelink qstep="1" npc="n455_velskud" sub="e">0,1</exelink>
+   <exelink qstep="3" npc="n455_velskud" sub="b" />
+   <exelink qstep="3" npc="n455_velskud" sub="c" />
+   <exelink qstep="3" npc="n455_velskud" sub="d">0,1</exelink>
+   <exelink qstep="3" npc="n455_velskud" sub="e" />
+   <exelink qstep="3" npc="n455_velskud" sub="f">0,1</exelink>
+   <exelink qstep="5" npc="n458_sword_of_geraint" sub="a">0</exelink>
+   <exelink qstep="5" npc="n458_sword_of_geraint" sub="!next">1</exelink>
+   <journal_data recompense="0:7560" quest_title="[전직] 패배를 딛고" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,n455</destination_pos>
+         <destination_mode>custom:551@1,552@1,553@1</destination_mode>
+         <statemark_npcid>455</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[East Ancient Armory]]></title>
+         <contents mid="45"><![CDATA[<html>Find Velskud at East Ancient Armory.<BR><BR><FONT color=#7e12d2>※ This quest cannot be continued if you have a party.<BR></FONT><FONT color=#086171></FONT><BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82424>→ East Ancient Armory(Velskud)</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[(1 person) Talk withVelskud at East Ancient Armory]]></destination>
+         <todo_msg mid="47"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Attack 1]]></title>
+         <contents mid="49"><![CDATA[<html>Defense Velskud's attacking.<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>※ This quest cannot be continued if you have a party.<BR><BR></FONT><FONT color=#086171></FONT>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82424>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[(1 person) Fight against Velskud at East Ancient Armory]]></destination>
+         <todo_msg mid="51"><![CDATA[Defense Velskud's attacking]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,n455</destination_pos>
+         <destination_mode>custom:551@1,552@1,553@1</destination_mode>
+         <statemark_npcid>455</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Dark Knight's cold smile]]></title>
+         <contents mid="54"><![CDATA[<html>I cannot win against Velskud. Talk with him again.<BR>
+<BR><FONT color=#7e12d2>※ This quest cannot be continued if you have a party.<BR></FONT><FONT color=#086171></FONT><BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→  East Ancient Armory(Velskud)</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[(1 person) Talk with Velskud at East Ancient Armory]]></destination>
+         <todo_msg mid="55"><![CDATA[Talk with Velskud]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Velskud.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Attack 2]]></title>
+         <contents mid="57"><![CDATA[<html>Defense Velskud's attacking.<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>※ This quest cannot be continued if you have a party.<BR><BR></FONT><FONT color=#086171></FONT>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[(1 person) Fight against Velskud at East Ancient Armory]]></destination>
+         <todo_msg mid="59"><![CDATA[Defense Velskud's attacking again.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QP_Geraint_sword.dds</contents_image>
+         <destination_pos>14,n458</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>458</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Familiar Sword]]></title>
+         <contents mid="61"><![CDATA[<html>When I came to, there was no Velskud and I stood Riverwart Wharf alone. I can see the familiar sword in front of me. Let's check it<BR><FONT color=#7e12d2></FONT><BR>
+<FONT color=#7e12d2>※ This quest cannot be continued if you have a party.<BR><BR></FONT><FONT color=#086171></FONT>
+<FONT color=#086172>Riverwart Wharf</FONT> <FONT color=#a82424>→ Jereint's Sword</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[(1 person) Talk to Jereint's Sword at Riverwart Wharf]]></destination>
+         <todo_msg mid="63"><![CDATA[Talk to Jereint's Sword at Riverwart Wharf]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>44:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest>755</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,152 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>dq15_1031_halo_effect</qename>
+      <qtype>dayquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>1031</qid>
+      <designer>김인정</designer>
+      <qlevel>42</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Halo Effect]]></qkname>
+      <qnpc>
+         <npcid>715</npcid>
+         <npcename>n715_adventurer_guildmaster_hose</npcename>
+         <npckname>모험자 길드장 호세</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-a" mid="6"><![CDATA[<html>(Jose strongly denies)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Guildmaster Jose${action:Talk}<BR>I heard <FONT color=#a82425>Idol Harori</FONT> had a concert in <FONT color=#a82424>Dragon-followers Territory</FONT>…<BR>Ah! Of course I don't have any interest in her, really!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-b" mid="15"><![CDATA[<html>(Jose speaks vaguely)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Guildmaster Jose$<BR>I'm just curious about she really had a concert in the place.<BR>I heard in a fan club board that someone took her hair there, so I wanted to have…<BR>
+Ah, forget about it!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-b" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-c" mid="97"><![CDATA[<html>Okay!</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Guildmaster Jose$<BR>I'm just! Curious about her…<BR>It's just about curiosity. You should believe me. Okay?!<BR><FONT color=#7e12d3>(Jose grabs my collar and shakes it.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Halo Effect$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1" image="QW_54.dds" itemindex="">
+      <talk_question mid="86"><![CDATA[<html>$Guildmaster Jose$<BR>Hmm! Now you go to <FONT color=#a82424>Dragon-followers Territory</FONT> to check if there is Harori's hair.<BR>Well.. I'm just asking you to check it. If there's nothing, it's okay..<BR><FONT color=#7e12d3>(Jose sees a mountain far away from here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2" image="QN_Npc_Idol_haloli.dds" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-a" mid="89"><![CDATA[<html>There was nothing.</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Guildmaster Jose$<BR>Harori's hairs…?!<BR>
+You found it?<BR><FONT color=#7e12d3>(Jose grabs my collar abruptly)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-b" mid="99"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Guildmaster Jose$<BR>O… okay.<BR>
+<FONT color=#7e12d3>(Jose looks disappointed)<BR></FONT>I thought that I could get it this time..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-c" mid="93"><![CDATA[<html><FONT color=#086172>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2-c" image="QN_Npc_Idol_haloli.dds" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Guildmaster Jose${action:Talk}<BR>If you have more time, please drop by my house again. There must be the hair around the place.<BR>(murmuring)… did the guy lie to me?<BR>
+I was fool.. (murmuring)…</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">1031</exe>
+         <exe type="talk" npc="n715_adventurer_guildmaster_hose">1</exe>
+         <exe type="recompense_view">10310,,,,,</exe>
+         <exe type="checkStageClearRank" rand="6" num="542" onexe="4,5,6" true="[=" xsi:nil="true" />
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">10310,,,,,</exe>
+         <exe type="complete">1031</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="c">2</exelink>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="acceptted">0,3,1</exelink>
+   <exelink qstep="2" npc="n715_adventurer_guildmaster_hose" sub="b">0</exelink>
+   <exelink qstep="2" npc="n715_adventurer_guildmaster_hose" sub="c">1</exelink>
+   <journal_data recompense="10310" quest_title="후광효과" chapterid="" quest_level="42" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,0,0</destination_pos>
+         <destination_mode>custom:541@3,542@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Find Harori's Trace]]></title>
+         <contents mid="61"><![CDATA[<html>Search to Dragon-followers Territory, and check if there is the thing that Jose said.<BR>
+<BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Dragon-followers Territory</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Search to Dragon-followers Territory]]></destination>
+         <todo_msg mid="63"><![CDATA[Go to Dragon-followers Territory.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_npc_Master_Jose.dds</contents_image>
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Report to Guildmaster Jose]]></title>
+         <contents mid="65"><![CDATA[<html>I haven't found anything. Report to Lotus Marsh's Guildmaster Jose.<BR>
+<BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Guildmaster Jose</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk with Guildmaster Jose]]></destination>
+         <todo_msg mid="67"><![CDATA[There was nothing. Report it to Guildmaster Jose.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>42:49</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>786</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

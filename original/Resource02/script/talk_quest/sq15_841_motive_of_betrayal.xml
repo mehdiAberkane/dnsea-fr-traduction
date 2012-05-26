@@ -1,0 +1,339 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_841_motive_of_betrayal</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>841</qid>
+      <designer>김인정</designer>
+      <qlevel>42</qlevel>
+      <qdesc>리치의 상징물	300465
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>842</nextqid>
+      <nextqname>sq15_842_everlasting_hearts</nextqname>
+      <nextqnpc>n714_cleric_yohan</nextqnpc>
+      <qkname mid="1"><![CDATA[Motive of Betrayal]]></qkname>
+      <qnpc>
+         <npcid>710</npcid>
+         <npcename>n710_scholar_hancock</npcename>
+         <npckname>문장학자 핸콕</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>714</npcid>
+         <npcename>n714_cleric_yohan</npcename>
+         <npckname>상급 클레릭 요한</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>772</npcid>
+         <npcename>n772_native_catau</npcename>
+         <npckname>원주민 카타우</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-noquest" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldist Hancock$<BR><FONT color=#a82425>Master Cleric Yohan</FONT>said that he will give me something for helping to research the symbols.<BR>But it seems he hasn't got it yet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Katau$<BR><FONT color=#7e12d3>(Katau spits on the pavement)</FONT><BR>…Get out of here, stranger.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="8"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Cleric Yohan$<BR>I've got enough dragon-followers' symbols to research on Asai tribe.<BR>
+Could you bring this to <FONT color=#a82425>Heraldist Hancock</FONT>? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-acceppted" mid="10"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Motive of Betrayal$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Cleric Yohan$<BR><FONT color=#a82424>Heraldist Hancock</FONT>has already prepared to research on the symbols.<BR> Please give the <FONT color=#a82425>Rich's symbol</FONT>to him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-1" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Katau$<BR><FONT color=#7e12d3>(Katau spits on the pavement)</FONT><BR>…Get out of here, stranger.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-1-a" mid="14"><![CDATA[<html>(Give the Rich's symbol.)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Heraldist Hancock$<BR>
+Ah. You must be here with the work of Yohan.<BR>
+Wait a minute.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-1-b" mid="16"><![CDATA[<html>Why?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Heraldist Hancock$<BR>
+<FONT color=#7e12d3>(Hancock's looking at the symbols)<BR></FONT>…Hmm, this is so strange.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1-b" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-1-c" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Heraldist Hancock$<BR>This symbol is a sentence which has the ability to keep strong energies.<BR>
+Maybe, Asai Shamons used this to enhance their powers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1-c" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-1-d" mid="20"><![CDATA[<html>Side-effect?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldist Hancock$<BR>However, this kind of enhanced power has an negative effect on the user.<BR>
+If the user keeps using this, they will face with several side-effects.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1-d" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2" mid="22"><![CDATA[<html>Yeah.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Heraldist Hancock$<BR>The use can become a rich….<BR>
+There must have been something like <FONT color=#a82425>the source of power</FONT> which could put the energies into the symbol around them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Heraldist Hancock$<BR>That's all what I found.<BR>Just report all of these to Master Cleric Yohan.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-a" mid="25"><![CDATA[<html>(Tell him what I heard)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Master Cleric Yohan$<BR>How was Heraldist Hancock's research results?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-a" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-b" mid="27"><![CDATA[<html>You got something that rings a bell?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Cleric Yohan$<BR>The source of power….<BR>
+<FONT color=#7e12d3>(Yohan's considering it)<BR></FONT>Is it…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-c" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Cleric Yohan$<BR>When I was young, I used to see <FONT color=#a82424>a sanctum</FONT> which adults regarded it as a holy place.<BR>
+And I heard that there was a <FONT color=#a82425>tribe's artifact</FONT> which had been preserved by ancestors.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-c" image="QW_51.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-3" mid="32"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Cleric Yohan$<BR>I guess there must be the source of power.<BR>Could you go to <FONT color=#a82425>Riverwart Village Ruins</FONT>again and search around there?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3" image="QW_51.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Master Cleric Yohan$<BR>If you see <FONT color=#a82425>Katau</FONT> in<FONT color=#a82424>Riverwart Village Ruins</FONT>, ask him to help you.<BR>
+That guy must know how to preserve the tribe's artifact.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-3" image="" itemindex="">
+      <talk_answer link_index="n772_native_catau-3-a" mid="35"><![CDATA[<html>I came here with Yohan's request.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Katau${action:Talk}<BR>What? Stranger.<BR>
+You've been still here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-3-a" image="" itemindex="">
+      <talk_answer link_index="n772_native_catau-3-b" mid="37"><![CDATA[<html>(Explain the situation)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Katau$<BR>He isn't our member!!<BR>
+But why he continuously took care of here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-3-b" image="" itemindex="">
+      <talk_answer link_index="n772_native_catau-3-c" mid="39"><![CDATA[<html>Because he hasn't changed his mind at all.</html>]]></talk_answer>
+      <talk_answer link_index="n772_native_catau-3-c" mid="40"><![CDATA[<html>He's just concerned about you and your tribe.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Katau$<BR>……Tribe's artifact? What made him to try to preserve the artifact?<BR>He doesn't have to take care of our tribe's artifact.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-3-c" image="" itemindex="">
+      <talk_answer link_index="n772_native_catau-3-d" mid="42"><![CDATA[<html>How can I do it?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Katau$<BR><FONT color=#7e12d3>(Katau laughs scornfully)</FONT> Pah…<BR>
+I'm not sure that you're talking true or not. But, if he really wants to protect our tribe's artifact, I'll tell you how to do it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-3-d" image="" itemindex="">
+      <talk_answer link_index="n772_native_catau-3-e" mid="44"><![CDATA[<html>Isn't there any way to totally prevent the abusing power?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Katau$<BR>Asai Riches're abusing the artifact's power in front of us..<BR>
+If you kill them, you can stop abusing the power temporarily.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-3-e" image="" itemindex="">
+      <talk_answer link_index="n772_native_catau-3-f" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Katau$<BR>Totally prevent?<BR>
+…If I knew that, I would have already done by myself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-3-f" image="" itemindex="">
+      <talk_answer link_index="n772_native_catau-4" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Katau$<BR>I killed Asai Riches again and again but they revived continuously.<BR>There might be something which helps to revive them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-4" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Katau$<BR>Anyway, this is the only why that I know to prevent abusing the power. <FONT color=#7e12d2>(Katau shows a little favorable attitude)<BR></FONT>It's a temporary method though, you should kill<FONT color=#a82425>Asai Riches</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n772_native_catau-5" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Katau$<BR>It seems that they ran away. But as you know, they will come back.<BR>
+But I believe that we can find the way to kill them permanently.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-5-a" mid="53"><![CDATA[<html>(Tell him the previous situation)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Cleric Yohan$<BR>Did you prevent abusing the power?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5-a" image="QN_LM_Nativeman_A.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-5-b" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Master Cleric Yohan$<BR>It's good to hear that Katau opened his mind..<BR> However, I'm still concerned that there's possibility to abuse the artifact.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-5-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-5-!next" mid="57"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">841</exe>
+         <exe type="talk" npc="n714_cleric_yohan">1</exe>
+         <exe type="recompense_view">8410,,,,,</exe>
+         <exe type="addquestitem" num="3">300465</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300465</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntmon" num="3" party="1" exe="9,10,11" onexe="">1395</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201395</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">1396</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201396</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">1397</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">201397</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1395);</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8410,,,,,</exe>
+         <exe type="complete">841</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="a">2</exelink>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="acceppted">0,1,3</exelink>
+   <exelink qstep="1" npc="n710_scholar_hancock" sub="a">0</exelink>
+   <exelink qstep="1" npc="n710_scholar_hancock" sub="b" />
+   <exelink qstep="1" npc="n710_scholar_hancock" sub="c" />
+   <exelink qstep="1" npc="n710_scholar_hancock" sub="d" />
+   <exelink qstep="1" npc="n710_scholar_hancock" sub="2">1,2</exelink>
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="b" />
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="c" />
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n772_native_catau" sub="b" />
+   <exelink qstep="3" npc="n772_native_catau" sub="c" />
+   <exelink qstep="3" npc="n772_native_catau" sub="c" />
+   <exelink qstep="3" npc="n772_native_catau" sub="d" />
+   <exelink qstep="3" npc="n772_native_catau" sub="e" />
+   <exelink qstep="3" npc="n772_native_catau" sub="f" />
+   <exelink qstep="3" npc="n772_native_catau" sub="4">0,1,2,3,4,5,6,7</exelink>
+   <exelink qstep="5" npc="n714_cleric_yohan" sub="b">0</exelink>
+   <exelink qstep="5" npc="n714_cleric_yohan" sub="!next">1</exelink>
+   <journal_data recompense="8410" quest_title="배신의 이유" chapterid="" quest_level="42" quest_mark_type="10" use_item_list="300465&#xD;&#xA;">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>15,n710</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>710</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Research Request ]]></title>
+         <contents mid="59"><![CDATA[<html>Ask Heraldist Hancock to research Asai Rich.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Heraldist Hancock</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Talk with Heraldist Hancock]]></destination>
+         <todo_msg mid="61"><![CDATA[Go to Heraldist Hancock and request a research.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Truth]]></title>
+         <contents mid="63"><![CDATA[<html>Heraldist Hancock said that Rich's symbol is like a sentence which has energies and there's a source of power to enhance them. Tell this to Master Cleric Yohan.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Cleric Yohan</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Talk with Master Cleric Yohan]]></destination>
+         <todo_msg mid="65"><![CDATA[Tell this to Master Cleric Yohan.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,n772</destination_pos>
+         <destination_mode>custom:511@1</destination_mode>
+         <statemark_npcid>772</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Katau's Advice]]></title>
+         <contents mid="74"><![CDATA[<html>Master Cleric Yohan told me that I should ask to Katau about how to prevent abusing the power by Asai tribe.<BR><BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Riverwart Village Ruins(Katau)</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Talk with Katau in Riverwart Village Ruins]]></destination>
+         <todo_msg mid="76"><![CDATA[Ask Katau in Riverwart Village Ruins.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,0,0</destination_pos>
+         <destination_mode>custom:511@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[From Riverwart Village Ruins]]></title>
+         <contents mid="67"><![CDATA[<html>Katau told me how to prevent abusing the power temporarily. Let's kill Asai tribe.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Riverwart Village Ruins</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Riverwart Village Ruins]]></destination>
+         <todo_msg mid="69"><![CDATA[In Riverwart Village Ruins, kill Asai Riches.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Talk with Master Cleric Yohan]]></title>
+         <contents mid="71"><![CDATA[<html>I just killed all of Asai Riches and prevented abusing the power. Go back to Lotus Marsh and report to Master Cleric Yohan.<BR><BR><FONT color=#086171>Lotus Marsh</FONT><FONT color=#a82425> → Master Cleric Yohan</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Talk with Master Cleric Yohan]]></destination>
+         <todo_msg mid="78"><![CDATA[Go back to Master Cleric Yohan and tell the situation.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>42:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>840</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

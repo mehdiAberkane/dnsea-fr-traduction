@@ -1,0 +1,19 @@
+   <talk>
+      <npcename>n435_cian</npcename>
+      <npcid>435</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Warrior Xian
+Broken Sealed Box
+(Death City Gates)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Warrior Xian$<BR>Hello there~!!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_649_like_a_romance</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">649</chk>
+      </conditions>
+   </talk>

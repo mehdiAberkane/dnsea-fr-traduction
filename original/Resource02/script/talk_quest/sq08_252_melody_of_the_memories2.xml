@@ -1,0 +1,298 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_252_melody_of_the_memories2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>252</qid>
+      <designer>나은하</designer>
+      <qlevel>10</qlevel>
+      <qdesc>300166 프로포즈 반지</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Melody of Memories II]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린  (캐더락 아쳐 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html> {ui_string: 1200001} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html> {ui_string: 1200002} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html> {ui_string: 1200003} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> {ui_string: 1200004} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html> {ui_string: 1200005} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="101"><![CDATA[<html>$Master Archer Adelynn$<BR>Please leave me alone if you are not here to learn archery.<BR>(You can obtain the quest from Merchant May.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The wind seems to sing a sad song today.<BR>(You can obtain the quest from Merchant May)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="72"><![CDATA[<html>(Merchant May flips to a page and show the notes to you.)</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Merchant May$<BR>You are here at the right time. I looked through Eureke's notes. I think I know what sparked their argument.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="96"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Melody of Memories II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-a" mid="7"><![CDATA[<html>(Merchant May flips to a page and show the notes to you.)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR>You need to read to understand..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Excerpt from the Diary$<BR>I will leave this world before her. Her time is like a huge tree slowly growing day by day, whereas mine is slipping away rapidly. I'm afraid to leave her alone...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-c" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Excerpt from the Diary$<BR>Although she often comforted me, But I know she also feared staying alone in this world. I think I should let her free, So I told her those hurtful words.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Excerpt from the Diary$<BR>I hear the cries of the monster, seems like will be my last entry. If I ever survive, I would say sorry to her and give her the best romantic marriage proposal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-e" mid="17"><![CDATA[<html>(May looks upset)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Excerpt from the Diary$<BR>The battle of the Canyon was worse than I expected.<BR>If someone manages to find this diary, please give her the ring on my behalf.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-f" mid="19"><![CDATA[<html>Calm down, Adelynn might hear you.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Merchant May${action:Angry}<BR>What a good for nothing Cleric!<BR>Knowing that a Human lives  a shorter life than Elves, yet he still chose to abandon Adelynn!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-g" mid="21"><![CDATA[<html>(May catching her breathe) </html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant May$<BR>What a stupid man.<BR>Because of his stupidity, Adelynn had to suffer for 3 years!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-h" mid="23"><![CDATA[<html>What? Why me?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant May$<BR>I got an idea! <BR>We need to help Adelynn.<BR>You. You're gonna help me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-h" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-i" mid="25"><![CDATA[<html> Argh, alright! I'll help! </html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant May$<BR>Adelynn looks sad, can't you see it?<BR>How can you be so heartless?<BR>(May starts 30 minutes of preaching).</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-i" image="QW_14.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-j" mid="27"><![CDATA[<html> But I'm, not your servant ... </html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Merchant May$<BR>First, we need to find the stupid ring and give to to Adelynn with the diary.<BR>Sigh Canyon here we come!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-j" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2" mid="29"><![CDATA[<html>Guess I do not have a choice, Sigh Canyon...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Merchant May$<BR>Seems like you have yet understand why are we doing this. Do you need me to explain what I said earlier on?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Did you manage to find out reason why Eureke and Adelynn had that fight?<BR>(Talk to Merchant May.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Master Archer Adelynn$<BR>Please leave me alone if you are not here to learn archery.<BR>(Adelynn seems like lost in deep thoughts.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QW_14.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Merchant May$<BR>Let's go to the Sigh Canyon!<BR>Gotta retreive the proposal ring for Adelynn!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="34"><![CDATA[<html> (May seemed relieved.) </html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Merchant May$<BR>Now, with the notes and Eureke's ring, deliver it to Adelynn.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Merchant May$<BR>Hope that Eureke's diary and the proposal ring will comfort her!<BR>Now, hurry over to Adelynn.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4" image="" itemindex="">
+      <talk_answer link_index="n023_ranger_fugus-4-a" mid="37"><![CDATA[<html>(Tell him about the content of the diary.)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Scout Fergus$<BR>So what's the reason for the fight between the two?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n023_ranger_fugus-4-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Scout Fergus$<BR>A very stupid idea indeed<BR>I suppose knowing Eureke's final thoughts might bring Adelynn some comfort...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n033_archer_master_adellin-4-a" mid="40"><![CDATA[<html> (Adelynn took the diary and ring with trembling hands) </html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Master Archer Adelynn $<BR>Is this Eureke's…. notebook?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-a" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n033_archer_master_adellin-4-b" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Master Archer Adelynn$<BR><FONT color=#7e12d2>(Adelynn reads for a very long time.)<BR>(She burst into tears at the last page of the diary.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-c" mid="105"><![CDATA[<html> (Waiting for Adelynn to finish crying) </html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Master Archer Adelynn${action:Cry}<BR>What a fool this Eureke, but I was an idiot too. I was afraid of losing him, though I never let him know. We never talked about our future together, we are just, in love... <BR></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-c" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-d" mid="46"><![CDATA[<html> Yes, Eureke loved you, till the very end. </html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Archer Adelynn$<BR>Yes. Yes, I am. (Adelynn looks up at you. There is genuine happiness in her eyes.)<BR>The truth is...I've dealt with my pain already. In my heart, I've moved on, though...the last time we spoke...that has haunted me still...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-d" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-e" mid="48"><![CDATA[<html> Are you alright now? </html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Archer Adelynn$<BR>I will remember him always. I will live this life bravely, in honour of his love for me.<BR>Thank you very much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-e" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-f" mid="50"><![CDATA[<html> That's good, I'm happy for you. </html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Archer Adelynn$<BR>The heart still hurts but it will heal someday. Till then I would be able to play the Melody of Memories once again...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-f" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-g" mid="52"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-g" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Master Archer Adelynn$<BR>I think I hear the melody in the wind ...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2521,2522,2523,2524,2525</exe>
+         <exe type="setquest">252</exe>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n026_trader_may-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">371</exe>
+         <exe type="addquestitem" num="1">300166</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,7">300166</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">372</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200371</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200372</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300165</exe>
+         <exe type="delquestitem" num="-1">300166</exe>
+         <exe type="recompense">,2521,2522,2523,2524,2525</exe>
+         <exe type="complete">252</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="b" />
+   <exelink qstep="1" npc="n026_trader_may" sub="c" />
+   <exelink qstep="1" npc="n026_trader_may" sub="d" />
+   <exelink qstep="1" npc="n026_trader_may" sub="e" />
+   <exelink qstep="1" npc="n026_trader_may" sub="f" />
+   <exelink qstep="1" npc="n026_trader_may" sub="g" />
+   <exelink qstep="1" npc="n026_trader_may" sub="h" />
+   <exelink qstep="1" npc="n026_trader_may" sub="i" />
+   <exelink qstep="1" npc="n026_trader_may" sub="j" />
+   <exelink qstep="1" npc="n026_trader_may" sub="2">0,2,8,9,10,4,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="a">0,1</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="c" />
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="e" />
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="f">2</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="g">3</exelink>
+   <journal_data recompense="1:2521,2:2522,3:2523,4:2524,5:2525" quest_title="추억의 멜로디Ⅱ" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="300166">
+      <journal index="1">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="56"><![CDATA[<html>May read through the diary and finally found the reason beind lovers' fight.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="58"><![CDATA[Talk to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_14.dds</contents_image>
+         <destination_pos>119,0,0</destination_pos>
+         <destination_mode>custom:116@1,117@1,118@1,119@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Find the Proposal Ring in the Sigh Canyon]]></title>
+         <contents mid="60"><![CDATA[<html>May has forced you to find Adelynn's <FONT color=#a82424>Proposal Ring</FONT> somewhere in the <FONT color=#a82424>Sigh Canyon</FONT>. Good luck.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Sigh Canyon</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Find the Proposal Ring]]></destination>
+         <todo_msg mid="62"><![CDATA[Find the Proposal Ring.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="64"><![CDATA[<html>You found Adelynn's Proposal Ring. Return to <FONT color=#a82424>Merchant May</FONT> with the good news.<BR><BR><FONT color=#086171>Calderock Village</FONT><FONT color=#a82424> → Merchant May</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Talk to  Merchant May at Calderock Village]]></destination>
+         <todo_msg mid="66"><![CDATA[Talk to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Talk to Master Archer Adelynn]]></title>
+         <contents mid="68"><![CDATA[<html>Deliver Eureke's Notebook and the Proposal Ring to <FONT color=#a82424>Master Archer Adelynn</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Archer Adelynn</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk to Master Archer Adelynn]]></destination>
+         <todo_msg mid="70"><![CDATA[Talk to Master Archer Adelynn at Calderock Village]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>251</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

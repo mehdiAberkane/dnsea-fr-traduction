@@ -1,0 +1,103 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq37_9159_gunter_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9159</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Dragons]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+I was left behind after the Black Dragon Raid but I had a chance to take a look at very close range. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="9"><![CDATA[<html> It would've been so much better if that kind of presence would be on our side. </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="10"><![CDATA[<html> Were you scared? </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="11"><![CDATA[<html> Have you ever seen other dragons? </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="12"><![CDATA[<html> It's just a big lizard. </html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+I knew it at first glance. No matter how evil, it is still so strong that a human being can never imagine. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Yes. It would be good if they were on our side but unfortunately, dragons are known to be evil. <FONT color=#7e12d2> (Gunther is looking thoughtful.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Who wouldn’t be scared? I bet you won't be able to move at all if you see the Black Dragon. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Um… I don’t know whether that was a dragon or not. I have seen a beautiful large silver creature once. I couldn’t see it properly since it was too far away but if there were other dragons, I believe that’s what they would look like.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Hahaha. Do you really think a dragon is a big lizard? You don’t have to pretend that you are not scared of them. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 9159, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 320 ); </exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 36, 320 ); </exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 160 ); </exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 36, 160 ); </exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="b">1,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">2,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">3,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="e">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 드래곤들에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>36:13600:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

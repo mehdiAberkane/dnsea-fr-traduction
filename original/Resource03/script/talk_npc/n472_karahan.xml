@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n472_karahan</npcename>
+      <npcid>472</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Strange Man]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Strange Man$<BR>Hehe, it is a waste of your time trying to attract my attention or to provoke me, because beauty itself is irresistible, hahaha!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq15_705_doubtful_proposal</exe>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="enterquest">sq15_759_real_cause</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">705</chk>
+         <chk type="hasquest">759</chk>
+      </conditions>
+   </talk>

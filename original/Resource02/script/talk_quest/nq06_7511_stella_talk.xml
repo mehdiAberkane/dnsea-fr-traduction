@@ -1,0 +1,97 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq06_7511_stella_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7511</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Master Sorceress Stella]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="7"><![CDATA[<html>Gorgeous Soceress</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="8"><![CDATA[<html>A pretty Mrs.</html>]]></talk_answer>
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="9"><![CDATA[<html>I have no idea.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Stella$<BR>…Well I have a question for you.<BR>You seem to enjoy talking to me. What do you think of me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Stella$<BR>Hahaha. I'm so gorgeous~<BR>When I first saw you, I thought you're just another newbie but now I like you, {user_class}.<BR>If you train well, you'll be a famous hero. I have an eye for people. As you know I'm fond of Karacule? Hahahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Stella$<BR>
+You will grow to be more powerful since I've complimented you. Do you wanna give me a gift as a reward? …It's better to do it quickly.<BR><FONT color=#7e12d2>(Stella smiles.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Sorceress Stella$<BR>
+What? An old woman?<BR><FONT color=#7e12d2>(Stella gets angry. She is about to hit me with her wand.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR>Hahaha. When I saw you at first, I thought you're just another newbie but now I like you, {user_class}.<BR>You should train well, okay? Ahhaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Stella$<BR>…Oh, do you?<BR><FONT color=#7e12d2>(Stella looks disappointed)</FONT><BR>Huh. I don't feel bad, although you told me that. I don't care about it at all~.<BR>So, don't take me wrong. Huh.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7511, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 45, 320 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 45, 160 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 45, 320 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="c">2,0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="e">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 스텔라에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>45:15200:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

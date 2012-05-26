@@ -1,0 +1,276 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_625_revenge_of_orc</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>625</qid>
+      <designer>나은하</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Immortal Orc Kim]]></qkname>
+      <qnpc>
+         <npcid>383</npcid>
+         <npcename>n383_jester_jack</npcename>
+         <npckname>어릿광대 잭</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>98</npcid>
+         <npcename>n098_warrior_master_lodrigo</npcename>
+         <npckname>상급 워리어 로드리고</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-noquest" image="QN_NPC_Warrior_Lodrigo.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Clown Jack$<BR>Oh~ You look so bored.<BR>Don’t forget that <FONT color=#a94407>Wonderful Theme Park</FONT> is always open for you.<BR>
+<FONT color=#7e12d2>(You can receive a quest from Master Warrior Rodrigo)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-a" mid="8"><![CDATA[<html>You mean great timing.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Mater Warrior Rodrigo$<BR>Oh bad timing. <FONT color=#387206>{user_nick}</FONT>, I wanted to see you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-a" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-b" mid="10"><![CDATA[<html>A letter from Orc Kim?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Warrior Rodrigo$<BR>You don't change.<BR>
+Anyway your lover, <FONT color=#a82424>Orc Kim</FONT> has sent you an another letter.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-b" image="QN_NPC_Warrior_Lodrigo.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-c" mid="15"><![CDATA[<html>(Read the letter from Orc Kim)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Warrior Rodrigo$<BR>
+Yes. Stop exchanging love letters. Please don't get me involed in your inter-species love!<BR>
+<FONT color=#7e12d2>(Rodrigo hands me the letter)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-c" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-d" mid="17"><![CDATA[<html>(…What is he saying…)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Orc Kim$<BR><FONT color=#7e12d2>{user_nick}, I never stopped thinking about you. </FONT><BR>
+<FONT color=#7e12d2>I sort of XXX remember YYY and ZZZ with you. Well… I can't deny my heart anymore….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-e" mid="96"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$The letter from Orc Kim$<BR><FONT color=#7e12d2>I did everything I could to forget memories of you. And, I finally realised something.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-f" mid="19"><![CDATA[<html>(…I don't understand this)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$The letter Orc Kim$<BR><FONT color=#7e12d2>A champion does not fight against the evil by himself!</FONT><BR>
+<FONT color=#7e12d2>Team! Yes, the champion will be in a party surrounded by love and friendship!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-g" mid="86"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$The letter from Orc Kim$<BR><FONT color=#7e12d2>So I, obssessed with revenge, have been travelling around the continent gathering the Orc warriors. And finally!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-h" mid="21"><![CDATA[<html>(Think Orc Kim is out of his mind)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$The letter from Orc Kim$<BR>
+I have formed a <FONT color=#a82424>{user_nick} expedition</FONT><FONT color=#7e12d2>!<BR></FONT><FONT color=#7e12d2>Ha… I can imagine you getting scared already. Wait there evil <FONT color=#387206>{user_nick}</FONT></FONT><FONT color=#7e12d2>! </FONT><FONT color=#7e12d2>I will defeat you and sweep clean evil town, Saint Haven!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-h" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-i" mid="23"><![CDATA[<html>Oh, my head….</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$The letter from Orc Kim$<BR><FONT color=#7e12d2>I have lot more to say but I have a dinner plan with my brothers.</FONT><BR>
+<FONT color=#7e12d2>PS. I have asked Clown Jack to inform you about the place for our fight. Don't forget to show up on time!</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-i" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-j" mid="27"><![CDATA[<html>He has no gut to do that so don't worry.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Warrior Rodrigo$<BR>To sum up, <FONT color=#a94407>Orc Kim</FONT> is planning to attack <FONT color=#a94407>Saint Haven</FONT> with his party crew, is this right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-j" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-k" mid="29"><![CDATA[<html>What…???</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Warrior Rodrigo$<BR>There are levels to be cleared. I will have to get rid of Saint Haven so <FONT color=#a94407>Orc Kim</FONT> can't attack <FONT color=#a94407>Saint Haven</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-k" image="QN_Jester.dds" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-l" mid="92"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Master Warrior Rodrigo$<BR>I mean go and stop Orc Kim, what do you mean by what?<BR>
+Go see Clown Jack first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n098_warrior_master_lodrigo-accepting-acceptted" mid="31"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Orc Kim's Revenge$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n098_warrior_master_lodrigo-1" image="QN_Jester.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Master Warrior Rodrigo$<BR>I don't want to get that smelly letter from him anymore.<BR>
+Go and see Clown Jack now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1" image="" itemindex="">
+      <talk_answer link_index="n383_jester_jack-1-a" mid="35"><![CDATA[<html>I didn't know I was that popular.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Clown Jack$<BR>Ah ha~ Who's this?<BR>Notorious champion <FONT color=#387206>{user_nick}</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1-a" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n383_jester_jack-1-b" mid="37"><![CDATA[<html>He is not my rival. But a big match event…?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Clown Jack$<BR>Of course you are popular!<BR>Especially, as a rival of <FONT color=#a82424>Orc Kim</FONT>, the scion of Typhoon. Well thanks to you two, the big match event is selling out well!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1-b" image="" itemindex="">
+      <talk_answer link_index="n383_jester_jack-1-c" mid="39"><![CDATA[<html>What's that got to do with this?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Clown Jack$<BR>Hahaha. To introduce myself, I am the beautiful entertainer Jack from <FONT color=#a82424>Wonderful Team Park</FONT>. My job is to entertain everyone in this world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1-c" image="" itemindex="">
+      <talk_answer link_index="n383_jester_jack-1-d" mid="41"><![CDATA[<html>You mean people with bad hobbies.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Clown Jack$<BR>How naïve are you?<BR>People laugh when they are happy or in a good mood.<BR>But sometimes people laugh when others are in pain or failing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1-d" image="" itemindex="">
+      <talk_answer link_index="n383_jester_jack-1-e" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Clown Jack$<BR>Haha, those people are not evil or have crooked characters. All the people have those kind of evil inside of them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1-e" image="" itemindex="">
+      <talk_answer link_index="n383_jester_jack-1-f" mid="45"><![CDATA[<html>Enough with the confusing parts. Tell me the main factor.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Clown Jack$<BR>We, <FONT color=#a94407>Wonderful Theme Park</FONT> provides all kinds of enjoyment for people. Even evil or crooked <FONT color=#a82424>amusement</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1-f" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n383_jester_jack-1-g" mid="47"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Clown Jack$<BR><FONT color=#7e12d2>(Clown Jack rubs his hands)</FONT><BR>Yes. Whatever it is, you are agreeing to the challenge of Orc Kim right <FONT color=#387206>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n383_jester_jack-1-h" mid="49"><![CDATA[<html>Where is that place?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Clown Jack$<BR>Orc Kim requested us to find a place to fight you. So we are going to provide the perfect place for you guys to fight.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-1-h" image="" itemindex="">
+      <talk_answer link_index="n383_jester_jack-2" mid="53"><![CDATA[<html>(Request Entry)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Clown Jack$<BR>Haha. It's better for you to see the place. However, you have to buy the <FONT color=#a82424>Wonderful Theme Park Entrance Ticket</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-2" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n383_jester_jack-2-a" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Clown Jack$<BR>Match of the century!<BR><FONT color=#387206>{user_nick}</FONT> VS <FONT color=#a94407>Orc Kim</FONT>!<BR>I'm so looking forward to this match, hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-2-a" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Clown Jack$<BR>I am going to pay the winner with a<FONT color=#a82424>little reward</FONT>. It might be you or Orc Kim. However, if you lose, don't even think about taking a cooper from me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-3" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n383_jester_jack-3-a" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Clown Jack$<BR>Wow, <FONT color=#a94407>Orc Kim</FONT> can't be your rival at all. Anyway, I will give you the reward I promised you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-3-a" image="" itemindex="">
+      <talk_answer link_index="n383_jester_jack-3-b" mid="67"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n383_jester_jack-3-b" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Clown Jack$<BR>Well, it will be impossible to gather 10 million audience with Orc Kim. I should get Ceberus or Manticore next time. I was just joking, hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6250,,,,,</exe>
+         <exe type="setquest">625</exe>
+         <exe type="talk" npc="n098_warrior_master_lodrigo">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="3,4,5">21576</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">21575</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">21577</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">23345</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">23346</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,4,5">23347</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6250,,,,,</exe>
+         <exe type="complete">625</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="l">0</exelink>
+   <exelink qstep="accepting" npc="n098_warrior_master_lodrigo" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n383_jester_jack" sub="b" />
+   <exelink qstep="1" npc="n383_jester_jack" sub="c" />
+   <exelink qstep="1" npc="n383_jester_jack" sub="d" />
+   <exelink qstep="1" npc="n383_jester_jack" sub="e" />
+   <exelink qstep="1" npc="n383_jester_jack" sub="f" />
+   <exelink qstep="1" npc="n383_jester_jack" sub="g" />
+   <exelink qstep="1" npc="n383_jester_jack" sub="h" />
+   <exelink qstep="1" npc="n383_jester_jack" sub="2">0,1,2,6,7,8,9,10</exelink>
+   <exelink qstep="3" npc="n383_jester_jack" sub="a">0</exelink>
+   <exelink qstep="3" npc="n383_jester_jack" sub="b">1</exelink>
+   <journal_data recompense="0:6250" quest_title="불멸의 김오크" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Jester.dds</contents_image>
+         <destination_pos>11,n383</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>383</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Talk to Clown Jack]]></title>
+         <contents mid="72"><![CDATA[<html>Talk to Clown Jack.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Clown Jack</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to Clown Jack]]></destination>
+         <todo_msg mid="74"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_Orc_Oneeye.dds</contents_image>
+         <destination_pos>13607,0,0</destination_pos>
+         <destination_mode>custom:13607@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Stop Orc Kim]]></title>
+         <contents mid="76"><![CDATA[<html>Defeat Orc Kim.<BR><BR><FONT color=#086171>Saint Haven(Wonderful Theme Park Entrance)</FONT> <FONT color=#a82424>→ Immortal Orc Kim</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[[Wonderful Theme Park] Immortal Orc Kim]]></destination>
+         <todo_msg mid="78"><![CDATA[Defeat Orc Kim]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Jester.dds</contents_image>
+         <destination_pos>11,n383</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>383</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Talk to Clown Jack]]></title>
+         <contents mid="80"><![CDATA[<html>Return to Clown Jack.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Clown Jack</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Clown Jack]]></destination>
+         <todo_msg mid="82"><![CDATA[Talk to Clown Jack]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

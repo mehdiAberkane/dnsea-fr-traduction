@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n320_bluff_dealers_pope</npcename>
+      <npcid>320</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Merchant Pero]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Merchant Pero$<BR>Hahaha!<BR>Mandra! You are no match for me! !</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_624_hairbreadth_escape</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">624</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,140 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>dq15_1040_real_power</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>1040</qid>
+      <designer>김인정</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[(Daily) Evidence of True Power]]></qkname>
+      <qnpc>
+         <npcid>715</npcid>
+         <npcename>n715_adventurer_guildmaster_hose</npcename>
+         <npckname>모험자 길드장 호세</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting" image="QW_57.dds" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Jose${action:Talk}<BR>We have lots of work to do lately since <FONT color=#a82424>Abyss</FONT> area has shown up in <FONT color=#a82424>Ancient Treasure House</FONT>.<BR>It worries me because it is such a hard job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-b" mid="71"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Adventurer's Guild Master Jose$<BR>How about you go and defeat those monsters?<BR>
+If you do that I think we'll be in peace for a while.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-acceptted" mid="11"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Evidence of True Power$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1" image="QW_57.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Master Jose$<BR>Please go to <FONT color=#a82424>Abyss</FONT> area in <FONT color=#a82424>Ancient Treausre House</FONT>.<BR>The area will be in peace if we take monsters out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-a" mid="67"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Master Jose$<BR>Ah, you're back! I'm glad I've asked you to do this job.<BR>Now other Adventurers can go as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2-b" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Master Jose${action:Talk}<BR>If we don't take the cause out, the monsters will appear again.<BR>Please help us.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">10400,,,,,</exe>
+         <exe type="setquest">1040</exe>
+         <exe type="talk" npc="n715_adventurer_guildmaster_hose">1</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="4,5,6">201722</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">10400,,,,,</exe>
+         <exe type="complete">1040</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="acceptted">1,3,2</exelink>
+   <exelink qstep="2" npc="n715_adventurer_guildmaster_hose" sub="a">0</exelink>
+   <exelink qstep="2" npc="n715_adventurer_guildmaster_hose" sub="b">1</exelink>
+   <journal_data recompense="10400" quest_title="(일일) 진정한 힘의 증거" chapterid="" quest_level="50" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_57.dds</contents_image>
+         <destination_pos>572,0,0</destination_pos>
+         <destination_mode>custom:571@1,572@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Ancient Treasure House]]></title>
+         <contents mid="43"><![CDATA[<html>Defeat monsters in Ancient Treasure House at Abyss difficulty.<BR><BR><FONT color=#7e12d2>※ Only available in Abyss difficulty.</FONT><BR><BR><FONT color=#086171>Riverwort Port(Entrance of Town of Isla) </FONT><FONT color=#a82424>→ Ancient Treasure House</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Abyss] Ancient Treasure House]]></destination>
+         <todo_msg mid="45"><![CDATA[Defeat monsters in Ancient Treasure House at Abyss difficulty.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_npc_Master_Jose.dds</contents_image>
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report to Adventurer's Guild Master Jose]]></title>
+         <contents mid="47"><![CDATA[<html>Report to Adventurer's Guild Master Jose in Lotus Marsh.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Jose</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Report to Adventurer's Guild Master Jose]]></destination>
+         <todo_msg mid="49"><![CDATA[Report to Adventurer's Guild Master Jose]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>50:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

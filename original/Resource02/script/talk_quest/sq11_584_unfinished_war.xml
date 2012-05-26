@@ -1,0 +1,174 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_584_unfinished_war</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>584</qid>
+      <designer>나은하</designer>
+      <qlevel>33</qlevel>
+      <qdesc>장군 더글라스는 그 무장을 잘한 리자드맨의 정체를 알만한 단서를 찾아오라며, 다시 외딴섬으로 보낸다. 리자드맨 돌격대장 러프를 잡으면, 러프에게서 검은 대군주의 인장이 나온다. 장군 더글라스는 그동안 날 뛰던 해적들 중 일부는 검은 대군주의 영지의 흑막의 사주를 받았다는 것을 알게 된다.
+그리고 골드 드래곤이 블랙 드래곤을 쓰러뜨린 이후에도 여전히 그 수하들이 움직이는 걸 보면, 블랙 드래곤은 분명 죽지 않은 거 같다며 조만간 새로운 싸움을 준비해야할 거 같다고 한다.
+400187 검은 대군주의 인장</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Endless Fight]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QM_Lizardman_Black.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$General Douglas$<BR>The lizardman with the armor. He's very strong. Could you investigate about<FONT color=#a82424>Lizard Man Trooper Ruff</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="10"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Endless Fight$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QM_Lizardman_Black.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$General Douglas$<BR>So then now you go to<FONT color=#a82424>Center of the Deserted Island</FONT>to investigate the chief <FONT color=#a82424>Lizard Man Trooper Ruff</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QM_Lizardman_Black.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3" mid="16"><![CDATA[<html>(Bring the stamp of Dark Overlord)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$General Douglas$<BR>Hum, did you find anything about Lizard Man Trooper Ruff?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QS_Default.dds" itemindex="400187">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="21"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$General Douglas$<BR>This… is the stamp of black mountain's monsters.<BR>
+Did you really get this from that Lizardman?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QM_Lizardman_Black.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="23"><![CDATA[<html>It's something about Black Dragon…?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$General Douglas$<BR>Hum…I am sure that <FONT color=#a82424>Lizard Man Trooper Ruff</FONT>was one of monsters of black mountain or was requested by monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="QN_Npc_Geraint_Closeeye.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="25"><![CDATA[<html>I defeated but… I can't say he's dead.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$General Douglas$<BR>It's also possible.<BR>
+But didn't <FONT color=#a82424>Geraint</FONT>defeat Black Dragon?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-d" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$General Douglas$<BR>Hummm…. then <FONT color=#a94407>Black Dragon</FONT>hides somewhere and manipulates the creatures.<BR>
+Huu… The war with<FONT color=#a94407>Black Dragon</FONT>is not done yet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-e" mid="42"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-e" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$General Douglas$<BR>We need to prepare the war….<BR>
+Probably, bishop and duke will be disagree but I must prepare.<BR>
+<FONT color=#7e12d2>(Douglas plows on)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5841,5842,5843,5844,5845</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2">931</exe>
+         <exe type="addquestitem" num="1">400187</exe>
+         <exe type="huntitem" num="1" exe="" onexe="4,5,6">400187</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setquest">584</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2">200931</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="delquestitem" num="1">400187</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">584</exe>
+         <exe type="recompense">,5841,5842,5843,5844,5845</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">7,1,9,3,8</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="d">1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="e">0</exelink>
+   <journal_data recompense="1:5841,2:5842,3:5843,4:5844,5:5845" quest_title="끝나지 않은 싸움" chapterid="" quest_level="33" quest_mark_type="10" use_item_list="400187">
+      <journal index="1">
+         <contents_image>QM_Lizardman_Black.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[Investigate about Lizard Man Trooper Ruff]]></title>
+         <contents mid="33"><![CDATA[<html>At<FONT color=#a82424>middle of island</FONT>, find  <FONT color=#a82424>lizardman attack general Ruff</FONT>and try to find items that will identify him.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port (deserted Island transportation)</FONT> <FONT color=#a82424>→ middle of island</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Center of the Deserted Island]]></destination>
+         <todo_msg mid="35"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode />
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Report to General Douglas]]></title>
+         <contents mid="38"><![CDATA[<html>Let's go to General Douglas to hand over the stamp of Dark Overlord.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Kingdom</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk with General Douglas]]></destination>
+         <todo_msg mid="40"><![CDATA[Got the stamp of Dark Overlord ]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>33:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>583</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

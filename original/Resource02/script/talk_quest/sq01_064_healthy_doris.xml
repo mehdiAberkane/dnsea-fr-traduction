@@ -1,0 +1,198 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_064_healthy_doris</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>64</qid>
+      <designer>김인정</designer>
+      <qlevel>4</qlevel>
+      <qdesc>300094(냄새나는 약초)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Doris' Adventure Package]]></qkname>
+      <qnpc>
+         <npcid>3</npcid>
+         <npcename>n003_trader_dolis</npcename>
+         <npckname>상인 도리스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-a" mid="6"><![CDATA[<html>Anything wrong?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant Doris$<BR>Thanks to the perfume you've given me previously. Else I wouldn't have been able to sent out the gift.<BR>But...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-a" image="QN_Guard_Steave.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-b" mid="8"><![CDATA[<html>(Merchant Doris sighs)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>As <FONT color=#a82424>Rose</FONT> is still missing, <FONT color=#a82424>Vigilante leader Steve</FONT> is in a state of depression. Not only him, Mayor Harold, Lily and everyone in town are so worried that they are having sleepless nights.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-c" mid="10"><![CDATA[<html>I see… (Yuck!)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant Doris$<BR>I understand it, but it just.. Anyway, I been trying to think of a way I can help too. Since I myself I a pretty good cook, and the food I made was so delicious that the Hounds are fighting over it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-d" mid="12"><![CDATA[<html>Well, if that could make you feel better, then it is a great idea.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Merchant Doris$<BR>Hmm.. Why not I make some food for everyone? Isnt that a great idea?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-d" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-e" mid="14"><![CDATA[<html>You got it.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>You will help me right? So help me collect the <FONT color=#a82424>Stinky Herbs</FONT> that the <FONT color=#a82424>Wandering Goblins</FONT> in the <FONT color=#a82424>Ancient Temple Ruins</FONT> carry with them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Doris' Adventure Package$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1" image="QW_2.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Merchant Doris$<BR>Don't forget, collect the hidden Stinky Herbs by going to <FONT color=#a82424>Ancient Temple Ruins</FONT> and defeat the <FONT color=#a82424>Wandering Goblins</FONT> that live there. Thanks!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2" image="QS_Default.dds" itemindex="300094">
+      <talk_answer link_index="n003_trader_dolis-2-a" mid="19"><![CDATA[<html>Ok, here you go.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Merchant Doris$<BR>Did you get the herbs?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-a" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2-b" mid="21"><![CDATA[<html>(It smell like a vomit since yesterday.)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Thanks a lot, now I would have to mill them and add in some flour.<BR><FONT color=#7e12d2>(Merchant Doris adding generous amount of white powder as she mill the herbs)</FONT><BR>Hmm.. It smell delicious right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-b" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2-c" mid="23"><![CDATA[<html>(The smell make you sick, let's go)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant Doris$<BR>Well, I'd better get this food to all the townsfolk! I'll set some aside for you, too! <BR><FONT color=#7e12d2>(Merchant Doris looks at you, an excited expression on her face.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-c" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-2-d" mid="25"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2-d" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>I appreciate your help. Hope this small actions of mine will raise everybody's spirits. Now, if only we could get <FONT color=#a82424>Rose</FONT> back..</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">64</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2">126</exe>
+         <exe type="addquestitem" num="1">300094</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="recompense_view">,641,642,642,642</exe>
+         <exe type="huntitem" num="5" exe="3,4,5" onexe="">300094</exe>
+         <exe type="talk" npc="n003_trader_dolis">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300094</exe>
+         <exe type="recompense">,641,642,642,642</exe>
+         <exe type="complete">64</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n003_trader_dolis" sub="e">6</exelink>
+   <exelink qstep="accepting" npc="n003_trader_dolis" sub="acceptted">0,8,1,7</exelink>
+   <exelink qstep="2" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="2" npc="n003_trader_dolis" sub="c">1</exelink>
+   <exelink qstep="2" npc="n003_trader_dolis" sub="d">0,2</exelink>
+   <journal_data recompense="1:641,2:642" quest_title="건강을 생각하는 도리스" chapterid="" quest_level="4" quest_mark_type="10" use_item_list="300094">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_2.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>58,0,0</destination_pos>
+         <destination_mode>custom:56@3,57@3,58@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[Kind Merchant Doris]]></title>
+         <contents mid="29"><![CDATA[<html><FONT color=#a82424>Merchant Doris</FONT> is making food for the people. Obtain <FONT color=#a82424>Stinky Herbs</FONT> from goblins in the <FONT color=#a82424>Ancient Temple Ruins</FONT>.<BR><BR><FONT color=#086171>Wind Forest (Wind Forest Temple)</FONT> <FONT color=#a82424>→ Ancient Temple Ruins</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[Collect 5 Stinky Herbs.]]></destination>
+         <todo_msg mid="31"><![CDATA[Gather 5 Stinky Herbs from the Ancient Temple Ruins.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n3</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[Merchant Doris's Great Plan]]></title>
+         <contents mid="33"><![CDATA[<html>You gathered enough Stinky Herbs. Deliver them to Merchant Doris in <FONT color=#a82424>Prairie Town</FONT>.<BR> <BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Merchant Doris</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Talk to Merchant Doris]]></destination>
+         <todo_msg mid="35"><![CDATA[You had collected enough Stinky Herbs. Bring them to Merchant Doris]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>4:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest>52</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n314_cleric_jake</npcename>
+      <npcid>314</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Cleric Jake]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Cleric Jake$<BR>Is something wrong?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq05_141_love_money</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">141</chk>
+      </conditions>
+   </talk>

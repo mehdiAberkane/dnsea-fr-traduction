@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n457_geraint</npcename>
+      <npcid>457</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Geraint]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Geraint$<BR>……Its you, <BR>
+have you found the path you want to walk?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq15_758_ordeal_and_answer</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">758</chk>
+      </conditions>
+   </talk>

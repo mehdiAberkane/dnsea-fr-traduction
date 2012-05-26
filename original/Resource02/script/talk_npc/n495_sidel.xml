@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n495_sidel</npcename>
+      <npcid>495</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Cidel]]></npckname>
+      <talk_paragraph index="001" image="QN_Npc_Sidel.dds" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Cidel尔$<BR>Charty……Pull yourself together…...……Please, I beg you……<BR><FONT color=#7e12d2>(Cidel sobs, while holding Charty)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq15_717_for_my_friend</exe>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="enterquest">mq15_738_tears</exe>
+         <exe type="conexe" true="3" false="0">1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">717</chk>
+         <chk type="hasquest">738</chk>
+      </conditions>
+   </talk>

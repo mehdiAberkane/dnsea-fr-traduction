@@ -1,0 +1,24 @@
+   <talk>
+      <npcename>n171_goblin_grandfather</npcename>
+      <npcid>171</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Grandpa Goblin]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="18"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Grandpa Goblin$<BR>I mean you no harm...<BR>I'm just looking for my grandchildren...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="13" link_target="sq01_054_grandpa_goblin01.xml"><![CDATA[<html>[Lv.6] <FONT color=#086171>Grandpa Goblin's Complains I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="sq01_055_grandpa_goblin02.xml"><![CDATA[<html>[Lv.6] <FONT color=#086171>Grandpa Goblin's Complains II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="15" link_target="sq01_056_grandpa_goblin03.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Grandpa Goblin's Complains III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="61" link_target="sq01_057_grandpa_goblin04.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Grandpa Goblin's Complains IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="62" link_target="sq01_058_grandpa_goblin05.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Grandpa Goblin's Complains V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="63" link_target="sq08_271_grandpa_goblin06.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Grandpa Goblin's Grief</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="64"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Grandpa Goblin$<BR>I mean you no harm...<BR>I'm just looking for my grandchildren...</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

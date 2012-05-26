@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n168_adventurer_wounded</npcename>
+      <npcid>167</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Wounded Adventurer]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Wounded Adventurer$<BR>Argh…I can't continue this fight anymore... Please help my allies inside!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

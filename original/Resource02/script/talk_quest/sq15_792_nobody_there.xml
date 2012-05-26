@@ -1,0 +1,179 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_792_nobody_there</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>792</qid>
+      <designer>김인정</designer>
+      <qlevel>45</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Nobody there]]></qkname>
+      <qnpc>
+         <npcid>723</npcid>
+         <npcename>n723_idol_harori</npcename>
+         <npckname>아이돌 하로리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>766</npcid>
+         <npcename>n766_idol_harori</npcename>
+         <npckname>아이돌 하로리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Idol Harori$<BR>Today's <FONT color=#a94407>lovely cute</FONT><FONT color=#7e12d2>☆</FONT><FONT color=#a94407>angelic</FONT>! Bling-bling Harori likes you~<BR><FONT color=#7e12d3>(Talk with Harori in Riverwart Wharf)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Idol Harori$<BR>Today's lovely cute angelic Harori<FONT color=#a94408>♥</FONT>.~<BR> Hello~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-b" mid="9"><![CDATA[<html>(Harori sighs cutely)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Idol Harori$<BR>Look~ do you think it's dangerous that I'm going to go to meet my fans?<BR>I want deliver Harori's love<FONT color=#a94407>♥</FONT>and passion<FONT color=#086172>★</FONT>to them.♬</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-c" mid="11"><![CDATA[<html>What do you want me to do?!</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Idol Harori$<BR>So~ will you help me? I'll designate you Harori's one of the best fans~ <BR>Harori likes <FONT color=#387206>{user_nick}</FONT>, so please <FONT color=#387207>{user_nick}</FONT> loves Harori too♡.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-d" mid="13"><![CDATA[<html>(Harori's eyes glitters.)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Idol Harori$<BR>Wow~ will you help Harori? <FONT color=#a94408>♥</FONT><BR>What I want to ask is..~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Nobody There$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-1" image="QW_56.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Idol Harori${action:Talk}<BR>Harori is invited from<FONT color=#a82425>West Ancient Armory</FONT>~ but I'm scared of monsters~<BR>Please beat all monsters up there instead of me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-1" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-1-a" mid="19"><![CDATA[<html>(Harori looks around)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Idol Harori$<BR>Today's lovely cute angelic Harori~. Thanks to<BR>fancy <FONT color=#387207>{user_nick}</FONT>, I'm arrived here safely★</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-1-a" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-1-b" mid="22"><![CDATA[<html>I beat them all.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Idol Harori$<BR>Huh? What...<BR>…hu~ there's no one here?<BR>
+Where are you all?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-1-b" image="" itemindex="">
+      <talk_answer link_index="n766_idol_harori-2" mid="24"><![CDATA[<html>(Harori smiles cutely)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Idol Harori$<BR>Aha~ you did~ <FONT color=#7e12d3>(Harori tilts her head)</FONT> What?<BR>
+Then who's going to listen to my song?<BR>Harori's mistake?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n766_idol_harori-2" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Idol Harori${action:Talk}<BR>Well, things happened. I'll be waiting for my fans' invitation again in <FONT color=#a82425>Riverwart Wharf</FONT>♥.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-2-a" mid="27"><![CDATA[<html>(Harori turns red)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Idol Harori$<BR>Harori really likes you☆<BR>The strong appearance for helping Harori♥ <BR>
+I might have a dream about it~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2-a" image="QN_Npc_nyangnyang.dds" itemindex="">
+      <talk_answer link_index="n723_idol_harori-2-b" mid="29"><![CDATA[<html>(I'm so worried about the cat)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Idol Harori$<BR>By the way, I can't see <FONT color=#a82424>the cat</FONT>.<BR>I sent her to get some good herbs for my skin. Is she cultivating the <FONT color=#a82425>herb</FONT> by herself?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2-b" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-2-c" mid="31"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2-c" image="QN_Npc_nyangnyang.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Idol Harori${action:Talk}<BR>So, I've got to <FONT color=#a82424>catch</FONT>… ah, <FONT color=#a82424>find her.</FONT>♡<BR><FONT color=#387207>{user_nick}</FONT>, then good bye~ don't forget Harori♥ Promise!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">792</exe>
+         <exe type="talk" npc="n723_idol_harori">1</exe>
+         <exe type="recompense_view">7920,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7920,,,,,</exe>
+         <exe type="complete">792</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n723_idol_harori" sub="d">2</exelink>
+   <exelink qstep="accepting" npc="n723_idol_harori" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n766_idol_harori" sub="b" />
+   <exelink qstep="1" npc="n766_idol_harori" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n723_idol_harori" sub="b">0</exelink>
+   <exelink qstep="2" npc="n723_idol_harori" sub="c">1</exelink>
+   <journal_data recompense="0:7920" quest_title="그리고 아무도 없었다" chapterid="" quest_level="45" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_56.dds</contents_image>
+         <destination_pos>563,n766</destination_pos>
+         <destination_mode>custom:561@1,562@1,563@1</destination_mode>
+         <statemark_npcid>766</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Harori's concert]]></title>
+         <contents mid="34"><![CDATA[<html>Beat all monsters up in West Ancient Armory, and talk with Idol Harori.<BR>
+<BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ West Ancient Armory(Idol Harori)</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Talk with Harori in West Ancient Armory]]></destination>
+         <todo_msg mid="36"><![CDATA[Talk with Harori in West Ancient Armory]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n723</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>723</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Talk with Harori]]></title>
+         <contents mid="38"><![CDATA[<html> Get back to Riverwart Wharf and talk with Idol Harori.<BR>
+ <BR>
+<FONT color=#086172>Riverwart Wharf</FONT> → Idol Harori</html>]]></contents>
+         <destination mid="39"><![CDATA[Talk with Idol Harori in Riverwart Wharf]]></destination>
+         <todo_msg mid="40"><![CDATA[Get back to Riverwart Wharf and talk with Idol Harori]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>45:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>791</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

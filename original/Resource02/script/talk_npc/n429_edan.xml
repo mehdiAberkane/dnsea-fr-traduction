@@ -1,0 +1,25 @@
+   <talk>
+      <npcename>n429_edan</npcename>
+      <npcid>429</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Cleric Edan
+(Captain Darlant's Base)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Cleric Edan$<BR>
+The will of the goddess Altea...</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="2">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="0">2</exe>
+         <exe type="enterquest">sq11_654_passion_of_reader</exe>
+         <exe type="enterquest">sq11_638_reason_paganism</exe>
+         <exe type="enterquest">sq11_645_paganish_name</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">654</chk>
+         <chk type="hasquest">638</chk>
+         <chk type="hasquest">645</chk>
+      </conditions>
+   </talk>

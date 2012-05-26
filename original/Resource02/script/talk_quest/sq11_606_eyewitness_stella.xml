@@ -1,0 +1,231 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_606_eyewitness_stella</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>606</qid>
+      <designer>김인정</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>607</nextqid>
+      <nextqname>sq11_607_engineer_of_future</nextqname>
+      <nextqnpc>n112_wisp_kevin</nextqnpc>
+      <qkname mid="1"><![CDATA[[Nest]Stella's Sightings]]></qkname>
+      <qnpc>
+         <npcid>112</npcid>
+         <npcename>n112_wisp_kevin</npcename>
+         <npckname>이상한 승무원</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-noquest" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$???$<BR>Hum~ why is it here…? Something is important here… Hum….<BR><FONT color=#7e12d2>(Something sparkling is in the air.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="45"><![CDATA[<html>What? me?…What is it?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Sorceress Stella$<BR>Hum… What is it?<BR>Hey you, what do you think?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="47"><![CDATA[<html>(What are you talking about all of sudden?!)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Master Sorceress Stella$<BR>Well, I am saying what is that!!<BR>Of course you don't know, right? Then you shall go there to see what it is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="49"><![CDATA[<html>That is just wisp.</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Master Sorceress Stella$<BR>Actually, I saw something when I was looking around for a ground to plant something. In the direction of <BR><FONT color=#a82424>Dark Woods</FONT>, something weird was flying in the air… do you think it's a ghost?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="QM_Wisp_Giant.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="51"><![CDATA[<html>(Depends on what Wisp thinks…)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Master Sorceress Stella$<BR>Why you don't have any imagination although you're still young?<BR>
+Well. Why is just <FONT color=#a82424>Wisp</FONT>flying there?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="53"><![CDATA[<html>What?! Me?</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Sorceress Stella$<BR>Ahah~ never mind. It's not a thing to talk about, you just go to see it!<BR>Hurry~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceppted" mid="55"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Stella's Sightings$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Master Sorceress Stella$<BR>Don't talk back. Hurry to the <FONT color=#a82424>Dark Woods</FONT>!<BR>Find out what that sparkly thing is!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-1" image="QM_Wisp_Giant.dds" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-1-a" mid="59"><![CDATA[<html>(It's weird but let's try talking to it.)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$???${action:Summon_On}<BR>Humm~ why here…? There is something important… Hummm….<BR>What should I do… it's urgent…...<BR><FONT color=#7e12d2>(Something sparkle and plump mumbles)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-1-a" image="QM_Wisp_Giant.dds" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-1-b" mid="61"><![CDATA[<html>Are you asking for a favour?</html>]]></talk_answer>
+      <talk_answer link_index="n112_wisp_kevin-1-b" mid="62"><![CDATA[<html>Damn. Why did I talk to it?</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$???$<BR>Opps! Opppppsss!! …Did you just talk to me?<BR>
+<FONT color=#7e12d2>(Wisp is surprised.)<BR></FONT>Well, it's good timing. I thought people cannot see me because they ignore me and walk away. Can I ask you something?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-1-b" image="" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-1-c" mid="64"><![CDATA[<html>This is a problem….</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$???$<BR>Well. Actually…. I don't really remember who I am and where I am from.<BR>Oh, I remember I am a<FONT color=#a82424>technician</FONT> but I think I forgot everything because I got a big shock. Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-1-c" image="" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-1-d" mid="66"><![CDATA[<html>(Future? …What is it talking about?)</html>]]></talk_answer>
+      <talk_answer link_index="n112_wisp_kevin-1-d" mid="67"><![CDATA[<html>(It doesn't look like a technician or even a human...)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$???$<BR>Right? I am a <FONT color=#a82424>future technician</FONT>!! I have something to do which is really urgent.<BR>Hurry!! I need to remember it. So please~ you handsome adventurer, help me please!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-1-d" image="QW_41.dds" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-1-e" mid="69"><![CDATA[<html> Clue? What clue?</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Weird Technician$<BR>Are you going to help me? This is really urgent~<BR>
+Really and seriously~~ hurry hurry~<BR>Hurry up! Go to <FONT color=#a82424>Explosion Zone in Withered Leaves Forest </FONT>. There is something which could be a clue I guess!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-1-e" image="" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-2" mid="71"><![CDATA[<html>Boom~ hush hush~…? Let's just go first.</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Weird Technician$<BR>Hmmm~ I don't really remember. But after I fell here, something exploded and <FONT color=#a82424>Boom~!</FONT>and flew like, <FONT color=#a82424>hush~ hush~</FONT>.<FONT color=#a82424>{monster:1081}</FONT>I think I saw something like that~. I guess the thing probably <FONT color=#a82424>glup~</FONT>down something!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-2" image="QW_41.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Weird Technician$<BR>Well, now please go to  <FONT color=#a82424> Explosion Zone in Withered Leaves Forest </FONT> <BR><FONT color=#a82424>{monster:1081}</FONT>If you defeat it, I think it will spit some clues out. Please~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-3" image="QS_Default.dds" itemindex="300298">
+      <talk_answer link_index="n112_wisp_kevin-3-a" mid="76"><![CDATA[<html>Yes. It's from the stomach.</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Weird Technician$<BR>Here you came~!! So what was the thing that monster gluped down?<BR>Was it the scrap metal that you have in your hand?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-3-a" image="" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-3-b" mid="80"><![CDATA[<html>(The sparkly and plump thing starts to spin.)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Weird Technician$<BR>It's really scrap metal… hmmm? <FONT color=#7e12d2>(Looks at what you brought carefully.)</FONT><BR>Ah! Oh yes!! I am starting to remember!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-3-b" image="QM_Wisp_Giant.dds" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-3-c" mid="82"><![CDATA[<html>(Its face lights up for a second...)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Weird Technician$<BR>I am… well… I am, in the future… I have something to do…!! <FONT color=#7e12d2>(Shiny light rays explodes out from it)</FONT> …I remember!! Who I am!<BR>
+My name is…!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n112_wisp_kevin-3-c" image="" itemindex="">
+      <talk_answer link_index="n112_wisp_kevin-3-!next" mid="84"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">606</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+         <exe type="recompense_view">6060,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,6,7,8">1081</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,6,7,8">201081</exe>
+         <exe type="addquestitem" num="1">300298</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300298</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6060,,,,,</exe>
+         <exe type="delquestitem" num="-1">300298</exe>
+         <exe type="complete">606</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n112_wisp_kevin" sub="b" />
+   <exelink qstep="1" npc="n112_wisp_kevin" sub="b" />
+   <exelink qstep="1" npc="n112_wisp_kevin" sub="c" />
+   <exelink qstep="1" npc="n112_wisp_kevin" sub="d" />
+   <exelink qstep="1" npc="n112_wisp_kevin" sub="d" />
+   <exelink qstep="1" npc="n112_wisp_kevin" sub="e" />
+   <exelink qstep="1" npc="n112_wisp_kevin" sub="2">0,2,3,5,1</exelink>
+   <exelink qstep="3" npc="n112_wisp_kevin" sub="b" />
+   <exelink qstep="3" npc="n112_wisp_kevin" sub="c">0</exelink>
+   <exelink qstep="3" npc="n112_wisp_kevin" sub="!next">1,2</exelink>
+   <journal_data recompense="6060" quest_title="[네스트] 스텔라의 목격담" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="300298">
+      <journal index="1">
+         <contents_image>QW_SkirtOfBlackMountain.dds</contents_image>
+         <destination_pos>13,n112</destination_pos>
+         <destination_mode />
+         <statemark_npcid>112</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Weird Thing in Dark Woods]]></title>
+         <contents mid="87"><![CDATA[<html>Master Sorceress Stella said she saw something weird at <FONT color=#a82424>Dark Woods</FONT>.<BR>
+<BR><FONT color=#086171>Dark Woods</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Talk to weird thing in Dark Woods]]></destination>
+         <todo_msg mid="89"><![CDATA[Talk to weird thing in Dark Woods]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Explore Explosion Zone in Withered Leaves Forest   ]]></title>
+         <contents mid="91"><![CDATA[<html>Defeat monster at Explosion Zone in Withered Leaves Forest, and find a clue what weird technician said.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain(Foothills of Shadow Forest)</FONT> <FONT color=#a82424>→ Explosion Zone in Withered Leaves Forest   </FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Explosion Zone in Withered Leaves Forest   ]]></destination>
+         <todo_msg mid="93"><![CDATA[Find a clue at Explosion Zone in Withered Leaves Forest.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_Wisp_Giant.dds</contents_image>
+         <destination_pos>13,n112</destination_pos>
+         <destination_mode />
+         <statemark_npcid>112</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Identity of Weird Technician]]></title>
+         <contents mid="95"><![CDATA[<html>Got broken material from machine. Let's go back to the Foothills of Black Mountain to talk to the weird technician.<BR><BR><FONT color=#086171>Foothills of Black Mountain</FONT> <FONT color=#a82424>→Weird Technician</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[Talk to Weird Technician at Dark Woods]]></destination>
+         <todo_msg mid="97"><![CDATA[Found a clue. Talk to Weird Technician.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>430,398</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

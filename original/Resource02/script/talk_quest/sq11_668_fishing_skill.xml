@@ -1,0 +1,136 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_668_fishing_skill</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>668</qid>
+      <designer>박정민</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>669</nextqid>
+      <nextqname>sq11_669_fishing_go_farm</nextqname>
+      <nextqnpc>n351_farm</nextqnpc>
+      <qkname mid="1"><![CDATA[Learn to Fish]]></qkname>
+      <qnpc>
+         <npcid>351</npcid>
+         <npcename>n351_farm</npcename>
+         <npckname>농장 관리인 모리 영감</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-accepting" image="" itemindex="">
+      <talk_answer link_index="n351_farm-accepting-a" mid="9"><![CDATA[<html>It smells fishy!!</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Farm Keeper Mori$<BR>Getting fresh ingredients is the basic of cooking!<BR>However, ingredients like <FONT color=#a82424>fish</FONT> have short freshness date.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n351_farm-accepting-b" mid="11"><![CDATA[<html>Ok! Teach me please.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Farm Keeper Mori$<BR>Ok Ok! It's very sad…<BR>There is a best way to get fresh <FONT color=#a82424>fish</FONT>!<BR>I think you have the talent so I wish you could learn it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n351_farm-accepting-acceptted" mid="13"><![CDATA[<html>Accept Quest</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Learn to Fish$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-a" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Farm Keeper Mori$<BR>The best way is catch the fish is all by yourself.<BR>I guess you already knew that. Good!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-a" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-b" mid="21"><![CDATA[<html>And then?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Farm Keeper Mori$<BR>To fish, take a fishing rod and bait to the farming area and use the fishing skill.<BR>Fishing skill can be found in the skill screen under [<FONT color=#a82424>K</FONT>] of the <FONT color=#a82424>extra skill tab</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-b" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-c" mid="24"><![CDATA[<html>Is there a faster way?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Farm Keeper Mori$<BR>You're smart!<BR>Once the fishing starts <FONT color=#a82424>Time spend gauge</FONT> at the top starts to fill.<BR>When the gauge becomes full <FONT color=#a82424>Right click the mouse button</FONT> and you should be able to check the fish in your inventory.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-c" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-d" mid="27"><![CDATA[<html>Oh I see!</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Farm Keeper Mori$<BR>Hahaha! Don't be so impatient!<BR>Under the time gauge there is a <FONT color=#a82424>power gauge</FONT>!<BR>When it reaches middle <FONT color=#a82424>Left click mouse button</FONT> and the time will reduce.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-d" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-e" mid="30"><![CDATA[<html>The key idea is the timing!.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Farm Keeper Mori$<BR>So if you get the timing right, it's faster to catch a fish.<BR>Don't think too much into it. If you turn the [<FONT color=#a82424>Control Helper</FONT>] on, you'll find this easier.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-e" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-f" mid="33"><![CDATA[<html>Of course!</html>]]></talk_answer>
+      <talk_answer link_index="n351_farm-1-a" mid="34"><![CDATA[<html>Please explain one more time.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Farm Keeper Mori$<BR>Correct! I have told you everything I know. It's more about real experience than theory.<BR>Did you understand everything?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-f" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6680,,,,,</exe>
+         <exe type="setquest">668</exe>
+         <exe type="talk" npc="n351_farm">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6680,,,,,</exe>
+         <exe type="complete">668</exe>
+         <exe type="custom">api_npc_CreateSecondarySkill(userObjID,3101);</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n351_farm" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n351_farm" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n351_farm" sub="b" />
+   <exelink qstep="1" npc="n351_farm" sub="c" />
+   <exelink qstep="1" npc="n351_farm" sub="d" />
+   <exelink qstep="1" npc="n351_farm" sub="e" />
+   <exelink qstep="1" npc="n351_farm" sub="f">0</exelink>
+   <exelink qstep="1" npc="n351_farm" sub="a" />
+   <exelink qstep="1" npc="n351_farm" sub="!next">1,2</exelink>
+   <journal_data recompense="6680" quest_title="낚시 배우기" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>15107,n351</destination_pos>
+         <destination_mode />
+         <statemark_npcid>351</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Learn to fish from Mori]]></title>
+         <contents mid="44"><![CDATA[<html>Learn to fish from Mori in Farm Office.<BR><BR><FONT color=#086171>Farm Office</FONT> <FONT color=#a82424>→ Mori</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Learn to Fish]]></destination>
+         <todo_msg mid="46"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>664</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

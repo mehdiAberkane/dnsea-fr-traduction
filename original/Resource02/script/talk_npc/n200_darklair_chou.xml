@@ -1,0 +1,71 @@
+   <talk>
+      <npcename>n200_darklair_chou</npcename>
+      <npcid>200</npcid>
+      <startexe>15</startexe>
+      <npckname mid="1"><![CDATA[Priestess of Darkness Shea]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="warehouse" mid="3"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="20"><![CDATA[<html>[Talk] What is the Tent of the Abyss?</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Priestess of Darkness Shea${action:Talk}<BR>Please make it fast.<BR>I'm really very tired.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="additem" image="QS_Default.dds" itemindex="337772545">
+         <talk_question mid="10"><![CDATA[<html>$Priestess of Darkness Shea$<BR>You may only enter the Veil of Abyss twice a day after 9AM. <BR><FONT color=#7e12d2>※ That is the time your FTG are reset to max again.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="inven" image="QS_Default.dds" itemindex="337772545">
+         <talk_question mid="11"><![CDATA[<html>$Priestess of Darkness Shea$<BR>I'm sure you already have some. Use up all your supplies before asking for more.<BR>? <FONT color=#7e12d2>Max allowed: 2</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="warehouse" image="QS_Default.dds" itemindex="337772545">
+         <talk_question mid="12"><![CDATA[<html>$Priestess of Darkness Shea$<BR>What.. you think by keeping some in storage, you can fool me?<BR>We're not wasting our precious item on sneaky adventurers like you. Go away!<BR>? <FONT color=#7e12d2>You must exhaust your current supply before you can receive the item again.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="complete_quest" image="QS_Default.dds" itemindex="337772545">
+         <talk_question mid="13"><![CDATA[<html>$Priestess of Darkness Shea$<BR>That is all for today. If you abused the Veil of Abyss, its power will get weaker. Come back tomorrow again if you desire for more.<BR><FONT color=#7e12d2>※ You will receive the Veil of Abyss everyday after 9AM, when your FTG resets to max.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="check_Inven" image="" itemindex="">
+         <talk_question mid="18"><![CDATA[<html>$Priestess of Darkness Shea$<BR>Huh? Your <FONT color=#a82424>bag</FONT> is already full.<BR>Clear the junk from your bag to make space for the Veil of Abyss. <BR> <FONT color=#7e12d2>※ Visit me again when you have cleared space in your bag.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="QS_Default.dds" itemindex="337772545">
+         <talk_answer link_index="talk_2" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$Priestess of Darkness Shea$<BR>The <FONT color=#a82424>Tent of Abyss</FONT> can protect you from nightmares and general harm. You may only consume this item once per instance each time.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_2" image="QS_Default.dds" itemindex="337772545">
+         <talk_answer link_index="back_talk_2" mid="24"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="23"><![CDATA[<html>$Priestess of Darkness Shea${action:Talk}<BR>Be careful not to rely on this item too much for its power may get weaker if you overuse it… Hence there is a daily limit imposed to curb this abuse.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="warehouse_002" mid="31"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="guild_002" mid="32"><![CDATA[<html>[Guild Storage]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="33"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="27"><![CDATA[<html>$Priestess of Darkness Shea${action:Talk}<BR>Ah~What a bother, tell me what you want quickly. It would be best if you could help me too. <BR>I am intending to rest for awhile now.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenWareHouse(userObjID);</exe>
+         <exe type="conexe" true="10" false="3">0</exe>
+         <exe type="conexe" true="8" false="4">1</exe>
+         <exe type="conexe" true="9" false="5">2</exe>
+         <exe type="conexe" true="6,7,12,13,14" false="11">3</exe>
+         <exe type="custom">api_user_AddItem(userObjID, 337772545, 2);</exe>
+         <exe type="talk">additem</exe>
+         <exe type="talk">inven</exe>
+         <exe type="talk">warehouse</exe>
+         <exe type="talk">complete_quest</exe>
+         <exe type="talk">check_Inven</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,1017, 1);</exe>
+         <exe type="custom">api_quest_MarkingCompleteQuest(userObjID, 1017);</exe>
+         <exe type="custom">api_quest_CompleteQuest(userObjID, 1017, true, false);</exe>
+         <exe type="conexe" true="16" false="0">4</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenGuildWareHouse (userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 1017) == 1</chk>
+         <chk type="custom">api_user_HasItem(userObjID, 337772545, 1) >= 1</chk>
+         <chk type="custom">api_user_HasItemWarehouse(userObjID, 337772545, 1) >= 1</chk>
+         <chk type="custom">api_user_CheckInvenForAddItem(userObjID, 337772545, 2) >= 1</chk>
+         <chk type="custom">api_guild_HasGuildWare(userObjID) == 1</chk>
+      </conditions>
+      <exelink idx="warehouse">1</exelink>
+      <exelink idx="back_talk_2">15</exelink>
+      <exelink idx="warehouse_002">1</exelink>
+      <exelink idx="guild_002">17</exelink>
+   </talk>

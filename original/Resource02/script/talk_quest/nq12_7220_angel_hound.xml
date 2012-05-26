@@ -1,0 +1,234 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq12_7220_angel_hound</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7220</qid>
+      <designer>박정민</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Dream of Hound]]></qkname>
+      <qnpc>
+         <npcid>193</npcid>
+         <npcename>n193_santaund</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Blacksmith Berlin$<BR>If you can find the talking Hound at Mana Ridge, I'm sure you can also get his signature on this animal lover certificate.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-accepting" image="QN_Npc_Saint_BlackSmith_Dwarf.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-accepting-a" mid="10"><![CDATA[<html>(SantaHound seems to be in bad mood.)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$SantaHound$<BR><FONT color=#7e12d2(Tell about Blacksmith Berlin's request)</FONT><BR>Does the blacksmith need my help?<BR>Kuruung, what a shameless man.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Accept quest</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Dream of Hound$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-1-a" mid="16"><![CDATA[<html>You know how urgent the problem is. I'm asking the Hound for help.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$SantaHound$<BR>He has forced us to do overtime work and even work through the night. But now he is asking me for help because he's in trouble, bowwow.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-a" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-1-b" mid="18"><![CDATA[<html>If you perform can one miracle, then you can get out of the roof.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$SantaHound$<BR>Grrrrr, do you think of me as just an ordinary Hound?<BR>Although I'm able to do nothing stuck in the roof, I can perform lots of miracles for Hounds.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-b" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-1-c" mid="20"><![CDATA[<html>(SantaHound's pride is hurt, his ears are down.)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$SantaHound$<BR>Tha…that's…mmm.<BR>I took SantaHound's course as quickly as possible, couldn't practice the miracle of getting out of the roof.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-c" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-1-d" mid="22"><![CDATA[<html>(SantaHound is thinking.)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$SantaHound$<BR>I can't help crying if I think that Hounds are in pain at this moment while I'm stuck here. Poor Hounds are working without weekends in the forge over here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-d" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-1-e" mid="24"><![CDATA[<html>So, sorry. I'm also forced by circumstances……</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$SantaHound$<BR>Are you forcing me to sign to prove lies like this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-e" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-1-f" mid="26"><![CDATA[<html>(SantaHound seems to hit upon something.)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$SantaHound$<BR>Shut up! I don’t want to hear excuses.<BR>Hmm, there might be a way though.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-f" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-3" mid="29"><![CDATA[<html>(Accept)</html>]]></talk_answer>
+      <talk_answer link_index="n193_santaund-1-g" mid="30"><![CDATA[<html>(Reject)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$SantaHound$<BR>I have a suggestion you can never reject.<BR>I'll sign it if you want me to, but you should become an angel of Hound giving dreams and hopes to Hounds on my behalf.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-1-g" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-2" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$SantaHound$<BR>I suggested a good way, but you rejected it.<BR>Come again when you change your mind.<BR>If my mind hasn't changed by then, who knows, I might sign.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-3" mid="35"><![CDATA[<html>(Accept)</html>]]></talk_answer>
+      <talk_answer link_index="n193_santaund-2-a" mid="38"><![CDATA[<html>(Reject)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$SantaHound$<BR>What are you thinking?<BR>Did you change your mind to be the angel of Hound?<BR>Then I can sign on it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-2-a" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$SantaHound$<BR>I can change my mind whenever I want so don't regret it later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-3" image="" itemindex="">
+      <talk_answer link_index="n193_santaund-3-a" mid="42"><![CDATA[<html>(Show SantaHound the paper to sign.)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$SantaHound$<BR>Okay, then I'll sign it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-3-a" image="QM_Hound_ice.dds" itemindex="">
+      <talk_answer link_index="n193_santaund-4" mid="44"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$SantaHound$<BR><FONT color=#7e12d2>(SantaHound puts up his forepaw and leaves his footprint on the paper)</FONT><BR>Anyway I signed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n193_santaund-4" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$SantaHound$<BR>Don't forget the promise.<BR>If you break the promise, you'll have a nightmare of being chased by Hounds every night.<BR> However, if you keep the promise well, I'll bless you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-4" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5" mid="49"><![CDATA[<html>Yes, and I got his signature.</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Blacksmith Berlin$<BR>Was there a talking Hound really?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-a" mid="77"><![CDATA[<html>You are convinced just by seeing the footprint. Great.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Blacksmith Berlin$<BR>Footprint of chimney ash! It is definitely the talking Hound's signature.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-a" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-b" mid="79"><![CDATA[<html>Not at all.</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Blacksmith Berlin$<BR>I've been living with Hounds at the forge for decades. I can figure out a Hound's history just by the Hound's footprint. Good job, young man!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-b" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-5-c" mid="81"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-5-c" image="" itemindex="">
+      <talk_question mid="82"><![CDATA[<html>$Blacksmith Berlin$<BR>Now I have to persuade the people of the Society for the Prevention of Cruelty to Animals.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7220</exe>
+         <exe type="talk" npc="n193_santaund">1</exe>
+         <exe type="recompense_view">72200,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="delquestitem" num="-1">400198</exe>
+         <exe type="addquestitem" num="1">400199</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400199</exe>
+         <exe type="setstep">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">7220</exe>
+         <exe type="recompense">72200,,,,,</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 91, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n193_santaund" sub="a">2</exelink>
+   <exelink qstep="accepting" npc="n193_santaund" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n193_santaund" sub="b" />
+   <exelink qstep="1" npc="n193_santaund" sub="c" />
+   <exelink qstep="1" npc="n193_santaund" sub="d" />
+   <exelink qstep="1" npc="n193_santaund" sub="e" />
+   <exelink qstep="1" npc="n193_santaund" sub="f" />
+   <exelink qstep="1" npc="n193_santaund" sub="3">1</exelink>
+   <exelink qstep="1" npc="n193_santaund" sub="g" />
+   <exelink qstep="1" npc="n193_santaund" sub="2">0</exelink>
+   <exelink qstep="2" npc="n193_santaund" sub="3">0</exelink>
+   <exelink qstep="3" npc="n193_santaund" sub="4">0,1,2,3</exelink>
+   <exelink qstep="4" npc="n091_trader_bellin" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="b">1</exelink>
+   <exelink qstep="5" npc="n091_trader_bellin" sub="c">0,2</exelink>
+   <journal_data recompense="72200" quest_title="하운드에게 꿈을" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="400199">
+      <journal index="1">
+         <contents_image>QM_Hound_ice.dds</contents_image>
+         <destination_pos>5,n193</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>193</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[SantaHound's signature]]></title>
+         <contents mid="65"><![CDATA[<html>Get a signature from SantaHound for the Society for the Prevention of Cruelty to Animal.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ SantaHound</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk to SantaHound]]></destination>
+         <todo_msg mid="67"><![CDATA[New Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Saint_BlackSmith_Dwarf.dds</contents_image>
+         <destination_pos>11,n91</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>91</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Pass animal lover certificate]]></title>
+         <contents mid="71"><![CDATA[<html>Pass the signed animal lover certificate to Blacksmith Berlin at Saint Haven.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Blacksmith Berlin</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Talk to Blacksmith Berlin]]></destination>
+         <todo_msg mid="73"><![CDATA[Talk to  Blacksmith Berlin at Saint Haven]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7219</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n765_yuvenciel</npcename>
+      <npcid>765</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Archer Yuvenciel]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Archer Yuvenciel$<BR>……You're really a striking person.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq15_767_whistling_of_the_breeze</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">767</chk>
+      </conditions>
+   </talk>

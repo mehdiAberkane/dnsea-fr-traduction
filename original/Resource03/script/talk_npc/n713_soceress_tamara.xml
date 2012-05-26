@@ -1,0 +1,66 @@
+   <talk>
+      <npcename>n713_soceress_tamara</npcename>
+      <npcid>713</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Sorceress Tamara]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>How are you? The weather is bad, but do not fall ill because of that.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>在<FONT color=#387206>{user_class}</FONT>你看来，莲花沼泽怎么样呢？<BR>
+偶尔也会很好奇吧。</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="160" link_target="mq15_718_other_uninvited_guest.xml"><![CDATA[<html>[Lv.46] <FONT color=#a94407>Uninvited Guests</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="164" link_target="mq15_721_native_medicine.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>The Aborigines' Medicine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="165" link_target="mq15_722_regret.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>The Late Regret</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="213" link_target="mq15_739_meet_again.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>Meet again</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="216" link_target="mq15_742_genius.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Genius</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="220" link_target="mq15_743_destiny.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>It Is Fate</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="208" link_target="mq15_9200_lament_for_farewell1.xml"><![CDATA[<html>[Lv50] <FONT color=#a94407>A Lament For Her I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="209" link_target="mq15_9203_lament_for_farewell4.xml"><![CDATA[<html>[Lv50] <FONT color=#a94407>A Lament for Her Ⅳ</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="149" link_target="sq15_816_for_the_parttime.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Loving Advice</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="130" link_target="sq15_768_amuse_of_tamara.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Tamara's Hobby</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="131" link_target="sq15_769_cooking_time.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>A Happy Cooking Session</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="175" link_target="sq15_831_take_care_plant.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Protect the Crops</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="132" link_target="sq15_770_ancient_recipe.xml"><![CDATA[<html>[Lv.41] <FONT color=#086171>The Ancient's Dinner Recipes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="133" link_target="sq15_771_real_game_now.xml"><![CDATA[<html>[Lv.42] <FONT color=#086171>Hands-on Practice Now</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="192" link_target="dq15_1030_oh_my_farm.xml"><![CDATA[<html>[A day] <FONT color=#086171>Poor my field</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="134" link_target="sq15_772_supplement_recipe.xml"><![CDATA[<html>[Lv.43] <FONT color=#086171>The Recipe in the Appendix</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="135" link_target="sq15_773_hungry_hungry.xml"><![CDATA[<html>[Lv.43] <FONT color=#086171>Everything Tastes Good when You’re Hungry</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="136" link_target="sq15_774_fresh_color.xml"><![CDATA[<html>[Lv.44] <FONT color=#086171>A Refreshing Color</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="137" link_target="sq15_776_shush_please.xml"><![CDATA[<html>[Lv.44] <FONT color=#086171>It's a Secret</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="144" link_target="sq15_804_fasting_cure.xml"><![CDATA[<html>[Lv.43] <FONT color=#086171>Remedy for Hunger Strike</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="145" link_target="sq15_805_wedding_anniversary.xml"><![CDATA[<html>[Lv.43] <FONT color=#086171>Upcoming Wedding Anniversary</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="155" link_target="sq15_759_real_cause.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>The Problem lies in the Magic Books</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="156" link_target="sq15_760_necessary_condition.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Necessary and Essential Conditions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="169" link_target="sq15_763_truly_power.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>The Power that is truly Needed</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="176" link_target="sq15_837_shameful_past.xml"><![CDATA[<html>[Lv.46] <FONT color=#086171>The Hidden Past</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="180" link_target="sq15_844_forest_of_dead_butterflies.xml"><![CDATA[<html>[Lv46] <FONT color=#086171>The dying butterflies wood</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="181" link_target="sq15_845_supernatral_separator.xml"><![CDATA[<html>[Lv46] <FONT color=#086171>Supernatural Separation Equipment</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="193" link_target="dq15_1033_eco_recycle.xml"><![CDATA[<html>[A day] <FONT color=#086171>Eco-friendly recycling</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="182" link_target="sq15_846_original_nourishing_meal.xml"><![CDATA[<html>[Lv47] <FONT color=#086171>Original Hound's nutritious meal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="183" link_target="sq15_847_disaster_of_spit_flower.xml"><![CDATA[<html>[Lv47] <FONT color=#086171>Chaos of Spit Flower</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="184" link_target="sq15_848_unexpected_effect.xml"><![CDATA[<html>[Lv47] <FONT color=#086171>Unexpected effect</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="185" link_target="sq15_849_forbidden_recipe.xml"><![CDATA[<html>[Lv47] <FONT color=#086171>Forbidden recipe</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="186" link_target="sq15_851_glitteringly_luminous.xml"><![CDATA[<html>[Lv48] <FONT color=#086171>Twinkling</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="200" link_target="sq15_856_all_clear.xml"><![CDATA[<html>[Lv50]<FONT color=#086171> There's Nothing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="201" link_target="sq15_866_by_sword.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>Use of the Sword</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="210"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Master Sorceress Tamara$<BR>It is a good thing to be interested in the current affairs of this world.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+   </talk>

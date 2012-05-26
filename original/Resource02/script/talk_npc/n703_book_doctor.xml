@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n703_book_doctor</npcename>
+      <npcid>703</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Longwinded Professor Chuck]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Longwinded Professor Chuck${action:Talk}<BR>Knowledgeable<FONT color=#387206>{user_class}</FONT>, I expect a young person like you to be extra cautious and careful while tidying the collection of books .</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="30" link_target="mq15_722_regret.xml"><![CDATA[<html>[Lv.48] <FONT color=#a94407>The Late Regret</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="mq15_743_destiny.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>It Is Fate</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="sq15_760_necessary_condition.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Necessary and Essential Conditions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="21" link_target="sq15_761_engraved_written.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>The Book of Records</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="sq15_762_knowledge_of_sorceress.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>A Sorcerer's Wisdom</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="sq15_843_forest_of_butterflies.xml"><![CDATA[<html>[Lv46] <FONT color=#086171>Butterflies Wood</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="sq15_844_forest_of_dead_butterflies.xml"><![CDATA[<html>[Lv46] <FONT color=#086171>The dying butterflies wood</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="sq15_849_forbidden_recipe.xml"><![CDATA[<html>[Lv47] <FONT color=#086171>Forbidden recipe</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="36"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Longwinded Professor Chuck$<BR>He who reads shall gain great fortune and success. <BR>Do not get me wrong though, I am not implying that you will end up with nothing if you don't read…...</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

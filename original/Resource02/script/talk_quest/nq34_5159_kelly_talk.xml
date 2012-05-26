@@ -1,0 +1,99 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq34_5159_kelly_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5159</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About love]]></qkname>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-a" mid="7"><![CDATA[<html> That's why you look so happy lately.</html>]]></talk_answer>
+      <talk_answer link_index="n092_trader_kelly-accepting-b" mid="8"><![CDATA[<html> So who is that person? </html>]]></talk_answer>
+      <talk_answer link_index="n092_trader_kelly-accepting-c" mid="9"><![CDATA[<html> I'm getting jealous. </html> ]]></talk_answer>
+      <talk_answer link_index="n092_trader_kelly-accepting-d" mid="10"><![CDATA[<html> I'm not interested.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Kelly$<BR>
+It’s amazing to love someone. It’s good that I can spend a whole day thinking of what to give him and I become the happiest person when I see him. <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Merchant Kelly$<BR>
+Really? Was I too obvious? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Merchant Kelly$<BR>
+Haha, you are so insensitive. I’ll keep it as a secret until that person finds out. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Merchant Kelly$<BR>
+Wow, are you being jealous? That feels good. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Merchant Kelly$<BR>
+{user_nick}, you are so cold. You could say something nice once in awhile. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5159, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 92, 200 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 92, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 92, 400 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 92, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 좋아하는 사람에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>92:17000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

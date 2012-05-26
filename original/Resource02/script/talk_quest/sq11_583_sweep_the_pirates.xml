@@ -1,0 +1,173 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_583_sweep_the_pirates</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>583</qid>
+      <designer>나은하</designer>
+      <qlevel>32</qlevel>
+      <qdesc>장군 더글라스는 외딴 섬 중심부에서 기승을 부리는 해적들을 소탕해야겠다는 말을 한다. 한동안 블랙 드래곤으로 인한 혼돈 때문에 그곳을 방치했더니, 해적들이 자기 세상을 만난 듯 설쳐댄다는 것이다.
+해적 놀 칼잡이 10마리를 잡으라고 한다. (마리는 수는 1회에 소화가능할 정도로 적절히 조정)
+사냥을 마치고 장군 더글라스에게 외딴 섬 중심부의 해적들의 우두머리가 의외로 무장을 잘 갖췄다고 증언하면 장군은 그것을 의아해한다.
+해적 놀 칼잡이	921</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Clearing out pirates]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="QW_28.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$General Douglas$<BR>The pirates of <FONT color=#a94407>Loreline River</FONT> are getting wild since our forces are concentrated at <FONT color=#a94407>Dark Overload Keep</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$General Douglas$<BR>Since the worry about <FONT color=#a94407>Black Dragon</FONT> is cleared, we can't let the pirates go wild.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$General Douglas$<BR><FONT color=#a94407>Saint Haven</FONT> is a strategic fortress, 3 sides are covered by cliffs and have easy access to <FONT color=#a94407>Loreline River</FONT> by <FONT color=#a94407>Hermalte Port</FONT>. Due to these factors, we have an advantage protecting from monster's attack.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-d" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$General Douglas$<BR>However, we have a disadvantage of not being able to contact outside easily. We can easily get isolated if we are surrounded by enemies.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-d" image="QW_HermaltePort.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-e" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$General Douglas$<BR>Therefore the security of  <FONT color=#a94407>Hermalte Port</FONT> and <FONT color=#a94407>Loreline River</FONT> area is very important. If the pirates take charge of the area we will face many difficulties in our supply route.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-e" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-f" mid="22"><![CDATA[<html>If you need my help, I am willing to help.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$General Douglas$<BR>I guess you can easily clear out  <FONT color=#a82424>Pirates Noel</FONT> from <FONT color=#a82424>Core of Forsaken Islet</FONT>. So, are you willing to be part of the clear out?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="24"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Clearing out of pirates$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_33.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$General Douglas$<BR>Go to <FONT color=#a82424>Core of Forsaken Islet</FONT> right now and kill <FONT color=#a82424>10 Pirates Noel Butchers</FONT> please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-a" mid="28"><![CDATA[<html>Yes, but their boss' action seems disquieting.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$General Douglas$<BR>Did you show pirates at <FONT color=#a82424>Core of Forsaken Islet</FONT> what you've got?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-b" mid="30"><![CDATA[<html>It was the Lizardman heavily armed like monsters from Black Mountain.</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$General Douglas$<BR>Who was the boss of pirates?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-b" image="QM_Lizardman_Black.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-c" mid="32"><![CDATA[<html>(Explain more in detail)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$General Douglas$<BR>Heavily armed…?<BR>
+Tell me in more detail.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-d" mid="36"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-d" image="QM_Lizardman_Black.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$General Douglas$<BR>Hmm, I guess we shouldn't ignore that fact.<BR>I'll have a look on that <FONT color=#a82424>Lizardman</FONT>.<BR>
+Good work.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5831,5832,5833,5834,5835</exe>
+         <exe type="huntmon" num="10" party="1" exe="2,3,4" onexe="">921</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+         <exe type="setquest">583</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200921</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 921);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5831,5832,5833,5834,5835</exe>
+         <exe type="complete">583</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="f">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">6,1,7,5</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="d">1</exelink>
+   <journal_data recompense="1:5831,2:5832,3:5833,4:5834,5:5835" quest_title="해적소탕령" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Clear out of Pirates Noel Butcher]]></title>
+         <contents mid="42"><![CDATA[<html>Go to <FONT color=#a82424>Core of Forsaken Islet</FONT> and kill <FONT color=#a82424>10 Pirates Noel Butchers</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Transportation ship to Forsaken Islet)</FONT><FONT color=#a82424> → Core of Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Core of Forsaken Islet]]></destination>
+         <todo_msg mid="44"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode />
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Report to General Douglas]]></title>
+         <contents mid="46"><![CDATA[<html>Have defeated all the pirates. However, armoured <FONT color=#a82424>Lizardman Commander Ruff</FONT> worries you. Report to <FONT color=#a82424>General Douglas</FONT> about <FONT color=#a82424>Lizardman Commander Ruff</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Report to General Douglas]]></destination>
+         <todo_msg mid="48"><![CDATA[Go to General Douglas and report the situation of Forsaken Islet.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

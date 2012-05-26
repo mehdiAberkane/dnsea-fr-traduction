@@ -1,0 +1,107 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq29_6905_invisible_thief_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6905</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Dream Girl]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-a" mid="10"><![CDATA[<html>What about Merchant May</html>]]></talk_answer>
+      <talk_answer link_index="n255_invisible_thief-accepting-d" mid="11"><![CDATA[<html>What about Master Sorceress Tiana?</html>]]></talk_answer>
+      <talk_answer link_index="n255_invisible_thief-accepting-f" mid="12"><![CDATA[<html>What about Master Archer Adelynn?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Invisible Thief$<BR>Dream girl? In Calderock Village?<BR>…… How many girls are there here to talk about dream girl? How to find my dream girl in such a tiny place like this?<BR>You are really special huh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-b" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Invisible Thief$<BR>May? That talkative woman? Singing all day long with her screeching voice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Invisible Thief$<BR>The noise of the Orc's shield is even nicer than that voice.<BR>And that woman actually produced some Hound Nutritious weird food? How can she cook with such culinary skill...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-c" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Invisible Thief$<BR>Urgh… I think I'll get killed by poison within 4 days if I am to be with her.<BR><FONT color=#7e12d2>(Invisible Thief shivers)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-e" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Invisible Thief$<BR>Just a typical Sorceress, looks good but Sorceress are too noisy, NO.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-e" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Invisible Thief$<BR>Humph, not that because I was rejected as a Sorceress disciple… urgh, it's annoying to make me think of the past days! Argh~ Those irritating Sorceress!!<BR><FONT color=#7e12d2>(Invisible Thief is recalling the past, bad mood)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-g" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Invisible Thief$<BR>Anyway~ Elves are all beauties as always.<BR>But, I heard that she has a lover? I'm a gentleman you know, it's well-known in the whole Saint Haven~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-h" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Invisible Thief$<BR>How can I go after someone who can't forget her lover, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-h" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Invisible Thief$<BR>And, if I should look for an elf, wouldn't Ishilien in Saint Haven be better?<BR>She looks free anyway~<BR><FONT color=#7e12d2>(Invisible Thief smiled happily)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6905, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 255, 20 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 255, 40 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 255, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="d">2,0</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="f">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 이상형에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>255:7000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

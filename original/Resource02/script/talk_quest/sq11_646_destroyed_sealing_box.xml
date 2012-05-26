@@ -1,0 +1,245 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_646_destroyed_sealing_box</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>646</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>647</nextqid>
+      <nextqname>sq11_647_celestine_rosary</nextqname>
+      <nextqnpc>n046_cleric_master_enoc</nextqnpc>
+      <qkname mid="1"><![CDATA[Broken Seal]]></qkname>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>433</npcid>
+         <npcename>n433_light_pole</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>46</npcid>
+         <npcename>n046_cleric_master_enoc</npcename>
+         <npckname>상급 클레릭 에녹</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-noquest" image="" itemindex="">
+      <talk_question mid="195"><![CDATA[<html>$Duke Stuart$<BR>Did you talk to Master Cleric Enoch about Rodain and Lucifina?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n433_light_pole-noquest" image="" itemindex="">
+      <talk_question mid="196"><![CDATA[<html>$Broken Seal$<BR><FONT color=#7e12d2>(A box shattered by something. Nothing special.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Cleric Enoch$<BR>Recently, a cult Sorceress suspected of being a Dragon follower tried to approach the dangerous artifacts multiple times.<BR>Based on your description, I think I know who the Sorceress is!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-acceptted" mid="25"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Broken Seal$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1" image="" itemindex="">
+      <talk_question mid="197"><![CDATA[<html>$Master Cleric Enoch$<BR>This time, their arrogance will not be left unpunished.<BR>You must go to<FONT color=#a82424>Duke Stuart</FONT>and report the overall situation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n433_light_pole-1" image="" itemindex="">
+      <talk_question mid="198"><![CDATA[<html>$Broken Seal$<BR>
+<FONT color=#7e12d2>(There is nothing)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="201"><![CDATA[<html>Yes it is.</html>]]></talk_answer>
+      <talk_question mid="199"><![CDATA[<html>$Duke Stuart$<BR>
+I've heard your story well. The missing cult trial record is stopping you from further investigation<BR>and you found a suspicious Sorceress at the site?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-b" mid="203"><![CDATA[<html>Orders?</html>]]></talk_answer>
+      <talk_question mid="202"><![CDATA[<html>$Duke Stuart$<BR><FONT color=#7e12d2>(Stuart glances at Kayleen and lowers his voice.)<BR></FONT>It comes to my mind that <FONT color=#a82424>Court Sorceress Kayleen</FONT>secretly gave orders to one of her sorceress.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2" mid="205"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="204"><![CDATA[<html>$Duke Stuart$<BR>
+Yes, she said something about a seal near Death City Entrance.<BR>
+I think it was something like finding it without alerting the Clerics.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QN_Npc_Cl_master_Enoc.dds" itemindex="">
+      <talk_question mid="207"><![CDATA[<html>$Duke Stuart$<BR><FONT color=#a82424>Master Cleric Enoch</FONT>should be alerted about this as well.<BR>Tell him about our conversation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2" image="QW_42.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-2-a" mid="209"><![CDATA[<html>Yes. It is correct.</html>]]></talk_answer>
+      <talk_question mid="208"><![CDATA[<html>$Master Cleric Enoch$<BR>What? Kayleen ordered one of her Sorceress to go to Death City Entrance?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-2-b" mid="211"><![CDATA[<html>I'm willing to help.</html>]]></talk_answer>
+      <talk_question mid="210"><![CDATA[<html>$Master Cleric Enoch$<BR>Hmmm, I see. I need to send Cleric Ethan then.<BR>But what if the Sorceresses find out before us….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2-b" image="QW_42.dds" itemindex="">
+      <talk_question mid="212"><![CDATA[<html>$Master Cleric Enoch$<BR>Oh will you? Then as soon as Cleric Ethan arrives, I will send him to <FONT color=#a82424>Death City Entrance</FONT>. You head out first and stop the Sorceresses.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3" image="QW_42.dds" itemindex="">
+      <talk_question mid="213"><![CDATA[<html>$Master Cleric Enoch$<BR>As soon as Cleric Ethan arrives I will send him to <FONT color=#a82424>Death City Entrance</FONT>. You head out first and stop the sorceresses.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n433_light_pole-3" image="" itemindex="">
+      <talk_answer link_index="n433_light_pole-4" mid="215"><![CDATA[<html>(There is nothing.)</html>]]></talk_answer>
+      <talk_question mid="214"><![CDATA[<html>$Broken Seal$<BR><FONT color=#7e12d2>(The seal is already broken by someone.</FONT><BR>
+<FONT color=#7e12d2>Upon close observation, you find footsteps of women.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n433_light_pole-4" image="" itemindex="">
+      <talk_question mid="216"><![CDATA[<html>$Broken Seal$<BR><FONT color=#7e12d2>(You observe the seal more carefully but there is nothing to be found.</FONT><BR>
+<FONT color=#7e12d2>It seems the Sorceresses are ahead of you.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-4" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-4-a" mid="218"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Master Cleric Enoch$<BR>What? The seal was already broken?!<BR>
+We were too late.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-4-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-4-b" mid="220"><![CDATA[<html>(Enoch is enraged)</html>]]></talk_answer>
+      <talk_question mid="219"><![CDATA[<html>$Master Cleric Enoch$<BR>The Sorceresses must have broken the seal.<BR>Their will to cause trouble seems unending!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-4-b" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-4-!next" mid="222"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="221"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">646</exe>
+         <exe type="recompense_view">6460,,,,,</exe>
+         <exe type="talk" npc="n046_cleric_master_enoc">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6460,,,,,</exe>
+         <exe type="complete">646</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="a">1</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n046_cleric_master_enoc" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n433_light_pole" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n046_cleric_master_enoc" sub="b">0</exelink>
+   <exelink qstep="4" npc="n046_cleric_master_enoc" sub="!next">1</exelink>
+   <journal_data recompense="0:6460" quest_title="파괴된 봉인함" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode />
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Stuart's opinion]]></title>
+         <contents mid="89"><![CDATA[<html>Continue talking to Duke Stuart.<BR><BR><FONT color=#086171>Inside Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Duke Stuart</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Duke Stuart]]></destination>
+         <todo_msg mid="91"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="179"><![CDATA[Notify Enoch]]></title>
+         <contents mid="180"><![CDATA[<html>Duke Stuart mentioned that Royal Court Sorceress Kayleen ordered a Sorceress to go to Gates to City of Death. Let's go to Master Cleric Enoch to talk about this.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="181"><![CDATA[Chat with Master Cleric Enoch]]></destination>
+         <todo_msg mid="182"><![CDATA[Talk to Master Cleric Enoch]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_42.dds</contents_image>
+         <destination_pos>424,n433</destination_pos>
+         <destination_mode>custom:421@1,422@1,423@1,424@1</destination_mode>
+         <statemark_npcid>433</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="183"><![CDATA[Death City Entrance]]></title>
+         <contents mid="184"><![CDATA[<html>Stop the Sorceresses heading to Death City Entrance.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Entrance of the Black Mine)</FONT> <FONT color=#a82424>→ Death City Entrance</FONT></html>]]></contents>
+         <destination mid="185"><![CDATA[Explore Death City Entrance ]]></destination>
+         <todo_msg mid="186"><![CDATA[Go to Death City Entrance]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="191"><![CDATA[Report]]></title>
+         <contents mid="192"><![CDATA[<html>The seal was already broken. Report the situation of Death City Entrance to Master Cleric Enoch in Saint Haven.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="193"><![CDATA[Chat with Master Cleric Enoch]]></destination>
+         <todo_msg mid="194"><![CDATA[Report to Master Cleric Enoch  ]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest>645</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

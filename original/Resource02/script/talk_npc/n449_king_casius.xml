@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n449_king_casius</npcename>
+      <npcid>449</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[King Cassius
+(Spirit of the Grave)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$King Cassius$<BR>Help me…it's dangerous beyond this point..</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_694_joy_and_horror</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">694</chk>
+      </conditions>
+   </talk>

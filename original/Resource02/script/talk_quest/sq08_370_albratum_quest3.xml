@@ -1,0 +1,182 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_370_albratum_quest3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>370</qid>
+      <designer>김인정</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>371</nextqid>
+      <nextqname>sq08_371_albratum_quest4</nextqname>
+      <nextqnpc>n199_darklair_castia</nextqnpc>
+      <qkname mid="1"><![CDATA[Jealous Zealing Spirit III]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-a" mid="44"><![CDATA[<html>(Castia express a slight gentle smile)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>You are here. The kind <FONT color=#387206>{user_class}</FONT>,<BR>I believe with your strength, you will be able to penetrate the depths of the nightmare and return unharm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-b" mid="46"><![CDATA[<html>Is there something you need from me again?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Even with the <FONT color=#a82424>Tent of the Abyss</FONT> in our hands, if there isn't great determination, it will be as good as a piece of junk.<BR>We could really use your courage and determination.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-b" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-acceppted" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Well Adverturer, we need your assistance again,<BR>please help us protect the world from these corrupted evil.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>You are a reliable Adventurer.<BR> Although there are much risk ahead, I hate to ask but I do hope you can go deeper into the nightmare.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Go to <FONT color=#a82424>Priestess She</FONT> to retrive the <FONT color=#a82424> Tent of the Abyss</FONT>, then proceed to purge the Jealous Zealing Spirits.<BR>No matter how strong you are, you'll never get pass the Boundary of Darkness without the Tent of the Abyss.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="55"><![CDATA[<html>Condition understood.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Jealous Zealing Spirit III$<BR>A party of 4 is recommended for the Jealous Zealing Spirit III.<BR>You must have an Tent of the Abyss to enter the Edge of Darkness.<BR>Tent of the Abyss can be obtained from Priestess Shea.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2" mid="57"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Jealous Zealing Spirit III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2" image="QW_DarkLair.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Please proceed to pudge the Jealous Zealing Spirits until <FONT color=#a82424>Round 15</FONT>, and defeat the guardian.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-a" mid="60"><![CDATA[<html>Don't mention.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Your kindness have help solved one the biggest problem in our heart.<BR>Adventurer, please accept our deepest appreciation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-a" image="QW_DarkVillage.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-b" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Since we sent out words that we needed help, many adventurers have come to test their strength and prevent furthur contaminsation of the darkness.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-c" mid="64"><![CDATA[<html>I'm honored.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Priestess of Darkness Castia$<BR>But most have given up and returned.<BR>There aren't many adventurers with a strong will like you. We need you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-!next" mid="66"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">370</exe>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n199_darklair_castia-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">3700,,,,,</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="6,4,5">300026</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3700,,,,,</exe>
+         <exe type="complete">370</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n199_darklair_castia" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c">0</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="2">1,3,2</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="c">0</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="!next">1</exelink>
+   <journal_data recompense="3700" quest_title="질투의 알브트라움 Ⅲ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>29,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,30@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[The Second task]]></title>
+         <contents mid="32"><![CDATA[<html>Talk to Priestess of Darkness Castia at Rozin Sanctuary for the next quest.<BR><BR><FONT color=#086171>Rozin Sanctuary</FONT> <FONT color=#a82424>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Talk to Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="34"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_DarkLair.dds</contents_image>
+         <destination_pos>12007,0,0</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0,12007@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Continue purging]]></title>
+         <contents mid="36"><![CDATA[<html>Survive 15 or more waves in the Jealous Zealous Spirit.<BR><BR><FONT color=#7e12d2>※ A party of 4 is recommended to enter Boundary of Darkness.<BR>※ You must posses an Tent of the Abyss.<BR>※ Tent of the Abyss can be obtained from Priestess of Darkness Shea.</FONT><BR><BR><FONT color=#086171>Zealous Gateway</FONT> <FONT color=#a82424>→ Jealous Zealous (Round 20)</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Pudge up to Round 15 in the Boundary of Jealousy]]></destination>
+         <todo_msg mid="38"><![CDATA[Pudge up to Round 15 in the Boundary of Jealousy]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>29,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,30@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Report to Priestess of Darkness Castia]]></title>
+         <contents mid="40"><![CDATA[<html>Quest completed! Please return to Priestess of Darkness Castia.<BR><BR><FONT color=#086171>Boundary of Darkness Rozin Sanctuary</FONT> <FONT color=#a82424>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Talk to Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="42"><![CDATA[Report to Priestess of Darkness Castia.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>369</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

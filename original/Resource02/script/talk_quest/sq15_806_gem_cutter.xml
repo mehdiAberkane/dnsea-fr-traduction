@@ -1,0 +1,289 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_806_gem_cutter</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>806</qid>
+      <designer>김인정</designer>
+      <qlevel>43</qlevel>
+      <qdesc>아사이의 칼날 조각	300438
+달톤의 보석	300437
+기념일 선물용 목걸이	300446
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>807</nextqid>
+      <nextqname>sq15_807_special_handbag</nextqname>
+      <nextqnpc>n715_adventurer_guildmaster_hose</nextqnpc>
+      <qkname mid="1"><![CDATA[Gem Cutter]]></qkname>
+      <qnpc>
+         <npcid>708</npcid>
+         <npcename>n708_trader_molin</npcename>
+         <npckname>대장장이 몰린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>715</npcid>
+         <npcename>n715_adventurer_guildmaster_hose</npcename>
+         <npckname>모험자 길드장 호세</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-noquest" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Blacksmith Molin$<BR>Blacksmith's work is the genuine art.<BR><BR>
+<FONT color=#7e12d3>※ You can get a quest from Guildmaster Jose.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Guildmaster Jose$<BR>My wife will be happy if I make a necklace with Dalton's gems.<BR><FONT color=#7e12d3>(Jose's excited)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-b" mid="8"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Guildmaster Jose$<BR>I'm kind of busy with traveler guild's work, so please you go there instead of me.<BR>Go to <FONT color=#a82425>Blacksmith Molin</FONT>and ask him to carve these Dalton's gems.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-acceptted" mid="22"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Gem Cutter$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Guildmaster Jose$<BR>You should ask <FONT color=#a82425>Blacksmith Molin</FONT>to make it carefully because it is for my wife as a wedding anniversary present.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-a" mid="46"><![CDATA[<html>(Tell Jose's situation)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Blacksmith Molin$<BR>What can I do for you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-a" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-b" mid="48"><![CDATA[<html>Here you are.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Blacksmith Molin$<BR>Hmm, Dalton's gems?<BR>Can I see them?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-b" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-c" mid="50"><![CDATA[<html>(It sounds ominous)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Blacksmith Molin$<BR>Okay, I just got a good necklace case so I can carve it right now.<BR>
+<FONT color=#7e12d3>(Molin hits the gems strongly)</FONT>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-c" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-d" mid="52"><![CDATA[<html>Huh?!</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Blacksmith Molin$<BR><FONT color=#7e12d3>(Molin's carving tools are broken)<BR></FONT>What the?!!!! M, my tools!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-d" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-e" mid="54"><![CDATA[<html>You don't have any spares?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Blacksmith Molin$<BR>How these Dalton's gems broke my carving tools? How hard are they?!<BR>
+Since my tools are broken, I can't carve these gems now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-e" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-f" mid="56"><![CDATA[<html>You don't have to shout at me.</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Blacksmith Molin$<BR>Spares?! <BR>Do you have any idea about how much are my tools just broken before?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-f" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-g" mid="58"><![CDATA[<html>Can't you fix them?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Blacksmith Molin$<BR>I don't have useless carving tools.<BR>There were one of the best tools in the world!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-g" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-h" mid="60"><![CDATA[<html>Okay. What kind of other tools?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Blacksmith Molin$<BR>Then what about going out to get other tools for me?<BR>
+If you get some new, I can make it again.<BR>
+<FONT color=#7e12d3>(Molin acts big)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-h" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-2" mid="62"><![CDATA[<html>(I think he deceived me)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Blacksmith Molin$<BR>Really?<BR><FONT color=#7e12d3>(Molin's feeling changes quickly)</FONT><BR>
+You promise me, haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-2" image="QW_51.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Blacksmith Molin$<BR>What I need is a blade fragment of a knife which <FONT color=#a82424>{monster:1392} </FONT>has. The monsters're living in <FONT color=#a82424>Riverwart Village Ruins</FONT>.<BR>It takes a long time to get<FONT color=#a82425>Asai's blade fragments of a knife</FONT>, so timing is important.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-3-a" mid="67"><![CDATA[<html>Sure~!</html>]]></talk_answer>
+      <talk_answer link_index="n708_trader_molin-3-a" mid="68"><![CDATA[<html>Here you are.</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Blacksmith Molin$<BR>Welcome back!<BR>So, you brought them?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-a" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-3-b" mid="71"><![CDATA[<html>(Molin starts carving the gems)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Blacksmith Molin$<BR>Wait a minute.<BR>Haha, I finally got these!<BR>These special blade fragments of a knife~~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-b" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-3-c" mid="73"><![CDATA[<html>Yes it is.</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Blacksmith Molin$<BR>Done.<BR>
+<FONT color=#7e12d3>(Molin shows a necklace)</FONT><BR>
+See, isn't it wonderful? Haha~ good tools are good tools.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-c" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Blacksmith Molin$<BR><FONT color=#7e12d3>(Molin strokes his new carving tools with a lovely look.)<BR></FONT>Go to Jose.<BR>I've got these wonderful carving tools thanks to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-4" image="" itemindex="">
+      <talk_question mid="75"><![CDATA[<html>$Blacksmith Molin$<BR>Go to <FONT color=#a82425>Guildmaster Jose</FONT>.<BR>흐흐, I've got these wonderful carving tools thanks to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-4" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-4-a" mid="78"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Guildmaster Jose$<BR>It seems carving is done.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-4-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-4-b" mid="80"><![CDATA[<html>Why?</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Guildmaster Jose$<BR>(sighs). <FONT color=#7e12d3>(Jose looks at the necklace with sad eyes)<BR></FONT>This necklace… is now useless.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-4-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-4-c" mid="82"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Guildmaster Jose$<BR>My wife had a alumni meeting and saw her friend's luxury bag.<BR>
+And she said that she wanted to have it instead of this necklace .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-4-c" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-4-d" mid="84"><![CDATA[<html>Huh? Why are you looking at me?!</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Guildmaster Jose$<BR>She said "I want to have a Ramia bag.<BR>That is made up by<FONT color=#a82424>{monster:1572}</FONT>'s leather….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-4-d" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-4-!next" mid="86"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">806</exe>
+         <exe type="talk" npc="n715_adventurer_guildmaster_hose">1</exe>
+         <exe type="recompense_view">8060,,,,,</exe>
+         <exe type="addquestitem" num="1">300437</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300437</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1392</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201392</exe>
+         <exe type="addquestitem" num="1">300438</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,8,9">300438</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300438</exe>
+         <exe type="addquestitem" num="1">300446</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300446</exe>
+         <exe type="recompense">8060,,,,,</exe>
+         <exe type="complete">806</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="b">2</exelink>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="acceptted">0,1,3</exelink>
+   <exelink qstep="1" npc="n708_trader_molin" sub="b">0</exelink>
+   <exelink qstep="1" npc="n708_trader_molin" sub="c" />
+   <exelink qstep="1" npc="n708_trader_molin" sub="d" />
+   <exelink qstep="1" npc="n708_trader_molin" sub="e" />
+   <exelink qstep="1" npc="n708_trader_molin" sub="f" />
+   <exelink qstep="1" npc="n708_trader_molin" sub="g" />
+   <exelink qstep="1" npc="n708_trader_molin" sub="h" />
+   <exelink qstep="1" npc="n708_trader_molin" sub="2">1,3,4,6,2</exelink>
+   <exelink qstep="3" npc="n708_trader_molin" sub="b">0</exelink>
+   <exelink qstep="3" npc="n708_trader_molin" sub="c">1,2,3</exelink>
+   <exelink qstep="4" npc="n715_adventurer_guildmaster_hose" sub="a">0</exelink>
+   <exelink qstep="4" npc="n715_adventurer_guildmaster_hose" sub="b" />
+   <exelink qstep="4" npc="n715_adventurer_guildmaster_hose" sub="c" />
+   <exelink qstep="4" npc="n715_adventurer_guildmaster_hose" sub="d">1</exelink>
+   <exelink qstep="4" npc="n715_adventurer_guildmaster_hose" sub="!next">2</exelink>
+   <journal_data recompense="0:8060" quest_title="보석 가공하기" chapterid="" quest_level="43" quest_mark_type="10" use_item_list="300437,300438,300446">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>15,n708</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>708</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[To Blacksmith Molin]]></title>
+         <contents mid="93"><![CDATA[<html>Go to Blacksmith Molin and ask him to carve Dalton's gems.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Blacksmith Molin</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Talk with Blacksmith Molin]]></destination>
+         <todo_msg mid="95"><![CDATA[Go to Blacksmith Molin]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,0,0</destination_pos>
+         <destination_mode>custom:511@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[A blade fragment of a knife]]></title>
+         <contents mid="37"><![CDATA[<html>Go to Riverwart Village Ruins and get a blade fragment of a knife.<BR><BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Riverwart Village Ruins</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Riverwart Village Ruins]]></destination>
+         <todo_msg mid="39"><![CDATA[Collect Asai's blade fragment of a knife at Riverwart Village Ruins.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image />
+         <destination_pos>15,n708</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>708</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Be Ready]]></title>
+         <contents mid="89"><![CDATA[<html>Deliver it to Lotus Marsh's Blacksmith Molin.<BR>
+<BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Blacksmith Molin</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk with Blacksmith Molin]]></destination>
+         <todo_msg mid="91"><![CDATA[Report to Blacksmith Molin.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image />
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Report to Guildmaster Jose]]></title>
+         <contents mid="41"><![CDATA[<html>Deliver it to Lotus Marsh's Guildmaster Jose.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Guildmaster Jose</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Report to Guildmaster Jose]]></destination>
+         <todo_msg mid="43"><![CDATA[Go back to Guildmaster Jose]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>43:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>805</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

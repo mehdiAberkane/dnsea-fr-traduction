@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n154_prairie_guard_pesent</npcename>
+      <npcid>154</npcid>
+      <startexe>3</startexe>
+      <npckname mid="1"><![CDATA[Guard in Training]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Guard In Training${sound:unpc_Young man_em_03_a.wav}<BR>Heyak! Hah! Ah! Ooh!<BR>[The Guard yells out strangely while training.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="">
+         <talk_question mid="6"><![CDATA[<html>$Guard In Training${sound:unpc_Young man_em_01_e.wav}<BR>Heeyak! Heeyak! Heeyak!<BR>[The Guard yells out strangely while training.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="">
+         <talk_question mid="7"><![CDATA[<html>$Guard In Training${sound:unpc_Young man_em_02_d.wav}<BR>Yeyak! Yeyak! Yeyak! [The Guard yells out strangely while training]</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">003</exe>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="conexe" true="2" false="0">1</exe>
+      </executions>
+      <conditions>
+         <chk type="prob">500</chk>
+         <chk type="prob">700</chk>
+      </conditions>
+   </talk>

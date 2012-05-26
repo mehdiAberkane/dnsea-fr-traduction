@@ -1,0 +1,96 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq12_7209_bellin_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7209</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Recent interests]]></qkname>
+      <qnpc>
+         <npcid>91</npcid>
+         <npcename>n091_trader_bellin</npcename>
+         <npckname>대장장이 벨린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n091_trader_bellin-accepting-a" mid="6"><![CDATA[<html>Act your age</html>]]></talk_answer>
+      <talk_answer link_index="n091_trader_bellin-accepting-b" mid="7"><![CDATA[<html>I like the singer too.</html>]]></talk_answer>
+      <talk_answer link_index="n091_trader_bellin-accepting-c" mid="8"><![CDATA[<html>Everyone likes the singers</html>]]></talk_answer>
+      <talk_answer link_index="n091_trader_bellin-accepting-d" mid="9"><![CDATA[<html>It's not shameful to be a fan of singers.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Berlin$<BR>Hmm, it's awkward to say. There'll be a big event here for the fan meeting of the singer Harori. Well, that doesn't mean I like her, just that everyone is talking about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Blacksmith Berlin$<BR>What did I do to you? I just said that the singer Harori will have a concert soon. Don't blame me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Berlin$<BR>
+Is it?! I knew it! Actually I like the singer. (Berlin spends long time talking about Harori's photos and album.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Blacksmith Berlin$<BR>
+Yes, many people like the singer. She is like a cute granddaughter to me, too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n091_trader_bellin-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Blacksmith Berlin$<BR>
+Mmm, yes. People around my age really like the singer. In fact, I'm about to be a fan.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7209, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 91, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 91, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 91, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 91, 100 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n091_trader_bellin" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 최근의 관심사에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>91:15000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

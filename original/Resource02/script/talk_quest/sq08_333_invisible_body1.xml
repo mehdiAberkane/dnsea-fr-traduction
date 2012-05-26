@@ -1,0 +1,259 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_333_invisible_body1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>333</qid>
+      <designer>김주연</designer>
+      <qlevel>21</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>334</nextqid>
+      <nextqname>sq08_334_invisible_body2</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[Invisible Body I]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>269</npcid>
+         <npcename>n269_invisible_thef_sq333_334</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR>The feeling that there's something more right here.<BR><FONT color=#7e12d2>(Begin the quest by talking to Cleric Jermain at Calderock Village.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$???$<BR>The feeling that there's something more right here.<BR><FONT color=#7e12d2>(Begin the quest by talking to Cleric Jermain at Calderock Village.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Merchant May$<BR>How I wish merchants from Saint Haven visit Calderock more frequently. Perhaps that will stop people from calling me a countryside shop lady anymore. <FONT color=#7e12d2>(Begin the quest by talking to Cleric Jermain.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="9"><![CDATA[<html>Yes, of course.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Cleric Jermain$<BR>Have a moment for my tale?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>During the <FONT color=#a82424>Calderock Resistance</FONT>, a great battle was fought at the <FONT color=#a82424>Road of No Return</FONT>. We held on strong, with key strategic positions secured and the support of our people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="13"><![CDATA[<html>What happened thereafter?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Cleric Jermain$<BR>But war is never kind. Many good folks lost their lives there. It was a tragic loss to many families.<BR>After the battle, people called the place, <FONT color=#a82424>Road of No Return</FONT>, because nobody was able to return alive.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Cleric Jermain$<BR>Although that happened a long time back, Calderock still caries its battle scars. Look, I've one here too. (A wide jagged scar runs along his left arm)<BR>Losing my master at Forest of Death was bad enough and just a few days after, I've lost my one and only friend. (Sobs)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-e" mid="70"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Master Cleric Jermain$<BR>I went back to the <FONT color=#a82424>Road of No Return</FONT> for the death anniversary of my friend. When I got there, I found something that wasn't there before.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-e" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-f" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Cleric Jermain$<BR>I found a <FONT color=#a82424>Poison Machine</FONT> at a dead end of Road of No Return.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-f" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-g" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>I couldn't stay away from town for long so I had no choice but to return quickly. Since then, that <FONT color=#a82424>Poison Machine</FONT> has been always on my mind. <BR>Could you check out the place and find out who would put such a machine there there?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Invisible Body I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QP_Manufactory.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Master Cleric Jermain$<BR>When you get to the end of <FONT color=#a82424>Road of No Return</FONT>, there will be a machine just lying there. I'm afraid the monsters may be up to no good again. Please find out if this is so.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="QW_23.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$???$<BR>The feeling that there's something more right here.<BR><FONT color=#7e12d2>(Find the Road of No Return, you must.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QW_23.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Merchant May$<BR>Did you notice something about Jermain? He has been brooding ever since returning from Road of No Return.  I wonder what happened to him.<BR><FONT color=#7e12d2>(Visit Road of No Return, you must)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-a" mid="27"><![CDATA[<html>(Surprised) What are you talking about?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Invisible Thief$<BR>Hey there, explorer. <BR>Just so you know, you've being a great annoyance right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-a" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-b" mid="29"><![CDATA[<html>It does not belong you anyway. You looted it from the monsters...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Invisible Thief$<BR>The <FONT color=#a82424>Poison Machine, which could have become my number ONE asset</FONT>, was going to make me a fortune and you HAD to break it.<BR>It would have been quite something, because it's so big. You have to fix it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-b" image="QP_Manufactory.dds" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-c" mid="31"><![CDATA[<html>But still, stealing is a bad thing to do.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Invisible Thief$<BR>Ok! I stole it!<BR>I needed it to make enough gold to help me return my body to its original state!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-c" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-d" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Invisible Thief$<BR>Alright, ok. Relax. It wasn't like I'm stealing because I like to steal.<BR>But I admit It was fun at first after I became invisible. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-d" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-e" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Invisible Thief$<BR>Soon, I realized that , even by being invisible, I couldn't become like Phantom Thief Shupin, or even a sorcerer. Therefore, in all honesty, I stole it because I wanted become my old self again. Would you understand that?<BR>I mean, can you understand how lonely it is to be invisible?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-e" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-f" mid="37"><![CDATA[<html>In that case, let's find a cure.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Invisible Thief$<BR>Do you know what it took to move the Machine here? I only wanted to sell it and this... this.... *Sniff sniff*. had to happen... *Sniff sniff*. I only wished to do well... Why me?? But you had to come along and break it and I even had to get disciplined by a kid!... *Sniff sniff*.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-f" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-g" mid="39"><![CDATA[<html>(Maybe he's talking about... May?) First, let's return to the town and talk there.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Invisible Thief$<BR>You.. you'll help me?<BR>Yay! You should look for the person who has made the Super Detergent before. The person who made the Super Detergent , did wonders with it. I'm sure he can help</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-g" image="" itemindex="">
+      <talk_answer link_index="n269_invisible_thef_sq333_334-1-h" mid="41"><![CDATA[<html>Well then, I'll be back again. Try not to get your hopes up too much, ok?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Invisible Thief$<BR>No. no town for me.<BR>I have nothing there.. no home, no friends to talk to... It's just so sad</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-1-h" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Invisible Thief$<BR>Ok, just take it as saving someone who is destined for great achievements.<BR>You are all I've got, hero!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n269_invisible_thef_sq333_334-2" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Invisible Thief$<BR>When I'm my old self again, the first thing I will do is to buy the best clothes I can find. <BR>Hero, you'll be the first to see my handsome face if you can find me the cure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Merchant May$<BR><FONT color=#a82424>Cleric Jermain</FONT> told me that he encountered something strange at Road of No Return. Is it true?<BR>I'm so~ curious.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="83"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Cleric Jermain$<BR>You're back!<BR>So, did you find out what those monsters were up to with that machine?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="50"><![CDATA[<html>He says that he is staying away from the town.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Cleric Jermain$<BR>A thief...? <BR>Hmm...<BR>If you can bring him to me, I think I will be able to help him with my spiritual powers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-c" mid="52"><![CDATA[<html>It is quite incredible...</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Master Cleric Jermain$<BR>Really? Spirituality and beliefs cannot be forced upon someone. It is really up to him. But being invisible? That's incredible.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-d" mid="85"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-!next" mid="88"><![CDATA[<html>Let me ask May about it first.</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Master Cleric Jermain$<BR>How are you going to find the cure?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3331,3332,3333,3334,3335</exe>
+         <exe type="setquest">333</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3331,3332,3333,3334,3335</exe>
+         <exe type="complete">333</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="b" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="c" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="d" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="e" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="f" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="g" />
+   <exelink qstep="1" npc="n269_invisible_thef_sq333_334" sub="h">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="c">0</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="d">1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="!next" />
+   <journal_data recompense="1:3331,2:3332,3:3333,4:3334,5:3335" quest_title="보이지 않는 몸Ⅰ" chapterid="" quest_level="21" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Talk to Master Cleric Jermain]]></title>
+         <contents mid="56"><![CDATA[<html>Master Cleric Jermain claims to have seen something strange at <FONT color=#a82424>Road of No Return</FONT>. Listen to the details.<BR><BR><FONT color=#086171>Calderock Village</FONT><FONT color=#a82424>→ Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Master Cleric Jermain]]></destination>
+         <todo_msg mid="58"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_23.dds</contents_image>
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@1,172@1,173@1,174@4</destination_mode>
+         <statemark_npcid>269</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Investigate Road of No Return]]></title>
+         <contents mid="60"><![CDATA[<html>While Jermain was passing through <FONT color=#a82424>Road of No Return</FONT> on his friend's anniversary, he tells of a Poison Machine located at a dead end. Investigate the area.<BR><BR><FONT color=#086171>Cristal Stream (Sigh Canyon Entrance)</FONT> <FONT color=#a82424>→ Road of No Return</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Investigate Road of No Return]]></destination>
+         <todo_msg mid="62"><![CDATA[Investigate Road of No Return.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Report to Master Cleric Jermain]]></title>
+         <contents mid="64"><![CDATA[<html>The machine at the end of <FONT color=#a82424>Road of No Return</FONT> was something that was stolen by the Invisible Thief.<BR>Head back to town first and talk to <FONT color=#a82424>Cleric Jermain</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="65"><![CDATA[Report to Maste Cleric Jermain]]></destination>
+         <todo_msg mid="66"><![CDATA[Return and report to Master Cleric Jermain at Calderock Village.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>21:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,138 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_665_grow_skill</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>665</qid>
+      <designer>박정민</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>666</nextqid>
+      <nextqname>sq11_666_grow_go_farm</nextqname>
+      <nextqnpc>n351_farm</nextqnpc>
+      <qkname mid="1"><![CDATA[Learn to Farm]]></qkname>
+      <qnpc>
+         <npcid>351</npcid>
+         <npcename>n351_farm</npcename>
+         <npckname>농장 관리인 모리 영감</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-accepting" image="" itemindex="">
+      <talk_answer link_index="n351_farm-accepting-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Farm Keeper Mori$<BR>Earth don't lie…<BR>Your effort pays off by <FONT color=#a82424>crops</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n351_farm-accepting-b" mid="12"><![CDATA[<html>Yes! I am ready.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Farm Keeper Mori$<BR>So are you ready to work?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n351_farm-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Learn to farm$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-a" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Farm Keeper Mori$<BR>Hahaha! You are unlike any other young man.<BR>Listen carefully. I'll take you through step by step.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-a" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-b" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Farm Keepr Mori$<BR>To grow crops, you have to follow the following steps: [<FONT color=#a82424>Planting seed</FONT>], [<FONT color=#a82424>Looking after them</FONT>], [<FONT color=#a82424>Harvest</FONT>].</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-b" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-c" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Farm Keeper Mori$<BR>You need to find an [<FONT color=#a82424>empty space</FONT>] in the farming area to <FONT color=#a82424>plant the seeds</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-c" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-d" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Farm Keeper Mori$<BR>Left-click the empty space and <FONT color=#a82424>choose</FONT> the seeds you want to plant.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-d" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-e" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Farmer Keeper Mori$<BR>There will be 2 gauges on crops. The top gauge represents the <FONT color=#a82424>time remaining</FONT>, and the bottom represents <FONT color=#a82424>water</FONT>.<BR>When the top gauge is full, you can harvest them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-e" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-f" mid="26"><![CDATA[<html>Ok I get it!</html>]]></talk_answer>
+      <talk_answer link_index="n351_farm-1-a" mid="27"><![CDATA[<html>It's too hard, explain to me one more time.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Farm Keeper Mori$<BR>Hahaha! How is it? Do you get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1-f" image="" itemindex="">
+      <talk_answer link_index="n351_farm-1-!next" mid="29"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6650,,,,,</exe>
+         <exe type="setquest">665</exe>
+         <exe type="talk" npc="n351_farm">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">665</exe>
+         <exe type="custom">api_npc_CreateSecondarySkill(userObjID,2101);</exe>
+         <exe type="recompense">6650,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n351_farm" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n351_farm" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n351_farm" sub="b" />
+   <exelink qstep="1" npc="n351_farm" sub="c" />
+   <exelink qstep="1" npc="n351_farm" sub="d" />
+   <exelink qstep="1" npc="n351_farm" sub="e" />
+   <exelink qstep="1" npc="n351_farm" sub="f">2</exelink>
+   <exelink qstep="1" npc="n351_farm" sub="a" />
+   <exelink qstep="1" npc="n351_farm" sub="!next">0,1</exelink>
+   <journal_data recompense="6650" quest_title="재배 배우기" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>15107,n351</destination_pos>
+         <destination_mode />
+         <statemark_npcid>351</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Learn to Farm from Mori]]></title>
+         <contents mid="46"><![CDATA[<html>Learn to farm from Mori at the farming area.<BR>
+ <BR>
+<FONT color=#086171>Farming area</FONT> <FONT color=#a82424>→ Mori</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Conversation with Mori]]></destination>
+         <todo_msg mid="48"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>664</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

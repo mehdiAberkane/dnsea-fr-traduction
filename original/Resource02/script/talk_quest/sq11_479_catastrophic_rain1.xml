@@ -1,0 +1,175 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_479_catastrophic_rain1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>479</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc>오염된 토양표본(300016)
+군터에게 가면 블랙 드래곤을 퇴치한 후 인근이 크게 오염되고 있다는 말을 한다. 용추종자들도 이때를 틈타서 난립하고 있다며, 잡아 들이는 걸 또 도와달라고 한다.
+검은 대군주의 연병장(30~32)에서 오염된 표본을 채집해 전염병을 퍼뜨리려는 용추종자들이 있다고 한다. 가서 일망타진해 달라는 의뢰.
+용추종자들을 해치우고 오염된 표본을 압수해 온다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Catastrophic Rain I]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="6"><![CDATA[<html>The battle where the Black Dragon appeared?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Gunther${action:talk}<BR>Oh, I heard you also participated in this battle, that took place at the <FONT color=#a82424>Dark Overlord's Gate</FONT>.<BR>I heard <FONT color=#a82424>General Douglas</FONT> and the elite soldiers were very brave.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="40"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Oh… You were also there, so you must have seen it.<BR>If the word gets out that <FONT color=#a82424>Black Dragon</FONT> is back, people might be frightened, so the Royal Palace deemed it to be secret.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="42"><![CDATA[<html>(So the Royal Palace took care of that.)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Even if they keep it a secret, some day the word will go out. It worried me whether we'll be able to eliminate it before than.<BR>But I had no idea we could eliminate the threat this clean and fast, I had to praise the military for this one!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="8"><![CDATA[<html>On top of that?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR><FONT color=#a82424>Black Dragon</FONT> may be gone, but the surroundings were badly <FONT color=#a82424>contaminated</FONT>, so there is a lot of damage. People who got in contact with the fluid from the Black Dragon's wound got ill or died… On top of that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="10"><![CDATA[<html>That's… a big problem.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>It's a big problem <FONT color=#a82424>dragon followers</FONT> are freely acting out. Some of them are trying to do something bad using the Dragon's fluid.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-f" mid="12"><![CDATA[<html>What do you want me to do?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Regardless of the fact, the ambient at Saint Haven isn't good. So if you're not too busy can you help me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-f" image="QW_36.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-g" mid="14"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>There was a tip that a group of dragon followers are trying to spread the disease by gathering contaminated materials from <FONT color=#a82424>Dark Overlord's Training Ground</FONT>. If we bring soldiers, it will be noisy and they will run away, so I hope you could quietly go over there and eliminate them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Catastrophic Rain I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QS_Default.dds" itemindex="300016">
+      <talk_question mid="17"><![CDATA[<html>$Adventurer's Guild Master Gunther${action:talk}<BR>There should be <FONT color=#a82424>contaminated soil sample</FONT> those dragon followers collected, so wipe them out and take that sample.<BR>Be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-a" mid="20"><![CDATA[<html>(Hand over the contaminated soil sample)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Oh, welcome.<BR>I was expecting you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-a" image="QS_Default.dds" itemindex="300016">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-b" mid="22"><![CDATA[<html>(Gunther is deep in thought)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Master Gunther${action:talk}<BR>Hmm… The color is so ominous. Normally monsters contaminate the surroundings, but large monsters exert the most damage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-c" mid="24"><![CDATA[<html>Well, this is nothing.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>I heard <FONT color=#a82424>Heraldry Scholar Stas</FONT> is doing research related to these kind of contamination, maybe this sample will also help, so I should bring it to him.<BR>Anyway, good job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-d" mid="26"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-2-next_quest" mid="28"><![CDATA[<html>Yes? What kind of job?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Adventurer's Guild Master Gunther$<BR>Oh… I just remembered after I thought of <FONT color=#a82424>Stas</FONT>, he had asked us to do a job. Do you want to do that job, too?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">479</exe>
+         <exe type="recompense_view">,4791,4792,4793,4794,4795</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3,5,6,7">21070</exe>
+         <exe type="addquestitem" num="1">300016</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300016</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4791,4792,4793,4794,4795</exe>
+         <exe type="complete">479</exe>
+         <exe type="delquestitem" num="-1">300016</exe>
+         <exe type="custom">api_npc_NextScript(userObjID, npcObjID, "n036_adventurer_guildmaster_gunter-1", "sq11_480_catastrophic_rain2.xml");</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="g">1</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,8,2,4</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="b" />
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="c">0</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="d">1,2</exelink>
+   <exelink qstep="2" npc="n036_adventurer_guildmaster_gunter" sub="next_quest">3</exelink>
+   <journal_data recompense="1:4791,2:4792,3:4793,4:4794,5:4795" quest_title="재앙의 비 I" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="300016">
+      <journal index="1">
+         <contents_image>QW_36.dds</contents_image>
+         <destination_pos>363,0,0</destination_pos>
+         <destination_mode>custom:361@1,362@1,363@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Messy Cleanup]]></title>
+         <contents mid="32"><![CDATA[<html>Go to the Dark Overlord's Training Ground, wipe out <FONT color=#a82424>dragon followers</FONT> and recover the contaminated soil sample.<BR><BR><FONT color=#086171>Black Mountain(Dark Overlord's Gate)</FONT> <FONT color=#a82424>→ Dark Overlord's Training Ground</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Recovered contaminated soil sample]]></destination>
+         <todo_msg mid="34"><![CDATA[Wipe out dragon followers at the Dark Overlord's Training Ground.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode />
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Recovery Successful]]></title>
+         <contents mid="36"><![CDATA[<html>Report back to Adventurer's Guild Master Gunther.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Gunther</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Report to Adventurer's Guild Master Gunther]]></destination>
+         <todo_msg mid="38"><![CDATA[Report to Adventurer's Guild Master Gunther]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>409,443</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

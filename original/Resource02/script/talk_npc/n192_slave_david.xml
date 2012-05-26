@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n192_slave_david</npcename>
+      <npcid>192</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Adventurer David]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Adventurer David$<BR>It's your lucky day. I shall give you the signature of the <FONT color=#a82424>Great Adventurer David</FONT>.<BR>It's free, but just this once only. Heh heh heh!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq08_267_crisis_of_david</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">267</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n150_elite_soilder_dead</npcename>
+      <npcid>150</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Unconscious Soldier [Tale of Courage]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Saint Haven Elite Soldier$<BR><FONT color=#7e12d2>[A Saint Haven soldier lay conscious. There are sure signs of a fierce battle.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

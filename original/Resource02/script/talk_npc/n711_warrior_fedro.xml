@@ -1,0 +1,45 @@
+   <talk>
+      <npcename>n711_warrior_fedro</npcename>
+      <npcid>711</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Senior Warrior Pedro]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Senior Warrior Pedro$<BR>Don't expect your skill techniques to improve with merely two deep breaths.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Senior Warrior Pedro$<BR>If you are intent on being smug and overlook everything else, it will eventually cause your downfall someday. <BR>While venturing in unfamiliar sites, we should always be vigilant of our surroundings.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="57" link_target="sq15_814_father_road.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Father's Path</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="50" link_target="sq15_755_shoadow_of_dark_night.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>The Dark Knight's Shadow</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="sq15_756_turn_defeat.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Trampling on Defeat</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="sq15_757_stronger_powers.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Use  a Greater Power</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="sq15_758_ordeal_and_answer.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Trials and Answers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="65" link_target="sq15_834_something_legendary.xml"><![CDATA[<html>[Lv.46] <FONT color=#086171>Found Something of a Legend </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="66" link_target="sq15_835_just_novel.xml"><![CDATA[<html>[Lv.46] <FONT color=#086171>It's just Fiction</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="sq15_836_opening_is_like_that.xml"><![CDATA[<html>[Lv.46] <FONT color=#086171>This is How it Begins</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="68" link_target="sq15_837_shameful_past.xml"><![CDATA[<html>[Lv.46] <FONT color=#086171>The Hidden Past</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="77" link_target="dq15_1035_reading_book.xml"><![CDATA[<html>[A day] <FONT color=#086171>Reading hobby</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="72" link_target="sq15_850_barnak_unrequited_love.xml"><![CDATA[<html>[Lv48] <FONT color=#086171>Unrequited love of Barnac</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="84" link_target="sq15_859_lost_lotte.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>A Lost Adventurer</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="85" link_target="sq15_860_real_treasure1.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>True Treasure I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="86" link_target="sq15_863_long_live.xml"><![CDATA[<html>[Lv50] <FONT color=#086171>Be Remembered For A Long Time</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="87"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="44"><![CDATA[<html>$Senior Warrior Pedro$<BR>
+Good momentum you have there, I hope you keep these feelings you had from the beginning.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+   </talk>

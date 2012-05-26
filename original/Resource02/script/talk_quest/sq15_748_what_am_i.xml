@@ -1,0 +1,299 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_748_what_am_i</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>748</qid>
+      <designer>곽노찬</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>749</nextqid>
+      <nextqname>sq15_749_do_not_despair</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Changing Job] What am I]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>796</npcid>
+         <npcename>n796_academin_npc</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-noquest" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Karacule Fairystar$<BR>If you get a power easily, you might face with a huge risk….<BR>
+ <BR>
+※ <FONT color=#7e12d3>You can continue after acquiring a quest from Academic station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic station$<BR>
+▶ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+▷ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic station$<BR>▶ <FONT color=#086171>Mission Object.</FONT><BR>▷ <FONT color=#7e12d3>Go to Riverwart Village Ruins.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n796_academin_npc-1" image="" itemindex="">
+      <talk_answer link_index="n796_academin_npc-1-a" mid="10"><![CDATA[<html>I'm not here because of you.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$The Past Investigator$<BR>You finally chase for the truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n796_academin_npc-1-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n796_academin_npc-1-b" mid="12"><![CDATA[<html>Sister…?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$The Past Investigator$<BR>So what made you here? If you don't have any doubt about Jasmine. Huhuhu…<BR>So, from where I have to start?<BR>You want to hear about <FONT color=#a82425>Jasmine</FONT>first?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n796_academin_npc-1-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n796_academin_npc-1-c" mid="14"><![CDATA[<html>What… does it mean?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$The Past Investigator${sound:npc_2nd_Academic_npc_job_chg2_01.ogg}<BR>Yeah. My name was <FONT color=#387207>{user_nick}</FONT>.<BR>I was called the same name of you.<BR>When I was like a toy of contemptible Jasmine….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n796_academin_npc-1-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n796_academin_npc-1-d" mid="16"><![CDATA[<html>What…?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$The Past Investigator$<BR>Huhu…. Jasmine is different from us. She's just a normal human.<FONT color=#387207>{user_nick}</FONT>.<BR>Ah… do I have to say we're different from them that we're not a normal human?<BR>We weren’t born but made by them….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n796_academin_npc-1-d" image="" itemindex="">
+      <talk_answer link_index="n796_academin_npc-1-e" mid="18"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$The Past Investigator$<BR>Here….<BR><FONT color=#7e12d3>(The investigator puts his hand on the left breast)</FONT><BR>Here, we don't have a heart unlike other humans.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n796_academin_npc-1-e" image="" itemindex="">
+      <talk_answer link_index="n796_academin_npc-1-f" mid="23"><![CDATA[<html>That's shit!</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$The Past Investigator${action:Talk}<BR>A long time ago, Jasmine got a strong jewel which had strong spell power.<BR>She separated it into thirty pieces and utilized her biotechnology and alchemy knowledge to make her <FONT color=#a82424>human clones</FONT>.<BR>We are the human clones, <FONT color=#387207>{user_nick}</FONT>. You're not a sister of Jasmine but Jasmine herself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n796_academin_npc-1-f" image="" itemindex="">
+      <talk_answer link_index="n796_academin_npc-2" mid="25"><![CDATA[<html>That’s……</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$The Past Investigator$<BR>Yes, I understand that you don't want to believe it.<BR>I was like you before knowing the truth….<BR>However, remember <FONT color=#387206>XD-27</FONT>. You and I, and others… are just a expendable of Jasmine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Karacule Fairystar$<BR>If you get a power easily, you might face with a huge risk….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n796_academin_npc-2" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$The Past Investigator$<BR><FONT color=#387206>XD-26</FONT>. If you can't believe me, you should meet <FONT color=#a82425>Karacule</FONT>and check it.<BR>Check what is in your breast, heart or a jewel….<BR>And, when you can believe me, just come to Riverwart Wharf.<BR>I'll be waiting for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Academic station$<BR>▶ <FONT color=#086171>Mission Object.</FONT><BR>▷ <FONT color=#7e12d3>Meet with Karacule Fairystar.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-a" mid="40"><![CDATA[<html>(Ask her to check my body)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Karacule Fairystar$<BR>
+What happened? You look exhausted.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-a" image="QN_Npc_OldKarakule.dds" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-b" mid="42"><![CDATA[<html>Don't I… really have a … heart?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Karacule Fairystar$<BR><FONT color=#7e12d3>(Karacule spells a magic to check {user_nick}'s body)</FONT><BR>Huh…? Hmm… I didn't notice it… I'm too old.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-b" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-c" mid="44"><![CDATA[<html>It was…  true….</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Karacule Fairystar$<BR>No…. A jewel is settled inside of your breast instead of a heart.<BR>I couldn't notice that a jewel is in your body, the one who put the jewel inside of you must be outstanding.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-c" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-2-d" mid="46"><![CDATA[<html>(Tell the story from the past investigator)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Karacule Fairystar$<BR>
+What do you mean 'it'…?<BR>
+What happened to you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-2-d" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-3" mid="48"><![CDATA[<html>I'd rather… talk with my sister.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Karacule Fairystar$<BR>I'm so surprised. Hmm….<BR>So, what're you going to do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Karacule Fairystar$<BR>It won't change it….<BR>You should steel yourself.<BR>Being betrayed by lovers is the most harsh thing in the world….<BR><FONT color=#7e12d3>(Let's connect to Academic station)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-a" mid="53"><![CDATA[<html>Why… were you lying to me?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Academic Jasmine$<BR><FONT color=#387207>{user_nick}</FONT>, you seem not to find the communications equipment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-b" mid="55"><![CDATA[<html>You're lying that I'm your sister.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Academic Jasmine$<BR>Lying…?<BR>Did I lie to you…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-c" mid="57"><![CDATA[<html>You made me…. You lied to me that I'm a human.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Academic Jasmine$<BR>…….<BR>
+I hardly understand what you're talking about.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-c" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-d" mid="59"><![CDATA[<html>Don't ever never deceive again!</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Academic Jasmine$<BR>I don't understand this but whatever you heard, it's not true, <FONT color=#387207>{user_nick}</FONT>. You're my lovely sister.<BR>
+You don't say that you're not a human…I can't understand..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-d" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-e" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Academic Jasmine$<BR>
+……….<BR>
+<FONT color=#7e12d3>(Jasmine closes her mouth)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-e" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-f" mid="63"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Academic Jasmine$<BR>Hu…….<BR>I'm sad…. <BR>You also failed, <FONT color=#387206>XD-27</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-f" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-g" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Academic Jasmine$<BR>Even though you're not a real sister of me, but I was sincere to treat you as a sister.<BR>Because you're a girl that I made.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-g" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-h" mid="70"><![CDATA[<html>Do you really want to know it…?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Academic Jasmine$<BR>By the way, who did tell you that?<BR>It must be one of them who are missing….<BR>
+<FONT color=#a82424>XD-13</FONT>? <FONT color=#a82424>XD-20</FONT>? <FONT color=#a82424>XD-21</FONT>?<BR>
+or, <FONT color=#a82424>XD-25</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-h" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-i" mid="75"><![CDATA[<html>You're cruel….</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Academic Jasmine$<BR>Pah, Okay. You and others are the same as a failure….<BR>
+I don't need to take my time for failures.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-i" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-j" mid="77"><![CDATA[<html>I don't have a heart.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Academic Jasmine$<BR>I'm sorry, <FONT color=#387206>XD-27</FONT>.<BR>Your heart would stop before long.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-j" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-k" mid="82"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Academic Jasmine$<BR>
+Yes, you have a jewel instead of a heart.<BR>
+The jewel had so strong power, but after separating into 30 pieces, it changed to be unstable. If I don't take a measure to you, the jewel inside of you will lose the energy before long.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-k" image="" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-l" mid="84"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-l" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="85"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu_job_chg2_02.ogg}<BR>I don't have anything to tell you.<BR><FONT color=#387206>XD-26</FONT>, you're abandoned today. Take care of yourself…<BR><FONT color=#7e12d2>(Jasmine disconnected. Go to Riverwart Wharf to talk with the past investigator XD-25)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">748</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7480,,,,,</exe>
+         <exe type="complete">748</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n796_academin_npc" sub="b" />
+   <exelink qstep="1" npc="n796_academin_npc" sub="c" />
+   <exelink qstep="1" npc="n796_academin_npc" sub="d" />
+   <exelink qstep="1" npc="n796_academin_npc" sub="e" />
+   <exelink qstep="1" npc="n796_academin_npc" sub="f" />
+   <exelink qstep="1" npc="n796_academin_npc" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n701_oldkarakule" sub="b" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="c" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="d" />
+   <exelink qstep="2" npc="n701_oldkarakule" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n394_academic_station" sub="b" />
+   <exelink qstep="3" npc="n394_academic_station" sub="c" />
+   <exelink qstep="3" npc="n394_academic_station" sub="d" />
+   <exelink qstep="3" npc="n394_academic_station" sub="e" />
+   <exelink qstep="3" npc="n394_academic_station" sub="f" />
+   <exelink qstep="3" npc="n394_academic_station" sub="g" />
+   <exelink qstep="3" npc="n394_academic_station" sub="h" />
+   <exelink qstep="3" npc="n394_academic_station" sub="i" />
+   <exelink qstep="3" npc="n394_academic_station" sub="j" />
+   <exelink qstep="3" npc="n394_academic_station" sub="k">0</exelink>
+   <exelink qstep="3" npc="n394_academic_station" sub="l">1</exelink>
+   <journal_data recompense="7480" quest_title="[전직] 나는 무엇인가요" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,n796</destination_pos>
+         <destination_mode>custom:511@1</destination_mode>
+         <statemark_npcid>796</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[What am I I]]></title>
+         <contents mid="89"><![CDATA[<html>Let's find XD-24 in Riverwart Village Ruins following the record of XD-24.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Riverwart Village Ruins</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Riverwart Village Ruins]]></destination>
+         <todo_msg mid="91"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_OldKarakule.dds</contents_image>
+         <destination_pos>14,n701</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>701</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="93"><![CDATA[What am I II]]></title>
+         <contents mid="94"><![CDATA[<html>XD-24 said in Riverwart Village Ruins that he and I were the creature of Jasmine, and asked me to meet Karacule to check myself.<BR>Let's talk with Karacule.<BR><BR><FONT color=#086171>Riverwart Wharf(Karacule's cabin)</FONT> <FONT color=#a82425>→ Karacule Fairystar</FONT></html>]]></contents>
+         <destination mid="95"><![CDATA[Talk with Karacule]]></destination>
+         <todo_msg mid="96"><![CDATA[Go back to Riverwart Wharf to talk with Karacule.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>15,n394</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>394</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="97"><![CDATA[What am I III]]></title>
+         <contents mid="98"><![CDATA[<html>Karacule said that I have a jewel inside of me instead of a heart. Go back to Lotus Marsh and connect to Academic station to talk with Jasmine.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Academic station</FONT></html>]]></contents>
+         <destination mid="99"><![CDATA[Connect to Academic station]]></destination>
+         <todo_msg mid="100"><![CDATA[Connect to Academic station to talk with Jasmine.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>747</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,120 @@
+﻿<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq_982_xmas_pope</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>982</qid>
+      <designer>곽노찬</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Conversation] Merry Christmas]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="QS_Default.dds" itemindex="872915235">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant Pero$<BR>Hmm? <FONT color=#a82424>Christmas Card</FONT>?<BR>I don’t think it’s expensive but I’ll take it if it’s free. <BR>I got this cleaning up my store. Take it if you need it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="14"><![CDATA[<html><FONT color=#086171>(Receive a present)</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merry Christmas$<BR> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Merchant Pero$<BR>There are no free stuff in this world.<BR>Come anytime if you want to learn my business know-how. <BR>Of course, I’ll take little bit of money for that. <BR>
+<FONT color=#7e12d2>(Pope gives me evil smile)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">982</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+         <exe type="recompense">9820,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">9820,,,,</exe>
+         <exe type="complete">982</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">0,1,2</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope">0</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="a">1,2</exelink>
+   <journal_data recompense="0:9820" quest_title="[대화] 메리 크리스마스" chapterid="" quest_level="1" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="6"><![CDATA[Merry Christmas]]></title>
+         <contents mid="7"><![CDATA[<html>Merchant Pero has a Christmas present for you. Talk to Merchant Pero.<BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#a82424> → Merchant Pero </FONT></html>]]></contents>
+         <destination mid="8"><![CDATA[Conversation with Merchant Pero]]></destination>
+         <todo_msg mid="9"><![CDATA[Receive a present from Merchant Pero]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>7901</prev_quest>
+      <have_normal_item />
+      <have_cash_item>872915235:1</have_cash_item>
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,104 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq19_8804_tara_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8804</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Blacksmith Borin]]></qkname>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-a" mid="7"><![CDATA[<html>Secret weapon made by Borin!</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-accepting-c" mid="8"><![CDATA[<html>Borin's pet.</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-accepting-e" mid="9"><![CDATA[<html>Actually... a ghost!</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Sorceress Tara$<BR>Blacksmith Borin... He creates some real wacky stuff sometimes.<BR>Isn't he a little weird? There's a Hound in his chimney…what's a Hound doing there?<BR><FONT color=#7e12d2>(Sorceress Tara speaks in a hushed voice.)</FONT><BR>Maybe it's not even a Hound...maybe it's something else!?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-b" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Sorceress Tara$<BR>Oh my! Blacksmith Borin can create that kind of stuff? How peculiar...<BR>I want one too! A full sized replica of...Master Cleric Thomas that looks just like him, with fully moveable parts!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Sorceress Tara$<BR>Oh... I'm just kidding. It was only a joke!<BR><FONT color=#7e12d2>(Sorceress Tara gets a little angry. Her face is red.)</FONT><BR>It's because I feel comfortable with you, {user_nick}. That's why I feel like I can joke around with you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-d" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$$<BR>His pet? It looks like something out of Frost Wind Forest though...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Sorceress Tara$<BR>Why would he ever place a living thing in his chimney?<BR>The Hound will be fully cooked in no time.<BR><FONT color=#7e12d2>(Sorceress Tara is really worried.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-f" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Sorceress Tara$<BR>Kyaa! A…a ghost? It's a ghost?!<BR><FONT color=#7e12d2>(Sorceress Tara is freaking outr.)</FONT><BR>I...I don't like ghosts. I'm scared.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-g" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Sorceress Tara$<BR>What now? Should I get some holy objects from the Clerics? Maybe something like that will ward ghosts off?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-g" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Sorceress Tara$<BR>I... I'm asking Borin for verification... If I learn that you're poking fun at me, I'll hate you, {user_nick}!!<BR><FONT color=#7e12d2>(Sorceress Tara seems hurt. Tears are forming.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 8804, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 15, 160 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 15, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 15, 320 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 15, 320 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="a">1,2,0</exelink>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="e">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 대장장이 보린에 대해" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>15:4000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

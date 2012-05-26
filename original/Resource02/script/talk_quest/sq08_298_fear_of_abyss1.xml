@@ -1,0 +1,191 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_298_fear_of_abyss1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>298</qid>
+      <designer>김인정</designer>
+      <qlevel>23</qlevel>
+      <qdesc>둘째 고돌이의 변형된 보옥(300127)
+반루하의 변형된 보옥(300128)
+라렌의 변형된 보옥(300130)
+카레라의 변형된 보옥(300131)
+1. 베일리와 대화
+2. 4군데 어비스를 돌아 보옥 습득
+3. 베일리에게 보고</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>299</nextqid>
+      <nextqname>sq08_299_fear_of_abyss2</nextqname>
+      <nextqnpc>n028_scholar_bailey</nextqnpc>
+      <qkname mid="1"><![CDATA[Horror of the Abyss I]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="6"><![CDATA[<html>Are you worried about something?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>*Sigh*... can't believe this is happening again... <BR>I'm worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-b" mid="9"><![CDATA[<html>Which region is it this time?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>Oh, <FONT color=#382000>{user_nick}</FONT>, it's you. It has happened again.<BR>I'm talking about <FONT color=#a82424>Abyss</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-c" mid="11"><![CDATA[<html>That's a lot more than last time.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The <FONT color=#a82424>Church Ruins</FONT>, <FONT color=#a82424>Catacomb Hall</FONT>, <FONT color=#a82424>Dark Tower Magic Institute</FONT>, and <FONT color=#a82424>Silent Monastery Main Hall</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-d" mid="13"><![CDATA[<html>Well, ah, I could help you.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Yes. It might be a sign that the world is falling into chaos... I'm worried. They are not regions that you could just rush into, so it seems like it will be difficult to gather the Jewel we need for the research.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Horror of the Abyss I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="17"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>Then get me Hobgoblin Gobfrey's Mutated Jewel from the <FONT color=#a82424>Church Ruins</FONT>, Vanruha's Mutated Jewel from the <FONT color=#a82424>Catacombs Hall</FONT>, Laren's Mutated Jewel from the <FONT color=#a82424>Dark Tower Magic Institute</FONT>, and Carrera's Mutated Jewel from the <FONT color=#a82424>Silent Monastery Main Hall</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Although this may be obvious, you must enter them through <FONT color=#a82424>Abyss</FONT> if you want to acquire the <FONT color=#a82424>Mutated Jewel</FONT>. Remember that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="23"><![CDATA[<html>I have brought the Mutated Jewel.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>There have been a series of reports about adventurers who have been injured because they have entered the Abyss regions without proper defensive preparations. I was just getting worried about your safety, so it's great to see you return safely like this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="25"><![CDATA[<html>Did Abyss appear anywhere else?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>It is not yet known why the power of the <FONT color=#a82424>Nightmare</FONT> of the Goddess has suddenly grown stronger. It... It might be impossible for humans like us to find out. At least for now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-c" mid="27"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-!next" mid="29"><![CDATA[<html>What was the report about?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>There was actually a report that just came in while you were collecting the Mutated Jewel.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="prob">1000</chk>
+         <chk type="questitem" num="1" op="]=">300127</chk>
+         <chk type="questitem" num="1" op="]=">300128</chk>
+         <chk type="questitem" num="1" op="]=">300130</chk>
+         <chk type="questitem" num="1" op="]=">300131</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">298</exe>
+         <exe type="recompense_view">,2981,2982,2983,2984,2985</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200472</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200492</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200510</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200559</exe>
+         <exe type="conexe" true="22" false="18">1</exe>
+         <exe type="conexe" true="22" false="19">2</exe>
+         <exe type="conexe" true="22" false="20">3</exe>
+         <exe type="conexe" true="22" false="21">4</exe>
+         <exe type="addquestitem" num="1">300127</exe>
+         <exe type="addquestitem" num="1">300128</exe>
+         <exe type="addquestitem" num="1">300130</exe>
+         <exe type="addquestitem" num="1">300131</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300127</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300128</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300130</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300131</exe>
+         <exe type="conexe" true="10,22" false="">0</exe>
+         <exe type="conexe" true="11,22" false="">0</exe>
+         <exe type="conexe" true="12,22" false="">0</exe>
+         <exe type="conexe" true="13,22" false="">0</exe>
+         <exe type="conexe" true="23,24,25" false="">1 and 2 and 3 and 4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2981,2982,2983,2984,2985</exe>
+         <exe type="delquestitem" num="-1">300127</exe>
+         <exe type="delquestitem" num="-1">300128</exe>
+         <exe type="delquestitem" num="-1">300130</exe>
+         <exe type="delquestitem" num="-1">300131</exe>
+         <exe type="complete">298</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceptted">0,26,14,15,16,17,2,3,4,5</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b">0</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="c">1,2,3,4,5</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="!next" />
+   <journal_data recompense="1:2981,2:2982,3:2983,4:2984,5:2985" quest_title="어비스의 공포 I" chapterid="" quest_level="23" quest_mark_type="10" use_item_list="300127,300128,300130,300131">
+      <journal index="1">
+         <contents_image />
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Spreading Fear]]></title>
+         <contents mid="32"><![CDATA[<html>You must enter the Church Ruins, Catacombs Hall, Dark Tower Magic Institute, and Silent Monastery Main Hall through <FONT color=#a82424>Abyss</FONT> and obtain the <FONT color=#a82424>Mutated Jewel</FONT> from the <FONT color=#a82424>boss</FONT>.<BR><BR><FONT color=#086171>Wind Forest (Wind Forest Temple)</FONT> <FONT color=#a82424>→ Church Ruins</FONT><BR><FONT color=#086171>Wind Forest (Catacomb Entrance)</FONT> <FONT color=#a82424>→ Catacombs Hall</FONT><BR><FONT color=#086171>Blizzard Plain </FONT> <FONT color=#a82424>→ Dark Tower Magic Institute<BR></FONT><FONT color=#086171>Blizzard Plain (Silent Monastery Gate)</FONT> <FONT color=#a82424>→ Silent Monastery Main Hall</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Collect Mutated Jewel]]></destination>
+         <todo_msg mid="34"><![CDATA[You must collect the Mutated Jewel from the additional Abyss regions.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Heraldry Scholar Bailey's Worries]]></title>
+         <contents mid="36"><![CDATA[<html>You have acquired all of the Mutated Jewel. Deliver it to <FONT color=#a82424>Heraldry Scholar Bailey</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="38"><![CDATA[Take the Mutated Jewel to Heraldry Scholar Bailey.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>23:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

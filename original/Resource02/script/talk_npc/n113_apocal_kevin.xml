@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n113_apocal_kevin</npcename>
+      <npcid>113</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Remembering Kevin's Imaginary Crew]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[Remembering Kevin's Imaginary Crew<BR> I am still the same as before, long ago. </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_607_engineer_of_future</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">607</chk>
+      </conditions>
+   </talk>

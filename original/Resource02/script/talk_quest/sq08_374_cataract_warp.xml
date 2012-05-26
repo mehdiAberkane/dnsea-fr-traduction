@@ -1,0 +1,168 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_374_cataract_warp</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>374</qid>
+      <designer>곽노찬</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Warp Guide]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>353</npcid>
+         <npcename>n353_cataract_warp</npcename>
+         <npckname>캐더락 관문 모험자 길드원</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>Yes. Looks like it's a bit hard to adapt.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>I don't know how's your life in <FONT color=#a82424>Calderock Village</FONT>.<BR>It seems like you have been quite familiar with the place, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>That's good! Well, Calderock Village is somehow bigger than the town you have came from, you might feel some inconvenience walking around. I shall give you some tips on that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR><FONT color=#a82424>Adventurer's Guild Members</FONT> are everywhere if you look around the town. They are pretty noticeable.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="13"><![CDATA[<html>What's a warp?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR><FONT color=#a82424>Warps</FONT> allows you to move around the town more easily and quickly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>It's a kind of teleportation...<BR>It enables you to move around quickly to your desired location or NPC.<BR>Seeing is believing, it'll be better for you to experience it than for me to explain it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Accept quest</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Warp Guide$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Talk to the <FONT color=#a82424>Adventurer's Guild Member</FONT> on my left. Get him to move you around.<BR>Once you are done, come back to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n353_cataract_warp-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n353_cataract_warp-1-a" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Member$<BR>Pleasure to meet you, <FONT color=#387206>{user_nick}</FONT>.<BR><FONT color=#a82424>Guild Master Deckard</FONT> had talked to me about you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n353_cataract_warp-1-a" image="" itemindex="">
+      <talk_answer link_index="n353_cataract_warp-1-b" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Adventurer's Guild Member$<BR>There are 2 types of service I'm providing, namely [<FONT color=#a82424>Warp Gate</FONT>] and [<FONT color=#a82424>NPC Search</FONT>].<BR>Warp Gate allows you to move to the area where the portals to the outside of the town are. While NPC Search allows you to move to the particular NPC in the town.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n353_cataract_warp-1-b" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n353_cataract_warp-1-warp_gate" mid="27"><![CDATA[<html>[Warp] North Gate (Gray Ruins)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Adventurer's Guild Member$<BR>Now, <FONT color=#387206>{user_nick}</FONT>, use the Warp Gate to move to the North Gate area of the town. <BR>Come back and talk to <FONT color=#a82424>Guild Master Deckard</FONT> as soon as you have done so.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>You're back!<BR>Seems like you had used the Warp Gate to move around <FONT color=#a82424>Calderock Village</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="32"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Oh, there's one more thing that I need to tell you. When you open the <FONT color=#a82424>map</FONT>[ <FONT color=#a82424>M</FONT> ], right click on the <FONT color=#a82424>NPC  icon</FONT> and you will automatically move towards the NPC. It will definitely save you a lot of time if you should use this with the Warp Gate.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">374</exe>
+         <exe type="recompense_view">3740,,,,,</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_user_ChangePos(userObjID, -3747992, -1819863, 5200531);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3740,,,,,</exe>
+         <exe type="complete">374</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n353_cataract_warp" sub="b" />
+   <exelink qstep="1" npc="n353_cataract_warp" sub="warp_gate">0,1,2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="a">0</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b">1</exelink>
+   <journal_data recompense="3740" quest_title="워프 안내" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>8,n353</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>353</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Warp Guide I]]></title>
+         <contents mid="36"><![CDATA[<html>Use the Warp Gate service provided by Adventurer's Guild Member who is beside Adventurer's Guild Master Deckard. Experience on how the warp can help you move quickly around the town.<BR>Talk to Adventurer's Guild Member.<BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Member</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Adventurer's Guild Member on the right side of Adventurer's Guild Master Deckard.]]></destination>
+         <todo_msg mid="38"><![CDATA[Talk to Adventurer's Guild Member.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Warp Guide II]]></title>
+         <contents mid="40"><![CDATA[<html>You have used the Warp Gate service provided by the Adventurer's Guild Member.<BR>Go back to Adventurer's Guild Master Deckard.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Talk to Adventurer's Guild Master Deckard.]]></destination>
+         <todo_msg mid="42"><![CDATA[Use the Warp Gate. Go back to Adventurer's Guild Master Deckard after doing so.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

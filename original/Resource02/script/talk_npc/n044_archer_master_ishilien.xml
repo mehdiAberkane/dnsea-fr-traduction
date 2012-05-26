@@ -1,0 +1,204 @@
+﻿   <talk>
+      <npcename>n044_archer_master_ishilien</npcename>
+      <npcid>44</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Archer Ithilien]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill1" mid="5"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="154"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Archer Ithilien$<BR>Hello sister. You bring with you the scent of courage… like the scent of our Lady <FONT color=#a82424>Narsilia</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="155"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Master Archer Ithilien$<BR>Elves are still wary of humans… but we must set aside these differences in our fight against evil.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="41" link_target="mq11_414_odd_sequela.xml"><![CDATA[<html>[Lv.32] <FONT color=#a94407>Bizarre Aftermath</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="42" link_target="mq11_415_stopgap.xml"><![CDATA[<html>[Lv.32] <FONT color=#a94407>Ad hoc</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="mq11_423_doubt_history.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>Ithilien's Question</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="mq11_431_next_town.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Pollution</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="678" link_target="mq11_390_monoris_guardian.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>Who is the guardian of Monolith</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="sq11_544_fate_and_desire.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Noble Destiny</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="651" link_target="nq12_7214_birthday_present1.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Happy Birthday Harori I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="sq11_529_decayed_field1.xml"><![CDATA[<html>[Lv.29] <FONT color=#086171>Changes Part 1</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="sq11_530_decayed_field2.xml"><![CDATA[<html>[Lv.29] <FONT color=#086171>Changes Part 2</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="76" link_target="sq11_612_fantastic_po.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>Fantastic Four</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="sq11_559_healing_tears.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Tear Treatment</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="66" link_target="sq11_474_more_important_thing.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>Worthwhile</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="73" link_target="sq11_475_three_treasure.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Three Kinds of Treasures</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="sq11_574_calmly_farewell.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>A Quiet Goodbye</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="83" link_target="nq32_8602_sick_tom.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Hurting Tom</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="84" link_target="nq32_8603_cannot_eat.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Do Not Eat! Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="85" link_target="nq32_8606_good_glass.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Do Not Eat! Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="663" link_target="sq11_649_like_a_romance.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Akin to an Everlasting Love</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="664" link_target="sq11_653_cold_heart.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Calm Lady</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="665" link_target="sq11_654_passion_of_reader.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Reader's Passion</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="656" link_target="sq11_613_rebirth_of_sepentra.xml"><![CDATA[<html>[Lv.40] <FONT color=#a82424>Resurrection of the Serpent</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="673" link_target="sq15_766_at_the_crossroads.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Crossroads of the Elf</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="679"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Master Archer Ithilien$<BR>An Elf never forgets her job.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="quest" mid="29"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill2" mid="30"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="31"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Master Archer Ithilien$<BR>I thought I had omnious echoes in the night. I'm so glad you're back safely.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0031" image="" itemindex="">
+         <talk_answer link_index="0032" mid="32"><![CDATA[<html>Velskud was a hero… before he turned into the Black Dragon</html>]]></talk_answer>
+         <talk_question mid="15"><![CDATA[<html>$Master Archer Ithilien$<BR>Hmmm judging from the ground vibrations last night and your questions about the<FONT color=#a82424>Black Dragon Raid</FONT>, perhaps you have grasped what happened on that fateful day.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0032" image="" itemindex="">
+         <talk_answer link_index="back2" mid="33"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="17"><![CDATA[<html>$Training Archer Ithilien$<BR>There is hope in every life. Please hush those lips on the incident in public or you might kill the hopes people may have.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="quest" mid="34"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="35"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Master Archer Ithilien$<BR>I thought I had omnious echoes in the night. I'm so glad you're back safely.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="mq408_clear_check" mid="156"><![CDATA[<html>[Talk] Black Dragon Raid</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="668" link_target="sq_983_xmas_ishilien.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="157" link_target="nq36_5566_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Saint Haven</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="158" link_target="nq36_5567_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Telepathy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="159" link_target="nq36_5568_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Warrior Rodrigo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="160" link_target="nq36_5569_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Sorceress Stella</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="161" link_target="nq36_5570_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Adventurer's Guild Gunther</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="162" link_target="nq36_5571_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Queen Narsilia</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="163" link_target="nq36_5572_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About {user_nick}</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="164" link_target="nq36_5573_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="165" link_target="nq36_5574_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Person</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="166" link_target="nq36_5575_ishilien_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Worries</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="647" link_target="nq36_5576_ishilien_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Ithilien's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="648" link_target="nq36_5577_ishilien_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Ithilien's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="649"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="90"><![CDATA[<html>$Master ArcherIshilien$<BR>A question you may have, young hero?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="408_not_clear" image="" itemindex="">
+         <talk_answer link_index="back3" mid="168"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="93"><![CDATA[<html>$Master Archer Ithilien$<BR>It is said that the hero Velskud died during the Black Dragon Raid. Some however, believe he is still alive. Who's right, who's wrong? That is the beauty of legends, isn't it?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent_archer" image="" itemindex="">
+         <talk_answer link_index="quest" mid="607"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_90" mid="608"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="609"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90_archer" mid="610"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="171"><![CDATA[<html>$Master Archer Ithilien$<BR>No matter the distance, the bonds of telepathy between us will not be easily broken.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent_archer" image="" itemindex="">
+         <talk_answer link_index="quest" mid="611"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_60" mid="612"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="613"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60_archer" mid="614"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="172"><![CDATA[<html>$Master Archer Ithilien$<BR>I'm sensing strong vibes of telepathy between us, {user_nick}.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent_archer" image="" itemindex="">
+         <talk_answer link_index="quest" mid="615"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_30" mid="616"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="617"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30_archer" mid="618"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="173"><![CDATA[<html>$Master Archer Ithilien$<BR>I sense our kindred spirits are deeper than any human relationships.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent_archer" image="" itemindex="">
+         <talk_answer link_index="quest" mid="619"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_0" mid="620"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="621"><![CDATA[<html><FONT size=2 face=Arial>[</FONT>Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0_archer" mid="622"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="174"><![CDATA[<html>$Master Archer Ithilien$<BR>I'm happy to maintain a good relationship with humans though I'm careful not to be overly affectionate.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="623"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="624"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="625"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="175"><![CDATA[<html>$Master Archer Ithilien$<BR>The wild swing of emotions whenever I see you is like the journey of the winds through heaven and hell.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="626"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="627"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="628"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="176"><![CDATA[<html>$Master Archer Ithilien$<BR>In recent years, the feelings of Adelynn and Diana have dawned upon me.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="629"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="630"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="631"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="177"><![CDATA[<html>$Master Archer Ithilien$<BR>It is a curious thing. My heartbeat rises so, whenever you're here.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="632"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="633"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="634"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="178"><![CDATA[<html>$Master Archer Ithilien$<BR>Master Elves in other towns often get attached to strangers, hence their contented settlement amongst humans. But I believe you had sensed that I am different from them. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="635"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="636"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="479"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="637"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="512"><![CDATA[<html>$Master Archer Ithilien$<BR>A gift warms this cold heart so…<BR>Your sincerity is very touching.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="7" false="15">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="6">1</exe>
+         <exe type="talk">0031</exe>
+         <exe type="talk">408_not_clear</exe>
+         <exe type="conexe" true="8" false="0">2</exe>
+         <exe type="conexe" true="11" false="9">3</exe>
+         <exe type="conexe" true="12" false="10">4</exe>
+         <exe type="conexe" true="13" false="14">5</exe>
+         <exe type="talk">90_percent_archer</exe>
+         <exe type="talk">60_percent_archer</exe>
+         <exe type="talk">30_percent_archer</exe>
+         <exe type="talk">0_percent_archer</exe>
+         <exe type="conexe" true="16" false="1">2</exe>
+         <exe type="conexe" true="19" false="17">3</exe>
+         <exe type="conexe" true="20" false="18">4</exe>
+         <exe type="conexe" true="21" false="22">5</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 44 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 44 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">2</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 408) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 559) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 44 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 44 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 44 ) >= 30</chk>
+      </conditions>
+      <exelink idx="skill1">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="skill2">3</exelink>
+      <exelink idx="back2">2</exelink>
+      <exelink idx="mq408_clear_check">4</exelink>
+      <exelink idx="back_talk">2</exelink>
+      <exelink idx="back3">2</exelink>
+      <exelink idx="skill_90">3</exelink>
+      <exelink idx="present_90_archer">23,24</exelink>
+      <exelink idx="skill_60">3</exelink>
+      <exelink idx="present_60_archer">23,24</exelink>
+      <exelink idx="skill_30">3</exelink>
+      <exelink idx="present_30_archer">23,24</exelink>
+      <exelink idx="skill_0">3</exelink>
+      <exelink idx="present_0_archer">23,24</exelink>
+      <exelink idx="present_90">23,24</exelink>
+      <exelink idx="present_60">23,24</exelink>
+      <exelink idx="present_30">23,24</exelink>
+      <exelink idx="present_0">23,24</exelink>
+      <exelink idx="gift">25,26</exelink>
+      <exelink idx="back_present_ui">2</exelink>
+      <exelink idx="back_gift">2</exelink>
+   </talk>

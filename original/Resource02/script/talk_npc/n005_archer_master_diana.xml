@@ -1,0 +1,71 @@
+   <talk>
+      <npcename>n005_archer_master_diana</npcename>
+      <npcid>5</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Master Archer Deanna]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="ask_guild" mid="5"><![CDATA[<html>[Talk] Adventurer's Guild</html>]]></talk_answer>
+         <talk_answer link_index="ask_skill_1" mid="36"><![CDATA[<html>[Talk] How To Learn Skills?</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Archer Deanna$<BR>Hello. I am Deanna, the Master Archer of this town. I aid novice adventurers who seek to learn the skill of archery.<BR>If bows and arrows call out to your soul, come to me. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="ask_guild" mid="8"><![CDATA[<html>[Talk] Adventurer's Guild</html>]]></talk_answer>
+         <talk_answer link_index="ask_skill_trade" mid="17"><![CDATA[<html>[Talk] Learn Skills</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Master Archer Deanna$<BR>Hello. I am Deanna, the Master Archer of this town. I aid novice adventurers who seek to learn the skill of archery.<BR>If bows and arrows call out to your soul, come to me. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_trade" image="" itemindex="">
+         <talk_answer link_index="ask_skill_trade1" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Master Archer Deanna$<BR>Please visit the appropriate Masters if you want to learn new skills.<FONT color=#387206>{user_nick}</FONT>.<BR><FONT color=#387206>{user_nick}</FONT>, you're a <FONT color=#387206>{user_class}</FONT>, so it is best for you to visit the <FONT color=#a82424>Master  {user_class} </FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_guild" image="" itemindex="">
+         <talk_answer link_index="back1" mid="12"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Master Archer Deanna$<BR>The Adventurer's Guild is home to adventurers worldwide. This Guild provides referrals and information to aid merceneries and adventurers in their journey.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_trade1" image="" itemindex="">
+         <talk_answer link_index="002" mid="14"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="13"><![CDATA[<html>$Master Archer Deanna$<BR>For Warrior skills, you may  talk to <FONT color=#a82424>Master Warrior Duncan</FONT> here. Unfortunately, the Masters are not here. You may find them at <FONT color=#a82424>Mana Ridge</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="23" link_target="mq01_004_red_emblem1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a94407>The Red Seal Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="43" link_target="mq01_016_red_emblem1.xml"><![CDATA[<html>[Lv.3] <FONT color=#a94407>The Red Seal Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="sq15_766_at_the_crossroads.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Crossroads of the Elf</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="49"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="18"><![CDATA[<html>$Master Archer Deanna$<BR>May the blessings of the Tree of Life be with you...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_1" image="" itemindex="">
+         <talk_answer link_index="ask_skill_2" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="27"><![CDATA[<html>$Master Archer Deanna$<BR>Your bravery and courage in this journey is respectable. May you learn skills quickly so they may aid you in your quest.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_2" image="" itemindex="">
+         <talk_answer link_index="ask_skill_3" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="29"><![CDATA[<html>$Master Archer Deanna$<BR>You may check on the skills you have learnt.<BR>[Press <FONT color=#a82424>[K]</FONT> to open the <FONT color=#a82424>Skill Window</FONT> to view skills mastered.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_3" image="QS_skill_01.dds" itemindex="">
+         <talk_answer link_index="ask_skill_4" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="31"><![CDATA[<html>$Master Archer Deanna$<BR><FONT color=#a82424>Skills</FONT> available to you are highlighted. A '+' icon indicates the level of the skill can be increased.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_4" image="QS_skill_02.dds" itemindex="">
+         <talk_answer link_index="ask_skill_5" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="33"><![CDATA[<html>$Master Archer Deanna$<BR>Skills with a <FONT color=#a82424>Red Skillbook Icon</FONT> indicates that the skill can learned from approriate book sources or through Master Archer Deanna. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="ask_skill_5" image="QS_skill_03.dds" itemindex="">
+         <talk_answer link_index="back3" mid="41"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+         <talk_question mid="35"><![CDATA[<html>$Master Archer Deanna$<BR>[Skills that are beyond your current stats are in grey.]<BR>You may use Skill Points [SP] to learn new skills, but use them sparingly. No one can learn everything!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">2</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back1">1</exelink>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="back3">1</exelink>
+   </talk>

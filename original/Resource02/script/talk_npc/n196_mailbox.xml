@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n196_mailbox</npcename>
+      <npcid>196</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Mailbox]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Mailbox$<BR><FONT color=#7e12d2>[The Mailbox is locked..</FONT><BR><FONT color=#7e12d2>A stack of mail is piled up inside the mailbox.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">sq11_588_secretly_farewell</exe>
+         <exe type="enterquest">sq11_589_last_impression</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">588</chk>
+         <chk type="hasquest">589</chk>
+      </conditions>
+   </talk>

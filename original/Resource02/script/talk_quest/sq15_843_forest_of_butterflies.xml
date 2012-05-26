@@ -1,0 +1,279 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_843_forest_of_butterflies</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>843</qid>
+      <designer>나은하</designer>
+      <qlevel>46</qlevel>
+      <qdesc>상급 아처 제냐는 원주민들의 나비들의 숲이란 것에 대한 전설을 들려준다. 그녀는 정말로 나비들의 숲이란 것이 존재했는지 궁금해하면서 카라큘의 오두막의 닥터에게 그것을 알아봐달란 부탁을 한다.
+닥터는 나비들의 숲이란 원주민들의 미신이라며 속설에는 그것이 용추종자 점거지 어딘가에 있었다는 말을 해준다. 그는 용추종자 점거지 부근에서 나비들의 숲이란 것이 존재했다는 증거를 찾으면 자신에게도 알려달란 부탁을 한다.
+용추종자 점거지를 뒤지다보면 오래 전부터 쌓여온 듯한 나비 유충과 나비 번데기들의 시체더미를 발견한다.
+그 사실을 닥터에게 알려주면 닥터는 매우 흥미로워한다.
+정말로 용추종자 점거지가 나비들의 숲이었던가라면서...
+
+퀘스트 아이템 :
+나비 유충 잔해	300468
+나비들의 유충들이었던 것으로 보이는 잔해	
+나비 번데기 잔해	300469
+나비들의 번데기였던 것으로 보이는 잔해	
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>844</nextqid>
+      <nextqname>sq15_844_forest_of_dead_butterflies</nextqname>
+      <nextqnpc>n703_book_doctor</nextqnpc>
+      <qkname mid="1"><![CDATA[Forest of butterflies]]></qkname>
+      <qnpc>
+         <npcid>703</npcid>
+         <npcename>n703_book_doctor</npcename>
+         <npckname>수다쟁이 책 닥터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>712</npcid>
+         <npcename>n712_archer_zenya</npcename>
+         <npckname>상급 아처 제냐</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>730</npcid>
+         <npcename>n730_invisible</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>731</npcid>
+         <npcename>n731_invisible</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Whenever you feel a thirst for knowledge, feel free to visit to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Master Archer Zenya$<BR>If you have time, train your strength.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n730_invisible-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There're discolored black remains around here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n731_invisible-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There're discolored black remains around here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-accepting" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-accepting-a" mid="11"><![CDATA[<html>What's that?</html>]]></talk_answer>
+      <talk_answer link_index="n712_archer_zenya-accepting-a" mid="12"><![CDATA[<html>Forest of butterflies?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Archer Zenya$<BR>Have you heard about <FONT color=#a82425>forest of butterflies</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-accepting-b" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Archer Zenya$<BR>It is about natives' legend. A hundred of thousands butterflies stick to trees like a leaf. But I've never seen that many butterflies here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-accepting-b" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-accepting-c" mid="16"><![CDATA[<html>You mean Chatterbox Book Doctor?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Archer Zenya$<BR>If you have time, can you ask about the forest to the<FONT color=#a82425>chatterbox book</FONT>in<FONT color=#a82424>Karacule's cabin</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-accepting-c" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-accepting-d" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Archer Zenya$<BR>Yes, that name.<BR>Anyway, please ask it to the chatterbox.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-accepting-acceptted!" mid="20"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$forest of butterflies$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-1" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Master Archer Zenya$<BR>We rarely can see a butterfly around here so I think that the forest of butterflies is just a legend. I want to check it. So please go to <FONT color=#a82425>Chatterbox Book Doctor</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n730_invisible-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There're discolored black remains around here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n731_invisible-1" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There're discolored black remains around here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-1-a" mid="27"><![CDATA[<html>(Ask about the forest of butterflies)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Chatterbox Book Doctor$<BR>You must be here with a thirst for knowledge .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-a" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-1-b" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Let's see, butterfly shaped brooch, butterfly's wings, and butterfly powder… <FONT color=#7e12d3>(Doctor's searching it on the internet)</FONT> Yes, there it is. The forest of butterflies.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-b" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-1-c" mid="31"><![CDATA[<html>(Tell it that Master Archer Zenya asked me)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Chatterbox Book Doctor$<BR>This is just a superstition of natives. This says that it existed around<FONT color=#a82425>Dragon-followers Territory</FONT>. But why are you asking this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-c" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-1-d" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Why Master Archer Zenya wanted to know this…? Hmm, Zenya makes me interested in this. Whether the forest is just a legend or something special.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1-d" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Chatterbox Book Doctor$<BR>I'd rather search on it. I'm going to check that the forest of butterflies really exists around the place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2" image="QW_54.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Please go to<FONT color=#a82425>Dragon-followers Territory</FONT>and find the evidence of the forest of butterflies existence.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n730_invisible-2" image="" itemindex="">
+      <talk_answer link_index="n730_invisible-3" mid="40"><![CDATA[<html>(Collect the remains of butterflies larvae)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Remains of butterflies larvae$<BR><FONT color=#7e12d3>(Discolored black remains. I can see these were butterflies larvae before)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n730_invisible-3" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Remains of butterflies larvae$<BR><FONT color=#7e12d3>(I got enough the remains of butterflies larvae. Let's find another evidence)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n731_invisible-3" image="" itemindex="">
+      <talk_answer link_index="n731_invisible-4" mid="43"><![CDATA[<html>(Collect the remains of butterflies pupae)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Remains of butterflies pupae$<BR><FONT color=#7e12d3>(Almost crumbled remains. I can see these were butterflies pupae before)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n731_invisible-4" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Remains of butterflies pupae$<BR><FONT color=#7e12d3>(I got enough the remains of butterflies pupae. Let's go back to Chatterbox Book Doctor)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-4-a" mid="48"><![CDATA[<html>(Show the pupae and larvae remains)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Ah, Have you found some evidences around Dragon-followers Territory that the forest of butterflies existed?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4-a" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-4-b" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Oops, don't put it close to me. I hate insects. Anyway, there must have been the forest around there. We need to investigate it more thoroughly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4-b" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-4-!next" mid="52"><![CDATA[<html><FONT color=#086172>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">843</exe>
+         <exe type="talk" npc="n712_archer_zenya">1</exe>
+         <exe type="recompense_view">8430,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300468</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300469</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8430,,,,,</exe>
+         <exe type="complete">843</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n712_archer_zenya" sub="d">2</exelink>
+   <exelink qstep="accepting" npc="n712_archer_zenya" sub="acceptted!">0,1</exelink>
+   <exelink qstep="1" npc="n703_book_doctor" sub="b" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="c" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="d" />
+   <exelink qstep="1" npc="n703_book_doctor" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n730_invisible" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n731_invisible" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n703_book_doctor" sub="b">0</exelink>
+   <exelink qstep="4" npc="n703_book_doctor" sub="!next">1</exelink>
+   <journal_data recompense="8430" quest_title="나비들의 숲" chapterid="" quest_level="46" quest_mark_type="10" use_item_list="300468,300469">
+      <journal index="1">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[About the forest of butterflies]]></title>
+         <contents mid="56"><![CDATA[<html>Master Archer Zenya asked me to ask about the forest of butterflies to  Chatterbox Book Doctor. Let's go to Karacule's cabin to meet Chatterbox Book Doctor.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Karacule's cabin)</FONT> <FONT color=#a82425>→ Chatterbox Book Doctor</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk with Chatterbox Book Doctor]]></destination>
+         <todo_msg mid="58"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,0,0</destination_pos>
+         <destination_mode>custom:541@4,542@4</destination_mode>
+         <statemark_npcid>730</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[In search of the forest of butterflies]]></title>
+         <contents mid="62"><![CDATA[<html>Chatterbox Book Doctor said there's a legend that the forest of butterflies existed around Dragon-followers Territory. Let's go to Dragon-followers Territory and find the evidence of the existence of the forest of butterflies.<BR><BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82424>→ Dragon-followers Territory</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Search around Dragon-followers Territory]]></destination>
+         <todo_msg mid="64"><![CDATA[Find the evidence of the forest of butterflies around Dragon-followers Territory.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,0,0</destination_pos>
+         <destination_mode>custom:541@4,542@4</destination_mode>
+         <statemark_npcid>731</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[In search of another evidence]]></title>
+         <contents mid="67"><![CDATA[<html>I just found remains of butterflies larvae. Let's find another evidence.<BR><BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT><FONT color=#a82425> → Dragon-followers Territory</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Search around Dragon-followers Territory]]></destination>
+         <todo_msg mid="69"><![CDATA[Find another evidence of the forest of butterflies around Dragon-followers Territory.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Collecting evidences is complete]]></title>
+         <contents mid="72"><![CDATA[<html>I just found remains of butterflies pupae. It seems enough to know that the forest of butterflies existed in Dragon-followers Territory. Let's go back to Karacule's cabin to meet Chatterbox Book Doctor.<BR><BR><FONT color=#086171>Riverwart Wharf(Karacule's cabin)</FONT> <FONT color=#a82425>→ Chatterbox Book Doctor</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk with Chatterbox Book Doctor]]></destination>
+         <todo_msg mid="74"><![CDATA[Go back to Karacule's cabin to Chatterbox Book Doctor.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>46:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

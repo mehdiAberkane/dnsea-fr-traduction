@@ -1,0 +1,103 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq23_6512_kalaen_60_reward</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6512</qid>
+      <designer>김인정</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Kayleen's Gift II]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-acc" mid="30"><![CDATA[<html>(Kayleen is deluded)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I know that you are a fan of mine. <BR>
+Hahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="33"><![CDATA[<html>[Receive a present]</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>[Receive a present]</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="35"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Court Sorceress Kayleen $<BR>Goodbye my friend. Don’t you think I take special care of you? <BR> But don't get mistaken alright? </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">6512</exe>
+         <exe type="talk" npc="n038_royal_magician_kalaen">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">6512</exe>
+         <exe type="recompense">65120,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="acc">0,1</exelink>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="a">1</exelink>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b">0</exelink>
+   <journal_data recompense="0:65120" quest_title="칼라엔의 선물Ⅱ" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Kayleen's Gift]]></title>
+         <contents mid="38"><![CDATA[<html>Talk to Court Sorceress Kayleen<BR>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>38:12000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

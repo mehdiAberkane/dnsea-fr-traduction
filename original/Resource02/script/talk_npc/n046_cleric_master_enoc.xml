@@ -1,0 +1,184 @@
+   <talk>
+      <npcename>n046_cleric_master_enoc</npcename>
+      <npcid>46</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Cleric Enoch]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="8"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_001" mid="9"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="209"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Cleric Enoch$<BR>Young <FONT color=#382000>{user_class}</FONT>, listen to the Goddess's voice and let it guide you towards wise decisions.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="15"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="210"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Master Cleric Enoch$<BR>The world is full of lies and things to be feared but have faith in the Goddess and let her show you the truth behind it all.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="271" link_target="mq05_123_prologue_cleric.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>The Cleric's Road</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="sq11_546_the_place_left.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Arrival</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_497_dark_armor2.xml"><![CDATA[<html>[Lv.29] <FONT color=#086171>[Title] [Immortal Lv3] Shadow Armor II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="sq11_594_deep_sea_flower.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>Sleeping Ocean Flowers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="43" link_target="sq11_476_dream_of_old_days.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>Past Dreams</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="sq11_573_fearful_fact.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Terrible Truth</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="nq05_8201_middle_age_heart.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Mid-life True Love</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="284" link_target="sq11_641_stewart_ask.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Duke's Request</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="285" link_target="sq11_642_relic_destroyer.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Destruction of the Sacred Article</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="286" link_target="sq11_643_new_clue.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The New Clue</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="287" link_target="sq11_645_paganish_name.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Heretic's Name</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="288" link_target="sq11_646_destroyed_sealing_box.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Damaged Sealed Box</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="289" link_target="sq11_647_celestine_rosary.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Azure Rosary</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="290" link_target="sq11_655_one_letter.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>A Letter</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="291" link_target="sq11_656_the_other_trace.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Other Traces</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="292" link_target="sq11_657_this_witch.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>A Witch</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="293" link_target="sq11_658_pop_angelica.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Famous Woman</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="294" link_target="sq11_659_strange_elf.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Silly Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="295" link_target="sq11_660_find_the_seal.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>A Sealed Box Found</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="296" link_target="sq11_661_heart_in_vain.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Messed-up Emotions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="297"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Master Cleric Enoch$<BR>Something on your mind?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="mq408_clear_check" mid="211"><![CDATA[<html>[Talk] Black Dragon Raid</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="274" link_target="sq_986_xmas_enoc.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="248" link_target="nq05_8202_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Saint Haven</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="249" link_target="nq05_8203_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="250" link_target="nq05_8204_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Master Warrior Rodrigo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="251" link_target="nq05_8205_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Archer Ithilien</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="252" link_target="nq05_8206_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Master Sorceress Stella</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="253" link_target="nq05_8207_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Teramai</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="254" link_target="nq05_8208_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About {user_nick}</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="255" link_target="nq05_8209_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Royal Matters</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="256" link_target="nq05_8210_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Dragon Followers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="257" link_target="nq05_8211_enoc_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Dragons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="265" link_target="nq05_8212_enoc_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Enoch's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="266" link_target="nq05_8213_enoc_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Enoch's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="267"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="20"><![CDATA[<html>$Master Cleric Enoch$<BR>What are you curious about?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="408_clear" image="" itemindex="">
+         <talk_answer link_index="talk" mid="213"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="24"><![CDATA[<html>$Master Cleric Enoch$<BR>Please be careful not to disclose the happenings of Black Mountain so openly. There are naïve believers in this country who do not know anything and can be manipulated by Dragon Followers.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="408_not_clear" image="" itemindex="">
+         <talk_answer link_index="talk" mid="34"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="27"><![CDATA[<html>$Master Cleric Enoch$<BR>It is said that the hero Velskud died during the Black Dragon Raid. Some however, believe he is still alive. Who's right, who's wrong? That is the beauty of legends, isn't it?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent_cleric" image="" itemindex="">
+         <talk_answer link_index="quest" mid="214"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_90" mid="215"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="216"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90_cleric" mid="217"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="64"><![CDATA[<html>$Master Cleric Enoch$<BR>Everything that happens is a miracle… like our meeting for example.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent_cleric" image="" itemindex="">
+         <talk_answer link_index="quest" mid="218"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_60" mid="219"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="220"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60_cleric" mid="221"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="65"><![CDATA[<html>$Master Cleric Enoch$<BR>I will pray for your safety.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent_cleric" image="" itemindex="">
+         <talk_answer link_index="quest" mid="222"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_30" mid="223"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="224"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30_cleric" mid="225"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="66"><![CDATA[<html>$Master Cleric Enoch$<BR>I have some scriptures of the Goddess which you may be interested in.<BR>I'll teach them to you, if you're interested.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent_cleric" image="" itemindex="">
+         <talk_answer link_index="quest" mid="226"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_0" mid="227"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="228"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0_cleric" mid="229"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="67"><![CDATA[<html>$Master Cleric Enoch$<BR>Hmm? I've been waiting for you.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="230"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="231"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="232"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="68"><![CDATA[<html>$Master Cleric Enoch$<BR>When the Goddess receives me in death, I will be pleased to tell her that I have known glory and happiness through you, <FONT color=#387206>{user_nick}</FONT>.</html>. It has been an honour knowing you.]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="233"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="234"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="235"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="98"><![CDATA[<html>$Master Cleric Enoch$<BR>It is sad that the people are missing on a great priest like you. But perhaps, this is not your destiny.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="236"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="237"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="238"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="102"><![CDATA[<html>$Master Cleric Enoch$<BR>I always pray for your safety.<BR>Please do not neglect your prayers too.<BR>A strong faith in the Goddess can give you strength,</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="239"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="240"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="241"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="106"><![CDATA[<html>$Master Cleric Enoch$<BR>Don't neglect your prayers just because of your <FONT color=#387206>{user_class}</FONT> class. We are all children of the Goddess and she loves us all equally.]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="243"><![CDATA[<html>[Give Gft]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="244"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="242"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="246"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="245"><![CDATA[<html>$Master Cleric Enoc$<BR>It seems wrong for a Priest to receive anything in return… but it is impolite to reject your sincerity.<BR>Thank you all the same.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="7" false="15">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="6">1</exe>
+         <exe type="talk">408_clear</exe>
+         <exe type="talk">408_not_clear</exe>
+         <exe type="conexe" true="8" false="0">2</exe>
+         <exe type="conexe" true="11" false="9">3</exe>
+         <exe type="conexe" true="12" false="10">4</exe>
+         <exe type="conexe" true="13" false="14">5</exe>
+         <exe type="talk">90_percent_cleric</exe>
+         <exe type="talk">60_percent_cleric</exe>
+         <exe type="talk">30_percent_cleric</exe>
+         <exe type="talk">0_percent_cleric</exe>
+         <exe type="conexe" true="16" false="1">2</exe>
+         <exe type="conexe" true="19" false="17">3</exe>
+         <exe type="conexe" true="20" false="18">4</exe>
+         <exe type="conexe" true="21" false="22">5</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 46 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 46 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">4</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 408) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 8201) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 46 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 46 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 46 ) >= 30</chk>
+      </conditions>
+      <exelink idx="skill_001">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="mq408_clear_check">4</exelink>
+      <exelink idx="back_talk">2</exelink>
+      <exelink idx="skill_90">3</exelink>
+      <exelink idx="present_90_cleric">23,24</exelink>
+      <exelink idx="skill_60">3</exelink>
+      <exelink idx="present_60_cleric">23,24</exelink>
+      <exelink idx="skill_30">3</exelink>
+      <exelink idx="present_30_cleric">23,24</exelink>
+      <exelink idx="skill_0">3</exelink>
+      <exelink idx="present_0_cleric">23,24</exelink>
+      <exelink idx="present_90">23,24</exelink>
+      <exelink idx="present_60">23,24</exelink>
+      <exelink idx="present_30">23,24</exelink>
+      <exelink idx="present_0">23,24</exelink>
+      <exelink idx="gift">25,26</exelink>
+      <exelink idx="back_present_ui">2</exelink>
+      <exelink idx="back_gift">2</exelink>
+   </talk>

@@ -1,0 +1,19 @@
+   <talk>
+      <npcename>n444_king_casius</npcename>
+      <npcid>444</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[King Cassius
+(Dark Overlord Keep)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$King Cassius$<BR>
+Ooh, Jim is never scared.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_684_secret_friend2</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">684</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n082_dream_harold</npcename>
+      <npcid>82</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Mayor Harold]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Chief Harold$<BR>Seems only like yesterday that the ferocious battle took place in Cadillac Pass...<BR>Seeing Rose all grown up is a reminder of how much time has passed us by.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

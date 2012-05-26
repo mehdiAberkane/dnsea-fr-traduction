@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n334_darkelf_alice</npcename>
+      <npcid>334</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Dark Elf Alice]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Dark Elf Alice$<BR>For Telreju……And for all the Dark Elves…...</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_630_determination</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">630</chk>
+      </conditions>
+   </talk>

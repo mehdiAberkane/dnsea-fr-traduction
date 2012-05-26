@@ -1,0 +1,24 @@
+   <talk>
+      <npcename>n442_elite_soldier_donald</npcename>
+      <npcid>442</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Royal Guard Donald]]></npckname>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="9" link_target="sq11_682_liberty_boy.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>Boy with Freedom</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="sq11_684_secret_friend2.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Secret Friend II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="sq11_687_secret_friend5.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Secret Friend V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="12" link_target="sq11_691_sorrow_of_king.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Cassius's Sadness</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="sq11_696_secret_thing.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Secrets Manifested</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="22"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Royal Guard Donald$<BR>Please leave if you do not have any important matters, <BR>
+I am very busy!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="18"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="16"><![CDATA[<html>$Royal Guard Donald$<BR>Ahhh~ I'm so tired, <BR>do you need anything?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

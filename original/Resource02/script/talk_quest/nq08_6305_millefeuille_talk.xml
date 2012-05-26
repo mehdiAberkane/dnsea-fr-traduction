@@ -1,0 +1,104 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq08_6305_millefeuille_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6305</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Young Adventurer David's Grand Adventure]]></qkname>
+      <qnpc>
+         <npcid>201</npcid>
+         <npcename>n201_darklair_millefeuille</npcename>
+         <npckname>어둠의 여신관 밀피유</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-a" mid="7"><![CDATA[<html>90% Fiction Comic</html>]]></talk_answer>
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-c" mid="8"><![CDATA[<html>Realistic Non-Fiction</html>]]></talk_answer>
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-f" mid="9"><![CDATA[<html>I will just use it as a pot stand</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Have you read the most selling book?<BR>So fun!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Whaat? That was a comics?<BR>Hm...Is that mean... Everything about defeating Orc with bare hand and scare Troll with one kick was all likes?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Hm... That is disappointing.<BR><FONT color=#7e12d2>(Priestess of Darkness Mio's sholders droop. She probably believed it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-d" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Right?! It was so interesting that I stay up 4 night just to read it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-e" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Boy Adventurer David almost kneel down before arrogant adventurer {user_nick}, but with the supports of people of Calderock Village, he over turns the situation...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-e" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Priestess of Darkness Mio$<BR>At the end, he gives up a dream as an adventurer for the women of his love and puts apron on!!<BR>Impressive! Impressive!! So romantic!<BR><FONT color=#7e12d2>(Priestess of Darkness Mio is jumping around and seems to be very excited. I guess that's how the stories run)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n201_darklair_millefeuille-accepting-g" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Priestess of Darkness Mio$<BR>Ahh!!!  DO you understand?!<BR> You will be eaten by book dragon in your dream if you treat the holy book like that.<BR>Don't you know that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n201_darklair_millefeuille-accepting-g" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Priestess of Darkness Mio$<BR>...That's weird... That's what Castia told me!<BR><FONT color=#7e12d2>(Priestess of Darkness Mio seems gloomy. She probably really believed it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6305, 0, 1, 1, 0); </exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 201, 200 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 201, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 201, 400 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 201, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n201_darklair_millefeuille" sub="a">1,2,0</exelink>
+   <exelink qstep="accepting" npc="n201_darklair_millefeuille" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n201_darklair_millefeuille" sub="f">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 소년 데이비드의 대모험" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>201:7000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

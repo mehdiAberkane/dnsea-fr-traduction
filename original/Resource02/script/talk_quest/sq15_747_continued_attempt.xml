@@ -1,0 +1,209 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_747_continued_attempt</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>747</qid>
+      <designer>곽노찬</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>748</nextqid>
+      <nextqname>sq15_748_what_am_i</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Changing Job] Continued Attempt]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>795</npcid>
+         <npcename>n795_light_pole</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-noquest" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Merchant Rucita$<BR>W, what can I do for you?<BR>Take you time here….<BR>
+※ <FONT color=#7e12d3>You can continue after acquiring a quest from Academic station.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-acceptted" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic station$<BR>
+▶ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+▷ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Academic station$<BR>▶ <FONT color=#086171>Mission Object.</FONT><BR>▷ <FONT color=#7e12d3>Get a memory token from Merchant Rucita.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="QN_Npc_Lucita.dds" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-1-a" mid="9"><![CDATA[<html>(Talk about a memory token)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Rucita$<BR>W, what can I do for you?<BR>Take you time here.….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-a" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-1-b" mid="11"><![CDATA[<html>Yes, but it won't be useful for others.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Rucita$<BR>Ah… the token that <FONT color=#a82425>Angelica</FONT> brought before….<BR>I don't know what exactly it is so I don't sell it. Do you know about it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-b" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-1-c" mid="13"><![CDATA[<html>Thank you!</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Rucita$<BR>So it is…. You can take it if you want.<BR>I was sold it involuntarily….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-c" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-1-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d3>(Play the record saved in the memory token)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-d" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-1-e" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$XD-13's first record$<BR><FONT color=#086171>I arrived at the targeted period, Caderock Resistance .</FONT><BR><FONT color=#086172>I'm planning to get close to the prophet disguising as a member of the movement.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-e" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-1-f" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$XD-13's ninth record$<BR><FONT color=#086172>Did I see a ghost? I run into someone who was just like me.<BR>He suddenly attacked me so I missed the prophet just in front of me.<BR>Mission failed.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-f" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-1-g" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$XD-13's ninth record$<BR><FONT color=#086171>I can't give up.<BR>I'll follow the prophet's mother to Prairie Town.<BR>This would be my last time.</FONT><BR><FONT color=#086172>I'll bet all on it.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1-g" image="QW_52.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$XD-24's message$<BR><FONT color=#7e12d2>(XD-13's record is closed and XD-24's message appears on the screen)</FONT><BR><FONT color=#086172>If you want to know the truth, then come to Ancient Library.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n795_light_pole-1" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d3>(I don't see something special)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2" image="QW_52.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$XD-24's message$<BR><FONT color=#7e12d2>(The memory token that Rucita gave me is recorded like this)</FONT><BR><FONT color=#086172>If you want to know the truth, then come to Ancient Library.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n795_light_pole-2" image="" itemindex="">
+      <talk_answer link_index="n795_light_pole-2-a" mid="44"><![CDATA[<html>(Play the record in the memory token)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d3>(There's a memory token)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n795_light_pole-2-a" image="" itemindex="">
+      <talk_answer link_index="n795_light_pole-2-b" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$XD-20's first record$<BR>
+<FONT color=#086171>Arrive at Prairie Town.</FONT><BR>
+<FONT color=#086171>I wasn't far from the targeting point.</FONT><BR>
+<FONT color=#086172>Now starting on the work.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n795_light_pole-2-b" image="" itemindex="">
+      <talk_answer link_index="n795_light_pole-2-c" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$XD-20's sixth record$<BR><FONT color=#086171>I've faced with unexpected variables.</FONT><BR><FONT color=#086171>When I got close to the prophet, I was stopped by someone and fought against it.</FONT><BR><FONT color=#086172>I managed to beat it, but surprisingly, it looked so much like me.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n795_light_pole-2-c" image="" itemindex="">
+      <talk_answer link_index="n795_light_pole-2-d" mid="50"><![CDATA[<html>(Jasmine… sister…?)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$XD-20's seventh record$<BR><FONT color=#086171>I ask a research on it to sister Jasmine, but she said there's no information about it. However, it is too suspicious to ignore.</FONT><BR><FONT color=#086172>I'd better research on this more.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n795_light_pole-2-d" image="" itemindex="">
+      <talk_answer link_index="n795_light_pole-2-e" mid="52"><![CDATA[<html><FONT color=#a94408>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n795_light_pole-2-e" image="QW_51.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$XD-24's message$<BR><FONT color=#7e12d2>(XD-20's record is closed and XD-24's message appears)</FONT><BR><FONT color=#086172>If you want to know the truth, come to Riverwart Village Ruins.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Academic station$<BR>▶ <FONT color=#086171>Mission Object.</FONT><BR>▷ <FONT color=#7e12d3>Go to Ancient Library.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">747</exe>
+         <exe type="talk" npc="n394_academic_station">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7470,,,,,</exe>
+         <exe type="complete">747</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n709_trader_lucita" sub="b" />
+   <exelink qstep="1" npc="n709_trader_lucita" sub="c" />
+   <exelink qstep="1" npc="n709_trader_lucita" sub="d" />
+   <exelink qstep="1" npc="n709_trader_lucita" sub="e" />
+   <exelink qstep="1" npc="n709_trader_lucita" sub="f" />
+   <exelink qstep="1" npc="n709_trader_lucita" sub="g">0,1</exelink>
+   <exelink qstep="2" npc="n795_light_pole" sub="b" />
+   <exelink qstep="2" npc="n795_light_pole" sub="c" />
+   <exelink qstep="2" npc="n795_light_pole" sub="d">0</exelink>
+   <exelink qstep="2" npc="n795_light_pole" sub="e">1</exelink>
+   <journal_data recompense="7470" quest_title="[전직] 계속 되었던 시도" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lucita.dds</contents_image>
+         <destination_pos>15,n709</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>709</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Continued Attempt I]]></title>
+         <contents mid="57"><![CDATA[<html>Get a memory token from Merchant Rucita to check the record.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Merchant Rucita</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk with Merchant Rucita]]></destination>
+         <todo_msg mid="59"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>522,n795</destination_pos>
+         <destination_mode>custom:521@1,522@1,523@0</destination_mode>
+         <statemark_npcid>795</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Continued Attempt II]]></title>
+         <contents mid="61"><![CDATA[<html>In the memory token from Rucita, there was a record that investigator named XD-13 made. Let's follow the message from XD-24 to Ancient Library.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Search to Ancient Library]]></destination>
+         <todo_msg mid="63"><![CDATA[Go to Ancient Library.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>44:-1</user_level>
+      <user_worldzone_level />
+      <user_class>5</user_class>
+      <prev_quest>737:378</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,117 @@
+   <talk>
+      <npcename>n407_guild_board</npcename>
+      <npcid>407</npcid>
+      <startexe>6</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Forgotten Temple Entrance]]></npckname>
+      <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="gq08_3061_n407_sleep_normal.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Simple Plan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq08_3062_n407_sleep_hunt.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Annoying Guys</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq08_3063_n407_sleep_drop.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Going Techy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="gq08_3064_n407_sleep_hard.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>The Little Collector III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq08_3070_n407_sleep_rank.xml"><![CDATA[<html>[Lv.14] <FONT color=#7e12d2>Counterattack: Sleepers' Temple</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq08_3151_n407_pray_normal.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Swift Scout</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="gq08_3152_n407_pray_hunt.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171></FONT>Social Elimination</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="15" link_target="gq08_3153_n407_pray_drop.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>An Ancient Taste</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="gq08_3154_n407_pray_hard.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>The Little Collector ?ll</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="17" link_target="gq08_3155_n407_pray_boss.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Rare Animal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="gq08_3157_n407_pray_master.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>United</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="gq08_3160_n407_pray_rank.xml"><![CDATA[<html>[Lv.22] <FONT color=#7e12d2>Counterattack: Haven of Prayers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="gq08_3069_n407_sleep_abyss.xml"><![CDATA[<html>[Lv.15] <FONT color=#7e12d2>Into the Abyss: Defeat Minotaur Umnoduo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq08_3159_n407_pray_abyss.xml"><![CDATA[<html>[Lv.23] <FONT color=#7e12d2>Into the Abyss: Defeat Manticore Keruru</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>The following requests have been received.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>No requests have been received at the moment.<BR><BR><FONT color=#086171>?The end of days is approaching. Embrace the dragon's love. Live and Repent! - A Dragon Follower </FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_16" mid="74"><![CDATA[<html>[Lv.14] Sleepers' Temple</html>]]></talk_answer>
+         <talk_answer link_index="stage_26" mid="75"><![CDATA[<html>[Lv.22] Prayer's Haven</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="76"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_16" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="77" link_target="gq08_3061_n407_sleep_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Simple Plan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="78" link_target="gq08_3062_n407_sleep_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Annoying Guys</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="79" link_target="gq08_3063_n407_sleep_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Going Techy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="80" link_target="gq08_3064_n407_sleep_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>The Little Collector III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="81" link_target="gq08_3070_n407_sleep_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Counterattack: Sleepers' Temple</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="82" link_target="gq08_3069_n407_sleep_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Minotaur Umnoduo</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_16" mid="83"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="37"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Sleepers' Temple</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_26" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="84" link_target="gq08_3151_n407_pray_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Swift Scout</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="85" link_target="gq08_3152_n407_pray_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Social Elimination</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="86" link_target="gq08_3153_n407_pray_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>An Ancient Taste</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="87" link_target="gq08_3154_n407_pray_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>The Little Collector XII</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="88" link_target="gq08_3155_n407_pray_boss.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Rare Animal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="gq08_3157_n407_pray_master.xml"><![CDATA[<html>[Master] <FONT color=#086171>United</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="gq08_3160_n407_pray_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Counterattack: Haven of Prayers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="91" link_target="gq08_3159_n407_pray_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into The Abyss: Defeat Manticore Keruru</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_26" mid="92"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="45"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Haven Of Prayers</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv14_noclr" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_16" mid="98"><![CDATA[<html>[Lv14] Temple of asleep</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="99"><![CDATA[<html>[See all requests list]</html>]]></talk_answer>
+         <talk_question mid="95"><![CDATA[<html>$Guild Board${action:Talk}<BR>Choose the stage where you carry request out.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">gq08_3061_n407_sleep_normal</exe>
+         <exe type="enterquest">gq08_3062_n407_sleep_hunt</exe>
+         <exe type="enterquest">gq08_3063_n407_sleep_drop</exe>
+         <exe type="enterquest">gq08_3064_n407_sleep_hard</exe>
+         <exe type="enterquest">gq08_3070_n407_sleep_rank</exe>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="conexe" true="2" false="8">1</exe>
+         <exe type="conexe" true="3" false="9">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="conexe" true="5" false="19">4</exe>
+         <exe type="enterquest">gq08_3151_n407_pray_normal</exe>
+         <exe type="enterquest">gq08_3152_n407_pray_hunt</exe>
+         <exe type="enterquest">gq08_3153_n407_pray_drop</exe>
+         <exe type="enterquest">gq08_3154_n407_pray_hard</exe>
+         <exe type="enterquest">gq08_3155_n407_pray_boss</exe>
+         <exe type="enterquest">gq08_3156_n407_pray_prop</exe>
+         <exe type="enterquest">gq08_3157_n407_pray_master</exe>
+         <exe type="enterquest">gq08_3160_n407_pray_rank</exe>
+         <exe type="conexe" true="11" false="20">5</exe>
+         <exe type="conexe" true="12" false="21">6</exe>
+         <exe type="conexe" true="13" false="22">7</exe>
+         <exe type="conexe" true="14" false="23">8</exe>
+         <exe type="conexe" true="15" false="24">9</exe>
+         <exe type="conexe" true="16" false="25">10</exe>
+         <exe type="conexe" true="17" false="26">11</exe>
+         <exe type="conexe" true="18" false="29">12</exe>
+         <exe type="enterquest">gq08_3069_n407_sleep_abyss</exe>
+         <exe type="enterquest">gq08_3159_n407_pray_abyss</exe>
+         <exe type="conexe" true="27" false="30">13</exe>
+         <exe type="conexe" true="28" false="31">14</exe>
+         <exe type="conexe" true="0" false="32">15</exe>
+         <exe type="conexe" true="33" false="34">16</exe>
+         <exe type="talk">lv14_noclr</exe>
+         <exe type="talk">_no_quest</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3061</chk>
+         <chk type="hasquest">3062</chk>
+         <chk type="hasquest">3063</chk>
+         <chk type="hasquest">3064</chk>
+         <chk type="hasquest">3070</chk>
+         <chk type="hasquest">3151</chk>
+         <chk type="hasquest">3152</chk>
+         <chk type="hasquest">3153</chk>
+         <chk type="hasquest">3154</chk>
+         <chk type="hasquest">3155</chk>
+         <chk type="hasquest">3156</chk>
+         <chk type="hasquest">3157</chk>
+         <chk type="hasquest">3160</chk>
+         <chk type="hasquest">3069</chk>
+         <chk type="hasquest">3159</chk>
+         <chk type="lvl" op=">=">22</chk>
+         <chk type="lvl" op=">=">14</chk>
+      </conditions>
+      <exelink idx="back_stage_16">31</exelink>
+      <exelink idx="back_stage_26">31</exelink>
+   </talk>

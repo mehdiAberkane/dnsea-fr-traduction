@@ -1,0 +1,93 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq04_5505_adellin_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5505</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Master Cleric Jermain]]></qkname>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-a" mid="7"><![CDATA[<html>Everyone has their own burden to carry.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-b" mid="8"><![CDATA[<html>Wouldn't it get better as time pass by?</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-c" mid="9"><![CDATA[<html>As long as there is faith, those shadow will be overcome.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-d" mid="10"><![CDATA[<html>How about warm words of sympathy?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Archer Adelynn$ <BR>It makes me sad every time I think about his teacher, Priest William. I think he still hasn't gotten over his death. It would be great if there was something I can help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Archer Adelynn$<BR>You really think so? But it seems like you are just ignoring it because it's someone else's problem. It felt a little cold. I'm sorry... I know you said those words with consideration.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Archer Adelynn$<BR>With the passing of time, will old memories be buried by new memories? Maybe it's like that for me too. Ah, n-never mind. Pretend that I didn't say anything.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Archer Adelynn$<BR>Yes, he is a Priest. He has faith and sense of duty towards the goddess. Since he's a responsible man, I don't think he will be broken so easily. Maybe I was worrying too much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Archer Adelynn$<BR>Warm words of sympathy... since there aren't much I can do, I'll keep showing interest and try to say some warm words whenever he needs sympathy. Thank you for the advice.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5505, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 33, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 80 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 320 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 상급 클레릭 저메인에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>33:5600:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n319_mandra_mama</npcename>
+      <npcid>319</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Mama Mandra]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Mama Mandra$<BR>I will fight and save my children!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_624_hairbreadth_escape</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">624</chk>
+      </conditions>
+   </talk>

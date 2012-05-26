@@ -1,0 +1,161 @@
+   <talk>
+      <npcename>n033_archer_master_adellin</npcename>
+      <npcid>33</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Archer Adelynn]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="10"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_001" mid="3"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="100"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Archer Adelynn$<BR>Greetings. I am Adelynn, and I can impart the mastery of the bow and arrow to you, if you prove yourself worthy.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="11"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="101"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Master Archer Adelynn$<BR>Greetings. I am Adelynn, and I can impart the mastery of the bow and arrow to you, if you prove yourself worthy.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="20" link_target="mq08_202_rescue_girl.xml"><![CDATA[<html>[Lv.10] <FONT color=#a94407>To The Rescue!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="172" link_target="mq08_222_too_late.xml"><![CDATA[<html>[Lv10] <FONT color=#a94407>Missed it just by a second</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="sq08_251_melody_of_the_memories1.xml"><![CDATA[<html>[Lv.9] <FONT color=#086171>Melody of Memories I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="sq08_252_melody_of_the_memories2.xml"><![CDATA[<html>[Lv.10] <FONT color=#086171>Melody of Memories II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="nq04_5501_fiction_and_real.xml"><![CDATA[<html>[Lv.10] <FONT color=#086171>Fiction and Truth</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="146" link_target="sq08_359_estimations_of_art.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Naysayers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="149" link_target="sq08_363_way_of_fashionreader.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Living the Fashionista's Life</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="42" link_target="sq08_280_test_archer1.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Telepathy Part 1</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="43" link_target="sq08_281_test_archer2.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Telepathy Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="sq08_341_change_job2.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="167" link_target="sq15_766_at_the_crossroads.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Crossroads of the Elf</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="173"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Master Archer Adelynn$<BR>Calderock Village… ah, a place of sweet joy and bitter sorrow.<BR>We met here, this very place… a chance meeting of joy until destiny tore us apart, leaving me only painful memories...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent_archer" image="" itemindex="">
+         <talk_answer link_index="quest" mid="102"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_90" mid="103"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="104"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90_archer" mid="105"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="49"><![CDATA[<html>$Master Archer Adelynn$<BR>The pain of losing him hurts, like a cruel knife etched deep inside. But the day will come where we will meet, under the Tree of Life once more.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent_archer" image="" itemindex="">
+         <talk_answer link_index="quest" mid="106"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_60" mid="107"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="108"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60_archer" mid="109"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="50"><![CDATA[<html>$Master Archer Adelynn$<BR>Please be at ease, and ask me whatever questions you desire. You are on a noble journey and I am honoured to be of help.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent_archer" image="" itemindex="">
+         <talk_answer link_index="quest" mid="110"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_30" mid="111"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="112"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30_archer" mid="113"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="51"><![CDATA[<html>$Master Archer Adelynn$<BR>Our meeting has been foretold, <FONT color=#387206>{user_nick}</FONT>. I've been waiting ever since.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent_archer" image="" itemindex="">
+         <talk_answer link_index="quest" mid="114"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill_0" mid="115"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="116"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0_archer" mid="117"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="52"><![CDATA[<html>$Master Archer Adelynn$<BR>Greetings, sister. May light shine upon the path of your destiny soon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="118"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="119"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="120"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="53"><![CDATA[<html>$Master Archer Adelynn$<BR>Our telepathy runs deep,<FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="121"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="122"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="123"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="54"><![CDATA[<html>$Master Archer Adelynn$<BR>The sun shines more gloriously whenever you're here,<FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="124"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="125"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="126"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Master Archer Adelynn$<BR>Oh,<FONT color=#387206>{user_nick}</FONT>. I did not think we would again se soon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="127"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="128"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="129"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="56"><![CDATA[<html>$Master Archer Adelynn$<BR>Greetings,<FONT color=#387206>{user_nick}</FONT>. Have you come for more of my stories?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="130"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="131"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="57"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="132"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="60"><![CDATA[<html>$Master Archer Adelynn$<BR>Are you saying this is for me…? Blessed me! May the Tree of Life bless you well.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="162" link_target="sq_962_xmas_adellin.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="135" link_target="nq04_5502_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Calderock Village</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="136" link_target="nq04_5503_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="137" link_target="nq04_5504_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Warrior Chandler</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="138" link_target="nq04_5505_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Cleric Jermain</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="139" link_target="nq04_5506_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Master Sorceress Tiana</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="140" link_target="nq04_5507_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Adventurer's Guild Master Deckard</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="141" link_target="nq04_5508_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>{user_nick}</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="142" link_target="nq04_5509_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Yuric</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="143" link_target="nq04_5510_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Person</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="144" link_target="nq04_5511_adellin_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Top of Wishlist</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="158" link_target="nq04_5512_adellin_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Adelynn's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="159" link_target="nq04_5513_adellin_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Adelynn's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="160"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="98"><![CDATA[<html>$Master Archer Adeline$<BR>May you speak your mind...</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="4" false="12">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="0">1</exe>
+         <exe type="conexe" true="8" false="6">2</exe>
+         <exe type="conexe" true="9" false="7">3</exe>
+         <exe type="conexe" true="10" false="11">4</exe>
+         <exe type="talk">90_percent_archer</exe>
+         <exe type="talk">60_percent_archer</exe>
+         <exe type="talk">30_percent_archer</exe>
+         <exe type="talk">0_percent_archer</exe>
+         <exe type="conexe" true="13" false="1">1</exe>
+         <exe type="conexe" true="16" false="14">2</exe>
+         <exe type="conexe" true="17" false="15">3</exe>
+         <exe type="conexe" true="18" false="19">4</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 33 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 33 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">2</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 5501) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 33 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 33 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 33 ) >= 30</chk>
+      </conditions>
+      <exelink idx="skill_001">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="skill_90">3</exelink>
+      <exelink idx="present_90_archer">20,21</exelink>
+      <exelink idx="skill_60">3</exelink>
+      <exelink idx="present_60_archer">20,21</exelink>
+      <exelink idx="skill_30">3</exelink>
+      <exelink idx="present_30_archer">20,21</exelink>
+      <exelink idx="skill_0">3</exelink>
+      <exelink idx="present_0_archer">20,21</exelink>
+      <exelink idx="present_90">20,21</exelink>
+      <exelink idx="present_60">20,21</exelink>
+      <exelink idx="present_30">20,21</exelink>
+      <exelink idx="present_0">20,21</exelink>
+      <exelink idx="gift">22,23</exelink>
+      <exelink idx="back_present_ui">2</exelink>
+      <exelink idx="back_gift">2</exelink>
+      <exelink idx="back_talk">2</exelink>
+   </talk>

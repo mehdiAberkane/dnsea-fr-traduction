@@ -1,0 +1,280 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_623_glow_rapidly</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>623</qid>
+      <designer>김인정</designer>
+      <qlevel>33</qlevel>
+      <qdesc>만드라 이유식	300347</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>624</nextqid>
+      <nextqname>sq11_624_hairbreadth_escape</nextqname>
+      <nextqnpc>n277_bluff_dealers_pope</nextqnpc>
+      <qkname mid="1"><![CDATA[Babies grow and grow]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>317</npcid>
+         <npcename>n317_mandra_son</npcename>
+         <npckname>만드라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>318</npcid>
+         <npcename>n318_mandra_mama</npcename>
+         <npckname>마마 만드라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n317_mandra_son-noquest" image="QN_mandra_mama.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Mandra$<BR>Until Mom comes back, I will protect my sibilings! Yeah! <BR><FONT color=#7e12d2>(Mandra is standing strong)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-noquest" image="QN_mandra_son.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Dishonest Merchant Pero$<BR>I will catch it!! Mandora!!<BR>(Pero is coughing).</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-accepting" image="" itemindex="">
+      <talk_answer link_index="n318_mandra_mama-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Mandora$<BR>You have brought Mandra babyfood!<BR>Shh… be careful not to get caught by that dishonest merchant!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n318_mandra_mama-accepting-b" mid="9"><![CDATA[<html>(Continue)<BR>
+ </html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Mandora$<BR>If they receive Mom's love, babies will grow and grow.<BR>
+<FONT color=#7e12d2>(Looking lovingly at Mandra babyfood)</FONT><BR>
+Babies, Mom is looking after you from far away….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n318_mandra_mama-accepting-acceptted" mid="11"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Babies grow and grow$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-1" image="" itemindex="">
+      <talk_answer link_index="n318_mandra_mama-1-a" mid="15"><![CDATA[<html>I will.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Mandora$<BR>Adventurer… sorry,  but  I cannot move.<BR>So could you give the <FONT color=#a82424>Mandra babyfood</FONT>to one of my  babies?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-1-a" image="QW_33.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Mandora$<BR>As you know, they are hidden in <FONT color=#a82424>Middle of Island</FONT>.<BR>Please give Mandra babyfood to them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n317_mandra_son-1" image="QN_mandra_mama.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Mandra$<BR>I will keep my siblings safe until my Mom comes back!  Hehe!<BR><FONT color=#7e12d2>(Mandra is standing strong)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="QN_mandra_mama.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+I will catch the Mandora! I will catch it soon! Look at it!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-2" image="QW_33.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Mandora$<BR>As you know, my babies are hiding in the <FONT color=#a82424>Middle of Island</FONT>.<BR>Please give them this Mandra babyfood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n317_mandra_son-2" image="QN_mandra_mama.dds" itemindex="">
+      <talk_answer link_index="n317_mandra_son-2-a" mid="19"><![CDATA[<html>Give babyfood.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Mandra$<BR>Who are you!! Who is trying to fight the Prince Mandra ?<BR>…Ah! It's {user_class} whom I saw earlier? Anything happen to Mom?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n317_mandra_son-2-a" image="" itemindex="">
+      <talk_answer link_index="n317_mandra_son-2-b" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Mandra$<BR>This… is Mom's babyfood!<BR><FONT color=#7e12d2>(Mandra receives babyfood with shakey hands.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n317_mandra_son-2-b" image="" itemindex="">
+      <talk_answer link_index="n317_mandra_son-2-c" mid="23"><![CDATA[<html>(Mandra is crying)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Mandra$<BR>I believe our leaves will grow more beautifully!  My brothers will grow bigger and stronger with this fertilizer!<BR>
+*Sob*… Mom… she is worried about us… *sob*.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n317_mandra_son-2-c" image="QN_mandra_mama.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Mandra$<BR>Mom…. <FONT color=#7e12d2>(Mandra is teary)</FONT> I will keep my brothers safe!!<BR>
+I will give the babyfood timely. Tell Mom not to worry because I will keep my siblings safe. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n317_mandra_son-3" image="QN_mandra_mama.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Mandra$<BR>Tell Mom we said hello.<BR>
+I am worried about going to the <FONT color=#a82424>Hermalte Port</FONT> area.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-3" image="" itemindex="">
+      <talk_answer link_index="n318_mandra_mama-3-a" mid="28"><![CDATA[<html>I have given it.</html>]]></talk_answer>
+      <talk_answer link_index="n318_mandra_mama-3-a" mid="29"><![CDATA[<html>Dont worry~!</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Mandora$<BR>You have came back. Have you given them the babyfood safely?<BR>I am worried about my babies… so much … sigh. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-3-a" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n318_mandra_mama-3-b" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Mandora${action:Talk}<BR>I am really thankful. With your help I could help my babies.<BR>
+I want to go with you right now but... *sob*….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-3-b" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_answer link_index="n318_mandra_mama-4" mid="49"><![CDATA[<html>(I feel determination from Mandora.)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Mandora$<BR><FONT color=#a82424>Dishonest merchant</FONT>may find me right now.<BR>
+However rather than the babies getting hurt, it's better that he catches me instead. <BR>I… I do not regret at all.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n318_mandra_mama-4" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Mandora$<BR>However… I worry that the <FONT color=#a82424>dishonest merchant</FONT>has found the babies' location.<BR>If it's okay with you, can you please check. I will be eternally grateful.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-a" mid="52"><![CDATA[<html>(Pero is coughing)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Hah. If it's about money, then <FONT color=#a82424>the one that </FONT>can trade Leica the Storm with Warrior Sword<BR> is me!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-b" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Success is right in front of my eyes and you thought I would miss it?! Go make it!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-c" mid="54"><![CDATA[<html>What is going on?</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Dishonest Merchant Pero$<BR>I have good news!!<BR>Hoot! Muwhawhawhahaa! With the Pope's strength thought and urge… I mean Pope's tenacity.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-c" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-d" mid="56"><![CDATA[<html>Gasp! (He really found it!)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Rather than finding the runaway Mandora, we found a herd of hidden Mandras in a lonely island.<BR>Wahahahahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-d" image="QN_mandra_son.dds" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-e" mid="67"><![CDATA[<html>Do we have to catch this?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Dishonest Merchant Pero$<BR>This Pope does not know how to give up! Wahahahaha!<BR>
+I was about to find those Mandra creatures.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-4-e" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-4-!next" mid="58"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">623</exe>
+         <exe type="talk" npc="n318_mandra_mama">1</exe>
+         <exe type="recompense_view">,6231,6232,6233,6234,6235</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="15">300347</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">300347</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">623</exe>
+         <exe type="recompense">,6231,6232,6233,6234,6235</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n318_mandra_mama" sub="b">2</exelink>
+   <exelink qstep="accepting" npc="n318_mandra_mama" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n318_mandra_mama" sub="a">0,1,2</exelink>
+   <exelink qstep="2" npc="n317_mandra_son" sub="b" />
+   <exelink qstep="2" npc="n317_mandra_son" sub="c">0,2,1</exelink>
+   <exelink qstep="3" npc="n318_mandra_mama" sub="b">1</exelink>
+   <exelink qstep="3" npc="n318_mandra_mama" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="d" />
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="e">1</exelink>
+   <exelink qstep="4" npc="n277_bluff_dealers_pope" sub="!next">0</exelink>
+   <journal_data recompense="1:6231,2:6232,3:6233,4:6234,5:6235" quest_title="아이들이 무럭무럭" chapterid="" quest_level="33" quest_mark_type="10" use_item_list="300347">
+      <journal index="1">
+         <contents_image>QN_mandra_mama.dds</contents_image>
+         <destination_pos>12,n318</destination_pos>
+         <destination_mode />
+         <statemark_npcid>318</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Mandora's Mind]]></title>
+         <contents mid="36"><![CDATA[<html>Talk to Mandora at Hermalte Port .<BR>
+ <BR>
+<FONT color=#086171> Hermalte Port </FONT> <FONT color=#a82424>→ Mandora</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Mandora at Hermalte Port ]]></destination>
+         <todo_msg mid="38"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,n317</destination_pos>
+         <destination_mode>custom:331@1</destination_mode>
+         <statemark_npcid>317</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[To the Middle of Island]]></title>
+         <contents mid="40"><![CDATA[<html>Let's tell this information to Mandra at Middle of Island.<BR>
+ <BR>
+<FONT color=#086171> Hermalte Port (Transport to the Middle of the Island)</FONT> <FONT color=#a82424>→ Middle of Island (Mandra)</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Talk to Mandra in the Middle of the Island]]></destination>
+         <todo_msg mid="42"><![CDATA[Go to Mandra in the Middle of the Island and give babyfood]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_mandra_mama.dds</contents_image>
+         <destination_pos>12,n318</destination_pos>
+         <destination_mode />
+         <statemark_npcid>318</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Hello to the Kids]]></title>
+         <contents mid="44"><![CDATA[<html>Delivered the babyfood. Let's report to Mandora at Hermalte Port.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→Mandora </FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Talk to Mandora at  Hermalte Port]]></destination>
+         <todo_msg mid="46"><![CDATA[Talk to Mandora at  Hermalte Port]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode />
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Situation of Dishonest Merchant]]></title>
+         <contents mid="61"><![CDATA[<html>Let's check on Dishonest Merchant Pero of Saint Haven if he has found out Mandra's location.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Dishonest Merchant Pero</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Talk to Dishonest Merchant Pero]]></destination>
+         <todo_msg mid="63"><![CDATA[Go to Dishonest Merchant Pero and seek what he is up to]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>33:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>622</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

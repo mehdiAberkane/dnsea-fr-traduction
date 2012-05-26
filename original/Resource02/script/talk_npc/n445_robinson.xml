@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n445_robinson</npcename>
+      <npcid>445</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Poor Boy
+(Dark Overlord Keep)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Poor Boy$<BR>Teehehe~ Making a living is always difficult. Luckily I'm small and petite and that makes me more agile so it's alright!<BR>Plus, my friend sent me some refreshments that gives me energy~ Hehe~!!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_685_secret_friend3</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">685</chk>
+      </conditions>
+   </talk>

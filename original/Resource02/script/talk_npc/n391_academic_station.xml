@@ -1,0 +1,60 @@
+   <talk>
+      <npcename>n391_academic_station</npcename>
+      <npcid>391</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Academic Station]]></npckname>
+      <talk_paragraph index="001" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="40"><![CDATA[<html>[Learing skill]</html>]]></talk_answer>
+         <talk_answer link_index="tuto" mid="41"><![CDATA[<html>[Tutorial]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Academic Station$<BR>
+* <FONT color=#086171>Local interface system drives now.</FONT><BR>
+* <FONT color=#7e12d2>Network authentication confirms the identity of any user.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="7" link_target="mq05_091_location_tracking.xml"><![CDATA[<html>[Lv1] <FONT color=#a94407>Re-search the location</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="mq05_092_tools_to_rebuild.xml"><![CDATA[<html>[Lv2] <FONT color=#a94407>Re-organize the equipments</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="mq05_093_review_the_current_time.xml"><![CDATA[<html>[Lv3] <FONT color=#a94407>Checking the time now.</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="mq05_096_traitor_is_on_the_inside.xml"><![CDATA[<html>[Lv6] <FONT color=#a94407>The betrayer is on the inside.</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="17" link_target="mq05_098_end_the_search.xml"><![CDATA[<html>[Lv8] <FONT color=#a94407>Say good bye</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="mq05_099_deep_trouble.xml"><![CDATA[<html>[Lv8] <FONT color=#a94407>Unexpected situation is hard.</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="sq05_169_gurafinder1.xml"><![CDATA[<html>[Lv6] <FONT color=#086171>Finding Lies</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="10"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Academic Station${action:Talk}<BR><FONT color=#086171>Connect…………….<BR>Welcome Academic Station. ver.2.1.1.</FONT><BR><BR><FONT color=#086171>(C) Berlin Corporation. All Right Reserved.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_question mid="23"><![CDATA[<html>$Strange construction$<BR>
+<FONT color=#7e12d2>(A thing never seen is standing</FONT><BR>
+<FONT color=#7e12d2>It's for resting one's chin on one's hand or for a bird to take a rest)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="tuto" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="tuto_stage" mid="42"><![CDATA[<html>[Enter tutorial stage]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="43"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="30"><![CDATA[<html>$Academic Station$<BR>
+▶ <FONT color=#086171> a training program to learn basic controling.</FONT><BR>
+▷ <FONT color=#7e12d2>Do you want to enter into the  tutorial stage?</FONT></html>
+]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="notalone" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="001" mid="44"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="33"><![CDATA[<html>$Academic Station${action:Talk}<BR>▶ <FONT color=#086171>Program is not functioning properly. Error Code.85-01-17</FONT><BR>▷ <FONT color=#7e12d2>Error : Can't preceed in party status.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="7" false="2">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+         <exe type="conexe" true="5" false="6">1</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13511,1);</exe>
+         <exe type="talk">notalone</exe>
+         <exe type="conexe" true="8" false="0">2</exe>
+         <exe type="enterquest">mq05_091_location_tracking</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">5</chk>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+         <chk type="custom">api_quest_GetQuestStep(userObjID, 91) == 1</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="tuto_stage">4</exelink>
+   </talk>

@@ -1,0 +1,49 @@
+﻿   <talk>
+      <npcename>n035_soceress_master_tiana</npcename>
+      <npcid>35</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Master Sorceress Tiana]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="4"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Master Sorceress Tiana${action:Talk}<BR>Magic can do a great good or evil, depending on the Sorceress's desires. Why do you think people are so wary of us?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Master Sorceress Tiana${action:Talk}<BR>Magic can do great good or evil, depending on the Sorceress's desires. Why do you think people are so wary of us?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="16" link_target="mq08_216_argentas_kiss.xml"><![CDATA[<html>[Lv.20] <FONT color=#a94407>Breath of Argenta</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="mq08_217_blessed_stone.xml"><![CDATA[<html>[Lv.22] <FONT color=#a94407>The Blessed Stone</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="mq08_218_awakened_guardian.xml"><![CDATA[<html>[Lv.22] <FONT color=#a94407>The Awakened Guardian</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="126" link_target="mq15_9200_lament_for_farewell1.xml"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="97" link_target="sq08_338_lost_spellbook.xml"><![CDATA[<html>[Lv.11] <FONT color=#086171>Lost Scroll</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="98" link_target="sq08_339_tiana_fury.xml"><![CDATA[<html>[Lv.11] <FONT color=#086171>Tiana's Wrath</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="122" link_target="sq08_363_way_of_fashionreader.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Living The Fashionista's Life</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="125" link_target="sq08_366_disaster_pot.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Simply Disastrous</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="106" link_target="sq08_282_test_sorceress1.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Novice Test I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="107" link_target="sq08_283_test_sorceress2.xml"><![CDATA[<html>[Specialization] <FONT color=#086171>Novice Test II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="112" link_target="sq08_342_change_job3.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="sq08_308_strange_smell.xml"><![CDATA[<html>[Lv.18] <FONT color=#086171>Strange Smell</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="sq08_309_hapless_thief.xml"><![CDATA[<html>[Lv.18] <FONT color=#086171>Hapless Thief</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="101" link_target="sq08_307_cut_a_deal.xml"><![CDATA[<html>[Lv.19] <FONT color=#086171>Tiana's Business Proposal </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="sq08_292_battle_magic1.xml"><![CDATA[<html>[Lv.21] <FONT color=#086171>[Title] [Monster Lv1] Grace Under Pressure I]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="105" link_target="sq08_293_battle_magic2.xml"><![CDATA[<html>[Lv.21] <FONT color=#086171>[Title] [Monster Lv1] Grace Under Pressure II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="sq08_268_fame_of_david.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Reputation</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="sq08_286_argenta_slave.xml"><![CDATA[<html>[Lv.22] <FONT color=#086171>Argenta's Slave</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="117" link_target="nq06_7501_irksome_work.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Annoyance</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="127"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Master Sorceress Tiana$<BR>What the…? Don't be a ninny. Speak up or go away!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="0" false="1">0</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+      <exelink idx="back_quest">2</exelink>
+   </talk>

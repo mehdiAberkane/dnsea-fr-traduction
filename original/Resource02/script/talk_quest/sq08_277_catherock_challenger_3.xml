@@ -1,0 +1,366 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_277_catherock_challenger_3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>277</qid>
+      <designer>손원호</designer>
+      <qlevel>22</qlevel>
+      <qdesc>276 선행퀘 완료시 자동으로 이어짐.
+문장학자에게 오크 영웅 타이푼의 비화를 듣고, 챈들러에게 돌아오면 새로운 도전장이 도착해 있다. 기도하는 자의 안식처로 가서 오크 3형제를 해치우면 완료된다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Orc Gim's Challenge III]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러 (캐더락 워려 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="" itemindex="">
+      <talk_question mid="125"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I'm a little busy right now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="7"><![CDATA[<html>A fight 10 years ago?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Warrior Chandler${action:Talk}<BR>Just watched your outstanding performances makes my heart pound.<BR>It reminds me of the old days.<BR>I had quite an amazing combat 10 years ago.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master' Warrior Chandler$<BR>10 years ago, back when the monsters attacked Calderock, I was fighting against the monsters in the front, and I encountered an amazing opponent.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="11"><![CDATA[<html>What were the results of the challendge?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Warrior Chandler$ <BR>Now that I think about it, it was an orc. <BR>Although he was an enemy, I hate to admit that he was a very powerful one. <BR>His attacks, as quick as lightning, and defense was  amazing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="13"><![CDATA[<html>Well, you won?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>Master Warrior Chandler$<BR>Muhaha! This monster would never lose!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-e" mid="15"><![CDATA[<html>An eye... Don't tell me it's Orc Gim, is it?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Warrior Chandler$<BR>Nope! I didn't even win. Ahaha!<BR>Each of us just exhcanged an eye.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-f" mid="17"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Warrior Chandler$<BR>Hahaha! If <FONT color=#a82424>Orc Gim</FONT> was the one I faced years ago, it would no make sense that you could be back alive. He was almost as strong as me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-g" mid="19"><![CDATA[<html>What kind of a favor?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Warrior Chandler$<BR>But, there may be a connection between the two.<BR>Rookie! Can you do me a small favor?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-g" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-h" mid="21"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Warrior Chandler$<BR>When it comes to knowledge about monsters, there is nobody else that knows more about it than <FONT color=#a82424>Heraldry Scholar Bailey</FONT> does. He's a young rookie,with the knowledge of an old man. Go and find out more about  <FONT color=#a82424>Orc Gim</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Orc Gim's Challenge III$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-i" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Warrior Chandler$<BR><FONT color=#a82424>Heraldry Scholar Bailey</FONT> is just across the bridge, so don't get lost!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Master Warrior Chandler$<BR><FONT color=#a82424>Heraldry Scholar Bailey</FONT> is just across the bridge, so don't get lost!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="45"><![CDATA[<html>What were you reading?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Heraldry Scholar Bailey$<BR><FONT color=#387206>'The female orc breathed out a hot breath and tied herself against the male orc like an octopus and...'<BR></FONT>Huh! You can't just sneak up like that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="47"><![CDATA[<html>I have a question.</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Oh, haha... It was nothing. I'm just reading some old book that was excavated from the Forgotten Temple. It's not some weird novel or anything like that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="49"><![CDATA[<html>Do you happen to know Orc Gim?</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Yes! You've come to the right person. How can I help you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="51"><![CDATA[<html>(Wait for a moment.)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Did you say <FONT color=#a82424>Orc Gim</FONT>? That's a funny name for an orc.<BR>I've heard of a Black Horse Gim, but never an Orc Gim... Just wait a minute. I'm going to have to look through an Encyclopedia of Orcs.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-e" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>This isn't it... Oh! Here it is. <FONT color=#a82424>Orc Gim</FONT>. It must be a pretty famous orc, seeing that it is inside the Encyclopedia of Orcs.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-e" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="128"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Hmm. It seems like <FONT color=#a82424>Orc Gim</FONT> is not really the famous.. like his father, <FONT color=#a82424>Orc Challenger Typhoon</FONT> is the famous one.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-g" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>He is the legendary orc who was called <FONT color=#a82424>Typhoon</FONT> because he's quick and strong like a typhoon and known for taking <FONT color=#a82424>Chandler</FONT>'s eye during the Calderock Resistance. Of course, <FONT color=#a82424>Typhoon</FONT> also lost an eye... So <FONT color=#a82424>Orc Gim</FONT> was his <FONT color=#a82424>son</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-h" mid="57"><![CDATA[<html>He keeps sending me a challenge.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>But <FONT color=#a82424>Orc Gim</FONT> was not a powerful warrior like his father, but he's a very strange orc who enjoyed cross-stitching and knitting. Quite a… for an orc.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-h" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-i" mid="59"><![CDATA[<html>Why am I being challenged?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I've also heard rumors about that. I'm not sure what exactly happened, but seems like <FONT color=#a82424>Orc Gim</FONT> has decided to walk the path of a challenger to continue his father's legacy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-i" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-j" mid="61"><![CDATA[<html>I see. I understand.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Well, I'm not sure, but maybe he thinks of you, {user_nick}, as his true rival.You share the same blood after all, so I'm sure that he shares the passion of his father.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-j" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Just because it's a monster, it doesn't mean it's bad. <BR>I hope you always look at the world with clear eyes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_NPC_Warrior_Chandler.dds" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$ Heraldry Scholar Bailey$<BR>There is no more information in the book. I think you should go to <FONT color=#a82424>Chandler</FONT> now. It's... It's not that I want to finish the rest of the inappropriate novel.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-a" mid="66"><![CDATA[<html>(Tell what Heraldry Scholar Bailey told you.)</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Master Warrior Chandler$<BR>Really? Did you ask Heraldry Scholar Bailey about it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-a" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-b" mid="68"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Master Warrior Chandler$<BR>I see... So <FONT color=#a82424>Orc Gim</FONT> was <FONT color=#a82424>his</FONT> son.<BR>No wonder his perseverance had a resemblance...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-c" mid="70"><![CDATA[<html>I told you, I'm not your student.</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Master Warrior Chandler$<BR>Hahaha! Isn't it amazing?<BR>The fight between his <FONT color=#a82424>son</FONT> and my student. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-d" mid="72"><![CDATA[<html>You're very persistent.</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Master Warrior Chandler$<BR>They say that you're still a student even when you brush past your teacher!<BR>Well, let's just get over such petty issues... Well! Another challenge has arrived while you were gone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-e" mid="74"><![CDATA[<html>(Read the challenge.)</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Master Warrior Chandler$<BR>Well of course! Such persistence and courage! <BR>If you are a true warrior, you should accept it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-f" mid="76"><![CDATA[<html>Is this really...a challenge?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Master Warrior Chandler$<BR><FONT color=#382000>Please be my date! I like you!<BR>I.. always admired...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-g" mid="78"><![CDATA[<html>(Read the challenge.)</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Master Warrior Chandler$<BR>Oh my. Hahaha! This is not the one. <BR>Give that back to me, and take this one! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-g" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-h" mid="80"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Orc Gim's Challenge$<BR><FONT color=#382000>{user_nick}. I'm sorry to have underestimated you all this time. <BR>I'll get right to the point. Till now, I've fought by using only 1% of my true strength.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-h" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-i" mid="82"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html><FONT color=#2b2723>$Orc Gim's Challenge$<BR></FONT><FONT color=#382000>My arrogance has led to my two defeats against you. <BR>Well to be accurate, 1% of my true strength has lost against you. <BR>Well anyway, I've decided not to underestimate you any more.</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-i" image="QM_Orc_Three_brothers.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-j" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Orc Gim's Challenge$<BR><FONT color=#382000>I didn't use 100% of my strength, it might put the entire world in danger. But I've now decided to fight with my might, there will be orc brothers who are a little stronger than me, to assist me this time.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-j" image="QM_Orc_Three_brothers.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-k" mid="86"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Orc Gim's Challenge$<BR><FONT color=#382000>We three brothers are one in spirit and body. Don't think you are outnumbered by 3:1. Can you feel my dark noir power of darkness? I hope you don't run away...</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-k" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-l" mid="88"><![CDATA[<html>(Talk to Master Warrior Chandler.)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Orc Gim's Challenge$<BR><FONT color=#382000>Hehehe. I'll be waiting for the day that I get to fight you at the Prayer's Resting Place. <BR></FONT><FONT color=#a82424></FONT><BR><FONT color=#a82424>Written by Orc Gim, the Invincible Powerful Orc Champion who finally revealed his true strength.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-l" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-m" mid="90"><![CDATA[<html>I will accept the challenge.</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Master Warrior Chandler$<BR><FONT color=#2b2723>I will no longer waste time. The challenger is <FONT color=#a82424>Orc Gim</FONT>, the son of the orc hero, <FONT color=#a82424>Typhoon</FONT>. He is the perfect opponent for you. </FONT><BR><FONT color=#2b2723>Will you accept the challenge?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-m" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-n" mid="92"><![CDATA[<html>It's not like you did taught me anything...</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Master Warrior Chandler$<BR>Use the skills that I've taught you!<BR>He'll be using 100% of his strength this time, so be prepared!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-n" image="QW_26.dds" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Master Warrior Chandler$<BR>Let's just skip such petty issues! Haha!<BR>Your opponent is at the <FONT color=#a82424>Prayer's Resting Place</FONT>, so hurry up!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3" image="QW_26.dds" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Master Warrior Chandler$<BR>Your opponent is at the <FONT color=#a82424>Prayer's Resting Place</FONT>, so hurry up!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-a" mid="96"><![CDATA[<html>It was difficult, but I still won.</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Master Warrior Chandler$<BR>Alright! What were the results? Who won?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-b" mid="98"><![CDATA[<html>Well, I'm not really your student...</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Master Warrior Chandler$<BR>Hahaha! Yes, just as I thought.<BR>You are indeed my Apprentice!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-c" mid="100"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Master Warrior Chandler$<BR>This is just a small matter.<BR>Let's just go and celebrate the victory!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-d" mid="102"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-d" image="QM_Orc_Oneeye.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-e" mid="104"><![CDATA[<html>I think so...</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Master Warrior Chandler$<BR>Please be vigilant!<BR>Orc Gim will not give up... <BR>He will certainly grow stronger and come back to challenge one day!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-4-f" mid="106"><![CDATA[<html>(I'll take my leave now)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Master Warrior Chandler$<BR>Ah! The passion is beautiful! <BR>Such challenging youth!<BR>Hey! Passing through!<BR>Shall we go for an adventure?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-4-f" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html><FONT color=#7e12d2>(Even though I have won against the Orc Gim, he reminds me of the legendary orc hero, Tyhoon. I'm certain he will get stronger and return one day.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,2771,2772,2773,2774,2775</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,277, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">i</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="1" party="1" exe="3,4,5" onexe="">21019</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2771,2772,2773,2774,2775</exe>
+         <exe type="complete">277</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="h">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="h" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="i" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="j">0,1</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="f" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="h" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="i" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="j" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="k" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="l" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="m">0,2,1</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="n" />
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="c">0</exelink>
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="d">1</exelink>
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="4" npc="n032_warrior_master_chandler" sub="f" />
+   <journal_data recompense="1:2771,2:2772,3:2773,4:2774,5:2775" quest_title="도전자 김오크 Ⅲ" chapterid="" quest_level="22" quest_mark_type="10" use_item_list="276 선행퀘 완료시 자동으로 이어짐.&#xD;&#xA;도전자 3형제를 처치하면 완료된다.">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[Talk to Heraldry Scholar Bailey]]></title>
+         <contents mid="109"><![CDATA[<html>Go see Heraldry Scholar Bailey at Calderock Village and ask about Orc Gim.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="111"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="112"><![CDATA[Report to Master Warrior Chandler]]></title>
+         <contents mid="113"><![CDATA[<html>Go see Master Warrior Chandler at Calderock Village and report to him the information about Orc Gim.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>Master Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="114"><![CDATA[Report to Master Warrior Chandler]]></destination>
+         <todo_msg mid="115"><![CDATA[Report to Master Warrior Chandler.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_Orc_Three_brothers.dds</contents_image>
+         <destination_pos>264,0,0</destination_pos>
+         <destination_mode>custom:261@1,262@1,263@1,264@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="116"><![CDATA[Defeat Challenger Orc Gim]]></title>
+         <contents mid="117"><![CDATA[<html>Go to the Prayer's Resting Place and defeat Orc Gim in the third challenge!<BR><BR><FONT color=#086171>Lower Ridge (Sleepers' Temple Entrance )</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>Prayer's Resting Place</FONT></html>]]></contents>
+         <destination mid="118"><![CDATA[Defeat Challenger Orc Gim]]></destination>
+         <todo_msg mid="119"><![CDATA[Go to the Prayer's Resting Place and defeat Orc Gim.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="121"><![CDATA[Report to Master Warrior Chandler]]></title>
+         <contents mid="122"><![CDATA[<html>Return to Master Warrior Chandler at Calderock Village and report the victory.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→</FONT> <FONT color=#a82424>Master Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="123"><![CDATA[Report to Master Warrior Chandler]]></destination>
+         <todo_msg mid="124"><![CDATA[Challenger has been defeated]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>276</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n079_dream_willem</npcename>
+      <npcid>79</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Priest William]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Priest William's Spirit$<BR>Please defeat them all.<BR>I keep the wounded and elderly safe.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

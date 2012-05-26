@@ -1,0 +1,198 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_826_fallen_guardian</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>826</qid>
+      <designer>나은하</designer>
+      <qlevel>48</qlevel>
+      <qdesc>300457 레이븐의 기도서	성스러운 빛의 순례단장인 레이븐이 쓰던 기도서. 그의 유언이 피로 적혀있다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Fallen Guardian]]></qkname>
+      <qnpc>
+         <npcid>714</npcid>
+         <npcename>n714_cleric_yohan</npcename>
+         <npckname>상급 클레릭 요한</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Master Cleric Yohan$<BR>
+We're looking for the trace of holy light pilgrims continuously.<BR>
+I hope there're some who survived.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Cleric Yohan$<BR>It seems that all of holy light pilgrims went back to Goddess.<BR>I'm sorry about that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-a" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Cleric Yohan$<BR>And one thing that I'm concerned is that we haven't found the statue of blessed Goddess. Maybe the statue is around the territory. We can’t let it left there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Fallen Guardian$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1" image="QW_54.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Cleric Yohan$<BR>We should get the statue back from <FONT color=#a82425>Dragon-followers Territory</FONT>whatever it takes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2" image="QW_54.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Master Cleric Yohan$<BR>The statue of blessed Goddess is our halidom.<BR>Please search to<FONT color=#a82425>Dragon-followers Territory</FONT>carefully. Please find anything about the trace of the statue..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-3-a" mid="27"><![CDATA[<html>No, I haven't.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Master Cleric Yohan$<BR>Have you found the statue?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3-a" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-3-b" mid="29"><![CDATA[<html>But I found a Raven's prayer book.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Cleric Yohan$<BR>My pray might have not been enough..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3-b" image="QS_Default.dds" itemindex="300457">
+      <talk_answer link_index="n714_cleric_yohan-3-c" mid="31"><![CDATA[<html>I got this from dragon-followers.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Cleric Yohan$<BR>
+<FONT color=#7e12d2>(Master Cleric Yohan received the Raven's prayer book)</FONT><BR>Hmm, there is <FONT color=#a82425>Raven's will written by his blood</FONT>. Where did you find this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-3-d" mid="33"><![CDATA[<html>Paladin was the betrayer?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Master Cleric Yohan$<BR><FONT color=#7e12d2>(Master Cleric Yohan's checking the Raven's prayer book)</FONT><BR>Oh my god…! The one who betrayed was <FONT color=#a82425>Paladin Crein</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3-d" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-3-e" mid="36"><![CDATA[<html>That fallen paladin was Crein.</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Master Cleric Yohan$<BR>This book says that. Now I can understand why Raven got trapped. Raven believed Crein like a brother. But he was a dragon-follower.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3-e" image="QS_Default.dds" itemindex="300458">
+      <talk_answer link_index="n714_cleric_yohan-3-f" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Master Cleric Yohan$<BR>But there isn't any information about where the statue is now. I'm worried that we can't find it forever ….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3-f" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-3-g" mid="40"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-3-g" image="QS_Default.dds" itemindex="300458">
+      <talk_question mid="41"><![CDATA[<html>$Master Cleric Yohan$<BR><FONT color=#7e12d3>(Master Cleric Yohan's murmuring the prayer book)</FONT><BR>All the things are from Goddess's will…. I believe the statue will get back to us like the betrayer was killed. I'll pray for until the statue gets back to us.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8260,,,,,</exe>
+         <exe type="setquest">826</exe>
+         <exe type="talk" npc="n714_cleric_yohan">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">1459</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">201459</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">1454</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">201454</exe>
+         <exe type="addquestitem" num="1">300457</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300457</exe>
+         <exe type="recompense">8260,,,,,</exe>
+         <exe type="complete">826</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="2">0,1,6,8, 9</exelink>
+   <exelink qstep="3" npc="n714_cleric_yohan" sub="b">0</exelink>
+   <exelink qstep="3" npc="n714_cleric_yohan" sub="c" />
+   <exelink qstep="3" npc="n714_cleric_yohan" sub="d" />
+   <exelink qstep="3" npc="n714_cleric_yohan" sub="e" />
+   <exelink qstep="3" npc="n714_cleric_yohan" sub="f">1</exelink>
+   <exelink qstep="3" npc="n714_cleric_yohan" sub="g">2</exelink>
+   <journal_data recompense="8260" quest_title="타락한 수호자" chapterid="" quest_level="48" quest_mark_type="10" use_item_list="300457">
+      <journal index="1">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Missed the statue of Goddess]]></title>
+         <contents mid="46"><![CDATA[<html>Let's find the statue in Dragon-followers Territory.<BR><BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Dragon-followers Territory</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Talk with Master Cleric Yohan]]></destination>
+         <todo_msg mid="48"><![CDATA[New quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_54.dds</contents_image>
+         <destination_pos>542,0,0</destination_pos>
+         <destination_mode>custom:541@4,542@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Dragon-followers Territory]]></title>
+         <contents mid="50"><![CDATA[<html>Search to Dragon-followers Territory and find the statue of blessed Goddess.<BR><BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Dragon-followers Territory</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[search to Dragon-followers Territory]]></destination>
+         <todo_msg mid="52"><![CDATA[Go to Dragon-followers Territory.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Unable to find the statue]]></title>
+         <contents mid="54"><![CDATA[<html>I just found a Raven's prayer book. This would be helpful to know where the statue is. Go back to Lotus Marsh and deliver it to Master Cleric Yohan.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Cleric Yohan</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Talk with Master Cleric Yohan]]></destination>
+         <todo_msg mid="56"><![CDATA[Go back to Lotus Marsh's Master Cleric Yohan.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>48:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>825</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

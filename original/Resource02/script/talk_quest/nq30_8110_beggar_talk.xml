@@ -1,0 +1,96 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq30_8110_beggar_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8110</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About {user_nick}]]></qkname>
+      <qnpc>
+         <npcid>87</npcid>
+         <npcename>n087_beggar</npcename>
+         <npckname>걸인 로피</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-accepting" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-accepting-a" mid="8"><![CDATA[<html> (Talk about weather) </html>]]></talk_answer>
+      <talk_answer link_index="n087_beggar-accepting-b" mid="9"><![CDATA[<html> (Talk about recent concern) </html>]]></talk_answer>
+      <talk_answer link_index="n087_beggar-accepting-c" mid="10"><![CDATA[<html> (Talk about familiy) </html>]]></talk_answer>
+      <talk_answer link_index="n087_beggar-accepting-d" mid="11"><![CDATA[<html> (Talk about difficulties as an adventurer) </html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Ropi the Beggar$<BR> I know nothing about you. Have you got anything that you want to share? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-accepting-a" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Ropi the Beggar$<BR>You don’t learn. Haven’t I told you that? Talking about weather is for idiots. I thought you were getting smarter but not. <FONT color=#7e12d2>(Ropi looks at me with pity.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-accepting-b" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Ropi the Beggar$<BR>
+So stupid having concerns like that. At least you did start worrying earlier than other idiots so you may get the answer earlier. I think anyone to graduate from idiocy first is you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-accepting-c" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Ropi the Beggar$<BR>
+I guess that’s what family means to you. I don’t really understand about family. I lost contact with my family since  I was 10. I had a girl on my mind. If we had gotten married I may have a family like everyone else. </html>
+]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-accepting-d" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Ropi the Beggar$<BR>I always thought you are an idiot but to keep going on an adventure after all that? You must be an idiot. I was like you once, you remind me of my past when I look at you. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 8110, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 87, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 87, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 87, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 87, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n087_beggar" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n087_beggar" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n087_beggar" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n087_beggar" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] {user_nick}에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>87:17000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

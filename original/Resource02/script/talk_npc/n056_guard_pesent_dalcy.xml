@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n056_guard_pesent_dalcy</npcename>
+      <npcid>56</npcid>
+      <startexe>2</startexe>
+      <npckname mid="13"><![CDATA[Guard Darcy]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="14"><![CDATA[<html>$Guard Darcy$<BR>There are hordes of monsters on the loose in Shadow Forest. We're not sure if we can defeat them...</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq01_008_whereabouts_girl2</exe>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="enterquest">sq08_317_find_the_grandson2</exe>
+         <exe type="conexe" true="3" false="5">1</exe>
+         <exe type="conexe" true="6" false="0">2</exe>
+         <exe type="enterquest">mq01_019_whereabouts_girl</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">8</chk>
+         <chk type="hasquest">317</chk>
+         <chk type="hasquest">19</chk>
+      </conditions>
+   </talk>

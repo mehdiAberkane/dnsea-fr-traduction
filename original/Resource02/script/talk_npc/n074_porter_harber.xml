@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n074_porter_harber</npcename>
+      <npcid>74</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Harbour Porter]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Habour Porter$<BR>One thing good about staying in the city by the harbour is there is always work available for you, rain or shine. Ahhchoo!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_509_strange_asking2</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">509</chk>
+      </conditions>
+   </talk>

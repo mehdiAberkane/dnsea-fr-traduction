@@ -1,0 +1,291 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_615_overlooking_cape</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>615</qid>
+      <designer>김인정</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Nest] A faraway place]]></qkname>
+      <qnpc>
+         <npcid>312</npcid>
+         <npcename>n312_velskud_injured_wing</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Velskud$<BR>Move.<BR>I have nothing to say to trash like you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>In the meantime, go explore and find out if Black Dragon indeed has interest in the Dragon Followers. If he does, he will definitely follow their footsteps.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="79"><![CDATA[<html><FONT color=#086171>Quest accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$A faraway place$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_39.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Captain Douglas$<BR> If so, it's possible that Black Dragon will show up wherever the Dragon Followers are. <FONT color=#a82424>Go to Captain Darlant's headquarters</FONT>to see if Black Knight shows up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2" mid="11"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$General Douglas${action:Talk}<BR>If he shows up at Captain Darlant's headquarters, avoid confrontation as much as possible. <FONT color=#a82424>Concentrate on</FONT>Black Knight's next move.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-1" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Velskud$<BR>…I have no reason to fight you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$General Douglas$<BR>As you know, <FONT color=#a82424>Black Knight</FONT>is very powerful.<BR>
+Even if he appears at that place, don't try to fight him alone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-a" mid="17"><![CDATA[<html>Who are you to tell me that I'm trash?!</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Velskud$<BR>Hmmph, as soon as I clean out the trash, another trash appears.<BR>
+<FONT color=#7e12d2>(Velskud looks down scornfully.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-a" image="" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-b" mid="20"><![CDATA[<html>…Things I've done? What are you talking about…?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Velskud$<BR>You are right…. Now that I think about the things you've done, you don't even deserve to be called trash. Haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-b" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-c" mid="22"><![CDATA[<html>What are you talking about…?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Velskud${action:Talk}<BR><FONT color=#7e12d2>(Velskud mocks outloud)</FONT><BR>It looks like you don't even know what you have done.<BR>Should I tell you a few things before I leave Abandoned Firestone Mine?<BR>Just like the <FONT color=#a82424>one</FONT>you trusted ..  haha.…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-c" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-d" mid="24"><![CDATA[<html>Elena… Apostle?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Velskud$<BR><FONT color=#a82424>You were the one who tried to convince Elena</FONT> to spread the contaminated substance. Elena thought you had the little apostle. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-d" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-e" mid="86"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Velskud$<BR>I just did it to get rid of the annoying person, but I didn't think apostle will get hurt.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-e" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-f" mid="89"><![CDATA[<html>Ahh…</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Velskud$<BR>And <FONT color=#a82424>being</FONT>Ignacio's puppet and giving him the offering… that was you too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-f" image="QN_Npc_Geraint.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-g" mid="26"><![CDATA[<html>What's that suppose to mean…?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Velskud${action:Talk}<BR>Blind <FONT color=#a82424>Geraint</FONT>also tried to protect you and lost his life. But, the most stupid thing that you have done is that<FONT color=#a82424>you let Serpentra</FONT>taste blood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-g" image="QM_Sea_Dragon.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-h" mid="28"><![CDATA[<html>Wh,what??</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Velskud$<BR>Thanks to you, Serpentra<FONT color=#a82424>who was just passing by the sea </FONT> has <FONT color=#a82424>become</FONT>a dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-h" image="QM_Sea_Dragon.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-i" mid="31"><![CDATA[<html>I was trying to help people…</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Velskud$<BR>Just like I've said, because of your stupidity, <FONT color=#a82424>Serpentra</FONT>is now <FONT color=#a82424>a</FONT>sea-dragon.<BR> And there you go, looking completely innocent.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-i" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-j" mid="33"><![CDATA[<html>To get back Geraint's sword...</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Velskud${action:Talk}<BR>Someone who can't even take care of their own business?<BR><FONT color=#7e12d2>(Velskud smiles)<BR></FONT>You said you were trying to help people. So why are you following my steps, <FONT color=#387206>{user_class}</FONT> my Majesty?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-j" image="QP_Geraint_sword.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-k" mid="35"><![CDATA[<html>(Grrrrrr…)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Velskud$<BR><FONT color=#a82424>Geraint's sword?</FONT>… Why?<BR>Oh… is it because you were trying to hunt Serpentra with this sword?<BR>Tsk tsk… you don't even know who you are./html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-k" image="" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-l" mid="38"><![CDATA[<html>I'm… I'm not trash!!!</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Velskud$<BR>if you feel any responsibility or guilt, why don't you repay it by killing yourself?<BR>Then I wouldn't have to mess around with trash.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-l" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-m" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Velskud$<BR>Hmph. You are not doing anything but yapping away. At least trash is quiet.<BR>I'm better than you.<BR><FONT color=#7e12d2>(Velskud mocks)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-m" image="" itemindex="">
+      <talk_answer link_index="n312_velskud_injured_wing-2-n" mid="44"><![CDATA[<html>Bet…your life…...</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Velskud$<BR>if you want to prove that you are not trash, then don't beg for a sword. At least act like you are trying to take this responsibility with your life.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-2-n" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Velskud$<BR>…I'm lazy to even kill you.<BR>Just get the hell away.<BR><FONT color=#7e12d2>(I don't think Velskud wants to deal with you anymore.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n312_velskud_injured_wing-3" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Velskud$<BR><FONT color=#7e12d2>(Velskud refuses to talk anymore.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="49"><![CDATA[<html>I've met the Black Knight. But…</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Captain Douglas$<BR>Did you find the whereabouts of <FONT color=#a82424>Black Knight</FONT>from the Captain Darlant's headquarters?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="QP_Geraint_sword.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="51"><![CDATA[<html>I couldn’t get it back….</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$General Douglas$<BR>You've met the Black Knight…?<BR>
+Did you have a battle with him?<BR>
+<FONT color=#a82424>what happened</FONT>to Geraint's sword?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="53"><![CDATA[<html>To be honest…. Serpentra became a sea-dragon….</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$General Douglas$<BR>I didn't think he will give it up that easily anyway.<BR>But from your expression, it looks like you are having some problems of your own too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="QM_Sea_Dragon.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-d" mid="56"><![CDATA[<html>Black Knight said these things.</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$General Douglas${action:Talk2}<BR>What…?<BR>
+Serpentra <FONT color=#a82424>became a</FONT>sea-dragon?<BR>
+What are you talking about?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-d" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-e" mid="58"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$General Douglas$<BR>Hmm… I cannot believe it.<BR>
+<FONT color=#a82424>I cannot make a conclusion solely based on </FONT> his words.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-e" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-f" mid="60"><![CDATA[<html>He told me he is going to some red-dyed island.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$General Douglas$<BR>
+But, taking it as a joke could be fatal as well...<BR>
+<FONT color=#7e12d2>(General thinks)</FONT><BR>
+We need to confirm if Serpentra really became a sea-dragon. Did you hear anything else?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-f" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-g" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$General Douglas$<BR>If it's the Abandoned Firestone Mine….. I think it's the red bearded island… Is it talking about the old pirate's <FONT color=#a82424>red bearded base</FONT> island?<BR>I understand. I will send scouts to see what is going on.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-g" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-h" mid="64"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-h" image="" itemindex="">
+      <talk_question mid="65"><![CDATA[<html>$General Douglas$<BR>Wait for the patrols to <FONT color=#a82424>return from</FONT> the red-dyed isaland.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">615</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+         <exe type="recompense_view">6150,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6150,,,,,</exe>
+         <exe type="complete">615</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="a">2</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="b" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="c" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="d" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="e" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="f" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="g" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="h" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="i" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="j" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="k" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="l" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="m" />
+   <exelink qstep="2" npc="n312_velskud_injured_wing" sub="n">0,1</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="e" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="f" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="g">0</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="h">1</exelink>
+   <journal_data recompense="0:6150" quest_title="[네스트] 멀리 바라보는 자의 곶" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode />
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Talk to General Douglas]]></title>
+         <contents mid="67"><![CDATA[<html>Let's chat with General Douglas.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="69"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_39.dds</contents_image>
+         <destination_pos>393,n312</destination_pos>
+         <destination_mode>custom:391@1,392@1,393@4</destination_mode>
+         <statemark_npcid>312</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Unexpected Meeting]]></title>
+         <contents mid="71"><![CDATA[<html>Looks like Velskud is trailing the Dragon Followers. Let's go to the place where Dragon Followers are having their meeting and find Velskud.<BR><BR><FONT color=#086171>Hermalte Port(Forsaken Islet transportation)</FONT> <FONT color=#a82424>→ Near Captain Darlant</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Pursue Black Knight at the Captain Darlant's headquarters ]]></destination>
+         <todo_msg mid="73"><![CDATA[Pursue Black Knight at the Captain Darlant's headquarters ]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode />
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[To General Douglas]]></title>
+         <contents mid="75"><![CDATA[<html>Velskud is saying that Serpentra has become a sea-dragon. Let's tell this information to General Douglas.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Inform General Douglas]]></destination>
+         <todo_msg mid="77"><![CDATA[Go back to General Douglas and inform him]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>614</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

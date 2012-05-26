@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n188_slave_david</npcename>
+      <npcid>188</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Adventurer David]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="7"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer David$<BR>Ah hah! Are you a big fan of <FONT color=#a82424>Adventurer David</FONT>?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="">
+         <talk_question mid="8"><![CDATA[<html>$Adventurer David$<BR>When this body is filled with rage, the skies above shall cry and the earth shall tremble! Such is the awesome <FONT color=#a82424>hidden strength</FONT> of  the<FONT color=#a82424>Adventurer David</FONT>! Heh heh!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="">
+         <talk_answer link_index="q_enter" mid="20" link_target="sq08_264_argenta_book.xml"><![CDATA[<html>[Lv.18] <FONT color=#086171>Argenta's Reading</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="21"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Adventurer David$<BR>Oh, you want to be a great adventurer like me?<BR>Heh heh heh!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

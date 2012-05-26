@@ -1,0 +1,19 @@
+   <talk>
+      <npcename>n299_velskud</npcename>
+      <npcid>299</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Captain Knight Velskud]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Royal Knight Velskud$<BR>Geraint, are you certain?<BR><FONT color=#7e12d2>[Velskud does not seem to notice your presence.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="8" link_target="sq11_602_fast_fermentation.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Rapid Fermentation Recipe</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="10"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Royal Knight Velskud$<BR>I have a bad feeling about this place.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

@@ -1,0 +1,45 @@
+   <talk>
+      <npcename>n368_cart_ticketer_lornene</npcename>
+      <npcid>368</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Ticket Agent Lorraine]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="go_prairie" mid="43"><![CDATA[<html>[Purchase Ticket to Prairie Town]</html>]]></talk_answer>
+         <talk_answer link_index="go_manaridge" mid="44"><![CDATA[<html>[Purchase Ticket to Mana Ridge]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Ticket Agent Lorraine$<BR>Welcome. The <FONT color=#a82424>Atlantis</FONT> is the official Royal Rapid Transit.<BR>Please purchase a boarding ticket to your destination.<BR>[<FONT color=#7e12d2>Please leave your party before boarding.</FONT>]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="no_gold" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Ticket Agent Lorraine$<BR>Sorry but you do not seem to have enough for the ticket. <BR>Please check your Inventory.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party_member" image="" itemindex="">
+         <talk_question mid="7"><![CDATA[<html>$Ticket Agent Lorraine$<BR>Sorry but this is a ticket for one only. <BR>Your friends cannot board the Atlantis.<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_prairie" image="QW_PrairieTown.dds" itemindex="">
+         <talk_answer link_index="001" mid="60"><![CDATA[<html>I want to select another destination.</html>]]></talk_answer>
+         <talk_answer link_index="move_1" mid="61"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Ticket Agent Lorraine$<BR>The boarding ticket to <FONT color=#a82424>Prairie Town</FONT> will cost <FONT color=#a82424>5 Silvers</FONT>.<BR>Do you want to head to <FONT color=#a82424>Prairie Town</FONT>?<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_manaridge" image="QW_ManaRidge.dds" itemindex="">
+         <talk_answer link_index="001" mid="62"><![CDATA[<html>I want to select another destination.</html>]]></talk_answer>
+         <talk_answer link_index="move_2" mid="63"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_question mid="56"><![CDATA[<html>$Ticket Agent Lorraine$<BR>The boarding ticket to <FONT color=#a82424>Mana Ridge</FONT> will cost <FONT color=#a82424>5 Silvers</FONT>.<BR>Do you want to head to <FONT color=#a82424>Mana Ridge</FONT>?<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="5">0</exe>
+         <exe type="conexe" true="7,8" false="6">1</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="conexe" true="7,9" false="6">1</exe>
+         <exe type="talk">no_gold</exe>
+         <exe type="talk">party_member</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 500 );</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,1,1);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,5,1);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_user_EnoughCoin(userObjID, 500 ) == 1</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <exelink idx="move_1">1</exelink>
+      <exelink idx="move_2">3</exelink>
+   </talk>

@@ -1,0 +1,288 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_359_estimations_of_art</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>359</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>메이의 그림	400255
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Naysayers]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>May's been too quiet recently, it's unsettling.<BR>Could it be the calm before the storm?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Young Crew Member Kevin$<BR>Sister May's acting strange lately.<BR>When I asked her what's going on, she said I was too young to know!<BR> Curiousity kills the cat, I'm dying to know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Master Archer Adelynn$<BR>May seems to be very passionate about something.<BR>Looks like she's finally found something worthwhile to work on.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="9"><![CDATA[<html>What is it this time?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>Haha! You're here!<BR><FONT color=#7e12d2>(May seems to be fired up)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="11"><![CDATA[<html>Congratulations.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant May$<BR>Finally! I've finished my work for the Royal Art Contest!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="13"><![CDATA[<html>A request?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant May$<BR>So, I've got something to request from you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="15"><![CDATA[<html>Why should I do it?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant May$<BR>I spent all my time painting that the work in the shop has piled to no end.<BR>I'd like you to take my painting and get others' reviews.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="17"><![CDATA[<html>I do not remember seeing that!</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Merchant May$<BR>Hoho, the slav-, no, lifetime employment contract signed by <FONT color=#387206>{user_nick}</FONT>, did you forget? Section 49, Sub-section 7E clearly states that <FONT color=#387206>{user_nick}</FONT> shall not refuse my requests.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-a" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(There's no way to get out of this)</FONT><BR>Well then, I'll let you know the people who will evaluate my work.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-a" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Supplies Merchany May$<BR><FONT color=#a82424>Kevin</FONT> who does not prejudice, <FONT color=#a82424>Heraldry Scholar Bailey</FONT> who can give rational assessments and Sister <FONT color=#a82424>Adelynn</FONT>, whose <FONT color=#a82424>aesthetic consciousness surpasses beyond races</FONT>! Please get their reviews in sequence.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>May's been too quiet recently, it's unsettling.<BR>Could it be the calm before the storm?<BR><FONT color=#7e12d2>(Finish conversation with Young Crew Member Kevin first)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Archer Adelynn$<BR>May seems to be very passionate about something.<BR>Looks like she's finally found something worthwhile to work on.<BR><FONT color=#7e12d2>(Finish conversation with Young Crew Member Kevin first)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-1-a" mid="26"><![CDATA[<html>(Request to evaluate May's work)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Young Crew Member Kevin$<BR>Oh? What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-1-b" mid="28"><![CDATA[<html>Looks like?!</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Young Crew Member Kevin$<BR>Hmm… This, looks like!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-2" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Young Crew Member Kevin$<BR>Looks like the one I painted back in nursery, hehe.<BR>For this kind of standard, only my feet is required.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Young Crew Member Kevin$<BR>So Sister May can't draw?<BR><FONT color=#7e12d2>(I'd better go hear Heraldry Scholar Bailey's review soon)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Master Archer Adelynn$<BR>May seems to be very passionate about something.<BR>Looks like she's finally found something worthwhile to work on.<BR>But why does <FONT color=#a82424>Heraldry Scholar Beilay</FONT> look so uneasy?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="34"><![CDATA[<html>(Request to evaluate May's work)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="36"><![CDATA[<html>What do you think?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Hmm, This...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3" mid="38"><![CDATA[<html>It's that bad?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>It's a horrifying experience. I've never seen such a dreadful choice of colors and composition in my life.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Put the evaluation aside, it's a complete disaster! I predict May will bring forth disaster to Calderock Village very soon.<FONT color=#7e12d2> (Let's go find Master Archer Adelynn)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-3" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Young Crew Member Kevin$<BR>So Sister May can't draw?<BR><FONT color=#7e12d2>(I'd better go hear Master Archer Adelynn's review soon)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-a" mid="42"><![CDATA[<html>(Request to evaluate May's work)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Master Archer Adelynn$<BR>How can I help you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-b" mid="44"><![CDATA[<html>Looks like?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Master Archer Adelynn$<BR>Ah, so this was what May's been working hard for these few days.<BR><FONT color=#7e12d2>(Adelynn looks at the painting silently)</FONT><BR>This looks like...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-b" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4" mid="46"><![CDATA[<html>W-what is it?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Archer Adelynn$<BR>The colors resembles the curled up water snakes from Lotus Marsh, or a bunch of rotting branches off the forest. <FONT color=#7e12d2>(Adelynn's honest opinion without malice)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Master Archer Adelynn$<BR>Umm, U'm sorry. As an elf it's hard for me to comprehend human art.<BR><FONT color=#7e12d2>(All reviews received, return to May)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-a" mid="49"><![CDATA[<html>(Hears all the negative criticism)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Merchant May$<BR>That's fast?!<BR>What did everyone say?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-b" mid="51"><![CDATA[<html>(You can't bring yourself to say she can't draw for nuts)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Merchant May$<BR>Kevin's still a child, he knows nothing about art. Why did Heraldry Scholar Bailey and Adelynn say something like that? What could be the problem?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-c" mid="53"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Merchant May$<BR>I'm not in the best of moods right now so leave me alone.<BR><FONT color=#7e12d2>(It's best to let her calm down first)</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3591,3592,3593,3594,3595</exe>
+         <exe type="setquest">359</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="addquestitem" num="1">400255</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3591,3592,3593,3594,3595</exe>
+         <exe type="complete">359</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n029_crew_kevin" sub="b" />
+   <exelink qstep="1" npc="n029_crew_kevin" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="b">0</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="c">1,2</exelink>
+   <journal_data recompense="1:3591,2:3592,3:3593,4:3594,5:3595" quest_title="메이의 작품평가" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="400255">
+      <journal index="1">
+         <contents_image>QN_crew_kevin.dds</contents_image>
+         <destination_pos>8,n29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>29</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Young Crew Member Kevin's Evaluation]]></title>
+         <contents mid="56"><![CDATA[<html>Hear Young Crew Member Kevin's review on the painting.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Young Crew Member Kevin</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Young Crew Member Kevin]]></destination>
+         <todo_msg mid="58"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Heraldry Scholar Bailey's Evaluation]]></title>
+         <contents mid="68"><![CDATA[<html>Hear Heraldry Scholar Bailey's review on the painting.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="70"><![CDATA[Talk to Heraldry Scholar Bailey.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="71"><![CDATA[Talk to Master Archer Adelynn]]></title>
+         <contents mid="72"><![CDATA[<html>Hear Master Archer Adelynn's review on the painting.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Archer Adelynn</FONT></html>]]></contents>
+         <destination mid="73"><![CDATA[Talk to Master Archer Adelynn]]></destination>
+         <todo_msg mid="74"><![CDATA[Talk to Master Archer Adelynn.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Talk to Merchant May.]]></title>
+         <contents mid="76"><![CDATA[<html>Return to May and convey everyone's reviews.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="78"><![CDATA[Talk to Merchant May.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>358</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

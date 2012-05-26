@@ -1,0 +1,94 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq09_7702_saint_guardjoy_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7702</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Saint Haven]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="7"><![CDATA[<html>It's smaller than I expected.</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="8"><![CDATA[<html>Do you like any particular areas?</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="9"><![CDATA[<html>How was your hometown like?</html>]]></talk_answer>
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="10"><![CDATA[<html>Why did you change your mind after joining the army?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Royal Guard Joey$<BR>Saint Haven is very big city compared to my hometown. When I came here at first, I was impressed by the size. After getting used to this place, I thought here is not that big after all, but I changed my mind after joining the army.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Royal Guard Joey$<BR>Hmm, is it? I was born in the country so I might think so.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Royal Guard Joey$<BR>The bar next to the Blacksmith. The place usually opens at night, and funny things happen there. Well, {user_nick} has never been there yet. If you have a chance, please visit there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Royal Guard Joey$<BR>It's just a countryside but small and cozy. Malcolm was born in that place too and we've been friends since childhood. Oh, I really miss my hometown.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Royal Guard Joey$<BR>
+Well, as a guard here, this place seems too big. Especially the inside of the Royal Castle, it is just huge but it doesn’t have useful space though. Oh, please keep my words as secret.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7702, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 252, 180 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 252, 80 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 252, 120 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 252, 180 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 세인트 헤이븐에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>252:450:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

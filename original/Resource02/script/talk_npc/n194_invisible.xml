@@ -1,0 +1,23 @@
+   <talk>
+      <npcename>n194_invisible</npcename>
+      <npcid>194</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Crooked Statue]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>[The statue is rather annoying...]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="4"><![CDATA[<html>$Crooked Statue$<BR>After your visit, no one seems to care about me anymore. Boohoohoo… but there's nothing I can do. I'm just a stonepiece.<FONT color=#7e12d2>[The statue looks rather sad.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="conexe" true="4" false="3">1</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">sq01_065_shoddy_statue</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 65 ) == 1</chk>
+         <chk type="hasquest">65</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,264 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_513_birth_of_abyss1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>513</qid>
+      <designer>김인정</designer>
+      <qlevel>31</qlevel>
+      <qdesc>군터와 대화
+스타쉬와 대화
+어비스 5군데를 돌며 보스를 잡고, 보옥을 습득
+스타쉬에게 보고</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>514</nextqid>
+      <nextqname>sq11_514_birth_of_abyss2</nextqname>
+      <nextqnpc>n088_scholar_starshy</nextqnpc>
+      <qkname mid="1"><![CDATA[Birth of the Abyss I]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Stas$<BR>This is really tough. <FONT color=#7e12d2>(Mumbles to himself. Go to Adventurer Guild Master Gunther to find out more.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html>Oh no...</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Adventurer Guild Master Gunther$<BR>I thought the evil has been vanquished with <FONT color=#a82424>General Douglas</FONT>' help. I did not expect stronger monsters to appear instead. Are you interested to help?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="9"><![CDATA[<html>Things are turning bad.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Adventurer Guild Master Gunther$<BR>I have requested aid at Calderock Village, do check it out.<FONT color=#a82424>Abyss Level</FONT>... It seems that he is the culprit. Similar incidents are occurring at Saint Haven too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="11"><![CDATA[<html>Understood.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Adventurer Guild Master Gunther$<BR>Such rumors can be disheartening. I have also sought aid from <FONT color=#a82424>Heraldry Scholar</FONT> <FONT color=#a82424>Stas</FONT>. Do ask him for more details.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Accept Mission</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Birth of the Abyss I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Adventurer Guild Master Gunther$<BR>Find <FONT color=#a82424>Heraldry Scholar Stas</FONT>. Tell him to  conceal the news of the events at Calderock Gateway. What is going on? We can only place hope in him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-a" mid="18"><![CDATA[<html>What should I do?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I've heard about it. It seems that <FONT color=#a82424>Abyss</FONT>is the problem.<BR>Who would have thought that it will affect <FONT color=#a82424>Saint Haven</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-b" mid="21"><![CDATA[<html>(Stas shakes his head in disbelief)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldry Scholar Stas$<BR>What can we do? There is no way to destroy the  <FONT color=#a82424>Abyss</FONT> currently. As a scholar, that's all I can do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-c" mid="23"><![CDATA[<html>What can be done?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldry Scholar Stas$<BR>This is not something which soldiers can resolve, but it is different for a single adventurer. Are you willing to challenge the impossible<FONT color=#a82424>Abyss</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-c" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-d" mid="25"><![CDATA[<html>Understood.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Besides <FONT color=#a82424>collecting information</FONT>, what else can be done? Soldiers follow orders, thus investigation is limited, but as an adventurer, you have more freedom right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-e" mid="27"><![CDATA[<html>What artefacts of evil do I need to destroy?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Go and investigate the new <FONT color=#a82424>Abyss</FONT> and collect a few Gems of Change. I've heard that the Calderock Village adventurers have gathered some information as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-f" mid="29"><![CDATA[<html>Understood.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Heraldry Scholar Stas$<BR><FONT color=#a82424>Nomehulk</FONT>, hunt <FONT color=#a82424>Stone Wing</FONT>, <FONT color=#a82424>Thick Thorns</FONT>, <FONT color=#a82424>Fire Wing</FONT>, and collect <FONT color=#a82424>Gems of Change</FONT> from <FONT color=#a82424>City of the Dead</FONT> . It's embarrassing to ask so much at once but we have limited strength currently. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-f" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-1-g" mid="31"><![CDATA[<html>Understood.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Let me remind the Abyss you should visit: <FONT color=#a82424>Black Mountain</FONT>, <FONT color=#a82424>Abandoned Welton Hallow</FONT>, <FONT color=#a82424>Forsaken Islet</FONT>, <FONT color=#a82424>Dark Overlord Keep</FONT>, <FONT color=#a82424>Collapsed Mine</FONT>. Defeat the Abyss <FONT color=#a82424>Boss</FONT>, and receive Gems of Change.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1-g" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Do not forget. You must enter the <FONT color=#a82424>Abyss</FONT> regions. Defeat the <FONT color=#a82424>BOSS </FONT> in the Abyss to obtain the Gem of Change.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-a" mid="35"><![CDATA[<html>Repeat.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I can understand if you can't remember where to go. I know it is not easy, but I hope you will succeed on the first try.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-2-b" mid="37"><![CDATA[<html>Understood.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Understood. There are Five Abyss areas appearing in Saint Haven. <FONT color=#a82424>Black Mountain Foothill</FONT>, <FONT color=#a82424>Abandoned Welton Hollow</FONT>, <FONT color=#a82424>Forsaken Islet</FONT>, <FONT color=#a82424>Dark Overlord Keep</FONT>, <FONT color=#a82424>Collapsed Mine</FONT>... Remember these places.  Enter the <FONT color=#a82424>Abyss</FONT>and defeat the monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-2-b" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Enter the <FONT color=#a82424>Abyss</FONT> area. Defeat the monsters and obtain the Gems of Change.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Adventurer Guild Master Gunther$<BR>Help<FONT color=#a82424>Heraldry Scholar</FONT> <FONT color=#a82424>Stas</FONT>, for the sake of Saint Haven.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-a" mid="41"><![CDATA[<html>(Hand over Gems of Change)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Haha! You have the <FONT color=#a82424>precious Gems of Change</FONT>?<BR>The investigation of the Abyss is going no where, your help is timely.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-a" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-b" mid="43"><![CDATA[<html>(Stas heave a sigh of relieve)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Heraldry Scholar Stas$<BR>That's right. Due to <FONT color=#a82424>unusual effects</FONT>, the monsters are aggressive. Finish up your investigation quickly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-3-b" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-3-!next" mid="45"><![CDATA[<html><FONT color=#086171>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">513</exe>
+         <exe type="recompense_view">,5131,5132,5133,5134,5135</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="prob">1000</chk>
+         <chk type="questitem" num="1" op="]=">300216</chk>
+         <chk type="questitem" num="1" op="]=">300217</chk>
+         <chk type="questitem" num="1" op="]=">300218</chk>
+         <chk type="questitem" num="1" op="]=">300219</chk>
+         <chk type="questitem" num="1" op="]=">300220</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">,5131,5132,5133,5134,</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200806</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200889</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200870</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200827</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200858</exe>
+         <exe type="conexe" true="26" false="21">1</exe>
+         <exe type="conexe" true="26" false="22">2</exe>
+         <exe type="conexe" true="26" false="23">3</exe>
+         <exe type="conexe" true="26" false="24">4</exe>
+         <exe type="conexe" true="26" false="25">5</exe>
+         <exe type="addquestitem" num="1">300216</exe>
+         <exe type="addquestitem" num="1">300217</exe>
+         <exe type="addquestitem" num="1">300218</exe>
+         <exe type="addquestitem" num="1">300219</exe>
+         <exe type="addquestitem" num="1">300220</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300216</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300217</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300218</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300219</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300220</exe>
+         <exe type="conexe" true="11,26" false="">0</exe>
+         <exe type="conexe" true="12,26" false="">0</exe>
+         <exe type="conexe" true="13,26" false="">0</exe>
+         <exe type="conexe" true="14,26" false="">0</exe>
+         <exe type="conexe" true="15,26" false="">0</exe>
+         <exe type="conexe" true="27,30,31" false="">1 and 2 and 3 and 4 and 5</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5131,5132,5133,5134,5135</exe>
+         <exe type="delquestitem" num="-1">300216</exe>
+         <exe type="delquestitem" num="-1">300217</exe>
+         <exe type="delquestitem" num="-1">300218</exe>
+         <exe type="delquestitem" num="-1">300219</exe>
+         <exe type="delquestitem" num="-1">300220</exe>
+         <exe type="complete">513</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">1</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="d" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="e" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="f" />
+   <exelink qstep="1" npc="n088_scholar_starshy" sub="g">28,16,17,18,19,20,1,2,3,4,5,29</exelink>
+   <exelink qstep="2" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="b">0</exelink>
+   <exelink qstep="3" npc="n088_scholar_starshy" sub="!next">1,2,3,4,5,6</exelink>
+   <journal_data recompense="1:5131,2:5132,3:5133,4:5134,5:5135" quest_title="어비스의 탄생 I" chapterid="" quest_level="31" quest_mark_type="10" use_item_list="300216,300217,300218,300219,300220">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Saint Haven Abyss]]></title>
+         <contents mid="48"><![CDATA[<html><FONT color=#a82424>Saint Haven</FONT>Monsters are appearing around the<FONT color=#a82424>Abyss</FONT>. Find <FONT color=#a82424>Heraldry Scholar Stas</FONT>.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="50"><![CDATA[Listen to  Heraldry Scholar Stas]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image />
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Collect Gems of Change]]></title>
+         <contents mid="52"><![CDATA[<html>Clear<FONT color=#a82424>Abyss</FONT>area<FONT color=#a82424>monsters</FONT>and collect Gems of Change.<BR><BR><FONT color=#086171>Hermalte Port (Black Mountain Foothill)</FONT> <FONT color=#a82424>→ Black Mountain</FONT><BR><FONT color=#086171>Foothill(Lonely Forest Path)<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Abandon Welton Hallow</FONT></FONT><BR><FONT color=#086171>Hermalte Port (Sunken Cargo Ship)</FONT> <FONT color=#a82424>→ Forsaken Islet<BR></FONT><FONT color=#086171>Black Mountain Foothill (Entrance to Dark Overlord Keep)<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Dark Overlord Keep</FONT></FONT><BR><FONT color=#086171>Hermalte Port(Black Mountain)</FONT> <FONT color=#a82424>→ Collapsed Mine</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Collect Gems of Change]]></destination>
+         <todo_msg mid="54"><![CDATA[Collect precious stones from the Abyss.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Complete collection]]></title>
+         <contents mid="57"><![CDATA[<html>Return the precious stone to Heraldry Scholar Stas.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Speak with Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="59"><![CDATA[Hand the collected Gems of Change to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>31:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

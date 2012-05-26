@@ -1,0 +1,333 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_645_paganish_name</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>645</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>646</nextqid>
+      <nextqname>sq11_646_destroyed_sealing_box</nextqname>
+      <nextqnpc>n046_cleric_master_enoc</nextqnpc>
+      <qkname mid="1"><![CDATA[Cult Members' Names]]></qkname>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>429</npcid>
+         <npcename>n429_edan</npcename>
+         <npckname>클레릭 에단</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>430</npcid>
+         <npcename>n430_angelica</npcename>
+         <npckname>소서리스 안젤리카</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>46</npcid>
+         <npcename>n046_cleric_master_enoc</npcename>
+         <npckname>상급 클레릭 에녹</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-noquest" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Enoch$<BR>Are you still seaching for Celestine's Rosary by the order of the Duke?<BR>If you happen to find other Relic Artifacts in the process, please return them to the church.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n430_angelica-noquest" image="" itemindex="">
+      <talk_question mid="141"><![CDATA[<html>$Sorceress Angelica$<BR>What I do here is none of your concern.<BR>Mind your own business!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n429_edan-noquest" image="" itemindex="">
+      <talk_question mid="142"><![CDATA[<html>$Cleric Ethan$<BR>I am on a mission from the church.<BR>If you have business with me, please state them later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Duke Stuart$<BR>I've looked through the contents of the letter you brought...<BR>Disturbing they were but I have never heard of those names...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-b" mid="23"><![CDATA[<html>(Duke frowns)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Duke Stuart$<BR>I've searched through the royal records for the name of Rodain and Lucifina...<BR>But there were none regarding those names.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-acceptted" mid="25"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Cult Members' Names$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-a" mid="110"><![CDATA[<html>An unfortunate incident?</html>]]></talk_answer>
+      <talk_question mid="109"><![CDATA[<html>$Duke Stuart$<BR>…I have examined the lineage thoroughly but there were no Rodain and Lucifina to be found.<BR>I believe they were erased from the records due a connection with the unfortunate incident.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-a" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-1-b" mid="112"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Duke Stuart$<BR>Throughout the history of the kingdom, <FONT color=#a82424>cult incidents</FONT>involved royal bloods from time to time.<BR>Those members of the royal family were erased from the records to uphold the honor of the royal family.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-1-b" image="QN_Npc_Cl_master_Enoc.dds" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-2" mid="144"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Duke Stuart$<BR>If they were involved in a cult incident, royal records would have been erased but the church might still carry their names. Please visit<FONT color=#a82424>Master Cleric Enoch</FONT>and examine the church records instead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1" image="" itemindex="">
+      <talk_question mid="113"><![CDATA[<html>$Master Cleric Enoch$<BR>Are you still seaching for Celestine's Rosary by the order of the Duke?<BR>If you happen to find other Relic Artifacts in the process, please return them to the church.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n429_edan-1" image="" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$Cleric Ethan$<BR>
+I'm on a mission from the church.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n430_angelica-1" image="" itemindex="">
+      <talk_question mid="146"><![CDATA[<html>$Sorceress Angelica$<BR>What I do here is none of your concern.<BR>Mind your own business!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-2" image="QN_Npc_Cl_master_Enoc.dds" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$Duke Stuart$<BR>Hmm, I hope <FONT color=#a82424>Master Cleric Enoch</FONT>would find some evidence from the records.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-2-a" mid="148"><![CDATA[<html>(State your business)</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Master Cleric Enoch$<BR>What happened??<BR>Did you find the treasure?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-2-b" mid="150"><![CDATA[<html>How come?</html>]]></talk_answer>
+      <talk_question mid="149"><![CDATA[<html>$Master Cleric Enoch$<BR>If they were indeed involved with a cult incident, than the records must be holding their names.<BR>
+But sadly, there's no way of finding out for the time being.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2-b" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-2-c" mid="152"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="151"><![CDATA[<html>$Master Cleric Enoch$<BR>Recently, massive amounts of documents held in the church were stolen.<BR>
+And the cult trial record was among the stolen documents. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2-c" image="QW_39.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3" mid="154"><![CDATA[<html>I will take on the mission!</html>]]></talk_answer>
+      <talk_question mid="153"><![CDATA[<html>$Master Cleric Enoch$<BR>According to my research, the majority of stolen documents are near <FONT color=#a82424>Captain Darlant's Base</FONT>. We sent a team of Clerics to recover those documents but we never heard from them again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3" image="QW_39.dds" itemindex="">
+      <talk_question mid="155"><![CDATA[<html>$Master Cleric Enoch$<BR>Well, maybe you should head to<FONT color=#a82424>Captain Darlant's base</FONT>.<BR>
+If you happen to meet <FONT color=#a82424>Cleric Ethan</FONT>,ask him whether he found the documents or not.<BR>
+ <BR>
+<FONT color=#7e12d2>※ Cannot proceed with quest in current party status.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n429_edan-3" image="" itemindex="">
+      <talk_answer link_index="n429_edan-3-a" mid="157"><![CDATA[<html>Master Cleric Enoch sent us for his bidding.</html>]]></talk_answer>
+      <talk_question mid="156"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>You are the<FONT color=#387206>{user_class}</FONT>I met before. I apologize for my past actions.<BR>I'm currently on a church mission, so if you have personal issues please state them later..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n429_edan-3-a" image="" itemindex="">
+      <talk_answer link_index="n429_edan-4" mid="159"><![CDATA[<html>It is so.</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Cleric Ethan$<BR>What? Master Cleric Enoch? <FONT color=#7e12d2>(After listening to the whole story, Eden nods his head)</FONT> You need  the cult trial record to find out more about them?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n429_edan-4" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_question mid="160"><![CDATA[<html>$Cleric Ethan$<BR>I didn't find any records about the heresey trial. I will try to find it, and if you find it around here, please tell me.<BR><FONT color=#7e12d2>(A strange sorceress is working secretly around here.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n430_angelica-4" image="" itemindex="">
+      <talk_answer link_index="n430_angelica-4-a" mid="162"><![CDATA[<html>Have you seen church documents around here?</html>]]></talk_answer>
+      <talk_question mid="161"><![CDATA[<html>$Sorceress Angelica${action:Talk}<BR>What? What??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n430_angelica-4-a" image="" itemindex="">
+      <talk_answer link_index="n430_angelica-4-b" mid="164"><![CDATA[<html>Then why are you stammering??</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$Sorceress Angelica$<BR>Doc, dcuments of the church?<BR>Wh, why would I have seen such a thing?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n430_angelica-4-b" image="" itemindex="">
+      <talk_answer link_index="n430_angelica-5" mid="166"><![CDATA[<html>(The garments do look cold)</html>]]></talk_answer>
+      <talk_question mid="165"><![CDATA[<html>$Sorceress Angelica$<BR>
+It's, it's just because of the cold sea wind!!<BR>
+Nothing else! Hmph!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n430_angelica-5" image="" itemindex="">
+      <talk_question mid="167"><![CDATA[<html>$Sorceress Angelica$<BR>I'm not as free as you are so leave me be!<BR><FONT color=#7e12d2>(It seems I will not find the cult trial record around here.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n429_edan-5" image="" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$Cleric Ethan$<BR>
+I believe there is no cult trial record here.<BR>
+It seems we have hit a dead end.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-5" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-5-a" mid="170"><![CDATA[<html>(Report the situation)</html>]]></talk_answer>
+      <talk_question mid="169"><![CDATA[<html>$Master Cleric Enoch$<BR>
+Have you found the cult trial record? I thought Eden would be able to find it but if he was not able to, the documents must have been swept further away...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-5-a" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-5-b" mid="172"><![CDATA[<html>Yes, with hair and face like this…</html>]]></talk_answer>
+      <talk_question mid="171"><![CDATA[<html>$Master Cleric Enoch$<BR>Wait! There was a Sorceress?!<BR>Can you tell me a bit about the <FONT color=#a82424>Sorceress</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-5-b" image="QN_Npc_Angelica.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-5-c" mid="174"><![CDATA[<html>Someone you know?</html>]]></talk_answer>
+      <talk_question mid="173"><![CDATA[<html>$Master Cleric Enoch$<BR>Hmmm, that Sorceress.<BR>For sure!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-5-c" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-5-d" mid="176"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="175"><![CDATA[<html>$Master Cleric Enoch$<BR>Recently, a young Sorceress suspected of being a<FONT color=#a82424>cult member</FONT>aproached the dangerous artifacts multiple times.<BR>Based on your description, I think I know who the Sorceress is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-5-d" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-5-!next" mid="178"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">645</exe>
+         <exe type="recompense_view">6450,,,,,</exe>
+         <exe type="talk" npc="n041_duke_stwart">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6450,,,,,</exe>
+         <exe type="complete">645</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n041_duke_stwart" sub="b" />
+   <exelink qstep="1" npc="n041_duke_stwart" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n046_cleric_master_enoc" sub="b" />
+   <exelink qstep="2" npc="n046_cleric_master_enoc" sub="c" />
+   <exelink qstep="2" npc="n046_cleric_master_enoc" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n429_edan" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n430_angelica" sub="b" />
+   <exelink qstep="4" npc="n430_angelica" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n046_cleric_master_enoc" sub="b" />
+   <exelink qstep="5" npc="n046_cleric_master_enoc" sub="c" />
+   <exelink qstep="5" npc="n046_cleric_master_enoc" sub="d">0</exelink>
+   <exelink qstep="5" npc="n046_cleric_master_enoc" sub="!next">1</exelink>
+   <journal_data recompense="0:6450" quest_title="이단자의 이름들" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Duke_Stwart.dds</contents_image>
+         <destination_pos>21,n41</destination_pos>
+         <destination_mode />
+         <statemark_npcid>41</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Stuart's Opinion]]></title>
+         <contents mid="89"><![CDATA[<html>Continue talking to Duke Stuart.<BR><BR><FONT color=#086171>Inside Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Duke Stuart</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Duke Stuart]]></destination>
+         <todo_msg mid="91"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="179"><![CDATA[Enoch's opinion]]></title>
+         <contents mid="180"><![CDATA[<html>Go to Master Cleric Enoch and ask if he has records about Rodain and Lucifina.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="181"><![CDATA[Talk to Master Cleric Enoch]]></destination>
+         <todo_msg mid="182"><![CDATA[Talk to Master Cleric Enoch]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Edan.dds</contents_image>
+         <destination_pos>393,n429</destination_pos>
+         <destination_mode>custom:391@1,392@1,393@1</destination_mode>
+         <statemark_npcid>429</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="183"><![CDATA[Captain Darlant's Base]]></title>
+         <contents mid="184"><![CDATA[<html>Meet Cleric Ethan at Captain Darlant's Base to ask about the cult trial records.<BR>
+<BR><FONT color=#7e12d2>※ Cannot proceed with quest in current party status.</FONT><BR>
+<FONT color=#086171></FONT> <BR>
+<FONT color=#086171>Hermalte Port(Charter Ship)</FONT> <FONT color=#a82424>→ Near Captain Darlant(Cleric Ethan)</FONT></html>]]></contents>
+         <destination mid="185"><![CDATA[(Solo) Conversation with Cleric Ethan at Captain Darlant's Base]]></destination>
+         <todo_msg mid="186"><![CDATA[Talk to Cleric Ethan at Captain Darlant's Base]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Angelica.dds</contents_image>
+         <destination_pos>393,n430</destination_pos>
+         <destination_mode>custom:391@1,392@1,393@1</destination_mode>
+         <statemark_npcid>430</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="187"><![CDATA[A Different Person]]></title>
+         <contents mid="188"><![CDATA[<html>Cleric Enoch has not found the cult trial record. Examine Captain Darlant's Base a little more.<BR>
+<BR><FONT color=#7e12d2>※Cannot proceed with quest in current party status.</FONT><BR>
+<FONT color=#086171></FONT> <BR>
+<FONT color=#086171>Hermalte Port(Charter Ship)</FONT> <FONT color=#a82424>→ Near Captain Darlant</FONT></html>]]></contents>
+         <destination mid="189"><![CDATA[(Solo) Explore Captain Darlant's Base]]></destination>
+         <todo_msg mid="190"><![CDATA[Talk to the unfamiliar Sorceress at Captain Darlant's Base.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="191"><![CDATA[Report]]></title>
+         <contents mid="192"><![CDATA[<html>Found the suspicious Sorceress at Captain Darlant's Base. The cult trial record is still nowhere to be foound. Report to Master Cleric Enoch at Saint Haven.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="193"><![CDATA[Chat with Master Cleric Enoch]]></destination>
+         <todo_msg mid="194"><![CDATA[Report to Master Cleric Enoch.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest>644</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

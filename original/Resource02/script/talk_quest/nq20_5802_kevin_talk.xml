@@ -1,0 +1,101 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq20_5802_kevin_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5802</qid>
+      <designer>김인정</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Father's Ring]]></qkname>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-a" mid="7"><![CDATA[<html>You miss your dad?</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-c" mid="8"><![CDATA[<html>Engineer is great too.</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-e" mid="9"><![CDATA[<html>Why don't you become a crew member then?</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-f" mid="20"><![CDATA[<html>My dad is a crew member too. Jealous?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Kevin$<BR>I thought my father was a great crew member... but he was actually an engineer and an adventurer! Aww... how boring.<BR>It would be so nice to have a father who is a crew member. I could have a pilot hat as a gift and even let ride the airship. I'm really jealous.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-b" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Kevin$<BR>NOO!!! My mum said, only kids under five-years-old would cry and say they miss their daddy and mummy.<BR>I'm a big boy now and I don't cry thinking about my father and mother.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-b" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Kevin$<BR>But sometimes, I would dream of him. In my dreams, Dad would give me a piggy-back ride and I can even ride the airship with him. Hehe...<BR><FONT color=#7e12d2>(Kevin looking at his father's ring.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-d" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Kevin$<BR>Hmph, what's cool about an engineer?<BR>Crew member is much much cooler!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-d" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Kevin$<BR>But sometimes, when I get to see my father in my dreams, he looks cool... Whether or not he's a crew member... Hehe.<BR><FONT color=#7e12d2>(Kevin looking at his father's ring.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-e" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Kevin$<BR>Hehe, yes!! If I become a crew member, my kids will then have a crew member Daddy!<BR>You…are SOOOO smart!!<BR><FONT color=#7e12d2>(Kevin is so delighted that he jumps up and down)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-f" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Kevin$<BR>Oh... Is it? I thought you are the lucky person...<BR><BR><FONT color=#7e12d2>(Kevin seems kind of upset.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5802, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 29, 150 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 29, -150 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 29, 300 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 29, 300 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="c">2,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="e">3,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="f">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 아버지의 반지에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>29:750:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,32 @@
+   <talk>
+      <npcename>n112_wisp_kevin</npcename>
+      <npcid>112</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Odd Technicians of the Future]]></npckname>
+      <talk_paragraph index="001" image="QM_Wisp_Giant.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="25" link_target="sq11_606_eyewitness_stella.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Stella's Sightings</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="sq11_607_engineer_of_future.xml"><![CDATA[<html>[Lv.40] <FONT color=#a82424> Engineer From The Future </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="sq11_608_incomplete_compass.xml"><![CDATA[<html>[Lv.40] <FONT color=#a82424> Faulty Compass </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="sq11_609_foretell_compass.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Prophetic Compass</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="sq11_610_ensure_a_future.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>The Other Future</FONT></html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Odd Technician$<BR><FONT color=#7e12d2>[Something is airbone and shiny]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="003" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Odd Technicians of the Future$<BR><FONT color=#387206>{user_nick}</FONT>, Perhaps we can meet again...<BR>Not in this current future, but somewhere, someplace where the sky remains blue always...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="QM_Wisp_Giant.dds" itemindex="">
+         <talk_question mid="11"><![CDATA[<html><FONT color=#7e12d2>[Kevin's light is starting to fade.</FONT><BR><FONT color=#7e12d2>His voice is getting muffled.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QM_Wisp_Giant.dds" itemindex="">
+         <talk_question mid="32"><![CDATA[<html>$Odd Technician$<BR><FONT color=#7e12d2>[Something is airbone and shiny]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 610 ) == 1</chk>
+      </conditions>
+   </talk>

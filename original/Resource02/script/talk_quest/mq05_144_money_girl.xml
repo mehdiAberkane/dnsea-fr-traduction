@@ -1,0 +1,444 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_144_money_girl</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>144</qid>
+      <designer>김인정</designer>
+      <qlevel>9</qlevel>
+      <qdesc>오브와 지팡이를 합체해서 현자의 계시를 본다. Lv7에서 Lv9로 성장하면 수정개울 통행증을 받고 다음 지역으로 이동할 수 있다. 
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>201</nextqid>
+      <nextqname>mq08_201_secret_melody</nextqname>
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Girl of Importance]]></qkname>
+      <qnpc>
+         <npcid>11</npcid>
+         <npcename>n011_priest_leonardo</npcename>
+         <npckname>상급 클레릭 레오날드    (마나리지)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>12</npcid>
+         <npcename>n012_sorceress_master_cynthia</npcename>
+         <npckname>상급 소서리스 신시아 (마나리지 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-noquest" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="105"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Have you found the <FONT color=#a82424>Sage's Staff</FONT> and the <FONT color=#a82424>Vision Orb</FONT>?<BR>※ <FONT color=#7e12d2>Obtain quest from Master Cleric Leonard.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-accepting" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-accepting-acceptted" mid="107"><![CDATA[<html>I'll think about it after I report to my master.</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Master Cleric Leonard$<BR>I-isn't this the Sage's Staff?<BR>Let me see, quick!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1" image="QS_Default.dds" itemindex="300028">
+      <talk_answer link_index="n011_priest_leonardo-1-a" mid="7"><![CDATA[<html>I have to report first!</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Cleric Leonard$<BR>The Sage's Staff is an item that exists to fulfill the prophecy, so we must...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-1-a" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$Master Cleric Leonard$<BR>Wait! I said wait!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-1" image="" itemindex="">
+      <talk_question mid="108"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Have you found the <FONT color=#a82424>Sage's Staff</FONT> and the <FONT color=#a82424>Vision Orb</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-2" image="QS_Default.dds" itemindex="300028">
+      <talk_question mid="9"><![CDATA[<html>$Master Cleric Leonard${action:Talk}<BR>Quick… Let me see the Sage's Staff. That's the relics from the Cleric ancestor, Jake, you know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-a" mid="11"><![CDATA[<html>Ahaha, didn't I tell you to trust me.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>I-isn't this the <FONT color=#a82424>Sage's Staff</FONT> and <FONT color=#a82424>Vision Orb</FONT>?<BR>It's eventually back, really… You're one cute fella.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-b" mid="13"><![CDATA[<html>That's because I resemble you, master.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Amazing. Not to mention the Vision Orb, you even retrieved the Sage's Staff the imbecile Clerics lost. This feels great.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-c" mid="15"><![CDATA[<html>The Sage's prophecy!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Hmph, flattery… In any case, since both artifacts are gathered now, we should able to see the <FONT color=#a82424>Sage's prophecy</FONT> soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-c" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-d" mid="17"><![CDATA[<html>(Sounds vaguely familiar...)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Once upon a time, it is said that the <FONT color=#a82424>Sage</FONT> foretold the apocalypse, and it will begin with the rise of the Ancient Star.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-e" mid="19"><![CDATA[<html>The Sage's Staff and Vision Orb.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Sorceress Cynthia$<BR>The <FONT color=#a82424>Ancient Star</FONT> appeared in the skies not long ago. Those Clerics have made their way to the sacred land, Mana Ridge, to witness the <FONT color=#a82424>Sage's prophecy</FONT> which requires two artifacts...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-f" mid="21"><![CDATA[<html>Destruction of the world. Will it really happen?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Yes. The two artifacts were originally the parts from a single Sage's Staff. The prophecy states that both artifacts must be merged into one for the last revelation to appear and stop the apocalypse.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-2-g" mid="23"><![CDATA[<html>Is that so.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Master Sorceress Cynthia$<BR>I'm not sure about that too, but since our ancestor, Marian, is the Sage, then she must be far more intelligent and wise than us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-2-g" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Well, there's lots of buzzing going around right now. Hand me the staff, we should be able to see the Sage's prophecy once we merge both artifacts into one. Let <FONT color=#a82424>Master Cleric Leonard</FONT> know I'm ready.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-3" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>The time finally come. Tell Leonard to hurry with the ceremony.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3" image="QS_Default.dds" itemindex="300028">
+      <talk_answer link_index="n011_priest_leonardo-3-a" mid="28"><![CDATA[<html>I will give it to you, please relax.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Cleric Leonard${action:Talk}<BR>You this…! Hurry and hand me the <FONT color=#a82424>Sage's Staff</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3-a" image="QS_Default.dds" itemindex="300028">
+      <talk_answer link_index="n011_priest_leonardo-3-b" mid="30"><![CDATA[<html>(Convey Cynthia's words)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Cleric Leonard$<BR>You're making me awkward here. I can't really flare up at the one who found the Sage's Staff huh… A Sorceress recovering what the Clerics lost… I'm speechless.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-3-b" image="" itemindex="">
+      <talk_answer link_index="n011_priest_leonardo-3-cutscene" mid="32"><![CDATA[<html>(Observe the ceremony proceedings)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Cleric Leonard$<BR>Yes… Cynthia knows the Sage's prophecy very well.<BR>I shall being the ceremony now, do stand back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-4" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Master Cleric Leonard$<BR>Oh oh... A <FONT color=#a82424>maiden with red hair</FONT>... That maiden... The one who holds the fate of our world!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-a" mid="35"><![CDATA[<html>Red-haired maiden...</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Sorceress Cynthia$<BR>The <FONT color=#a82424>maiden with red hair</FONT>... <BR>Does she hold the fate of our future?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-a" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-b" mid="37"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Remember the Sage's prophecy well, as this will greatly influence the path of your future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-b" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-c" mid="45"><![CDATA[<html>Official… Sorceress!</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Sorceress Cynthia$<BR>You've made great contribution in this incident. As a token of gratitude, your probation has been lifted and I hereby declare you as an <FONT color=#a82424>official Sorceress</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-d" mid="49"><![CDATA[<html>I need more training.</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Master Sorceress Cynthia$<BR>That's right. I can't ignore what you've accomplished. With a little more training.. i think you're the only one we can trust with this. We need you to find this <FONT color=#a82424>girl of prophecy</FONT>...you can't afford to screw around any more.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-d" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-4-e" mid="51"><![CDATA[<html>Okay, master.</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Master Sorceress Cynthia$<BR>This is a far greater responsibility than I've ever given you. I need to know that you can handle this and train up to <FONT color=#a82424>Level 9</FONT>. I will explain more of the prophecy you have witnessed today on what you will be doing in the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-4-e" image="QN_SoceressTara.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Master Sorceress Cynthia$<BR>I have put <FONT color=#a82424>Sorceress Tara</FONT> in charge of all special training up to <FONT color=#a82424>Level 9</FONT>. I suggest you should talk to her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-a" mid="55"><![CDATA[<html>Yes, I'm all set!</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Master Sorceress Cynthia${action:Talk}<BR>Have you been training hard? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-a" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-b" mid="57"><![CDATA[<html>Red-haired girl?</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Right. It's time we talked about the Sage's prophecy. Who <FONT color=#a82424>the red-haired girl</FONT> is...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-c" mid="59"><![CDATA[<html>The Ancients?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Oh, Goddess... tell me you haven't forgotten already. The red-haired girl from Sage's prophecy?<BR>She's closely related to the destruction of this world. I think she may be related to the <FONT color=#a82424>Ancients</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-d" mid="61"><![CDATA[<html>Last mission?! I just became a Sorceress!</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Master Sorceress Cynthia$<BR>The Ancients racewere tremendously powerful that lived long, long ago. She could easily be the cause of world disaster,  if their blood is running through this girl. <FONT color=#382000>{user_nick}</FONT>! Here is your last mission. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-d" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-e" mid="63"><![CDATA[<html>Master...</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Master Sorceress Cynthia$<BR>I order you to leave this place and find the girl. Follow your heart. That is my last command as your master.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-e" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-f" mid="65"><![CDATA[<html>Oh! Oh...heh. This might be a bit much...</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Don't misunderstand, we're talking about the great responsibility. You may need to decide what's best for the world. To protect her...or  to kill her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-f" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-g" mid="67"><![CDATA[<html>Well.. thank you...</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Master Sorceress Cynthia$<BR>No. You have proven your power, to your competence. You really are the only one with the...<FONT color=#a82424>vision</FONT>...necessary for this mission.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-g" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-h" mid="69"><![CDATA[<html>You know, a little cash would make it easier to...</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Master Sorceress Cynthia$<BR>You are a Sorceress now, make me proud.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-h" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-i" mid="71"><![CDATA[<html>Heh heh, don't worry! I will make you proud!</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Master Sorceress Cynthia$<BR>This is not making me proud. It's making me want to kill you. I think it's time for you to go. Now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-i" image="" itemindex="">
+      <talk_answer link_index="n012_sorceress_master_cynthia-5-j" mid="73"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-j" image="QN_ranger_fugus.dds" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Master Sorceress Cynthia$<BR>Meet <FONT color=#a82424>Scout Fergus</FONT> at <FONT color=#a82424>Cristal Stream</FONT>. The <FONT color=#a82424>Adventurer's Guild</FONT> of <FONT color=#a82424>Calderock Village</FONT> will help you. Time to say farewell to Mana Ridge...again! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n012_sorceress_master_cynthia-5-k" image="" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$Master Sorceress Cynthia$<BR>What, you're not done <FONT color=#a82424>Level 9</FONT> yet? You're not going to impress me by lounging around!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n011_priest_leonardo-5" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$Master Cleric Leonard${action:Talk}<BR>The world's fate rests on the shoulders of that girl... Train hard, and when you're ready, go find her. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">144</exe>
+         <exe type="talk" npc="n011_priest_leonardo">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="1">300059</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="custom">api_user_PlayCutScene(userObjID,npcObjID,60);</exe>
+         <exe type="delquestitem" num="1">300028</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">9</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">1440,,,,</exe>
+         <exe type="complete">144</exe>
+         <exe type="addquestitem" num="1">300012</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">a</exe>
+         <exe type="talk" npc="n012_sorceress_master_cynthia">k</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n011_priest_leonardo" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n011_priest_leonardo" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="a">2</exelink>
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="2" npc="n012_sorceress_master_cynthia" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="a">3</exelink>
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="b" />
+   <exelink qstep="3" npc="n011_priest_leonardo" sub="cutscene">0,1,2</exelink>
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="4" npc="n012_sorceress_master_cynthia" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="a">3</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="b" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="c" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="d" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="e" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="f" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="g" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="h" />
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="i">0</exelink>
+   <exelink qstep="5" npc="n012_sorceress_master_cynthia" sub="j">1,2</exelink>
+   <journal_data recompense="1440" quest_title="돈 되는 소녀" chapterid="1" quest_level="9" quest_mark_type="1" use_item_list="300028,300059">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[Talk to Master Cleric Leonard]]></title>
+         <contents mid="79"><![CDATA[<html>Before you report to Master Sorceress Cynthia, go see Master Cleric Leonard and tell him about Cleric Jake's death.<BR> <BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Cleric Leonard</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Talk to Master Cleric Leonard]]></destination>
+         <todo_msg mid="81"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Talk to Master Sorceress Cynthia]]></title>
+         <contents mid="83"><![CDATA[<html>You have reported the death of Cleric Jake to Master Cleric Leonard. Return to Master Sorceress Cynthia and show her the Sage's Cane and the Vision Orb.<BR> <BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="85"><![CDATA[Report to Master Sorceress Cynthia.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Cl_Leonardo.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n11</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>11</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Talk to Master Cleric Leonard]]></title>
+         <contents mid="87"><![CDATA[<html>Once Sage's Cane and the Vision Orb have been recovered, the Sage's prophecy can be viewed in full. Go see Master Cleric Leonard and let him know you're ready for the ritual.<BR> <BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Cleric Leonard</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Talk to Master Cleric Leonard]]></destination>
+         <todo_msg mid="89"><![CDATA[Go to Master Cleric Leonard to start the ritual.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Talk to Master Sorceress Cynthia]]></title>
+         <contents mid="91"><![CDATA[<html>Return to Master Sorceress Cynthia and receive the Vision Orb.<BR> <BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Master Sorceress Cynthia</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Talk to Master Sorceress Cynthia]]></destination>
+         <todo_msg mid="93"><![CDATA[Speak to Master Sorceress Cynthia]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_SoceressCynthia.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,n12</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>12</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Talk to Master Sorceress Cynthia (Lv. 9)]]></title>
+         <contents mid="95"><![CDATA[<html>Show Master Sorceress Cynthia the results of your training. <BR> <BR><FONT color=#a82424>※ Character must be Level 9 or higher to proceed.</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[Talk to Master Sorceress Cynthia (Lv. 9)]]></destination>
+         <todo_msg mid="97"><![CDATA[Return to Master Sorceress Cynthia after reaching Level 9.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>143</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

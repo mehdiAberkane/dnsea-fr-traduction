@@ -1,0 +1,94 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq17_6703_stewart_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6703</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About dynasty]]></qkname>
+      <qnpc>
+         <npcid>41</npcid>
+         <npcename>n041_duke_stwart</npcename>
+         <npckname>공작 스튜어트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting" image="" itemindex="">
+      <talk_answer link_index="n041_duke_stwart-accepting-a" mid="6"><![CDATA[<html>Do people need a dynasty to defend themselves?</html>]]></talk_answer>
+      <talk_answer link_index="n041_duke_stwart-accepting-b" mid="7"><![CDATA[<html>What happened to King Founder?</html>]]></talk_answer>
+      <talk_answer link_index="n041_duke_stwart-accepting-c" mid="8"><![CDATA[<html>His Majesty is named after King of Knight</html>]]></talk_answer>
+      <talk_answer link_index="n041_duke_stwart-accepting-d" mid="9"><![CDATA[<html>Northern kingdom?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Duke Stewart$<BR>King Founder conquered most of the continent. However, before the continent united, King Founder disappeared suddenly. After losing King Founder, the kingdom fell into confusion. People needed a dynasty to defend themselves. King of Knight suppressed the lords who raised a rebellion at that time and he became a ruler of the Northern Kingdom.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Duke Stewart$<BR>It's the significance of existence, isn't it? People are foolish and weak. Only a king of royal descendant can lead and defend them, don't you think so? That is the duty of the royal descendants.<FONT color=#7e12d2> (Stewart speaks proudly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Duke Stewart$<BR>There is no one who knows where King Founder had gone. According to the legend, he left to Legendary Isle Ireon, the island that doesn't exist. Many people had tried to find the King Founder, but no one can figure out where he is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Duke Stewart$<BR>
+He is named after Cassius 2  who is my father and the former king precisely. You can say that our young king is also named after King of Knight Cassius.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n041_duke_stwart-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Duke Stewart$<BR>Haaah, you're so unintelligent. Because of the revolts after King Founder's vanishing, the territory of the kingdom had shrinked. Dynasty's territory became just a part of the continent. Since then, it has been called the Northen Kingdom.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6703, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 41, 300 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 41, 70 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 41, 150 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 41, 300 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n041_duke_stwart" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 왕실에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>41:2250:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,166 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_590_wrong_romanticist</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>590</qid>
+      <designer>김인정</designer>
+      <qlevel>33</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Faltering  Love]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="6"><![CDATA[<html>What's wrong?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Guard Joey$<BR>Huh… <FONT color=#7e12d2>(Joey sighs)<BR></FONT>He's really stupid…..huh….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="9"><![CDATA[<html>Ah I remember that.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Guard Joey$<BR>Ah, adventurer. Do you remember my friend <FONT color=#a82424>Malcolm</FONT>?<BR>He is the stupid guy who gave everything to a<FONT color=#a82424>noble</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="11"><![CDATA[<html>Who knows it's real.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Guard Joey$<BR>Yeah. He is a rare stupid guy. Ugh… but I think he's crazy. We had a drill last time at the military ground. When <FONT color=#a82424>the noble girl</FONT>passed there, she really waved her hand to him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="13"><![CDATA[<html>Oh, okay.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Guard Joey$<BR>Well no way. The girl was with <FONT color=#a82424>General Douglas</FONT>. My friend was with me and we couldn't even see the noble girl's face. It's all his imagination!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-e" mid="15"><![CDATA[<html>(Exasperated) All right.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Guard Joey$<BR>If he really does something bad, he will go to prision. I am worried every day. So I researched on how to make a medicine. Please help me make it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceppted" mid="17"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Faltering Love$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QW_37.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Guard Joey$<BR>So please go to <FONT color=#a82424>Spirit Grave Tomb</FONT> and get some <FONT color=#a82424>Water Spit</FONT>.<BR>It's liquid when a spit flower is about to spit. It is a good medicine for love sickness when diluted  10 times.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="QS_Default.dds" itemindex="300285">
+      <talk_answer link_index="n252_saint_guard-2-a" mid="21"><![CDATA[<html>(Joey sighs and sighs again)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Guard Joey$<BR>Did you bring it? <FONT color=#a82424>Water Spit</FONT>. I think 5 times of diluted liquid will be enough for Malcolm.<BR>Malcolm just said the noble girl winked him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-b" mid="23"><![CDATA[<htmlAnyway, take this.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Guard Joey$<BR>I always tell him to wake up but he believes his love is destiny.<BR>What a surprise…. Ugh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-c" mid="25"><![CDATA[<html>(Joy mixes water and the Water Spit)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Guard Joey$<BR>Anyway, I really hope his sanity comes back and he lives normally.<BR>He didn't train to be a guard for this. Ugh… I don't know if his mother knows.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-d" mid="27"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-d" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Guard Joey$<BR>Thank you. If<FONT color=#a82424>Malcom's</FONT>sanity returns, it's all because of you <FONT color=#387206>{user_nick}</FONT>.<BR>You just saved a person.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5901,5902,5903,5904,5905</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,590, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1008</exe>
+         <exe type="addquestitem" num="1">300285</exe>
+         <exe type="huntitem" num="3" exe="8,9,10" onexe="">300285</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201008</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5901,5902,5903,5904,5905</exe>
+         <exe type="delquestitem" num="-1">300285</exe>
+         <exe type="complete">590</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceppted">1,2,4,6,7,3,11</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n252_saint_guard" sub="c">0</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="d">1,2</exelink>
+   <journal_data recompense="1:5901,2:5902,3:5903,4:5904,5:5905" quest_title="어긋난 순정" chapterid="" quest_level="33" quest_mark_type="10" use_item_list="300285">
+      <journal index="1">
+         <contents_image>QW_37.dds</contents_image>
+         <destination_pos>371,0,0</destination_pos>
+         <destination_mode>custom:371@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Come back!]]></title>
+         <contents mid="30"><![CDATA[<html>Guard Joey wants to cure his friend Malcom's lovesickness. Let's go to Spirit Grave Tomb to find<FONT color=#a82424>Spit Flower</FONT>to get liquid water spit.<BR><FONT color=#7e12d2></FONT><BR><FONT color=#086171>Hermalte Port (River Ruins Gate)</FONT> <FONT color=#a82424>→Spirit Grave Tomb </FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Spirit Grave Tomb ]]></destination>
+         <todo_msg mid="32"><![CDATA[Get Water Spit at Spirit Grave Tomb ]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode />
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Report to Guard Joey]]></title>
+         <contents mid="34"><![CDATA[<html>Let's give Water Spit to Guard Joey.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→Guard Joey</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Report to Guard Joey]]></destination>
+         <todo_msg mid="36"><![CDATA[Give Water Spit to Guard Joey]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>33:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>556</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

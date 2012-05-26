@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n332_darkelf_teleju</npcename>
+      <npcid>332</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Dark Elf Telreju]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Dark Elf Telreju$<BR>I don't mind being pursued, but I do not wish to see any fellow Dark Elves sacrifice themselves for my safety…... I do not wish...…</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_629_retreat_teleju</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">629</chk>
+      </conditions>
+   </talk>

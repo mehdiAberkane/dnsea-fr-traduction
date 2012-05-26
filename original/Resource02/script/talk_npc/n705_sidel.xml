@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n705_sidel</npcename>
+      <npcid>705</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Cidel]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Cidel$<BR>Magic is really amazing.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="8" link_target="mq15_703_wild_cat_girl.xml"><![CDATA[<html>[Lv.40] <FONT color=#a94407>Wildcat Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="mq15_704_missing_natives.xml"><![CDATA[<html>[Lv.40] <FONT color=#a94407>The Disappearing Aborigines</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="9"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Cidel$<BR>It is extremely worrying to see our teacher's health deteriorating day by day. </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

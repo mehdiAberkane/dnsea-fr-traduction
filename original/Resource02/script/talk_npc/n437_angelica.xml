@@ -1,0 +1,19 @@
+   <talk>
+      <npcename>n437_angelica</npcename>
+      <npcid>437</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Sorceress Angelica
+(Death City Gates)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Sorceress Angelica$<BR>Pfft… I'm in the middle of something, what now?<BR>
+Stop dropping by.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_661_heart_in_vain</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">661</chk>
+      </conditions>
+   </talk>

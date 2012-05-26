@@ -1,0 +1,174 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_300_ring_of_kevin</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>300</qid>
+      <designer>김인정</designer>
+      <qlevel>13</qlevel>
+      <qdesc>케빈과 대화
+죽음의 숲의 거미알 프랍을 부수고 반지습득
+케빈에게 보고</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Kevin's Treasure]]></qkname>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-a" mid="6"><![CDATA[<html>What are you thinking?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Kevin$<BR>I'm gonna be the best crewman ever, but I need to practice on a real airship first, right? They say I'm too young to work on the airship... Wait! I got it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-a" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-b" mid="8"><![CDATA[<html>Well, that's true, I guess.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Kevin$<BR>I just have to be on an airship! It doesn't have to be the Nautilus, does it? Ha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-c" mid="10"><![CDATA[<html>Aren't airships kind of expensive?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Kevin$<BR>So! I'm gonna buy an airship! My own private airship, just for me! It'll be called <FONT color=#a82424>The Kevin</FONT>!<BR>Isn't that awesome? Man, I'm a genius!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-c" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-d" mid="12"><![CDATA[<html>So, where will you get all that money?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Kevin$<BR>Oh, sure. I bet they're at least 50 gold. I've been saving my allowance, but I need some big money! I know that. I'm being realistic, here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-e" mid="14"><![CDATA[<html>(You sigh.) Do you need help?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Kevin$<BR>Well, I was looking through my house and found a treasure. Ha. Well, more like a treasure map. It was a letter that my dad wrote for my mom, about some super-nice gold ring.<BR>So, I was thinking... (Kevin is obviously hinting at something.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-e" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-f" mid="16"><![CDATA[<html>How did his ring end up in a place like that?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Kevin$<BR>Yes! Please help me find that ring! My dad's letter said the ring should be in the Forest of Death.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-acceptted" mid="18"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Kevin's Treasure$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="QW_17.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-1-a" mid="20"><![CDATA[<html>Okay... So, where could it be? Any clues? Anything?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Kevin$<BR>My dad was gonna give the ring to my mom as a gift, so he held onto it all the time. But then, he had a mission to the Forest of Death! And, and, while he was fighting... (Kevin is starting to act out the fight.) ...a monster totally knocked the ring out of his pocket! Whammo!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1-a" image="QM_Spider_Yellow.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Kevin$<BR>He wrote something about fighting spiders. Maybe one of the spiders ate it, and then...<BR>(Kevin thinks hard.)<BR>Oh yeah! It would come out in one of the spider's eggs! Okay, go check the spider eggs in the Forest of Death!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-2-a" mid="23"><![CDATA[<html>(You give the ring to Kevin.)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Kevin$<BR>You're back! Yay! Now I can sell the ring and buy an airship!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2-a" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n029_crew_kevin-2-b" mid="25"><![CDATA[<html>Are you still going to sell that to buy an airship?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Kevin$<BR>Wow! It looks just like I imagined! All shiny and stuff. So... my dad really did get this for my mom...<BR>(Kevin suddenly becomes quiet and stares at the ring.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-2-c" mid="27"><![CDATA[<html>Yeah, I think you're right.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Kevin$<BR>Hmm... I was thinking... Airships are really expensive, right? Like, really REALLY expensive? I guess, maybe, this ring wouldn't get me enough money. Right?<BR>(Kevin looks at you expectantly. You feel he wants you to agree.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2-c" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n029_crew_kevin-2-d" mid="29"><![CDATA[<html>What about becoming a crewman?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Kevin$<BR>Then... I think I'll give this to my mom.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2-d" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-2-e" mid="31"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2-e" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Kevin$<BR>Ha! I can do that anytime! Everyone can see how cool and talented I am. Soon, you'll see me sailing the clouds in style! Hahahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">300</exe>
+         <exe type="recompense_view">,3001,3002,3003,3004,3005</exe>
+         <exe type="huntitem" num="1" exe="3,4,5" onexe="">300213</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n029_crew_kevin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300213</exe>
+         <exe type="recompense">,3001,3002,3003,3004,3005</exe>
+         <exe type="complete">300</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="f">1</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="acceptted">6,0,2</exelink>
+   <exelink qstep="2" npc="n029_crew_kevin" sub="b" />
+   <exelink qstep="2" npc="n029_crew_kevin" sub="c" />
+   <exelink qstep="2" npc="n029_crew_kevin" sub="d">1</exelink>
+   <exelink qstep="2" npc="n029_crew_kevin" sub="e">0,2</exelink>
+   <journal_data recompense="1:3001,2:3002,3:3003,4:3004,5:3005" quest_title="케빈과 보물" chapterid="" quest_level="13" quest_mark_type="10" use_item_list="300213">
+      <journal index="1">
+         <contents_image>QW_17.dds</contents_image>
+         <destination_pos>133,0,0</destination_pos>
+         <destination_mode>custom:131@1,132@1,133@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="34"><![CDATA[Treasure Hunt]]></title>
+         <contents mid="35"><![CDATA[<html>Search the <FONT color=#a82424>spider eggs</FONT> in the <FONT color=#086171><FONT color=#a82424>Forest of Death</FONT></FONT> for the ring Kevin wants.<BR><BR><FONT color=#086171>Gray Ruins → Lower Ridge (Forest of Death Path)</FONT> <FONT color=#a82424>→ Forest of Death</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[Finding the ring inside the spider eggs]]></destination>
+         <todo_msg mid="37"><![CDATA[Find the ring in the eggs in the Forest of Death.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_crew_kevin.dds</contents_image>
+         <destination_pos>8,n29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>29</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Treasure's Use]]></title>
+         <contents mid="39"><![CDATA[<html>You found the ring that belonged to self-styled Kevin's father. Take it back to <FONT color=#a82424>Kevin</FONT> at Calderock Village.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Kevin</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Talk to Kevin.]]></destination>
+         <todo_msg mid="41"><![CDATA[Give the ring to Kevin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

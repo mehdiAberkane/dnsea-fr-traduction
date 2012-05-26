@@ -1,0 +1,91 @@
+   <talk>
+      <npcename>n352_farm_warehouse</npcename>
+      <npcid>352</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Farm Manager Morrie]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="farm_warehouse" mid="4"><![CDATA[<html>[Farm Warehouse]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="29"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Farm Manager Morrie${action:Talk}<BR>All harvests will be automatically stored in the [Farm Warehouse], <BR>If you wish to retrieve your harvested crops, feel free to drop by the Crop Management Centre!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="grow_skill" mid="182"><![CDATA[<html>[Talk] Regarding Cultivation</html>]]></talk_answer>
+         <talk_answer link_index="fishing_skill" mid="183"><![CDATA[<html>[Talk] Regarding Fishing</html>]]></talk_answer>
+         <talk_answer link_index="cook_skill" mid="184"><![CDATA[<html>[Talk] Regarding Cooking</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="185"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="10"><![CDATA[<html>$Farm Manager Morrie${action:Talk}<BR>The Warehouse is full of freshly harvested crops! <BR>Hehehe~With the increase in hardworking farmers, the lands will definitely be more fertile~Haha!<BR>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="31" link_target="sq11_666_grow_go_farm.xml"><![CDATA[<html>[Farm]<FONT color=#086171>Hands-on! Cultivation</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="sq11_669_fishing_go_farm.xml"><![CDATA[<html>[Fish]<FONT color=#086171>Hands-on! Fishing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="sq11_672_cook_go_farm.xml"><![CDATA[<html>[Cook]<FONT color=#086171>Hands-on! Cooking</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="sq11_667_grow_seed.xml"><![CDATA[<html>[Farm]<FONT color=#086171>Area to sow seeds to grow crops</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_670_fishing_devil.xml"><![CDATA[<html>[Fish]<FONT color=#086171>From tomorrow onwards, I will be the Fishing King</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="sq11_673_secret_recipe.xml"><![CDATA[<html>[Cook]<FONT color=#086171>Secrets! Recipes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="43"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Farm Manager Morrie${action:Talk}<BR>This can be considered as Saint Haven's dining table, <BR>helping me is akin to enriching everyone's dining table.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="grow_skill" image="" itemindex="">
+         <talk_answer link_index="grow_skill_a" mid="186"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="49"><![CDATA[<html>$Farm Manager Morrie$<BR>The process to cultivate crops can be divided into [<FONT color=#a82424>Sowing Seeds</FONT>], [<FONT color=#a82424>Nurturing</FONT>] and [<FONT color=#a82424>Harvesting</FONT>].</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="grow_skill_a" image="" itemindex="">
+         <talk_answer link_index="grow_skill_b" mid="187"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="65"><![CDATA[<html>$Farm Manager Morrie$<BR>[<FONT color=#a82424>Sowing seeds</FONT>] can only be done on the <FONT color=#a82424>empty plots</FONT> in the farmlands under the Farm Management.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="grow_skill_b" image="" itemindex="">
+         <talk_answer link_index="grow_skill_c" mid="188"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="67"><![CDATA[<html>$Farm Manager Morrie$<BR>To sow seeds, left-click on the empty plot then choose<FONT color=#a82424>Select</FONT>to pick the type of seeds you want to sow. Sowing is thus complete.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="grow_skill_c" image="" itemindex="">
+         <talk_answer link_index="talk" mid="189"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="69"><![CDATA[<html>$Farm Manager Morrie$<BR>However, it is not over yet, we have to carry out the [<FONT color=#a82424>Nurturing</FONT>] process next.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="fishing_skill" image="" itemindex="">
+         <talk_answer link_index="fishing_skill_a" mid="192"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="102"><![CDATA[<html>$Farm Manager Morrie$<BR>To fish, bring your fishing rod and bait to the Farm's Fishing Pond and use your Fishing skills. <BR>Fishing skills can be found in the <FONT color=#a82424>Supporting Skills</FONT> section in Skills [<FONT color=#a82424>K</FONT>].</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="fishing_skill_a" image="" itemindex="">
+         <talk_answer link_index="fishing_skill_b" mid="193"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="114"><![CDATA[<html>$Farm Manager Morrie$<BR>Your comprehension ability is pretty strong!<BR> Once you begin to fish, the bar at the top of the screen, which indicates <FONT color=#a82424>Time Depleted</FONT>, will gradually fill up. <BR>Once the bar is full, <FONT color=#a82424>right-click</FONT> to catch the hooked fish. All fishes caught can be viewed in your storage.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="fishing_skill_b" image="" itemindex="">
+         <talk_answer link_index="fishing_skill_c" mid="194"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="116"><![CDATA[<html>$Farm Manager Morrie$<BR>Hehehe! For those who are more impatient, there is still a method to quicken the process!<BR> Beneath the Time Depleted bar, there is a <FONT color=#a82424>Energy</FONT> bar！<BR>When the bar fills up to the mid-point, <FONT color=#a82424>left-click</FONT> to reduce the time needed to fish.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="fishing_skill_c" image="" itemindex="">
+         <talk_answer link_index="talk" mid="195"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="131"><![CDATA[<html>$Farm Manager Morrie$<BR>This means that if you click at the right time, the process of catching a fish speeds up. <BR>If you have difficulties, open the [<FONT color=#a82424>Operations Guide</FONT>] for a better understanding.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="cook_skill" image="" itemindex="">
+         <talk_answer link_index="cook_skill_a" mid="196"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="161"><![CDATA[<html>$Farm Manager Morrie$<BR>To cook, you will need [<FONT color=#a82424>Cooking Tools</FONT>], [<FONT color=#a82424>Recipes</FONT>] and the required [<FONT color=#a82424>Ingredients</FONT>].</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="cook_skill_a" image="" itemindex="">
+         <talk_answer link_index="cook_skill_b" mid="197"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="177"><![CDATA[<html>$Farm Manager Morrie$<BR>[<FONT color=#a82424>Cooking Tools</FONT>] can be bought in the Shop. <BR>However, do note that different cuisines will require different <FONT color=#a82424>types</FONT> of [<FONT color=#a82424>Cooking Tools</FONT>].</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="cook_skill_b" image="" itemindex="">
+         <talk_answer link_index="cook_skill_c" mid="198"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="179"><![CDATA[<html>$Farm Manager Morrie$<BR>[<FONT color=#a82424>Recipes</FONT>] can be found in reward boxes obtained from completing trials. Just use [<FONT color=#a82424>Add Cuisine</FONT>] to add the [<FONT color=#a82424>Recipes</FONT>] acquired into [<FONT color=#a82424>Cuisines</FONT>] which can be found in the <FONT color=#a82424>Supporting Skills</FONT> section in Skills  [<FONT color=#a82424>K</FONT>].</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="cook_skill_c" image="" itemindex="">
+         <talk_answer link_index="cook_skill_d" mid="199"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="181"><![CDATA[<html>$Farm Manager Morrie$<BR>In terms of<FONT color=#2b2723>[<FONT color=#a82424>Ingredients</FONT>], do note that different recipes will need different [<FONT color=#a82424>Ingredients</FONT>]. <BR></FONT>[<FONT color=#a82424>Ingredients</FONT>] can be obtained from <FONT color=#a82424>Fishing</FONT> and <FONT color=#a82424>Cultivation</FONT>, <BR>thus if you wish to cook, you must learn <FONT color=#a82424>Fishing</FONT> and <FONT color=#a82424>Cultivation</FONT> too.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="cook_skill_d" image="" itemindex="">
+         <talk_answer link_index="cook_skill_e" mid="201"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="200"><![CDATA[<html>$Farm Manager Morrie$<BR>After adding recipes and if you have the Cooking Tools and Ingredients ready, <BR>select the recipe which you wish to cook and click the <BR>[<FONT color=#a82424>Food Production</FONT>] button to start cooking.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="cook_skill_e" image="" itemindex="">
+         <talk_answer link_index="talk" mid="203"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="202"><![CDATA[<html>$Farm Manager Morrie$<BR>Do note that if you do not have the required quantity of <FONT color=#a82424>Ingredients</FONT>, you will not be able to finish cooking. <BR>Are you able to understand the deep and intricate world of cooking now?!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenFarmWareHouse( userObjID );</exe>
+      </executions>
+      <conditions />
+      <exelink idx="farm_warehouse">1</exelink>
+   </talk>

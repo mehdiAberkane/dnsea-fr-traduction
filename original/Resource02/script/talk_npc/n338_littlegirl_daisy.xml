@@ -1,0 +1,38 @@
+   <talk>
+      <npcename>n338_littlegirl_daisy</npcename>
+      <npcid>338</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Daisy]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Daisy$<BR>My father will definitely be angry if he discovers that I have been wandering outside, <BR> Hush, you didn't see me right?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="sq11_674_hurted_blackbird.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>The Injured Black Bird</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="sq11_675_bandage_of_blackbird.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>Black Bird's Bandages</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="sq11_676_feed_blackbird1.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Black Bird's Food I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="sq11_677_feed_blackbird2.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Black Bird's Food II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="10"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Daisy$<BR>Are you helping me? <FONT color=#387206>{user_class}</FONT>You're such a nice person~</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="complete_677" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+         <talk_question mid="12"><![CDATA[<html>$Daisy$<BR>Heehee, I'm returning to <FONT color=#a82424>Black Mountain</FONT>now, <BR>I shouldn't keep the bird waiting.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="nolevel" image="" itemindex="">
+         <talk_question mid="15"><![CDATA[<html>$Daisy$<BR>I want to treat the bird's injuries right now.<BR><BR><FONT color=#7e12d2>? You have to be Lv. 34 or above to unlock the new quests.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="conexe" true="3" false="0">3</exe>
+         <exe type="conexe" true="0" false="5">2</exe>
+         <exe type="talk">complete_677</exe>
+         <exe type="talk">nolevel</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">675</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest( userObjID, 677) == 1</chk>
+         <chk type="lvl" op=">=">34</chk>
+         <chk type="hascomq">675</chk>
+      </conditions>
+   </talk>

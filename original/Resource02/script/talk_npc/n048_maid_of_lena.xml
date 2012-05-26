@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n048_maid_of_lena</npcename>
+      <npcid>48</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Royal Maid]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="11"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Royal Maid$<BR>I was out for a walk with the Missy… and I decided to run away.<BR>*Sob sob*...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="12" link_target="sq11_452_meet_lena.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>Meeting Missy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="sq11_576_in_a_dilemma.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>The Dilemma</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="sq11_577_second_informer.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171>The Second Informant</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="sq11_579_new_determin.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>New Determination</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="25"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Royal Maid$<BR>Do you think I will be scolded by Missy for running away? </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_452_meet_lena</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">452</chk>
+      </conditions>
+   </talk>

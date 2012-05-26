@@ -1,0 +1,96 @@
+   <talk>
+      <npcename>n402_guild_board</npcename>
+      <npcid>402</npcid>
+      <startexe>15</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Wind Forest Temple]]></npckname>
+      <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="gq01_3001_n402_dig_normal.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Way of Magic I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="gq01_3002_n402_dig_hunt.xml"><![CDATA[<html>[Lv.8] <FONT color=#086171>Lost</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="gq08_3081_n402_worship_normal.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Poor Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="gq08_3082_n402_worship_hunt.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Punish the Robbers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="gq08_3083_n402_worship_drop.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Hobgoblin Analysis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq08_3084_n402_worship_hard.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>The Little Collector V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="gq08_3090_n402_worship_rank.xml"><![CDATA[<html>[Lv.16] <FONT color=#7e12d2>Counterattack: Church Ruins</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="19" link_target="gq08_3089_n402_worship_abyss.xml"><![CDATA[<html>[Lv.23] <FONT color=#7e12d2>Into the Abyss: Defeat Godol</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>The following requests have been received.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="16"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>No requests have been received at the moment.<BR><BR><FONT color=#086171>♣ Now Open: Harori Fan Club! Sign up now and receive a special Harori Tee and an exclusive invite to her summer concert, "Dancing With The Dragons".</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_5" mid="23"><![CDATA[<html>[Lv.8] Ancient Temple Excavation Site</html>]]></talk_answer>
+         <talk_answer link_index="stage_19" mid="24"><![CDATA[<html>[Lv.16] Church Ruins</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="39"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_5" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="40" link_target="gq01_3001_n402_dig_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Way of Magic I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="gq01_3002_n402_dig_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>The Lost Sword</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_5" mid="42"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for the <FONT color=#a82424>Ancient Temple Excavation Site</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_19" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="43" link_target="gq08_3081_n402_worship_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Poor Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="gq08_3082_n402_worship_hunt.xml"><![CDATA[<html><FONT size=2>[Hunt] <FONT color=#086171>Punish the Robbers</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="gq08_3083_n402_worship_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Hobgoblin Analysis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="gq08_3084_n402_worship_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>The Little Collector V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="gq08_3090_n402_worship_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Counterattack: Church Ruins</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="gq08_3089_n402_worship_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Godol</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_19" mid="49"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="26"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for the <FONT color=#a82424>Church Ruins</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv16_8clr" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_19" mid="53"><![CDATA[<html>[Lv16] Temple chapel</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="54"><![CDATA[<html>[See all requests list]</html>]]></talk_answer>
+         <talk_question mid="52"><![CDATA[<html>$Guild Board${action:Talk}<BR>Choose the stage where you carry request out.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lv8_noclr" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_5" mid="56"><![CDATA[<html>[Lv8] Findspot of ancient temple</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="57"><![CDATA[<html>[See all requests list]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Guild Board${action:Talk}<BR>Choose the stage where you carry request out.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">gq01_3001_n402_dig_normal</exe>
+         <exe type="enterquest">gq01_3002_n402_dig_hunt</exe>
+         <exe type="enterquest">gq08_3081_n402_worship_normal</exe>
+         <exe type="enterquest">gq08_3082_n402_worship_hunt</exe>
+         <exe type="enterquest">gq08_3083_n402_worship_drop</exe>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="conexe" true="2" false="8">1</exe>
+         <exe type="conexe" true="3" false="9">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="conexe" true="5" false="13">4</exe>
+         <exe type="enterquest">gq08_3084_n402_worship_hard</exe>
+         <exe type="enterquest">gq08_3090_n402_worship_rank</exe>
+         <exe type="conexe" true="11" false="14">5</exe>
+         <exe type="conexe" true="12" false="17">6</exe>
+         <exe type="conexe" true="16" false="6">7</exe>
+         <exe type="enterquest">sq01_063_enter_adventure</exe>
+         <exe type="conexe" true="18" false="19">8</exe>
+         <exe type="enterquest">gq08_3089_n402_worship_abyss</exe>
+         <exe type="conexe" true="20" false="21">9</exe>
+         <exe type="conexe" true="23" false="0">11</exe>
+         <exe type="conexe" true="22" false="25">10</exe>
+         <exe type="conexe" true="25" false="24">11</exe>
+         <exe type="talk">lv16_8clr</exe>
+         <exe type="talk">lv8_noclr</exe>
+         <exe type="talk">_no_quest</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3001</chk>
+         <chk type="hasquest">3002</chk>
+         <chk type="hasquest">3081</chk>
+         <chk type="hasquest">3082</chk>
+         <chk type="hasquest">3083</chk>
+         <chk type="hasquest">3084</chk>
+         <chk type="hasquest">3090</chk>
+         <chk type="hasquest">63</chk>
+         <chk type="hasquest">3089</chk>
+         <chk type="lvl" op=">=">16</chk>
+         <chk type="lvl" op=">=">8</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 3002) == 1</chk>
+      </conditions>
+      <exelink idx="back_stage_5">19</exelink>
+      <exelink idx="back_stage_19">19</exelink>
+   </talk>

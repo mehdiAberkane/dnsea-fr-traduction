@@ -1,0 +1,220 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq27_6801_destruchtion_of_evidence</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6701</qid>
+      <designer>김주연</designer>
+      <qlevel>25</qlevel>
+      <qdesc>452퀘스트 완료
+빛바랜 초상화	400200
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Destruction of Evidence]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="6"><![CDATA[<html>(He is hesitating for a bit.)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$General Douglas$<BR><FONT color=#387206>{user_nick}</FONT>!<BR>
+Can we talk for a bit?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$General Douglas$<BR>
+The reason I called you here is because I have a favor to ask. <BR>
+However, I can’t tell you why or give you details. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="10"><![CDATA[<html>Sure.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$General Douglas$<BR>Can you do it? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="14"><![CDATA[<html>Is it dangerous? </html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$General Douglas$<BR>If you go to <FONT color=#a82424>Dark Mines</FONT>, there should be a little box. Please destroy it. <BR>Don’t open it, just destroy it please. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-b" mid="17"><![CDATA[<html> Ok. </html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$General Douglas$<BR>No, It’s not dangerous but it contains very important information. Please make sure no one sees it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-b" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$General Douglas$<BR>Good. If you take care of this, our relationship can be smoothened out</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="QW_27.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$General Douglas$<BR>Go to <FONT color=#a82424>Dark Mines</FONT> and find and destroy the little box with its content. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="QW_27.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$General Douglas$<BR>Go to <FONT color=#a82424>Dark Mines</FONT> and find and destroy the little box with its content. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="22"><![CDATA[<html>Yes. I destroyed it at first sight. </html>]]></talk_answer>
+      <talk_answer link_index="n042_general_duglars-4-c" mid="23"><![CDATA[<html>I accidentally opened it and peeped. </html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$General Douglas$<BR>Did u find a box?<BR>
+You haven’t opened it right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-b" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$General Douglas$<BR>Good. <BR>On the battlefield, soldiers need mutual trust to survive. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-e" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$General Douglas$<BR>It will help the army if more guys like you join. Hahaha. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-d" mid="29"><![CDATA[<html> It was an old portrait. </html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$General Douglas$<BR>I told you not to open it…<BR>
+Well, what was in it? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-f" mid="31"><![CDATA[<html> Yes. I burnt it. </html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$General Douglas$<BR>Ok, it was just a old portrait. Hahaha. <BR> Well it wasn’t anything meaningful. So did you get rid of the portrait? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-e" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$General Douglas$<BR>Well I think I chose the right man. You can go now. <BR>
+<FONT color=#7e12d2>(Think we got closer.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-f" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$General Douglas$<BR>Ok. <BR>Well I think I can trust you even though there was a little misunderstanding between us. I’ll keep an eye on you. <BR>
+<FONT color=#7e12d2>(Think we became closer.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">68010,,,,,</exe>
+         <exe type="setquest">6801</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">6801</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,1,2</exelink>
+   <exelink qstep="1" npc="n042_general_duglars" sub="b">0,1</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="e">0</exelink>
+   <exelink qstep="4" npc="n042_general_duglars" sub="d" />
+   <exelink qstep="4" npc="n042_general_duglars" sub="f">0</exelink>
+   <journal_data recompense="" quest_title="증거인멸" chapterid="" quest_level="25" quest_mark_type="15" use_item_list="400200">
+      <journal index="1">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Talk to General Douglas]]></title>
+         <contents mid="39"><![CDATA[<html><FONT color=#a82424>General Douglas</FONT>wants to talk to me. Report to him. <BR>
+ <BR>
+<FONT color=#086171>Saint Haven Palace </FONT><FONT color=#a82424>→ General Douglas </FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="41"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>273,-4798,3073</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>17</statemark_type>
+         <trigger_string>상자 프랍 클릭하면 3저널, 3스탭으로 변경.</trigger_string>
+         <maptool_index />
+         <title mid="42"><![CDATA[Find a small box at Dark Mines]]></title>
+         <contents mid="43"><![CDATA[<html>General Douglas has requested that you head to Dark Mines and destroy the <FONT color=#a82424>Small Box</FONT>. Go to Dark Mines and find the box. <BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Dark Mines Entrance)</FONT> <FONT color=#a82424>→ Dark Mines </FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Find a small box at Dark Mines]]></destination>
+         <todo_msg mid="45"><![CDATA[Go to Dark Mines and find the box]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>273,-4881,2872</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>17</statemark_type>
+         <trigger_string>모닥불을 가리킴</trigger_string>
+         <maptool_index />
+         <title mid="46"><![CDATA[Burn the portrait that was in the box]]></title>
+         <contents mid="47"><![CDATA[<html>Accidentally opened the box. Burn the <FONT color=#a82424>Old Portrait</FONT> with fire. <BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Dark Mines Entrance) </FONT> <FONT color=#a82424>→ Dark Mines</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Burn the portrait that was in the box]]></destination>
+         <todo_msg mid="49"><![CDATA[Throw the protrait which somehow looks like Lena into the fire.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Talk to General Douglas]]></title>
+         <contents mid="51"><![CDATA[<html>Found and burnt the small box. Go back and report to <FONT color=#a82424>General Douglas </FONT>.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle. </FONT> <FONT color=#a82424>→ General Douglas </FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to General Douglas]]></destination>
+         <todo_msg mid="53"><![CDATA[Successfully burnt the portrait. Go back and report to General Douglas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>452</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

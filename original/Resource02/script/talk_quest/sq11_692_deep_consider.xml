@@ -1,0 +1,205 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_692_deep_consider</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>692</qid>
+      <designer>김인정</designer>
+      <qlevel>31</qlevel>
+      <qdesc>고블고블 케이크	300373
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Deep Thoughts]]></qkname>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>448</npcid>
+         <npcename>n448_robinson</npcename>
+         <npckname>가난뱅이 소년</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Poor Kid$<BR>Hmm… Something's weird!<BR>
+*Mumbles*.<BR>
+<FONT color=#7e12d2>(Poor Kid is in deep thoughts and mumbling.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-a" mid="8"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$King Cassius$<BR>My loyal <FONT color=#387206>{user_nick}</FONT>, I have a favour to ask of you.<BR>
+Will you do it for me?<BR>
+<FONT color=#7e12d2>(Cassius looks at me earnestly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-a" image="QS_Default.dds" itemindex="300373">
+      <talk_answer link_index="n040_king_casius-accepting-b" mid="10"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$King Cassius$<BR>I made tons of Gobble Gobble Rice Cakes and I think my poor friend might want to have some. I was hoping if you could give this to him….<BR>
+You'll do it, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Deep Thoughts$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QW_35.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$King Cassius$<BR>Right now, my poor friend should be at the <FONT color=#a82424>Dried Marissa Springs</FONT>.<BR>Hurry and give the Gobble Gobble Cake to him.<BR>Thank you…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-1" image="QS_Default.dds" itemindex="300375">
+      <talk_answer link_index="n448_robinson-1-a" mid="18"><![CDATA[<html>(Start a conversation)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Poor Kid${action:Stand2}<BR>Hmm… *mumbles*.<BR><FONT color=#7e12d2>(Poor Kid is in deep thoughts and mumbling)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-1-a" image="" itemindex="">
+      <talk_answer link_index="n448_robinson-1-b" mid="20"><![CDATA[<html>Huh? Were you eating something?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Poor Kid$<BR>What!! You scared me!<BR>Don't sneak up on me like that! I almost had a heart attack~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-1-b" image="QS_Default.dds" itemindex="300375">
+      <talk_answer link_index="n448_robinson-1-c" mid="22"><![CDATA[<html>I came to give you this.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Poor Kid$<BR>Oh, nothing!!<FONT color=#7e12d2> (The kid quickly hides what he was eating.)<BR></FONT>There is something that smells good! Haha~ You brought me something?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-1-c" image="QS_Default.dds" itemindex="300373">
+      <talk_answer link_index="n448_robinson-1-d" mid="24"><![CDATA[<html>Thank goodness you like it.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Poor Kid$<BR>Oh~ Isn't this Gobble Gobble Rice Cake?!<BR>This is one of my favourite food! Haha. It has a really addictive flavor.<BR>
+Awesome.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-1-d" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n448_robinson-1-e" mid="27"><![CDATA[<html>He's a good man.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Poor Kid$<BR>…That kid with a crown.<BR>
+<FONT color=#7e12d2>(Poor Kid looks around)</FONT><BR>
+Don't you think he's a good kid, although he's a bit soft-hearted?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-1-e" image="" itemindex="">
+      <talk_answer link_index="n448_robinson-1-f" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Poor Kid$<BR>Sometimes when I sit in his chair instead of him, I feel that I've become someone great. I feel a bit proud, too. I sometimes think, what's the difference between him and me? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-1-f" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n448_robinson-1-g" mid="51"><![CDATA[<html>But what's that got to do with this?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Poor Kid$<BR>
+But even though he's sitting at the position a long time, he is always kind and modest.<BR>
+He's good to me and gets along well with the General and the Duke and all those nagging people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-1-g" image="QS_Default.dds" itemindex="300373">
+      <talk_question mid="52"><![CDATA[<html>$Poor Kid${action:Talk}<BR>Huh?! Nothing! Hahaha.<BR>I'm going to eat this Gobble Gobble Rice Cake and go to sleep~ <BR>Don't worry about it and be on your way~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n448_robinson-2" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Poor Kid${action:Stand2}<BR>Huh? Didn't my <FONT color=#a82424>friend wearing a crown</FONT> sent you?<BR>Go on~ or do you want to spend the night with me here? Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-a" mid="32"><![CDATA[<html>He loves it.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$King Cassius$<BR>Did my friend Poor Kid like it? I was worried that my friend wouldn't like the cake. …What if he said it wasn't tasty?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-b" mid="34"><![CDATA[<html>(Cassius smiles)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$King Cassius$<BR>Really…? Haha. My poor friend has a very kind heart.<BR>
+He likes it…<BR>
+Thank goodness….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-2-c" mid="36"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2-c" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$King Cassius$<BR>You'll have to keep this secret, alright?<BR>…Promise me.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6920,,,,,</exe>
+         <exe type="setquest">692</exe>
+         <exe type="talk" npc="n040_king_casius">1</exe>
+         <exe type="addquestitem" num="1">300373</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">300373</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6920,,,,,</exe>
+         <exe type="complete">692</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 90 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n448_robinson" sub="b" />
+   <exelink qstep="1" npc="n448_robinson" sub="c" />
+   <exelink qstep="1" npc="n448_robinson" sub="d" />
+   <exelink qstep="1" npc="n448_robinson" sub="e" />
+   <exelink qstep="1" npc="n448_robinson" sub="f" />
+   <exelink qstep="1" npc="n448_robinson" sub="g">0,1,2</exelink>
+   <exelink qstep="2" npc="n040_king_casius" sub="b">0</exelink>
+   <exelink qstep="2" npc="n040_king_casius" sub="c">1,2</exelink>
+   <journal_data recompense="0:6920" quest_title="깊은 생각" chapterid="" quest_level="31" quest_mark_type="10" use_item_list="300373">
+      <journal index="1">
+         <contents_image>QW_35.dds</contents_image>
+         <destination_pos>354,n448</destination_pos>
+         <destination_mode>custom:352@1,353@1,354@1</destination_mode>
+         <statemark_npcid>448</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Gobble Gobble Traditional Rice Cake]]></title>
+         <contents mid="40"><![CDATA[<html>Go to Poor Kid at the Dried Marissa Spring and give him Gobble Gobble Rice Cake.<BR><BR><FONT color=#086171>Black Mountain(Dark Overlord Gate)</FONT> <FONT color=#a82424>→ Dried Marissa Spring(Poor Kid)</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Talk to Poor Kid at the Dried Marissa Spring]]></destination>
+         <todo_msg mid="42"><![CDATA[Talk to Poor Kid at the Dried Marissa Spring]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode />
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Quest Complete]]></title>
+         <contents mid="44"><![CDATA[<html>Return to Saint Haven Royal Palace and report to King Cassius.<BR><BR><FONT color=#086171>Saint Haven Royal Palace</FONT><FONT color=#a82424> → King Cassius</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Report to King Cassius]]></destination>
+         <todo_msg mid="46"><![CDATA[Report back to King Cassius.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>31:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>691</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

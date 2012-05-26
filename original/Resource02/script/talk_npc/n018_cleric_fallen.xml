@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n018_cleric_fallen</npcename>
+      <npcid>18</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Unconscious Cleric]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Unconscious Cleric$<BR>[He's out like a light. I guess he won't be able to talk.]</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

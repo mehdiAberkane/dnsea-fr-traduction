@@ -1,0 +1,188 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_353_mino_nest_1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>353</qid>
+      <designer>곽노찬</designer>
+      <qlevel>24</qlevel>
+      <qdesc>퀘스트 보상
+16~23Lv / 3531_미노 입장권 x3
+24~31Lv / 3532_미노 입장권 x2
+32~40Lv / 3533_미노 입장권 x1
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>354</nextqid>
+      <nextqname>sq08_354_mino_nest_2</nextqname>
+      <nextqnpc>n024_adventurer_guildmaster_decud</nextqnpc>
+      <qkname mid="1"><![CDATA[[Nest] Red Alert]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>505</npcid>
+         <npcename />
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>Something happened?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>A red-armoured bull monster! <BR><FONT color=#7e12d2>(A serious expression on Deckard's face)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="QW_LowerRidge.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="10"><![CDATA[<html>Red color… Bull monster…?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Oh, please come here quick.<BR>Actually, I heard from an agent that the there's this <FONT color=#a82424>Red-Armoured</FONT> <FONT color=#a82424>Bull Monster</FONT> appearing nearby the <FONT color=#a82424>Lower Ridge</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="QM_HarpyRed.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Yeah, what an coincident with the <FONT color=#a82424>Red</FONT>...<BR>How many time is this already?<BR>After the Sigh Canyon's <FONT color=#a82424>Red Harpy</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Red-eyed <FONT color=#a82424>Dark Elf Elena</FONT>.<BR>And...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="20"><![CDATA[<html>(Why did Argenta…)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>And red-capped <FONT color=#a82424>Argenta</FONT> …!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-f" mid="22"><![CDATA[<html>Erm… Seems that the red-haired Rose was also...</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>But now, it's actually <FONT color=#a82424>Red Bull Monster</FONT>?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-f" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-g" mid="24"><![CDATA[<html>You… You're alright?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Yes! For sure! This must be some big conspiracy! This seems to have something to do with a red-addict lunatic manager… Ahem...<BR><FONT color=#7e12d2>(Deckard coughed seriously)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-g" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-h" mid="27"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Well, this is for sure.<BR><FONT color=#a82424>RED</FONT> makes my head ache!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-h" image="QW_LowerRidge.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-i" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Erm… No matter what, this is a <FONT color=#a82424>Red Alert</FONT>!<BR>. We'll need to find out fast. Why did the <FONT color=#a82424>Red Bull Monster</FONT> appear at the Lower Ridge!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceptted" mid="8"><![CDATA[<html><FONT color=#086171>Accept quest</FONT></html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Red Alert$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QW_LowerRidge.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Find the <FONT color=#a82424>Red Bull Monster</FONT> at <FONT color=#a82424>Lower Ridge</FONT>.<BR>Before it's gone!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="36"><![CDATA[<html>(You explained the situation)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>How is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-b" mid="38"><![CDATA[<html>Really? Obviously Elena was mentioned…</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Why…? You mean <FONT color=#a82424>Bull Monster is dancing</FONT>?!<BR>Why would it want to dance?<BR>And it was at the Lower Ridge? Has the monster go crazy after some nights out?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-c" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Is it? That red bull monster mentioned Elena?<BR>Humph! Just as what I thought, these monsters followed <FONT color=#a82424>Elena</FONT> into Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-c" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-d" mid="45"><![CDATA[<html>So, what shall we do?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>I thought it's safe now in <FONT color=#a82424>Calderock Village</FONT>, but now there's other danger surfacing...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2-d" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-2-!next" mid="40"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">3533,,,,,</exe>
+         <exe type="setquest">353</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="lvl" op="]=">32</chk>
+         <chk type="lvl" op="]=">24</chk>
+      </conditions>
+      <executions>
+         <exe type="complete">353</exe>
+         <exe type="recompense">3531,,,,,</exe>
+         <exe type="recompense">3532,,,,,</exe>
+         <exe type="recompense">3533,,,,,</exe>
+         <exe type="conexe" true="3" false="5">0</exe>
+         <exe type="conexe" true="2" false="1">1</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="i">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceptted">1,2</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="d">4</exelink>
+   <exelink qstep="2" npc="n024_adventurer_guildmaster_decud" sub="!next">0</exelink>
+   <journal_data recompense="3533" quest_title="[네스트] 적색 경보" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_LowerRidge.dds</contents_image>
+         <destination_pos>10,0,0</destination_pos>
+         <destination_mode>custom:10@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Red Alert]]></title>
+         <contents mid="49"><![CDATA[<html>Adventurer's Guild Master Deckard said that in Lower Ridge, there is this red-armoured bull monster. Go investigate the monster problem. <BR>Check out Lower Ridge.<BR><BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→Lower Ridge</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Check out Lower Ridge]]></destination>
+         <todo_msg mid="51"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Crimson General Ummanba]]></title>
+         <contents mid="54"><![CDATA[<html>It was something quite appalling at the Lower Ridge, it's indeed the Red Bull Monster who had talk to the red-eyed Dark Elf <FONT color=#a82424>Elena</FONT>.<BR>From the way they talk, it looks like that they are conspirated. They seems to be prepared to attack Calderock Village.<BR>Return to the Calderock Village and report to Adventurer's Guild Master Deckard on what you saw.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="56"><![CDATA[Return to Calderock Village to see Adventurer's Guild Master Deckard.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

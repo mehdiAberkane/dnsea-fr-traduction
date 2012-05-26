@@ -1,0 +1,361 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_278_test_warrior1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>278</qid>
+      <designer>손원호</designer>
+      <qlevel>15</qlevel>
+      <qdesc>주인공의 무기를 보고, 놀라는 챈들러. "지금까지 이런 장비로 싸워온건가!" 제대로 정식 수련도 받아보지 못한 주인공이 지금까지 살아있는 것은 기적이라고 하며, 앞으로의 모험에는 새로운 힘이 필요할 것이라고 말하는 챈들러. 하지만 강한 힘에는 큰 의지가 필요한 법. 먼저 주인공이 그 힘을 받을 자격이 되어 있는지 확인해야 겠다고 하는데… 워리어 시험의 방으로 보내준다.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>279</nextqid>
+      <nextqname>sq08_279_test_warrior2</nextqname>
+      <nextqnpc>n032_warrior_master_chandler</nextqnpc>
+      <qkname mid="1"><![CDATA[[Class Specialization] Prove of Warrior I]]></qkname>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러 (캐더락 워려 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="7"><![CDATA[<html>What fairy tale is this?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Warrior Chandler${action:Talk}<BR>Any warrior would have heard of this two honarable names. One of them is <FONT color=#a82424>Legendary Mercenary Captain Barnac </font>who fought against the Black Dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="9"><![CDATA[<html>Isn't he the bad guy?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Warrior Chandler$<BR>Be quiet and listen. The other who is respect by the warriors pursuit justice and seeks a stronger power to rise above others. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="82"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Master Warrior Chandler$<BR>Although believes in their own justice. But he believes his might triumphs over all others.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="94"><![CDATA[<html>Peak of the Champions?</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Master Warrior Chandler$<BR>He continues to seek more power and finally, he achieved what no other warriors has done before and reached the <FONT color=#a82424>Peak of the Champion</font> .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-e" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Master Warrior Chandler$<BR>Well….I do not know what it means, he disappeared after reaching the Peak of Champion.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-f" mid="100"><![CDATA[<html>…Lambert!</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Master Warrior Chandler$<BR>The endless pursuit of power. It left a strong impression to all warriors and his name is now a legend amongst us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-g" mid="86"><![CDATA[<html>A message left by my father...! </html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Master Warrior Chandler$<BR>Yes. This is your father, <FONT color=#a82424>Lambert's</font> story.  <BR>And I have waited for you all this time to pass you his message.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-h" mid="88"><![CDATA[<html>(Listen to a message)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Master Warrior Chandler$<BR>This is the last message left for you.<BR>Listen gravely. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-i" mid="90"><![CDATA[<html>...Father.</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Master Warrior Chandler$<BR>" <FONT color=#7e12d2>Become stronger.</font> <BR><FONT color=#7e12d2>And one day when you reach your peak…you will find me...</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-j" mid="92"><![CDATA[<html>How can I become stronger?</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Master Warrior Chandler$<BR>If you want to see him..Become Stronger! That is the only way..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-k" mid="11"><![CDATA[<html>Class Specialization?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Warrior Chandler$<BR>You are now only equiped with the most basic warrior skills. If you want to become more powerful, you will need to undergo <FONT color=#a82424>Class Specialization</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-l" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Warrior Chandler$<BR>This is simply one step closer to become a novice champion.<BR> <FONT color=#a82424>Class Specialization</font> will focus your training and teach you advance warrior skills, more powerful than you can imagine. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Prove of Warrior I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-m" image="" itemindex="">
+      <talk_question mid="68"><![CDATA[<html>$Master Warrior Chandler$<BR>Hmmm…this is your challenge solely. <FONT color=#a82424>You cannot seek help from a party or other people.</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-a" mid="20"><![CDATA[<html>What do yu mean test?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Master Warrior Chandler$<BR>This is the path to meet your father. With great power comes great responsibility. Before you obtain the new powers, I will have to <FONT color=#a82424>test you and your commitment</font>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-b" mid="22"><![CDATA[<html>What is the test?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Master Warrior Chandler$<BR>You do not need to be too nervous. Follow the path of the warrior and you shall easily succeed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Master Warrior Chandler$<BR>In this <FONT color=#a82424>Test Chamber</font>, your power will be amplify and you will find yourself stronger. Defeat the waves of evil monsters that comes pouring in.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-d" mid="26"><![CDATA[<html> Yes, sir. </html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Master Warrior Chandler$<BR>You will need to attack swiftly and take them down. <FONT color=#a82424>If not, you may soon find yourself swamped by these monsters.</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-member1" mid="28"><![CDATA[<html> (I'm ready for the challenge) </html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-1-g" mid="29"><![CDATA[<html>(Perhaps later...)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Warrior Chandler$<BR><FONT color=#a82424>Do not stop wielding your sword at all cost!</font> Strike down all the enemies.<BR>The path to becoming a warrior is a relentless swinging blade!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-go_test_room" mid="70"><![CDATA[<html> (Go into the Test Chamber) </html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Warrior Chandler$<BR>When you are ready, go into the <FONT color=#a82424>Test Chamber</font>  and meet your destiny.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-f" image="" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Master Warrior Chandler$<BR>This is your challenge alone.<BR><FONT color=#a82424>You cannot enter with a party.</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-g" image="" itemindex="">
+      <talk_question mid="79"><![CDATA[<html>$Master Warrior Chandler$<BR>Why the fear and need for HELP.<BR> Come back and find me when you are ready!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-member1" mid="32"><![CDATA[<html>(I'm ready)</html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-2-c" mid="33"><![CDATA[<html>(I will come back later)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Warrior Chandler$<BR>Why are you waiting? Are you ready for the <FONT color=#a82424>Class Specialization test?</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-go_test_room" mid="76"><![CDATA[<html>(Enter the Test Chamber)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Master Warrior Chandler$<BR>Then let us go into the <FONT color=#a82424>Test Chamber</font>. Are you ready?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-b" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$Master Warrior Chandler$<BR>This is your challenge alone.<BR><FONT color=#a82424>You cannot enter with a party.</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-c" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Master Warrior Chandler$<BR>Why the fear and need for HELP.<BR> Come back and find me when you are ready!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-a" mid="36"><![CDATA[<html> What is the next test? </html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Master Warrior Chandler$<BR>Not bad. You are indeed the legendary warrior, Lambert's son.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-b" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Master Warrior Chandler$<BR>Before we proceed, I have something to ask you..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-c" mid="40"><![CDATA[<html>...Yes!</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Master Warrior Chandler$<BR>Lambert forgoes everything to seek stronger power.<BR>Do you still want to meet him?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-d" mid="42"><![CDATA[<html> Yes. Thank you. </html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Master Warrior Chandler$<BR>Alright…since this is what you desire. But this is going to be a difficult path for you. Are you ready to proceed? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-e" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Master Warrior Chandler$<BR>Hahaha! I Indeed you are Lambert's son.<BR>The only way you can meet him is to reach the Peak of the Warrior...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-f" mid="46"><![CDATA[<html>Alright!</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Warrior Chandler$<BR>Be steady and firm.<BR>Complete your journey and you shall meet him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-f" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-g" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Warrior Chandler$<BR>I think too much has been spoken.<BR>Let the second test begin!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-g" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-3-h" mid="50"><![CDATA[<html>A stone of courage?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Warrior Chandler$<BR>You will need a new weapon to exercise your power. Blacksmith Corin is already preparing your weapon. Meanwhile please bring me the <FONT color=#a82424>Stone of Courage</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-h" image="QS_Default.dds" itemindex="300072">
+      <talk_answer link_index="n032_warrior_master_chandler-3-i" mid="52"><![CDATA[<html> Yes, sir. </html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Master Warrior Chandler$<BR>It is a <FONT color=#a82424>catalyst</font> that will awaken your true potential..<BR>Are you ready? Let's get going!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-3-i" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-3-!next" mid="54"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">2780,,,,</exe>
+         <exe type="setquest">278</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">1</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">a</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">m</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>전직 시험
+스탭 3, 저널 3으로 변경</comment>
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13009,1);</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">e</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">f</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetPartymemberCount(userObjID) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13009,1);</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">a</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">2780,,,,</exe>
+         <exe type="complete">278</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="a">3</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="l">0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="d">0,1</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="member1">3</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="go_test_room">2</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="member1">1</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="go_test_room">0</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="f" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="g" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="h" />
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="i">0</exelink>
+   <exelink qstep="3" npc="n032_warrior_master_chandler" sub="!next">1</exelink>
+   <journal_data recompense="2780" quest_title="[전직] 전사의 증명 Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Talk to Master Warrior Chandler]]></title>
+         <contents mid="57"><![CDATA[<html>Talk to Master Warrior Chandler to obtain new powers.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to Master Warrior Chandler]]></destination>
+         <todo_msg mid="59"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom:13009@2</destination_mode>
+         <statemark_npcid>250</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="60"><![CDATA[Pass the first test]]></title>
+         <contents mid="61"><![CDATA[<html>Enter the Test Chamber and break through the walls. Talk to Master Warrior Chandler to start.<BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2>You cannot enter the Test Chamber if you are in a party.</FONT><BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Pass the first test]]></destination>
+         <todo_msg mid="63"><![CDATA[Please Pass the first test.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Talk to Master Warrior Chandler]]></title>
+         <contents mid="65"><![CDATA[<html>You have passed the first test! Return to Master Warrior Chandler for the second test.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Talk to Master Warrior Chandler]]></destination>
+         <todo_msg mid="67"><![CDATA[Talk to Master Warrior Chandler.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

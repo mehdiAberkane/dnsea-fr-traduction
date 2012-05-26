@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n049_sainthaven_kid</npcename>
+      <npcid>49</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Unkempt Kid]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="16"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Unkempt Kid$<BR>Hehe, I think Saint Haven is the biggest city in the world! I pity the poor kids who don't get to live here. <BR>Ahahahaha.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="93" link_target="mq01_023_prologue_archer.xml"><![CDATA[<html>[Lv.1] <FONT color=#a94407>Call of Destiny</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="17" link_target="nq16_6601_dreaming_boy.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Dreaming Boy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="sq11_457_missing_dorin.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Disappearance of the Arms Dealer</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="37" link_target="sq11_526_talisman_kid.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Young Faith</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="42" link_target="sq11_473_hero_knights_weapon.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>Weapons of the Heroic Knight</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="sq11_587_part_time_boy.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>Boy's Job</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="sq11_552_pirate_treasure1.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Treasure of the Pirate King I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="nq30_8101_cursed_gold_coin.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Cursed Gold </FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="53"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Unkempt Kid$<BR>You don't look like a local from Saint Haven. Your clothes give it all away. Haha!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

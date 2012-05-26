@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n485_overhear</npcename>
+      <npcid>485</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Karahan]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Karahan$<BR>Ah, ah, am I being discovered? <BR>This calls for no alarm though… After all, my beauty is enhanced extensively with all these barbarians living in this world, hehe……</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq15_710_most_important_thing</exe>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="enterquest">mq15_728_whos_watching_me</exe>
+         <exe type="conexe" true="3" false="0">1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">710</chk>
+         <chk type="hasquest">728</chk>
+      </conditions>
+   </talk>

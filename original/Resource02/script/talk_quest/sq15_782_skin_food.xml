@@ -1,0 +1,158 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_782_skin_food</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>782</qid>
+      <designer>김인정</designer>
+      <qlevel>40</qlevel>
+      <qdesc>아사이 물감	300413
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Skin Food]]></qkname>
+      <qnpc>
+         <npcid>722</npcid>
+         <npcename>n722_cat_mewmew</npcename>
+         <npckname>만능 고양이 냥냥</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-a" mid="6"><![CDATA[<html>What's that?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$All-round Cat$<BR>Ah… I forgot my lady's request because I was lost in my mind.<BR>In fact, she wouldn't remember what she asked me because she asked me a lot.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$All-round Cat$<BR>My lady worries about her appearance much. But in <FONT color=#a82425>Lotus Marsh</FONT>, the weather is tough. So her skin gets drier. She's so sad about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-c" mid="10"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$All-round Cat$<BR>She deserves that..she wandered around here too much.<BR>However, she blamed me for the dry skin. I don't know what she wants me to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting-c" image="QW_51.dds" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-d" mid="12"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$All-round Cat$<BR>So I think I should make a face pack good for her skin. Go to <FONT color=#a82425>Riverwart Village Ruins</FONT> and get Asai paints. I heard that it would be good for skin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Skin Food$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-1" image="QW_51.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$All-round Cat$<BR>Now go to <FONT color=#a82424>Riverwart Village Ruins</FONT> and get Asai paints.<BR>I believe <FONT color=#387207>{user_nick}</FONT>'s ability!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-2-a" mid="17"><![CDATA[<html>(Who's the lady?)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$All-round Cat$<BR>Oh, you brought them!<BR>She's about to wake up now, so I'd better prepare this for her~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2-a" image="QS_Default.dds" itemindex="300413">
+      <talk_answer link_index="n722_cat_mewmew-2-b" mid="19"><![CDATA[<html>Oh that's so.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$All-round Cat$<BR>Stir <FONT color=#a82425>Asai paints</FONT> with facial lotions and put it to the face.<BR>If you put a leaf on your face, it will make an effect as a face pack which is helpful for moisturizing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2-b" image="" itemindex="">
+      <talk_answer link_index="n722_cat_mewmew-2-c" mid="21"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n722_cat_mewmew-2-c" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$All-round Cat$<BR>She always complains living here because it's too hot and humid.<BR>I don't understand then why she came to this place in the first time.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">7820,,,,,</exe>
+         <exe type="setquest">782</exe>
+         <exe type="talk" npc="n722_cat_mewmew">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">1393</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">1394</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201393</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201394</exe>
+         <exe type="addquestitem" num="1">300413</exe>
+         <exe type="huntitem" num="10" exe="9,10,11" onexe="">300413</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7820,,,,,</exe>
+         <exe type="complete">782</exe>
+         <exe type="delquestitem" num="-1">300413</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n722_cat_mewmew" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n722_cat_mewmew" sub="acceptted">1,2,3,4,5,6,8</exelink>
+   <exelink qstep="2" npc="n722_cat_mewmew" sub="b">0</exelink>
+   <exelink qstep="2" npc="n722_cat_mewmew" sub="c">1,2</exelink>
+   <journal_data recompense="0:7820" quest_title="피부에 양보하세요" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="300413">
+      <journal index="1">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,0,0</destination_pos>
+         <destination_mode>custom:511@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[To Riverwart Village Ruins]]></title>
+         <contents mid="24"><![CDATA[<html>Get Asai paints in Riverwart Village Ruins.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Riverwart Village Ruins</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Search Riverwart Village Ruins]]></destination>
+         <todo_msg mid="26"><![CDATA[Get Asai paints in Riverwart Village Ruins]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_nyangnyang.dds</contents_image>
+         <destination_pos>14,n722</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>722</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[To All-round Cat]]></title>
+         <contents mid="28"><![CDATA[<html>Deliver Asai paints to All-round Cat.<BR><BR><FONT color=#086171>Riverwart Wharf</FONT> <FONT color=#a82425>→ All-round Cat</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Talk with All-round Cat]]></destination>
+         <todo_msg mid="30"><![CDATA[Report to All-round Cat]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>781</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

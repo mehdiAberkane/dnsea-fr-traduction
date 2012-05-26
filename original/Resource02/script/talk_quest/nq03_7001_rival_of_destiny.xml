@@ -1,0 +1,172 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq03_7001_rival_of_destiny</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7001</qid>
+      <designer>나은하</designer>
+      <qlevel>22</qlevel>
+      <qdesc>위대한 용사가 되기 위해서는 멋진 라이벌이 있어야 한다면서 자신의 숙명의 라이벌 타이푼 킴과 자신의 승부에 대해서 자랑. 결론은 너도 라이벌을 잘 관리하라.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Fate of a rival]]></qkname>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="10"><![CDATA[<html> I'm not a rival. </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Warrior Chandler$<BR>You were just a newbie when you first came to Calderock Village. But look at you now... you are a respectable adventurer who receives challenges from a rival on a regular basis.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="QN_NPC_Warrior_Chandler.dds" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="12"><![CDATA[<html> Why are you doing this? </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Warrior Chandler$<BR>Hahaha! Don’t be shy!!<BR><FONT color=#7e12d2>(Chandler pets your head with his big hands.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="14"><![CDATA[<html> (Chandler continues chattering) </html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Warrior Chandler$<BR>Don’t be shy!<BR>Everyone needs a rival!<BR>Having a rival is a must in being a hero.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Warrior Chandler$<BR>The path of a hero is a hard and a lonely one.<BR>Often times, even your allies won't able to soothe the loneliness and the pain.<BR>However the only person setting on the same path as you is... your rival</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-acceptted" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Warrior Chandler$<BR>Only your rival can understand that pain. Sometimes you feel closer to your rival than your family members and even your lover. I still remember when I met my destined rival.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-a" mid="24"><![CDATA[<html> I'm busy right now, I do not have time for your old stories </html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Master Warrior Chandler$<BR>About couple decades ago... it was when countless monsters swarmed into Calderock Village. In their frontline was this incredibly huge Orc.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-b" mid="26"><![CDATA[<html>(Chandler grabs your shoulders with his monstrous hands and continues on with the story.)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Master Warrior Chandler$<BR>Just listen. All this will be your flesh and blood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-c" mid="28"><![CDATA[<html>Sounds like some proposal to the Orc.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Warrior Chandler$<BR>Everyone around me was afraid of that Orc. But not me... my heart started beating faster, my nostrils got bigger, and my breathing became harder. And I couldn't say a word because I was salivating so much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-d" mid="30"><![CDATA[<html> (Wasn't really bother about the response) </html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Warrior Chandler$<BR><FONT color=#a82424>Propose</FONT>! It was exactly like that. It was as if... I met my soulmate. I knew at that moment that the Orc was to become my <FONT color=#a82424>destined rival</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-1-e" mid="32"><![CDATA[<html>Somehow the story seems to get increasingly dangerous.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Warrior Chandler$<BR>It was as if that Orc recognized me also. That Orc... he charged towards me, with his face blushing in deep blue. I can never forget the feeling of his breath brushes against my cheeks.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-1-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2" mid="34"><![CDATA[<html>Just skip everything and go directly to the end.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Master Warrior Chandler$<BR>Ha, what a kid. You will soon experience such... thrill.<BR><FONT color=#7e12d2>(Don't really want to experience that...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-a" mid="37"><![CDATA[<html>Orc Gim... that's quite the name for an Orc.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Warrior Chandler$<BR>I kept encountering that Orc from that day on. Along the way, I learned that his name was <FONT color=#a94407>Orc Gim</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-a" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-b" mid="39"><![CDATA[<html>Maybe he died in battle elsewhere?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Warrior Chandler$<BR>Thanks to those battles with <FONT color=#a94407>Orc Gim</FONT>, I was able to further hone my skills. But starting one day, I stopped seeing <FONT color=#a94407>Orc Gim</FONT> in battles.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-b" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-c" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Master Warrior Chandler$<BR>There's no way that my <FONT color=#a82424>fated rival</FONT>, <FONT color=#a94407>Orc Gim</FONT>, fell by the hands of another!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-c" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-d" mid="43"><![CDATA[<html>(Like I was saying, this story is getting too dangerous...)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Warrior Chandler$<BR>I felt lonely in a battle without <FONT color=#a94407>Orc Gim</FONT>. I realized what a significant part that <FONT color=#a94407>Orc Gim</FONT> held in my life.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-d" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-e" mid="45"><![CDATA[<html> Whew, I sure there is nothing like that. </html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Warrior Chandler$<BR>That's what a rival is. A true <FONT color=#a82424>god-given opponent</FONT> who is meant to bring you up to a higher state. A <FONT color=#a82424>nonidentical twin bound by soul</FONT>. Anyways, congratulations for finally having such a figure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-e" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-2-f" mid="47"><![CDATA[<html>(...)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Master Warrior Chandler$<BR>Ha, I guess you were impressed by my story.<BR>No need to thank me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-2-f" image="QN_NPC_Warrior_Chandler.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Master Warrior Chandler$<BR>I guess you were so impress that you are speechless. Hahaha!<BR>Remember the words I said today!<BR><FONT color=#7e12d2>(It appears that you've gotten closer with Master Warrior Chandler.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7001</exe>
+         <exe type="talk" npc="n032_warrior_master_chandler">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">7001</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="1" npc="n032_warrior_master_chandler" sub="2">0</exelink>
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="b" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="c" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="d" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="e" />
+   <exelink qstep="2" npc="n032_warrior_master_chandler" sub="f">0</exelink>
+   <journal_data recompense="" quest_title="숙명의 라이벌" chapterid="" quest_level="22" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_NPC_Warrior_Chandler.dds</contents_image>
+         <destination_pos>8,n32</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>32</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Talk to Master Warrior Chandler]]></title>
+         <contents mid="54"><![CDATA[<html>Go listen to <FONT color=#a82424>Master Warrior Chandler</FONT> talk about his rival, Orc Gim.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Warrior Chandler</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Talk to Master Warrior Chandler]]></destination>
+         <todo_msg mid="56"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>277</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

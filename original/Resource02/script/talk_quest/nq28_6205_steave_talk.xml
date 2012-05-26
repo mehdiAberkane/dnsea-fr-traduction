@@ -1,0 +1,93 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq28_6205_steave_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6205</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Ideal Girl]]></qkname>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>자경단장 스티브</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="" itemindex="">
+      <talk_answer link_index="n004_guard_steave-accepting-a" mid="7"><![CDATA[<html>Shall I introduce you a nice lady?</html>]]></talk_answer>
+      <talk_answer link_index="n004_guard_steave-accepting-b" mid="8"><![CDATA[<html>There's really no lady that you actually like in this town?</html>]]></talk_answer>
+      <talk_answer link_index="n004_guard_steave-accepting-c" mid="9"><![CDATA[<html>Well... I'm just wondering.</html>]]></talk_answer>
+      <talk_answer link_index="n004_guard_steave-accepting-d" mid="10"><![CDATA[<html>Looking from it, I think it's hard for you to get yourself a beautiful wife.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Vigilante Leader Steve $<BR>If possible, I'd like a beautiful girl. Actually, I haven't really given it much thought… Why are you asking anyway?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Vigilante Leader Steve $<BR>Haha, do you think any lady out there will want to marry a guy like me? Please do introduce a human lady to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Vigilante Leader Steve $<BR>Not exactly. In fact, there was. But she's not here anymore. My friend actually liked her first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Vigilante Leader Steve $<BR>You are boring.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Vigilante Leader Steve $<BR>That's too much. But I think the same too. Nevertheless, it's still a dream of a man to marry a beautiful lady.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6205, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 4, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 4, 100 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 4, 100 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 4, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 이상형에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>4:3500:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

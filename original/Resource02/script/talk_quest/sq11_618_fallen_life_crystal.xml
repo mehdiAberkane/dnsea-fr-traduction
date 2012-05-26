@@ -1,0 +1,308 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_618_fallen_life_crystal</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>618</qid>
+      <designer>김인정</designer>
+      <qlevel>40</qlevel>
+      <qdesc>타락한 생명의 결정	300344
+힘의 혼합물	300345
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Nest] Corrupted Life Choice]]></qkname>
+      <qnpc>
+         <npcid>313</npcid>
+         <npcename>n313_velskud_injured_wing</npcename>
+         <npckname>벨스커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>88</npcid>
+         <npcename>n088_scholar_starshy</npcename>
+         <npckname>문장학자 스타쉬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n313_velskud_injured_wing-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Velskud$<BR><FONT color=#7e12d2>(Velskud looks furious)</FONT><BR>Hmph. So much trash in this world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-noquest" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="168"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Did you collected all the power materials?! <FONT color=#a82424>What did Master Sorceress Stella</FONT>say?<BR><FONT color=#7e12d2>(Stas asks anxiously.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="8"><![CDATA[<html>What?! Something is not enough again…?!!</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Stella$<BR>Hmm… something feels weird.<BR>I feel there's something missing.<BR><FONT color=#7e12d2>(Stella ponders over this.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-acceptted" mid="193"><![CDATA[<html><FONT color=#086171>Quest accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="192"><![CDATA[<html>$Corrupted Life Choice$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="133"><![CDATA[<html>(Ah… more work…)</html>]]></talk_answer>
+      <talk_question mid="132"><![CDATA[<html>$Master Sorceress Stella${action:Talk}<BR>
+Why are you so anxious? Are you high?<BR>
+Anyway… again.. <BR>
+Ah-ha!<BR><FONT color=#7e12d2>(Stella claps)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="QS_Default.dds" itemindex="300344">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="136"><![CDATA[<html>why does it have to come back to life…?</html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Master Sorceress Stella$<BR>
+<FONT color=#a82424>Corrupted Life Choice</FONT>!<BR>That is what we need to make this mixture.<BR> We need that to bring the life back. Oh ho-ho-ho~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="QS_Default.dds" itemindex="300344">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="139"><![CDATA[<html>(………) Where is that?</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Master Sorceress Stella$<BR>Do I have to tell you something so obvious? Even if I do, you wouldn't understand!<BR>So just shut up and <FONT color=#a82424>bring</FONT>me Corruped Life Choice.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="QW_44.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-2" mid="141"><![CDATA[<html>Well it's easier than Hell mode for sure….</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Master soreress stella$<BR>I'm not doing this because I don't want to explain it im doing this because…. Hmm, anyways <FONT color=#a82424>go to </FONT>autocrat's grave.<BR>
+all you have to do is go to the strongest evil and take it out from there. very easy, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n313_velskud_injured_wing-1" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="144"><![CDATA[<html>$Velskud$<BR>…….<BR><FONT color=#7e12d2>(Velskud looking furious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-1" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_question mid="169"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Did you complete the mixture?!<BR>
+<FONT color=#a82424>What did Master Sorceress Stella</FONT>say?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n313_velskud_injured_wing-2" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n313_velskud_injured_wing-2-a" mid="146"><![CDATA[<html>I am not… acting….</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$Velskud${action:Talk}<BR>I can see you are acting just by coming here to apologize.<BR><FONT color=#7e12d2>(Velskud smiles)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n313_velskud_injured_wing-2-a" image="" itemindex="">
+      <talk_answer link_index="n313_velskud_injured_wing-2-b" mid="148"><![CDATA[<html>I'm not acting! I'm honest!</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$Velskud$<BR>I thought you were trying to do your best to act by taking down Manticore and Apocalypse.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n313_velskud_injured_wing-2-b" image="QM_Sea_Dragon.dds" itemindex="">
+      <talk_answer link_index="n313_velskud_injured_wing-2-c" mid="151"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="150"><![CDATA[<html>$Velskud$<BR>Ha, honest….<BR>Let's see your sincerity by <FONT color=#a82424>taking down the</FONT>  sea-dragon. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n313_velskud_injured_wing-2-c" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_answer link_index="n313_velskud_injured_wing-2-d" mid="153"><![CDATA[<html>What is this…?</html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$Velskud${action:Talk}<BR>…Probably came here to find this.<BR><FONT color=#7e12d2>(Velskud throws a black jewel)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n313_velskud_injured_wing-2-d" image="QS_Default.dds" itemindex="300344">
+      <talk_answer link_index="n313_velskud_injured_wing-3" mid="156"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Velskud$<BR><FONT color=#a82424>That is</FONT> Corrupted Life Choice.<BR>You don't even know what you are looking for… pathetic.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_44.dds" itemindex="">
+      <talk_question mid="166"><![CDATA[<html>$Master Sorceress Stella$<BR>What are you doing? Hurry and <FONT color=#a82424>go to</FONT> tyrant's grave.<BR>If you go, you will find a way. Ho-ho-ho-ho.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n313_velskud_injured_wing-3" image="QN_Npc_Velskud.dds" itemindex="">
+      <talk_question mid="157"><![CDATA[<html>$Velskud$<BR>If you got everything that you needed, go away.<BR>I don't want to talk to you anymore.<BR><FONT color=#7e12d2>(Velskud does not want to talk anymore.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="QS_Default.dds" itemindex="300344">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="160"><![CDATA[<html>I'm here.</html>]]></talk_answer>
+      <talk_question mid="158"><![CDATA[<html>$Master Sorceress Stella${action:Talk}<BR><FONT color=#a82424>Did you bring</FONT> Corrupted Life Choice?<BR>Don't tell me you couldn't even do that? No, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="162"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="161"><![CDATA[<html>$Master Sorceress Stella$<BR>OKAY~☆<BR>Now, let's mix it all up~<BR>
+<FONT color=#7e12d2>(Stella puts the materials into a pot)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="QN_Npc_SoceressStella.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-c" mid="171"><![CDATA[<html>(Weird magic spell)</html>]]></talk_answer>
+      <talk_question mid="170"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#a94407>Abracadabra</FONT>★ <FONT color=#086171>Memorize♡the spells</FONT>! <BR>Abraca♤dabra♬ let everything come true~ yeeup!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-d" mid="173"><![CDATA[<html>Uh, is this really it?</html>]]></talk_answer>
+      <talk_question mid="172"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#7e12d2>(The liquid starts to get hot before turning black then clearing up.)<BR></FONT>Here, It's all done!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-d" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-4" mid="175"><![CDATA[<html>Okay….</html>]]></talk_answer>
+      <talk_question mid="174"><![CDATA[<html>$Master Sorceress Stella$<BR>I've put the materials and said the magic spells, what else do you want from me?<BR>Now, take this <FONT color=#a82424>to</FONT>Heraldry Scholar Stas.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="176"><![CDATA[<html>$Master Sorceress Stella$<BR>Anyway,<FONT color=#a82424>Heraldry Scholar Stas</FONT> thinks he can do everything.<BR>
+But because he doesn't have my great power, he can't do anything. Haha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-a" mid="178"><![CDATA[<html>Yes, may I help you?</html>]]></talk_answer>
+      <talk_question mid="177"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Did you complete the mixture?!<BR><FONT color=#7e12d2>(Stas asks anxiously.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-b" mid="180"><![CDATA[<html>Huh? Already?</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$Heraldry Scholar Stas$<BR><FONT color=#7e12d2>(Stas puts the mixture of power into a jewel.)<BR></FONT><FONT color=#a82424>Serpentra</FONT>is starting to stir in the cocoon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-b" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-c" mid="182"><![CDATA[<html>I should have moved faster…</html>]]></talk_answer>
+      <talk_question mid="181"><![CDATA[<html>$Heraldry Scholar Stas$<BR>While we have gotten the materials together, it looks like it's too late.<BR><FONT color=#a82424>General Douglas </FONT>told me to order you to<FONT color=#086171>take down and kill the</FONT> sea-dragon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-c" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-d" mid="184"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I don't blame you.<BR>
+<FONT color=#7e12d2>(Stas takes the jewel from the mixture of water)<BR></FONT>Here, take this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-d" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-e" mid="186"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="185"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-e" image="" itemindex="">
+      <talk_answer link_index="n088_scholar_starshy-4-f" mid="194"><![CDATA[<html>Then… I'll be back.</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Here, hurry and <FONT color=#a82424>take down the</FONT>sea-dragon!<BR><FONT color=#a82424>There must be a boat at the Hemalte Port to help you get</FONT> to the sea-dragon's nest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n088_scholar_starshy-4-f" image="QS_Default.dds" itemindex="337839360">
+      <talk_question mid="195"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Be careful.<BR>
+And, if you need more scales for the<FONT color=#a82424>sea dragon's key</FONT>, bring <FONT color=#a82424>Determination of the Dark</FONT>and<FONT color=#a82424>Flash of Despair</FONT>to me anytime.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">618</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+         <exe type="recompense_view">6180,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300344</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300344</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300344</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300345</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300345</exe>
+         <exe type="recompense">6180,,,,,</exe>
+         <exe type="complete">618</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="a">2</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n313_velskud_injured_wing" sub="b" />
+   <exelink qstep="2" npc="n313_velskud_injured_wing" sub="c" />
+   <exelink qstep="2" npc="n313_velskud_injured_wing" sub="d" />
+   <exelink qstep="2" npc="n313_velskud_injured_wing" sub="3">3,0,2,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="4">1,0,3,2</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="b" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="c" />
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="d">1</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="e">0,2</exelink>
+   <exelink qstep="4" npc="n088_scholar_starshy" sub="f" />
+   <journal_data recompense="0:6180" quest_title="[네스트] 타락한 생명의 결정" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="300344,300345">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode />
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="111"><![CDATA[Last thing]]></title>
+         <contents mid="112"><![CDATA[<html>Let's talk to Master Sorceress Stella at Saint Haven.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="113"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="114"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_44.dds</contents_image>
+         <destination_pos>444,n313</destination_pos>
+         <destination_mode>custom:441@1,442@1,443@1,444@4</destination_mode>
+         <statemark_npcid>313</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="115"><![CDATA[Corrupted Life Choice]]></title>
+         <contents mid="116"><![CDATA[<html>Go to the Unknown Tyrant's Grave and retrieve Corrupted Life Choice.<BR><BR><FONT color=#086171>Hermalte Port(Entrance to black Mountain)</FONT> <FONT color=#a82424>→ unknown tyrant's grave</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[Unknown Tyrant's Grave]]></destination>
+         <todo_msg mid="118"><![CDATA[go to the Unknown Tyrant's Grave and find Corrupted Life Choice]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode />
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="119"><![CDATA[Complete]]></title>
+         <contents mid="120"><![CDATA[<html>Found Corrupted Life Choice. Give it to Master Sorceress Stella at Saint Haven.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="121"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="122"><![CDATA[Give the materials to Master Sorceress Stella]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>11,n88</destination_pos>
+         <destination_mode />
+         <statemark_npcid>88</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="188"><![CDATA[Gave mixture of power]]></title>
+         <contents mid="189"><![CDATA[<html>Let's give the object that you got from Stella to Stas.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Heraldry Scholar Stas</FONT></html>]]></contents>
+         <destination mid="190"><![CDATA[Talk to Heraldry Scholar Stas]]></destination>
+         <todo_msg mid="191"><![CDATA[Give the mixture of power to Heraldry Scholar Stas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>617</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,216 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_759_real_cause</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>759</qid>
+      <designer>김주연</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>760</nextqid>
+      <nextqname>sq15_760_necessary_condition</nextqname>
+      <nextqnpc>n713_soceress_tamara</nextqnpc>
+      <qkname mid="1"><![CDATA[[Changing job] Real Cause]]></qkname>
+      <qnpc>
+         <npcid>472</npcid>
+         <npcename>n472_karahan</npcename>
+         <npckname>카라한 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-noquest" image="" itemindex="">
+      <talk_question mid="193"><![CDATA[<html>$Karahan$<BR>Don’t get closer to me. <BR>You may be faint by my seductive scent.<BR>
+<FONT color=#7e12d3>(If you talk with Master Sorceress Tamara, you can start the new quest.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-a" mid="180"><![CDATA[<html>You must be depressed.</html>]]></talk_answer>
+      <talk_question mid="179"><![CDATA[<html>$Master Sorceress Tamara$<BR>I heard the news. <BR>How about Cidel?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-b" mid="182"><![CDATA[<html>If I were stronger, it wouldn't have done like this.</html>]]></talk_answer>
+      <talk_question mid="181"><![CDATA[<html>$Master Sorceress Tamara$<BR>The worse it is, the more<FONT color=#387207>{user_nick}</FONT>needs to bob up again. Cidel would be cheered up if people around her bob up again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-c" mid="184"><![CDATA[<html>I know I'm that kind of person. Haha. </html>]]></talk_answer>
+      <talk_question mid="183"><![CDATA[<html>$Master Sorceress Tamara$<BR>Oh, you are finally getting matured? Haha.<BR>You have pretty lips.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-d" mid="186"><![CDATA[<html>Hmm, in fact, I was disappointed by myself.</html>]]></talk_answer>
+      <talk_question mid="185"><![CDATA[<html>$Master Sorceress Tamara$<BR>…canceled what I said before.<BR><FONT color=#7e12d2>(Tamara stares at me)</FONT><BR>I think <FONT color=#387207>{user_nick}</FONT> are quite disappointed as much as Cidel is. Right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-e" mid="188"><![CDATA[<html>I'm kind of a tender-hearted person!</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#7e12d2>(patting my butt)</FONT> NONO! Cheer up!<BR>Right, you are a definitely young boy!<BR>
+<FONT color=#387207>{user_nick}</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceptted" mid="190"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Real Cause$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-1-a" mid="232"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="191"><![CDATA[<html>$Master Sorceress Tamara$<BR>With that passive attitude, you will never be okay and can't spell your skills too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-a" image="QW_51.dds" itemindex="">
+      <talk_question mid="233"><![CDATA[<html>$Master Sorceress Tamara$<BR>Why don't you go to <FONT color=#a82425>Riverwart Village Ruins</FONT>and beat monsters up? It will help you to relieve yourself.<BR>
+In the meantime, I'm going to make pies for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-1" image="" itemindex="">
+      <talk_answer link_index="n472_karahan-1-a" mid="196"><![CDATA[<html>What a such a swindler! Betrayer!</html>]]></talk_answer>
+      <talk_question mid="195"><![CDATA[<html>$Karahan$<BR>Oh, the poor soul is tempted by my scent.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-1-a" image="" itemindex="">
+      <talk_answer link_index="n472_karahan-1-b" mid="198"><![CDATA[<html>yes, betrayer …..what the!</html>]]></talk_answer>
+      <talk_question mid="197"><![CDATA[<html>$Karahan$<BR>Oh my. I can give your heart back even though you beg to me.<BR>Why don't you speak out more tenderly</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-1-b" image="" itemindex="">
+      <talk_answer link_index="n472_karahan-1-c" mid="200"><![CDATA[<html>Don't say silly things?! I never ever chose you?</html>]]></talk_answer>
+      <talk_question mid="199"><![CDATA[<html>$Karahan$<BR>Betrayer…. huhuhu. Yeah. How lovely and cute you are! Are you going to follow <FONT color=#a82425>Karacule</FONT> but not me?<BR>Ahah~ you can't even choose rightly, poor girl.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-1-c" image="" itemindex="">
+      <talk_answer link_index="n472_karahan-1-d" mid="202"><![CDATA[<html>Hey!! I'm delicate!</html>]]></talk_answer>
+      <talk_question mid="201"><![CDATA[<html>$Karahan$<BR>It would be better you said that you're going to follow me in the first time. It's already late.<BR>Gee. Do you really think that Karacule's going to take care of you? How poor you are.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-1-d" image="" itemindex="">
+      <talk_answer link_index="n472_karahan-1-e" mid="204"><![CDATA[<html>I'm a genius so I don't need to study!!</html>]]></talk_answer>
+      <talk_question mid="203"><![CDATA[<html>$Karahan$<BR>You're not going to be a successor of Fairystar? How pitiful you are.<BR>When will you catch up with me? You're just reading musty magic spell books.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-1-e" image="" itemindex="">
+      <talk_answer link_index="n472_karahan-1-f" mid="206"><![CDATA[<html>I'm angry!!</html>]]></talk_answer>
+      <talk_question mid="205"><![CDATA[<html>$Karahan$<BR>Even for geniuses, they can be just a fool unless they learn good magic spell books .<BR>You can't even touch my body with your current ability.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-1-f" image="" itemindex="">
+      <talk_question mid="207"><![CDATA[<html>$Karahan$<BR>You go to your way. <BR>Just keep this precious memory that you had a conversation with me. Hahaha.<BR><FONT color=#7e12d3>(Karahan turns back fluttering his cape.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n472_karahan-2" image="" itemindex="">
+      <talk_question mid="210"><![CDATA[<html>$Karahan$<BR>You go to your way. <BR>Just keep this precious memory that you had a conversation with me. Hahaha.<BR><FONT color=#7e12d3>(Karahan turns back fluttering his cape.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-a" mid="212"><![CDATA[<html>Explains about Karahan's appearance.</html>]]></talk_answer>
+      <talk_question mid="211"><![CDATA[<html>$Sorceress Tamara$<BR>Who did you meet?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-a" image="QN_Npc_karahan.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-b" mid="214"><![CDATA[<html>(Deliver what Karahan told before to her)</html>]]></talk_answer>
+      <talk_question mid="213"><![CDATA[<html>$Sorceress Tamara$<BR>I think he's the one Cidel doesn't like. <BR>However, why did he meet <FONT color=#387207>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-c" mid="216"><![CDATA[<html>I don't give a shit for studying so I think the magic spell book is the problem.</html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$Sorceress Tamara$<BR>Oh, how naughty he is. <BR>Hmm… Yeah if you have good magic spell books, it will definitely help to enhance your ability.<BR>But, what is important is effort and attitude.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-d" mid="218"><![CDATA[<html>(Can't hear anything) Since I'm a genius the magic spell book is the problem.</html>]]></talk_answer>
+      <talk_question mid="217"><![CDATA[<html>$Sorceress Tamara$<BR>…No the problem is….<BR>Are you listening?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-e" mid="220"><![CDATA[<html>Oops! …I I want to eat something suddenly!! (Let's run away)</html>]]></talk_answer>
+      <talk_question mid="219"><![CDATA[<html>$Sorceress Tamara$<BR>Anyway he just said it to make you angry….just forget about it. By the way <BR><FONT color=#7e12d2>(Tamara gives pies suddenly)</FONT> Yeah! You want to have pies?!<BR><FONT color=#7e12d3>(it smells so bad and weird)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-e" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-!next" mid="222"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="221"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">7590,,,,,</exe>
+         <exe type="setquest">759</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7590,,,,,</exe>
+         <exe type="complete">759</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n472_karahan" sub="b" />
+   <exelink qstep="1" npc="n472_karahan" sub="c" />
+   <exelink qstep="1" npc="n472_karahan" sub="d" />
+   <exelink qstep="1" npc="n472_karahan" sub="e" />
+   <exelink qstep="1" npc="n472_karahan" sub="f">0,1</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="d" />
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="e">0</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="!next">1</exelink>
+   <journal_data recompense="0:7590" quest_title="[전직] 마법서가 문제" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,n472</destination_pos>
+         <destination_mode>custom:511@1</destination_mode>
+         <statemark_npcid>472</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="224"><![CDATA[Refreshing]]></title>
+         <contents mid="225"><![CDATA[<html>Go to Riverwart Village Ruins.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Riverwart Village Ruins</FONT></html>]]></contents>
+         <destination mid="226"><![CDATA[Take a walk Riverwart Village Ruins]]></destination>
+         <todo_msg mid="227"><![CDATA[Take a walk to Riverwart Village Ruins]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_LotusMarshTown.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="228"><![CDATA[Talk with Master Sorceress Tamara]]></title>
+         <contents mid="229"><![CDATA[<html>I run into Karahan. Let's go back to Master Sorceress Tamara.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="230"><![CDATA[Talk with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="231"><![CDATA[Go back to Master Sorceress Tamara]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>44:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest>716</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

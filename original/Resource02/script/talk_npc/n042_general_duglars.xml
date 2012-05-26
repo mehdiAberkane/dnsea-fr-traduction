@@ -1,0 +1,143 @@
+   <talk>
+      <npcename>n042_general_duglars</npcename>
+      <npcid>42</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[General Douglas]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="10"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="11"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$General Douglas$<BR>There is no bargaining with evil!<BR>We must resist to the end!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="194" link_target="sq_974_xmas_duglars.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="151" link_target="nq27_6802_duglars_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171> Saint Haven</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="152" link_target="nq27_6803_duglars_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Royal Family</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="153" link_target="nq27_6804_duglars_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Six Heroes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="154" link_target="nq27_6805_duglars_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Dragons</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="155" link_target="nq27_6806_duglars_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The Reign and Rulers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="156" link_target="nq27_6807_duglars_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Serena</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="164" link_target="nq27_6812_duglars_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Douglas's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="165" link_target="nq27_6813_duglars_60_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Douglas's Gift II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="166"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>Believe in yourself and you will win in any situation!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="20" link_target="mq11_402_town_of_death.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Town of Death</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="21" link_target="mq11_420_return_of_the_general.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>General's Return</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="mq11_403_meet_argenta_again.xml"><![CDATA[<html>[Lv.26] <FONT color=#a94407>Dark Overlord Keep</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="mq11_421_warclouds.xml"><![CDATA[<html>[Lv.26] <FONT color=#a94407>War Clouds</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="mq11_404_return_of_fatality.xml"><![CDATA[<html>[Lv.28] <FONT color=#a94407>Resurrection of the Black Plague.</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="mq11_408_soaring_black_arkmonarch.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Tale of Courage</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="mq11_409_remainder_works.xml"><![CDATA[<html>[Lv.30] <FONT color=#a82424>Unfinished Business</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="mq11_410_sea_monsters_soul.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407> Being Human</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="mq11_414_odd_sequela.xml"><![CDATA[<html>[Lv.32] <FONT color=#a94407>Bizarre Aftermath</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="mq11_415_stopgap.xml"><![CDATA[<html>[Lv.32] <FONT color=#a94407>Ad Hoc</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="58" link_target="mq11_428_revive_serpentra.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>New Crisis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="59" link_target="mq11_429_guardian_geraint.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Guardian Geraint</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="mq11_430_trace_apostle.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Whereabouts of Apostle</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="69" link_target="mq11_431_next_town.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Pollution</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="212" link_target="mq11_435_meet_general.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>Met General</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="213" link_target="mq11_436_not_same.xml"><![CDATA[<html>[Lv26] <FONT color=#a94407>Different Thoughts I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="214" link_target="mq11_437_cooperatively.xml"><![CDATA[<html>[Lv26] <FONT color=#a94407>Cooperative</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="215" link_target="mq11_438_fleet_of_foot.xml"><![CDATA[<html>[Lv28] <FONT color=#a94407>Move quickly</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="216" link_target="mq11_442_soaring_and_falling.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>One is Supposed to Fall</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="217" link_target="mq11_443_settlement.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Settled</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="226" link_target="mq11_382_second_step.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Work Starts Now</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="227" link_target="mq11_383_riskful_meet.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>It's dangerous encounter</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="228" link_target="mq11_386_data_retrieval.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Restarting Data Search</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="229" link_target="mq11_387_temporarily_cure.xml"><![CDATA[<html>[Lv32] <FONT color=#a94407>Looking for a temporary medicine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="77" link_target="sq11_518_quest_general.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>General's Request</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="86" link_target="sq11_451_enermy_of_dragonsycophant.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>The Dragon Followers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="87" link_target="sq11_452_meet_lena.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>Meeting the Lady</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="88" link_target="sq11_453_missing_ring.xml"><![CDATA[<html>[Lv.25]<FONT color=#086171> Missing Ring</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="sq11_454_second_kidnapping.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171A >Kidnapping</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="sq11_455_missing_alrento.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>Disappearance of the Viscount</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="129" link_target="nq27_6801_destruchtion_of_evidence.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>Destruction of Evidence</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="sq11_456_stolen_books.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Stolen Books</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="101" link_target="sq11_537_basis_of_the_strategy.xml"><![CDATA[<html>[Lv.25] <FONT color=#086171>Basic Battle Strategy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="sq11_538_strange_smoke.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Strange Smoke</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="sq11_539_stolen_bomb1.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Gone Is Da Bomb I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="sq11_540_stolen_bomb2.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Gone Is Da Bomb II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="109" link_target="sq11_458_amazing_memory.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Incredible Memory</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="110" link_target="sq11_460_who_is_whiterose.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Identity of White Rose</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="105" link_target="sq11_541_armors_of_deadman.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Armor of the Dead</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="122" link_target="sq11_583_sweep_the_pirates.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>The Pirates</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="123" link_target="sq11_584_unfinished_war.xml"><![CDATA[<html>[Lv.33] <FONT color=#086171>The Fight That Never Ends</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="200" link_target="sq11_697_horror_again.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Another Summer Special Collection</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="201" link_target="sq11_698_bad_donald.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>The True Colors of Donald</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="124" link_target="sq11_494_darkelf_teleju4.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Dark Elf Telreju IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="125" link_target="sq11_510_darkelf_teleju6.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Dark Elf Telreju VI</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="182" link_target="sq11_575_suspicion_of_murder.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Accusation of the White Rose</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="183" link_target="sq11_576_in_a_dilemma.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>The Dilemma</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="184" link_target="sq11_578_brand.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171>Brand Mark</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="185" link_target="sq11_579_new_determin.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>New Determination</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="189" link_target="sq11_628_urgent_message.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>Urgent News</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="190" link_target="sq11_629_retreat_teleju.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>Retreat</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="191" link_target="sq11_630_determination.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>Telreju's Determination</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="192" link_target="sq11_631_scepter_of_shadow.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>The Cave of Shadows</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="176" link_target="sq11_613_rebirth_of_sepentra.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Resurrection of the Serpent</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="177" link_target="sq11_614_deeper_suspicion.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Deepening Suspicions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="178" link_target="sq11_615_overlooking_cape.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Land From Afar</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="179" link_target="sq11_616_failure_of_ancient.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Failure of the Ancients</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="180" link_target="sq11_617_key_of_seadragon.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Key to the Sea Dragon's Nest</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="181" link_target="sq11_619_to_the_seadragon.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Let's Fight the Sea Dragon!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="230"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$General Douglas$<BR>Perservere to the very end and nothing will be impossible.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="133"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="134"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="135"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="132"><![CDATA[<html>$General Douglas$<BR>I like your strong sense of justice.<BR>Get re-listed into the army again and I'll place you as my surbodinate.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="137"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="138"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="139"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="136"><![CDATA[<html>$General Douglas$<BR>You remind me of myself when I was younger.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="141"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="142"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="143"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="140"><![CDATA[<html>$General Douglas$<BR> There can be no bargaining with evil! <BR>Perservere to the end!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="145"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="146"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="144"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="148"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="147"><![CDATA[<html>$General Douglas$<BR>This is a precious gift. I'll be sure to share its goodness with everyone.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq11_408_soaring_black_arkmonarch</exe>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="conexe" true="6" false="5">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 42 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 42 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_GetQuestStep(userObjID, 408) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 6801) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 42 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 42 ) >= 60</chk>
+      </conditions>
+      <exelink idx="back_talk">2</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">2</exelink>
+      <exelink idx="back_gift">2</exelink>
+   </talk>

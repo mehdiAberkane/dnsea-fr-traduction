@@ -1,0 +1,99 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq36_5573_ishilien_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5573</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Recent Interests]]></qkname>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-a" mid="7"><![CDATA[<html> You must be in love if you were to think that way. </html>]]></talk_answer>
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-b" mid="8"><![CDATA[<html> You would never know because it's like you have no feelings.</html>]]></talk_answer>
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-c" mid="9"><![CDATA[<html> You will understand if you fall in love. </html.]]></talk_answer>
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-d" mid="10"><![CDATA[<html> You are just boring. </html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Archer Ithilien$<BR>
+I always thought I have to act rationally. I thought Deanna or Adelynn who acted on their feelings were immature. I was wondering why they acted like that. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Archer Ithilien$<BR>
+Love? I don’t know. I have someone that I care about recently but I’m not sure if that is love. <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Archer Ithilien$<BR>
+No feelings? I never heard of that. Is that how you think of me? <FONT color=#7e12d2>(Ithilien seems upset.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Archer Ithilien$<BR>
+Really? I hope I get a chance. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Archer Ithilien$<BR>
+You also think I’m boring… <FONT color=#7e12d2>(Ithilien seems upset.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5573, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 44, 320 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 44, 320 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 44, 160 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 44, 160 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 최근의 관심사에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>44:12000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,201 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_262_argenta_trap1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>262</qid>
+      <designer>김인정</designer>
+      <qlevel>17</qlevel>
+      <qdesc>아르젠타에게 퀘스트 입수.
+카타콤 집회장으로 가서 특수한 프랍(뱀 머리 조각상 중 1개)를 클릭.
+소환된 몹을 해치운 후 돌아와서 보고.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>263</nextqid>
+      <nextqname>sq08_263_argenta_trap2</nextqname>
+      <nextqnpc>n164_argenta_wounded</nextqnpc>
+      <qkname mid="1"><![CDATA[Special Device I]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-a" mid="6"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Argenta$<BR>Late again? You can't seems to take care of things on your own.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-b" mid="8"><![CDATA[<html> <FONT face=Arial size=2>Well ....</font> </html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Argenta$<BR>Anyway, I remembered it not long ago, but I cant seem to recall it now.. How can I forget?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="QW_20.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-c" mid="10"><![CDATA[<html> Bet with ...? </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Argenta$<BR>You know the <FONT color=#a82424>Serpentine Statues</FONT> located at <FONT color=#a82424>Catacomb Hall</FONT> that spit poison, right? There's a rumor that one of them is a <FONT color=#a82424>secret device</FONT> that calls out a <FONT color=#a82424>special</FONT> thing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="12"><![CDATA[<html>I am just curious.. actually. </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Argenta$<BR>Yes, we had a bet on it regarding whether it's true or not.<BR>I bet you are you curious too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-e" mid="14"><![CDATA[<html> (You check on what needs to be find out) </html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Argenta$<BR>C'mon on! Take this up as a little challenge. You can’t be more timid than I expected!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-e" image="QW_20.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-f" mid="17"><![CDATA[<html> (Is that right) </html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Argenta$<BR>Fine, i'll repeat one more time. Go investigate <FONT color=#a82424>Serpentine Statues</FONT> at <FONT color=#a82424>Catacomb Hall</FONT>.<BR>You can tell if the rumor about one statue being a secret device which calls for a special thing is true or not once you investigate them. Run along now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Special Device I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Argenta$<BR>When will this bet ever be over? I'm too lazy to make confirmation myself. I should have handed this mission to someone else back then. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-2" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Argenta$<BR>Try to check the Serpentine Statues at <FONT color=#a82424>Catacomb Hall</FONT>. There is a rumor that one of those statues has the secret device that summons the special thing. No matter how foolish you are, you are able to handle this right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-a" mid="57"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Argenta$<BR>What are you trying to say with such dumb expression on you face?<BR>You mean you can’t even handle such simple task?<html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-b" mid="59"><![CDATA[<html>Didn’t expect that you will be interested in treasures.</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Argenta$<BR>Oh, what do you mean nothing special? All the device did was summon <FONT color=#a82424>monster</FONT>, Uhm? So.. not even silvers or jewels are found. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-c" mid="61"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Argenta$<BR>Huh? <FONT color=#a82424>Jewels</FONT> are good. I like chewing those shiny polished jewels. Oh, you don't eat jewels? hm~ but, who ask you to eat them in the first place?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-d" mid="63"><![CDATA[<html> (Sigh) </html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Argenta$<BR>Pointless for me to go there personally to check. Since you time isn't as important as mine, it's better to waste your time than mine. Anyway, Good job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-e" mid="65"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-3-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-3-!next" mid="67"><![CDATA[<html>Is this another bet, again?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Argenta$<BR>Because of the bet, it reminds me of another thing.<BR>Have you got time for another check?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">262</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+         <exe type="recompense_view">,2621,2622,2623,2624,2625</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2621,2622,2623,2624,2625</exe>
+         <exe type="complete">262</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="f">2</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">0,1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="d">0</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="e">1</exelink>
+   <exelink qstep="3" npc="n164_argenta_wounded" sub="!next" />
+   <journal_data recompense="1:2621,2:2622,3:2623,4:2624,5:2625" quest_title="특별한 장치 I" chapterid="" quest_level="17" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_20.dds</contents_image>
+         <destination_pos>148,0,0</destination_pos>
+         <destination_mode>custom:146@1,147@1,148@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Argenta's command]]></title>
+         <contents mid="39"><![CDATA[<html>Argenta wants to find the <FONT color=#a82424>Special Device</FONT> at <FONT color=#a82424>Catacomb Hall</FONT>. Go explore the <FONT color=#a82424>Serpentine Statues</FONT>, and find a switch that summons the special thing.<BR><BR><FONT color=#086171>Cristal Stream → Wind Forest(Catacombs Entrance)</FONT> <FONT color=#a82424>→ Catacomb Hall</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Find the Special Device at Catacomb Hall.]]></destination>
+         <todo_msg mid="41"><![CDATA[Please find the Serpentine Statues that spits poison at Catacomb Hall.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_20.dds</contents_image>
+         <destination_pos>149,0,0</destination_pos>
+         <destination_mode>custom:146@1,147@1,148@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Strange Device]]></title>
+         <contents mid="43"><![CDATA[<html>Find a Device that summons the special thing among the <FONT color=#a82424>Serpentine Statues</FONT> in Catacomb Hall.<BR><BR><FONT color=#086171>Wind Forest(Catacombs Entrance)</FONT> <FONT color=#a82424>→ Catacombs Entrance</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Find a Special Device among the Serpentine Statues]]></destination>
+         <todo_msg mid="45"><![CDATA[Please find a Special Device among the Serpentine Statues in Catacomb Hall]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_20.dds</contents_image>
+         <destination_pos>149,0,0</destination_pos>
+         <destination_mode>custom:148@3,149@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Frightening devices]]></title>
+         <contents mid="47"><![CDATA[<html>We found the Special Device. But the device was not a special one all it does is just summons the monsters. Let's defeat these monsters.<BR><BR><FONT color=#086171>Wind Forest(Catacombs Entrance)</FONT> <FONT color=#a82424>→ Catacombs Hall</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Defeat monsters that summoned from the Special Device.]]></destination>
+         <todo_msg mid="49"><![CDATA[Please defeat monsters that summoned from the Special Device.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Empty result]]></title>
+         <contents mid="51"><![CDATA[<html><FONT color=#a82424>Special Device,</FONT>was use for just summoning the monsters. Let's go back and report to <FONT color=#a82424>Argenta</FONT> about the result.<BR><BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to Argenta at Gray Ruins]]></destination>
+         <todo_msg mid="53"><![CDATA[Please go back and report to Argenta in Gray Ruins.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>17:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>261</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

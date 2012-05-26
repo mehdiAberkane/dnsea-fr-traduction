@@ -1,0 +1,181 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_365_special_entiques</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>365</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>300315
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[A Very Special Antique]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>Would you really want to become an antique dealer?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR>(May's eyes are sparkling.)<BR>Bingo! I've got some great information about an antique.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>They're a little different, but it won't bother much.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant May$<BR>Didn't I told you last timeI? I'll be an antiques dealer! <BR>Running an antique shop is almost the same as running a grocery store, it wonder be more difficult.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant May$<BR>Sure? Well, alright then.<BR>I was flipping my <FONT color=#a82424>"Fashion Goddess"</font> and found a story about an amazing antique.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="QS_Default.dds" itemindex="300315">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="12"><![CDATA[<html>You'll need lots of money to buy such stuff.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Merchant May$<BR>It's about a jar made from ONE WHOLE sparkling blue sapphire! It is estimated to be at least 500 years old! Wooo...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merchant May$<BR>Ha! Wonder it's in whose hand now. The last owner was Priest William, who died about 10 years ago.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="QS_Default.dds" itemindex="300315">
+      <talk_answer link_index="n026_trader_may-accepting-f" mid="16"><![CDATA[<html>(The description don't seem to relate.)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Merchant May$<BR>Thereafter, the Sapphire Jar disappeared! I think the jar should be somewhere near where Priest William died.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-f" image="QS_Default.dds" itemindex="300315">
+      <talk_answer link_index="n026_trader_may-accepting-g" mid="18"><![CDATA[<html>Eh? Me? Why me again?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant May$<BR>So, {user_nick}, please find the Sapphire Jar in the Forest of Death.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-h" mid="20"><![CDATA[<html>(Fragile and beautiful?!)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Merchant May$<BR>Not to say that you are my slave, which one of us would better suit to go to the Forest of Death though? Strong and tough like you, {user_nick}? Or fragile and beautiful like May?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-aceptted" mid="22"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$A Very Special Antique$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Merchant May$<BR>I always thought it would be a powerful monster that would have found the jar. I would then be negotiating with {monster:433}!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QS_Default.dds" itemindex="300315">
+      <talk_answer link_index="n026_trader_may-3" mid="25"><![CDATA[<html>Yes, here you go. (Hands her the jar.)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant May$<BR>Did you find the Sapphire Jar?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="27"><![CDATA[<html>Erm, nope.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Merchant May$<BR>Well, well!<BR>Beautiful and intelligent. How flawless I am!<BR>Beauty normally won't live for long, this is worrying for me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="29"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Merchant May$<BR>Heh, now I'll shall make a huge pile out of this and this should enable me to pay off all my debts!<BR>No worries, I'll give you some commission, {user_nick}!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,365, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">,3651,3652,3653,3654,3655</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">433</exe>
+         <exe type="huntitem" num="1" exe="" onexe="8,9,10">300315</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200433</exe>
+         <exe type="addquestitem" num="1">300315</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="delquestitem" num="-1">300315</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3651,3652,3653,3654,3655</exe>
+         <exe type="complete">365</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="h">3</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="aceptted">0,1,4,5,6,2,11</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="a">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b">1,2</exelink>
+   <journal_data recompense="1:3651,2:3652,3:3653,4:3654,5:3655" quest_title="매우 각별한 골동품" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="300315">
+      <journal index="1">
+         <contents_image>QW_17.dds</contents_image>
+         <destination_pos>134,0,0</destination_pos>
+         <destination_mode>custom:132@1,133@1,134@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[A Very Special Antique]]></title>
+         <contents mid="32"><![CDATA[<html>Defeat {monster:433} in the <FONT color=#a82424>Forest of Death</FONT> and bring back the Sapphire Jar.<BR><BR><FONT color=#086171>Lower Ridge (Forest of Death Entrance)</FONT> <FONT color=#a82424>→ Forest of Death</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Forest of Death]]></destination>
+         <todo_msg mid="34"><![CDATA[Quest has been added..]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="36"><![CDATA[<html>You've got the Sapphire Jar. Bring the jar to <FONT color=#a82424>May</FONT> at Calderock Village.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="38"><![CDATA[Talk to Merchant May at Calderock Village.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>364</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

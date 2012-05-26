@@ -1,0 +1,161 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_063_enter_adventure</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>63</qid>
+      <designer>김인정</designer>
+      <qlevel>8</qlevel>
+      <qdesc>모험자 길드원과 대화
+길드 게시판과 대화</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Adventurer's Introduction]]></qkname>
+      <qnpc>
+         <npcid>341</npcid>
+         <npcename>n341_guild_luke</npcename>
+         <npckname>모험자 길드원 루크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>402</npcid>
+         <npcename>n402_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>Ah, <FONT color=#382000>{user_class} {user_nick}</FONT>! Still use to the life of an adventurer?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>In a long adventure journey, many loses directions, focus and didn't know what to do.  It's what they call the adventurer's depression.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-c" mid="10"><![CDATA[<html>How do I get missions?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Member Luke${action:Talk}<BR>Now that's when the <FONT color=#a82424>Adventurer's Guild</FONT> comes in. Try accepting a <FONT color=#a82424>mission</FONT> from it and get rewarded for killing monsters!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-c" image="QW_WindForest.dds" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-d" mid="12"><![CDATA[<html>What are the missions like?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>We set up <FONT color=#a82424>Adventurer's Guild Boards</FONT> throughout the routes to dungeons. The nearest ones to Prairie are in <FONT color=#a82424>Wind Forest</FONT>. You can find one at <FONT color=#a82424>Catacombs Entrance</FONT> and another at the <FONT color=#a82424>Wind Forest Temple</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-e" mid="14"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>All you have to do is choose a mission that is appropriate to your current level. There are all sorts of mission ranging from finding cats to killing monsters. There's even chances that you'll find <FONT color=#a82424>hidden missions</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-f" mid="16"><![CDATA[<html>Sounds cool.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Member Luke${action:Talk}<BR>Once all the missions on the board are complete, hidden mission will appear. You'll never know which are the boards with hidden missions. Anyway… seeing is believing. If you are interested, try checking them out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-f" image="QS_Default.dds" itemindex="300227">
+      <talk_answer link_index="n341_guild_luke-accepting-g" mid="18"><![CDATA[<html>I will.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Adventurer's Guild Member Luke$<BR>Can you do me a favor if that's where you're heading? I have a <FONT color=#a82424>Beginner's Mission Notice</FONT> that needs to be put up. Do you mind putting it up for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n341_guild_luke-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Adventurer's Introduction$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n341_guild_luke-1" image="QW_WindForest.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Member Luke${action:Talk}<BR>Head over to the <FONT color=#a82424>Adventurer's Guild Board</FONT> near the <FONT color=#a82424>Wind Forest Temple</FONT>. After you're done with the notice, you don't have to report back to me. I'm sure you'll do just fine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n402_guild_board-1" image="" itemindex="">
+      <talk_answer link_index="n402_guild_board-1-a" mid="23"><![CDATA[<html>(Puts up the notice.)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Board$<BR>(Various missions are available on the board. Some were torn and there are others that were modified.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n402_guild_board-1-a" image="" itemindex="">
+      <talk_answer link_index="n402_guild_board-1-b" mid="25"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n402_guild_board-1-b" image="QS_Default.dds" itemindex="300227">
+      <talk_question mid="26"><![CDATA[<html>$Adventurer's Guild Board$<BR>(While putting up the Beginner's Mission Notice, you saw some missions that seems to be easy for you. Take a good look at the board again if you are interested.)</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,631,632,633,634</exe>
+         <exe type="setquest">63</exe>
+         <exe type="talk" npc="n341_guild_luke">1</exe>
+         <exe type="addquestitem" num="1">300227</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,631,632,633,634</exe>
+         <exe type="delquestitem" num="-1">300227</exe>
+         <exe type="complete">63</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n341_guild_luke" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n341_guild_luke" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n402_guild_board" sub="a">0</exelink>
+   <exelink qstep="1" npc="n402_guild_board" sub="b">1,2</exelink>
+   <journal_data recompense="1:631,2:632,3:633,4:634" quest_title="모험자 입문" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="300227">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_WindForest.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>3,n402</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>402</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[The Adventurer's Guild]]></title>
+         <contents mid="29"><![CDATA[<html>Attach the commission form to the Adventurer's Guild Commission Board near the <FONT color=#a82424>Wind Forest Temple</FONT>.<BR> <BR><FONT color=#086171>Wind Forest</FONT> <FONT color=#a82424>→ Wind Forest Temple</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[Check out the Adventurer's Guild Board near the Wind Forest Temple.]]></destination>
+         <todo_msg mid="31"><![CDATA[Put up Adventurer's Guild Member Luke's notice onto the Adventurer's Guild Board near the Wind Forest Temple.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>8:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n761_cian</npcename>
+      <npcid>761</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Warrior Sean]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Warrior Sean$<BR>
+Honestly, I don't seem to be able to find comrades. Looks like I on my own again today.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq15_765_unknown_destiny</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">765</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,180 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq13_6001_storekeeper_appeal</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6001</qid>
+      <designer>나은하</designer>
+      <qlevel>15</qlevel>
+      <qdesc>캐더락 또는 세인트의 
+[대화] 창고란 뭔가요?
+-> 대화 진행중,
+수수료를 깍아주세요. 라는 지문 선택시 퀘스트 스크립트로 이동
+
+느낌표 필요 없고, 걍 수수료 어쩌고 창고 먹고살기 힘드네 어저네 얘기하다 호감도 get</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Warehouse Keeper Rupert Complaint]]></qkname>
+      <qnpc>
+         <npcid>323</npcid>
+         <npcename>n323_warehouse_lupert</npcename>
+         <npckname>창고지기 루퍼트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-accepting" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-accepting-acceptted" mid="7"><![CDATA[<html>(Warehouse Keeper Rupert looks at you, dumbfounded.)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>What? <BR>You want me to lower the fee?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-a" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Look at this fellow…<BR>I have been patient with you. Do not go overboard.<BR>Do you know how many customers I get in a day that say the same thing as you?<BR>Always complaining about the fees…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-a" image="QS_Default.dds" itemindex="336617472">
+      <talk_answer link_index="n323_warehouse_lupert-1-b" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Why do people complain that the storage space is too small when they don't even bother about the items they store?<BR>How can they say that the storage is too limited when they store stuff like  <FONT color=#a82424>Agate Fragment</FONT> that they got when they were like <FONT color=#a82424>Lv. 5?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-b" image="QS_Default.dds" itemindex="335544833">
+      <talk_answer link_index="n323_warehouse_lupert-1-c" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Throw away stuff like that and just organize the Storage! You know... there's always someone who collects <FONT color=#a82424>1000 Loincloths</FONT> or <FONT color=#a82424>20000 Colosseum Medals</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-c" image="QS_Default.dds" itemindex="335544833">
+      <talk_answer link_index="n323_warehouse_lupert-1-d" mid="18"><![CDATA[<html>(Warehouse Keeper Rupert keeps complaining angrily.)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>It's not like those Loincloths go through meiosis and reproduce on their own, you know? And those stupid medals... please go use them up or something!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-d" image="QN_Duwen.dds" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-e" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>nd for the people who complain that their storage is filled with <FONT color=#a82424>epic loot</FONT> and thus there is no space for other items. Please try to sell those items at the <FONT color=#a82424>Trading House</FONT>! And no, it's not because I'm close with that old man who's in charge of the Trading House or anything like that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-e" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-f" mid="22"><![CDATA[<html>(Warehouse Keeper Rupert seems to be exploding with anger.)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>If you put them up on the Trading House, you can earn more Gold, no? I do not wish to hear any complaints about not having enough gold when your storage is filled with items. This seems so obvious, yet many still complain that the storage is too small!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-f" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-g" mid="24"><![CDATA[<html>What's the way?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>There is a way to increase your storage space, some people have already done it. You just need to know how.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-g" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-h" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Well, I can't tell you in detail, but there are people who have expanded their storage up to 5 tabs. You should ask them instead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-h" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-i" mid="28"><![CDATA[<html>(Warehouse Keeper Rupert lets out a sigh.)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>I'm having a hard time because of such customers, but I'm still working hard <FONT color=#a82424>everyday</FONT>. I clean the Storage so that the items don't get dusty and set rat-traps so that the rats don't ruin anything.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-i" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-j" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>And please don't complain to me about the things I mentioned earlier on, it hurts my feelings. Especially since I'm someone who prefers to remain silent about it instead of voicing it out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-j" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-l" mid="32"><![CDATA[<html>(Tell him yes.)</html>]]></talk_answer>
+      <talk_answer link_index="n323_warehouse_lupert-1-k" mid="33"><![CDATA[<html>Well... I'm not too sure.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Honestly though, I'm better looking than the storagekeepers at Mana Ridge or Prairie Town , no?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-k" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-1-l" mid="35"><![CDATA[<html>(Let's just tell him yes.)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Look at me!<BR>You don't think so?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1-l" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-2" mid="37"><![CDATA[<html>(Warehouse Keeper Rupert's face gets serious all of sudden.)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Ain't that right? I'm a <FONT color=#a82424>great warehouse keeper</FONT>, am I not?<BR>Anyway, please stop asking me to cut down on the fees, I'm having a hard enough time as it is.<BR>Thanks to you, I was able to vent my frustrations out and let out some steam.<BR>I'll be going back to work now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-2-a" mid="40"><![CDATA[<html>(...)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Warehouse Keeper Rupert${action:Talk}<BR>You need to learn how to manage your inventory well. You may find yourself in bit of a pickle when you're in a dungeon with your bags are full and you have to discard items to make room for other item drops.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2-a" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-2-b" mid="42"><![CDATA[<html>N-no... it's nothing.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>What is it now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2-b" image="QN_Npc_Guilian.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>If you don't have anything to store, I'm just going to go back to organizing the Storage.<BR><FONT color=#7e12d2>(Warehouse Keeper Rupert starts organizing the Storage as if nothing happened. It seems like you now understand Warehouse Keeper Rupert's feelings a little better.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">6001</exe>
+         <exe type="talk" npc="n323_warehouse_lupert">1</exe>
+         <exe type="custom">api_npc_Rage( userObjID, 323 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="custom">api_npc_Rage( userObjID, 323 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">6001</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n323_warehouse_lupert" sub="acceptted">0,1,2</exelink>
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="b" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="c" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="d" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="e" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="f" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="g" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="h" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="i">1</exelink>
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="j" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="l" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="k" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="l" />
+   <exelink qstep="1" npc="n323_warehouse_lupert" sub="2">0</exelink>
+   <exelink qstep="2" npc="n323_warehouse_lupert" sub="b">0</exelink>
+   <journal_data recompense="" quest_title="창고지기의 하소연" chapterid="" quest_level="15" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Guilian.dds</contents_image>
+         <destination_pos>8,n323</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>323</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Talk to Warehouse Keeper Rupert]]></title>
+         <contents mid="51"><![CDATA[<html>Go listen to the complaints of <FONT color=#a82424>Warehouse Keeper Rupert</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Warehouse Keeper Rupert</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to Warehouse Keeper Rupert]]></destination>
+         <todo_msg mid="53"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

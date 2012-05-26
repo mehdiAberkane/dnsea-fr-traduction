@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n465_charty</npcename>
+      <npcid>465</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Charty]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Charty$<BR>What? I do not wish to speak to vagrants.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq15_703_wild_cat_girl</exe>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="enterquest">mq15_726_boy_and_girl</exe>
+         <exe type="conexe" true="3" false="0">1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">703</chk>
+         <chk type="hasquest">726</chk>
+      </conditions>
+   </talk>

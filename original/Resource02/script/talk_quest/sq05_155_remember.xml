@@ -1,0 +1,312 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_155_remember</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>155</qid>
+      <designer>곽노찬</designer>
+      <qlevel>8</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>156</nextqid>
+      <nextqname>sq05_156_path_of_jake</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[Reveries]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>159</npcid>
+         <npcename>n159_light_pole</npcename>
+         <npckname>빛 기둥_(ID는 빈공란)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>170</npcid>
+         <npcename>n170_cl_saintheaven</npcename>
+         <npckname>신전 기사단 클레릭(해빙의 숲/서브퀘)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>172</npcid>
+         <npcename>n172_cleric_tomas</npcename>
+         <npckname>클레릭 토마스(해빙의 숲)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>173</npcid>
+         <npcename>n173_cleric_jake</npcename>
+         <npckname>클레릭 제이크(해빙의 숲)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>174</npcid>
+         <npcename>n174_cleric_jake</npcename>
+         <npckname>용추종자 제이크(튜토리얼)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-a" mid="6"><![CDATA[<html>What are you worrying about?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Thomas$<BR>Hmm…<BR><FONT color=#7e12d2>(Thomas looks like is pondering over something.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-a" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-b" mid="8"><![CDATA[<html>Oh. What do you mean?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Cleric Thomas$<BR>Hi.<BR>I was just thinking about <FONT color=#a82424>Cleric Jake</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-b" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-c" mid="10"><![CDATA[<html>Aren't we done with this? Can't we just move on?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Cleric Thomas${action:Talk}<BR>Something's bothering me about the whole episode...<BR>I just can't pin point it.<BR>I feel like we missed out something important.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-c" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-d" mid="12"><![CDATA[<html>Do you mean from the beginning? </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Cleric Thomas$<BR>I understand how you must feel but still, I think we should take another look at this.<BR>We need to go back to when you first arrived in <FONT color=#a82424>Mana Ridge</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-d" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-e" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Cleric Thomas$<BR>Yes. If we back track <FONT color=#a82424>Cleric Jake</FONT>'s trail from the very beginning, I'm sure we'll find something...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-e" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-f" mid="58"><![CDATA[<html>Yes...I'll take care of it.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Cleric Thomas$<BR>You and I are the only two people who know the whole truth of the matter.<BR>We both want the truth about <FONT color=#a82424>Jake</FONT> to remain hidden, so I'm hoping that you'll take this mission.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$ Jake's Trail$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QW_BlizzardPlain.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Then, try to recall your steps, starting from <FONT color=#a82424>Blizzard Plain</FONT>.<BR>Let's try to recount everything from when <FONT color=#a82424>Cleric Jake</FONT> ordered the monsters to attack <FONT color=#a82424>Master Cleric Leonard</FONT> and <FONT color=#a82424>Cleric Cedric</FONT>'s wagon.<BR><FONT color=#7e12d2>※ You cannot proceed while in a Party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n159_light_pole-1" image="" itemindex="">
+      <talk_answer link_index="n159_light_pole-1-a1" mid="20"><![CDATA[<html>(You tried to recall the past..)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Memory of the Site$<BR><FONT color=#7e12d2>(This is where the Templar Knights gathered upon arriving in Mana Ridge.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n170_cl_saintheaven-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Temple Knight Cleric$<BR>May the Goddess blessing be with you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n170_cl_saintheaven-1-a" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Temple Knight Cleric$<BR>Is that <FONT color=#a82424>Mana Ridge</FONT> up there?<BR>Hah, finally! After such a long journey.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n170_cl_saintheaven-1-b" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Temple Knight Cleric$<BR>We destroy the world of those evil <FONT color=#a82424>Dragon Cultists</FONT>, they who oppose the will of the Goddess.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-1" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Master Cleric Thomas${action:Talk}<BR><FONT color=#419300>{user_nick}</FONT>, you and <FONT color=#a82424>Cleric Jake</FONT> suffered the most through the entire journey.<BR>Thanks to you, we made it safely to <FONT color=#a82424>Mana Ridge</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n173_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Cleric Jake${action:Talk}<BR> A job done very well, considering this is your first mission.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n174_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Cleric Jake$<BR><FONT color=#7e12d2>(Jake gives orders to the monsters.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-2" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n172_cleric_tomas-2-a" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Cleric Thomas${action:Talk}<BR>Faithful slaves of the Goddess, I commend you all for suffering through such difficult trials to hunt down the <FONT color=#a82424>Dragon Cultists</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-2-a" image="" itemindex="">
+      <talk_answer link_index="n172_cleric_tomas-2-b" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Cleric Thomas$<BR>Like all of you, would want nothing more than just a rest after such long journey.<BR>However, we cannot lower our guard down just yet. We must <FONT color=#a82424>patrol</FONT> the surrounding areas of <FONT color=#a82424>Mana Ridge</FONT>, so that we can be prepared for any emergency.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-2-b" image="QW_FrostHill.dds" itemindex="">
+      <talk_answer link_index="n172_cleric_tomas-2-c" mid="62"><![CDATA[<html>Yes sir.</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Master Cleric Thomas${action:Talk}<BR>We will re-organised at <FONT color=#a82424>Frost Hill</FONT> once the <FONT color=#a82424>patrols</FONT> have been completed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-2-c" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n172_cleric_tomas-3" mid="36"><![CDATA[<html>There is no need. I wish join in with the patrols.</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Master Cleric Thomas$<BR><FONT color=#419300>{user_nick}</FONT>, because you and <FONT color=#a82424>Cleric Jake</FONT> have done so much to aid us since the start of this long journey all the way from <FONT color=#a82424>Saint's Haven Cathedral</FONT>, you may be the first to return to <FONT color=#a82424>Mana Ridge</FONT> and get some rest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n173_cleric_jake-3" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n173_cleric_jake-4" mid="39"><![CDATA[<html>Do you move on with the rest?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Cleric Jake$<BR>You heard  <FONT color=#a82424>Master Cleric Thomas</FONT>.<BR>We'll <FONT color=#a82424>patrol</FONT> the areas near <FONT color=#a82424>Mana Ridge</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n172_cleric_tomas-3" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="98"><![CDATA[<html>$Cleric Thomas$<BR>Haha... such drive!<BR>Fine, then please patrol the area near Mana Ridge with <FONT color=#a82424>Jake</FONT>.<BR>And don't overwork yourselves, alright?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n174_cleric_jake-4" image="" itemindex="">
+      <talk_answer link_index="n174_cleric_jake-4-a" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Cleric Jake$<BR>A <FONT color=#a82424>group of clerics</FONT> are coming this way, carrying the <FONT color=#a82424>Sage's Staff</FONT> with them.<BR><FONT color=#7e12d2>(Jake gives more orders to the monster.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n174_cleric_jake-4-a" image="" itemindex="">
+      <talk_answer link_index="n174_cleric_jake-5" mid="79"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Cleric Jake$<BR>Everyone! Focus on the clerics and distract them, then bring the <FONT color=#a82424>Sage's Staff</FONT> to <FONT color=#a82424>Frost Wind Valley</FONT> once they're dealt with.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n173_cleric_jake-4" image="QW_ManaRidge.dds" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>No. Let's split up so that we can finish <FONT color=#a82424>patrolling</FONT> faster. I doubt the area around <FONT color=#a82424>Mana Ridge</FONT> would dangerous, anyway.<BR>Now, let's get move!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-a" mid="82"><![CDATA[<html>Seems like is very possible.</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Cleric Jake$<BR>Judging from the situation, right from the start, <FONT color=#a82424>Cleric Jake</FONT>already had his eye on the <FONT color=#a82424>Sage's Staff</FONT>.<BR>Meaning whoever dispatched Jake here was dealing with the <FONT color=#a82424>Dragon Cultists</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-b" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Master Cleric Thomas$<BR> I wish I could return to the Royal Castle right now and…personally punch those <FONT color=#a82424>Dragon Cultists</FONT>!<BR><FONT color=#7e12d2>(Thomas shakes his fist.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-b" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-!next" mid="88"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n174_cleric_jake-5" image="" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Cleric Jake${action:Stand1}<BR>No mistake is allowed.<BR>We must follow the word of the Lord to the letter.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">155</exe>
+         <exe type="recompense_view">1550,,,,,</exe>
+         <exe type="talk" npc="n013_cleric_tomas">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>2. 해빙의 숲 퀘스트 이벤트 존으로 이동</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13004,1);</exe>
+         <exe type="random_coice" rand="10,10,10">4,5,6</exe>
+         <exe type="talk" npc="n170_cl_saintheaven">1</exe>
+         <exe type="talk" npc="n170_cl_saintheaven">a</exe>
+         <exe type="talk" npc="n170_cl_saintheaven">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>맵툴에서 4스텝을 체크해서 10여초간 딜레이 후, 마나리지 튜토리얼 존으로 이동시킨다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>맵툴에서 존 이동 시켜줌</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1550,,,,,</exe>
+         <exe type="complete">155</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="f">1</exelink>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n159_light_pole" sub="a1">0,1,2</exelink>
+   <exelink qstep="1" npc="n170_cl_saintheaven">3</exelink>
+   <exelink qstep="2" npc="n172_cleric_tomas" sub="b" />
+   <exelink qstep="2" npc="n172_cleric_tomas" sub="c" />
+   <exelink qstep="2" npc="n172_cleric_tomas" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n173_cleric_jake" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n174_cleric_jake" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="b">0</exelink>
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="!next">1</exelink>
+   <journal_data recompense="0:1550" quest_title="기억" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_BlizzardPlain.dds</contents_image>
+         <destination_pos>7,-1848,257</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>159</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Recall the assembly at Blizzard Plain]]></title>
+         <contents mid="65"><![CDATA[<html>At <FONT color=#a82424>Blizzard Plain</FONT>, retrace everything that happened, starting from when the <FONT color=#a82424>Templar Knights</FONT> arrived at Mana Ridge, and follow <FONT color=#a82424>Jake's</FONT> activities.<BR> <BR><FONT color=#7e12d2>※ You cannot proceed while in a Party.</FONT><BR><FONT color=#086171>Blizzard Plain</FONT> <FONT color=#a82424>→ Memory of the Earth</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Go to Blizzard Plain, where the Divine Knights first gathered, and witness what happened]]></destination>
+         <todo_msg mid="67"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <destination_pos>13004,-2231,266</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>172</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Talk to Master Cleric Thomas at Blizzard Plain]]></title>
+         <contents mid="69"><![CDATA[<html>Talk to <FONT color=#a82424>Cleric Thomas</FONT>, the leader of the <FONT color=#a82424>Templar Knights</FONT>, and listen to his orders.<BR> <BR><FONT color=#086171>Blizzard Plain</FONT> <FONT color=#a82424>→ Cleric Thomas</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk to Master Cleric Thomas at Blizzard Plain]]></destination>
+         <todo_msg mid="71"><![CDATA[Please talk to Master Cleric Thomas.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Jake.dds</contents_image>
+         <destination_pos>13004,-2289,132</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>173</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="73"><![CDATA[Talk to Cleric Jake at Blizzard Plain]]></title>
+         <contents mid="74"><![CDATA[<html>Talk to <FONT color=#a82424>Cleric Jake</FONT> and listen to what he has to say about his patrol.<BR><BR><FONT color=#086171>Blizzard Plain</FONT> <FONT color=#a82424>→ Cleric Jake</FONT></html>]]></contents>
+         <destination mid="75"><![CDATA[Talk to Cleric Jake at Blizzard Plain]]></destination>
+         <todo_msg mid="76"><![CDATA[Talk to Cleric Jake]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Jake.dds</contents_image>
+         <destination_pos>13003,2560,-4220</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>174</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Talk to Cleric Jake on the Path to Mana Ridge]]></title>
+         <contents mid="91"><![CDATA[<html>Cedric tracked down <FONT color=#a82424>Cleric Jake's</FONT> activities on the Vicinity of Mana Ridge, where the monsters attacked.<BR> <BR><FONT color=#086171>Vicinity of Mana Ridge</FONT> <FONT color=#a82424>→ Cleric Jake</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Talk to Cleric Jake on the Path to Mana Ridge]]></destination>
+         <todo_msg mid="93"><![CDATA[Please talk to Cleric Jake at the Path to Mana Ridge.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Talk to Master Cleric Thomas.]]></title>
+         <contents mid="95"><![CDATA[<html>Talk to Cleric Thomas.<BR> <BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Cleric Thomas</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[Talk to Master Cleric Thomas]]></destination>
+         <todo_msg mid="97"><![CDATA[Please talk to Master Cleric Thomas]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>8:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

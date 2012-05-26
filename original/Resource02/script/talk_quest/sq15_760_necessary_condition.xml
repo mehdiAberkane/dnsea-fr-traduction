@@ -1,0 +1,272 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_760_necessary_condition</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>760</qid>
+      <designer>김주연</designer>
+      <qlevel>44</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>761</nextqid>
+      <nextqname>sq15_761_engraved_written</nextqname>
+      <nextqnpc>n703_book_doctor</nextqnpc>
+      <qkname mid="1"><![CDATA[[Changing job] Necessary Condition]]></qkname>
+      <qnpc>
+         <npcid>703</npcid>
+         <npcename>n703_book_doctor</npcename>
+         <npckname>수다쟁이 책 닥터</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Chatterbox Book Doctor$<BR>I'm going to give you<FONT color=#a82425>today's knowledge</FONT>!<BR>This is the luck if you buy a lottery.<BR>Ah…I misunderstood. This is about today's knowledge. I'm sorry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-a" mid="7"><![CDATA[<html>(Can't hear anything) I will find good magic spell books to improve me.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Tamara$<BR>Just forget about the meeting at Riverwart Village Ruins with <FONT color=#a82425>the guy</FONT> and take a peaceful rest with my pies.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-b" mid="9"><![CDATA[<html>Oops! …I I want to eat something suddenly!! (Let's run away)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Sorceress Tamara$<BR>It will help you refresh your feelings and improve your spell power.<BR>How about it? Doesn't it look delicious? <FONT color=#7e12d3>(it smells so bad and weird)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-c" mid="11"><![CDATA[<html>Oh~ what did you say? Ah, suddenly I can't hear you~</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Tamara$<BR>Then take out these and have them on lunch.<BR>I made  a lot~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Necessary Condition$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-1-a" mid="16"><![CDATA[<html>What? Didn't you make it normally?!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#7e12d3>(Tamara's murmuring in a low tone)<BR></FONT>If you don't eat this right now, the magic is released and then the ingredients will run away ….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2" mid="18"><![CDATA[<html>You don't have any good magic spell books?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Tamara$<BR>I, I roasted it! But during roasting pies <FONT color=#a82424>something was popping up</FONT> and I spelled magic involuntarily. It's like seasoning~ ahahaha. <BR><FONT color=#7e12d3>(Suddenly she change the topic.)</FONT> By the way, being strong is not only from good magic spell books.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Chatterbox Book Doctor$<BR>
+Ahem. <BR>
+I feel ominous today so I don't receive any questions.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="QN_Npc_BookDoc.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Tamara$<BR>Well… Ah! <FONT color=#a82425>Karacule's book</FONT>can be good advice for you!<BR>It looks just normal but it's from Karacule. So It may contain a lot of knowledge.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-a" mid="22"><![CDATA[<html>Why?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Today, I'm not going to get any questions.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-a" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-b" mid="24"><![CDATA[<html>Shorty?! (Calm down)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Chatterbox Book Doctor$<BR>It feels like it's not going to be beneficial to me today. My instinct is so sensitive.<BR>As soon as I saw you shorty! …I realized it would be better to take a nap than listening to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-b" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-c" mid="26"><![CDATA[<html>(I'd rather talk) Don't you know a strong magic spell book?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Chatterbox Book Doctor$<BR>I'm the Karacule's <FONT color=#a82424>PRE</FONT>.<FONT color=#a82424>CI</FONT>.<FONT color=#a82424>OUS</FONT> BOOK <FONT color=#a82425>Doctor</FONT>.<BR>You should be careful when treating me as you know.<BR>Watch out! Don't touch it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-c" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-d" mid="28"><![CDATA[<html>Well, then you make me stronger!!</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Strong magic spell book? Hmm… Are there any that kind of strong book here except me?<BR>Humhum. You just directly came to me so you must have an eye for books.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-d" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-e" mid="30"><![CDATA[<html>(I don't feel anything) What did you do?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Strong?<BR>…wind..make it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-e" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-f" mid="32"><![CDATA[<html>(I can see some dust on the left corner of the book)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Blessing. There are only few people who got my blessing. Don't be touched.<BR>Anyway get out of here. It feels ominous.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-f" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-g" mid="34"><![CDATA[<html>(I press the left corner of the book.)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Chatterbox Book Doctor$<BR><FONT color=#7e12d3>(Its face turns blue and read.)</FONT><BR>W..Wait!! There…!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-g" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-h" mid="36"><![CDATA[<html>I should be strong. Give me advice how to be strong.</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Ahh!! <FONT color=#7e12d3>(Doctor screams because of the titillation feeling)</FONT> Ahhh~ Hweee~ Haaaaa~<BR>Don't do this! Don't you know me? I'm the book of Karacule!!<BR>You're ruining me~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-h" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-i" mid="38"><![CDATA[<html>(I tear off some corner of the book)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Chatterbox Book Doctor$<BR>F, First… go to the library! And then read books about liberal arts… and then expand your sights….Ahhhhh!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-i" image="QW_52.dds" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-j" mid="40"><![CDATA[<html>Oh~ now we're talking</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Ahhh no!!!! The… The Greatest Book! In the <BR><FONT color=#a82425>Ancient Library</FONT>! <BR>That's it! That's all! There's no need to read liberal arts books!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-j" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-2-k" mid="42"><![CDATA[<html>(Can't hear anything) Yes! I'm going to take it.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Chatterbox Book Doctor$<BR>But the book is…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-2-k" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Chatterbox Book Doctor$<BR><FONT color=#7e12d2>(On the corner of the empty page of Doctor, some words are being written)</FONT><BR>But the book is only for <FONT color=#a82424>the ancients</FONT>. You should read all the pages.<BR><FONT color=#7e12d3>(Doctor's closing itself)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-3" image="QW_52.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Chatterbox Book Doctor$<BR>So the Greatest Book is in the <FONT color=#a82424>Ancient Library</FONT>… <BR><FONT color=#7e12d3>(Listen! Hear me out!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-4-a" mid="48"><![CDATA[<html>(I made fire on my hands) There wasn't… the book?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Chatterbox Book Doctor$<BR>Wait! (<FONT color=#7e12d3>Doctor is scared of her)<BR></FONT>I know why you turned back here. <BR>Books are for reading not for tearing off.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4-a" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-4-b" mid="50"><![CDATA[<html>Didn't you hear me?! The book is… gone!!!</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Chatterbox Book Doctor$<BR>W..Wait!!!<BR>I'm so vulnerable the fire! <BR>
+Stop! Are you going to burn me out?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n703_book_doctor-4-b" image="" itemindex="">
+      <talk_answer link_index="n703_book_doctor-4-!next" mid="52"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">7600,,,,,</exe>
+         <exe type="setquest">760</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="checkStageClearRank" rand="6" num="523" onexe="3,4,5" true="[=" xsi:nil="true" />
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>고대의 도서관을 끝까지 클리어하면 4스텝으로 변경.</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7600,,,,,</exe>
+         <exe type="complete">760</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n703_book_doctor" sub="b" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="c" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="d" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="e" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="f" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="g" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="h" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="i" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="j" />
+   <exelink qstep="2" npc="n703_book_doctor" sub="k">0,2,1</exelink>
+   <exelink qstep="4" npc="n703_book_doctor" sub="b">0</exelink>
+   <exelink qstep="4" npc="n703_book_doctor" sub="!next">1</exelink>
+   <journal_data recompense="0:7600" quest_title="[전직] 필요충분 조건" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Talk with Master Sorceress Tamara]]></title>
+         <contents mid="54"><![CDATA[<html>Talk with Master Sorceress Tamara<BR>
+<BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Talk with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="56"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Talk with Chatterbox Book Doctor]]></title>
+         <contents mid="58"><![CDATA[<html>Talk with Chatterbox Book Doctor in the cabin of Karacule.<BR><BR><FONT color=#086171>Riverwart Wharf(Karacule's cabin)</FONT> <FONT color=#a82425>→ Chatterbox Book Doctor</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Talk with Chatterbox Book Doctor]]></destination>
+         <todo_msg mid="60"><![CDATA[Talk with Chatterbox Book Doctor]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>523,0,0</destination_pos>
+         <destination_mode>custom:521@1,522@1,523@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Searching Ancient Library]]></title>
+         <contents mid="62"><![CDATA[<html>Search Ancient Library to find the Greatest Book.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Searching Ancient Library]]></destination>
+         <todo_msg mid="64"><![CDATA[Search Ancient Library to find the Greatest Book]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_BookDoc.dds</contents_image>
+         <destination_pos>14,n703</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>703</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Talk with Chatterbox Book Doctor]]></title>
+         <contents mid="66"><![CDATA[<html>I couldn't find the Greatest Book. Let's get back to Chatterbox Book Doctor.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Karacule's cabin)</FONT> <FONT color=#a82425>→ Chatterbox Book Doctor</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk with Chatterbox Book Doctor]]></destination>
+         <todo_msg mid="68"><![CDATA[I couldn't find the Greatest Book. Let's get back to Chatterbox Book Doctor.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>44:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest>759</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

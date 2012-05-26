@@ -1,0 +1,209 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_455_missing_alrento</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>455</qid>
+      <designer>김주연</designer>
+      <qlevel>25</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Missing Viscount Arlento]]></qkname>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>63</npcid>
+         <npcename>n063_whilerose_lena</npcename>
+         <npckname>하얀 장미의 기사</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n063_whilerose_lena-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$White Rose Knight$<BR>Huh! <BR>I don’t care who you are or which side you are on! Just don’t interrupt me! <BR>
+<FONT color=#7e12d2>(You can start a quest from General Douglas in Saint Haven Royal Castle)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="7"><![CDATA[<html>Did he know he would be kidnapped?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>
+<FONT color=#382000>{user_nick}</FONT>! It’s not good.<BR>
+Viscount Arlento is missing!<BR>
+This time he left 2 messages, '<FONT color=#a82424>Abandoned Welton Hollow</FONT>' and '<FONT color=#a82424>Save me</FONT>'.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$General Douglas$<BR>
+Yes. I think he sensed something.<BR>
+He didn’t like to go out of the castle. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="11"><![CDATA[<html> Yes sir </html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$General Douglas$<BR>
+Anyway we have no time to talk.<BR>
+We have to save <FONT color=#a82424>Viscount Arlento</FONT>. Go to <FONT color=#a82424>Abandoned Welton Hollow</FONT> now! I’ll send reinforcement as soon as possible. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Missing Viscount Arlento$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QW_31.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$General Douglas$<BR>
+We’ll talk after saving the Viscount. <BR>
+Go to <FONT color=#a82424>Abandoned Welton Hollow</FONT> first, I will send reinforcements as soon as possible. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n063_whilerose_lena-1" image="" itemindex="">
+      <talk_answer link_index="n063_whilerose_lena-1-a" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$White Rose Knight$<BR>
+We are too late.<BR>
+He got his mouth shut when those vicious Dragon Followers arrived! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n063_whilerose_lena-1-a" image="" itemindex="">
+      <talk_answer link_index="n063_whilerose_lena-2" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$White Rose Knight$<BR>
+Well, there are more than one way to open the <FONT color=#a82424>ring</FONT>.<BR>
+They weren’t be able to stop me from what I’m trying to do. <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n063_whilerose_lena-2" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$White Rose Knight$<BR>
+Ah, don’t think you saved me! <BR>
+I could take care of them by myself! Well, we are done here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-a" mid="23"><![CDATA[<html> I've failed to save Viscount Arlento </html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$General Douglas$<BR>
+You are back.<BR>
+What happened? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-b" mid="25"><![CDATA[<html> It was done by Dragon Followers </html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$General Douglas$<BR>
+Oh my god!<BR>
+Were you too late? Or did White Rose Knight do something? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-c" mid="27"><![CDATA[<html> White Rose Knight have called 'Mouth Shutting' </html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$General Douglas$<BR>
+Dragon Followers?!<BR>
+Why Viscount Arlento? Even if he was a Dragon Follower, they are on the same side!<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-c" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-d" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$White Rose Knight$<BR>Wait, let’s sort this out. <BR><FONT color=#a82424>Viscount Arlento</FONT> was hypersensitive after the ring theft. And <FONT color=#a82424>he got killed by Dragon Followers</FONT>… is that right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-d" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-e" mid="31"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-e" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-2-f" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$General Douglas$<BR>
+Well, we can’t be assured unless I see the body of the Viscount myself. I’ve sent the follow-up team so I should just wait for their report.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-2-f" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$General Douglas$<BR>
+Well, you can take a rest.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4551,4552,4553,4554,4555</exe>
+         <exe type="setquest">455</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>버려진 윌든 할로우 스테이지에는 백장미를 둘러싸고 용추종자들이 있다. 뒤늦게 세인트 헤이븐 병사들이 지원을 온다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4551,4552,4553,4554,4555</exe>
+         <exe type="complete">455</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n063_whilerose_lena" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="c" />
+   <exelink qstep="2" npc="n042_general_duglars" sub="d">0</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="e">1</exelink>
+   <exelink qstep="2" npc="n042_general_duglars" sub="f" />
+   <journal_data recompense="1:4551,2:4552,3:4553,4:4554,5:4555" quest_title="사라진 알렌토 자작" chapterid="" quest_level="25" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Noble_Man_Pushibal.dds</contents_image>
+         <destination_pos>314,n63</destination_pos>
+         <destination_mode>custom:311@1,312@1,313@1,314@1</destination_mode>
+         <statemark_npcid>63</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Rescue Viscounts Arlento from Abandoned Welton Hollow]]></title>
+         <contents mid="37"><![CDATA[<html><FONT color=#a82424>Viscount Arlento</FONT> was kidnapped by someone. He left a rescue message as if he know he was going to get kidnapped. Rescue Viscount Arlento at <FONT color=#a82424>Abandoned Welton Hollow</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Dark Mountain</FONT> <FONT color=#a82424>→ Abandoned Welton Hollow </FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Rescue Viscount Alrento at Abandoned Welton Hollow]]></destination>
+         <todo_msg mid="39"><![CDATA[Go and rescue Viscount Alrento from Abandoned Welton Hollow]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Coversation with General Douglas ]]></title>
+         <contents mid="41"><![CDATA[<html>Could not save <FONT color=#a82424>Viscount Arlento</FONT>. According to <FONT color=#a82424>White Rose Knight</FONT>, he was already killed. Go back to the castle and report to <FONT color=#a82424>General Douglas</FONT>. <BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Conversation with General Douglas in Royal Castle]]></destination>
+         <todo_msg mid="43"><![CDATA[Return to Royal Castle and report to General Douglas]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>25:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>454</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

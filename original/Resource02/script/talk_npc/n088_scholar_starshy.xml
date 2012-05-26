@@ -1,0 +1,128 @@
+   <talk>
+      <npcename>n088_scholar_starshy</npcename>
+      <npcid>88</npcid>
+      <startexe>2</startexe>
+      <npckname mid="3"><![CDATA[Heraldry Scholar Stas]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="7"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="trade_001" mid="137"><![CDATA[<html>[Shop Store]</html>]]></talk_answer>
+         <talk_answer link_index="emblem_001" mid="128"><![CDATA[<html>[Heraldry Production]</html>]]></talk_answer>
+         <talk_answer link_index="openglyphlift_001" mid="204"><![CDATA[<html>[Returning Heraldry]</html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Just because I'm interested in the cultural and magical aspects of the dragons doesn't mean I'm a Dragon Follower.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="12" link_target="mq11_423_doubt_history.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>Burning Question of Ithilien</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="mq11_422_question_of_dragon.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>Stas's Question</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="191" link_target="mq11_439_good_data.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Victory of data</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="192" link_target="mq11_440_take_a_step.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>A step forward</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="193" link_target="mq11_441_end_in_failure.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Failure</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="199" link_target="mq11_389_commentary_of_geraint.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>Geraint said</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="200" link_target="mq11_390_monoris_guardian.xml"><![CDATA[<html>[Lv34] <FONT color=#a94407>Who is the guardian of Monolith</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="sq11_538_strange_smoke.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Strange Smoke</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="sq11_458_amazing_memory.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Incredible Memory</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="sq11_459_complete_decode.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171> Complete Detoxification</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="sq11_460_who_is_whiterose.xml"><![CDATA[<html>[Lv.27] <FONT color=#086171>Identity of the Dragon Followers</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="145" link_target="nq25_5096_salvation_children.xml"><![CDATA[<html>[Lv.1] <FONT color=#086171>Support for the Children</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="sq11_512_best_medicine.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>The Best Elixir</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="sq11_480_catastrophic_rain2.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Tragedy Part 2</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="sq11_481_catastrophic_rain3.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Tragedy Part 3</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="sq11_484_catastrophic_rain4.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Tragedy Part 4</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="62" link_target="sq11_513_birth_of_abyss1.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>Birth of the Abyss I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="68" link_target="sq11_514_birth_of_abyss2.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>Birth of the Abyss II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="69" link_target="sq11_482_mysterical_plate.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Mysterious Seal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="75" link_target="sq11_488_merchant_study3.xml"><![CDATA[<html>[Lv.34]<FONT color=#086171> Merchant Class III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="117" link_target="sq11_473_hero_knights_weapon.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171> Weapons of the Heroic Knight</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="125" link_target="sq11_475_three_treasure.xml"><![CDATA[<html>[Lv.36] <FONT color=#086171>Three Kinds of Treasures</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="sq11_505_ancient_name_typhoon1.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>[Title] Fury Lv.1 - Appearance of the Ancient Seal I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="91" link_target="sq11_506_ancient_name_typhoon2.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>[Title] Fury Lv.1 - Appearance of the Ancient Seal II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="92" link_target="sq11_507_ancient_name_typhoon3.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>[Title] Fury Lv.1 - Appearance of the Ancient Seal III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="133" link_target="nq30_8101_cursed_gold_coin.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Cursed Gold Coin</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="163" link_target="sq11_650_forgotten_diary.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Forgotten Diary</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="110" link_target="sq11_557_spread_of_abyss1.xml"><![CDATA[<html>[Lv.39] <FONT color=#086171>Spread of the Abyss I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="111" link_target="sq11_558_spread_of_abyss2.xml"><![CDATA[<html>[Lv.39] <FONT color=#086171>Spread of the Abyss II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="95" link_target="sq11_516_beast_from_the_hell.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Beast from Hell</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="120" link_target="sq11_597_lord_manticore_1.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Swallowing the Light I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="121" link_target="sq11_598_lord_manticore_2.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Swallowing the Light II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="154" link_target="sq11_613_rebirth_of_sepentra.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Resurrection of the Serpent</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="155" link_target="sq11_614_deeper_suspicion.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Deepening Suspicions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="156" link_target="sq11_616_failure_of_ancient.xml"><![CDATA[<html>[Lv.40] </FONT><FONT color=#086171>Failure of the Ancients</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="157" link_target="sq11_617_key_of_seadragon.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Key to the Sea Dragon Nest</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="158" link_target="sq11_619_to_the_seadragon.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Let's Fight the Sea Dragon!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="166" link_target="sq11_618_fallen_life_crystal.xml"><![CDATA[<html>[Lv.40] <FONT color=#a82424>Deprived Decisions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="201"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Sign Scholar Stas$<BR>A penny for your thoughts...<BR> </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="quest" mid="47"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="trade_002" mid="140"><![CDATA[<html>[Shop Store]</html>]]></talk_answer>
+         <talk_answer link_index="emblem_002" mid="141"><![CDATA[<html>[Heraldry Production]</html>]]></talk_answer>
+         <talk_answer link_index="openglyphlift_002" mid="205"><![CDATA[<html>[Returning Heraldry]</html>]]></talk_answer>
+         <talk_question mid="46"><![CDATA[<html>$Heraldry Scholar Stas$<BR>I heard about what happened at Black Mountain. Thanks for clearing it up before the people get all freaked out.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="seadragon_key" mid="182"><![CDATA[<html>[Sea Dragon Nest] <FONT color=#a82424>Sea Dragon Scales</FONT></html>]]></talk_answer>
+         <talk_answer link_index="002" mid="50"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="49"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Hmmm I wanna design a new kind of Heraldry. Maybe if I have the correct ingredients...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="lack_of_matrials" image="QS_Default.dds" itemindex="337839360">
+         <talk_answer link_index="003" mid="183"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="171"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>You have insufficient materials. To make <FONT color=#a82424>Sea Dragon Scales</FONT>, you need 1 Abyss of Darkness and 1 Glare of Despair.<BR>
+?<FONT color=#7e12d2>Abyss of Darkness  can be obtained in Manticore Nest (Hell Mode) and Glare of Despair can be obtaine in Apocalyptic Nest (Hell Mode).</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="inven_full" image="" itemindex="">
+         <talk_answer link_index="003" mid="184"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="172"><![CDATA[<html>$Heraldry Scholar Stas${action:Talk}<BR>Your inventory looks full, <BR>
+please tidy it before returning to me.<BR>
+ <BR>
+? <FONT color=#7e12d2>Insufficient space in Inventory</FONT></html>.]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="trade_complete" image="QS_Default.dds" itemindex="337839360">
+         <talk_answer link_index="003" mid="185"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="173"><![CDATA[<html>$Heraldry Scholar Stas$<BR>Over here, <BR>if you need the entry ticket, feel free to find me.<BR>
+ <BR>
+? <FONT color=#7e12d2>Making of Water Dragon Scales is complete.</FONT></html>.]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenCompoundEmblem(userObjID);</exe>
+         <exe type="conexe" true="3" false="0">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="conexe" true="8" false="5">1</exe>
+         <exe type="conexe" true="9" false="6">2</exe>
+         <exe type="conexe" true="10" false="7">3</exe>
+         <exe type="conexe" true="11" false="21">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35002,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35003,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35004,100);</exe>
+         <exe type="conexe" true="20" false="14">5</exe>
+         <exe type="conexe" true="16,17,18,19" false="15">7</exe>
+         <exe type="talk">lack_of_matrials</exe>
+         <exe type="talk">inven_full</exe>
+         <exe type="custom">api_user_DelItem(userObjID, 337839361, 1, 0);</exe>
+         <exe type="custom">api_user_DelItem(userObjID, 337839362, 1, 0);</exe>
+         <exe type="custom">api_user_AddItem(userObjID, 337839360, 1, 0);</exe>
+         <exe type="talk">trade_complete</exe>
+         <exe type="conexe" true="13" false="14">6</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,35005,100);</exe>
+         <exe type="custom">api_ui_OpenGlyphLift(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="lvl" op=">=">40</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="item" num="1" op=">=">337839361</chk>
+         <chk type="item" num="1" op=">=">337839362</chk>
+         <chk type="custom">api_user_CheckInvenForAddItem(userObjID, 337839360, 1) >= 0</chk>
+      </conditions>
+      <exelink idx="trade_001">4</exelink>
+      <exelink idx="emblem_001">1</exelink>
+      <exelink idx="openglyphlift_001">22</exelink>
+      <exelink idx="back_quest">2</exelink>
+      <exelink idx="trade_002">4</exelink>
+      <exelink idx="emblem_002">1</exelink>
+      <exelink idx="openglyphlift_002">22</exelink>
+      <exelink idx="seadragon_key">12</exelink>
+   </talk>

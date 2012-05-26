@@ -1,0 +1,242 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq11_5701_lily_hope</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5701</qid>
+      <designer>나은하</designer>
+      <qlevel>13</qlevel>
+      <qdesc>400196 종이학이 든 유리병 </qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Lily's Hope]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>7</npcid>
+         <npcename>n007_lily</npcename>
+         <npckname>릴리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Mayor Harold$<BR>Hearing Lily crying for her sister is very painful to hear.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Master Cleric Jermain$<BR>I've heard that the prophet came from <FONT color=#a94407>Prairie Town</FONT>. She a girl afterall even thou she a prophet. Bet her parents is worried about her</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Lily$<BR>When's Rose coming back?<BR>I wanna see her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-accepting-a" mid="11"><![CDATA[<html>You're worried about her, aren't you?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Mayor Harold$<BR><FONT color=#7e12d2>( Mayor Harold's face is etched with worry.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting-a" image="QN_Lily.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-accepting-b" mid="13"><![CDATA[<html>Is there any way I can help?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Mayor Harold$<BR>Of course, but I also worry for poor <FONT color=#a82424>Lily</FONT>. She being crying everynight for her lost sister, there's nothing I can do to calm her down.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-accepting-b" image="QN_Lily.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-accepting-acceptted" mid="15"><![CDATA[<html>I'll talk to Lily.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Mayor Harold$<BR>I've tried to give her everything she wants, but <FONT color=#a82424>Lily</FONT> won't respond to anything. She does like you, however. Perhaps you could speak with her?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Lily.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Mayor Harold$<BR>Thank you. <FONT color=#a82424>Lily</FONT> is here beside me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QN_Lily.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Master Cleric Jermain$<BR>I feel uneasy about the trials the prophet is going through. Surely her family feels even more so.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1" image="" itemindex="">
+      <talk_answer link_index="n007_lily-1-a" mid="21"><![CDATA[<html>Your sister was kidnapped by the Black Knight.</html>]]></talk_answer>
+      <talk_answer link_index="n007_lily-1-b" mid="22"><![CDATA[<html>She's trying to come home as soon as she can.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Lily$<BR>*Sniff sniff.* Have you heard anything about Rose?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1-a" image="" itemindex="">
+      <talk_answer link_index="n007_lily-1-b" mid="24"><![CDATA[<html>Yeah, really scary!</html>]]></talk_answer>
+      <talk_answer link_index="n007_lily-1-c" mid="25"><![CDATA[<html>Crap, he is nothing.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Lily$<BR>The Black Knight? Is he scary?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1-b" image="QN_Lily.dds" itemindex="">
+      <talk_answer link_index="n007_lily-1-c" mid="27"><![CDATA[<html>(Maybe we try calming her down first.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Lily$<BR>Th-th-then Rose really isn't coming back?<BR><FONT color=#7e12d2>(Lily bursts into tears.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1-c" image="QN_Lily.dds" itemindex="">
+      <talk_answer link_index="n007_lily-1-d" mid="29"><![CDATA[<html>Why are you sorry?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Lily$<BR><FONT color=#7e12d2>(Lily's breathing slows down, and she hiccups.)</FONT><BR>*Sniff.* B-but I need to tell her I'm sorry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1-d" image="" itemindex="">
+      <talk_answer link_index="n007_lily-1-e" mid="31"><![CDATA[<html>Don't cry, Lily.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Lily$<BR>I broke her favourite doll. I'm really scared she would get mad. But now I cant tell her I'm sorry anymore. (She bursts into tears.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1-e" image="" itemindex="">
+      <talk_answer link_index="n007_lily-1-f" mid="33"><![CDATA[<html>Don't cry. I'll bring her back.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Lily$<BR>If Rose doesn't come back... I'll be a bad girl 'cause I didn't say sorry! I-I don't wanna be a bad girl! (She cries even harder.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1-f" image="" itemindex="">
+      <talk_answer link_index="n007_lily-1-g" mid="35"><![CDATA[<html>Of course. She's as good as home.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Lily$<BR>You're really gonna bring her back? Really?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1-g" image="" itemindex="">
+      <talk_answer link_index="n007_lily-1-h" mid="37"><![CDATA[<html>Aren't you too young to fight?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Lily$<BR>Really?! You must be really strong, <FONT color=#387206>{user_nick}</FONT>! I wish I were strong like you... I wanna help too!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-1-h" image="" itemindex="">
+      <talk_answer link_index="n007_lily-2" mid="40"><![CDATA[<html>What's this?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Lily$<BR>I know. So I made this.<BR>(Lily hands you a jar filled with paper Hounds.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-2" image="QS_Default.dds" itemindex="400196">
+      <talk_answer link_index="n007_lily-2-a" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$LIly$<BR>I've been folding paper cranes ever since <FONT color=#a94407>Rose</FONT> disappeared. She always said we would be granted a wish if we offer something to Goddess.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-2-a" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n007_lily-3" mid="44"><![CDATA[<html>Okay!</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Lily$<BR>I don't have anything nice an important person like the Goddess would like. But I worked hard on this! Please, give this to the nice Cleric in <FONT color=#a82424>Calderock Village</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n007_lily-3" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Lily$<BR>Even if it just helps a little bit, I wanna do something!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Mayor Harold$<BR>I didn't know Lily was doing anything like that. The Cleric she mentioned must be Brother <FONT color=#a82424>Jermain</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4" mid="48"><![CDATA[<html>Yes. The prophet's sister wanted me to give you this.</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Cleric Jermain$<BR>I hear you were in <FONT color=#a94407>Prairie Town </FONT> recently. Isn't that where the prophet's family lives?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4" image="QS_Default.dds" itemindex="400196">
+      <talk_answer link_index="n034_cleric_master_germain-4-a" mid="51"><![CDATA[<html>(Explain Lily's request.)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Master Cleric Jermain$<BR>Hmm? This is a jar filled with paper Hounds.<BR>Why she do not want this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-a" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-b" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Cleric Jermain$<BR>For such a young child to make such a request(Jermain turns the jar over in his hands.) There are not simple paper crane, they are the girl's prayer in physical form.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-c" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Master Cleric Jermain$<BR>That little girl's prayers will reach the Goddess.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-c" image="QN_Npc_Cl_master_Germain.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Master Cleric Jermain$<BR>Would you mind giving her a message for me? Let her know that if she prays diligently, her prayers will be answered. (Jermain turns his eyes to the sky as if deep in prayer himself.) </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">5701</exe>
+         <exe type="talk" npc="n001_elder_harold">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="1">400196</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">400196</exe>
+         <exe type="setstep">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">5701</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n001_elder_harold" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n007_lily" sub="b" />
+   <exelink qstep="1" npc="n007_lily" sub="c" />
+   <exelink qstep="1" npc="n007_lily" sub="c" />
+   <exelink qstep="1" npc="n007_lily" sub="d" />
+   <exelink qstep="1" npc="n007_lily" sub="e" />
+   <exelink qstep="1" npc="n007_lily" sub="f" />
+   <exelink qstep="1" npc="n007_lily" sub="g" />
+   <exelink qstep="1" npc="n007_lily" sub="h" />
+   <exelink qstep="1" npc="n007_lily" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n007_lily" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="c">0</exelink>
+   <journal_data recompense="" quest_title="릴리의 소망" chapterid="" quest_level="13" quest_mark_type="15" use_item_list="400196">
+      <journal index="1">
+         <contents_image>QN_Lily.dds</contents_image>
+         <destination_pos>1,n7</destination_pos>
+         <destination_mode />
+         <statemark_npcid>7</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Talk to Lily]]></title>
+         <contents mid="63"><![CDATA[<html>Talk to Lily and calm her down.<BR> <BR><FONT color=#086171>Prairie Town </FONT> <FONT color=#a82424>→ Lily</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Talk to Lily]]></destination>
+         <todo_msg mid="65"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode />
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Talk to Master Cleric Jermain]]></title>
+         <contents mid="67"><![CDATA[<html>Deliver the jar of paper Hounds to <FONT color=#a82424>Master Cleric Jermaine</FONT> in <FONT color=#a82424>Calderock Village</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Talk to Master Cleric Jermain]]></destination>
+         <todo_msg mid="69"><![CDATA[Talk to Master Cleric Jermain in Calderock Village.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>13:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>258</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

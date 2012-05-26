@@ -1,0 +1,29 @@
+   <talk>
+      <npcename>n724_karahan</npcename>
+      <npcid>724</npcid>
+      <startexe>10</startexe>
+      <npckname mid="1"><![CDATA[Karahan]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Strange Man$<BR>Hehe, it is a waste of your time trying to attract my attention or to provoke me, because beauty itself is irresistible, hahaha!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq15_711_disease</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+         <exe type="enterquest">mq15_712_karahan_recipe</exe>
+         <exe type="conexe" true="3" false="2">1</exe>
+         <exe type="enterquest">mq15_713_across_mind</exe>
+         <exe type="conexe" true="5" false="4">2</exe>
+         <exe type="enterquest">mq15_731_can_not_understand</exe>
+         <exe type="conexe" true="7" false="6">3</exe>
+         <exe type="enterquest">mq15_732_medicines</exe>
+         <exe type="conexe" true="9" false="8">4</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">711</chk>
+         <chk type="hasquest">712</chk>
+         <chk type="hasquest">713</chk>
+         <chk type="hasquest">731</chk>
+         <chk type="hasquest">732</chk>
+      </conditions>
+   </talk>

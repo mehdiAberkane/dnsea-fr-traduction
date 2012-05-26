@@ -1,0 +1,151 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq25_5001_lets_be_a_friend</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5001</qid>
+      <designer>김주연</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Let's Get To Know Each Other]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Events Planner Irine$<BR>From your adventures, who is the most memorable villager?<BR>And who would be the one you want to get to know about most?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Events Planner Irine$<BR>If you listen to the villagers' requests, they'll start to remember you, <FONT color=#387206>{user_nick}</FONT>, as a nice person.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Events Planner Irine$<BR>Increase your Friendship Points with them and you might receive some unexpected gifts. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-d" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Events Planner Irine$<BR>There must be something you like and dislike, right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-e" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Events Planner Irine$<BR>They'll dislike you if you give them something they dislike, or raise the Friendship Points of someone they dislike. Hatred Points will raise in this case. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceptted" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Events Planner Irine$<BR>Oh! Please also note that the start of the Friendship Points increase will differs for individuals.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="20"><![CDATA[<html>General Merchant</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-1-b" mid="21"><![CDATA[<html>Heraldry Scholar</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-1-c" mid="22"><![CDATA[<html>Irine</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Events Planner Irine$<BR>Now, I'll tell you some tips.<BR>Of the following, who would you like to get closer to first?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1" mid="24"><![CDATA[<html>(Back)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Events Planner Irine$<BR>Merchant May at Calderock Village loves money. To get closer with her, you'll probably need to have at least <FONT color=#a82424>100 Gold</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1" mid="26"><![CDATA[<html>(Back)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Events Planner Irine$<BR>Heraldry Scholar Bailey at Calderock Village is passionate about his studies. Nowadays, it seems like he is doing research on <FONT color=#a82424>the cloth of frustration</FONT>. He will welcome you if you should bring him the cloth!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-d" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Events Planner Irine$<BR>Oh... me? Irine also want to be best friends with <FONT color=#387206>{user_nick}</FONT>. Hahaha...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-e" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Events Planner Irine$<BR>I promise to keep giving you more information and tips!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-e" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Events Planner Irine$<BR>I hope that you can be close friends with all in the continent!<BR><FONT color=#7e12d2>(Seems to get closer with Events Planner Irine.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">5001</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setjornal">2</exe>
+         <exe type="complete">5001</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn" sub="1" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="1" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="d" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="e">0,1</exelink>
+   <journal_data recompense="" quest_title="우리 모두 친해져요" chapterid="" quest_level="1" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos />
+         <destination_mode>custom:1@4,5@4,8@4,11@4</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>16</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Talk to Events Planner Irine]]></title>
+         <contents mid="34"><![CDATA[<html>Events Planner Irine seems to have something to say. Go listen to what she has to say.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="36"><![CDATA[Please talk to Events Planner Irine.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos />
+         <destination_mode>custom:1@4,5@4,8@4,11@4</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Talk to Events Planner Irine]]></title>
+         <contents mid="38"><![CDATA[<html>Events Planner Irine's Friendship Points can be increased. <BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="40"><![CDATA[Events Planner Irine's Friendship Points can be increased.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

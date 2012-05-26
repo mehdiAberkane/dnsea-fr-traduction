@@ -1,0 +1,194 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_807_special_handbag</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>807</qid>
+      <designer>김인정</designer>
+      <qlevel>43</qlevel>
+      <qdesc>가디언 라미아 비늘	300439
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Special Handbag]]></qkname>
+      <qnpc>
+         <npcid>715</npcid>
+         <npcename>n715_adventurer_guildmaster_hose</npcename>
+         <npckname>모험자 길드장 호세</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-a" mid="6"><![CDATA[<html>What?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Guildmaster Jose$<BR>My wife had a alumni meeting and saw her friend's luxury bag.<BR>
+And she said that she wanted to have it instead of this necklace .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-b" mid="8"><![CDATA[<html>Huh? Why are you looking at me?!</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Guildmaster Jose$<BR>She said "I want to have a Ramia bag.<BR>That is made up by<FONT color=#a82424>{monster:1572}</FONT>'s leather….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-accepting-acceptted" mid="22"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Special Handbag$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-a" mid="44"><![CDATA[<html>(Don't give me that crap!!)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Guildmaster Jose$<BR>Don't you have… any plan to go to<FONT color=#a82424>Ancient Armory</FONT>?<BR>
+You seem like wanting to fight against {monster:1572}.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-a" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-2" mid="56"><![CDATA[<html>O, Okay!</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Guildmaster Jose$<BR>My wife wants to have the bag decorated with Ramia's leather.<BR>I heard that at<FONT color=#a82424>East Ancient Armory</FONT>, the {monster:1572} is wandering around there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2" image="QW_55.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Guildmaster Jose$<BR>Hu, who did imagine making a bag with Ramia's leather.<BR><FONT color=#7e12d2>(Jose's shaking his head)</FONT><BR>Go to
+<FONT color=#a82425>East Ancient Armory</FONT>. Hurry up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-a" mid="27"><![CDATA[<html>(Deliver him)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Guildmaster Jose$<BR>You came back.<BR>
+<FONT color=#7e12d3>(Jose seems exhausted.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-b" mid="29"><![CDATA[<html>You might?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Guildmaster Jose$<BR>
+My wife has been annoying me to say Ramia's leather repeatedly for a whole day….If you were late for a minute, I might...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-c" mid="31"><![CDATA[<html>(I feel sad)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Guildmaster Jose$<BR>I might have shouted at her.<BR><FONT color=#7e12d3>(Jose trembles)</FONT><BR>
+Hu. You saved my family.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-c" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-d" mid="35"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-d" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Guildmaster Jose$<BR>
+This time should be the last of my wife's request.<BR>I don't understand why women have that much jealousy.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">807</exe>
+         <exe type="talk" npc="n715_adventurer_guildmaster_hose">1</exe>
+         <exe type="recompense_view">8070,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1571</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201571</exe>
+         <exe type="addquestitem" num="1">300439</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300439</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300439</exe>
+         <exe type="complete">807</exe>
+         <exe type="recompense">8070,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="b">2</exelink>
+   <exelink qstep="accepting" npc="n715_adventurer_guildmaster_hose" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="2">0,2,3,5,1</exelink>
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="b" />
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="c">2</exelink>
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="d">0,1</exelink>
+   <journal_data recompense="0:8070" quest_title="특별한 핸드백" chapterid="" quest_level="43" quest_mark_type="10" use_item_list="300439">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Last Concerns]]></title>
+         <contents mid="59"><![CDATA[<html>Listen to Guildmaster Jose's concerns more.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Guildmaster Jose</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Talk with Guildmaster Jose]]></destination>
+         <todo_msg mid="61"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:551@3,552@3,553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[East Ancient Armory]]></title>
+         <contents mid="63"><![CDATA[<html>Guildmaster Jose asked me to get Ramia's leather. You can get it in East Ancient Armory.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[East Ancient Armory]]></destination>
+         <todo_msg mid="65"><![CDATA[Get Ramia's leather in East Ancient Armory.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image />
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Last Request]]></title>
+         <contents mid="67"><![CDATA[<html>I just got Ramia's leather. Deliver it to Lotus Marsh's Guildmaster Jose.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Guildmaster Jose</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Talk with Guildmaster Jose]]></destination>
+         <todo_msg mid="69"><![CDATA[Report to Guildmaster Jose]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>43:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>806</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,213 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq_943_kor_happy_halloween</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>943</qid>
+      <designer>김주연</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Happy Halloween - Jack-O-Lantern (3 days) ]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Events Planner Irine$<BR><FONT color=#a82424>Happy Halloween!</FONT><BR>The royal palace has lined up lots of exciting activities to celebrate Halloween!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="CrazyDug_Halloween.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Events Planner Irine$<BR>Anyone can participate! <BR>Hunt the <FONT color=#a82424>Crazy Ducks</FONT> that will appear in the dungeon randomly and collect <FONT color=#a82424>{item:872415263}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="QS_Default.dds" itemindex="872415263">
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Events Planner Irine$<BR>If you gather 3 pieces of  <FONT color=#a82424>{item:872415263}</FONT> dropped by the Crazy Ducks, they can be exchanged for the Halloween Celebration Costume.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="QS_Default.dds" itemindex="805306509">
+      <talk_answer link_index="n100_event_ilyn-accepting-d" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Events Planner Irine$<BR>Halloween Celebration Costumes of the same design can only be received up to a maximum of 3 times. The duration of the costume received varies each time.<BR>※<FONT color=#7e12d2> 1 time: </FONT> <FONT color=#a82424>3 Days</FONT><FONT color=#7e12d2> / 2 times: </FONT> <FONT color=#a82424>5 Days</FONT> <FONT color=#7e12d2>/ 3 times: </FONT><FONT color=#a82424>Unlimited</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Events Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Happy Halloween$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-e" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Events Planner Irine$<BR>
+Join in the celebration! <BR>
+<FONT color=#a82424>Happy Halloween</FONT>~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="QS_Default.dds" itemindex="872415263">
+      <talk_answer link_index="n100_event_ilyn-1-change_event" mid="16"><![CDATA[<html>I'll exchange now.</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-1-exit_event" mid="17"><![CDATA[<html>I'll exchange later.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Events Planner Irine$<BR>If you gather 3 pieces of <FONT color=#a82424>{item:872415263}</FONT> which are dropped by the Crazy Ducks, they can be exchanged for the Halloween Celebration Costume.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="QS_Default.dds" itemindex="805306509">
+      <talk_question mid="18"><![CDATA[<html>$Events Planner Irine$<BR>Reward exchange successful!<BR>Event Reward is delivered to the <FONT color=#a82424>Cash Gift Box</FONT>.<BR> Press
+[<FONT color=#a82424>F11</FONT>] to visit the Cash Shop.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-b" image="QS_Default.dds" itemindex="872415263">
+      <talk_question mid="19"><![CDATA[<html>$Events Planner Irine$<BR>You have <FONT color=#a82424> insufficient </FONT><FONT color=#a82424>{item:872415263}</FONT> for exchange.  Please check the quantity of your items.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="30"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Happy Halloween Prize Exchange$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-d" image="QS_Default.dds" itemindex="872415263">
+      <talk_question mid="33"><![CDATA[<html>$Events Planner Irine$<BR>In order to exchange for rewards, <FONT color=#a82424>3 {item:872415263}</FONT> are required. Hunt the Crazy Ducks in the Dungeon and collect <FONT color=#a82424>{item:872415263}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="item" num="3" op="]=">872415263</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, 943, 1) == 1</chk>
+         <chk type="item" num="3" op="[">872415263</chk>
+         <chk type="custom">api_quest_GetQuestMemo(userObjID, 943, 1) == 2</chk>
+      </conditions>
+      <executions>
+         <exe type="setquest">943</exe>
+         <exe type="recompense_view">9430,,,,</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="huntitem" num="30002" exe="" onexe="4">872415263</exe>
+         <exe type="conexe" true="5,9" false="10">0 and 1</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="2,5,9" false="8">0</exe>
+         <exe type="talk" npc="n100_event_ilyn">e</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, 943, 1, 2);</exe>
+         <exe type="conexe" true="11,12" false="">2 and 3</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="custom">api_quest_SetQuestMemo(userObjID, 943, 1, 1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="item" num="3" op="]=">872415263</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2,5" false="1">0</exe>
+         <exe type="talk" npc="n100_event_ilyn">b</exe>
+         <exe type="recompense">9430,,,,</exe>
+         <exe type="delitem" num="3">872415263</exe>
+         <exe type="complete">943</exe>
+         <exe type="talk" npc="n100_event_ilyn">c</exe>
+         <exe type="conexe" true="7" false="8">0</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="talk" npc="n100_event_ilyn">d</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceptted">0,12,3,7</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn">6</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn" sub="change_event">0</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn" sub="a">3,4</exelink>
+   <journal_data recompense="0:9430" quest_title="해피 할로윈 - 랜턴 (3일)" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>CrazyDug_Halloween.dds</contents_image>
+         <need_itemlist />
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Happy Halloween]]></title>
+         <contents mid="26"><![CDATA[<html>Hunt the <FONT color=#a82424>Crazy Duck</FONT> in the Dungeon and collect <FONT color=#a82424>{item:872415263}</FONT>.<BR>  <BR>
+ <BR>
+※ <FONT color=#7e12d2>Crazy Ducks will appear randomly in each Dungeon.</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Collect Halloween Event Coupon]]></destination>
+         <todo_msg mid="28"><![CDATA[Please collect Halloween Event Coupon.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n100</destination_pos>
+         <destination_mode>custom:21@0,13014@0,2@0,3@0,6@0,7@0,4@0,9@0,10@0,12@0,13@0,24@0,1@4,5@4,8@4,11@4,13601@2,13602@2</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Trade Event]]></title>
+         <contents mid="38"><![CDATA[<html>After Coupon Collection is complete,<BR>
+exchange for Event Rewards with Events Planner Irine<BR>
+ <BR>
+<FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT> <BR><FONT color=#086171>Calderock  Village</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT> </html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="40"><![CDATA[Exchange for Rewards with Events Planner Irine.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>1:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>940</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

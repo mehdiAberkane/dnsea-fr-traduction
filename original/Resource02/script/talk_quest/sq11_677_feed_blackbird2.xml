@@ -1,0 +1,196 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_677_feed_blackbird2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>677</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc>앗뜨거 풀	400299
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Blackbird's food II]]></qkname>
+      <qnpc>
+         <npcid>338</npcid>
+         <npcename>n338_littlegirl_daisy</npcename>
+         <npckname>데이지</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-a" mid="6"><![CDATA[<html>Is the bird better?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Daisy$<BR>…Uhm, <FONT color=#387206>{user_nick}</FONT>. You are also worried about my blackbird right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-b" mid="8"><![CDATA[<html>(Listen to the story)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Daisy$<BR>No. Not yet…<BR>I'm still finding out what she likes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-acceptted" mid="10"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Balckbird's food II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-1" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-1-a" mid="12"><![CDATA[<html>No one likes cockroaches as their food.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Daisy$<BR>Thanks for getting me <FONT color=#a82424>dried worms</FONT> but I don't think she likes bugs.<BR>I gave her <FONT color=#a82424>cockroaches</FONT> and she really hated it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-1-a" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-1-b" mid="14"><![CDATA[<html>(Can you feed that to a bird?)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Daisy$<BR>Really? I didn't know but she really liked <FONT color=#a82424>Wasabi crackers</FONT>.<BR>I think she likes spicy food.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-1-b" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-1-c" mid="16"><![CDATA[<html>…Pig? You mean a boar?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Daisy$<BR>According to my grandfather, there is really spicy grass at <FONT color=#a82424>Road to City of Death</FONT>.<BR>But you only can get it from the pigs there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-1-c" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-1-d" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Daisy$<BR>Yes, That's right! I can't remember exactly what they are called but it sounds like something like that.<BR>The grass is called <FONT color=#a82424>Oh it's hot grass</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-1-d" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-2" mid="20"><![CDATA[<html>Well ok….</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Daisy$<BR>I can't go to <FONT color=#a82424>Road to City of Death</FONT>, it's too scary.<BR>So can you go and get me 5 <FONT color=#a82424>Oh it's hot grass</FONT> for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-2" image="QW_38.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Daisy$<BR>Oh it's hot grass can only be found in <FONT color=#a82424>Road to City of Death</FONT>. Don't forget!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-3" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-3-a" mid="23"><![CDATA[<html>(Give her the grass)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Daisy$<BR>Did you get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-3-a" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-3-b" mid="25"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-3-b" image="QW_SkirtOfBlackMountain.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Daisy$<BR>Hehe, I gotta get back to <FONT color=#a82424> Black Mountain</FONT> now.<BR>I think the bird has been waiting for me a long time.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6770,,,,,</exe>
+         <exe type="setquest">677</exe>
+         <exe type="talk" npc="n338_littlegirl_daisy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>Elite_보어거너그레이(35)	1029
+Elite_보어워리어그레이(35)	1036
+Elite_보어거너그레이(35)	201029
+Elite_보어워리어그레이(35)	201036
+</comment>
+      <conditions>
+         <chk type="questitem" num="5" op="]=">400299</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">400299</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8,12">1029</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8,12">1036</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8,12">201029</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8,12">201036</exe>
+         <exe type="huntitem" num="5" exe="" onexe="">400299</exe>
+         <exe type="conexe" true="9,10,11" false="2">0</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="9,10,11" false="">0</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6770,,,,,</exe>
+         <exe type="complete">677</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n338_littlegirl_daisy" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n338_littlegirl_daisy" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n338_littlegirl_daisy" sub="b" />
+   <exelink qstep="1" npc="n338_littlegirl_daisy" sub="c" />
+   <exelink qstep="1" npc="n338_littlegirl_daisy" sub="d" />
+   <exelink qstep="1" npc="n338_littlegirl_daisy" sub="2">0,3,4,5,6,7,1</exelink>
+   <exelink qstep="3" npc="n338_littlegirl_daisy" sub="a">0</exelink>
+   <exelink qstep="3" npc="n338_littlegirl_daisy" sub="b">1</exelink>
+   <journal_data recompense="0:6770" quest_title="검은새의 먹이Ⅱ" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="400299">
+      <journal index="1">
+         <contents_image>QN_Npc_Daisy.dd</contents_image>
+         <destination_pos>12,n338</destination_pos>
+         <destination_mode />
+         <statemark_npcid>338</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Blackbird's other food]]></title>
+         <contents mid="28"><![CDATA[<html><FONT color=#a82424>Daisy</FONT> is looking for an another food for her bird. Talk to Daisy.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Daisy</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Conversation with Daisy]]></destination>
+         <todo_msg mid="30"><![CDATA[Find out about the other food for the bird from Daisy]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_38.dds</contents_image>
+         <destination_pos>383,0,0</destination_pos>
+         <destination_mode>custom:381@1,382@3,383@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Collect Oh it's hot grass]]></title>
+         <contents mid="32"><![CDATA[<html>Go and hunt monsters from Road to City of Death and collect 5 Oh it's hot grass.<BR><BR><FONT color=#086171>Hermalte Port(Dark Mine Entrance)</FONT> <FONT color=#a82424>→ Road to City of Death</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Collect Oh it's hot grass]]></destination>
+         <todo_msg mid="34"><![CDATA[Collect Oh it's hot grass from Road to City of Death]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Daisy.dds</contents_image>
+         <destination_pos>12,n338</destination_pos>
+         <destination_mode />
+         <statemark_npcid>338</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Conversation with Daisy]]></title>
+         <contents mid="36"><![CDATA[<html>Collected all the grass. Return to Daisy in Hermalte Port.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Daisy</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Conversation with Daisy]]></destination>
+         <todo_msg mid="38"><![CDATA[Talk to Daisy in Hermatle Port]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>676</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

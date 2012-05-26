@@ -1,0 +1,253 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_317_find_the_grandson2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>317</qid>
+      <designer>곽노찬</designer>
+      <qlevel>16</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Find Little Gosuk II]]></qkname>
+      <qnpc>
+         <npcid>185</npcid>
+         <npcename>n185_goblin_grandfather</npcename>
+         <npckname>고블린 할배</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>274</npcid>
+         <npcename>n274_hopgoblinold</npcename>
+         <npckname>홉 고블린 할배</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>275</npcid>
+         <npcename>n275_houndnormal</npcename>
+         <npckname>고블린 할배의 하운드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>56</npcid>
+         <npcename>n056_guard_pesent_dalcy</npcename>
+         <npckname>가드 달시</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>57</npcid>
+         <npcename>n057_guard_pesent_dikinson</npcename>
+         <npckname>가드 디킨슨</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Grandpa Goblin$<BR>Kahaaack! Gosuk…Gobts...Gobzy…Globleen…Gobba...<BR>My grandchildren…!<BR><FONT color=#7e12d2>(He seems to have gone mad. Unable to understand what he is saying in this state.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Grandpa Goblin's Hound$<BR><FONT color=#7e12d2>(Grandpa Goblin's Hound has tears in his eyes. Grandpa Goblin has disappeared)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-noquest" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Guard Darcy$<BR>We have increase security around the town.There is a growing number of monsters.<BR><FONT color=#7e12d2>(Go to Wind Forest to find Grandpa Goblin and receive the quest.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n057_guard_pesent_dikinson-noquest" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Guard Dickinson$<BR>Let us know if you see any monsters around here.<BR><FONT color=#7e12d2>(Go to Wind Forest to find Grandpa Goblin and receive the quest.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-a" mid="10"><![CDATA[<html> It might have fled, I'll ask the guard. </html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Grandpa Goblin$<BR>Gosuk… Boo Hoo…<BR><FONT color=#7e12d2>(Grandpa Goblin continues to cry without stopping.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n185_goblin_grandfather-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Find Little Gosuk II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n185_goblin_grandfather-1" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Grandpa Goblin$<BR>You have been kind..Human..<BR><FONT color=#7e12d2>(Grandpa Goblin looks sad and started crying again..)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-1" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Grandpa Goblin$<BR>Kahaaack! Gosuk…Gobts...Gobzy…Globleen…Gobba...<BR>My grandchildren…!<BR><FONT color=#7e12d2>(He seems to have gone mad. Unable to undrstand what he is saying in this state.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Grandpa Goblin's Hound$<BR><FONT color=#7e12d2>(Grandpa Goblin's Hound has tears in his eyes. Grandpa Goblin has disappeared)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-1" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2" mid="21"><![CDATA[<html>(Ask about Gosuk.)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Guard Darcy$<BR>We have increase security around the town.There is a growing number of monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n057_guard_pesent_dikinson-1" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n057_guard_pesent_dikinson-2" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Guard Dickinson$<BR><FONT color=#a82424>Long-haired goblin?</font><BR>Well…I think so…Maybe not.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2-a" mid="23"><![CDATA[<html>Hang on a sec! Did you see where it went?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Guard Darcy$<BR><FONT color=#a82424>A long-haired goblin?</font><BR>Well…Yes.<BR>I saw it near the entrance to the village. It wasn't wearing any underwear and it was kicking around over there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2-a" image="QM_goblin_son04.dds" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-2-b" mid="29"><![CDATA[<html>(I tried to sought help again)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Guard Darcy$<BR>Well I can't remember exactly. But that Goblin in town sure seems to be looking for somone.It was running around and shouting a name which sounded like <FONT color=#382000>{user_nick}</font>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-2-b" image="" itemindex="">
+      <talk_answer link_index="n056_guard_pesent_dalcy-3" mid="31"><![CDATA[<html>Ah, No. Just let me know if you see that Goblin again.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Guard Darcy$<BR>Why that expression?<BR>Is something wrong?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n057_guard_pesent_dikinson-2" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Guard Dickinson$<BR>Uhh…I think that the Goblin is headed towards the Shadow Forest. I think you should ask <FONT color=#a82424>Guard Darcy</font> about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n056_guard_pesent_dalcy-3" image="QN_Npc_Guard_Dalcy.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Guard Darcy$<BR>Yes. I will do it.<BR><BR><FONT color=#7e12d2>(Guard Darcy, looking down and staring into space)</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-3" image="QN_Npc_Goblin_Grandfa.dds" itemindex="">
+      <talk_answer link_index="n275_houndnormal-3-a" mid="33"><![CDATA[<html>Where did Grandpa Goblin go...?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Grandpa Goblin Hound$<BR><FONT color=#7e12d2>(Grandpa Goblin is not around)</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-3-a" image="QW_19.dds" itemindex="">
+      <talk_answer link_index="n275_houndnormal-4" mid="35"><![CDATA[<html> Oh ...! You're kidding! </html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Grandpa Goblin Hound$<BR>Wail Wail~~~ Woooof<BR><FONT color=#7e12d2>(Looks at Church Ruins direction with tearful eyes..)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n275_houndnormal-4" image="QW_19.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Grandpa Goblin Hound$<BR>Woooof.<BR> <FONT color=#7e12d2>(Hurry and go to Church Ruins and look for Grandpa Goblin)</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-4" image="" itemindex="">
+      <talk_answer link_index="n274_hopgoblinold-4-a" mid="39"><![CDATA[<html>I think I found Gosuk</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Grandpa Goblin$<BR>Kahaaack! Gosuk…Gobts...Gobzy…Globleen…Gobba...<BR>My grandchildren…!<BR><FONT color=#7e12d2>(He seems to have gone mad. Unable to undrstand what he is saying in this state.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-4-a" image="" itemindex="">
+      <talk_answer link_index="n274_hopgoblinold-4-b" mid="41"><![CDATA[<html>(Receive Reward)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n274_hopgoblinold-4-b" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Grandpa Goblin$<BR>Kaahaak! They must be the enemies of my grandchildren! Kyaahaak!!<BR><FONT color=#a82424>Raraghhhhhhh~~~</FONT>!!!!!! <BR><FONT color=#7e12d2>(Grandpa Goblin seems to have gone mad)</FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3171,3172,3173,3174,3175</exe>
+         <exe type="setquest">317</exe>
+         <exe type="talk" npc="n185_goblin_grandfather">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3171,3172,3173,3174,3175</exe>
+         <exe type="complete">317</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n185_goblin_grandfather" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n185_goblin_grandfather" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n057_guard_pesent_dikinson" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n056_guard_pesent_dalcy" sub="b" />
+   <exelink qstep="2" npc="n056_guard_pesent_dalcy" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n275_houndnormal" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n274_hopgoblinold" sub="a">0</exelink>
+   <exelink qstep="4" npc="n274_hopgoblinold" sub="b">1</exelink>
+   <journal_data recompense="1:3171,2:3172,3:3173,4:3174,5:3175" quest_title="고숙이를 찾아라Ⅱ" chapterid="" quest_level="16" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <destination_pos>3,n57</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>57</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Talk to Guard Dickinson]]></title>
+         <contents mid="45"><![CDATA[<html>Find Gosuk for Grandpa Goblin. Talk to Guard Dickinson in Wind Forest to find out more information.<BR><BR><FONT color=#086171>Wind Forest</FONT> <FONT color=#a82424>→ Guard Dickinson</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Talk to Guard Dickinson]]></destination>
+         <todo_msg mid="47"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Guard_Dalcy.dds</contents_image>
+         <destination_pos>2,n56</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>56</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Talk to Guard Darcy]]></title>
+         <contents mid="49"><![CDATA[<html>Guard Dickinson might have some information. Look for him in Shadow Forest.<BR><BR><FONT color=#086171>Shadow Forest</FONT> <FONT color=#a82424>→ Guard Darcy</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Talk to Guard Darcy]]></destination>
+         <todo_msg mid="51"><![CDATA[Ask Darcy about Gosuk.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Goblin_Grandfa.dds</contents_image>
+         <destination_pos>3,n275</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>275</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Talk to Grandpa Goblin]]></title>
+         <contents mid="54"><![CDATA[<html>Guard Darcy thinks that Gosuk has fortunately escape without harm.<BR>While you did not manage to find Gosuk, you should let Grandpa Goblin know about this news.<BR><BR><FONT color=#086171>Wind  Forest</FONT> <FONT color=#a82424>→ Grandpa Goblin</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Talk to Grandpa Goblin]]></destination>
+         <todo_msg mid="56"><![CDATA[Gosuk fate has been confirmed.Return to Grandpa Goblin.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QW_19.dds</contents_image>
+         <destination_pos>142,n274</destination_pos>
+         <destination_mode>custom:141@1,142@1</destination_mode>
+         <statemark_npcid>274</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Find Grandpa Goblin in Church Ruins]]></title>
+         <contents mid="59"><![CDATA[<html>The Guard at Shadow Forest said that Grandpa Goblin cannot wait for the news and charge into <FONT color=#a82424>Church Ruins</FONT>. Go and find him before something happens.<BR><BR><FONT color=#086171>Wind Forest (Wind Forest Temple)</FONT> <FONT color=#a82424>→ Church Ruins</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Talk to Grandpa Goblin in the Church Ruins]]></destination>
+         <todo_msg mid="61"><![CDATA[Find Grandpa Goblin in the Church Ruins.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>16:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>316</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

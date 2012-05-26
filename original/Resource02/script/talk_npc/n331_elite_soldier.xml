@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n331_elite_soldier</npcename>
+      <npcid>331</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Royal Guard]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Royal Guard$<BR>I have received General Douglas's orders and I am carrying out the task now!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_629_retreat_teleju</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">629</chk>
+      </conditions>
+   </talk>

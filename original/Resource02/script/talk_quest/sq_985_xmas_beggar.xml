@@ -1,0 +1,123 @@
+﻿<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq_985_xmas_beggar</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>985</qid>
+      <designer>곽노찬</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Conversation] Merry Christmas]]></qkname>
+      <qnpc>
+         <npcid>87</npcid>
+         <npcename>n087_beggar</npcename>
+         <npckname>걸인 로피</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-accepting" image="QS_Default.dds" itemindex="872915235">
+      <talk_answer link_index="n087_beggar-accepting-acceptted" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Ropi the bum$<BR>Pweet! <FONT color=#a82424>Christmas Card</FONT>?! That’s all sales tactics. How stupid are you to be fooled by that? Hahaha ~<BR><FONT color=#7e12d2>(Ropi rolls on the ground and he drops something)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-1" image="" itemindex="">
+      <talk_answer link_index="n087_beggar-1-a" mid="14"><![CDATA[<html><FONT color=#086171>(Receive a present)</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merry Christmas$<BR> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n087_beggar-1-a" image="QN_Npc_Beggar.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Ropi the bum$<BR>
+Hound! Where’s my hound? <BR>
+Did you take my hound? <BR>
+BowBowBow!<BR>
+<FONT color=#7e12d2>(Ropi growls)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">985</exe>
+         <exe type="talk" npc="n087_beggar">1</exe>
+         <exe type="recompense">9850,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">9850,,,,</exe>
+         <exe type="complete">985</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 87, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n087_beggar" sub="acceptted">0,1,2</exelink>
+   <exelink qstep="1" npc="n087_beggar">0</exelink>
+   <exelink qstep="1" npc="n087_beggar" sub="a">1,2</exelink>
+   <journal_data recompense="0:9850" quest_title="[대화] 메리 크리스마스" chapterid="" quest_level="1" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Beggar.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>11,n87</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>87</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="6"><![CDATA[Merry Christmas]]></title>
+         <contents mid="7"><![CDATA[<html>Ropi the bum dropped something from his pocket. Go and pick that up. <BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#a82424> → Ropi the bum</FONT></html>]]></contents>
+         <destination mid="8"><![CDATA[Conversation with Ropi the bum]]></destination>
+         <todo_msg mid="9"><![CDATA[Talk to Ropi the bum]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>8101</prev_quest>
+      <have_normal_item />
+      <have_cash_item>872915235:1</have_cash_item>
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

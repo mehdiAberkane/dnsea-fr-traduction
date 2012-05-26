@@ -1,0 +1,159 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_582_pirates_rum</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>582</qid>
+      <designer>나은하</designer>
+      <qlevel>32</qlevel>
+      <qdesc>켈리는 평소 자신이 좋아하던 병사 조이를 위해서 가나슈 케이크를 만들고 싶어한다. 하지만 가나슈 케이크를 만드는데 필요한 럼주가 바닥이 났다고 한다. 얼마 전에 세인트헤이븐으로 들어오기로 한 럼주가 해적들의 습격으로 들어오지 못한 것이다.
+켈리는 해적들 중에서 술에 찌든 해적을 잡아 럼주를 뺏어오라고 한다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Pirates' rum]]></qkname>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Merchant Kelly$<BR>I don't know when the cargo ship will arrive.<BR>Our stock in the shop is running out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-a" mid="7"><![CDATA[<html>Oh, favor? (It feels like a déjà vu.)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Kelly$<BR>Oh, good to see you.<BR>I have a favor to ask you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-a" image="QS_Default.dds" itemindex="400186">
+      <talk_answer link_index="n092_trader_kelly-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Kelly$<BR>Joey's birthday is coming up so I was going to make a ganache cake. But the ship transporting the <FONT color=#a82424>luxury rum</FONT> was attacked by the pirates.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-b" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-c" mid="11"><![CDATA[<html>(Oh, I have to help someone else's relationship again...)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Kelly$<BR>Those pirates who stole <FONT color=#a82424>luxury rum</FONT> are living in the <FONT color=#a82424>Core of Forsaken Islet</FONT>. Could you go there and get me a bottle of <FONT color=#a82424>luxury rum</FONT> please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-d" mid="13"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Pirates' Rum$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="QW_33.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Merchant Kelly$<BR>You are such a kind man.<BR>So please get me a bottle of <FONT color=#a82424>luxury rum</FONT> from <FONT color=#a82424>core of Forsaken Islet</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2-a" mid="17"><![CDATA[<html>(Pass the luxury rum)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Merchant Kelly$<BR>Have you got the <FONT color=#a82424>luxury rum</FONT> for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-3" mid="19"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Merchant Kelly$<BR>Those pirates are a serious problem. <BR>
+Ah, General Douglas was looking for you <FONT color=#387206>{user_nick}</FONT>, take a visit to the Royal Castle. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,5821,5822,5823,5824,5825</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2">932</exe>
+         <exe type="addquestitem" num="1">400186</exe>
+         <exe type="huntitem" num="1" exe="" onexe="4,5,6">400186</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="setquest">582</exe>
+         <exe type="talk" npc="n092_trader_kelly">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="2">200932</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5821,5822,5823,5824,5825</exe>
+         <exe type="complete">582</exe>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="d">7,1,9,3,8</exelink>
+   <exelink qstep="2" npc="n092_trader_kelly" sub="a">0</exelink>
+   <exelink qstep="2" npc="n092_trader_kelly" sub="3">2,1</exelink>
+   <journal_data recompense="1:5821,2:5822,3:5823,4:5824,5:5825" quest_title="해적들의 럼주" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="400186">
+      <journal index="1">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="22"><![CDATA[Find luxury rum]]></title>
+         <contents mid="23"><![CDATA[<html>Find <FONT color=#a82424>luxury rum</FONT> from <FONT color=#a82424>Core of Lonely Island</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Transportation ship to Forsaken Islet)</FONT><FONT color=#a82424> → Core of Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="24"><![CDATA[Find luxury rum]]></destination>
+         <todo_msg mid="25"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image />
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Conversation with Merchant Kelly]]></title>
+         <contents mid="27"><![CDATA[<html>Found <FONT color=#a82424>luxury rum</FONT>. Return to <FONT color=#a82424>Merchant Kelly</FONT> in Saint Haven.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Conversation with Merchant Kelly]]></destination>
+         <todo_msg mid="29"><![CDATA[Talk to Merchant Kelly in Saint Haven]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

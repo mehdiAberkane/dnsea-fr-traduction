@@ -1,0 +1,306 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_794_garden_of_time_and_space</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>794</qid>
+      <designer>정진호</designer>
+      <qlevel>50</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Garden of time and space]]></qkname>
+      <qnpc>
+         <npcid>714</npcid>
+         <npcename>n714_cleric_yohan</npcename>
+         <npckname>상급 클레릭 요한</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>775</npcid>
+         <npcename>n775_cleric_ilizer</npcename>
+         <npckname>신전기사 일라이저</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>776</npcid>
+         <npcename>n776_darklair_mardlen</npcename>
+         <npckname>어둠의 여신관 마들렌</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-noquest" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Temple knight Elizer$<BR>Here is only for those people who have <FONT color=#a94407>Pope Teramai</FONT>'s letter.<BR><BR><FONT color=#7e12d3>※ You can receive a quest from Lotus Marsh's Master Cleric Yohan.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-noquest" image="QN_Npc_lotus_yohan.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>I'm observing if new <FONT color=#a94407>Nest</FONT> is open.<BR><BR><FONT color=#7e12d3>※ ※ You can receive a quest from Lotus Marsh's Master Cleric Yohan.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="8"><![CDATA[<html>A letter?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Cleric Yohan$<BR>Ah, <FONT color=#387207>{user_nick}</FONT>. I've got a letter for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-a" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-b" mid="10"><![CDATA[<html>From Pope Teramai? What did he need to…?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Cleric Yohan$<BR>I think this letter would be important because it's with<FONT color=#a94408>Holiness Pope Teramai</FONT>'s sign.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-c" mid="12"><![CDATA[<html>(Receive the letter)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Cleric Yohan$<BR>I don't know the contents on it.<BR>You'd better open and read it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Garden of time and space$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-a" mid="17"><![CDATA[<html>(I'm reading the letter)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Cleric Yohan$<BR>I don't know exactly why he personally wrote this letter to you. But, there must be a profound meaning why he sent the letter to <FONT color=#387207>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-a" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-b" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d2>My dear,  {user_nick}</FONT>.<BR><FONT color=#7e12d3>I've heard stories about you in a long distance.<BR>You saved Calderock Village and Saint Haven, and now you're working on in Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-b" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-c" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d2>I could look back my memories 50 years ago thanks to you and felt like I become a youngster again. However, I also heard some sad stories….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-c" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-d" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d2>Jereint and Karacule have both passed away.</FONT><BR><FONT color=#7e12d2>Above all, Jereint's death was so startling me.</FONT><BR>
+<FONT color=#7e12d3>Who could've imagined that he as a gold dragon died….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-d" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-e" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d3>Jereint…. Looking back on my memories, his behaviors were definitely sincere and honest. Some things that I couldn't understand are because of the difference race between he and me.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-e" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-f" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d2>Karacule and Barnac were so angry at him because he hided his real identity to them.</FONT><BR><FONT color=#7e12d3>They were the people who believed Jereint the most between us….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-f" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-g" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d3>At that time, Velskud looked so shocked but now I'm not sure how he was really sad about it. It wouldn't be surprised for him as much as I was surprised when I realized that Velskud was one of dragon-followers' apostles .</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-g" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-h" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d3>I'm sorry about telling my stories too much. But, what I want to ask you now is related to Jereint's death, so please understand me.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-h" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-i" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d3>The monsters that Jereint put the seal has started awakening after Jereint's death. In the near future, apocalypse will happen because of the huge amount of monsters.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-i" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-1-j" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d2>To prevent that happening, I took one measure in Saint Haven.</FONT><BR><FONT color=#7e12d2>As soon as you got this letter, go to Saint Haven and meet with <FONT color=#a82424>Temple knight Elizer</FONT></FONT><FONT color=#7e12d3>.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1-j" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Letter from Teramai$<BR><FONT color=#7e12d2>You'll know the details from him. <BR>And, we're going to meet soon.</FONT><BR><FONT color=#7e12d3>I'll wait for the day.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-1" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Temple knight Elizer$<BR>Here's not open to the public .<BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d3>※You should complete the previous conversation.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-1" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Priestess of Darkness Madlen$<BR><FONT color=#7e12d3>(Madlen stares at me with calm eyes)</FONT><BR>I'm observing if new Nest is open.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-a" mid="41"><![CDATA[<html>This letter is about meeting someone in Saint Haven.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Master Cleric Yohan$<BR>Your face expressions turn a lot while reading it. It won't be funny to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Master Cleric Yohan$<BR>Yeah? It looks like there's something serious.<BR>Then, you'd better go to <FONT color=#a82425>Saint haven</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-2" image="" itemindex="">
+      <talk_answer link_index="n775_cleric_ilizer-2-a" mid="44"><![CDATA[<html>I'm with Teramai's letter.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Temple knight Elizer$<BR>What can I do for you?<BR>Here's not open to the public. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-2-a" image="" itemindex="">
+      <talk_answer link_index="n775_cleric_ilizer-2-b" mid="46"><![CDATA[<html>Sir.. don't say that.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Temple knight Elizer$<BR>The Pope's letter?<BR> So you must be <FONT color=#387207>Sir {user_nick}</FONT>.<BR>Nice to meet you. I'm Temple knight Elizer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-2-b" image="" itemindex="">
+      <talk_answer link_index="n775_cleric_ilizer-2-c" mid="48"><![CDATA[<html>Knight of time and space…?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Temple knight Elizer$<BR>No, I can't. One who got the letter from the Pope is regarded as<FONT color=#a94408>Knight of time and space</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-2-c" image="" itemindex="">
+      <talk_answer link_index="n775_cleric_ilizer-2-d" mid="50"><![CDATA[<html>Where is Garden of time and space?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Temple knight Elizer$<BR>The Pope received a request from <FONT color=#a82424>Priestess of Darkness</FONT> and made <FONT color=#a94407>Garden of time and space</FONT>here.<BR>
+Those people who can enter Garden of time and space are the<FONT color=#a94408>Knight of time and space</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-2-d" image="QW_SaintHaven_NestWorldZone01.dds" itemindex="">
+      <talk_answer link_index="n775_cleric_ilizer-2-e" mid="52"><![CDATA[<html>I'd rather go inside and check there.</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Temple knight Elizer$<BR>I don't know exactly what the place is.<BR>However, I just heard that the place exists for observing whether the apocalypse is coming or not.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-2-e" image="" itemindex="">
+      <talk_answer link_index="n775_cleric_ilizer-3" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Temple knight Elizer$<BR>Yes, I can't guide you because I can't go inside with you .<BR>But qualified <FONT color=#387207>Sir {user_nick}</FONT> will see what the place is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n775_cleric_ilizer-3" image="" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Temple knight Elizer$<BR>If you go inside, there would be a<FONT color=#a82425>guide</FONT>.<BR>…Knight of time and space, I'm kind of envious of you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3" image="" itemindex="">
+      <talk_answer link_index="n776_darklair_mardlen-3-a" mid="66"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>I was waiting for <FONT color=#387206>{user_nick}</FONT>.<BR>I'm the guide of <FONT color=#a94407>Garden of time and space</FONT>, <FONT color=#a94408>Madlen</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3-a" image="" itemindex="">
+      <talk_answer link_index="n776_darklair_mardlen-3-b" mid="67"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>This place is made by <FONT color=#a94408>Artea Goddess's fragments of dream</FONT>after opening the world. We completed this place with the ancients' skills that we were succeeded by them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3-b" image="" itemindex="">
+      <talk_answer link_index="n776_darklair_mardlen-3-c" mid="68"><![CDATA[<html>Connected gateway?</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>Everything here is pure like a baby and clean.<BR>We made a<FONT color=#a94408>gateway</FONT> which connects the place gold dragons made for a seal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3-c" image="" itemindex="">
+      <talk_answer link_index="n776_darklair_mardlen-3-d" mid="69"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>Yes, if the seal is broken, the monsters would leak out of the gateway. This kind of pure and clean place is quite good at responding the strong evil <FONT color=#a82425>Nest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3-d" image="" itemindex="">
+      <talk_answer link_index="n776_darklair_mardlen-3-e" mid="70"><![CDATA[<html>Dragon-followers…? Do you mean that humans made a Nest?</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>As soon as Garden of time and space was completed, we found a new Nest open. That was… the place that dragon-followers'<FONT color=#a82425>Archbishop</FONT>made.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3-e" image="" itemindex="">
+      <talk_answer link_index="n776_darklair_mardlen-3-f" mid="115"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>Hmm… To be more specific, Archbishop didn't make it by himself. It was some ancient evil's power which was occupied by him.<BR>We haven't recognized exactly what it was.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3-f" image="" itemindex="">
+      <talk_answer link_index="n776_darklair_mardlen-3-g" mid="117"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="116"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>
+Saint Haven which is connected Garden of time and space is where many warriors gather, so this is good for responding for the apocalypse.<BR>After we found Archbishop Nest, we immediately reported it to the Pope. And the Pope promised to gather warriors and send them to here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3-g" image="" itemindex="">
+      <talk_answer link_index="n776_darklair_mardlen-3-h" mid="119"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="118"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n776_darklair_mardlen-3-h" image="QM_Bishop_Lotusmash.dds" itemindex="">
+      <talk_question mid="120"><![CDATA[<html>$Priestess of Darkness Madlen$<BR>We don't have much time.<BR><FONT color=#387206>{user_nick}</FONT>, go to <FONT color=#a82425>Archbishop's Nest</FONT>'s gateway.<BR>I think you'd better go with strong companions.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">7940,,,,,</exe>
+         <exe type="setquest">794</exe>
+         <exe type="talk" npc="n714_cleric_yohan">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment xml:space="preserve">
+</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense">7940,,,,,</exe>
+         <exe type="complete">794</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="b" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="c" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="d" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="e" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="f" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="g" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="h" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="i" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="j" />
+   <exelink qstep="1" npc="n714_cleric_yohan" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n775_cleric_ilizer" sub="b" />
+   <exelink qstep="2" npc="n775_cleric_ilizer" sub="c" />
+   <exelink qstep="2" npc="n775_cleric_ilizer" sub="d" />
+   <exelink qstep="2" npc="n775_cleric_ilizer" sub="e" />
+   <exelink qstep="2" npc="n775_cleric_ilizer" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n776_darklair_mardlen" sub="b" />
+   <exelink qstep="3" npc="n776_darklair_mardlen" sub="c" />
+   <exelink qstep="3" npc="n776_darklair_mardlen" sub="d" />
+   <exelink qstep="3" npc="n776_darklair_mardlen" sub="e" />
+   <exelink qstep="3" npc="n776_darklair_mardlen" sub="f" />
+   <exelink qstep="3" npc="n776_darklair_mardlen" sub="g">0</exelink>
+   <exelink qstep="3" npc="n776_darklair_mardlen" sub="h">1</exelink>
+   <journal_data recompense="7940" quest_title="시공의 정원" chapterid="" quest_level="50" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode />
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="94"><![CDATA[Letter from Teramai]]></title>
+         <contents mid="95"><![CDATA[<html>Master Cleric Yohan delivered the Letter from Teramai. Read the Letter from Teramai.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Cleric Yohan</FONT></html>]]></contents>
+         <destination mid="96"><![CDATA[Talk with Master Cleric Yohan]]></destination>
+         <todo_msg mid="97"><![CDATA[New Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_SaintHaven.dds</contents_image>
+         <destination_pos>11,n775</destination_pos>
+         <destination_mode />
+         <statemark_npcid>775</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="98"><![CDATA[Temple knight Elizer]]></title>
+         <contents mid="99"><![CDATA[<html>Meet with Temple knight Elizer in Saint Haven.<BR><BR><FONT color=#086171>Saint Haven</FONT><FONT color=#a82425> → Temple knight Elizer</FONT></html>]]></contents>
+         <destination mid="100"><![CDATA[Talk with Temple knight Elizer]]></destination>
+         <todo_msg mid="101"><![CDATA[Meet with Temple knight Elizer in Saint Haven]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_SaintHaven_NestWorldZone01.dds</contents_image>
+         <destination_pos>27,n776</destination_pos>
+         <destination_mode />
+         <statemark_npcid>776</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="102"><![CDATA[To Garden of time and space]]></title>
+         <contents mid="103"><![CDATA[<html>Search inside of Garden of time and space.<BR><BR><FONT color=#086171>Saint Haven(Garden of time and space's gateway)</FONT> <FONT color=#a82425>→ Garden of time and space(Priestess of Darkness Madlen)</FONT></html>]]></contents>
+         <destination mid="104"><![CDATA[Talk with Priestess of Darkness Madlen]]></destination>
+         <todo_msg mid="105"><![CDATA[Meet with Priestess of Darkness Madlen in Garden of time and space]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>50:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>723,744</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,16 @@
+   <talk>
+      <npcename>n704_broom</npcename>
+      <npcid>704</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Magic Broom]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Magic Broom$<BR>
+I am taking my job seriously! But no matter how I sweep, the floor refuses to shine…...<BR>
+I guess a rag is still required to mop the floor, but I have none...<BR>
+Looks like I can't do this on my own……</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

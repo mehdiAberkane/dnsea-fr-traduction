@@ -1,0 +1,109 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq23_6508_kalaen_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6508</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] How much do you make?]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-a" mid="6"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_answer>
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-d" mid="7"><![CDATA[<html>I don't think it's going to be a lot.</html>]]></talk_answer>
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-f" mid="8"><![CDATA[<html>What's more important than money?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Court Sorceress Kayleen$<BR>My salary? Hahahaha <BR>Are you curious about my salary? You can’t decide on your career based on salary alone. Hahaha! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-b" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Court Sorceress Kayleen$<BR>You have no dreams nor hope. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-c" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+Why do you give up already? You are still young. It’s more important that you do what you like even though the path may seem more daunting. If you follow what others are doing, you could just end up regretting your life. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+Listen to your heart and follow the road that your heart wants to take. That will be the road that you will willingly take responsibilities of your actions. <BR>...However, it is true that money is important.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-e" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Court Sorceress Kayleen $<BR>
+That…uhm…. <BR>Saint Haven is not in the most stable financial situation right now. They are cutting expenses to support the war. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-e" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Court Sorceress Kayleen $<BR>
+But!! I am still a royal Court Sorceress. I’m not in a position to listen to stuff like this from {user_class} like you! <BR> If you feel sympathy, just bring me a present!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-g" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Court Sorceress Kayleen $<BR>
+The most important thing in choosing your career is your aptitude.<BR>And more importantly, your self-satisfaction. Even though you are in a position where everyone admires you but if you don’t feel happy, that alone will destroy you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-g" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Just remember it is so much better to live happily with less money than live unhappily with more money. <BR><FONT color=#7e12d2>(She speaks maturely for the first time.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6508, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 38, 200 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 38, 100 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 38, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 38,400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="a">1,2,0</exelink>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="d">3,0</exelink>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="f">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 얼마나 버시나요?" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>38:15000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

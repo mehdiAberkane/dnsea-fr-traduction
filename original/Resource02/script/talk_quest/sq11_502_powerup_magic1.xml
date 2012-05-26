@@ -1,0 +1,226 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_502_powerup_magic1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>502</qid>
+      <designer>김주연</designer>
+      <qlevel>37</qlevel>
+      <qdesc>상급 소서리스 스텔라와 함께하는 마족 Lv2 칭호 수련. 첫 번째 수련은 고엽의 숲 폭발 지역을 SS랭크로 클리어 하는 것이다. </qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>503</nextqid>
+      <nextqname>sq11_503_powerup_magic2</nextqname>
+      <nextqnpc>n045_soceress_master_stella</nextqnpc>
+      <qkname mid="1"><![CDATA[[Title] [Monster Lv2] Mana Strengthening I]]></qkname>
+      <qnpc>
+         <npcid>45</npcid>
+         <npcename>n045_soceress_master_stella</npcename>
+         <npckname>상급 소서리스 스텔라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Stella$<BR>I'm so bored… There must be something I can do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-b" mid="8"><![CDATA[<html>Me?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Stella$<BR>Hey, you over there!! Come here for a second!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Stella$<BR>Yeah you. Hmm,m not bad, not bad at all. You'll do just fine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-d" mid="12"><![CDATA[<html>Actually I'm a little busy.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Stella$<BR>I'm kind of bored right now. Can you hang around for a second?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-e" mid="14"><![CDATA[<html>(Talk to her)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Sorceress Stella$<BR>Huh? Really? To me you look like you've got enough time. Or are you saying you're too good to spare a little time for entertainment of bored lady Stella?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-f" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Sorceress Stella$<BR>Great, you've made a fined choice. Adventure is meaningless if you can't enjoy the moments of life. Was that too hard for a young one to understand?.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-g" mid="18"><![CDATA[<html>I received Monster Title at Carderock.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Master Sorceress Stella$<BR>Judging by the glitTelejung of your forehead, I'm guessing you had a training to strengthen your Mana haven't you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-h" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Master Sorceress Stella$<BR>Monster Lv1? Hmm,m, you must have received a cheap knockoff title from pseudo Sorceress Tiana of Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-i" mid="22"><![CDATA[<html>Am I fit for the Monster Title?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Master Sorceress Stella$<BR>I can give you a much more fitting Monster Title. If you are willing to receive a training from me, that is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-j" mid="24"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Master Sorceress Stella$<BR>It doesn't matter what your class is. The fact of having the <FONT color=#a82424>Monster Title</FONT> it self is beneficial for your adventure. This is a good time as any to acquire it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-accepting-accepttd" mid="26"><![CDATA[<html><FONT color=#086171>Accept quest</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Mana Strengthening I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-a" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Sorceress Stella$<BR>Good choice. A special training for <FONT color=#a82424>Monster Lv2 Title</FONT> provided by me is not something you want to miss.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-b" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Master Sorceress Stella$<BR>Let's start the first training easy shall we?<BR>The easiest method of increasing Mana is through maintaining clear state of mind.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-c" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Sorceress Stella$<BR>Regularly, people us boring methods such as meditation or studying but that is not the right way to go. The best way is a vigorous action.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-c" image="QW_41.dds" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-d" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT> is  accumulated with corrupted Mana. Perfect place for some action.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-d" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-1-e" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Master Sorceress Stella$<BR>Let's see… C rank clear won't be a problem for you, return when you clear the area with <FONT color=#a82424> C rank</FONT> or above.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-1-e" image="QW_41.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Master Sorceress Stella$<BR> Go to the <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT>and  clear the area with <FONT color=#a82424>C rank or above</FONT>. You will have no problem doing so.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-2" image="QW_41.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Master Sorceress Stella$<BR><FONT color=#a82424>Monster Lv2</FONT> is not something you can just receive without an effort. Get to <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT> now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-a" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Master Sorceress Stella$<BR>What took you so long?? <BR>I thought I was going to fall asleep from all the waiting.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-a" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-b" mid="42"><![CDATA[<html>(You hold your breath for a second)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Master Sorceress Stella$<BR>It's alright. You don't have to look so down.<BR>We all have our first trial. You have passed the first test so rest up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-b" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-c" mid="44"><![CDATA[<html><FONT color=#086171>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$quest reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n045_soceress_master_stella-3-c" image="" itemindex="">
+      <talk_answer link_index="n045_soceress_master_stella-3-!next" mid="46"><![CDATA[<html>People don't regularly do such thing.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Sorceress Stella$<BR>People call me weird but I'm a very subtle woman once you get to know me. I do sometimes turn people I don't like into  a <FONT color=#a82424>toad</FONT> or a <FONT color=#a82424>duck</FONT> but others do that too don't they?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">5020,,,,,</exe>
+         <exe type="setquest">502</exe>
+         <exe type="talk" npc="n045_soceress_master_stella">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="stageConstructionLevel" op="]=">0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="checkStageClearRank" rand="5" num="413" onexe="3" true="[=" xsi:nil="true" />
+         <exe type="conexe" true="4,5,6" false="">0</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">5020,,,,,</exe>
+         <exe type="complete">502</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="j">0</exelink>
+   <exelink qstep="accepting" npc="n045_soceress_master_stella" sub="accepttd">1,2</exelink>
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="b" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="c" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="d" />
+   <exelink qstep="1" npc="n045_soceress_master_stella" sub="e">0,2,1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="b">0</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="c">1</exelink>
+   <exelink qstep="3" npc="n045_soceress_master_stella" sub="!next" />
+   <journal_data recompense="5020" quest_title="[칭호] 마족Lv2/ 마력 강화 Ⅰ" chapterid="" quest_level="37" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode />
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Talk to Master Sorceress Stella]]></title>
+         <contents mid="48"><![CDATA[<html>Stella offered a better Title than the one you reaceive from Carderock. If you are interested in <FONT color=#a82424>Monster Lv2 Title</FONT>, talk to her.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="50"><![CDATA[Talk to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Clear Explosion zone in Withered Leaves Forest C rank or above]]></title>
+         <contents mid="52"><![CDATA[<html>First training to  Monster Lv2 Title offered by Master Sorceress Stella can be proceeded at <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT>. Clear the area with <FONT color=#a82424>C rank or above</FONT> and return to her.<BR><BR><FONT color=#086171>Shadow Forest Outskirts</FONT> <FONT color=#a82424>→ Explosion zone in Withered Leaves Forest</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Clear Explosion zone in Withered Leaves Forest C rank or above]]></destination>
+         <todo_msg mid="54"><![CDATA[Acquire C rank from Explosion zone in Withered Leaves Forest.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressStella.dds</contents_image>
+         <destination_pos>11,n45</destination_pos>
+         <destination_mode />
+         <statemark_npcid>45</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Talk to Master Sorceress Stella]]></title>
+         <contents mid="56"><![CDATA[<html>You have acquired C rank from Explosion zone in Withered Leaves Forest. Return to  <FONT color=#a82424>Master Sorceress Stella</FONT> and report.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Sorceress Stella</FONT> </html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Master Sorceress Stella]]></destination>
+         <todo_msg mid="58"><![CDATA[Return to Master Sorceress Stella.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>37:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>293</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

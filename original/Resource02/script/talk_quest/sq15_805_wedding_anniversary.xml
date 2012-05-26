@@ -1,0 +1,263 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_805_wedding_anniversary</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>805</qid>
+      <designer>김인정</designer>
+      <qlevel>43</qlevel>
+      <qdesc>타마라의 구토약	300436
+달톤의 보석	300437
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>806</nextqid>
+      <nextqname>sq15_806_gem_cutter</nextqname>
+      <nextqnpc>n715_adventurer_guildmaster_hose</nextqnpc>
+      <qkname mid="1"><![CDATA[Wedding Anniversary]]></qkname>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>715</npcid>
+         <npcename>n715_adventurer_guildmaster_hose</npcename>
+         <npckname>모험자 길드장 호세</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Guildmaster Jose$<BR> The boiled water with mosses makes me lower the appetite… but I also feel… dizzy….<BR><BR><FONT color=#7e12d3>※ You can get a quest from Master Sorceress Tamara</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-a" mid="7"><![CDATA[<html>(Tell about the Jose's new way of diet)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Tamara$<BR>Ah, <FONT color=#387207>{user_nick}</FONT>.<BR>Did you deliver the medicine to him? How's he?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-b" mid="9"><![CDATA[<html>Really?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Sorceress Tamara$<BR>What?! Mimic moss?!<BR>
+He can't eat that!!! It will become serious!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-c" mid="11"><![CDATA[<html>Yes, I think so.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Tamara$<BR>Yea!! If the medicine and the boiled water with mimic moss combines, it will make a poison.<BR>Did he already drink it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-d" mid="53"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Sorceress Tamara$<BR>No way.<BR>
+Go in a hurry and give him this medicine for vomiting!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Wedding Anniversary$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hu~ dear<FONT color=#a82425>Guildmaster Jose</FONT>.<BR>He doesn't know how dangerous medicine abuse is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-a" mid="17"><![CDATA[<html>Are you okay?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Guildmaster Jose$<BR>
+Kekk, Kyak, keeek…!!<BR>
+Oop~ ooop!!<BR>
+<FONT color=#7e12d3>(Jose keeps retching)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-b" mid="19"><![CDATA[<html>What did yo eat?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Guildmaster Jose$<BR>Do you see that this … is… okay…keeeek.<BR><FONT color=#7e12d3>(Jose doesn't look good)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-c" mid="21"><![CDATA[<html>Take this medicine.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Guildmaster Jose$<BR>M… Moss! Kyaaak… <BR>
+My throat, kek!! moss!<BR>
+<FONT color=#7e12d3>(Jose looks like he already drank the water)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-c" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-d" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Guildmaster Jose$<BR>Ooop! Oooop!!<BR><FONT color=#7e12d3>(Jose's puking up the water)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-d" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-e" mid="25"><![CDATA[<html>You asked me to get it.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Guildmaster Jose$<BR>You!!! What did you have me eat?<BR>Are you going to kill me?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-e" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-f" mid="28"><![CDATA[<html>(Tell him about what Tamara said before)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Guildmaster Jose$<BR>But why… I…<BR>
+was in that kind of bad condition!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-f" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-g" mid="55"><![CDATA[<html>(Jose grumbles)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Guildmaster Jose$<BR>You should've told me earlier!!<BR>
+I'd come close to death.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-g" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-h" mid="57"><![CDATA[<html>You'd better give her a present.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Guildmaster Jose$<BR>Damn… so I can't afford to be on a diet.<BR>The <FONT color=#a82425>wedding anniversary</FONT>is coming soon, so what should I do for my wife?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-h" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-1-i" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Guildmaster Jose$<BR>A present? (Jose's considering it)<BR>Once before, my  wife wanted to have a <FONT color=#a82424>{monster:1400}</FONT>'s bright jewelry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-1-i" image="QW_52.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Guildmaster Jose$<BR>She would be pleased if I make a necklace with the jewelry. Haha!<BR>Please go to <FONT color=#a82425>East Ancient Armory</FONT>and get a Dalton's gem!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-2" image="QW_52.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Guildmaster Jose$<BR>This should be satisfactory for her.<BR>Let's go in a hurry to <FONT color=#a82425>East Ancient Armory</FONT>~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-a" mid="34"><![CDATA[<html>Yes, I'm done so I'm going…</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Guildmaster Jose$<BR>Oh~ you got the Dalton's gem!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-a" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-b" mid="62"><![CDATA[<html>Well, my work's done.</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Guildmaster Jose$<BR>
+Huh? What're you doing?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-b" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-c" mid="64"><![CDATA[<html>(Work again?!)</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Guildmaster Jose$<BR>No, your work isn't done yet.<BR>You should carve Dalton's gems to make a necklace!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-c" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-d" mid="66"><![CDATA[<html>(Work again)</html>]]></talk_answer>
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-d" mid="67"><![CDATA[<html>You do give me work a lot.</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Guildmaster Jose$<BR>I've heard that <FONT color=#a82425>Blacksmith Molin</FONT>'s quite good at craftsmanship.<BR>Go to Blacksmith Molin and ask him to carve these gems.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-d" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-e" mid="69"><![CDATA[<html>(You're such a…)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Guildmaster Jose$<BR>Huh? You don't want rewards?<BR>
+Then, you can go. <FONT color=#7e12d3>(Jose's shaking his pocket)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n715_adventurer_guildmaster_hose-3-e" image="" itemindex="">
+      <talk_answer link_index="n715_adventurer_guildmaster_hose-3-!next" mid="36"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8050,,,,,</exe>
+         <exe type="setquest">805</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+         <exe type="addquestitem" num="1">300436</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">300436</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1576</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201576</exe>
+         <exe type="addquestitem" num="1">300437</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,8,9">300437</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>연퀘로 이어져 다음 퀘스트 초반에 보석을 지우므로 여기선 안지움.</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense">8050,,,,,</exe>
+         <exe type="complete">805</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceptted">1,2,3</exelink>
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="b" />
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="c">2</exelink>
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="d" />
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="e" />
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="f" />
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="g" />
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="h" />
+   <exelink qstep="1" npc="n715_adventurer_guildmaster_hose" sub="i">0,3,4,6,1</exelink>
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="b" />
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="c" />
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="d" />
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="d" />
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="e">0</exelink>
+   <exelink qstep="3" npc="n715_adventurer_guildmaster_hose" sub="!next">1</exelink>
+   <journal_data recompense="0:8050" quest_title="다가오는 결혼기념일" chapterid="" quest_level="43" quest_mark_type="10" use_item_list="300436,300437">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Accident]]></title>
+         <contents mid="41"><![CDATA[<html>Master Sorceress Tamara said that eating the medicine with boiled water with moss is very dangerous. Let's go to Guildmaster Jose and tell him about it.<BR>
+<BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Guildmaster Jose</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Talk with Guildmaster Jose]]></destination>
+         <todo_msg mid="43"><![CDATA[Go to Guildmaster Jose and give Tamara's medicine to him.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:551@3,552@3,553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[East Ancient Armory]]></title>
+         <contents mid="45"><![CDATA[<html>Guildmaster Jose's going to make a necklace as a wedding anniversary present. Go to East Ancient Armory and get Dalton's gems.<BR>
+<BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[East Ancient Armory]]></destination>
+         <todo_msg mid="47"><![CDATA[Collect Dalton's gems in East Ancient Armory.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image />
+         <destination_pos>15,n715</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>715</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[For Wife]]></title>
+         <contents mid="49"><![CDATA[<html>Deliver to Guildmaster Jose.<BR>
+<BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Guildmaster Jose</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Talk with Guildmaster Jose]]></destination>
+         <todo_msg mid="51"><![CDATA[Report to Guildmaster Jose.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>43:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>804</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

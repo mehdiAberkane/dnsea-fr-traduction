@@ -1,0 +1,25 @@
+   <talk>
+      <npcename>n250_warrior_master_chandler</npcename>
+      <npcid>250</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Master Warrior Chandler]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="002" mid="9"><![CDATA[<html>I'm a little excited.</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Master Warrior Chandler$<BR>Are you prepared for the <FONT color=#a82424>Ultimate Test</FONT>?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="003" mid="10"><![CDATA[<html> Very well.</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Master Warrior Chandler$<BR>In order to pass the test, you must defend orcs from overrunning this place for  <FONT color=#a82424>3 minutes</FONT>. Kill swiftly.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="004" mid="12"><![CDATA[<html>I understand.</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Master Warrior Chandler$<BR>There are <FONT color=#a82424>3 waves</FONT> of orcs to deal with.  <FONT color=#a82424>Shield Orcs</FONT> will attack from the second wave and it's gonna get harder in the third wave where you will meet the <FONT color=#a82424> Boss Orcs</FONT>. Are you scared silly already?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_question mid="8"><![CDATA[<html>$Master Warrior Chandler$<BR>You will <FONT color=#a82424>fail</FONT> the test if you allow <FONT color=#a82424>6</FONT> or more orcs to enter the room. Heed my advice and kill them as fast as you can.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

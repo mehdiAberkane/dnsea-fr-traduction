@@ -1,0 +1,121 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_666_grow_go_farm</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>666</qid>
+      <designer>박정민</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Real Farming]]></qkname>
+      <qnpc>
+         <npcid>351</npcid>
+         <npcename>n351_farm</npcename>
+         <npckname>농장 관리인 모리 영감</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>352</npcid>
+         <npcename>n352_farm_warehouse</npcename>
+         <npckname>농장 관리인 모리 영감</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n352_farm_warehouse-noquest" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Farm Keeper Mori$<BR>It's too early for the real challenge now...<BR>
+ <BR>
+<FONT color=#7e12d2>(Require a quest from Farm Keeper Mori to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-accepting" image="" itemindex="">
+      <talk_answer link_index="n351_farm-accepting-a" mid="12"><![CDATA[<html>Yes! I'll try.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Farm Keeper Mori$<BR>Seeds are to be planted on the farms! <BR>Open <FONT color=#a82424>farm</FONT> is waiting for you~<BR>Do you want to give it a try?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n351_farm-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Real Farming$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n351_farm-1" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Farm Keeper Mori$<BR>Seeds are to be planted on the farms!<BR>Open farm is waiting for you! Head to <FONT color=#a82424>Farming Area</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n352_farm_warehouse-1" image="" itemindex="">
+      <talk_answer link_index="n352_farm_warehouse-1-a" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Farm Keeper Mori$<BR>Welcome! Don’t' you feel like farming watching this open <FONT color=#a82424>farmland</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n352_farm_warehouse-1-a" image="" itemindex="">
+      <talk_answer link_index="n352_farm_warehouse-1-b" mid="20"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n352_farm_warehouse-1-b" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Farm Keeper Mori$<BR>Seeds in your right hand, water in your left hand are you ready to work?<BR>Of course, don't forget the sickle. I <FONT color=#a82424>provided</FONT> everything you need.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6660,,,,,</exe>
+         <exe type="setquest">666</exe>
+         <exe type="talk" npc="n351_farm">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6660,,,,,</exe>
+         <exe type="complete">666</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n351_farm" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n351_farm" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n352_farm_warehouse" sub="a">0</exelink>
+   <exelink qstep="1" npc="n352_farm_warehouse" sub="b">1</exelink>
+   <journal_data recompense="6660" quest_title="실전! 재배" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>15106,n352</destination_pos>
+         <destination_mode />
+         <statemark_npcid>352</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Converssation with Mori]]></title>
+         <contents mid="26"><![CDATA[<html>Talk to Mori in Farming Area to learn how to farm.<BR><BR><FONT color=#2b2723><FONT color=#086171>Farming Office</FONT> </FONT><FONT color=#a82424>→ Mori(Farming Area)</FONT></FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Go to Farming Area]]></destination>
+         <todo_msg mid="28"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>665</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

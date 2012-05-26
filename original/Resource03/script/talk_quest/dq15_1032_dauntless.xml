@@ -1,0 +1,144 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>dq15_1032_dauntless</qename>
+      <qtype>dayquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>1032</qid>
+      <designer>김인정</designer>
+      <qlevel>46</qlevel>
+      <qdesc>테트라스톤	300453
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Dauntless]]></qkname>
+      <qnpc>
+         <npcid>710</npcid>
+         <npcename>n710_scholar_hancock</npcename>
+         <npckname>문장학자 핸콕</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-a" mid="8"><![CDATA[<html>… again?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Heraldist Hancock$<BR>I kept Tetrastone safely…<BR>but it revived to great mimic dalton and ran away again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-b" mid="39"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Heraldist Hancock${action:Talk}<BR>I'm so sorry to ask you a couple of times.<BR>But I'm sure we can control it permanently someday. This is for our research so please once again help me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-acceptted" mid="10"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Dauntless$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1" image="QW_55.dds" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Heraldist Hancock$<BR>Go to<FONT color=#a82425>East Ancient Armory</FONT>to take great mimic dalton to Tetrastone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-a" mid="41"><![CDATA[<html>(Hancock tilts his head)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Heraldist Hancock$<BR>I hid it in<FONT color=#a82425>Tamara's garden</FONT>, but how could it run away?<BR>Hmm… do you think there's something that provokes monsters?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-b" mid="43"><![CDATA[<html><FONT color=#086172>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-b" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Heraldist Hancock$<BR>In this time! I will!!<BR>
+make Tetrastone stable and safe.<BR>…but if it runs away again, please help me again. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">10320,,,,,</exe>
+         <exe type="setquest">1032</exe>
+         <exe type="talk" npc="n710_scholar_hancock">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1576</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201576</exe>
+         <exe type="addquestitem" num="1">300453</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,8,9">300453</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">10320,,,,,</exe>
+         <exe type="complete">1032</exe>
+         <exe type="delquestitem" num="-1">300453</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n710_scholar_hancock" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n710_scholar_hancock" sub="acceptted">1,3,4,6,2</exelink>
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="a">0</exelink>
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="b">1,2</exelink>
+   <journal_data recompense="10320" quest_title="불굴의 문장학자" chapterid="" quest_level="46" quest_mark_type="10" use_item_list="300453">
+      <journal index="1">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:551@3,552@3,553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[East Ancient Armory]]></title>
+         <contents mid="31"><![CDATA[<html>Go to East Ancient Armory to beat up great mimic dalton and get Tetrastone back.<BR>
+<BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[East Ancient Armory]]></destination>
+         <todo_msg mid="33"><![CDATA[Go to East Ancient Armory to get Tetrastone back.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>15,n710</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>710</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="34"><![CDATA[To Heraldist Hancock]]></title>
+         <contents mid="35"><![CDATA[<html>I just got Tetrastone back. Go to Lotus Marsh's Heraldist Hancock.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Heraldist Hancock</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[Talk with Heraldist Hancock]]></destination>
+         <todo_msg mid="37"><![CDATA[Go back to Lotus Marsh's Heraldist Hancock.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>46:49</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>822</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

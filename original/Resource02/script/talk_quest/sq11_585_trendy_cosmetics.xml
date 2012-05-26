@@ -1,0 +1,158 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_585_trendy_cosmetics</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>585</qid>
+      <designer>김인정</designer>
+      <qlevel>35</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Trend Cosmetic]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-a" mid="6"><![CDATA[<html>What do you need?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Court Sorceress Kalaen$<BR>Oh yes, are you free?<BR>I know you're free, come here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-b" mid="8"><![CDATA[<html>(It was you who asked for)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Court Sorceress Kalaen$<BR>Last time <FONT color=#a82424>gunpowder</FONT>that you brought. I tried on my face but it wasn't that good. <BR>So I used for my feet. It was because you didn't bring me good gunpowder!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-b" image="QW_40.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-c" mid="11"><![CDATA[<html>Ok I will go.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Court Sorceress Kalaen$<BR>So I heard that if you defeat soldiers at<FONT color=#a82424>Dark Overlord Tower</FONT>, you can get better gunpowder. So, get it for me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-acceppted" mid="13"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Trend Cosmetic$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="QW_40.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Court Sorceress Kalaen${action:Talk}<BR><FONT color=#a82424>Going to Dark Overlord Tower</FONT>and coming back is easy for you, right?<BR>Hohohoho. I will wait for gunpowder! Hohoho.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-a" mid="17"><![CDATA[<html>He, Here!</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Court Sorceress Kalaen$<BR>Well, you are very good at work. Hohoho.<BR>Give me <FONT color=#a82424>gunpowder</FONT> which is for my milky skin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-b" mid="19"><![CDATA[<html>Ah, Yes…</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Court Sorceress Kalaen$<BR>It's very helpful to keep my skin if I mix this with flower oil and put on my face.<BR>Well, I don't need these because I am already pretty enough but I put this because of stress. You got that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-c" mid="21"><![CDATA[<html>(Weird trend)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Court Sorceress Kalaen${action:Talk}<BR>Gunpowder face mask… this is trend these days. I started it first. <BR>I am the original. Hohohoho.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2-d" mid="23"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2-d" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Court Sorceress Kalaen$<BR>
+After I put this on my face, people will be surprise about <FONT color=#a82424>milky skin Kalaen</FONT>?<BR>Ohhohoho~!<BR>
+<FONT color=#7e12d2>(Kalaen imagines herself)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">585</exe>
+         <exe type="talk" npc="n038_royal_magician_kalaen">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">1067</exe>
+         <exe type="addquestitem" num="1">300276</exe>
+         <exe type="huntitem" num="5" exe="7,5,6" onexe="">300276</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="recompense_view">,5851,5852,5853,5854,5855</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">201067</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5851,5852,5853,5854,5855</exe>
+         <exe type="delquestitem" num="-1">300276</exe>
+         <exe type="complete">585</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 38, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="c">8</exelink>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="acceppted">0,2,9,4,1</exelink>
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="c">0</exelink>
+   <exelink qstep="2" npc="n038_royal_magician_kalaen" sub="d">1,2,3</exelink>
+   <journal_data recompense="1:5851,2:5852,3:5853,4:5854,5:5855" quest_title="유행하는 화장품" chapterid="" quest_level="35" quest_mark_type="10" use_item_list="300276">
+      <journal index="1">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>404,0,0</destination_pos>
+         <destination_mode>custom:401@3,402@3,403@3,404@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Collect Gunpowder]]></title>
+         <contents mid="26"><![CDATA[<html>Let's go to collect gunpowder at Dark Overlord Tower.<BR><BR><FONT color=#086171>Black Mountain Dark Overlord Gate)</FONT> <FONT color=#a82424>→Dark Overlord Tower</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Dark Overlord Tower]]></destination>
+         <todo_msg mid="28"><![CDATA[Collect Gunpowder at Dark Overlord Tower]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode />
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Milky Skin Kalaen]]></title>
+         <contents mid="30"><![CDATA[<html>Completed collecting items. Let's go to Court Sorceress Kalaen.<BR>
+<BR><FONT color=#086171>Saint Haven Kingdom</FONT> <FONT color=#a82424>→ Court Sorceress Kalaen/FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Talk with Court Sorceress Kalaen]]></destination>
+         <todo_msg mid="32"><![CDATA[Bring to Court Sorceress Kalaen what you collected]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>35:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>566</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

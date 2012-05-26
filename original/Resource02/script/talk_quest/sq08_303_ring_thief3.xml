@@ -1,0 +1,405 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_303_ring_thief3</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>303</qid>
+      <designer>김인정</designer>
+      <qlevel>14</qlevel>
+      <qdesc>안 보이는 도둑과 대화.
+상인 메이와 대화.
+습격자들의 매복지에서 코볼트 퇴치.
+메이와 대화.
+메이에게 받은 세제를 안 보이는 도둑에게 전달.
+케빈과 대화.
+끝.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Invisible Man]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Kevin$<BR>You still haven't found my dad's ring? Really?<BR>(Go talk to the thief near the elite soldiers' tents.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$Airship Engineer Hubert$<BR>Did you make any progress on catching the thief? Kevin could really use some good news, I'd say.<BR>(Go talk to the thief near the elite soldiers' tents.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Merchant May supplies dealers$<BR>Blacksmith Corin was talking about some kind of Hound abuse or something... Has he finally gone crazy?<BR>(Go talk to the thief near the elite soldiers' tents.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n255_invisible_thief-accepting-a" mid="11"><![CDATA[<html>Yes. Now give it.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Invisible Thief$<BR>Are you here for the ring, Mr. Goody-Two-Shoes Adventurer?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-b" mid="13"><![CDATA[<html>Well, maybe you should have, I don't know, NOT STOLEN IT.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Invisible Thief$<BR>Hey. No point in being so pushy, friend. Besides, I've had a lot of trouble because of that useless ring. This smell still won't go away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-c" mid="15"><![CDATA[<html>I'm not going to steal anything for you!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Invisible Thief$<BR>What kind of thief would I be if I didn't steal things? I thought you were smart.<BR>Look, I'm in a fix, and you need this ring back. Clearly, a deal can be made. What do you say? Help me out, and the ring is yours.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-c" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n255_invisible_thief-accepting-d" mid="17"><![CDATA[<html>Well, I do know who made it...</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Invisible Thief$<BR>Good! Because I didn't ask you to steal, stupid! I need no help with my sacred work.<BR>I just want your help in getting this horrible smell off me. You seem to know where it came from, so you should be able to find a way to get it off. Right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-e" mid="19"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$The Invisible Man$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-e" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Invisible Thief$<BR>Then go talk to the person who made it! You're not getting this ring until this smell is gone. And no funny business, or I'm gone...I only let you catch me at the Temple.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Kevin$<BR>You still haven't found my dad's ring? Really?<BR>(Go talk to the thief near the elite soldiers' tents.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Merchant May$<BR>Blacksmith Corin was talking about some kind of Hound abuse or something... Has he finally gone crazy?<BR>(Go talk to the thief near the elite soldiers' tents.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Airship Engineer Hubert$<BR>Did you make any progress on catching the thief? Kevin could really use some good news, I'd say.<BR>(Go talk to the thief near the elite soldiers' tents.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-a" mid="25"><![CDATA[<html>Well, maybe you should have, I don't know, NOT STOLEN IT.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Invisible Thief$<BR>Hey. No point in being so pushy, friend. Besides, I've had a lot of trouble because of that useless ring. This smell still won't go away!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-b" mid="27"><![CDATA[<html>I'm not going to steal anything for you!</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Invisible Thief$<BR>What kind of thief would I be if I didn't steal things? I thought you were smart.<BR>Look, I'm in a fix, and you need this ring back. Clearly, a deal can be made. What do you say? Help me out, and the ring is yours.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-b" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n255_invisible_thief-1-c" mid="29"><![CDATA[<html>Well, I do know who made it...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Invisible Thief$<BR>Good! Because I didn't ask you to steal, stupid! I need no help with my sacred work.<BR>I just want your help in getting this horrible smell off me. You seem to know where it came from, so you should be able to find a way to get it off. Right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-d" mid="31"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$The Invisible Man$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Invisible Thief$<BR>Then go talk to the person who made it! You're not getting this ring until this smell is gone. And no funny business, or I'm gone...I only let you catch me at the Temple.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Invisible Thief$<BR>Go to the person who made this horrible muck and find out how to remove the smell. You'll get your precious ring once I'm clean again. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="36"><![CDATA[<html>Yeah... remember the Nutritious Food?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Merchant May$<BR>Wow, it's been too long, adventurer!<BR>Is there anything you need...from me?<BR>(May bats her eyelashes at you.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n026_trader_may-2-b" mid="39"><![CDATA[<html>Please, May. This is important.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Merchant May$<BR>Yes, and I don't want to talk about it.<BR>(You explain about getting the smell out.)<BR>What? Ahahahaha! Some idiot actually STEPPED in that stuff? I gave Airship Engineer Hubert the bucket along with the chow because the smell wouldn't come out of THAT!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="41"><![CDATA[<html>Then that's what we'll do.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Merchant May$<BR>Well...I've had an idea for a new Super Strength Detergent in my head for awhile. If you can help me get the components, I'll make some for you. That should get the smell out...I hope.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QW_18.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="43"><![CDATA[<html>What should I get from there?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Merchant May$<BR>Alright. Can you get me something from Raider's Ambush Point?<BR>While you're gone, I'll prepare the rest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QS_Default.dds" itemindex="300129">
+      <talk_question mid="44"><![CDATA[<html>$Merchant May${action:talk}<BR>I need Fermented Nuts. The kobold archers there usually carry them for...something. They are very acidic and have a very strong scent, so they could help to remove the smell. Please get me 5 of them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_18.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Merchant May${action:talk}<BR>I need Fermented Nuts. The kobold archers there usually carry them for...something. They are very acidic and have a very strong scent, so they could help to remove the smell. Please get me 5 of them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-a" mid="47"><![CDATA[<html>Sure. Now, let's see this detergent.</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Merchant May$<BR>Oooohh, geez! I could smell those when you first got back to town. Just that sour smell makes my lips pucker! But they have to be that strong to remove such horrible smells, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="QS_Default.dds" itemindex="300129">
+      <talk_answer link_index="n026_trader_may-4-b" mid="49"><![CDATA[<html>(You watch the liquid as she drops the nuts in. For a moment, it starts...boiling?)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Merchant May$<BR>Okay... alright... I've got everything prepared, so just wait a minute.<BR>(May mixes a red liquid inside a large bowl.)<BR>Now, if I just drop the Fermented Nuts in this...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="QS_Default.dds" itemindex="300215">
+      <talk_question mid="50"><![CDATA[<html>$Merchant May$<BR>There! It's done. (May hands you a vial of very sweet-smelling liquid.)<BR>That was tough! But, you got your cleaner, and I have some left over to sell! Hee hee! Come back anytime!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-5" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Merchant May$<BR>I gave you the Super Strength Detergent already. What is it this time? Oh...are you looking for a date?<BR>(Go talk to the thief near the elite soldiers' tents.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5" image="QS_Default.dds" itemindex="300215">
+      <talk_answer link_index="n255_invisible_thief-5-a" mid="54"><![CDATA[<html>Here, try this. (You give him the Super Strength Detergent.)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Invisible Thief$<BR>Guh! Are you candy-coated now? What's that sugary smell?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-b" mid="56"><![CDATA[<html>Good for you.</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Invisible Thief$<BR>Is this stuff really going to work? I swear, if I end up smelling like a candy shop...<BR>(You see the vial floating, and the liquid splashing on something.)<BR>Wow! It really worked! I smell normal again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-c" mid="58"><![CDATA[<html>I think you owe me the ring.</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Invisible Thief$<BR>Hey, you're a pretty handy friend. I think I owe you my story now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-d" mid="60"><![CDATA[<html>Shupin? Phantom Thief?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Invisible Thief$<BR>How selfish you are! I don't tell just anybody this story. Do you know the legendary thief Shupin? He was a master thief and creator of all kinds of amazing tools, like the Peeking Magnifying Glass.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-d" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-e" mid="62"><![CDATA[<html>Fine, I'll bite. Why would you want to do that?</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Invisible Thief$<BR>You really don't know him? I know they say that the White Rose or whatever is famous in Saint Haven now, but Shupin is famous all over the world! Look, the point is, I want to become a legendary thief like the great Shupin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-e" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-f" mid="64"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Invisible Thief$<BR>You see, I didn't always want to be a thief. I was originally a sorcerer, one of the few men that could use Vision Magic. But after Kalahan abandoned the Dark Tower and all, things were pretty hard for men like me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-f" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-g" mid="66"><![CDATA[<html>Stole the chemicals? You were always a thief!</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Invisible Thief$<BR>I kept studying, but I couldn't make much progress on my own. I needed an easier way. Rumor had it that the Royal Court Sorceress was experimenting with chemicals that could boost magical power. I stole the chemicals, but I guess I mixed them wrong... They exploded, and I thought for sure I was dead. When I awoke, though, I found I was fine, but completely invisible.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-g" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-5-h" mid="69"><![CDATA[<html>Well, that's a shame. Can I have the ring now?</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Invisible Thief$<BR>I don't expect you to understand how I felt. But, since I was stuck being invisible for all eternity, I decided to make the most of it. I chose to become the greatest thief since Shupin, and stowed away on the airship to get out of Saint Haven and see the world. Of course, then it crashed...and I almost died...alone, and unseen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-5-h" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-6" mid="71"><![CDATA[<html>(You hear something move very quickly.)</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Invisible Thief$<BR>Well...thanks for listening to my tale. Perhaps we'll meet again sometime. Take care, friend... (His voice is fading...you realize he's running away! And he never gave you the ring!)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-6" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Invisible Thief$<BR>... <BR>(The thief must be long-gone by now. He got away with the ring, but you should probably check in with Airship Engineer Hubert or Kevin anyway.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-6" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="73"><![CDATA[<html>$Airship Engineer Hubert$<BR>Hey there. Kevin's been raving about how he found his ring. Good job, sneaking it back to him like that. Good thinking. Shame the thief got away, huh? I mean, he did get away, yeah? I don't see him tied up anywhere. Still, good job.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6" image="QS_Default.dds" itemindex="300213">
+      <talk_answer link_index="n029_crew_kevin-6-a" mid="76"><![CDATA[<html>Wha-?!</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Kevin$<BR>Hey! Heyyy!<BR>I found it! I found the ring! Check this out!<BR>(Kevin shows you the ring.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-b" mid="78"><![CDATA[<html>R-really?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Kevin$<BR>I found it in a pretty bowl a few moments ago. It even had a big ribbon tied on it. Haha! I guess you made the thief feel all guilty, so he gave it back! Yay!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-c" mid="80"><![CDATA[<html>Let me see that...</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Kevin$<BR>Oh! There was a letter here, too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-c" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-d" mid="82"><![CDATA[<html>What a jerk!</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Letter$<BR>I have decided to return the ring. It is not worth anything to me, nor is anything in your pathetic little town. I am starting a great journey around the world, to steal only the best and finest, and to become the next great phantom thief. Farewell...for now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-d" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-6-e" mid="84"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6-e" image="QS_Default.dds" itemindex="300066">
+      <talk_question mid="85"><![CDATA[<html>$Kevin$<BR>From now on, I'm keeping this ring hidden, so nobody can find it! Except me. Hey, does this ring smell funny to you...?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">303</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="recompense_view">,3031,3032,3033,3034,3035</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3031,3032,3033,3034,3035</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">444</exe>
+         <exe type="addquestitem" num="1">300129</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="huntitem" num="5" exe="4,5,6" onexe="">300129</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="3">200444</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300129</exe>
+         <exe type="addquestitem" num="1">300215</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300215</exe>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3031,3032,3033,3034,3035</exe>
+         <exe type="complete">303</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="d">3</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="e">0,1,2</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="b" />
+   <exelink qstep="1" npc="n255_invisible_thief" sub="c">0</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="d">1,2</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d">0,2,8,7,1</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="b">0,1,2,3</exelink>
+   <exelink qstep="5" npc="n255_invisible_thief" sub="b" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="c" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="d" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="e" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="f" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="g" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="h" />
+   <exelink qstep="5" npc="n255_invisible_thief" sub="6">0,1,2</exelink>
+   <exelink qstep="6" npc="n029_crew_kevin" sub="b" />
+   <exelink qstep="6" npc="n029_crew_kevin" sub="c" />
+   <exelink qstep="6" npc="n029_crew_kevin" sub="d">0</exelink>
+   <exelink qstep="6" npc="n029_crew_kevin" sub="e">1</exelink>
+   <journal_data recompense="1:3031,2:3032,3:3033,4:3034,5:3035" quest_title="반지 도둑 III" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="300129,300215">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[The Invisible Thief]]></title>
+         <contents mid="89"><![CDATA[<html>Talk to the Invisible Thief, hiding near the tents of the elite soldiers.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Invisible Thief</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to the Invisible Thief at Calderock Village]]></destination>
+         <todo_msg mid="91"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="92"><![CDATA[The Smell-Breaker]]></title>
+         <contents mid="93"><![CDATA[<html>The Invisible Thief says that he will return the ring if you help rid him of the horrible smell. Ask <FONT color=#a82424>May supplies dealers</FONT> how to remove the smell.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="94"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="95"><![CDATA[Ask Merchant May how to remove the smell.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_18.dds</contents_image>
+         <destination_pos>139,0,0</destination_pos>
+         <destination_mode>custom:136@3,137@3,138@1,239@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="96"><![CDATA[Fermented Nuts]]></title>
+         <contents mid="97"><![CDATA[<html>Defeat the Ambusher Kobold Archers at <FONT color=#a82424>Raider's Ambush Point</FONT> and obtain the <FONT color=#a82424>Fermented Nuts</FONT>.<FONT color=#7e12d2><BR></FONT><BR><FONT color=#086171>Cristal Stream (Raider's Den Entrance)</FONT> <FONT color=#a82424>→ Raiders Ambush Point</FONT></html>]]></contents>
+         <destination mid="98"><![CDATA[Defeat the Kobolds at Raiders Ambush Point]]></destination>
+         <todo_msg mid="99"><![CDATA[Gather the Fermented Nuts at Raiders Ambush Point.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="100"><![CDATA[Report]]></title>
+         <contents mid="101"><![CDATA[<html>You've collected all the Fermented Nuts. Report to <FONT color=#a82424>Merchant May</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→Merchant May</FONT></html>]]></contents>
+         <destination mid="102"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="103"><![CDATA[Deliver the Fermented Nuts to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="104"><![CDATA[A Thief's Story]]></title>
+         <contents mid="105"><![CDATA[<html>You've obtained the <FONT color=#a82424>Super Strength Detergent</FONT>. Deliver it to the Invisible Thief near the tents of the elite soldiers.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Invisible Thief</FONT></html>]]></contents>
+         <destination mid="106"><![CDATA[Talk to the Invisible Thief]]></destination>
+         <todo_msg mid="107"><![CDATA[Deliver the Super Strength Detergent to the Invisible Thief.]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QN_crew_kevin.dds</contents_image>
+         <destination_pos>8,n29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>29</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="108"><![CDATA[Lost or Found]]></title>
+         <contents mid="109"><![CDATA[<html>The Invisible Thief disappeared without returning the ring! Check with <FONT color=#a82424>Kevin</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Kevin</FONT></html>]]></contents>
+         <destination mid="110"><![CDATA[Talk to Kevin]]></destination>
+         <todo_msg mid="111"><![CDATA[Check with Kevin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>302</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

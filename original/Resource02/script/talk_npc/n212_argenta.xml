@@ -1,0 +1,28 @@
+   <talk>
+      <npcename>n212_argenta</npcename>
+      <npcid>212</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[<html>[Quest]</html>]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="15"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="16"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Argenta$<BR>If you were once my slave, don't you dare bring shame to my name.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_question mid="8"><![CDATA[<html>$Argenta$<BR>You're much better now, compared to our first meeting.<BR>Proves my training is effective, right?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="17" link_target="mq11_403_meet_argenta_again.xml"><![CDATA[<html>[Lv.26] <FONT color=#a94407>Dark Overlord Keep</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="18" link_target="mq11_404_return_of_fatality.xml"><![CDATA[<html>[Lv.28] <FONT color=#a94407>Resurrection of Black Plague</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="19" link_target="mq11_405_cursed_fragment.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Fragments of the Damned</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="mq11_407_the_zero_hour.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Eve of Battle</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="mq11_436_not_same.xml"><![CDATA[<html>[Lv26] <FONT color=#a94407>Have a different way of thinking </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="mq11_438_fleet_of_foot.xml"><![CDATA[<html>[Lv28] <FONT color=#a94407>Move quickly</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="29"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Argenta$<BR>I hope you won't forget what you're supposed to do.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

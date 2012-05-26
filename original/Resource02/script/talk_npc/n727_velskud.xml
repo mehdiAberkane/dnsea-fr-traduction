@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n727_velskud</npcename>
+      <npcid>727</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Velskud]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Velskud$<BR>What a stubborn fellow.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="4">0</exe>
+         <exe type="enterquest">mq15_720_behind_story</exe>
+         <exe type="enterquest">mq15_741_past_wounds</exe>
+         <exe type="conexe" true="3" false="0">1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">720</chk>
+         <chk type="hasquest">741</chk>
+      </conditions>
+   </talk>

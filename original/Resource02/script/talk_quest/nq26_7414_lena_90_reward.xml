@@ -1,0 +1,111 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq26_7414_lena_90_reward</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7414</qid>
+      <designer>김인정</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Unexpected Gift]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-acceppted" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Lady Lena$<BR>In a true relationship, no matter what condition, affections should not be abandoned right? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-1-a" mid="19"><![CDATA[<html>Would it?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Lady Lena$<BR>If there was someone who can love a beautiful, lonely and dark side…<BR> With that kind of affection, humans will never lose their hopes. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1-a" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-1-b" mid="33"><![CDATA[<html>What? That means...</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Lady Lena$<BR>Oh~ Of course, affection is very strong. <BR> If you stand by me all the time, I will never lose hope. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-1-c" mid="30"><![CDATA[<html>[Receive a gift]</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Lady Lena$<BR>Hahaha. Don’t make that face. <BR> I’m kidding. <BR> I don’t give affections nor request any. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1-c" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-1-d" mid="21"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1-d" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Lady Lena${action:Talk}<BR> <FONT color=#387206>{user_class}</FONT>, you are so kind-hearted. <BR>But just because I’m kidding that doesn’t mean it’s all a lie. <BR><FONT color=#7e12d2>(Lena smiles happily)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7414</exe>
+         <exe type="talk" npc="n133_lena_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">74140,,,,,</exe>
+         <exe type="complete">7414</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n133_lena_duglars" sub="b" />
+   <exelink qstep="1" npc="n133_lena_duglars" sub="c">0</exelink>
+   <exelink qstep="1" npc="n133_lena_duglars" sub="d">1</exelink>
+   <journal_data recompense="0:74140" quest_title="뜻밖의 선물" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Lena's Gift]]></title>
+         <contents mid="24"><![CDATA[<html>Talk to Lena.<BR><BR><FONT color=#086171>Saint Haven Palace </FONT> <FONT color=#a82424>→ Lena</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Talk to Lady Lena]]></destination>
+         <todo_msg mid="26"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>133:18000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

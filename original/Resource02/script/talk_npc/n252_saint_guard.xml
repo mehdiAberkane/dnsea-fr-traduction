@@ -1,0 +1,113 @@
+   <talk>
+      <npcename>n252_saint_guard</npcename>
+      <npcid>252</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Royal Guard Joey]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="9"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="68"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Royal Guard Joey$<BR>No idle talk while I'm on duty.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="19" link_target="mq11_401_castle_sainthaven.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Saint Haven Fortress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="sq11_534_arrest_the_falsifier1.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Counterfeit Document I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="sq11_538_strange_smoke.xml"><![CDATA[<html>[Lv.26] <FONT color=#086171>Strange Smoke</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="16" link_target="sq11_542_revenge.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171> Sum of All Parts</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="25" link_target="sq11_555_timid_man1.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Timid Man I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="sq11_556_timid_man2.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Timid Man II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="nq09_7701_suspicious_assembly.xml"><![CDATA[<html>[Lv.33] <FONT color=#086171>Winning Rally</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="39" link_target="sq11_590_wrong_romanticist.xml"><![CDATA[<html>[Lv.33] <FONT color=#086171>A Backfired Plan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="40" link_target="sq11_592_falter_romanticist.xml"><![CDATA[<html>[Lv.33] <FONT color=#086171>Shaky Love</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="sq11_593_clumsy_romanticist.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Strange Love</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="sq11_560_contribute_girl.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Team Spirit</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="81" link_target="sq11_586_good_motive.xml"><![CDATA[<html>[Lv.35] <FONT color=#086171>A Movitating Factor</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="98" link_target="nq12_7221_hero.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Harori's Dream</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="101" link_target="sq11_626_meet_teleju_again.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>The Unexpected Reunion</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="sq11_627_lost_crown.xml"><![CDATA[<html>[Lv37] <FONT color=#086171>The Usurped Throne</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="sq11_628_urgent_message.xml"><![CDATA[<html>[Lv.37] <FONT color=#086171>Urgent News</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="109" link_target="sq11_648_borrow_books.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Planned Book Loan</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="110" link_target="sq11_654_passion_of_reader.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>The Reader's Passion</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="120" link_target="sq11_642_relic_destroyer.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Destruction of the Sacred Article</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="125" link_target="sq11_661_heart_in_vain.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Messed-up Emotions</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="133" link_target="sq11_694_joy_and_horror.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>Joey's Summer Special Collection</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="134" link_target="sq11_695_good_donald.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>He's a Good Man After All</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="135" link_target="sq11_697_horror_again.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>Another Summer Special Collection</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="136" link_target="sq11_698_bad_donald.xml"><![CDATA[<html>[Lv.34] <FONT color=#086171>The True Colors of Donald</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="137"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Royal Guard Joey$<BR>No idle talk while I'm on duty.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="50"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="69"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="51"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="49"><![CDATA[<html>$Royal Guard Joey$<BR>It is nice to stand guard here, <FONT color=#387206>{user_nick}</FONT>. Come talk to me when I'm on duty. I wish we could meet in other places around town too.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="53"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="70"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="54"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="52"><![CDATA[<html>$Royal Guard Joey$<BR>Malcolm is a troublemaker, but you, <FONT color=#387206>{user_nick}</FONT>, are different. You always lend a listening ear to me. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="56"><![CDATA[<html>[Quest</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="71"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="57"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Royal Guard Joey$<BR>I cannot chat while on working, <FONT color=#387206>{user_nick}</FONT>, but I may make an exception sometimes.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="59"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="72"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="60"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="58"><![CDATA[<html>$Royal Guard Joey$<BR><FONT color=#387206>{user_nick}</FONT>, I really shouldn't be chatting with you while I'm working. You're making things difficult for me.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="62"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="63"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="61"><![CDATA[<html>$Gifts$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="65"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="64"><![CDATA[<html>$Royal Guard Joey$<BR>Well, the army has its rules, but overall, I'm one happy soldier.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="115" link_target="sq_980_xmas_saint_guard.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="74" link_target="nq09_7702_saint_guardjoy_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Saint Haven Fortress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="75" link_target="nq09_7703_saint_guardjoy_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Enlistment into the Army</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="76" link_target="nq09_7704_saint_guardjoy_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="77" link_target="nq09_7705_saint_guardjoy_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Work Difficulties</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="78" link_target="nq09_7706_saint_guardjoy_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Malcolm</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="91" link_target="nq09_7712_saint_guardjoy_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Joey's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk1" mid="95"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="73"><![CDATA[<html>$Royal Guard Joey$<BR>Hmm…I cannot chat while at work, but I'll make an exception..<BR>What do you want to know?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 252 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 252 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 7701) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 252 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 252 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 252 ) >= 30</chk>
+      </conditions>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+      <exelink idx="back_talk1">1</exelink>
+   </talk>

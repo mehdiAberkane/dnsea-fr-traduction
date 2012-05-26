@@ -1,0 +1,289 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_356_clearance_sale1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>356</qid>
+      <designer>김주연</designer>
+      <qlevel>9</qlevel>
+      <qdesc>나무 수액	400251</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Never Say Never I]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Those bags <FONT color=#a82424>May</font> sold are really useful. Many of the adventurers in the Guild feel that they no longer needs another bag after buying one from her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="8"><![CDATA[<html>Why are you telling me something like this?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR>Great timing! After the clearance sale of the Orc Leather bags, I have a new business idea.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="10"><![CDATA[<html>I have never say I'm supporting that?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant May$<BR><FONT color=#387206>{user_nick}</font> Of course you did. You are my business partner.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="12"><![CDATA[<html>Hmmm…More bags?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Merchant May$<BR>Do not worry! I will get you your business cards once more sales are made. Meanwhile go over the <FONT color=#a82424>Deckard</font>  and sell more bags.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="14"><![CDATA[<html>But.. Deckard just bought enough bags from you...</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Yes, cheaper and more sophisticated. New season bags.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Merchant May$<BR>Haha, you don't really know about fashion? You have to use a bag for different seasons. You are my <FONT color=#a82424>sales representative</font>. So do your best <FONT color=#387206>{user_nick}</font>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="18"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Strange Customer I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Merchant May$<BR>Now go to <FONT color=#a82424>vDeckard</font> and sell some bags.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="21"><![CDATA[<html>May has some new travelling bags for sale</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Yes? What is it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="QS_Default.dds" itemindex="400252">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="23"><![CDATA[<html>You do not actually need more…right??</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Huh? New bags?<BR>The last batch of bags I purchased are still stacked up like a mountain over there.!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="25"><![CDATA[<html>But you need a fashion change every season...</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Well, all adventurers in the Guild alreadu have a sufficient bags and backups. I'm sorry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QN_Master_Decud.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-d" mid="27"><![CDATA[<html>But....</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Fashion? <FONT color=#7e12d2>(Deckard laughs) <BR></font>What has fashion got to do with the bag? I just have to ensure that the bags can serve it's purpose.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>I do not need to know about fashion. You can't use fashion like how you wear clothes or eat with your mouth. I think you better run along back to <FONT color=#a82424>May</font>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR><FONT color=#a82424>May</font> still has the spirit of a child.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="32"><![CDATA[<html>Well... (Explain what happened.)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Merchant May$<BR>So, did you manage to sell any?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="34"><![CDATA[<html>Maybe we should give up selling stuff.</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Merchant May$<BR>What?! Saying that fashion has no used?!<BR> <FONT color=#7e12d2>(May is screaming as if she is in battle.)</font><BR>Oh, how dare he...! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="36"><![CDATA[<html> Why? </html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Merchant May$<BR>I cannot do that!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="38"><![CDATA[<html> (May became pleasant) </html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Merchant May$<BR>Last time, the multimedia strategy worked well and customers came flocking in. Now that I have expanded my warehouse storage, I will not be able to pay the rental if I cannot keep up the sales.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-e" mid="40"><![CDATA[<html>Maybe do business with monsters or aliens?</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Merchant May$<BR>Hmm..That case, I will have to start selling to monsters and aliens.<BR><FONT color=#387206>{User_nick}</font>You can do that right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-f" mid="42"><![CDATA[<html>Balloon? </html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Merchant May$<BR>Hmm…That's it….let's advertise using balloons?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-g" mid="44"><![CDATA[<html>But to do so, we need a fairly large balloon.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Merchant May$<BR>When I was younger, we used to put notes on balloons.<BR>But this time, we will use advertising flyers on the balloon to spread the word.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-h" mid="46"><![CDATA[<html>That won't work….</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Merchant May$<BR>Yes, and it will be difficult to get such a big balloon in Calderock Village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-h" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-i" mid="48"><![CDATA[<html>Where can we find a balloon?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Merchant May$<BR>Even though no one has it right now, we can still go and get one.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-i" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-j" mid="50"><![CDATA[<html>This won't work if you do not have the materials.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Merchant May$<BR> Of course! So we are going to get the materials and build one now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-j" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3" mid="52"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Merchant May$<BR>Cut it out! We can get the materials if we do not have them!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_13.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Merchant May$<BR>Rumor has it that there in <FONT color=#a82424>Raider's Den</font>, there is a monster that chew Tree Sap like gum.<BR>. I need 6 Tree Sap to make the balloon..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QS_Default.dds" itemindex="400251">
+      <talk_answer link_index="n026_trader_may-4-a" mid="55"><![CDATA[<html>(Give the Tree Sap to May.)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Merchant May$<BR>Is that all of them? Alright, now we're in business!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-b" mid="57"><![CDATA[<html>(May laughs with satisfaction)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Merchant May$<BR>Now we will create a huge balloon and scatter flyers with this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-c" mid="59"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Merchant May$<BR>Now we will be having tons of orders coming in. Be prepared!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">356</exe>
+         <exe type="recompense_view">,3561,3562,3563,3564,3565</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">346</exe>
+         <exe type="huntitem" num="6" exe="6,7,8" onexe="">400251</exe>
+         <exe type="addquestitem" num="1">400251</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200346</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">356</exe>
+         <exe type="recompense">,3561,3562,3563,3564,3565</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d" />
+   <exelink qstep="2" npc="n026_trader_may" sub="e" />
+   <exelink qstep="2" npc="n026_trader_may" sub="f" />
+   <exelink qstep="2" npc="n026_trader_may" sub="g" />
+   <exelink qstep="2" npc="n026_trader_may" sub="h" />
+   <exelink qstep="2" npc="n026_trader_may" sub="i" />
+   <exelink qstep="2" npc="n026_trader_may" sub="j" />
+   <exelink qstep="2" npc="n026_trader_may" sub="3">0,2,3,5,1</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="b">1</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="c">0,2</exelink>
+   <journal_data recompense="1:3561,2:3562,3:3563,4:3564,5:3565" quest_title="떨이 세일Ⅰ" chapterid="" quest_level="9" quest_mark_type="10" use_item_list="400251">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,n24</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></title>
+         <contents mid="62"><![CDATA[<html>Convince Deckard to buy some new bags.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard.</FONT><BR></html>]]></contents>
+         <destination mid="63"><![CDATA[Talk to Adventurer's Guild Master Deckard]]></destination>
+         <todo_msg mid="64"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="66"><![CDATA[<html>Tell May that Deckard is not interested in buying her bags.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="68"><![CDATA[Talk to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_12.dds</contents_image>
+         <destination_pos>113,0,0</destination_pos>
+         <destination_mode>custom:111@3,112@3,113@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Create a Commercial balloon]]></title>
+         <contents mid="70"><![CDATA[<html>Collect 6 Tree Sap at the Raider's Den.<BR><BR><FONT color=#086171>Cristal Stream (Raider's Den Entrance </FONT><FONT color=#a82424>→ Raider's Den</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Raider's Den]]></destination>
+         <todo_msg mid="72"><![CDATA[Go to Raider's Den.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="75"><![CDATA[<html>Bring 6 Tree Sap to  <FONT color=#a82424>May</FONT> in Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="77"><![CDATA[Talk to Merchant May.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>9:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>355</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

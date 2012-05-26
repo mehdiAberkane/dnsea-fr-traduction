@@ -1,0 +1,163 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_560_contribute_girl</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>560</qid>
+      <designer>김인정</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Making a united effort to help a person     ]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="6"><![CDATA[<html>You're welcome…</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Guard Joey$<BR>Hello, dear adventurer. I have heard that the adventurer  <FONT color=#a82424>high archer Isalean</FONT>  has helped and cured the injured. I thank you for our concern.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="8"><![CDATA[<html>What's wrong?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Guard Joey$<BR><FONT color=#a82424>high archer Isalean</FONT> has gave  <FONT color=#a82424>General Douglas</FONT>  help to the adventurer, it shows true attribute. If its okay, would you hear my story?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="10"><![CDATA[<html>All right.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Guard Joey$<BR>It's about the injured soldier. He's unconscious, so he can't work. But he has a little sister.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="12"><![CDATA[<html>What should I do?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Guard Joey$<BR>The sister can't live alone and live without money, so we are trying to save some money to help. But it's not enough so I want to do something different to help her. Please help me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceppted" mid="14"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Making a united effort to help a person$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QW_46.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Guard Joey$<BR>So at <FONT color=#a82424>sunken cargo vessel.</FONT>, could you collect the feather of Pirate Hapi?<FONT color=#a82424> The feather of Pirate Hapi</FONT>, if I make an accessory with it, I probably make enough money.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-a" mid="17"><![CDATA[<html>(Hand over)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Guard Joey$<BR>Ah, you came.<BR><FONT color=#a82424>The feather of Pirate Hapi </FONT>is… ah, this one.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-b" mid="19"><![CDATA[<html>(Guard Joey is worried)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Guard Joey$<BR>I could find the feather of Pirate Hapi by your favor.<BR>
+I need to make an accessory to sell as soon as possible. I hope my co-worker gets better… so worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-c" mid="21"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Guard Joey$<BR>This is reward that I promised.<BR>Thank you so much!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2-d" mid="23"><![CDATA[<html>(Get the reward)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2-d" image="QM_black_Dragon.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Guard Joey$<BR>In the kingdom palace, they don't really care about injured soldiers because they only care about how they defeated <FONT color=#a82424>Black Dragon</FONT>Not everyone thinks like that but I feel sad about the soldier who had a battle for life.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">560</exe>
+         <exe type="recompense_view">,5601,5602,5603,5604,5605</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1184</exe>
+         <exe type="addquestitem" num="1">300274</exe>
+         <exe type="huntitem" num="2" exe="6,7,8" onexe="">300274</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201184</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5601,5602,5603,5604,5605</exe>
+         <exe type="delquestitem" num="-1">300274</exe>
+         <exe type="complete">560</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 252, 270 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="d">1</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceppted">0,3,9,5,2</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n252_saint_guard" sub="c">0</exelink>
+   <exelink qstep="2" npc="n252_saint_guard" sub="d">1,2,3</exelink>
+   <journal_data recompense="1:5601,2:5602,3:5603,4:5604,5:5605" quest_title="십시일반" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="300274">
+      <journal index="1">
+         <contents_image>QW_46.dds</contents_image>
+         <destination_pos>463,0,0</destination_pos>
+         <destination_mode>custom:461@3,462@3,462@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[The feather of Pirate Hapi ]]></title>
+         <contents mid="26"><![CDATA[<html><FONT color=#a82424>Guard Joey</FONT>asks for your donation for the injured soldier's sister. To get money, he wants to collect attacker's feather to make accessory, let's help him to collect feathers.<BR><BR><FONT color=#086171>
+Hermalte Port (deserted Island transportation)</FONT> <FONT color=#a82424>→ sunken cargo vessel.</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Collect the feather of Pirate Hapi ]]></destination>
+         <todo_msg mid="28"><![CDATA[Collect the feather of Pirate Hapi at sunken cargo vessel.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_SaintHaven.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode />
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[To Guard Joey]]></title>
+         <contents mid="30"><![CDATA[<html>Bring <FONT color=#a82424>the feather of Pirate Hapi</FONT>to Guard Joey.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Guard Joey</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Report to Guard Joey]]></destination>
+         <todo_msg mid="32"><![CDATA[Hand over the feather of Pirate Hapi to Guard Joey]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>593</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

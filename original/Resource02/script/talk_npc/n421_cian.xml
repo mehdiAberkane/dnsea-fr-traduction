@@ -1,0 +1,19 @@
+   <talk>
+      <npcename>n421_cian</npcename>
+      <npcid>421</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Warrior Xian
+(Tyrant's Grave)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Warrior Xian$<BR>Hi-yah~!!<BR>
+<FONT color=#7e12d2>(Warrior Xian looks around animatedly)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">sq11_653_cold_heart</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">653</chk>
+      </conditions>
+   </talk>

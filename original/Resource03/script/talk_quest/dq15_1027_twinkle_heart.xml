@@ -1,0 +1,151 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>dq15_1027_twinkle_heart</qename>
+      <qtype>dayquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>1027</qid>
+      <designer>김인정</designer>
+      <qlevel>42</qlevel>
+      <qdesc>룬타이거 윤활제	300412
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Twinkle Heart]]></qkname>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting" image="QS_Default.dds" itemindex="300411">
+      <talk_answer link_index="n709_trader_lucita-accepting-a" mid="7"><![CDATA[<html>What is not cleaned?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Rucita$<BR>My brother's symbol of promise is this butterfly-shaped accessory….<BR> I want to keep this bright all the time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-accepting-b" mid="52"><![CDATA[<html>(Rucita's eyes're glittering)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Merchant Rucita$<BR>When this accessory glitters, I can feel my brother.<BR>That's why I've always wiped this clean.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting-b" image="QS_Default.dds" itemindex="300412">
+      <talk_answer link_index="n709_trader_lucita-accepting-c" mid="13"><![CDATA[<html>Sure.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Rucita$<BR>So, can you get <FONT color=#a82425>Lunetiger's lubricant</FONT>again for me?<BR>I'd like to use fresh lubricant to clean this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Twinkle Heart$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="QW_55.dds" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Merchant Rucita$<BR> You can get lunetiger's lubricant at<FONT color=#a82425>East Ancient Armory</FONT>.<BR>Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2" image="QS_Default.dds" itemindex="300412">
+      <talk_answer link_index="n709_trader_lucita-2-a" mid="56"><![CDATA[<html>(Rucita smiles)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Merchant Rucita$<BR>You got this!<BR>Thank you so much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-a" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-2-b" mid="58"><![CDATA[<html><FONT color=#086172>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-b" image="" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Merchant Rucita$<BR>I'm going to wipe this clean today too.<BR>My heart for waiting for him and his heart for waiting for me…<BR>
+will be glittering.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">1027</exe>
+         <exe type="talk" npc="n709_trader_lucita">1</exe>
+         <exe type="recompense_view">10270,,,,,</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1556</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201556</exe>
+         <exe type="addquestitem" num="1">300412</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,8,9">300412</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">10270,,,,,</exe>
+         <exe type="delquestitem" num="-1">300412</exe>
+         <exe type="complete">1027</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="c">2</exelink>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="acceptted">0,3,4,6,1</exelink>
+   <exelink qstep="2" npc="n709_trader_lucita" sub="a">0</exelink>
+   <exelink qstep="2" npc="n709_trader_lucita" sub="b">1,2</exelink>
+   <journal_data recompense="0:10270" quest_title="마음만은 반짝반짝" chapterid="" quest_level="42" quest_mark_type="10" use_item_list="300412">
+      <journal index="1">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:551@3,552@3,553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[From East Ancient Armory]]></title>
+         <contents mid="44"><![CDATA[<html>From East Ancient Armory, get lunetiger's lubricant.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Armory Entrance)</FONT> <FONT color=#a82425>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[East Ancient Armory]]></destination>
+         <todo_msg mid="46"><![CDATA[Get lunetiger's lubricant at East Ancient Armory.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lucita.dds</contents_image>
+         <destination_pos>15,n709</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>709</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Rucita's Waiting]]></title>
+         <contents mid="48"><![CDATA[<html>I just got lunetiger's lubricant. Let's deliver it to Lotus Marsh's Merchant Rucita.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Merchant Rucita</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk with Merchant Rucita]]></destination>
+         <todo_msg mid="50"><![CDATA[Go back to Merchant Rucita and deliver lunetiger's lubricant to her.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>42:49</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>801</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

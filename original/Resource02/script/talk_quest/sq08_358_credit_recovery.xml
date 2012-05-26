@@ -1,0 +1,232 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_358_credit_recovery</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>358</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc>홉고블린의 돈주머니	400253
+고블린 가장의 일기	400254</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Third Party]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>What are you so happy about?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR>Haha, hi! My slav-, ah no, lifetime employee.<BR><FONT color=#7e12d2>("Lifetime employee" still sounds creepy)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>What's that?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant May$<BR>This' my good way to clear my debts!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="10"><![CDATA[<html>(Now its Goblins)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant May$<BR>Not long ago a Goblin bought a backpack from me on credit.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="12"><![CDATA[<html>(Not too bad if I can become an adventurer just based on this)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Merchant May${action:Angry}<BR>He ran off without paying!<BR>If I was a monster that can run and fly, he can't escape from my eagle eyes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="14"><![CDATA[<html>Plastic surgery?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merchant May$<BR>Well, I bet that Goblin didn't have the money for the payment and fled, and get plastic surgery afterwards.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-f" mid="16"><![CDATA[<html>It's doesn’t sound like a simple plastic surgery.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Merchant May$<BR>Yes, I heard there's an illegal plastic surgery clinic with Raider's Ambush Point. Goblins go there to become Hobgoblins.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-g" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant May$<BR>Well, whatever. If he refuses to pay up he's gonna get beaten up real bad, so these Goblins normally remove their Ragged Cloth first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Credit Recovery$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Merchant May$<BR>Now, go to <FONT color=#a82424>Raider's Ambush Point</FONT> and bring back the money {monster:450} owed me, by hook or by crook! Hmph, he'd think I can't recognize him after a surgery!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="24"><![CDATA[<html>Yes, but there's something else in the money bag.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Merchant May$<BR>Welcome! Did you bring back the credit payment?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Merchant May$<BR>Really? If it's worth something we can still sell it off.<BR>Give me both.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="28"><![CDATA[<html>(Looks like a diary written by an elementary school kid)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Merchant May$<BR>Hmm, looks like a diary?<BR>Let's read it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-b" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Goblin's Fake Diary$<BR>Ran out of food for my 13 kids. I sold the backpack yesterday for some rotten apples, but the kids gobbled them down within a blink of an eye.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-c" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Goblin's Fake Diary$<BR><FONT color=#a82424>The only way out now is to volunteer for the living experiment. If the experiment fails, I don't know what I'll become, but at least the pay's enough to feed my kids for a month.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-d" mid="34"><![CDATA[<html>(This isn't a diary, looks more like a death will)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Goblin's Fake Diary$<BR><FONT color=#a82424>Dearest </FONT><FONT color=#086171>Gohui</FONT>, <FONT color=#a82424>if I'm no longer around please take good care of our children.</FOT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-d" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-e" mid="36"><![CDATA[<html>I think we did something terrible to Hobgoblin.</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Merchant May$<BR>What the hell is this?<FONT color=#7e12d2>(May throws away the diary and wipes her tears)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-f" mid="38"><![CDATA[<html>(May clinches her fist tightly)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Merchant May$<BR>But I had no choice! When I first set foot as a Merchant, I decided to be a heartless woman!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-f" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-g" mid="40"><![CDATA[<html>That's enough. Come back to the real world please.</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Merchant May$<BR>Ah, is this a trial that I must endure?<BR>The road of the Merchant is full of hardships, why am I leading such a tragic life.<BR><FONT color=#7e12d2>(May drifts to another world)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-h" mid="42"><![CDATA[<html>What, you're angry?</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Merchant May$<BR>{monster:450}! I'll never forget your sacrifice!<BR>With your sacrifice, I shall become the best painter there'll ever be.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-h" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-i" mid="44"><![CDATA[<html>Never heard of it!</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Merchant May$<BR>Yes, I plan to use this money to get some art supplies and participate in the upcoming Royal Art Contest. Hmm? Didn't I mention this before?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-i" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-j" mid="46"><![CDATA[<html>I'd rather you use it all to pay off your warehouse storage fees.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Merchant May$<BR>Oh I didn't! Cough cough!<BR>Anyway, I was already planning to pay off the warehouse storage fees and other debts, and lead an extravagent life!<BR><FONT color=#7e12d2>(I can totally imagine roses blooming around May)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-j" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-k" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Merchant May$<BR>Heh {user_nick}, you don't know the value of investments huh!<BR><FONT color=#7e12d2></FONT>(May wags her finger)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-k" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-l" mid="50"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-l" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Merchant May$<BR>Alright, I'll need to get my art supplies and focus on my creative activities.<BR><FONT color=#387206>{user_nick}</FONT>, you may rest for the time being!<BR><FONT color=#387206>(I doubt the "for the time being" part)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,358, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">,3581,3582,3583,3584,3585</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="5,11,6,7,8">450</exe>
+         <exe type="addquestitem" num="1">400254</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="10">200450</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 450);</exe>
+         <exe type="addquestitem" num="1">400253</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="delquestitem" num="-1">400253</exe>
+         <exe type="delquestitem" num="-1">400254</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3581,3582,3583,3584,3585</exe>
+         <exe type="complete">358</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="g">3</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">0,1,4,9,2,12</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c" />
+   <exelink qstep="3" npc="n026_trader_may" sub="d" />
+   <exelink qstep="3" npc="n026_trader_may" sub="e" />
+   <exelink qstep="3" npc="n026_trader_may" sub="f" />
+   <exelink qstep="3" npc="n026_trader_may" sub="g" />
+   <exelink qstep="3" npc="n026_trader_may" sub="h" />
+   <exelink qstep="3" npc="n026_trader_may" sub="i" />
+   <exelink qstep="3" npc="n026_trader_may" sub="j" />
+   <exelink qstep="3" npc="n026_trader_may" sub="k">0</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="l">1,2</exelink>
+   <journal_data recompense="1:3581,2:3582,3:3583,4:3584,5:3585" quest_title="외상 받아내기" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="400253,400254">
+      <journal index="1">
+         <contents_image>QM_HopGoblinGreen.dds</contents_image>
+         <destination_pos>139,0,0</destination_pos>
+         <destination_mode>custom:136@1,137@1,138@1,139@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Collect credit payment]]></title>
+         <contents mid="54"><![CDATA[<html>Go to Raider's Ambush Point and collect credit payment from {monster:450}.<BR><BR><FONT color=#086171>Cristal Stream (Raider's Den Entrance)</FONT> <FONT color=#a82424>→ Raider's Ambush Point</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Raider's Ambush Point]]></destination>
+         <todo_msg mid="56"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="58"><![CDATA[<html>Took away the Goblin's Money Bag and Goblin Fake Diary. Return to Calderock Village and report to <FONT color=#a82424>Merchant May</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="60"><![CDATA[Talk to Merchant May.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>357</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

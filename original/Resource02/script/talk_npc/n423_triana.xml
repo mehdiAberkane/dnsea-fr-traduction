@@ -1,0 +1,21 @@
+   <talk>
+      <npcename>n423_triana</npcename>
+      <npcid>423</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Archer Triana]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Archer Triana$<BR>
+Everything is absorbed into Theresa's big whirlpool…..</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="3" false="2">0</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="enterquest">sq11_642_relic_destroyer</exe>
+         <exe type="enterquest">sq11_659_strange_elf</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">642</chk>
+         <chk type="hasquest">659</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,258 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq32_8608_based_on_grades</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8608</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Results]]></qkname>
+      <qnpc>
+         <npcid>62</npcid>
+         <npcename>n062_trainer_lindsay</npcename>
+         <npckname>조련사 린제이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-a" mid="6"><![CDATA[<html> (Feels like a jelly) </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Trainer Lindsay${action:Cry}<BR>Oh… ME very sad.<BR>I'm alone~ (sobbing sobbing) </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-b" mid="183"><![CDATA[<html> What's wrong? </html>]]></talk_answer>
+      <talk_question mid="182"><![CDATA[<html>$Trainer Lindsay$<BR><FONT color=#387206>{user_nick}</FONT>, do you think I’m a fool? <BR>Am I stupid?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-c" mid="187"><![CDATA[<html> (Wow, hopeless. She learnt a lot!) </html>]]></talk_answer>
+      <talk_question mid="186"><![CDATA[<html>$Trainer Lindsay$<BR>ME going to become a Great Trainer. So, there was a test - liccense qualification for trainers. <BR>I took the test and failed. It’s hopeless!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-d" mid="141"><![CDATA[<html> Start studying now! </html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Trainer Lindsay$<BR>I got the lowest marks! I got <FONT color=#a82424> F</FONT>!! ME in shock.  I have no hope.<BR>(Sob sob) </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-accepting-acceppted" mid="31"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html> $Results$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1" image="QW_39.dds" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-1-a" mid="221"><![CDATA[<html>OK!!</html>]]></talk_answer>
+      <talk_question mid="189"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>Well, I’m going to study hard.<BR>YOU help me. OK?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-1-a" image="" itemindex="">
+      <talk_question mid="222"><![CDATA[<html>$Trainer Lindsay$<BR>Good, my preparation is finished.<BR><FONT color=#387206>YOU</FONT> prepare yourself and come back. I will be waiting. OK?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-a" mid="224"><![CDATA[<html> (Start studying) </html>]]></talk_answer>
+      <talk_question mid="223"><![CDATA[<html>$Trainer Lindsay$<BR>Ummmmmm… Let’s study!!<BR>
+<FONT color=#7e12d2>(She is all fired up! She opens the book, 「Questions to become a Great Trainer 」)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-c" mid="226"><![CDATA[<html> Ragwort</html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="227"><![CDATA[<html> Carrot </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="228"><![CDATA[<html> Oats</html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="229"><![CDATA[<html> Orchard Grass </html>]]></talk_answer>
+      <talk_question mid="225"><![CDATA[<html>$Trainer Linddsay$<BR>Question 1~ Out of those, which grass should a horse avoid? <BR>Um, <FONT color=#387206>{user_nick}</FONT>, do you know?? Help me~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-b" image="" itemindex="">
+      <talk_question mid="230"><![CDATA[<html>$Trainer Lindsay${sound:UI_QUIZ_X.wav}<BR>No. <FONT color=#a82424>That's wrong</FONT>.<BR> Check again~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-d" mid="232"><![CDATA[<html> (Listen to the question again) </html>]]></talk_answer>
+      <talk_question mid="231"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR><FONT color=#a82424>That's correct</FONT>. Right answer!!!<BR>Ok. Next question~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-d" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="234"><![CDATA[<html> Horses use both their sense of smell and taste at the same time. </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="235"><![CDATA[<html> Horses can’t see behind their tails.</html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-e" mid="236"><![CDATA[<html> Horses have the same intelligence as a 15 year old human. </html>]]></talk_answer>
+      <talk_question mid="233"><![CDATA[<html>$Trainer Lindsay$<BR>Question 2~ Which one of these explanations is wrong about horses?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-e" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-f" mid="238"><![CDATA[<html> (Hear the next question) </html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR>That's correct!<BR><FONT color=#7e12d2>Horses have an intelligence of a 3 year old human</FONT>, saysthe book. And~ next!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-f" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="240"><![CDATA[<html> 30 </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="241"><![CDATA[<html> 33 </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-g" mid="242"><![CDATA[<html> 36</html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="243"><![CDATA[<html>39</html>]]></talk_answer>
+      <talk_question mid="239"><![CDATA[<html>$Trainer Lindsay$<BR>Question 3~ How many teeth does a female horse have? <BR>…Female horse? Mare?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-g" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-h" mid="245"><![CDATA[<html> (Hear the next question) </html>]]></talk_answer>
+      <talk_question mid="244"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR>That's correct.<BR>
+A Male horse has 40 and <FONT color=#a82424>a female horse</FONT> has 36 since they don’t have canines.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-h" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="247"><![CDATA[<html> Feed hay and water after an exercise. </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="248"><![CDATA[<html> Don't feed anything to cure parorexia. </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-i" mid="249"><![CDATA[<hrml> The gestation period for a horse for approximately a year </html>]]></talk_answer>
+      <talk_question mid="246"><![CDATA[<html>$Trainer Lindsay$<BR>Question 4~ What’s the <FONT color=#a82424>Correct</FONT> explanation about horses?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-i" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-j" mid="251"><![CDATA[<html> (Hear the next question) </html>]]></talk_answer>
+      <talk_question mid="250"><![CDATA[<html>$Trainer Lindsay${action:Kiss}<BR>That's correct. <FONT color=#7e12d2>Horses are pregnant for about 330 to 350 days, approximately a year.</FONT>.<BR>YOU are so smart! Amazing~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-2-j" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="253"><![CDATA[<html> Rhododendron </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-3" mid="254"><![CDATA[<html> Apples and sugar cubes </html>]]></talk_answer>
+      <talk_answer link_index="n062_trainer_lindsay-2-b" mid="255"><![CDATA[<html> Lily of the Valley </html>]]></talk_answer>
+      <talk_question mid="252"><![CDATA[<html>$Trainer Lindsay$<BR>The last question!<BR>Choose the appropriate <FONT color=#a82424>snack</FONT> for a horse. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-a" mid="257"><![CDATA[<html> (Lindsay gets excited) </html>]]></talk_answer>
+      <talk_question mid="256"><![CDATA[<html>$Trainer Lindsay${action:Kiss}<BR>WOW!!<BR>YOU are a <FONT color=#a82424>Genius</FONT>! <FONT color=#a82424>Genius</FONT> of Horses! Good job~!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-a" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-b" mid="259"><![CDATA[<html> Yeah, study hard. </html>]]></talk_answer>
+      <talk_question mid="258"><![CDATA[<html>$Trainer Lindsay$<BR>YOU did it. I study too. <BR>If I study I become a genius. Right?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-b" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-c" mid="261"><![CDATA[<html> Yes. </html>]]></talk_answer>
+      <talk_question mid="260"><![CDATA[<html>$Trainer Lindsay$<BR>ME going to study hard. And I take test! <BR>YOU help me. OK?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-c" image="" itemindex="">
+      <talk_answer link_index="n062_trainer_lindsay-3-d" mid="263"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="262"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n062_trainer_lindsay-3-d" image="QN_Animal trainer_Lindsay.dds" itemindex="">
+      <talk_question mid="264"><![CDATA[<html>$Trainer Lindsay$<BR>Yeah~ <FONT color=#387206>{user_nick}</FONT>~! Come later tomorrow… Ummm…? ME will be waiting. OK?<BR><FONT color=#7e12d2>(Think she means come and help her with her test anytime.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">8608</exe>
+         <exe type="talk" npc="n062_trainer_lindsay">1</exe>
+         <exe type="recompense_view">86080,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">86080,,,,,</exe>
+         <exe type="complete">8608</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 62, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="d">2</exelink>
+   <exelink qstep="accepting" npc="n062_trainer_lindsay" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n062_trainer_lindsay" sub="a">0,1</exelink>
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="c" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="d" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="e" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="f" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="g" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="h" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="i" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="j" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="3">0,1</exelink>
+   <exelink qstep="2" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="b" />
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="c">0</exelink>
+   <exelink qstep="3" npc="n062_trainer_lindsay" sub="d">1,2</exelink>
+   <journal_data recompense="0:86080" quest_title="성적순" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Lindsay's depression]]></title>
+         <contents mid="26"><![CDATA[<html>Lindsay is depressed after failing the qualification of the trainer license. <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay </FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="28"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="74"><![CDATA[Study for the Test]]></title>
+         <contents mid="75"><![CDATA[<html>Help Trainer Lindsay with her license test. <BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Trainer Lindsay</FONT></html>]]></contents>
+         <destination mid="76"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="77"><![CDATA[Help Trainer Lindsay with her test studies]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Animal trainer_Lindsay.dds</contents_image>
+         <destination_pos>11,n62</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>62</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="266"><![CDATA[Preparation done!]]></title>
+         <contents mid="267"><![CDATA[<html>Finished the quiz. Lindsay looks a little bit more confident. <BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Trainer Lindsay </FONT></html>]]></contents>
+         <destination mid="268"><![CDATA[Talk to Trainer Lindsay]]></destination>
+         <todo_msg mid="269"><![CDATA[All the questions have been solved. Lindsay is ready for the test!]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>8607</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

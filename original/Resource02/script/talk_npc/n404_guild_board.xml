@@ -1,0 +1,110 @@
+   <talk>
+      <npcename>n404_guild_board</npcename>
+      <npcid>404</npcid>
+      <startexe>6</startexe>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Den Raiders]]></npckname>
+      <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="gq08_3021_n404_haunt_normal.xml"><![CDATA[<html>[Lv.9] <FONT color=#086171>Way of Magic II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="gq08_3022_n404_haunt_hunt.xml"><![CDATA[<html><FONT color=#2b2723>[Lv.9] </FONT><FONT color=#086171>A Natural Disaster?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="12" link_target="gq08_3023_n404_haunt_drop.xml"><![CDATA[<html>[Lv.9] <FONT color=#086171>Barracks Destroyed</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="13" link_target="gq08_3071_n404_ambush_normal.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Troop Support</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="14" link_target="gq08_3072_n404_ambush_hunt.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Steak of Youth</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="22" link_target="gq08_3073_n404_ambush_drop.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>Risk Removal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="23" link_target="gq08_3074_n404_ambush_hard.xml"><![CDATA[<html>[Lv.14] <FONT color=#086171>The Little Collector IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="gq08_3080_n404_ambush_rank.xml"><![CDATA[<html>[Lv.14] <FONT color=#7e12d2>Counterattack: Raiders' Ambush Point</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="gq08_3029_n404_haunt_abyss.xml"><![CDATA[<html>[Lv.15] <FONT color=#7e12d2>Into the Abyss: Defeat: Dark Elf Assassin Lydia</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="gq08_3079_n404_ambush_abyss.xml"><![CDATA[<html>[Lv.15] <FONT color=#7e12d2>Into the Abyss: Defeat Hobgoblin Cuspid</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>The following requests have been received.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="_no_quest" image="QN_guild_board.dds" itemindex="">
+         <talk_question mid="27"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>No requests have been received at the moment.<BR><BR><FONT color=#086171>?Get paid while you learn! Snoop around dungeons for 4 hours each day and you'll be bringing home serious dough! Responsible and trustworthy candidates only. Apply today!</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_13" mid="34"><![CDATA[<html>[Lv.9] Raider's Den</html>]]></talk_answer>
+         <talk_answer link_index="stage_18" mid="35"><![CDATA[<html>[Lv.14]Raiders' Ambush Point</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="36"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_13" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="38" link_target="gq08_3021_n404_haunt_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Way of Magic II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="39" link_target="gq08_3022_n404_haunt_hunt.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt] </FONT><FONT color=#086171>A Natural Disaster?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="40" link_target="gq08_3023_n404_haunt_drop.xml"><![CDATA[<html>[Acquire] <FONT color=#086171>Tearing Down the Tents</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="41" link_target="gq08_3029_n404_haunt_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Dark Elf Assassin Lydia</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="back_stage_13" mid="42"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="37"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for the <FONT color=#a82424>Raider's Den</FONT>.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="stage_18" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="44" link_target="gq08_3071_n404_ambush_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Troop Support</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="gq08_3072_n404_ambush_hunt.xml"><![CDATA[<html>[Hunt] <FONT color=#086171>Steak of Youth</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="gq08_3073_n404_ambush_drop.xml"><![CDATA[<html>[Aquire] <FONT color=#086171>Risk Removal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="gq08_3074_n404_ambush_hard.xml"><![CDATA[<html>[Hard] <FONT color=#086171>The Little Collector IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="gq08_3080_n404_ambush_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Counterattack: Raiders' Ambush Point</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="49" link_target="gq08_3079_n404_ambush_abyss.xml"><![CDATA[<html><FONT size=2>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Hobgoblin Cuspid</FONT></FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_stage_18" mid="50"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="43"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for the <FONT color=#a82424>Raiders' Ambush Point</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="9lv_noclr" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_13" mid="62"><![CDATA[<html>[Lv.9] Raider's Den</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="63"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="52"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="14lv_9clr" image="QN_guild_board.dds" itemindex="">
+         <talk_answer link_index="stage_18" mid="64"><![CDATA[<html>[Lv.14]Raiders' Ambush Point</html>]]></talk_answer>
+         <talk_answer link_index="002" mid="65"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">gq08_3021_n404_haunt_normal</exe>
+         <exe type="enterquest">gq08_3022_n404_haunt_hunt</exe>
+         <exe type="enterquest">gq08_3023_n404_haunt_drop</exe>
+         <exe type="enterquest">gq08_3071_n404_ambush_normal</exe>
+         <exe type="enterquest">gq08_3072_n404_ambush_hunt</exe>
+         <exe type="conexe" true="1" false="7">0</exe>
+         <exe type="conexe" true="2" false="8">1</exe>
+         <exe type="conexe" true="3" false="9">2</exe>
+         <exe type="conexe" true="4" false="10">3</exe>
+         <exe type="conexe" true="5" false="14">4</exe>
+         <exe type="enterquest">gq08_3073_n404_ambush_drop</exe>
+         <exe type="enterquest">gq08_3074_n404_ambush_hard</exe>
+         <exe type="enterquest">gq08_3080_n404_ambush_rank</exe>
+         <exe type="conexe" true="11" false="15">5</exe>
+         <exe type="conexe" true="12" false="16">6</exe>
+         <exe type="conexe" true="13" false="19">7</exe>
+         <exe type="enterquest">gq08_3029_n404_haunt_abyss</exe>
+         <exe type="enterquest">gq08_3079_n404_ambush_abyss</exe>
+         <exe type="conexe" true="17" false="20">8</exe>
+         <exe type="conexe" true="18" false="21">9</exe>
+         <exe type="conexe" true="22" false="23">10</exe>
+         <exe type="conexe" true="28" false="0">12</exe>
+         <exe type="conexe" true="24" false="27">11</exe>
+         <exe type="conexe" true="29" false="26">12</exe>
+         <exe type="talk">14lv_9clr</exe>
+         <exe type="talk">9lv_noclr</exe>
+         <exe type="talk">_no_quest</exe>
+         <exe type="conexe" true="30" false="0">13</exe>
+         <exe type="conexe" true="27" false="26">13</exe>
+         <exe type="conexe" true="31" false="25">14</exe>
+         <exe type="conexe" true="25" false="0">15</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">3021</chk>
+         <chk type="hasquest">3022</chk>
+         <chk type="hasquest">3023</chk>
+         <chk type="hasquest">3071</chk>
+         <chk type="hasquest">3072</chk>
+         <chk type="hasquest">3073</chk>
+         <chk type="hasquest">3074</chk>
+         <chk type="hasquest">3080</chk>
+         <chk type="hasquest">3029</chk>
+         <chk type="hasquest">3079</chk>
+         <chk type="lvl" op=">=">14</chk>
+         <chk type="lvl" op=">=">9</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 3022) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 3023) == 1</chk>
+         <chk type="lvl" op=">=">15</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 3029) == 1</chk>
+      </conditions>
+      <exelink idx="back_stage_13">21</exelink>
+      <exelink idx="back_stage_18">21</exelink>
+   </talk>

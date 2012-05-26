@@ -1,0 +1,218 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_054_grandpa_goblin01</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>54</qid>
+      <designer>김주연</designer>
+      <qlevel>6</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>55</nextqid>
+      <nextqname>sq01_055_grandpa_goblin02</nextqname>
+      <nextqnpc>n171_goblin_grandfather</nextqnpc>
+      <qkname mid="1"><![CDATA[Grandpa Goblin's Complains I]]></qkname>
+      <qnpc>
+         <npcid>171</npcid>
+         <npcename>n171_goblin_grandfather</npcename>
+         <npckname>고블린 할배</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Grandpa Goblin$<BR>Oh, oh, Grandpa Goblin isn't doing anything bad...<BR><BR>Where are you kids? Where did you go?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-a" mid="29"><![CDATA[<html>It's dangerous for you to idle around here.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Grandpa Goblin$<BR>H-human?! Cough cough. Don't hit me! I won't hit you too...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-b" mid="31"><![CDATA[<html>Someone like me?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Grandpa Goblin$<BR>You're a good person! I'm looking for someone like you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-c" mid="33"><![CDATA[<html>(I think he said he's a chicken stealer, but never attacks humans)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Grandpa Goblin$<BR>The kind Goblins from our tribe never hurt humans. I'm sorry we stole some chickens the other day… but we never hurt humans...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-d" mid="35"><![CDATA[<html>(I think he's talking about some red monsters kidnapping his grandsons)<html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Grandpa Goblin$<BR>However a few days back...<BR><FONT color=#7e12d2>(Grandpa Goblin trembles)</FONT><BR>The <FONT color=#a82424>bad guys</FONT> came… and took my 5 grandsons. I want to find them back but nobody's listening to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-e" mid="37"><![CDATA[<html>(I think he said to find his grandsons before the red monsters turn them into one of their kind)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Grandpa Goblin$<BR><FONT color=#7e12d2>(Grandpa Goblin trembles again)</FONT><BR>The bad guys <FONT color=#a82424>turned our Goblins into something they're not</FONT>. We must find them before they're transformed into Hobgoblins.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-f" mid="39"><![CDATA[<html>On one condition.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Grandpa Goblin$<BR>My grandsons are scattered everywhere. The third one was brought to <FONT color=#a82424>Shadow Forest Core</FONT>. Please help find them… My weak legs can't bring me any further.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-g" mid="41"><![CDATA[<html>After I find your grandsons, please live peacefully and never harm humans.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Grandpa Goblin$<BR>And what is that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-h" mid="43"><![CDATA[<html>Alright, I'll find them.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Grandpa Goblin$<BR>That's exactly what I wanted to say.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-accepting-acceptted" mid="45"><![CDATA[<html><FONT color=#a94407>(Get Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-1" image="QM_goblin_son3.dds" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-1-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Grandpa Goblin$<BR>My grandsons are scattered everywhere. The third one was brought to somewhere near <FONT color=#a82424>Shadow Forest Core</FONT>. The Goblins who escaped the place said Gobzy was very brave.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-1-a" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-1-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Grandpa Goblin$<BR>I heard he tried to lead an escape with the other Goblins, but got caught instead.<BR><FONT color=#7e12d2>(Grandpa Goblin trembles again)</FONT><BR>The <FONT color=#a82424>red monsters</FONT> will tie the revolts to a tree and eat them up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-1-b" image="QW_4.dds" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-2" mid="11"><![CDATA[<html>Don't worry. I'll rescue him out right away.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Grandpa Goblin$<BR>Hurry to <FONT color=#a82424>Shadow Forest Core</FONT> and rescue my poor third grandson…<BR>Sigh, my son and daughter-in-law were eaten by the ogres and I had to raise my grandsons all by myself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-2" image="QW_4.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Grandpa Goblin$<BR>My poor Gobzy… Hurry to <FONT color=#a82424>Shadow Forest Core</FONT> and rescue him out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-3" image="QM_goblin_son3.dds" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-3-a" mid="16"><![CDATA[<html>(The Poppy took something out from a piece a cloth in embarrassment)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Grandpa Goblin$<BR>Thank you so much. He's back safe and sound.<BR>The monsters must have starved him, he almost gobbled down the entire cooking pot. Here, Gobzy wanted me to give you this.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n171_goblin_grandfather-3-a" image="" itemindex="">
+      <talk_answer link_index="n171_goblin_grandfather-3-!next" mid="18"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">54</exe>
+         <exe type="recompense_view">,541,542,542,542</exe>
+         <exe type="talk" npc="n171_goblin_grandfather">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">540,,,,</exe>
+         <exe type="setstep">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,541,542,542,542</exe>
+         <exe type="complete">54</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n171_goblin_grandfather" sub="h">1</exelink>
+   <exelink qstep="accepting" npc="n171_goblin_grandfather" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n171_goblin_grandfather" sub="b" />
+   <exelink qstep="1" npc="n171_goblin_grandfather" sub="2">1</exelink>
+   <exelink qstep="3" npc="n171_goblin_grandfather" sub="a">0</exelink>
+   <exelink qstep="3" npc="n171_goblin_grandfather" sub="!next">1</exelink>
+   <journal_data recompense="1:541,2:542" quest_title="고블린 할배의 하소연 I" chapterid="" quest_level="6" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QM_goblin_son3.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>68,0,0</destination_pos>
+         <destination_mode>custom:66@1,67@1,68@2</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="20"><![CDATA[Go to Shadow Forest Core and rescue Grandpa Goblin's third grandson, Gobzy]]></title>
+         <contents mid="21"><![CDATA[<html>Grandpa Goblin requested me to rescue his third grandson, Gobzy, who tried to lead an escape with the other captured Goblins in Shadow Forest Core. Gobzy might be tied to a tree.<BR><BR><FONT color=#086171>Shadow Forest (Shadow Forest Path)</FONT> <FONT color=#a82424>→ Shadow Forest Core</FONT></html>]]></contents>
+         <destination mid="22"><![CDATA[Go to Shadow Forest Core and rescue Grandpa Goblin's third grandson, Gobzy]]></destination>
+         <todo_msg mid="23"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QM_goblin_son3.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>2,-1705,1915</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>171</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="24"><![CDATA[Confirm with Grandpa Goblin if Gobzy has returned safely]]></title>
+         <contents mid="25"><![CDATA[<html>Gobzy rescued. Go to <FONT color=#a82424>Grandpa Goblin at Shadow Forest</FONT> and confirm if Gobzy has returned safely.<BR><BR><FONT color=#086171>Shadow Forest</FONT> <FONT color=#a82424>→ Grandpa Goblin</FONT> </html>]]></contents>
+         <destination mid="26"><![CDATA[Confirm with Grandpa Goblin if Gobzy has returned safely]]></destination>
+         <todo_msg mid="27"><![CDATA[Please talk to Grandpa Goblin at Shadow Forest.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>6:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

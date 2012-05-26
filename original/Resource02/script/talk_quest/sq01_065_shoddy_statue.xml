@@ -1,0 +1,420 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_065_shoddy_statue</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>65</qid>
+      <designer>김인정</designer>
+      <qlevel>7</qlevel>
+      <qdesc>도리스 시작
+대장장이 도린 대화
+잡화점 지붕의 석상 대화
+대장장이 도린 대화
+도리스 대화
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Resolving the Foundation]]></qkname>
+      <qnpc>
+         <npcid>1</npcid>
+         <npcename>n001_elder_harold</npcename>
+         <npckname>촌장 해롤드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>129</npcid>
+         <npcename>n129_scholar_bunstain</npcename>
+         <npckname>문장학자 번스테인</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>194</npcid>
+         <npcename>n194_invisible</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>2</npcid>
+         <npcename>n002_trader_dorin</npcename>
+         <npckname>대장장이 도린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>3</npcid>
+         <npcename>n003_trader_dolis</npcename>
+         <npckname>상인 도리스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-noquest" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[$Dorin$<BR>That <FONT color=#7e12d2>Merchant Doris's</FONT> is always thinking of strange plots. Well, good thing is she never bored.<BR>(You must receive the quest from Merchant Doris to proceed.)]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-noquest" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Heraldry Scholar Bernstein$<BR>The whole town is praying for the safe return of <FONT color=#a82424>Rose</FONT>.<BR><FONT color=#7e12d2>(You must receive the quest from Merchant Doris to proceed.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-noquest" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Mayor Harold$<BR>*cough cough* How could this happen to our peaceful town<BR>(You must receive the quest from Merchant Doris to proceed.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n194_invisible-noquest" image="" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Something about the statue makes you feel uneasy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-a" mid="10"><![CDATA[<html>Sure.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant Doris$<BR><FONT color=#7e12d2>(Merchant Doris is deep in thoughts.)</FONT><BR>I'm sorry! Well, alots of thoughts on my mind lately.. Would you want to listen to it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-b" mid="12"><![CDATA[<html>Go on...</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Merchant Doris$<BR>Every single night, I would be awoken by a strange sound that as if something is wrong</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-c" mid="14"><![CDATA[<html>I doubt Feng Shui is the cause behind it.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merchant Doris$<BR>I had actually rearranged my furniture and fixed my roof in hope that it would improve my luck, but instead it got worst. Monster attacked and <FONT color=#a82424>Rose</FONT> was kidnapped. The whole town seems to have nothing but bad luck.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-d" mid="16"><![CDATA[<html>That is kind of strange.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Yeah,</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-e" mid="18"><![CDATA[<html>I'll try.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant Doris$<BR>Am I right? Something is definitely not right, but I cant seem to find the problem. Would you mind investigating for me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>(Accept quest.)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Resolving the Foundation$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-a" mid="92"><![CDATA[<html>I will do my best.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>You will do it for me? Recently I have being bother about the feeling of being watched. Please find the source for me</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-a" image="QN_Npc_Scholar_Starshy.dds" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Merchant Doris$<BR>I'm so sorry if my request is too vague, perhaps you could try asking and talking people around town, like <FONT color=#a82424>Bernstein</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n194_invisible-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Something about the statue makes you feel uneasy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-1" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n129_scholar_bunstain-1-a" mid="24"><![CDATA[<html>Do you have any guesses?</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Heraldry Scholar Bernstein$<BR>I know <FONT color=#a82424>Merchant Doris</FONT> got a new roof recently, and maybe you already know, it bring new rain too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-1-a" image="QN_Elder_Harold.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Heraldry Scholar Bernstein${action:Talk}<BR>Maybe she's just worried about <FONT color=#a82424>Rose</FONT>.Other than that, I actually feeling better. Perhaps<FONT color=#a82424>Harold</FONT> might know? He was rather involved in the town makeover project.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-a" mid="27"><![CDATA[<html>I'm sure it's not your fault.</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Mayor Harold$<BR>Ah, poor <FONT color=#a82424>Merchant Doris</FONT>. As a Village elder, I should have notice it earlier and stop whatever's making her feel this way....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-a" image="" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-b" mid="29"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Mayor Harold$<BR>May and Maybe not. Oh Wait, I do recall something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-c" mid="31"><![CDATA[<html>Can you be more specific?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Mayor Harold$<BR>When we were fixing all the roofs in town, <FONT color=#a82424>Rose</FONT> mentioned that something was wrong. I was not paying attention as it was a sudden conversation. Oh my.. I should have pay more attention towards Doris</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n001_elder_harold-1-d" mid="33"><![CDATA[<html>I've told Merchant Doris I''ll look into this.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Mayor Harold${action:Talk}<BR><FONT color=#a82424>Rose</FONT> didn't say any other thing beside that. Perhaps there nothing more. *cough cough* do not worry about it</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-1-d" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Mayor Harold$<BR>If you think it's worth pursuing, talk to <FONT color=#a82424>Blacksmith Dorin</FONT>. He'll put in new roofs, actually he was the one that carved all the statues on the roof tops.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-1-a" mid="36"><![CDATA[<html>I hear you made the statues on the rooftops.</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Blacksmith Dorin$<BR>Hey, I hear that <FONT color=#a82424>Merchant Doris</FONT> going crazy and saying that she feels like she's being watched? Oh well, she just a loony all along.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-1-b" mid="39"><![CDATA[<html>You sure you can't think of anything?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Blacksmith Dorin$<BR>Yea..., so what? One of the statues sprung to life and stalk her? Stop wasting time on this, we got better things to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-b" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-1-c" mid="41"><![CDATA[<html>What did Rose say?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Blacksmith Dorin$<BR>Ok I just remember that she never finish paying me for the roof, well she better not be making thing up to default payment. Perhaps she get <FONT color=#a82424>Rose</FONT> up to saying all that nonsense when I was working on her roof...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1-c" image="QN_Rose.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-2" mid="43"><![CDATA[<html>Sounds like you ignore a lot of things.</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Blacksmith Dorin$<BR>I mean, <FONT color=#a82424>Rose</FONT> is a nice girl not the type that will make things up. So I asked her what was wrong, she simply just answered it was nothing important and told me not to worry, which I gladly did</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-2" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Blacksmith Dorin$<BR>Whatever. I have no idea what <FONT color=#a82424>Merchant Doris</FONT>'s going on about. If she really has an issue, she should just climb up the roof and see what a great job I did!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n194_invisible-2" image="" itemindex="">
+      <talk_answer link_index="n194_invisible-2-a" mid="47"><![CDATA[<html>Whoa! A talking statue!</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$???$<BR>Oh.. So… you finally found me</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n194_invisible-2-a" image="" itemindex="">
+      <talk_answer link_index="n194_invisible-2-b" mid="49"><![CDATA[<html>(This statue seems awfully mopey.)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$???$<BR>Yes, you can call me  <FONT color=#a82424>Crooked Statue</FONT>, for I have already accepted this sad fate of mine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n194_invisible-2-b" image="QW_PrairieTown.dds" itemindex="">
+      <talk_answer link_index="n194_invisible-2-c" mid="51"><![CDATA[<html>Hmm that isn't a good angle to view. Isn't it?</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Crooked Statue$<BR> Look around the roof, I am the only statue that can't look into the sky and all I can see is just this dark ugly chimmey. Pathetic me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n194_invisible-2-c" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n194_invisible-2-d" mid="53"><![CDATA[<html>(By the Goddess, this statue's a downer.)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Crooked Statue$<BR>Of the many brothers born from the hands of <FONT color=#a82424>Blacksmith Dorin</FONT>, I am the only one sitting at such a crooked angle. He didn't care about my view. No one ever cares about me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n194_invisible-2-d" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Crooked Statue$<BR>Being build behind a chimney, whether it rain or snow, I simply just sit here and hating my creator, perhaps now with people hearing my complaint, I would stop creating sound for awhile.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n194_invisible-3" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="55"><![CDATA[<html>$Crooked Statue$<BR>My resentment towards <FONT color=#a82424>Merchant Doris</FONT> and <FONT color=#a82424>Blacksmith Dorin</FONT> may never disappear, but at least I have one friend now and I will be sitting here thinking of you until we meet again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="56"><![CDATA[<html>$Merchant Doris$<BR>Did you find out anything? Huh.. Ok, if required please speak with<FONT color=#a82424>Blacksmith Dorin</FONT> first. Don't let me wait too long.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n001_elder_harold-3" image="QN_Rose.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Mayor Harold$<BR>*cough cough* The statue is what <FONT color=#a82424>Rose</FONT> was talking about. One of the statues was placed improperly. That reminds me of <FONT color=#a82424>Rose</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n129_scholar_bunstain-3" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Heraldry Scholar Bernstein${action:Talk}<BR>What? The <FONT color=#a82424>statue</FONT>? That the first time I heard of this, but we cant just move the statue can we? That would be troublesome</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-3-a" mid="60"><![CDATA[<html>Perhaps you need to think from the statue perspective.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Blacksmith Dorin$<BR>One of my statue is crooked? I doubt so, not all status has to look at the sky or be on display</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-3-a" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4" mid="62"><![CDATA[<html>I don't think I can do that.</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Blacksmith Dorin$<BR>Ah. Ok I understand! I just explaining thou. Do not tell <FONT color=#a82424>Merchant Doris</FONT>. She'll make a big fuss out of me and perhaps I will not get paid at all</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Blacksmith Dorin$<BR>Humpf, there nothing I can do now. Even if <FONT color=#a82424>Merchant Doris</FONT> come here complainin and screaming her heads off, there nothing I can do. Do you get me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-4-a" mid="65"><![CDATA[<html>Well, you're not going to believe this, but... (You explain the whole thing.)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Merchant Doris$<BR>So? What you find out?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4-a" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-4-b" mid="67"><![CDATA[<html>Feel better now?</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Merchant Doris$<BR>Wh-what? The statue was placed wrongly? <BR><FONT color=#7e12d2>(Merchant Doris stares at the roof for a long moment.)</FONT><BR>It IS crooked. Why didn't I notice that before?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4-b" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-4-c" mid="69"><![CDATA[<html>(Time to get out of here.)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Merchant Doris$<BR>Hold on a second! <BR><FONT color=#7e12d2>(Merchant Doris looks around at other homes.)</FONT><BR>That is not right, everyone's status is place correctly except mine. If <FONT color=#a82424>Blacksmith Dorin</FONT> thinks he'll get his full fee after this...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4-c" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-4-d" mid="71"><![CDATA[<html>Enjoy!</html>]]></talk_answer>
+      <talk_question mid="70"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>I just going to find him and give him a piece of my mind if he think of getting another copper out of me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4-d" image="" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-4-e" mid="73"><![CDATA[<html>(Accept)</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4-e" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Merchant Doris$<BR>Oh, and thank you for getting to the bottom of this. I'm alot better now. <BR><FONT color=#7e12d2>(Merchant Doris looks toward the smithy with determination.)</FONT><BR>I must get going now.. Good Bye.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">65</exe>
+         <exe type="talk" npc="n003_trader_dolis">1</exe>
+         <exe type="recompense_view">,651,652,653,654</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,651,652,653,654</exe>
+         <exe type="complete">65</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n003_trader_dolis" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n003_trader_dolis" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n001_elder_harold" sub="b" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="c" />
+   <exelink qstep="1" npc="n001_elder_harold" sub="d" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="c" />
+   <exelink qstep="1" npc="n002_trader_dorin" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n194_invisible" sub="b" />
+   <exelink qstep="2" npc="n194_invisible" sub="c" />
+   <exelink qstep="2" npc="n194_invisible" sub="d">0,1</exelink>
+   <exelink qstep="3" npc="n002_trader_dorin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="4" npc="n003_trader_dolis" sub="c" />
+   <exelink qstep="4" npc="n003_trader_dolis" sub="d">0</exelink>
+   <exelink qstep="4" npc="n003_trader_dolis" sub="e">1</exelink>
+   <journal_data recompense="1:651,2:652,3:653,4:654" quest_title="부실공사의 흔적" chapterid="" quest_level="7" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_PrairieTown.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,0,0</destination_pos>
+         <destination_mode>custom:1@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="76"><![CDATA[Merchant Doris's Anxiety]]></title>
+         <contents mid="77"><![CDATA[<html>Talk to the townspeople about <FONT color=#a82424>Merchant Doris</FONT>'s mysterious anxiety.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>? Bernstein<BR></FONT><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Mayor Harold</FONT><BR><FONT color=#086171>Prairie Town </FONT><FONT color=#a82424>→ Blacksmith Dorin</FONT></html>]]></contents>
+         <destination mid="78"><![CDATA[Identify the cause of Merchant Doris's Anxiety]]></destination>
+         <todo_msg mid="79"><![CDATA[Talk to the townspeople about Merchant Doris's anxiety.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_PrairieTown.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,0,0</destination_pos>
+         <destination_mode>custom:1@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="80"><![CDATA[To the Rooftops]]></title>
+         <contents mid="81"><![CDATA[<html><FONT color=#a82424>Rose</FONT> said there is something strange on the rooftops in town. Perhaps it is better you go up and take a look yourself<BR> <BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ ???</FONT></html>]]></contents>
+         <destination mid="82"><![CDATA[Search the rooftops.]]></destination>
+         <todo_msg mid="83"><![CDATA[Find out what's so strange about the village's rooftops.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n2</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Smith of Negligence]]></title>
+         <contents mid="85"><![CDATA[<html>An improperly placed statue is the cause of Merchant Doris's anxiety. Talk to <FONT color=#a82424>Blacksmith Dorin</FONT>, who placed the statue.<BR> <BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Blacksmith Dorin</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Talk to Blacksmith Dorin]]></destination>
+         <todo_msg mid="87"><![CDATA[Talk to Blacksmith Dorin about the statue.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,n3</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Case Closed]]></title>
+         <contents mid="89"><![CDATA[<html>There isn't much I can do to the improperly placed statue. Welll, since you did your part, report to <FONT color=#a82424>Merchant Doris</FONT>.<BR> <BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Merchant Doris</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Merchant Doris]]></destination>
+         <todo_msg mid="91"><![CDATA[Tell Merchant Doris about the reason for her anxiety.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>7:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

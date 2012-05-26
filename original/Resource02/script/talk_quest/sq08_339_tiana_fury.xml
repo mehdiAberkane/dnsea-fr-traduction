@@ -1,0 +1,144 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_339_tiana_fury</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>339</qid>
+      <designer>나은하</designer>
+      <qlevel>11</qlevel>
+      <qdesc>주문서가 타버린 것을 안 티아나는 매우 격노한다.
+그녀는 오크따위는 다 쓸어버려야 한다면서, 오크 습격대 거점의 오크들을 사냥하란 명령을 내린다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Tiana's Wrath]]></qkname>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="QS_Default.dds" itemindex="400166">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-a" mid="8"><![CDATA[<html>It just had to happen, I guess...</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Tiana$<BR>Nooo! It is so ridiculous! How could something this valuable be used for starting a fire! You! You're responsible for this. If you had not taken your own sweet time, the scroll could have been saved!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-a" image="QM_OrcBlue.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-b" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Sorceress Tiana$<BR>Do not make excuses! Go back to the Orc Base Camp right now and bring me Orc Shamans! If they want fire, I'll give them F.I.R.E!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Tiana's Wrath$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QM_OrcBlue.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Master Sorceress Tiana$<BR>Just thinking about those stupid orcs and my scroll is so... Oooh!! Harrghh! Why are you still here?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QM_OrcBlue.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-a" mid="47"><![CDATA[<html>Erm..? Didn't you want me to teach those orcs a lesson?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Sorceress Tiana$<BR>Why are you alone empty-handed?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-b" mid="55"><![CDATA[<html>I thought it was a metaphor!</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Master Sorceress Tiana$<BR>You idiot! I told you to bring them to me!<BR>Didn't I say I was going to fire them up?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-c" mid="49"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-c" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$Master Sorceress Tiana$<BR>Well, fine. Since you've given them a good hard thrashing, that should be enough.<BR>Ugh...Master Sorceress Cynthia is going to be so mad...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>324</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3391,3392,3393,3394,3395</exe>
+         <exe type="setquest">339</exe>
+         <exe type="huntmon" num="5" party="1" exe="3,4,5" onexe="">324</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200324</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 324);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">339</exe>
+         <exe type="recompense">,3391,3392,3393,3394,3395</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">1,2,7,6</exelink>
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="b">1</exelink>
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="c">0</exelink>
+   <journal_data recompense="1:3391,2:3392,3:3393,4:3394,5:3395" quest_title="티아나의 격노" chapterid="" quest_level="11" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QM_OrcBlue.dds</contents_image>
+         <destination_pos>107,0,0</destination_pos>
+         <destination_mode>custom:106@3,107@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[Crush 20 Assailant Orc Shaman Apprentice]]></title>
+         <contents mid="39"><![CDATA[<html>Beat 20 Orc Shaman at the Orc Base Camp.<BR><BR><FONT color=#086171>Blizzard Plain (Secret Path)<FONT color=#a82424>→ Orc Base Camp</FONT></FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Crush 20 Assailant Orc Shaman Apprentice]]></destination>
+         <todo_msg mid="41"><![CDATA[Go to the Orc Base Camp.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Talk to Master Sorceress Tiana]]></title>
+         <contents mid="43"><![CDATA[<html>You have hunted down many Orc Shamans. Find Master Sorceress Tiana in Calderock Village.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="45"><![CDATA[Talk to Master Sorceress Tiana.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>11:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>338</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

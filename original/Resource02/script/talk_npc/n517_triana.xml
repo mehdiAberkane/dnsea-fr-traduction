@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n517_triana</npcename>
+      <npcid>517</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Archer Triana]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Archer Triana$<BR>
+Everything is in Telezia….</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="enterquest">mq11_432_here_sainthaven</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">432</chk>
+      </conditions>
+   </talk>

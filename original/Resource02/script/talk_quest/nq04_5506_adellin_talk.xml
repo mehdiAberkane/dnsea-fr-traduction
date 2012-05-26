@@ -1,0 +1,93 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq04_5506_adellin_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5506</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Master Sorceress Tiana]]></qkname>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-a" mid="7"><![CDATA[<html>But neither the Sorceresses nor the Clerics are trying to benefit their population even over important matters.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-b" mid="8"><![CDATA[<html>Well, I guess we can't completely ignore its impact.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-c" mid="9"><![CDATA[<html>I can't explain it, but I'm sure they have their reasons for being like that.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-accepting-d" mid="10"><![CDATA[<html>Since they're both a orgainization, they're probably just follow with whatever the orgainization does.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Archer Adelynn$<BR>I heard that the relationship between Sorceresses and the Clerics weren't always a harmonious one. I know something disgraceful happened between the Order and the Mage Guild, but don't you think they've been influenced by it a bit too much?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Archer Adelynn$<BR>Yes, that actually a good news. After all, Sorceresses and Clerics are all very wise people.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Archer Adelynn$<BR>Yes, I don't think it's entirely due to its influence either, but we certainly cannot ignore the impact of it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Archer Adelynn$<BR>I guess you're saying that it's not entirely due to its influence. I guess I was being careless when I was about conclude that it was all due to its influence.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Archer Adelynn$<BR>Do you think that's all there is to it? I feel there is something unexplainable.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5506, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 320 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 80 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 33, 160 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 33, 100 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 상급 소서리스 티아나에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>33:7200:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

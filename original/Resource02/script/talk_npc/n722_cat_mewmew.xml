@@ -1,0 +1,28 @@
+   <talk>
+      <npcename>n722_cat_mewmew</npcename>
+      <npcid>722</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Multi-purpose Kitten Meow Meow]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="3"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Multi-purpose Kitten Meow Meow$<BR>I am willing to do anything for my dearest Missy because I am a Multi-purpose Kitten! <BR>My name is<FONT color=#a82424>Meow Meow</FONT>~!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="60" link_target="sq15_781_appearance_of_cat.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Meow Meow's Debut</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="61" link_target="sq15_782_skin_food.xml"><![CDATA[<html>[Lv.40] <FONT color=#086171>Please Give the Skin Top Priority</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="62" link_target="sq15_783_setting_up_lady.xml"><![CDATA[<html>[Lv.41] <FONT color=#086171>Missy's Physical Training</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="63" link_target="sq15_784_useful_weapon.xml"><![CDATA[<html>[Lv.41] <FONT color=#086171>A Usable Weapon</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="64" link_target="sq15_785_dress_up_lady.xml"><![CDATA[<html>[Lv.41] <FONT color=#086171>A Graceful Lady</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="65" link_target="sq15_786_save_the_girl.xml"><![CDATA[<html>[Lv.42] <FONT color=#086171>Please Save my Missy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="66" link_target="sq15_787_self_defence_for_cat.xml"><![CDATA[<html>[Lv.42] <FONT color=#086171>What Appears to be a Self-Defence Product</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="72" link_target="sq15_788_second_emergency.xml"><![CDATA[<html>[Lv.43] <FONT color=#086171>Missy's Second Crisis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="73" link_target="sq15_789_unexpected_girl.xml"><![CDATA[<html>[Lv.43] <FONT color=#086171>Unexpected of Her</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="74"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="57"><![CDATA[<html>$Multi-purpose Kitten Meow Meow$<BR>
+Sometimes, kitties need help from others too, meow meow~</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

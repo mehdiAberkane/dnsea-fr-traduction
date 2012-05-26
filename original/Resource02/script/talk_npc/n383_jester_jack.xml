@@ -1,0 +1,67 @@
+   <talk>
+      <npcename>n383_jester_jack</npcename>
+      <npcid>383</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Jack the Clown]]></npckname>
+      <talk_paragraph index="001" image="QW_WoderfulThemePark.dds" itemindex="">
+         <talk_answer link_index="quest" mid="20"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="21"><![CDATA[<html>[Talk] <FONT color=#086171>Wonderful Theme Park</FONT></html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Jack the Clown$<BR>Welcome to the <FONT color=#a82424> Wonderful Theme Park</FONT>! Here, you will find many <FONT color=#7e12d2>amazing adventures</FONT>!<BR> waiting for you.  ? <FONT color=#7e12d2>Complete Daily Missions and receive  4 Wonderful Theme Park Entry Tickets everyday.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="QW_WoderfulThemePark.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="65" link_target="sq11_625_revenge_of_orc.xml"><![CDATA[<html>[Lv.31] <FONT color=#086171>Orc Gim's Revenge</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="66"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Jack the Clown$<BR>Are you ready to enjoy another <FONT color=#a82424>Special Adventure</FONT> at the Wonderful Theme Park?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="QW_WoderfulThemePark.dds" itemindex="">
+         <talk_answer link_index="sparta1" mid="23"><![CDATA[<html>[Talk] <FONT color=#086171>Sparta Goblin</FONT></html>]]></talk_answer>
+         <talk_answer link_index="road1" mid="24"><![CDATA[<html>[Talk] <FONT color=#086171>Bumpy Road</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="treasure1" mid="49"><![CDATA[<html>[Talk] <FONT color=#086171>Monastery Treasures</FONT> </html>]]></talk_answer>
+         <talk_answer link_index="fersia1" mid="50"><![CDATA[<html>[Talk] <FONT color=#086171>Angry Goblins!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="kimorc1" mid="51"><![CDATA[<html>[Talk] <FONT color=#086171>Orc Gim Strikes Back</FONT></html>]]></talk_answer>
+         <talk_answer link_index="boss1" mid="67"><![CDATA[<html>[Talk] [Lv.24 ~ 39] Boss Rush</html>]]></talk_answer>
+         <talk_answer link_index="boss2" mid="70"><![CDATA[<html>[Talk] [Lv.40 ~ 50] Saint Haven's Challenge</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="71"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Jack the Clown$<BR>Each <FONT color=#a82424>Special Adventure</FONT> requires <FONT color=#a82424>1 Wonderful Theme Park Entry Ticket</FONT>. So what shall it be today?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="sparta1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="28"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="14"><![CDATA[<html>$Jack the Clown$ BR><FONT color=#a82424>300</FONT> <FONT color=#a82424>Sparta Goblins</FONT> are on their way to Canyon Ville!<BR>Stand brave and fight against those vile creatures!<BR>? <FONT color=#7e12d2>You must be Lv.10 - Lv.31 to enter the Sparta Goblin stage.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="road1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="29"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="16"><![CDATA[<html>$Jack the Clown$<BR>Ahhh, life is a <FONT color=#a82424>Bumpy Road</FONT> indeed.<BR> Hmmm, I wonder what kinds of <FONT color=#a82424>traps</FONT> are in stall for you. Make it through this adventure alive within <FONT color=#a82424>4 minutes</FONT> and you will be handsomely rewarded for your bravery.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="treasure1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="30"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="18"><![CDATA[<html>$Jack the Clown$<BR>Rumours are flying that there's a treasure trove in an ancient monastery. It'd better be ALOT of treasures to make fighting the hordes of monsters in there worthwhile. But well, like they say, FONT color=#a82424>No Risk! No Return!!</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="boss1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="73"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="19"><![CDATA[<html>$Jack the Clown$<BR>Those tiresome monsters attack our towns from time to time. Should this happen, will you be strong enough to defend us? There's no better way to find out than taking on the bosses in <FONT color=#a82424>Boss Rush<FONT>! </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="boss2" image="" itemindex="">
+         <talk_answer link_index="talk" mid="74"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="32"><![CDATA[<html>$Jack the Clown$<BR>I hear the monsters in <FONT color=#a82424> Boss Rush</FONT> are pretty ferocious. After all, you are confronting the bosses themselves. A little tip from me - getting a party will be a wise move if you want to make it out alive. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="challenge1_2" image="" itemindex="">
+         <talk_answer link_index="talk" mid="35"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="34"><![CDATA[<html>$Jack the Clown$<BR>Why are we so cheerful in the chaos? *Chuckle* It is our choice to frown or laugh in any situation, no matter how dire. Besides, laughing helps to lighten things up a bit, so it doesn't seem so depressing, no?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="fersia1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="54"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="53"><![CDATA[<html>$Jack the Clown$<BR>A friend for today is an enemy for tomorrow. Such is the spice of life! Believe it or not, now these <FONT color=#a82424>500</FONT> <FONT color=#a82424>Sparta Goblins</FONT>are on your side. Fight to defeat the <FONT color=#a82424>Kuse Kuse</FONT> together!<BR>? <FONT color=#7e12d2>You may enter the Kuse Kuse Goblin stage if you are between Lvl32-40.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="kimorc1" image="" itemindex="">
+         <talk_answer link_index="kimorc1_1" mid="56"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Jack the Clown$<BR>Do you remember Orc Gim? He often says he would like to tear out your head one day, <FONT color=#387206>{user_nick}</FONT>. Heehee! </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="kimorc1_1" image="" itemindex="">
+         <talk_answer link_index="talk" mid="58"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="57"><![CDATA[<html>$Jack the Clown$<BR>Orc Gim has finished training his elite warriors and the entire orc army will be taking revenge on <FONT color=#a94407>Saint Haven</FONT>. Defend <FONT color=#a94407>Saint Haven</FONT> and protect the innocent from his rage! </html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

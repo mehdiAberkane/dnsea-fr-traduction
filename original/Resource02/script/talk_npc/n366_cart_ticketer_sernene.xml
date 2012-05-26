@@ -1,0 +1,94 @@
+﻿   <talk>
+      <npcename>n366_cart_ticketer_sernene</npcename>
+      <npcid>366</npcid>
+      <startexe>18</startexe>
+      <npckname mid="1"><![CDATA[Ticket Agent Senny]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="45"><![CDATA[<html>$Ticket Agent Senny$<BR>Nice to meet you. The <FONT color=#a82424>Atlantis</FONT> is the official Royal Rapid Transit.<BR>All flights have been currently suspended.<BR>We apologise for the inconvenience. <BR>[<FONT color=#7e12d2>According to flight regulations, only characters Lvl9 or above may board the Atlantis</FONT>.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_answer link_index="go_manaridge" mid="43"><![CDATA[<html>[Purchase Ticket to Mana Ridge]</html>]]></talk_answer>
+         <talk_answer link_index="go_cataract" mid="44"><![CDATA[<html>[Purchase Ticket to Calderock Village]</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Ticket Agent Senny$<BR>Welcome. The <FONT color=#a82424>Atlantis</FONT> is the official Royal Rapid Transit.<BR>Please purchase a boarding ticket to your destination.<BR>[<FONT color=#7e12d2>Please leave your party before boarding.</FONT>]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="003" image="" itemindex="">
+         <talk_answer link_index="go_manaridge" mid="49"><![CDATA[<html>[Purchase Ticket to Mana Ridge]</html>]]></talk_answer>
+         <talk_answer link_index="go_cataract" mid="50"><![CDATA[<html>[Purchase Ticket to Calderock Village]</html>]]></talk_answer>
+         <talk_answer link_index="go_saint" mid="51"><![CDATA[<html>[Purchase Ticket to Saint Haven]</html>]]></talk_answer>
+         <talk_question mid="47"><![CDATA[<html>$Ticket Agent Senny$<BR>Nice to meet you. The <FONT color=#a82424>Atlantis</FONT> is the official Royal Rapid Transit.<BR>All flights have been currently suspended.<BR>We apologise for the inconvenience. <BR>[<FONT color=#7e12d2>According to flight regulations, only characters Lvl9 or above may board the Atlantis</FONT>.]</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="no_gold" image="" itemindex="">
+         <talk_question mid="6"><![CDATA[<html>$Ticket Agent Senny$<BR>Sorry but you do not seem to have enough for the ticket. <BR>Please check your Inventory.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="party_member" image="" itemindex="">
+         <talk_question mid="7"><![CDATA[<html>$Ticket Agent Senny$<BR>Sorry but this is a ticket for one only. <BR>Your friends cannot board the Atlantis.<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_manaridge" image="QW_ManaRidge.dds" itemindex="">
+         <talk_answer link_index="back_2" mid="60"><![CDATA[<html>I want to select another destination.</html>]]></talk_answer>
+         <talk_answer link_index="move_2" mid="61"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Ticket Agent Senny$<BR>The boarding ticket to <FONT color=#a82424>Mana Ridge</FONT> will cost <FONT color=#a82424>5 Silvers</FONT>.<BR>Do you want to head to <FONT color=#a82424>Mana Ridge</FONT>?<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_cataract" image="QW_CataractGateway.dds" itemindex="">
+         <talk_answer link_index="back_3" mid="62"><![CDATA[<html>I want to select another destination.</html>]]></talk_answer>
+         <talk_answer link_index="move_3" mid="63"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_question mid="56"><![CDATA[<html>$Ticket Agent Senny$<BR>The boarding ticket to <FONT color=#a82424>Calderock Village</FONT> will cost <FONT color=#a82424>5 Silvers</FONT>.<BR>Do you want to head to <FONT color=#a82424>Calderock Village</FONT>?<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_saint" image="QW_SaintHaven.dds" itemindex="">
+         <talk_answer link_index="back_4" mid="64"><![CDATA[<html>I want to select another destination.</html>]]></talk_answer>
+         <talk_answer link_index="move_4" mid="65"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_question mid="57"><![CDATA[<html>$Ticket Agent Senny$<BR>The boarding ticket to <FONT color=#a82424>Saint Haven</FONT> will cost <FONT color=#a82424>10  Silvers</FONT>.<BR>Do you want to head to <FONT color=#a82424>Saint Haven</FONT>?<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="go_lotusmarsh" image="QW_LotusMarshTown.dds" itemindex="">
+         <talk_answer link_index="back_5" mid="77"><![CDATA[<html>I want to select another destination.</html>]]></talk_answer>
+         <talk_answer link_index="move_5" mid="78"><![CDATA[<html>[Board Airship]</html>]]></talk_answer>
+         <talk_question mid="67"><![CDATA[<html>$Ticket Agent Senny$<BR>The boarding ticket to <FONT color=#a82424>Lotus Marsh</FONT> will cost <FONT color=#a82424>10  Silvers</FONT>.<BR>Do you want to head to <FONT color=#a82424>Lotus Marsh</FONT>?<BR>? <FONT color=#7e12d2>Please leave your party before boarding.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="004" image="" itemindex="">
+         <talk_answer link_index="go_manaridge" mid="79"><![CDATA[<html>[Purchase Ticket to Mana Ridge]</html>]]></talk_answer>
+         <talk_answer link_index="go_cataract" mid="80"><![CDATA[<html>[Purchase Ticket to Calderock Village]</html>]]></talk_answer>
+         <talk_answer link_index="go_saint" mid="81"><![CDATA[<html>[Purchase Ticket to Saint Haven]</html>]]></talk_answer>
+         <talk_question mid="72"><![CDATA[<html>$Ticket Agent Senny$<BR>Welcome. The <FONT color=#a82424>Atlantis</FONT> is the official Royal Rapid Transit.<BR>Please purchase a boarding ticket to your destination.<BR>[<FONT color=#7e12d2>Please leave your party before boarding.</FONT>]</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="talk">002</exe>
+         <exe type="talk">003</exe>
+         <exe type="conexe" true="2" false="4">0</exe>
+         <exe type="conexe" true="1" false="0">1</exe>
+         <exe type="conexe" true="6" false="11">2</exe>
+         <exe type="conexe" true="13,15" false="12">4</exe>
+         <exe type="conexe" true="8" false="11">2</exe>
+         <exe type="conexe" true="13,16" false="12">4</exe>
+         <exe type="conexe" true="10" false="11">3</exe>
+         <exe type="conexe" true="14,17" false="12">4</exe>
+         <exe type="talk">no_gold</exe>
+         <exe type="talk">party_member</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 500 );</exe>
+         <exe type="custom">api_user_DelCoin( userObjID, 1000 );</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,5,1);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,8,1);</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,11,1);</exe>
+         <exe type="conexe" true="19" false="3">6</exe>
+         <exe type="talk">004</exe>
+         <exe type="conexe" true="21" false="11">3</exe>
+         <exe type="conexe" true="14,22" false="12">4</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,15,1);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 401) == 1</chk>
+         <chk type="lvl" op=">=">9</chk>
+         <chk type="custom">api_user_EnoughCoin(userObjID, 500 ) == 1</chk>
+         <chk type="custom">api_user_EnoughCoin(userObjID, 1000 ) == 1</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 701) == 1</chk>
+         <chk type="lvl" op=">=">40</chk>
+      </conditions>
+      <exelink idx="back_2">18</exelink>
+      <exelink idx="move_2">5</exelink>
+      <exelink idx="back_3">18</exelink>
+      <exelink idx="move_3">7</exelink>
+      <exelink idx="back_4">18</exelink>
+      <exelink idx="move_4">9</exelink>
+      <exelink idx="back_5">18</exelink>
+      <exelink idx="move_5">20</exelink>
+   </talk>

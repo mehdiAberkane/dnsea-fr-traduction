@@ -1,0 +1,151 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq25_5097_left_in_the_basket</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5097</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Kids Left Behind]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="30"><![CDATA[<html>Hi!!</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="186"><![CDATA[<html>Irine?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Events Planner Irine$<BR>Hmm...<BR><FONT color=#7e12d2>(Irine seems to be in a deep thought.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="99"><![CDATA[<html>What have you been thinking?</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Events Planner Irine$<BR>Oh, my goodness!<BR>I'm sorry <FONT color=#387206>{user_nick}</FONT>. I didn't notice that you were here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="101"><![CDATA[<html>Did he bring them back?</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Events Planner Irine$<BR>Actually, it was <FONT color=#a82424>Royal Guard Joey</FONT>. <BR>He was passing by <FONT color=#a82424>Center of the Forsaken Islet</FONT> and he found the abandoned kids.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-d" mid="188"><![CDATA[<html>Where's the cave?</html>]]></talk_answer>
+      <talk_question mid="187"><![CDATA[<html>$Events Planner Irine$<BR>They just ran away when he tried to talk to them.<BR>He came b after finding out their location.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceppted" mid="103"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Remaining Kids$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="QW_33.dds" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="105"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Events Planner Irine$<BR>They're at the cave along the way to a hill at <FONT color=#a82424>Center of the Forsaken Islet</FONT>.<BR>There's only one cave that I know of fits the description. You'll be able to see that when you get there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="QW_33.dds" itemindex="">
+      <talk_question mid="106"><![CDATA[<html>$Events Planner Irine$<BR>Please don't force the kids to do what they don't want to.<BR>They might just distance themselves away if they feel intimidated.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-a" mid="189"><![CDATA[<html>(Irine is disappointed.)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Events Planner Irine$<BR>They ran off...<BR>It seems that the kids don't really trust people anymore.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-b" mid="191"><![CDATA[<html>You are probably right.</html>]]></talk_answer>
+      <talk_question mid="190"><![CDATA[<html>$Events Planner Irine$<BR>Well, before we try to bring the kids back, perhaps it'll be better to let them know that we came to help.<BR>They are not gonna hold anyone's hands if they think that there are all bad people out there, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-c" mid="193"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="192"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-c" image="" itemindex="">
+      <talk_question mid="194"><![CDATA[<html>$Events Planner Irine${action:Talk}<BR>When I'm done with the current events, I'll give more thinking about it.<BR>So please, help me again next, okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">5097</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="recompense_view">50970,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">50970,,,,,</exe>
+         <exe type="complete">5097</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 100, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="d">2</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceppted">0,1</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="b">0</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="c">1,2</exelink>
+   <journal_data recompense="0:50970" quest_title="남겨진 아이들" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[At Center of the Forsaken Islet]]></title>
+         <contents mid="85"><![CDATA[<html>Find the abandoned kids at Center of the Forsaken Islet. According to witnesses, they were somewhere at the cave near the hill.<BR><BR><FONT color=#086171>Hermalte Port (Transport Ship for Forsaken Islet)</FONT> <FONT color=#a82424>→ Center of the Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Find the abandoned kid at Center of the Forsaken Islet]]></destination>
+         <todo_msg mid="87"><![CDATA[Please find the abandoned kid at Center of the Forsaken Islet.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:11@1,1@1,5@1,8@1</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Irine's Worry]]></title>
+         <contents mid="89"><![CDATA[<html>The abandoned kid ran away. Report the situation to Events Planner Irine.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="91"><![CDATA[Please return to Events Planner Irine and report the situation.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>5096</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

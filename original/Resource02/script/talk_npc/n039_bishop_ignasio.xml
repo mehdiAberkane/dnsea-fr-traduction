@@ -1,0 +1,51 @@
+﻿   <talk>
+      <npcename>n039_bishop_ignasio</npcename>
+      <npcid>39</npcid>
+      <startexe>0</startexe>
+      <npckname mid="3"><![CDATA[Bishop Ignacio]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="13"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="14"><![CDATA[<html>[Talk] Talk</html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Bishop Ignacio${action:Talk}<BR>Important decisions need to be made.<BR>Much caution is essential.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="15"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>The Pope has been quiet on this matter so far, but I believe we both are concerned about the future of this world. After all, it is the duty of Clerics to bring about salvation and end suffering. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="110" link_target="mq11_432_here_sainthaven.xml"><![CDATA[<html>[Lv24] <FONT color=#a94407>It's Saint Heaven</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="mq11_401_castle_sainthaven.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Saint Haven Fortress</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="29" link_target="mq11_402_town_of_death.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Town of Death</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="63" link_target="mq11_419_where_argenta.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>Argenta's Whereabouts</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="64" link_target="mq11_420_return_of_the_general.xml"><![CDATA[<html>[Lv.24] <FONT color=#a94407>General's Return</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="30" link_target="mq11_403_meet_argenta_again.xml"><![CDATA[<html>[Lv.26] <FONT color=#a94407>Dark Overlord Keep</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="65" link_target="mq11_421_warclouds.xml"><![CDATA[<html>[Lv.26] <FONT color=#a94407>War Clouds</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="31" link_target="mq11_404_return_of_fatality.xml"><![CDATA[<html>[Lv.28] <FONT color=#a94407>Resurrection of Black Plague</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="32" link_target="mq11_405_cursed_fragment.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Fragments of the Damned</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="mq11_406_guard_of_munition.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Transport Escort</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="34" link_target="mq11_407_the_zero_hour.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Eve of Battle</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="35" link_target="mq11_408_soaring_black_arkmonarch.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Tale of Courage</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="36" link_target="mq11_409_remainder_works.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Unfinished Business</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="73" link_target="mq11_410_sea_monsters_soul.xml"><![CDATA[<html>[Lv.30] <FONT color=#a94407>Being Human</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="mq11_411_rose_in_nightmare.xml"><![CDATA[<html>[Lv.32] <FONT color=#a94407>The Prophet Who Does Not Wake Up</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="91" link_target="mq11_412_cure_of_fairystar.xml"><![CDATA[<html>[Lv.32] <FONT color=#a94407>The Fairystar</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="92" link_target="mq11_415_stopgap.xml"><![CDATA[<html>[Lv.32] <FONT color=#a94407>Ad Hoc</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="93" link_target="mq11_416_dig_for_minerals.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>Fossil Collection</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="94" link_target="mq11_417_deserted_david.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>The Rest of Us</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="95" link_target="mq11_418_curious_david.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>Old and Curious</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="96" link_target="mq11_423_doubt_history.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>Ithilien's Question</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="97" link_target="mq11_424_retrieval_darkcore.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>Recovery of the Black Core</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="98" link_target="mq11_425_missing_spirits.xml"><![CDATA[<html>[Lv.34] <FONT color=#a94407>A Monster's Lost Soul</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="mq11_426_sea_monsters_insignia.xml"><![CDATA[<html>[Lv.36] <FONT color=#a94407>Sea Monster's Seal</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="100" link_target="mq11_427_old_scroll.xml"><![CDATA[<html>[Lv.36] <FONT color=#a94407> The Ancient Order</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="101" link_target="mq11_428_revive_serpentra.xml"><![CDATA[<html>[Lv.38]<FONT color=#a94407> New Crisis</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="mq11_429_guardian_geraint.xml"><![CDATA[<html>[Lv.38] <FONT color=#a94407>Guardian Geraint</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="107" link_target="mq11_443_settlement.xml"><![CDATA[<html>[Lv30] <FONT color=#a94407>Settled</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="108"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Bishop Ignacio$<BR>May the Goddess's blessings be with you.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

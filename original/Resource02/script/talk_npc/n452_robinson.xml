@@ -1,0 +1,22 @@
+   <talk>
+      <npcename>n452_robinson</npcename>
+      <npcid>452</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Poor Boy
+(Dried Marissa Spring)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Poor Boy$<BR>What's up?<BR>
+Are you doing well?</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="enterquest">sq11_699_farewell_robinson</exe>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="2">1</exe>
+         <exe type="enterquest">sq11_697_horror_again</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">699</chk>
+         <chk type="hasquest">697</chk>
+      </conditions>
+   </talk>

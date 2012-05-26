@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n515_edan</npcename>
+      <npcid>515</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Cleric Edan]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Cleric Edan$<BR>
+God bless on you always….</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="enterquest">mq11_432_here_sainthaven</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">432</chk>
+      </conditions>
+   </talk>

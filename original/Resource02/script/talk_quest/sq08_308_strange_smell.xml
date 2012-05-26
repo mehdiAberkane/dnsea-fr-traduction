@@ -1,0 +1,195 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_308_strange_smell</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>308</qid>
+      <designer>김인정</designer>
+      <qlevel>18</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>309</nextqid>
+      <nextqname>sq08_309_hapless_thief</nextqname>
+      <nextqnpc>n035_soceress_master_tiana</nextqnpc>
+      <qkname mid="1"><![CDATA[Strange smell]]></qkname>
+      <qnpc>
+         <npcid>266</npcid>
+         <npcename>n266_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR>(Something seems to be moving.)<BR>(It seems to emit a nasty odour but…it seems familiar)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-a" mid="19"><![CDATA[<html> Yes? Where is it? </html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Sorceress Tiana${action:talk}<BR>Ah, now <FONT color=#a82424>Deckard from the Adventurer's Guild</font> has a new mission for you. I think?<BR>Have you found anything special at the <FONT color=#a82424>Dark Tower Magic Institute</font> lately? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-b" mid="21"><![CDATA[<html>A foul and nasty odour?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Tiana$<BR>Actually, I have heard something strange from another adventurer not too long ago.<BR>There is a presence of evil there now and when the wind blows, one can smell a <FONT color=#a82424>odour</font> of decay.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-c" mid="23"><![CDATA[<html>Other contamination? No way.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Master Sorceress Tiana$<BR>It has been peaceful for a long time and there was never this <FONT color=#a82424>odour</font> before. <BR>Don't you think the contamination is developing something evil? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-d" mid="25"><![CDATA[<html>Maybe. I will go and find out.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Master Sorceress Tiana$<BR>I'm not familiar with this place as you may know previously.<BR>Help me find out if there is something evil breeding in that place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-accepting-acceptted" mid="27"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Strange Smell$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="QW_21.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Master Sorceress Tiana$<BR><FONT color=#a82424>Dark Tower Magic Institute</font> is a very symbolic place for the Sorceress.<BR>We will not let anything evil happen over there. Please go ahead and investigate.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-1-a" mid="31"><![CDATA[<html>…Smells strange to me.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Invisible Thief$<BR>Well done! Nice to see that small frys like you manage to spot me here. As a descendant of the legendary Phantom Thieves, I'm <FONT color=#a82424>the nameless Invisible Thief</font>. I make my appearance all of Altea. Please hear my sad story!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1-a" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-1-b" mid="33"><![CDATA[<html>(Who says I'm listening...)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Invisible Thief$<BR>Well, what?...Come on and cut me some slack. <BR> Listen to my story will you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1-b" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-1-c" mid="35"><![CDATA[<html>(Invisible Thief continue to grind and grumble on with his story)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Invisible Thief$<BR>It was a shock when I came to Calderock Village. I was trying to make a living to steal some stuff. But everyone is so busy fighting monsters that there is absolutely nothing valuable for me…nothing I tell you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1-c" image="QW_PrairieTown.dds" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-1-d" mid="37"><![CDATA[<html> ...? What happened? </html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Invisible Thief$<BR> I was so upset that I being walking to <FONT color=#a82424>Prairie Town,</font> on my swollen feet! Woe and unlucky is me…I arrived and I was just about to try my luck stealing from a store!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1-d" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n266_invisible_thief-1-e" mid="39"><![CDATA[<html>(Is he going to cry???)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Invisible Thief$<BR>I entered and there…on the table sat a plate of delicious looking <FONT color=#a82424>food</font>. <BR>You cannot begin to imagine how hungry I was! So I reach out and start eating. But it was a trap...  </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1-e" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n266_invisible_thief-1-f" mid="41"><![CDATA[<html>Oh really? I guess that must be the Nutritious Food!</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Invisible Thief$<BR>Well it turns out to be a <FONT color=#a82424>very nutritious plate of Hound's food!</font>This is definitely a trick of fate. No?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-1-f" image="" itemindex="">
+      <talk_answer link_index="n266_invisible_thief-2" mid="43"><![CDATA[<html> .... (Well, it is your own fault in the first place) </html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Invisible Thief$<BR>Smelling terrible, I returned to Calderock Village, bought and ate up all the food in the stores to erase the foul taste. But I just can't get rid of the stink! Please help me!  </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n266_invisible_thief-2" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Invisible Thief$<BR>Because of this smell, monsters chase me and Hounds bark at me whenever I'm near. My career is over! You must help me! <FONT color=#7e12d2>(Shamelessly cries)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-a" mid="46"><![CDATA[<html>So Nutritious is….(seems like this is the cause)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Sorceress Tiana${action:talk}<BR>Have you investigated the <FONT color=#a82424>Dark Tower Magic Institute</font>? Is that the strange smell of contamination and poison?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-a" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-b" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Master Sorceress Tiana$<BR>Huh? A Descendant of Phantom Thieves? So all this is because of a thief? What rubbish...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-b" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-c" mid="50"><![CDATA[<html>So what should we do now?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Master Sorceress Tiana$<BR>Since the mystery has been solved, I cannot allow Dark Tower to smell like garbage. I need your help to make me a <FONT color=#a82424>deodorant.</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2-c" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-2-!next" mid="52"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3081,3082,3083,3084,3085</exe>
+         <exe type="setquest">308</exe>
+         <exe type="talk" npc="n035_soceress_master_tiana">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3081,3082,3083,3084,3085</exe>
+         <exe type="complete">308</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n035_soceress_master_tiana" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n266_invisible_thief" sub="b" />
+   <exelink qstep="1" npc="n266_invisible_thief" sub="c" />
+   <exelink qstep="1" npc="n266_invisible_thief" sub="d" />
+   <exelink qstep="1" npc="n266_invisible_thief" sub="e" />
+   <exelink qstep="1" npc="n266_invisible_thief" sub="f" />
+   <exelink qstep="1" npc="n266_invisible_thief" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="c">0</exelink>
+   <exelink qstep="2" npc="n035_soceress_master_tiana" sub="!next">1</exelink>
+   <journal_data recompense="1:3081,2:3082,3:3083,4:3084,5:3085" quest_title="이상한 냄새" chapterid="" quest_level="18" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>153,n266</destination_pos>
+         <destination_mode>custom:151@1,152@1,153@1</destination_mode>
+         <statemark_npcid>266</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="53"><![CDATA[Strange Odour]]></title>
+         <contents mid="54"><![CDATA[<html>A strange smell is coming from the <FONT color=#a82424>Dark Tower Magic Institute</FONT>. Go and investigate if the monsters are planning something.<BR> <BR><FONT color=#086171>Cristal Stream → Blizzard Plain (Wizards of the road)</FONT> <FONT color=#a82424>→ Dark Tower Magic Institute</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Investigate Dark Tower Magic Institute]]></destination>
+         <todo_msg mid="56"><![CDATA[Find out what is causing the strange odour in Dark Tower Magic Institute.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,n35</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="57"><![CDATA[Cause of the odour]]></title>
+         <contents mid="58"><![CDATA[<html>You found out the cause of the strange smell. Return to Master Sorceress Tiana and tell her your discovery.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Training Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="59"><![CDATA[Report to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="60"><![CDATA[Report the cause of the odour to Master Sorceress Tiana.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>18:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>328</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,238 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_632_far_away_kingdom</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>632</qid>
+      <designer>김주연</designer>
+      <qlevel>37</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Far Away Kingdom]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>330</npcid>
+         <npcename>n330_darkelf_alice</npcename>
+         <npckname>다크엘프 앨리스(sq628)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>335</npcid>
+         <npcename>n335_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주(sq630)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Dark Elf Teri$<BR>I will be a real Queen.<BR>So remember me, my friend….<BR>
+<FONT color=#7e12d2>※You can start the quest when you talk to Dishonest Merchant Pero</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Dark Elf Teri$<BR>I will be a real Queen.<BR>So remember me, my friend….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Dark Elf Alice$<BR>Teri … I will put you in the rightful Queen's throne…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Dishonest Merchant Pero$<BR>What? Why are you acting all poor when you have gotten the Shadow Twigs?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="11"><![CDATA[<html>(Dark Elf Queen…)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Dishonest Merchant Pero$<BR>IF <FONT color=#a82424>Dark Elf Queen</FONT>gets this, she can make it into a Shadow's Hole to control Dark Elves…<BR>For a normal <FONT color=#387206>{user_class}</FONT>, it’s just a dream. Wahahahaha~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Far Away Kingdom$<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Dishonest Merchant Pero$<BR> The Dark Elf's movements are getting suspicious. Maybe a war is about to happen.<BR>People are saying a Dark Elf has been spotted at <FONT color=#a82424>Hermalte Port </FONT>? I mean….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-1" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Dark Elf Alice$<BR>Teri … I will place you in the rightful Queen's throne….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-1" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Dark Elf Teri$<BR>I will be a real Queen.<BR>So remember me, my friend….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-a" mid="18"><![CDATA[<html>(Teri's eyes sparkle)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Dark Elf Teri$<BR>Now… Queen's symbol Shadow's Hole is ready.<BR>What is left, is just courage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2" mid="20"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Dark Elf Teri$<BR>My friend, will you watch me leave?<BR>With your eyes on me, I believe I can walk proudly.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2" image="QW_42.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Dark Elf Teri$<BR>Now go to<FONT color=#a82424> Death City Entrance</FONT>.<BR>My faithful servant will be waiting, run before they are disappointed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-2-a" mid="23"><![CDATA[<html>(Alice starts crying)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Dark Elf Alice$<BR>Ohoh… <FONT color=#a82424>Teri</FONT>!<BR>You are here!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-2-a" image="" itemindex="">
+      <talk_answer link_index="n330_darkelf_alice-3" mid="25"><![CDATA[<html>(Alice looks at Teri)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Dark Elf Alice$<BR>After <FONT color=#a82424>Fake Queen</FONT> has gotten the royal throne, a lot of our people had died.<BR>However despite all this, everyone is waiting for Teri.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n330_darkelf_alice-3" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Dark Elf Alice$<BR>My Queen <FONT color=#a82424>Teri</FONT> ! Please remove that detestable Fake Queen from the throne and show her who is the real Queen of all the Dark Elves. Everyone is waiting for you!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-3" image="" itemindex="">
+      <talk_answer link_index="n335_darkelf_teleju-3-a" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Dark Elf Teri$<BR>I will be the real queen. My friend,<FONT color=#387206> {user_nick}</FONT>….<BR>As the enemy of humans and the Shadow World's  Dark Elves, blood will be spilled and weapons will be drawn.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-3-a" image="" itemindex="">
+      <talk_answer link_index="n335_darkelf_teleju-3-b" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Dark Elf Teri$<BR>However in the Shadow World , there are rules and justice.<BR>However I will balance this without losing unnecessary blood.<BR>
+This my friend, will be for you too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-3-b" image="" itemindex="">
+      <talk_answer link_index="n335_darkelf_teleju-3-c" mid="32"><![CDATA[<html>I will go too!!</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Dark Elf Teri$<BR>What is valuable to me is you. However I have to keep it safe, I have to protect my Kingdom for this.<BR>I will not run away again so watch me as I leave this <FONT color=#a82424>Last Moment Behind</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-3-c" image="" itemindex="">
+      <talk_answer link_index="n335_darkelf_teleju-3-d" mid="34"><![CDATA[<html>(Teri's decision is firm)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Dark Elf Teri$<BR><FONT color=#7e12d2>(Teri shakes her head quitely)<BR></FONT>That's a no, my friend. This is our war.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-3-d" image="" itemindex="">
+      <talk_answer link_index="n335_darkelf_teleju-3-e" mid="36"><![CDATA[<html><FONT color=#086171>(Receive Reward) </FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-3-e" image="" itemindex="">
+      <talk_answer link_index="n335_darkelf_teleju-3-f" mid="38"><![CDATA[<html>Bye …</html>]]></talk_answer>
+      <talk_answer link_index="n335_darkelf_teleju-3-f" mid="39"><![CDATA[<html>It's a promise!!</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Dark Elf Teri$<BR>I will meet you again, smiling.<BR>Don't forget me until then… bye.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n335_darkelf_teleju-3-f" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="40"><![CDATA[<html><FONT color=#7e12d2>(Teri returns to Death City with Alice.<BR>She is smiling.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,6321,6322,6323,6324,6325</exe>
+         <exe type="setquest">632</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,6321,6322,6323,6324,6325</exe>
+         <exe type="complete">632</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n330_darkelf_alice" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n335_darkelf_teleju" sub="b" />
+   <exelink qstep="3" npc="n335_darkelf_teleju" sub="c" />
+   <exelink qstep="3" npc="n335_darkelf_teleju" sub="d">0</exelink>
+   <exelink qstep="3" npc="n335_darkelf_teleju" sub="e">1</exelink>
+   <exelink qstep="3" npc="n335_darkelf_teleju" sub="f" />
+   <exelink qstep="3" npc="n335_darkelf_teleju" sub="f" />
+   <journal_data recompense="1:6321,2:6322,3:6323,4:6324,5:6325" quest_title="머나먼 왕국" chapterid="" quest_level="37" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Talk to Dark Elf Teri]]></title>
+         <contents mid="43"><![CDATA[<html>Talk to <FONT color=#a82424>Dark Elf Teri</FONT> at Hermalte Port.<BR>
+<BR><FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Dark Elf Teri</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Talk to Dark Elf Teri]]></destination>
+         <todo_msg mid="45"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_42.dds</contents_image>
+         <destination_pos>423,n330</destination_pos>
+         <destination_mode>custom:421@1,422@1,423@1</destination_mode>
+         <statemark_npcid>330</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Talk to Dark Elf Alice]]></title>
+         <contents mid="47"><![CDATA[<html>Let's meet Dark Elf Alice who is wating for Teri at<FONT color=#a82424>Death City Entrance</FONT>.<BR><BR><FONT color=#086171>Hermalte Port (Entrance of Black Mine)</FONT> <FONT color=#a82424>→ Death City Entrance(Dark Elf Alice)</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk to Dark Elf Alice]]></destination>
+         <todo_msg mid="49"><![CDATA[Meet Dark Elf Alice at Death City Entrance.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>423,n335</destination_pos>
+         <destination_mode />
+         <statemark_npcid>335</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Talk to Teri at Death City Entrance]]></title>
+         <contents mid="51"><![CDATA[<html>Let's listen to Dark Elf Teri's determination at<FONT color=#a82424>Death City Entrance</FONT>.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port (Entrance of Black Mine)</FONT> <FONT color=#a82424>→ Death City Entrance(Dark Elf Teri)</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Talk to Teri at Death City Entrance]]></destination>
+         <todo_msg mid="53"><![CDATA[Talk to Dark Elf Teri at Death City Entrance]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>37:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>631</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

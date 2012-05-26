@@ -1,0 +1,288 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_579_new_determin</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>579</qid>
+      <designer>김인정</designer>
+      <qlevel>37</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[New Resolution]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>140</npcid>
+         <npcename>n140_lena_of_ruinedforest</npcename>
+         <npckname>레나 아가씨</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>48</npcid>
+         <npcename>n048_maid_of_lena</npcename>
+         <npckname>왕성 하녀</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Maid$<BR>Miss Lena finally didn't go to recuperate.<BR>
+I understand she doesn't want to go because she always goes out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Miss Lena$<BR>…I want to think alone.<BR>I will tell you later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-noquest" image="" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Miss Lena$<BR>…I want to think alone.<BR>I will tell you later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-a" mid="9"><![CDATA[<html>The person also has the sign…which means…..</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$General Douglas$<BR>The soldiers take care of the person who you rescued.<BR>He didn't really get injured so he will get better soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-a" image="QS_Default.dds" itemindex="300348">
+      <talk_answer link_index="n042_general_duglars-accepting-b" mid="11"><![CDATA[<html>The sign of betrayal?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$General Douglas$<BR>So you saw it also.<BR>
+<FONT color=#7e12d2>(General Douglas doesn't really want to say)<BR></FONT>The sign… according to him, that is <FONT color=#a82424>the sign of betrayal</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-b" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-c" mid="13"><![CDATA[<html>So the person we saw was killed by dragon followers</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$General Douglas$<BR><FONT color=#a82424>The sign of betrayal dragon follower</FONT>.<BR>After being marked with the sign, must be murdered.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-c" image="QS_Default.dds" itemindex="300348">
+      <talk_answer link_index="n042_general_duglars-accepting-d" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$General Douglas$<BR>So those two persons have same signs. So it's can be anyone but only dragon followers. We investigate about it I think White Rose is innocent.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-d" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-e" mid="17"><![CDATA[<html>Ah yes…</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$General Douglas${action:Talk}<BR>By the way… didn't you want to me <FONT color=#a82424>Lena</FONT>?<BR> She came back from recuperation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$New Resolution$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n042_general_duglars-1-a" mid="21"><![CDATA[<html>(Seems feel bad after saw the sign)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$General Douglas$<BR>I sent her to make her feeling happy, but she seems not that happy.<BR>I don't know she seems not happy because she's tired….I am worried...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1-a" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$General Douglas$<BR>Aren't you friends with my Lena? Go please to make her happy.<BR>
+Probably she's with a maid at <FONT color=#a82424>Hermalte Port</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-1" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Miss Lena$<BR>…I want to think alone.<BR>I will tell you later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Miss Lena$<BR>…I want to think alone.<BR>I will tell you later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-1" image="QN_Npc_Lena_Duglars.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-1-a" mid="26"><![CDATA[<html>(Maid grumbles)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Maid${action:Talk}<BR>Wow, we meet again here.<BR><FONT color=#a82424>Miss Lena</FONT>didn't go to recuperation.<BR>
+Ugh, I don't know what nobles think.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-1-a" image="QW_47.dds" itemindex="">
+      <talk_answer link_index="n048_maid_of_lena-2" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Maid$<BR>And she took me here but she's gone now.<BR>Where was it? It was….<BR>
+<FONT color=#a82424>Ruins of Lost Time</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-2" image="QW_47.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Maid$<BR>I will wait <FONT color=#a82424>Miss Lena</FONT>until she will back.<BR>So could you go to find her? <FONT color=#a82424>To Ruins of Lost Time</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-2" image="" itemindex="">
+      <talk_answer link_index="n140_lena_of_ruinedforest-2-a" mid="31"><![CDATA[<html>(Lena is in thought)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Miss Lena$<BR>Well, you came<FONT color=#387206>{user_nick}</FONT>.<BR>I didn't expect you would come here to find me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-2-a" image="" itemindex="">
+      <talk_answer link_index="n140_lena_of_ruinedforest-2-b" mid="34"><![CDATA[<html>(She's not going to try to jump here?)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Miss Lena$<BR>Wow… this is high. I feel nothing about the world when I stand here.<BR>Have you thought about it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-2-b" image="QS_Default.dds" itemindex="300348">
+      <talk_answer link_index="n140_lena_of_ruinedforest-2-c" mid="36"><![CDATA[<html>So…</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Miss Lena$<BR>My father who is dead already, he also had that sign. I thought it was just a scar.<BR> But it was the sign of betrayer dragon follower….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-2-c" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n140_lena_of_ruinedforest-2-d" mid="38"><![CDATA[<html>(Lena seems she's lonely)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Miss Lena${action:Talk}<BR>Yes. My father actually was a <FONT color=#a82424>dragon follower</FONT>.<BR>My mind is just tangled so I came here alone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-2-d" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n140_lena_of_ruinedforest-2-e" mid="40"><![CDATA[<html>…….</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Miss Lena$<BR>If my parents were <FONT color=#a82424>dragon followers</FONT>, what am I following until now?<BR>What should I do?<BR>
+…I was thinking about those kind of things.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-2-e" image="" itemindex="">
+      <talk_answer link_index="n140_lena_of_ruinedforest-2-f" mid="42"><![CDATA[<html>(Lena seems she decided)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Miss Lena$<BR>But there is nothing to change.<BR>The truth that<FONT color=#a82424>dragon followers killed my parents</FONT>is still same. Am I right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-2-f" image="" itemindex="">
+      <talk_answer link_index="n140_lena_of_ruinedforest-2-g" mid="44"><![CDATA[<html>(She decided)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Miss Lena${action:Talk}<BR>I will trace dragon followers.<BR>Although there is any new truth, I will never give up or be disappointed.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-2-g" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Miss Lena$<BR>Ok, let's go back now then. I need to go to talk with Cleric Oliver to listen information.<BR>Well then… <FONT color=#387206>{user_nick}</FONT> .<BR>
+<FONT color=#a82424>See you at the kingdom</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n140_lena_of_ruinedforest-3" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Miss Lena$<BR>Well, let's go back now.<BR>Then… <FONT color=#387206>{user_nick}</FONT> . <FONT color=#a82424>See you at the kingdom</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n048_maid_of_lena-3" image="" itemindex="">
+      <talk_question mid="47"><![CDATA[<html>$Maid$<BR>Did you meet <FONT color=#a82424>Miss Lena</FONT>?<BR>I just so want to go back to the kingdom. It's too cold out here at night~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$General Douglas$<BR>My <FONT color=#a82424>Lena</FONT> seems better.<BR>Thank you very much. Haha. Friends are good~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-a" mid="50"><![CDATA[<html>The person who was murdered last time was…</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Miss Lena$<BR>I told you that I would get important <FONT color=#a82424>information</FONT> last time? It was long time ago, do you remember?<BR>
+I tried hard to get it for a long time. About the survivors who <FONT color=#a82424>plotted my father's murder</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-a" image="QM_dragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-b" mid="52"><![CDATA[<html>(Lena looks at flowers quietly)</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Miss Lena${action:Talk}<BR>Yes.  Sadly the person is dead but… <FONT color=#a82424>Cleric Oliver</FONT>is alive. It's all by your favor.<BR>I just met him and got some information I need.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-b" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-c" mid="54"><![CDATA[<html>Are you thinking to leave here?</html>]]></talk_answer>
+      <talk_answer link_index="n133_lena_duglars-3-c" mid="55"><![CDATA[<html>(Thinking to leave here?)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Miss Lena$<BR> <FONT color=#a82424>The chief</FONT> of the plan of my father's murder is may at Lotus Marsh.<BR>To revenge and to know all story I need to go to <FONT color=#a82424>Lotus Marsh</FONT>as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-d" mid="57"><![CDATA[<html>(Can't change her mind)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Miss Lena$<BR>I am loyal to you since I told you all my plan.<BR>
+Soon, I will tell this  to my stepfather and leave here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-d" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-3-e" mid="59"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-3-e" image="" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Miss Lena$<BR>I was helped by you.<BR>I will pay it back someday, as I told you last time.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">579</exe>
+         <exe type="recompense_view">5790,,,,,</exe>
+         <exe type="talk" npc="n042_general_duglars">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">579</exe>
+         <exe type="recompense">5790,,,,,</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 133, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n042_general_duglars" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n048_maid_of_lena" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n140_lena_of_ruinedforest" sub="b" />
+   <exelink qstep="2" npc="n140_lena_of_ruinedforest" sub="c" />
+   <exelink qstep="2" npc="n140_lena_of_ruinedforest" sub="d" />
+   <exelink qstep="2" npc="n140_lena_of_ruinedforest" sub="e" />
+   <exelink qstep="2" npc="n140_lena_of_ruinedforest" sub="f" />
+   <exelink qstep="2" npc="n140_lena_of_ruinedforest" sub="g">0,1</exelink>
+   <exelink qstep="3" npc="n133_lena_duglars" sub="b" />
+   <exelink qstep="3" npc="n133_lena_duglars" sub="c" />
+   <exelink qstep="3" npc="n133_lena_duglars" sub="c" />
+   <exelink qstep="3" npc="n133_lena_duglars" sub="d">1</exelink>
+   <exelink qstep="3" npc="n133_lena_duglars" sub="e">0,2</exelink>
+   <journal_data recompense="0:5790" quest_title="새로운 결의" chapterid="" quest_level="37" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n48</destination_pos>
+         <destination_mode />
+         <statemark_npcid>48</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="61"><![CDATA[Missing Lena]]></title>
+         <contents mid="62"><![CDATA[<html>Let's go to Hermalte Port to find the people of Lena. The maid may know where Lena is.<BR><BR><FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Maid</FONT></html>]]></contents>
+         <destination mid="63"><![CDATA[Find the people with Lena at Hermalte Port.]]></destination>
+         <todo_msg mid="64"><![CDATA[Find the people with Lena at Hermalte Port.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_47.dds</contents_image>
+         <destination_pos>471,n140</destination_pos>
+         <destination_mode>custom:471@1</destination_mode>
+         <statemark_npcid>140</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="65"><![CDATA[Resolution of Lena]]></title>
+         <contents mid="66"><![CDATA[<html>Let's go to Ruins of Lost Time to talk with Lena.<BR><BR><FONT color=#086171>Hermalte Port (River Ruins Gate)</FONT> <FONT color=#a82424>→Ruins of Lost Time(Lena)</FONT></html>]]></contents>
+         <destination mid="67"><![CDATA[Talk with Miss Lena at Ruins of Lost Time]]></destination>
+         <todo_msg mid="68"><![CDATA[Go to Ruins of Lost Time to meet Miss Lena]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Lena_Duglars.dds</contents_image>
+         <destination_pos>21,n133</destination_pos>
+         <destination_mode />
+         <statemark_npcid>133</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="69"><![CDATA[Too far away]]></title>
+         <contents mid="70"><![CDATA[<html>Lena seems she solved her problem. Let's go to the kingdom to talk with Lena.<BR>
+<BR><FONT color=#086171>Saint Haven Kingdom</FONT> <FONT color=#a82424>→Miss Lena</FONT></html>]]></contents>
+         <destination mid="71"><![CDATA[Talk with Miss Lena at Saint Haven Kingdom]]></destination>
+         <todo_msg mid="72"><![CDATA[Go to Saint Haven Kingdom to talk with Miss Lena]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>37:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>578</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

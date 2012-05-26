@@ -1,0 +1,158 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_832_guardian_heart</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>832</qid>
+      <designer>김인정</designer>
+      <qlevel>40</qlevel>
+      <qdesc>가디언의 심장	300466
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Guardian's Heart]]></qkname>
+      <qnpc>
+         <npcid>710</npcid>
+         <npcename>n710_scholar_hancock</npcename>
+         <npckname>문장학자 핸콕</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-a" mid="6"><![CDATA[<html>네.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Heraldist Hancock$<BR><FONT color=#387207>{user_nick}</FONT>. Have ever seen Lune Elf or Lune Tiger?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Heraldist Hancock$<BR>I was wondering how those dolls made by stones and steels can move like an organism. That's why I'm researching on it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Heraldist Hancock$<BR>The result is, their heart is built with complex structures making a sentence.<BR>
+But, unfortunately I haven't seen {monster:1418}'s guardian's heart.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-c" image="QW_52.dds" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-d" mid="12"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Heraldist Hancock$<BR>
+That's why I'm talking about it to you. Could you go to <FONT color=#a82424>Ancient Library</FONT> and beat up Lune Tigerroad Chuwan and get a <FONT color=#a82425>guardian's heart</FONT>? It would be helpful for my research.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Guardian's Heart$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1" image="QW_52.dds" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Heraldist Hancock$<BR>I can't imagine how beautiful the<FONT color=#a82424>{monster:1417}</FONT>'s <FONT color=#a82424>guardian's heart</FONT> is. Since<BR>
+<FONT color=#a82425>Ancient Library</FONT> is a dangerous place, so I couldn't decide to go there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-a" mid="19"><![CDATA[<html>(Deliver it to him)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Heraldist Hancock$<BR>Finally I can see the guardian's heart!<BR>I'm so excited.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-2-b" mid="21"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2-b" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Heraldist Hancock$<BR>I've never seen this kind of complex sentence patterns.<BR>If I interpret this, I would step further to the ancients' heraldry skills.<BR>
+<FONT color=#7e12d3>(Hancock smiles with satisfaction)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">832</exe>
+         <exe type="talk" npc="n710_scholar_hancock">1</exe>
+         <exe type="recompense_view">8320,,,,,</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">1417</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">201417</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,8,9">300466</exe>
+         <exe type="addquestitem" num="1">300466</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8320,,,,,</exe>
+         <exe type="delquestitem" num="-1">300466</exe>
+         <exe type="complete">832</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n710_scholar_hancock" sub="d">2</exelink>
+   <exelink qstep="accepting" npc="n710_scholar_hancock" sub="acceptted">0,1,3,4,5</exelink>
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="a">0</exelink>
+   <exelink qstep="2" npc="n710_scholar_hancock" sub="b">1,2</exelink>
+   <journal_data recompense="8310" quest_title="가디언의 심장" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="300466">
+      <journal index="1">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>523,0,0</destination_pos>
+         <destination_mode>custom:521@3,522@3,523@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Guardian's Heart]]></title>
+         <contents mid="24"><![CDATA[<html>Go to Ancient Armory and beat up Lune Tigerroad Chuwan and get a guardian's heart.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="25"><![CDATA[Ancient Library]]></destination>
+         <todo_msg mid="26"><![CDATA[Get a guardian's heart in Ancient Library.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>15,n710</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>710</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Heraldist's Pleasure]]></title>
+         <contents mid="28"><![CDATA[<html>I just got a guardian's heart. Go back to Lotus Marsh's Heraldist Hancock.<BR>
+ <BR>
+<FONT color=#086172>Lotus Marsh</FONT> → Heraldist Hancock</html>]]></contents>
+         <destination mid="29"><![CDATA[Talk with Heraldist Hancock]]></destination>
+         <todo_msg mid="30"><![CDATA[Report to Heraldist Hancock.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>831</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

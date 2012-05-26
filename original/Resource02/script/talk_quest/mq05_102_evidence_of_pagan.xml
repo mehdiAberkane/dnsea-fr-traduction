@@ -1,0 +1,358 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq05_102_evidence_of_pagan</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>102</qid>
+      <designer>곽노찬</designer>
+      <qlevel>2</qlevel>
+      <qdesc>300145_붉은 가면</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>103</nextqid>
+      <nextqname>mq05_103_orb_of_vision1</nextqname>
+      <nextqnpc>n013_cleric_tomas</nextqnpc>
+      <qkname mid="1"><![CDATA[Disturbing Evidence]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>156</npcid>
+         <npcename>n156_cleric_jake</npcename>
+         <npckname>클레릭 제이크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>157</npcid>
+         <npcename>n157_cleric_jake</npcename>
+         <npckname>클레릭 제이크(서리바람 계곡)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>158</npcid>
+         <npcename>n158_point_mark</npcename>
+         <npckname>느낌표(!)_(ID는 빈공란)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-noquest" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_question mid="89"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>You're here. Cleric <FONT color=#a82424>Thomas</FONT> always talks about you.<BR>Hoho… It must be tough on you.<BR>※ <FONT color=#7e12d2>Obtain quest from Cleric Thomas</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-noquest" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_question mid="90"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>You're here. Cleric <FONT color=#a82424>Thomas</FONT>always talks about you.<BR>Hoho… It must be tough on you.<BR>※ <FONT color=#7e12d2>Obtain quest from Cleric Thomas</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-noquest" image="" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Did not spot anything odd)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-acceptted" mid="93"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>We shouldn't be making hasty decisions, but I guess it's worth checking out. You better head to <FONT color=#a82424>Mana Ridge</FONT> and meet your senior, <FONT color=#a82424>Cleric Jake</FONT>. It'd be excellent if the two of you can investigate <FONT color=#a82424>Frost Wind Valley</FONT> once more.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="19"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>We shouldn't be making hasty decisions, but I guess it's worth checking out. You better head to <FONT color=#a82424>Mana Ridge</FONT> and meet you senior, <FONT color=#a82424>Cleric Jake</FONT>. It'd be excellent if the two of you can investigate <FONT color=#a82424>Frost Wind Valley</FONT> once more.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="QN_Cl_Leonardo.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Cleric Thomas$<BR>I will continue to investigate the item <FONT color=#a82424>Leonard</FONT> escorted. I hope you'll bring good news.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-1-a" mid="13"><![CDATA[<html>What do you think about what the captain said?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>You're here. Captain <FONT color=#a82424>Thomas</FONT>always talks about you.<BR>Hoho… It must be tough on you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-a" image="QS_Default.dds" itemindex="300144">
+      <talk_answer link_index="n156_cleric_jake-1-b" mid="21"><![CDATA[<html>I… can't really understand the Archbishop's words.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Cleric Jake$<BR>Well… Passing judgement based solely on a <FONT color=#a82424>sacred pearl</FONT>found in the <FONT color=#a82424>Monster's Den</FONT> may be too hasty, but it's worth checking out. So is there any problem?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-b" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-1-c" mid="22"><![CDATA[<html>Yes. A pagan… isn't God's servant too? How could...</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Cleric Jake$<BR>Can't understand the words of the <FONT color=#a82424>Archbishop</FONT>? He said a <FONT color=#a82424>pagan</FONT> is hidden amongst the <FONT color=#a82424>Clerics</FONT> heading to <FONT color=#a82424>Mana Ridge</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-c" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-1-d" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Cleric Jake$<BR>Hmmm… We and the <FONT color=#a82424>pagans</FONT>… with our dealings with the <FONT color=#a82424>Dragon Followers</FONT>, dates far longer than you think. The former Pope <FONT color=#a82424>Benedict</FONT> may have put in a lot of efforts, but they're already deeply rooted internally.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-d" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-1-e" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Cleric Jake$<BR>After the <FONT color=#a82424>Dragon Followers disaster</FONT>, everyone thought they went silent for a while. In fact, they've never stopped their activities.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-1-e" image="" itemindex="">
+      <talk_answer link_index="n156_cleric_jake-2" mid="64"><![CDATA[<html>I'm fine.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Cleric Jake$<BR>You're very sincere and I know it's hard to accept the truth… But you should not trust others easily. For I'm worried you'll be hurt even deeper when faith shatters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-1" image="" itemindex="">
+      <talk_question mid="66"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>Nothing particularly odd...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-1" image="" itemindex="">
+      <talk_question mid="67"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Did not spot anything odd)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n156_cleric_jake-2" image="QW_7.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>Hehe… That's good.<BR>Alright then, let's head to <FONT color=#a82424>Frost Wind Valley</FONT>.<BR><FONT color=#a82424>Thomas</FONT> is expecting us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-2" image="" itemindex="">
+      <talk_question mid="31"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>Nothing seems odd…<BR>You should look around again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-2" image="" itemindex="">
+      <talk_answer link_index="n158_point_mark-2-a" mid="35"><![CDATA[<html>(Pick up)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(Something is shining within the bushes.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n158_point_mark-2-a" image="QS_Default.dds" itemindex="300145">
+      <talk_question mid="36"><![CDATA[<html>$Weird Mask$<BR><FONT color=#7e12d2>(Acquired a <FONT color=#a82424>Red Mask</FONT> with bizarre patterns and horn decorations. Return to Jake.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-3" image="QS_206.dds" itemindex="">
+      <talk_answer link_index="n157_cleric_jake-4" mid="38"><![CDATA[<html>Any idea what's this?</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Cleric Jake$<BR>Hmm… This is…<BR><FONT color=#7e12d2>(Jake glanced at the mask briefly before letting out a short groan)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-a" mid="43"><![CDATA[<html>(Hand over the Dragon Follower's Mask)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>Hello. Did you find anything?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-a" image="QS_206.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-b" mid="45"><![CDATA[<html>Did you manage to find out what the item is?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Cleric Thomas$<BR>This.. This is the mask used by the <FONT color=#a82424>Dragon Followers</FONT>…<BR>Looking at the engraved patterns, this is no common followers mask but one only worthy of a high-ranking priest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-b" image="QS_15.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-c" mid="47"><![CDATA[<html>The Sage's Staff?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Cleric Thomas$<BR>That's right. It took me a LOT of effort to convince that stubborn old man. Hehe…<BR>The stolen <FONT color=#a82424>item</FONT> is in fact the <FONT color=#a82424>Sage's Staff</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-c" image="QS_15.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-d" mid="49"><![CDATA[<html>Hmm… Why weren't there any Templar Knights to escort it...</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Cleric Thomas$<BR>The <FONT color=#a82424>Sage</FONT> was mentor to both the ancestor Cleric <FONT color=#a82424>Jake</FONT> and ancestor Sorceress <FONT color=#a82424>Marian</FONT>. He's a wiseman from some 500 years ago.<BR>However… how could anyone be so careless when escorting such a sacred item?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-d" image="QN_Npc_Bishop.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-e" mid="51"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Cleric Thomas${action:Talk}<BR>The <FONT color=#a82424>Pope</FONT> and <FONT color=#a82424>Archbishop</FONT> don't get along well, that I know, but I didn't expect to be that bad.<BR>To act arbitrarily without consulting with the <FONT color=#a82424>Archbishop</FONT> on something so important...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-e" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n013_cleric_tomas-4-f" mid="53"><![CDATA[<html>What's a Vision Orb?</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Cleric Thomas$<BR>Recovering the <FONT color=#a82424>Sage's Staff</FONT> will be an uphill task. However… if the Sage's relics is what they seek, then the Sage's Staff wouldn't satisfy them.<BR>The next target may be the <FONT color=#a82424>Vision Orb</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-f" image="QS_Default.dds" itemindex="300059">
+      <talk_answer link_index="n013_cleric_tomas-4-g" mid="56"><![CDATA[<html>Really...</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Cleric Thomas$<BR>The <FONT color=#a82424>Sage's Staff</FONT> originally consisted of the staff and Vision Orb. It is said that the Sage's two disciples, which are the two ancestors, split the Staff and each kept a part. The <FONT color=#a82424>Vision Orb</FONT> is kept by the Sorceresses in Mana Ridge.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-4-g" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-4-!next" mid="58"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n157_cleric_jake-4" image="QS_Default.dds" itemindex="300145">
+      <talk_question mid="87"><![CDATA[<html>$Cleric Jake${action:Talk}<BR>This is… the <FONT color=#a82424>Dragon Follower's Mask</FONT>. Sure enough… The <FONT color=#a82424>Archbishop</FONT> was right, a <FONT color=#a82424>Dragon's Follower</FONT> spy resides in Mana Ridge.<BR>Give this to Cleric <FONT color=#a82424>Thomas</FONT> right away!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">102</exe>
+         <exe type="custom">npc_talk_index = "n013_cleric_tomas-1-a";</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300145</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300145</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">102</exe>
+         <exe type="recompense">1020,,,,</exe>
+         <exe type="delquestitem" num="-1">300145</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n156_cleric_jake" sub="b" />
+   <exelink qstep="1" npc="n156_cleric_jake" sub="c" />
+   <exelink qstep="1" npc="n156_cleric_jake" sub="d" />
+   <exelink qstep="1" npc="n156_cleric_jake" sub="e" />
+   <exelink qstep="1" npc="n156_cleric_jake" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n158_point_mark" sub="a">3,0,1,2</exelink>
+   <exelink qstep="3" npc="n157_cleric_jake" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="b" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="c" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="d" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="e" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="f" />
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="g">1</exelink>
+   <exelink qstep="4" npc="n013_cleric_tomas" sub="!next">0,2</exelink>
+   <journal_data recompense="1020" quest_title="이단의 증거" chapterid="1" quest_level="2" quest_mark_type="1" use_item_list="300145">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,426,-583</destination_pos>
+         <destination_mode>custem</destination_mode>
+         <statemark_npcid>156</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Talk to Brother Jake at Frost Hill]]></title>
+         <contents mid="71"><![CDATA[<html><FONT color=#a82424>Cleric Thomas</FONT> suspects that the <FONT color=#a82424>Cleric Rosary</FONT> discovered in <FONT color=#a82424>Frost Wind Valley</FONT> may belong to the culprits, and instructs me to investigate <FONT color=#a82424>Frost Wind Valley</FONT> once more with <FONT color=#a82424>Cleric Jake</FONT>.<BR>Head to <FONT color=#a82424>Frost Hill</FONT> and talk to <FONT color=#a82424>Cleric Jake</FONT>.<BR><BR><FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→ Cleric Jake</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Talk to Brother Jake at Frost Hill]]></destination>
+         <todo_msg mid="73"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_7.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>83,-589,-309</destination_pos>
+         <destination_mode>custom:81@1,82@1,83@1</destination_mode>
+         <statemark_npcid>158</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Investigate Frost Wind Valley]]></title>
+         <contents mid="76"><![CDATA[<html>Investigate <FONT color=#a82424>Frost Wind Valley</FONT> with <FONT color=#a82424>Cleric Jake</FONT>.<BR><BR><FONT color=#086171>Frost Hill (Frost Wind Valley Entrance)</FONT> <FONT color=#a82424>→ Frost Wind Valley</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[Investigate Frost Wind Valley]]></destination>
+         <todo_msg mid="78"><![CDATA[Investigate Frost Wind Valley.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>83,550,-96</destination_pos>
+         <destination_mode>custom:81@1,82@1,83@1</destination_mode>
+         <statemark_npcid>157</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Talk to Cleric Jake]]></title>
+         <contents mid="80"><![CDATA[<html>A <FONT color=#a82424>Red Mask</FONT> engraved with bizarre patterns was discovered during an investigation at <FONT color=#a82424>Frost Wind Valley</FONT>.<BR>Talk to <FONT color=#a82424>Cleric Jake</FONT>.<BR><BR><FONT color=#086171>Frost Hill (Frost Wind Valley Entrance)</FONT> <FONT color=#a82424>→ Frost Wind Valley (Cleric Jake)</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Cleric Jake]]></destination>
+         <todo_msg mid="82"><![CDATA[Talk to Cleric Jake.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Talk to Cleric Thomas]]></title>
+         <contents mid="84"><![CDATA[<html>The <FONT color=#a82424>Red Mask</FONT> from <FONT color=#a82424>Frost Wind Valley</FONT> belongs to the <FONT color=#a82424>Dragon Followers</FONT>. Return to Mana Ridge and hand it over to <FONT color=#a82424>Cleric Thomas</FONT>.<BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Cleric Thomas</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Talk to Cleric Thomas]]></destination>
+         <todo_msg mid="86"><![CDATA[Please return to Mana Ridge and hand the mask to Cleric Thomas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>121</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

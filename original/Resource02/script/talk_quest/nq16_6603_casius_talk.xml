@@ -1,0 +1,97 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq16_6603_casius_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6603</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Royal family]]></qkname>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-a" mid="7"><![CDATA[<html>About King of Knight Cassius</html>]]></talk_answer>
+      <talk_answer link_index="n040_king_casius-accepting-b" mid="8"><![CDATA[<html>What's your father like?</html>]]></talk_answer>
+      <talk_answer link_index="n040_king_casius-accepting-c" mid="9"><![CDATA[<html>What do you think of your uncle?</html>]]></talk_answer>
+      <talk_answer link_index="n040_king_casius-accepting-d" mid="10"><![CDATA[<html>What’s king founder like?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$King Cassius$<BR>My family was originally the relative of King Founder Feter. But my ancestor King Knight Cassius started a new dynasty, so there is no direct relations between my family and King Founder. Only my uncle and I remain as the royal family after my father' death.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$King Cassius$<BR>King of Knight Cassius is my most respect ancestor. My father was too weak to learn martial arts skills. But I wanna become a king who is good at martial arts skills like King of Knight.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$King Cassius$<BR>
+My father was very smart and kind. He is a great ruler and studied a lot. He was good at martial arts, too. So, he was regarded as the glorious King of Knight.<FONT color=#7e12d2> (Cassius looks ready to cry.)</FONT> I wanna be alone for a while. Leave me now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$King Cassius$<BR>
+He's my family. But sometimes he doesn't like my work. Mmm, it's not the right time to tell you about this. I'll tell you later.<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$King Cassius$<BR>
+I don't really know about King Founder Feter. It is said that he disapeared suddenly. According to legend, he had gone to the Legendary Isle Ireon where only great warriors can go.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6603, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 180 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 90 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 40, 180 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 40 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 왕실에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>40:1350:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

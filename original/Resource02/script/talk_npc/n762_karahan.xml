@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n762_karahan</npcename>
+      <npcid>762</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Sorcerer Karahan]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Sorcerer Karahan$<BR>Hey, I guess there isn't enough destiny between us~<BR>
+Child, do not be overly anxious.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq15_764_stray_hearts</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">764</chk>
+      </conditions>
+   </talk>

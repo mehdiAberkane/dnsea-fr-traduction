@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n471_charty</npcename>
+      <npcid>471</npcid>
+      <startexe>2</startexe>
+      <npckname mid="1"><![CDATA[Charty]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Charty$<BR>I don't see any special marks here…….</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq15_706_elders_amulet</exe>
+         <exe type="conexe" true="1" false="0">0</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">706</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,178 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_791_miracle_story</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>791</qid>
+      <designer>김인정</designer>
+      <qlevel>43</qlevel>
+      <qdesc>하로리의 미라클 스토리	300420
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Miracle Story]]></qkname>
+      <qnpc>
+         <npcid>723</npcid>
+         <npcename>n723_idol_harori</npcename>
+         <npckname>아이돌 하로리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-a" mid="6"><![CDATA[<html>Hello~</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Idol Harori$<BR>Today's <FONT color=#a94407>lovely cute</FONT><FONT color=#086171>☆</FONT><FONT color=#7e12d2>angelic</FONT><FONT color=#a82424>♥</FONT> Harori~<BR>Brave <FONT color=#387207>{user_nick}</FONT>, you came to see Harori? I'm so happy♬</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-b" mid="10"><![CDATA[<html>What is it?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Idol Harori$<BR>You'll come to see me when I'm in trouble wherever you're. How fancy <FONT color=#387206>{user_nick}</FONT>is♥<BR>
+Can I ask you a small thing?<BR>
+I'm worried a little.<FONT color=#7e12d3>☆</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-c" mid="12"><![CDATA[<html>So?</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Idol Harori$<BR>There's a popular book containing stories about Harori~  Most fans love to read it….<BR>But, <FONT color=#a82425>it is a fiction telling untrue stories about Harori</FONT>.<BR>
+]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-d" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Idol Harori$<BR>That is, the book isn't good for my image.<BR>
+<FONT color=#7e12d3>(Harori looks at me with tearful eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-d" image="QS_Default.dds" itemindex="300420">
+      <talk_answer link_index="n723_idol_harori-accepting-e" mid="14"><![CDATA[<html>(I saw the real shape of her)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Idol Harori$<BR>Please you get it back and fire…… <FONT color=#7e12d2>(Harori suddenly stops talking for a moment)</FONT><BR>Hehe? Didn't I say something horrible?<BR>Forget about it<FONT color=#a94408>♥</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-f" mid="43"><![CDATA[<html>What kind of book is that?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Idol Harori$<BR>I want to get it back and counsel with my lawyer<FONT color=#a94407>★</FONT>.<BR>My image is so important as an idol~ hehe<FONT color=#a94408>♥</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-f" image="QS_Default.dds" itemindex="300420">
+      <talk_answer link_index="n723_idol_harori-accepting-g" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Idol Harori$<BR>The name is <FONT color=#a82425>Harori's miracle story</FONT>☆.<BR>You can easily imagine that the book is about Harori.<BR>
+I'm not going to accept it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Harori's miracle story$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-1" image="QW_52.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Idol Harori${action:Talk}<BR>Go to <FONT color=#a82424>Ancient Library</FONT>and beat up wicked books.<BR>And get <FONT color=#a82425>Harori's miracle story</FONT>back to me!<BR>Go for it~ Harori's waiting.★</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2" image="QS_Default.dds" itemindex="300420">
+      <talk_answer link_index="n723_idol_harori-2-a" mid="24"><![CDATA[<html>Here you are.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Idol Harori$<BR>Did you get<FONT color=#a82425>Harori's miracle story</FONT>?<BR>I prayed with two hands together.★</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2-a" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-2-b" mid="26"><![CDATA[<html>(Harori smiles cutely)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Idol Harori$<BR>Wow~ you're amazing~<BR>Your strong and fast actions..☆<BR>Harori loves you.<FONT color=#a94408>♥</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2-b" image="" itemindex="">
+      <talk_answer link_index="n723_idol_harori-2-c" mid="28"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2-c" image="QS_Default.dds" itemindex="300420">
+      <talk_answer link_index="n723_idol_harori-2-d" mid="45"><![CDATA[<html>(Her hands' are trembling)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Idol Harori$<BR><FONT color=#7e12d3>(Harori's turning pages.)</FONT> Oh my God, this kind of story… huhuhu.<BR>
+It ruined my innocent image like this way….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n723_idol_harori-2-d" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Idol Harori${action:Talk}<BR>Who wrote this?♥♥♥ I'll pursue the writer to the ends of the earth and make him regret to live in the world.<BR><FONT color=#7e12d3>(She speaks scary things with a cute smile)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">791</exe>
+         <exe type="talk" npc="n723_idol_harori">1</exe>
+         <exe type="recompense_view">7910,,,,,</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1408</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201408</exe>
+         <exe type="addquestitem" num="1">300420</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,8,9">300420</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7910,,,,,</exe>
+         <exe type="delquestitem" num="-1">300420</exe>
+         <exe type="complete">791</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n723_idol_harori" sub="g">2</exelink>
+   <exelink qstep="accepting" npc="n723_idol_harori" sub="acceptted">0,1,3,4,6</exelink>
+   <exelink qstep="2" npc="n723_idol_harori" sub="b">0</exelink>
+   <exelink qstep="2" npc="n723_idol_harori" sub="c">1,2</exelink>
+   <exelink qstep="2" npc="n723_idol_harori" sub="d" />
+   <journal_data recompense="0:7910" quest_title="미라클 스토리" chapterid="" quest_level="43" quest_mark_type="10" use_item_list="300420">
+      <journal index="1">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>522,0,0</destination_pos>
+         <destination_mode>custom:521@1,522@3,523@1</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="36"><![CDATA[Some book]]></title>
+         <contents mid="37"><![CDATA[<html>Go to Ancient Library and beat up monsters and find Harori's miracle story.<BR>
+<BR><FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="38"><![CDATA[Ancient Library]]></destination>
+         <todo_msg mid="39"><![CDATA[Find Harori's miracle story in Ancient Library]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Idol_haloli.dds</contents_image>
+         <destination_pos>14,n723</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>723</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Deliver the book]]></title>
+         <contents mid="32"><![CDATA[<html>I just got Harori's miracle story. Deliver it to Idol Harori.<BR><BR><FONT color=#086171>Riverwart Wharf</FONT> <FONT color=#a82425>→ Idol Harori</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Talk with Idol Harori in Riverwart Wharf]]></destination>
+         <todo_msg mid="34"><![CDATA[Report Idol Harori in Riverwart Wharf]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>43:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>790</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,177 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_344_bind_and_seal</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>344</qid>
+      <designer>곽노찬</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Secrets of The Seals]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="6"><![CDATA[<html> Are there any information? </html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The {user_class} {user_nick}, You have came at the right time. I have some information which may be useful to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceptted" mid="10"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Secrets of The Seals$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="12"><![CDATA[<html>Item grades? No, I am not sure.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Do you know the grades of weapons and armor items?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>As far as I know, weapons, armor and food items are divided into 6 grades.<BR>They are Normal, <FONT color=#387206>Magic</FONT>, <FONT color=#086171>Rare</FONT>, <FONT color=#a82424>Epic</FONT>, <FONT color=#7e12d2>Unique</FONT>, <FONT color=#a94407>Heroic</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>[Normal] items are ordinary items with no magic power.<BR>[Magic] items have a weak ancient magic aura.<BR>{user_nick}, I believe you have been in contact with many of these items, right ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="21"><![CDATA[<html>Bind?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>[Rare] grade and above items are different from [Normal], [Magic] grade items. When these items are equipped, it will bind to the user.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-e" mid="31"><![CDATA[<html>Is there any way to unbind items?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Binding means that the owner of the item have magical phenomena interaction with it. The magical force will regard the owner as its own master. Once an item binds to its master, it cannot be on sale or given to anyone else.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The skills of empowering magical power into seal are created by the Ancients. But the ancient people did not create something out of thin air.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-f" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-g" mid="35"><![CDATA[<html> Monolith ...? What is it? </html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The skills of empowering magical power into seal is obtain from the Monolith, created from the spirit of Goddess Altea .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-g" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-h" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>There are a lot of mysteries behind the Monolith. We do not know whether or not it exists. If it does, where is it... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-h" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-i" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>According to Ancient writings, the Monolith is the origin of all the seal inscription. The Ancient gain the arcane patterns created by the Goddess herself. What we know as seals are copies of abstract patterns from the Monolith.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-i" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-j" mid="28"><![CDATA[<html>How can I get the Seal of Binding?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Some seals were designed to unbind items. We call these <FONT color=#a82424>Seal of Binding</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-j" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-k" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The Seal of Binding can only be obtained with special modus. Unfortunately, the creation technique has been lost since the ancient times of war.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-k" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-l" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>We can try searching for the Seal of Binding at the Cash Shop. Access the Cash Shop by going to the Village at press {F11].</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-l" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-m" mid="44"><![CDATA[<html>Is it?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Note that as the item grades get higher, the more Seal of Binding is required to seal them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-m" image="QS_Default.dds" itemindex="339738625">
+      <talk_answer link_index="n028_scholar_bailey-1-n" mid="46"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I have prepared a few Seal of Binding. These are gifts for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-n" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-o" mid="48"><![CDATA[<html><FONT color=#086171>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-o" image="QS_Default.dds" itemindex="339738625">
+      <talk_answer link_index="n028_scholar_bailey-1-p" mid="63"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>These are not normal Seal of Binding. These are a bit worn out, and can only seal items with lower grade items (Lv. 16 or lower items.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-p" image="QS_Default.dds" itemindex="339738625">
+      <talk_question mid="49"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>These lower grade Seal of Binding can only be used on one item.<BR>I hope these are useful to you. Goodbye...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">3440,,,,,</exe>
+         <exe type="setquest">344</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3440,,,,,</exe>
+         <exe type="complete">344</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="h" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="i" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="j" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="k" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="l" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="m" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="n">0</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="o">1</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="p" />
+   <journal_data recompense="3440" quest_title="귀속과 봉인" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Secrets of The Seals]]></title>
+         <contents mid="55"><![CDATA[<html>Heraldry Scholar Bailey has some information for you.<BR>Talk to Heraldry Scholar Bailey.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="57"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>297</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

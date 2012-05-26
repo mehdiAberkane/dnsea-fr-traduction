@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n152_koboldwarrior_quest</npcename>
+      <npcid>152</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Kobold [Tale of Courage]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Worshiper Kobold$<BR><FONT color=#7e12d2>[Kobold is lying on the ground, panting hard.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

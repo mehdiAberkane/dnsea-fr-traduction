@@ -1,0 +1,176 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_360_dynamic_paint</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>360</qid>
+      <designer>김주연</designer>
+      <qlevel>14</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[A Vibrant Picture]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>W-what?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR>I finally figured it out!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>It's lacking so much, I don't know what it could be.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant May$<BR>My painting's missing one thing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="10"><![CDATA[<html>Dynamics?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant May$<BR>Fill the missing element and we can send it in to the royal castle.<BR><FONT color=#7e12d2>(May doesn’t seem to hear what I said)</FONT><BR>What my painting lacked was dynamics!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Merchant May$<BR>Not long ago, I chanced upon this winning piece of work, <FONT color=#a82424>A Breathtaking Moment</FONT>. An <FONT color=#a82424>adventurer's back</FONT> was drawn with a captured Minotaur, I was so impressed. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="14"><![CDATA[<html>Who's that adventurer?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merchant May$<BR>I want to draw something like that too! Hence, I plan to draw an adventurer's back fighting a Manticore!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-f" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Merchant May$<BR>(May looks at me with moist eyes)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-g" mid="18"><![CDATA[<html>It's annoying when you add the word "slave" behind the lifetime employee.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant May$<BR>Be my slav-, no I mean lifetime employee, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Merchant May$<BR>Please go to Sleepers' Temple and fight the {monster:413}.<BR>I think I'll paint from a distance to protect my safety.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="23"><![CDATA[<html>Huh? Why ruined?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant May$<BR>Ah, it's ruined.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="QM_minotauros_Bison.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="25"><![CDATA[<html>You drew at least a little right?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant May$<BR>The Minotaur was so scary I kept retreating away. I ended up being too far away and couldn't paint <FONT color=#a82424>you</FONT> and <FONT color=#a82424>{monster:413}</FONT> well, {user_nick}.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="27"><![CDATA[<html>What's this?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Merchant May$<BR>(May showed me a drawing of two dots)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="29"><![CDATA[<html>Umm… Not bad.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Merchant May$<BR>This is <FONT color=#a82424>{monster:413}</FONT> and that's <FONT color=#a82424>you</FONT>, {user_nick}.<BR><FONT color=#7e12d2>(May points at two identical dots)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-e" mid="31"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-e" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Merchant May$<BR>Your lip service's not helping here.<BR>Sigh, I've got to think how to do this thing.<BR><FONT color=#7e12d2>(I better leave before May comes up with more ideas)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment>413</comment>
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3601,3602,3603,3604,3605</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,360, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="7,8,9">413</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200413</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 413);</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3601,3602,3603,3604,3605</exe>
+         <exe type="complete">360</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 26, 200 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2,4,5,3,10</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d">0</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="e">1,2</exelink>
+   <journal_data recompense="1:3601,2:3602,3:3603,4:3604,5:3605" quest_title="역동적인 그림" chapterid="" quest_level="14" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QM_minotauros_Bison.dds</contents_image>
+         <destination_pos>129,0,0</destination_pos>
+         <destination_mode>custom:126@1,127@1,128@1,129@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Sleepers' Temple]]></title>
+         <contents mid="34"><![CDATA[<html>Eliminate {monster:413} at <FONT color=#a82424>Sleepers' Temple</FONT> while Merchant May paints.<BR><BR><FONT color=#086171>Lower Ridge (Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Sleepers' Temple</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Sleepers' Temple]]></destination>
+         <todo_msg mid="36"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="38"><![CDATA[<html>Make sure Calderock Village's Merchant May has painted her artwork.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="40"><![CDATA[Please talk to Calderock Village's Merchant May.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>14:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>359</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

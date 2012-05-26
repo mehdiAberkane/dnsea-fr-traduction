@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n187_slave_david</npcename>
+      <npcid>187</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Adventurer David]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Adventurer David$<BR>When this body is filled with rage, the skies above shall cry and the earth shall tremble! Such is the awesome <FONT color=#a82424>hidden strength</FONT> of  the<FONT color=#a82424>Adventurer David</FONT>! Heh heh!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq08_263_argenta_trap2</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">263</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,163 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_321_sign_of_death1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>321</qid>
+      <designer>곽노찬</designer>
+      <qlevel>20</qlevel>
+      <qdesc>400121 홉고블린의 피</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Aura of Death I]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>The spreading of contamination is getting out of hand. We will need to find a way to stop it<BR><FONT color=#7e12d2>(Quests are available from Jermain)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="7"><![CDATA[<html>Yes, Tiana is also researching on this.</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Cleric Jermain$<BR>Elena spread these contaminants and we need to find ways to remove it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Cleric Jermain$<BR>I'm surprise that Sorceress are interested in this.<BR>If I had known sooner, I would have asked for help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Cleric Jermain$<BR>This is an emergency for Calderock Village so we must all join forces. I have been working with <FONT color=#a82424>Heraldry Scholar Bailey</FONT>to find a way stop the contaminant.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="QS_Default.dds" itemindex="400121">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="13"><![CDATA[<html> Alright.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Cleric Jermain$<BR>We have some progress from the experiments carried out earlier on the gathered materials. Can you go to the <FONT color=#a82424>Road of No Return</FONT> and bring me back 1 bottle of <FONT color=#a82424>Hobgoblin Blood</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Aura of Death I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="QM_HopGoblinGreen.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$JMaster Cleric Jermain$<BR>Time is short. Please go to the <FONT color=#a82424>Road of No Return</FONT> and defeat <FONT color=#a82424>Hobgoblin</FONT> to collect Hobgoblin Blood. Deliver to Heraldry Scholar Bailey once you have completed..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QS_Default.dds" itemindex="400121">
+      <talk_question mid="17"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Jermain has told me that you will be helping out with the research. The first required item is the <FONT color=#a82424>Hobgoblin Blood</FONT> from Hobgoblins at Road of No Return. Please do not come back until you have it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Master Cleric Jermain$<BR>Please deliver Hobgoblin's Blood to <FONT color=#a82424>Heraldry Scholar Bailey</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QS_Default.dds" itemindex="400121">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="21"><![CDATA[<html>(Gives the Hobgoblin Blood)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>You have collected the <FONT color=#a82424>Hobgoblin Blood</FONT>.<BR>Thank you once again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="23"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="QS_Default.dds" itemindex="400121">
+      <talk_question mid="24"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>We will need sometime to analyse the <FONT color=#a82424>Hobgoblin Blood</FONT>.Please wait a while.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3211,3212,3213,3214,3215</exe>
+         <exe type="setquest">321</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">615</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,5,6">400121</exe>
+         <exe type="addquestitem" num="1">400121</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200615</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3211,3212,3213,3214,3215</exe>
+         <exe type="complete">321</exe>
+         <exe type="delquestitem" num="-1">400121</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">1,2,9,3,8</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="a">0</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b">1,2</exelink>
+   <journal_data recompense="1:3211,2:3212,3:3213,4:3214,5:3215" quest_title="죽음의 기운Ⅰ" chapterid="" quest_level="20" quest_mark_type="10" use_item_list="400121">
+      <journal index="1">
+         <contents_image>QW_23.dds</contents_image>
+         <destination_pos>174,0,0</destination_pos>
+         <destination_mode>custom:171@3,172@3,173@3,174@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Collect Hobgoblin Blood]]></title>
+         <contents mid="26"><![CDATA[<html>Hunt Fort Hobgoblin to obtain Hobgoblin Blood at <FONT color=#a82424>Road of No Return</FONT>.<BR><BR><FONT color=#086171>Cristal Stream (Sigh Canyon Entrance)</FONT> <FONT color=#a82424>→ Road of No Return</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Collect Hobgoblin Blood]]></destination>
+         <todo_msg mid="28"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Talk to Heraldry Scholar Bailey]]></title>
+         <contents mid="30"><![CDATA[<html>You have obtained the Hobgoblin Blood. Deliver it to Heraldry Scholar Bailey.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="32"><![CDATA[You have obtained the Hobgoblin Blood. Please visit Heraldry Scholar Bailey.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>215,234</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

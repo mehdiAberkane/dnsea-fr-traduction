@@ -1,0 +1,247 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_311_strange_score</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>311</qid>
+      <designer>곽노찬</designer>
+      <qlevel>9</qlevel>
+      <qdesc>400118 이상한 악보
+400119 또 다른 이상한 악보</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Strange Music]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>A lot of people are suffering lately in Calderock Village because of <FONT color=#a82424>May's</font> music.<BR>We must do something to stop her from playing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>Well, I think everyone has a different talent. Maybe...</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR>(May begins to play a bizzare melody.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>The name feels kind of…oh well, let's not comment on it.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>Shut up!<BR>There is nothing wrong here. <FONT color=#a82424>BeethovenSchubertChopinMaybelleAmadeusTchaikovsky's Symphony</font> cannot be that bad...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>I don't think the problem lies with the music</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant May$<BR>Huh? There is something wrong with the Music Sheet. What is this mess here? No wonder the music sounds terrible. This is all your fault <FONT color=#382000>{user_nick}</font. You did not bring me the correct Music Sheet!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-d" mid="13"><![CDATA[<html>I don't know. Talent is a matter of perception.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant May$<BR>Oh? Are you questioning my musicial genius and talent?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-e" mid="15"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Strange Music$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-e" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="20"><![CDATA[<html>Alright. Let's see what he says.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Merchant May$<BR>So you want to find out who is right?<BR>In this village, <FONT color=#a82424>Heraldry Scholar Bailey</font> is the scholar around here so he is suppose to be real smart.<BR>Why not let check if the music is correct or not?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Merchant May$<BR>Okay. Let <FONT color=#a82424>Heraldry Scholar Bailey</font> verify the Music Sheet. I'm certain I'll be right.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="23"><![CDATA[<html>Hello, Heraldry Scholar Bailey?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>… … … ...<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey did not see you approaching.)</font> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="25"><![CDATA[<html>(Give Heraldry Scholar Bailey a tap on his shoulder.)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>… … … ...<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey is still engross in reading his book.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="27"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Hmmm? Ah,  <FONT color=#382000>{user_nick}</font>.<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey pulls out his ear plugs.)</font><BR>What can I do for you?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="29"><![CDATA[<html>Yes, please take a look at this music.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>So…May has been trying to play the Dark Elves music. Do you think that once I have verify the Music Sheet, she will stop the <FONT color=#a82424>horrible sound</font>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="32"><![CDATA[<html>What's the problem?</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Heraldry Scholar Bailey$<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey shifts his glasses and study the Music Sheet)</font><BR>Uhhh…There seems to be a problem.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-b" mid="34"><![CDATA[<html>What is the second problem?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>There are actually two problems. First of all, this isn't a Music Sheet. It is a <FONT color=#a82424>Dark Elves</font> cryptic message which is used to convey information. It seems like they are plotting something.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-c" mid="36"><![CDATA[<html>Argh…then…what should I do?</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Heraldry Scholar Bailey$<BR><FONT color=#7e12d2>(Heraldry Scholar Bailey moves his glasses to his forehead and frown.)</font> May was right that the Music Sheet was abnormal. As she is just a musician, what this turns out to be is beyond her imagination. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-d" mid="38"><![CDATA[<html>I think this is a little exaggerated...</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>We need to protect Calderock Village from this horrible sounds. This could be a conspiracy by the Dark Elves to sacrifice May in order to cause Noise Pollution to destroy the village.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-e" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Heraldry Scholar Bailey$<BR><FONT color=#382000>{user_nick}</font>, </html>can you image what you will hear? The cries of hell and much worse. <BR>Now that you know what this music brings.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3" mid="43"><![CDATA[<html>Now…they…us...</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>We must keep this score a secret from May. I will go to Deckard and tell him that we found a Dark Elf cryptic mesSage.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="QS_Default.dds" itemindex="400119">
+      <talk_question mid="44"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>This Music Sheet alone is not enough to determine the exact plot. You will need to go the <FONT color=#a82424>Raider's Den</font> and find <FONT color=#a82424>Dark Elf Assassin Lydia</font>. She has the remaining part of the message. Please retrieve another strange music sheet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Merchant May$<BR>I cannot believe there is nothing wrong with the Music Sheet.<BR>Hmm Hmm…Well I guess singing is my talent... Do Re Mi FAAAA!!<BR><FONT color=#7e12d2>(Come on let's go.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4" image="QS_Default.dds" itemindex="400119">
+      <talk_answer link_index="n028_scholar_bailey-4-a" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>You have got the Music Sheet. It will take a moment to decipher the message. I will give you a call when it is completed. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-4-b" mid="50"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-4-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Anyway, May's passion for singing is firing up.<BR>Calderock crisis still continues…. <BR><FONT color=#7e12d2>(Heraldry Scholar Bailey puts on his earplugs again.)</font></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3111,3112,3113,3114,3115</exe>
+         <exe type="setquest">311</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+         <exe type="addquestitem" num="1">400118</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="delquestitem" num="-1">400118</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">350</exe>
+         <exe type="huntitem" num="1" exe="5,6,7" onexe="">400119</exe>
+         <exe type="addquestitem" num="1">400119</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">200350</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">311</exe>
+         <exe type="recompense">,3111,3112,3113,3114,3115</exe>
+         <exe type="delquestitem" num="-1">400119</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="e">1,3</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="2" npc="n028_scholar_bailey" sub="3">0,1,2,8,3</exelink>
+   <exelink qstep="4" npc="n028_scholar_bailey" sub="a">1</exelink>
+   <exelink qstep="4" npc="n028_scholar_bailey" sub="b">0,2</exelink>
+   <journal_data recompense="1:3111,2:3112,3:3113,4:3114,5:3115" quest_title="이상한 악보" chapterid="" quest_level="9" quest_mark_type="10" use_item_list="400118,400119">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Talk to Heraldry Scholar Bailey]]></title>
+         <contents mid="56"><![CDATA[<html>May wants Heraldry Scholar Bailey to check the Music Sheet is correct. Talk to Heraldry Scholar Bailey. <BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="58"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QM_DarkelfGray.dds</contents_image>
+         <destination_pos>114,0,0</destination_pos>
+         <destination_mode>custom:111@1,112@1,113@1,114@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[Another Strange Music Sheet]]></title>
+         <contents mid="60"><![CDATA[<html>Defeat Dark Elf Assassin Lydia at Raider's Den and collect Another Strange Music Sheet. <BR><BR><FONT color=#086171>Cristal Stream (Raider's Den Entrance) </FONT><FONT color=#a82424>→ Raider's Den</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Another strange Music Sheet]]></destination>
+         <todo_msg mid="62"><![CDATA[Another strange Music Sheet]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Deliver the Music Sheet to Heraldry Scholar Bailey]]></title>
+         <contents mid="65"><![CDATA[<html>Deliver the Sheet Music to Heraldry Scholar Bailey.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Deliver the Music Sheet to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="67"><![CDATA[Music Sheet obtained. Return to Heraldry Scholar Bailey.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>9:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>310</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

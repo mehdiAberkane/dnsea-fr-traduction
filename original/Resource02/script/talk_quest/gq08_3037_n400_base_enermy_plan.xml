@@ -1,0 +1,156 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq08_3037_n400_base_enermy_plan</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3037</qid>
+      <designer>나은하</designer>
+      <qlevel>10</qlevel>
+      <qdesc>400164 특등급 갈비살</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Mission] Awful Situation]]></qkname>
+      <qnpc>
+         <npcid>400</npcid>
+         <npcename>n400_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Recently, I met a woman to discuss some business. Despite it being the first time that I met her, the first thing she told me was "I'm HUNGRY! Get me some Premium Hound Ribs." Isn't that just awful of her?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-a" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-b" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You know what's more awful? She had an awfully beautiful face, which surprised me awfully. The situation was so awful that I'm feeling darn awful now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-b" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-c" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>At this point of time, we got monsters to fight! I received a report about orcs mobilizing in the Cristal Stream. Some critical situation we are in!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-c" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-d" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Now adventurer, go to Orc Base Camp and defeat Cleave Dregark, their commander. Get me their Attack Plan!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-d" image="GQ_item.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-e" mid="35"><![CDATA[<html>Collect 3 chunks of Premium Hound Ribs</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Ermm... Change of plan - we'll take care of the map. You'll get some Premium Hound Ribs for the awfully beautiful woman. Get 3 good chunks of that stuff, yeah?<BR><FONT color=#7e12d2> Client: Guild Master Deckard</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n400_guild_board-accepting-f" mid="12"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-accepting-f" image="GQ_item.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$[Mission] Awful Situation$<BR> You accepted a Mission.<BR>Defeat <FONT color=#a82424>Bulldogs</FONT> in <FONT color=#a82424>the Orc Base Camp</FONT> and bring back <FONT color=#a82424>3 chunks of Premium Hound Ribs.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-1" image="GQ_item.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html><FONT color=#2b2723>$Adventurer's Guild Commission Board$<BR>You are currently doing </FONT><FONT color=#a82424>[Mission] Awful Situation</FONT><FONT color=#2b2723>.<BR><BR></FONT><FONT color=#7e12d2>(Only one Mission can be undertaken from a Mission Board at a time.)</FONT></html></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-2" image="GQ_item_end.dds" itemindex="">
+      <talk_answer link_index="n400_guild_board-2-a" mid="18"><![CDATA[<html>[Mission]<FONT color=#086171>Awful Situation</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Adventurers who have completed the Mission, please stamp the Mission posting below to receive your reward.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n400_guild_board-2-b" mid="20"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n400_guild_board-2-b" image="GQ_item_end.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html><FONT color=#2b2723>$Adventurer's Guild Commission Board$<BR>You completed an Adventurer's Mission.<BR><BR></FONT><FONT color=#a82424>[Adventurer's Guild Commission Board]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">30370,,,,,</exe>
+         <exe type="setquest">3037</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">329</exe>
+         <exe type="huntitem" num="3" exe="5,6,7" onexe="">400164</exe>
+         <exe type="addquestitem" num="1">400164</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200329</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 329);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">30370,,,,,</exe>
+         <exe type="delquestitem" num="-1">400165</exe>
+         <exe type="complete">3037</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n400_guild_board" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n400_guild_board" sub="f">1,2,8,3</exelink>
+   <exelink qstep="2" npc="n400_guild_board" sub="a">0</exelink>
+   <exelink qstep="2" npc="n400_guild_board" sub="b">1,2</exelink>
+   <journal_data recompense="30370" quest_title="[길드의뢰] 기막힌 사연" chapterid="" quest_level="10" quest_mark_type="19" use_item_list="400164">
+      <journal index="1">
+         <contents_image>QW_12.dds</contents_image>
+         <destination_pos>107,0,0</destination_pos>
+         <destination_mode>custom:106@3,107@0</destination_mode>
+         <statemark_npcid>400</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="23"><![CDATA[Hunt Bulldogs at the Orc Base Camp]]></title>
+         <contents mid="24"><![CDATA[<html>Hunt Bulldogs and obtain 3 chunks of Premium Hound Ribs from the Orc Base Camp.<BR><BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Orc Base Camp.</FONT><BR></html>]]></contents>
+         <destination mid="25"><![CDATA[[Collect] Orc Base Camp]]></destination>
+         <todo_msg mid="26"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_guild_board.dds</contents_image>
+         <destination_pos>7,n400</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>400</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="27"><![CDATA[Report Mission completion to the Adventurer's Guild Commission Board]]></title>
+         <contents mid="28"><![CDATA[<html>Report to the Adventurer's Guild Commission Board at Secret Path in Blizzard Plain.<BR><BR><FONT color=#086171>Blizzard Plain </FONT><FONT color=#a82424>→ Adventurer's Guild Commission Board</FONT></html>]]></contents>
+         <destination mid="29"><![CDATA[Report to the Adventurer's Guild Commission Board]]></destination>
+         <todo_msg mid="30"><![CDATA[An Adventurer's Mission has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>10:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3035</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

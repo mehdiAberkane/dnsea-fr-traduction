@@ -1,0 +1,172 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_305_frugal_hubert1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>305</qid>
+      <designer>김인정</designer>
+      <qlevel>19</qlevel>
+      <qdesc>휴버트와 대화
+페어리스타 마법연구소에서 빈 책장만 부숴, 아이템 습득.
+아이템을 전달하면 완료.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>306</nextqid>
+      <nextqname>sq08_306_frugal_hubert2</nextqname>
+      <nextqnpc>n099_engineer_hubert</nextqnpc>
+      <qkname mid="1"><![CDATA[Frugal Hubert I]]></qkname>
+      <qnpc>
+         <npcid>99</npcid>
+         <npcename>n099_engineer_hubert</npcename>
+         <npckname>비행선 엔지니어 휴버트</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-a" mid="6"><![CDATA[<html>Oh, I see.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Airship Engineer Hubert$<BR>In order for the <FONT color=#a82424>airship</FONT> to lift up smoothly from the ground , i must research many different things. There is nothing easy in this world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-b" mid="8"><![CDATA[<html>I see... </html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Airship Engineer Hubert$<BR>Just like a <FONT color=#a82424>Ghoul</FONT> getting up from the ground! Just like a <FONT color=#a82424>tarantula</FONT> that spits out spider web! I am still studying to make an airship that smoothly takes off like those things.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-classc" mid="11"><![CDATA[<html>What can I do?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Airship Engineer Hubert$<BR>Well anyway, I am currently studying about the fuel. I want to test out a high quality <FONT color=#a82424>wood fuel</FONT>. Do you think you can help out?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-c" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-e" mid="13"><![CDATA[<html>No, not the bookshelf!</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Airship Engineer Hubert$<BR>I'm sure you know about <FONT color=#a82424>Dark Tower Magic Institute</FONT>, right? A long time ago, this place used to be a sacred place for the Sorceress, but now it is in ruins because the monsters have taken over it. So now the bookshelf that used to be filled with Vision Magic books, is now just a nuisance.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-d" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-e" mid="15"><![CDATA[<html>The Sorceresses would become angry if they found out...</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Airship Engineer Hubert$<BR>I'm sure you know about <FONT color=#a82424>Dark Tower Magic Institute</FONT>, right? A long time ago, this place used to be a sacred place for the Sorceress, but now it is in ruins because the monsters have taken over it. So now the bookshelf that used to be filled with Vision Magic books, is now just a nuisance.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-f" mid="17"><![CDATA[<html>If it's an empty bookshelf... It should be fine.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Airship Engineer Hubert$<BR>Well, the bookshelves were made from high quality hardwood, so wouldn't it be such a waste to leave it abandoned in a frozen place? I'm sure it would be find to use an <FONT color=#a82424>Empty Bookshelf</FONT>... That would be fine, wouldn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-f" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-g" mid="19"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Airship Engineer Hubert$<BR>We're speaking the same language! Alright then, go to the <FONT color=#a82424>Dark Tower Magic Institute</FONT> and break an <FONT color=#a82424>Empty Bookshelf</FONT> for some fuel firewood.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-accepting-acceptted" mid="21"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Frugal Hubert I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Airship Engineer Hubert$<BR>All you have to do is break an <FONT color=#a82424>Empty Bookshelf</FONT>. Well, I'm not really a cruel person afterall.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2" image="QS_Default.dds" itemindex="300241">
+      <talk_answer link_index="n099_engineer_hubert-2-a" mid="25"><![CDATA[<html>Here it is.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Airship Engineer Hubert$<BR>Did you bring it? Did you bring the <FONT color=#a82424>Fuel Firewood</FONT>?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-a" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-b" mid="27"><![CDATA[<html>(Airship Engineer Hubert looks really happy.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Airship Engineer Hubert$<BR>I knew it! The wood is very solid and of high quality as I have expected!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-b" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-c" mid="29"><![CDATA[<html>(Receive Reward)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n099_engineer_hubert-2-c" image="" itemindex="">
+      <talk_answer link_index="n099_engineer_hubert-2-!next" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Airship Engineer Hubert$<BR>Hmm... But this can't be enough. And I guess I can't break a bookshelf filled with books... Oh yes! I got a great idea.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">3</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n099_engineer_hubert">c</exe>
+         <exe type="talk" npc="n099_engineer_hubert">d</exe>
+         <exe type="recompense_view">,3051,3052,3053,3054,3055</exe>
+         <exe type="setquest">305</exe>
+         <exe type="talk" npc="n099_engineer_hubert">1</exe>
+         <exe type="huntitem" num="5" exe="9,7,8" onexe="">300241</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300241</exe>
+         <exe type="recompense">,3051,3052,3053,3054,3055</exe>
+         <exe type="complete">305</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="classc">0</exelink>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="g">3</exelink>
+   <exelink qstep="accepting" npc="n099_engineer_hubert" sub="acceptted">4,5,6</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="b">1</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="c">0,2</exelink>
+   <exelink qstep="2" npc="n099_engineer_hubert" sub="!next" />
+   <journal_data recompense="1:3051,2:3052,3:3053,4:3054,5:3055" quest_title="알뜰한 휴버트 I" chapterid="" quest_level="19" quest_mark_type="10" use_item_list="300241">
+      <journal index="1">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>153,0,0</destination_pos>
+         <destination_mode>custom:151@1,152@4,153@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[How to Utilize a Bookshelf]]></title>
+         <contents mid="34"><![CDATA[<html><FONT color=#a82424>Airship Engineer Hubert</FONT> is thinking about studying about how to use wood as fuel. At <FONT color=#a82424>Dark Tower Magic Institute</FONT>, break the <FONT color=#a82424>Empty Bookshelf</FONT>, and then collect the Fuel Firewood.<BR><BR><FONT color=#086171>Cristal Stream → Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Dark Tower Magic Institute</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Destroying an Empty Bookshelf at the Dark Tower Magic Institute]]></destination>
+         <todo_msg mid="36"><![CDATA[Break the Empty Bookshelf at the Dark Tower Magic Institute, and then obtain the Fuel Firewood.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_NPC_Engineer_Hubert.dds</contents_image>
+         <destination_pos>8,n99</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>99</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Dark Tower's Empty Bookshelf]]></title>
+         <contents mid="38"><![CDATA[<html>Deliver the Fuel Firewood you have obtained to <FONT color=#a82424>Airship Engineer</FONT> <FONT color=#a82424>Hubert</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Airship Engineer Hubert</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Airship Engineer Hubert]]></destination>
+         <todo_msg mid="40"><![CDATA[Deliver the Fuel Firewood you have collected to Airship Engineer Hubert.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>19:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

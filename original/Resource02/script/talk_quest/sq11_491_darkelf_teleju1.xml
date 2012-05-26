@@ -1,0 +1,299 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_491_darkelf_teleju1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>491</qid>
+      <designer>김주연</designer>
+      <qlevel>36</qlevel>
+      <qdesc>엔틱 자수 손수건	300256
+오우거의 흰 어금니	300257
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>492</nextqid>
+      <nextqname>sq11_492_darkelf_teleju2</nextqname>
+      <nextqnpc>n281_darkelf_teleju</nextqnpc>
+      <qkname mid="1"><![CDATA[Dark Elf Teleju I]]></qkname>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-noquest" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Merchant Kelly<BR>If you want anything, please let me know.<BR><FONT color=#7e12d2>(You can start a quest from Dark Elf Teleju in Hermalte Port)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-a" mid="7"><![CDATA[<html>(She seems really happy)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Dark Elf Teleju$<BR>Hi~ You came to see me again.<BR>Good to see you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-b" mid="9"><![CDATA[<html>(Shows me the magazine with a sad face)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Dark Elf Teleju$<BR>By the way… I want this hot item.<BR>However, I can't go in to the village of human so I don't know what to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-c" mid="11"><![CDATA[<html>Do you want this handkerchief?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$A page of Oh! Goddess$<BR><FONT color=#2b2723>Must have item for a lovely street girl! Gorgeous antique laces with vivid color rose stitches!</FONT><BR><FONT color=#7e12d2>(There are too many words of I can't understand...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-d" mid="13"><![CDATA[<html>Should I get you one?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Dark Elf Teleju$<BR>Yes! I want this antique handkerchief.<BR>I'll be happy if I could just see it. Can you think of any way?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Dark Elf Teleju I$ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-a" mid="17"><![CDATA[<html>(Shows me the magazine with a sad face)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Dark Elf Teleju$<BR>By the way… I want this hot item.<BR>However, I can't go in to the village of human so I don't know what to do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-b" mid="19"><![CDATA[<html>Do you want this handkerchief?</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$A page of Oh! Goddess$<BR><FONT color=#2b2723>Must have item for a lovely street girl! Gorgeous antique laces with vivid color rose stitches!</FONT><BR><FONT color=#7e12d2>(There are too many words of I can't understand...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2" mid="21"><![CDATA[<html>Should I get you one?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Dark Elf Teleju$<BR>Yes! I want this antique handkerchief.<BR>I'll be happy if I could just see it. Can you think of any way?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Merchant Kelly$<BR>If you need anything. Please let me know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2" image="QN_Sonya.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Dark Elf Teleju$<BR>Really? I'm so happy!<BR>I heard you can get it from merchants from <FONT color=#a82424>Saint Haven</FONT>~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2" image="" itemindex="300256">
+      <talk_answer link_index="n092_trader_kelly-2-a" mid="27"><![CDATA[<html>Is it that hard to find?</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Merchant Kelly${action:talk}<BR>Hmm… <FONT color=#a82424>Antique Embroidered Handkerchief</FONT>?<BR>That's really hard to find. I will get it if I can….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2-b" mid="29"><![CDATA[<html>Is there a any way?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Merchant Kelly$<BR>Yes, the grass for dyeing is the problem. The grass from <FONT color=#a82424>Lonely Forest Track</FONT> were used, but we can't get it anymore since that place got deserted.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2-c" mid="31"><![CDATA[<html>I want to buy that handkerchief</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Merchant Kelly$<BR>I don't know. I saw someone put it on the market… but I don't think it will be easy to buy. If you really want that <FONT color=#a82424>handkerchief</FONT>, I will have to go and negotiate with the person who has it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-c" image="QW_41.dds" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2-d" mid="33"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Merchant Kelly$<BR>Hmm... If you really want it….I need some time and also need some deposit.<BR>Get me 2 Cyclope's teeth from <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-d" image="" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Merchant Kelly$<BR>Well, get me those and I'll take care of the handkerchief meanwhile.<BR><FONT color=#7e12d2>(Kelly is getting ready to fight with someone)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-3" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Merchant Kelly$<BR>You can take time. I'm not in the hurry. Haha. Everything will be fine if you get me 2 <BR><FONT color=#a82424>Cyclope's tooth</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3" image="" itemindex="300256">
+      <talk_question mid="37"><![CDATA[<html>$Dark Elf Teleju$<BR>I want to have a look at <FONT color=#a82424>Antique Embroidered Handkerchief</FONT>… <BR> I don't want to get stay behind on trend.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-a" mid="39"><![CDATA[<html>Will that be enough for him?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Merchant Kelly${action:talk}<BR>I've got the handkerchief. I took it from the owner that was selling to a noble lady. Haha<BR>I'll make him a brooch with <FONT color=#a82424>Cyclope's tooth</FONT> instead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-4-b" mid="41"><![CDATA[<html>(Kelly gives me the handkerchief with confidence)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Merchant Kelly$<BR>Yes ! Don't worry I'll fight him again if he refuses.<BR>Haha. Just take it before he comes to get it back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-4-b" image="" itemindex="300256">
+      <talk_question mid="42"><![CDATA[<html>$Merchant Kelly$<BR>Please take care. It's really hard to get.<BR>Do you get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5" image="" itemindex="300256">
+      <talk_answer link_index="n281_darkelf_teleju-5-a" mid="44"><![CDATA[<html>(Give her what I brought)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Dark Elf Teleju$<BR>What do you have in your hand?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5-a" image="" itemindex="300256">
+      <talk_answer link_index="n281_darkelf_teleju-5-b" mid="46"><![CDATA[<html>(Teleju is happy)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Dark Elf Teleju$<BR>Wow~ You did really bring it! I'm so happy right now!!!!<BR><FONT color=#a82424>Antique Embroidered Handkerchief</FONT>… It's exactly same as on the magazine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-5-c" mid="48"><![CDATA[<html>(Teleju looks at it with bright eyes)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Dark Elf Teleju$<BR>This is the must have item for lovely street girl. Amazing~<BR>I;m starting to like you. Thank you very much!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-5-d" mid="50"><![CDATA[<html>You don't have to die, do you….….?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Dark Elf Teleju$<BR>I'm such a happy Dark Elf.<BR>I'm so happy I can die right now! Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-5-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-5-!next" mid="52"><![CDATA[<html><FONT color=#2b2723><FONT color=#086171>(Receive Reward)</FONT> </FONT></html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-5" image="" itemindex="300256">
+      <talk_question mid="53"><![CDATA[<html>$Merchant Kelly$<BR>Take lot of care. This is really hard to get.<BR>Do you get it?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4911,4912,4913,4914,4915</exe>
+         <exe type="setquest">491</exe>
+         <exe type="talk" npc="n281_darkelf_teleju">2</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="2" op="]=">300257</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30001" party="1" exe="" onexe="4">1081</exe>
+         <exe type="huntitem" num="2" exe="" onexe="">300257</exe>
+         <exe type="conexe" true="6,7,8" false="5,9">0</exe>
+         <exe type="addquestitem" num="1">300257</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="conexe" true="6,7,8" false="">0</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201081</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="addquestitem" num="1">300256</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4911,4912,4913,4914,4915</exe>
+         <exe type="complete">491</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="2" npc="n092_trader_kelly" sub="c" />
+   <exelink qstep="2" npc="n092_trader_kelly" sub="d">0,2,10,3,1</exelink>
+   <exelink qstep="4" npc="n092_trader_kelly" sub="b">0,1,2</exelink>
+   <exelink qstep="5" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="5" npc="n281_darkelf_teleju" sub="c" />
+   <exelink qstep="5" npc="n281_darkelf_teleju" sub="d">0</exelink>
+   <exelink qstep="5" npc="n281_darkelf_teleju" sub="!next">1</exelink>
+   <journal_data recompense="1:4911,2:4912,3:4913,4:4914,5:4915" quest_title="다크엘프 텔레주Ⅰ" chapterid="" quest_level="36" quest_mark_type="10" use_item_list="300256,300257">
+      <journal index="1">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Conversation with Dark Elf Teleju]]></title>
+         <contents mid="55"><![CDATA[<html>Teleju wants to have must have item from 50 years ago. Talk to her.<BR><FONT color=#a82424></FONT><BR><FONT color=#086171>Hermalte Port </FONT><FONT color=#a82424>→ Dark Elf Teleju</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Conversation with Dark Elf Teleju]]></destination>
+         <todo_msg mid="57"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Conversation with Merchant Kelly]]></title>
+         <contents mid="59"><![CDATA[<html>Teleju wants you to get <FONT color=#a82424>Antique Embroidered Handkerchief</FONT> that was on the Oh! Goddess. Go to <FONT color=#a82424>Merchant Kelly</FONT> in Saint Haven and ask if she can get it.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly<BR></FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Conversation with Merchant Kelly]]></destination>
+         <todo_msg mid="61"><![CDATA[Go to Kelly and ask if she has the antique embroidered handkerchief]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Collect 2 Cyclope's tooth]]></title>
+         <contents mid="63"><![CDATA[<html>While Merchant Kelly is gone to find the handkerchief. Go and find 2 Cyclopes' tooth from Explosion zone in Withered Leaves Forest. <BR><BR><FONT color=#086171>Dark Mountain(Lonely Forest Track)</FONT> <FONT color=#a82424>→ Explosion zone in Withered Leaves Forest</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Collect 2 Cyclope's tooth]]></destination>
+         <todo_msg mid="65"><![CDATA[Collect 2 Cyclope's tooth from Explosion zone in Withered Leaves Forest]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Conversation with Merchant Kelly]]></title>
+         <contents mid="67"><![CDATA[<html>Deliver 2 Cyclope's tooth to <FONT color=#a82424>Merchant Kelly</FONT>.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT> </html>]]></contents>
+         <destination mid="68"><![CDATA[Conversation with Merchant Kelly]]></destination>
+         <todo_msg mid="69"><![CDATA[Deliver collected Cyclope's teeth to Merchant Kelly]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Conversation with Dark Elf Teleju of Hermalte Port]]></title>
+         <contents mid="71"><![CDATA[<html>Deliver the antique embroidered handkerchief to <FONT color=#a82424>Dark Elf Teleju</FONT>.<BR> <BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Dark Elf Teleju</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Conversation with Dark Elf Teleju of Hermalte Port]]></destination>
+         <todo_msg mid="73"><![CDATA[Talk to Dark Elf Teleju of Hermalte Port]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>490,521</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

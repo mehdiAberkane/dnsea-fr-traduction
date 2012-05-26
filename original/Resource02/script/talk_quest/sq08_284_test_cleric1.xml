@@ -1,0 +1,432 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_284_test_cleric1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>284</qid>
+      <designer>곽노찬</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>285</nextqid>
+      <nextqname>sq08_285_test_cleric2</nextqname>
+      <nextqnpc>n034_cleric_master_germain</nextqnpc>
+      <qkname mid="1"><![CDATA[[Specialization] Trapped in the Past]]></qkname>
+      <qnpc>
+         <npcid>183</npcid>
+         <npcename>n183_cleric_jake</npcename>
+         <npckname>클레릭 제이크</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>34</npcid>
+         <npcename>n034_cleric_master_germain</npcename>
+         <npckname>상급 클레릭 저메인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-noquest" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Cleric Jake$<BR>So, {user_nick}... how does it feel to be on your first journey for the Templar Knights?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-a" mid="6"><![CDATA[<html>What do you mean?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Jermain$<BR>Excuse me, brother, but I feel a sort of...familiar energy from you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-b" mid="8"><![CDATA[<html>That's...not your concern.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Cleric Jermain$<BR>I can see the rage in your eyes. I don't know why one such as yourself would feel such rage, but as a servant of the Goddess, you cannot allow your soul to be tainted so.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-c" mid="10"><![CDATA[<html>You have? Do you mean... when your master...</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>Oh, but it is! If I am to train you, I must know that your heart is prepared for the rigors your body and mind must endure.<BR>I just want to help you. I know how you feel. I've felt the same, in fact.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-c" image="QM_GhoulBlue.dds" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-d" mid="12"><![CDATA[<html>The will of the goddess...</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Cleric Jermain$<BR>Yes. Seeing a kind, noble, devout spirit like Priest William suffer and fall as he did... I could not help but feel anger towards the Goddess, and question what her will for us truly is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-e" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Master Cleric Jermain$<BR>As our eyes adjust easily to darkness, so too can our hearts adjust to despair and wickedness. The strong can use this to find harmony between ever-present good and evil, but the weak use it as justification of sin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-f" mid="16"><![CDATA[<html>What should I do?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>Brother, I tell you now, if you cannot make peace with the anger that boils inside you, it will only take you further from the grace of the Goddess.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-accepting-acceptted" mid="18"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Trapped in the Past$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-member1" mid="24"><![CDATA[<html>This sounds really...deep. Do you really think I can do this?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Master Cleric Jermain$<BR>You must understand the root of your anger, and come to terms with it. Look inside yourself, into the mirror of your soul...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-1-changemap1" mid="113"><![CDATA[<html>I see. I suppose I should look into my past...</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>Do not be afraid, brother.<BR>Dealing with such pain is something everyone can and must do. Remember, our ability to find harmony with our hardships is one of the blessings the Goddess granted to us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-1-b" image="" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$Master Cleric Jermain$<BR>Such introspection is best done by yourself.<BR>Leave your friends behind for a moment. I'm sure they understand.<BR>(You cannot proceed while you are in a party.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-a" mid="27"><![CDATA[<html>Honestly, I'm still kind of nervous, Jake...</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Cleric Jake$<BR>So, {user_nick}... how does it feel to be on your first journey for the Templar Knights?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-a" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-b" mid="29"><![CDATA[<html>That is true...brother.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Cleric Jake$<BR>Ha, you don't have to be so formal. It's just the two of us. Call me brother.<BR>After all, we are brothers in our devotion to the Goddess, are we not?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-b" image="QW_ManaRidge.dds" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-c" mid="31"><![CDATA[<html>Wherever I go, I'll obey Her will.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Cleric Jake$<BR>Once you complete this mission in Mana Ridge, I suppose we will receive separate postings.<BR>You may be sent north, or east, or somewhere even further. Our brothers are all over the world, following the will of the Goddess.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-c" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-d" mid="33"><![CDATA[<html>My dream is... that everyone would accept the grace of the Goddess.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Cleric Jake$<BR>Indeed. The Goddess guides us in everything we do, and we would be foolish to ignore her calling.<BR>Still, humans are blessed with free will, and the ability to dream. I wonder, {user_nick}, what your dream is.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-d" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-e" mid="35"><![CDATA[<html>Choices?</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Cleric Jake$<BR>Hahaha! Well said, but I am not your seminary headmaster. I don't want the dream our teachers impose upon us. I ask you earnestly, as a friend... What is your dream?<BR>Becoming a Cleric is only the first step on a long road... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-e" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-f" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Cleric Jake$<BR>Oh, yes. There are many callings, many ways to serve the Goddess. As we grow, we take the path best suited to our skills, goals, and dreams.<BR>In the future, when you are ready, you will select a Specialization. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-f" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-g" mid="39"><![CDATA[<html>I am interested in the path of the Paladin.</html>]]></talk_answer>
+      <talk_answer link_index="n183_cleric_jake-1-h" mid="40"><![CDATA[<html>I am interested in the path of the Priest.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Cleric Jake$<BR>There are two options for your first Specialization. You can become a <FONT color=#a82424>Paladin</FONT> or a <FONT color=#a82424>Priest</FONT>. Which one are you interested in?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-g" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-f" mid="42"><![CDATA[<html>I would like to hear about another path.</html>]]></talk_answer>
+      <talk_answer link_index="n183_cleric_jake-1-j" mid="43"><![CDATA[<html>I want to become a Paladin.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Cleric Jake$<BR>The <FONT color=#a82424>Paladin</FONT> is focused around strong defense and supportive auras. He draws the attacks of enemies, weathering their blows better than his comrades. Paladins are best known for their advanced shield techniques.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-h" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-f" mid="45"><![CDATA[<html>I would like to hear about another path.</html>]]></talk_answer>
+      <talk_answer link_index="n183_cleric_jake-1-j" mid="46"><![CDATA[<html>I want to become a Priest.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Cleric Jake$<BR>The <FONT color=#a82424>Priest</FONT> is a master of light-imbued magics, such as healing skills and supportive spells. Magic is far more important to Priests, and so they tend to favor wands as their main weapons.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-i" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-f" mid="79"><![CDATA[<html>I would like to hear about another path.</html>]]></talk_answer>
+      <talk_answer link_index="n183_cleric_jake-1-j" mid="80"><![CDATA[<html>I want to become a Monk.</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Cleric Jake$<BR>The <FONT color=#a82424>Monk</FONT> has the strongest physical attacks of all the Specializations. Monk techniques generally involve heavier weapons like the flail and mace.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-j" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-k" mid="48"><![CDATA[<html>Then, when will I be able to choose my path?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Cleric Jake$<BR>Hah, I'm glad to see you have such ambitions for yourself. However, it is still quite early to decide your path.<BR>After all, the will of the Goddess could intervene at any time...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-k" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-l" mid="50"><![CDATA[<html>A desire to protect, huh?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Cleric Jake$<BR>Our powers come from the Goddess herself.<BR>To be granted greater powers, your desire must come from devotion and selflessness. You must desire them for the protection of others.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-l" image="" itemindex="">
+      <talk_answer link_index="n183_cleric_jake-1-m" mid="52"><![CDATA[<html>Cleric Jake, where did you find your destiny?</html>]]></talk_answer>
+      <talk_question mid="51"><![CDATA[<html>$Cleric Jake$<BR>The time will come when you see the need for greater good, and lack the power to make it reality. At that time, the Goddess will reveal the path for you, and your choice will come naturally.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-1-m" image="" itemindex="">
+      <talk_question mid="53"><![CDATA[<html>$Cleric Jake$<BR>My destiny? Hahaha!<BR>My destiny is right here in front of me! My power comes from my desire to help you, {user_nick}.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n183_cleric_jake-2" image="QN_Cl_Tomas.dds" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Cleric Jake$<BR>We should be going.<BR>Cleric Thomas is waiting for us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-a" mid="56"><![CDATA[<html>I was thinking about...my destiny.</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Master Cleric Jermain$<BR>A great change has come over you. Your anger is gone now...replaced by a great sadness.<BR>What did you see?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-2-b" mid="58"><![CDATA[<html>Then, all I can do is to wait?</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>Ahhh, your destiny... We choose to define our paths and our actions by our destiny, and spend so much time supposedly searching for our destiny.<BR>But our destiny is handed down by the Goddess, and so is not something that can be found through mortal means. It is given, not found.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-2-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3" mid="60"><![CDATA[<html>Help me? How?</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Master Cleric Jermain$<BR>Of course not! The Goddess works through all her creations to reveal destiny to those who are ready. Only through action will you find what awaits you.<BR>In this way, you are here, talking to me, instead of waiting. Perhaps I am here, by the will of the Goddess, to show you the next step, hm? Perhaps I can help you...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-a" mid="62"><![CDATA[<html>What is the Chamber of Trials like?</html>]]></talk_answer>
+      <talk_answer link_index="n034_cleric_master_germain-3-member2" mid="63"><![CDATA[<html>Yes. Please take me to the Chamber of Trials.</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>We have a place, the Chamber of Trials. Those who feel their destiny is at hand can enter, and be tested. Through your struggles, your convictions and desires will become clear, and, if it truly is time, the next step of your destiny will be revealed. Are you interested?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-b" mid="102"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Master Cleric Jermain$<BR>The Chamber of Trials has 4 phases. During the first phase, you will meet the essence of your conviction, personified. Do not be shocked at its apprearance...it is a common reaction, but few people understand the full depth of their conviction.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-c" mid="104"><![CDATA[<html>I see...</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Master Cleric Jermain$<BR>Whatever form it takes, you must protect it. That is the trial you must undertake.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-d" mid="106"><![CDATA[<html>Thank you for your guidance.</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>To pass, you must protect your conviction as you break through the barriers set before you in the first three phases. As for the fourth and final phase... It would be best for you to experience it for yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-d" image="" itemindex="">
+      <talk_question mid="64"><![CDATA[<html>$Master Cleric Jermain$<BR>Tell me when you are completely prepared.<BR>I shall pray for your success, brother...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-e" image="" itemindex="">
+      <talk_question mid="111"><![CDATA[<html>$Master Cleric Jermain$<BR>You must pass your trials with your own strength.<BR>(You cannot proceed while you are in a party.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-3-f" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-3-changemap2" mid="115"><![CDATA[<html>Goddess be with me...</html>]]></talk_answer>
+      <talk_question mid="114"><![CDATA[<html>$Master Cleric Jermain$<BR>Very well, I will guide you to the Chamber of Trials.<BR>May the blessings of the Goddess be with you, brother...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-a" mid="67"><![CDATA[<html>Yes... in a way...</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Master Cleric Jermain$<BR>Did you find your destiny in the Chamber of Trials?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-a" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-b" mid="73"><![CDATA[<html>I have always known my destiny...from the very beginning.</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Master Cleric Jermain$<BR>In a way?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-b" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-c" mid="75"><![CDATA[<html>Thank you for your help, brother.</html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Master Cleric Jermain${action:Talk}<BR>So...now you understand. Once you see the truth, you realize that the truth has always been within you. Our destiny is given from birth, and we seek the signs left along that path.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-c" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-d" mid="77"><![CDATA[<html>To Raiders Ambush Point.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Master Cleric Jermain$<BR>And so... Where does your destiny lead, brother?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n034_cleric_master_germain-4-d" image="" itemindex="">
+      <talk_answer link_index="n034_cleric_master_germain-4-!next" mid="69"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">284</exe>
+         <exe type="recompense_view">2840,,,,</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13011,1);</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">a</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">b</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_user_ChangeMap(userObjID,13008,1);</exe>
+         <exe type="conexe" true="3" false="2">0</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">e</exe>
+         <exe type="talk" npc="n034_cleric_master_germain">f</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">284</exe>
+         <exe type="recompense">2840,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="f">1</exelink>
+   <exelink qstep="accepting" npc="n034_cleric_master_germain" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="member1">3</exelink>
+   <exelink qstep="1" npc="n034_cleric_master_germain" sub="changemap1">2</exelink>
+   <exelink qstep="1" npc="n183_cleric_jake" sub="b" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="c" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="d" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="e" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="f" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="g" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="h" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="f" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="j" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="f" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="j" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="f" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="j" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="k" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="l" />
+   <exelink qstep="1" npc="n183_cleric_jake" sub="m">0,1</exelink>
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="2" npc="n034_cleric_master_germain" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="member2">1</exelink>
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="d" />
+   <exelink qstep="3" npc="n034_cleric_master_germain" sub="changemap2">0</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="b" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="c" />
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="d">1</exelink>
+   <exelink qstep="4" npc="n034_cleric_master_germain" sub="!next">0</exelink>
+   <journal_data recompense="2840" quest_title="[전직] 인연Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Jake.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom:13011@2</destination_mode>
+         <statemark_npcid>183</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="82"><![CDATA[Talk to Jermain and recall your past]]></title>
+         <contents mid="83"><![CDATA[<html>Talk to <FONT color=#a82424>Master Cleric Jermain</FONT> and look back on your past.<BR>Perhaps one of your conversations with <FONT color=#a82424>Cleric Jake</FONT> will reveal something...<BR> <BR><FONT color=#7e12d2>You cannot proceed while you are in a party.</FONT><BR><BR><FONT color=#086171>Calderock Village → Master Cleric Jermain</FONT> <FONT color=#a82424>→ Cleric Jake</FONT></html>]]></contents>
+         <destination mid="84"><![CDATA[Talk to Jermain and recall your past]]></destination>
+         <todo_msg mid="85"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="86"><![CDATA[Talk to Master Cleric Jermain.]]></title>
+         <contents mid="87"><![CDATA[<html><FONT color=#a82424>Cleric Jake</FONT> says that you can obtain new powers when you have found your <FONT color=#a82424>destiny</FONT>.<BR>Talk to <FONT color=#a82424>Master Cleric Jermain</FONT> about your <FONT color=#a82424>destiny</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="88"><![CDATA[Talk to Master Cleric Jermain.]]></destination>
+         <todo_msg mid="89"><![CDATA[Talk to Master Cleric Jermain.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_3.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom:13008@2</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[Pass the Chamber of Trials]]></title>
+         <contents mid="92"><![CDATA[<html><FONT color=#a82424>Master Cleric Jermain</FONT> said that he will help you understand your destiny, and told you about the <FONT color=#a82424>Chamber of Trials</FONT>.<BR>Talk to Jermain to begin, and pass the trials.<BR><BR><FONT color=#7e12d2>※ You cannot proceed while you are in a party.</FONT><BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[Pass the Chamber of Trials]]></destination>
+         <todo_msg mid="94"><![CDATA[Pass the Chamber of Trials.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_Npc_Cl_master_Germain.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n34</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>34</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[Talk to Master Cleric Jermain.]]></title>
+         <contents mid="96"><![CDATA[<html>At the end of the Chamber of Trials, you found Cleric Jake, as a Dragon Followers.<BR>You defeated him, and in doing so passed the Chamber of Trials.<BR>Return to <FONT color=#a82424>Master Cleric Jermain</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Cleric Jermain</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[Talk to Master Cleric Jermain.]]></destination>
+         <todo_msg mid="98"><![CDATA[Talk to Master Cleric Jermain.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

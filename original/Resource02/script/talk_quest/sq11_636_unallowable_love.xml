@@ -1,0 +1,265 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_636_unallowable_love</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>636</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>637</nextqid>
+      <nextqname>sq11_637_hinderer_entrance</nextqname>
+      <nextqnpc>n038_royal_magician_kalaen</nextqnpc>
+      <qkname mid="1"><![CDATA[Unrequited Love]]></qkname>
+      <qnpc>
+         <npcid>38</npcid>
+         <npcename>n038_royal_magician_kalaen</npcename>
+         <npckname>궁정 소서리스 칼라엔</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>425</npcid>
+         <npcename>n425_light_pole</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Old Documents$<BR>(Nothing Special)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-a" mid="7"><![CDATA[<html>Is it fun?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Court Sorceress Kayleen$<BR><FONT color=#7e12d2>(Kayleen is reading the diary)</FONT><BR>
+Hoho…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-b" mid="9"><![CDATA[<html>Right now.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Court Sorceress Kayleen$<BR>When did you arrive?!<BR>
+You appeared suddenly!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-c" mid="11"><![CDATA[<html> Is it really that funny?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hmmhmm, thanks for being here.<BR><FONT color=#7e12d2>(Kayleen has a straight face)<BR></FONT>I found some useful information while looking at your diary.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Unrequited Love$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-a" mid="15"><![CDATA[<html>Is it really that funny?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hmm, hmm? Huh, okay.<BR><FONT color=#7e12d2>(Kayleen is reading the diary)</FONT><BR>
+Hoho, Is that how it happened? Hmm…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-b" mid="17"><![CDATA[<html>Ah, I see…</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+I didn't read it because it was fun?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-c" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hmm hmm, well this kind of information is here. The royal person and <FONT color=#a82424>Lucifina</FONT>met and fell in love. Looks like she learned how to read and write from him.<BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-d" mid="21"><![CDATA[<html>So what's the relationship between her and tyrant?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Lucifina's parents felt scared for her daughter and wanted to separate those two.<BR>
+However they got married secretly and tried to run away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-d" image="QW_45.dds" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-e" mid="23"><![CDATA[<html>Yes?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Court Sorceress Kayleen$<BR>I was also curious.<BR>Now go to <FONT color=#a82424>Ghost Town of Deserted Woods</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-e" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-1-f" mid="25"><![CDATA[<html>It seems she is now more interested in Lucifina now. </html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Aren't you curious of the diary's character and the tyrant?<BR>
+Now go! If they married secretly, they must have done so at the sanctuary.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-1-f" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-2" mid="27"><![CDATA[<html>(So you have an interest in romance.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Court Sorceress Kayleen${action:Talk}<BR>Oh hoho, I am not jealous or curious of this girl and all that these two have been done! I just need information so go and get it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-1" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Old Documents$<BR>
+<FONT color=#7e12d2>(I can not see this. It must have been erased by exposure to rain and wind.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-2" image="QW_45.dds" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Huh? My story is over and you still have not gone to <FONT color=#a82424>Ghost Town of Deserted Woods</FONT>?<BR>Why don't you start now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-2" image="" itemindex="">
+      <talk_answer link_index="n425_light_pole-2-a" mid="31"><![CDATA[<html>(Read the article)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Old Documents$<BR><FONT color=#7e12d2>(Old articles are here. Between them are marks which looks like they were sent to the church.</FONT><BR>
+<FONT color=#7e12d2>The writer looks as the person was part of the priest)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-2-a" image="" itemindex="">
+      <talk_answer link_index="n425_light_pole-2-b" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Old Documents$<BR>……So I asked the bishop this.<BR>
+The two people got married under the Holy Goddess. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-2-b" image="" itemindex="">
+      <talk_answer link_index="n425_light_pole-3" mid="35"><![CDATA[<html>(Cannot see anymore)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Old Documents$<BR><FONT color=#a82424>Rodain</FONT>, the class gap between the Prince and <FONT color=#a82424>Lucifina</FONT> is big indeed.<BR>
+But doesn't the wedding within the House of Goddess hold greater power over the royal authority?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n425_light_pole-3" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Old Documents$<BR>
+<FONT color=#7e12d2>(Cannot be seen anymore. Rain and wind has erased the contents.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-a" mid="38"><![CDATA[<html>I saw some kind of letter.</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Court Sorceress Kayleen$<BR>
+Did you find something there?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-a" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-b" mid="40"><![CDATA[<html>(Kayleen makes a big fuss)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Court Sorceress Kayleen$<BR>So the woman got married to the prince?! Hmm, well I guess it means Lucifina got married to the nameless tyrant?<BR>
+Wow~ what a surprise!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-b" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-c" mid="42"><![CDATA[<html>Yes. I did not hear anything.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Getting married to a Prince! A woman's luck... <BR>Ah, nothing! You didn't hear anything?! Okay?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-c" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-d" mid="44"><![CDATA[<html>There is nothing apart from that.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Well I found out that the woman is a queen but I have no more other information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-d" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-e" mid="46"><![CDATA[<html>I mean why the fuss?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hmm, where am I suppose to find evidence then?!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-e" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-f" mid="48"><![CDATA[<html>(Something doesn't seem right.)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Hmph, I cannot give up.<BR><FONT color=#7e12d2>(Kayleen is trying to think of something)</FONT><BR>
+Hmm…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n038_royal_magician_kalaen-3-f" image="" itemindex="">
+      <talk_answer link_index="n038_royal_magician_kalaen-3-!next" mid="50"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">636</exe>
+         <exe type="recompense_view">6360,,,,,</exe>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n038_royal_magician_kalaen-1-a", npc_talk_target);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6360,,,,,</exe>
+         <exe type="complete">636</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="c">1</exelink>
+   <exelink qstep="accepting" npc="n038_royal_magician_kalaen" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="d" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="e" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="f" />
+   <exelink qstep="1" npc="n038_royal_magician_kalaen" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n425_light_pole" sub="b" />
+   <exelink qstep="2" npc="n425_light_pole" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="b" />
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="c" />
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="d" />
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="e" />
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="f">0</exelink>
+   <exelink qstep="3" npc="n038_royal_magician_kalaen" sub="!next">1</exelink>
+   <journal_data recompense="0:6360" quest_title="허락받지 못한 사랑" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode />
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Kayleen's Interest]]></title>
+         <contents mid="52"><![CDATA[<html>Continue talking to Court Sorceress Kayleen.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Court Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Talk to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="54"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_45.dds</contents_image>
+         <destination_pos>453,n425</destination_pos>
+         <destination_mode>custom:451@1,452@1,453@1</destination_mode>
+         <statemark_npcid>425</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Lucifina's Trace]]></title>
+         <contents mid="56"><![CDATA[<html>Ask around for items related to  Lucifina from the Ghost Town of Deserted Woods.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain(Deserted Woods)</FONT> <FONT color=#a82424>→ Ghost Town of Deserted Woods</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Explore Ghost Town of Deserted Woods]]></destination>
+         <todo_msg mid="58"><![CDATA[Ask around for items related to  Lucifina from the Ghost Town of Deserted Woods]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Royal_Magician_Kalaen.dds</contents_image>
+         <destination_pos>21,n38</destination_pos>
+         <destination_mode />
+         <statemark_npcid>38</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[To Kayleen]]></title>
+         <contents mid="60"><![CDATA[<html>Read the article of the priest. Let's give this information to Court Sorceress Kayleen  of Saint Haven Royal Palace.<BR>
+ <BR>
+<FONT color=#086171>Inside Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Court Sorceress Kayleen</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Court Sorceress Kayleen]]></destination>
+         <todo_msg mid="62"><![CDATA[Report to Court Sorceress Kayleen ]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level>3</user_worldzone_level>
+      <user_class />
+      <prev_quest>635</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

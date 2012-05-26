@@ -1,0 +1,93 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq03_7005_chandler_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7005</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Master Cleric Jermain]]></qkname>
+      <qnpc>
+         <npcid>32</npcid>
+         <npcename>n032_warrior_master_chandler</npcename>
+         <npckname>상급 워리어 챈들러</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting" image="" itemindex="">
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-a" mid="7"><![CDATA[<html> I'll note is a propaganda </html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-b" mid="8"><![CDATA[<html> That must have been embarrassing </html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-c" mid="9"><![CDATA[<html> Better than men at the head full of muscle </html>]]></talk_answer>
+      <talk_answer link_index="n032_warrior_master_chandler-accepting-d" mid="10"><![CDATA[<html>You should believe in the Goddess and go to heaven also.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Warrior Chandler$<BR>I heard he's the second son of a noble family in Saint Haven. Maybe that's why I always get this student feel from him. On top of that, he's rather stubborn and headstrong. Couple days ago, he grabbed me and just rambled on about the Goddess and her love for everyone. Be careful of his missionary activties.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Master Warrior Chandler$<BR>Yes, be careful.  missionary activties is dangerous, I tell you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Warrior Chandler$<BR>Don't remind me. I said I don't want to listen, but he went on preaching for 3 hours. Just thinking about it still gives me the chills.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Warrior Chandler$<BR>Are you threatening me? You really think nothing will happen to you if you tell her? That woman... she won't care... she might even BBQ you into a well-done steak for telling her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n032_warrior_master_chandler-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Master Warrior Chandler$<BR>Oh! Drop it! I don't care about faith of whatever... I'll just live my life while enjoying this world!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7005, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 32, 130 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 32, 360 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 32, 360 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 32, 130 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n032_warrior_master_chandler" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 상급 클레릭 저메인에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>32:6300:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

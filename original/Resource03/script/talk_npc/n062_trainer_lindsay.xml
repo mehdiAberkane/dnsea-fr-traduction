@@ -1,0 +1,115 @@
+﻿   <talk>
+      <npcename>n062_trainer_lindsay</npcename>
+      <npcid>62</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Trainer Lindsay]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="18"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop_001" mid="129"><![CDATA[<html>[Shop Store]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="19"><![CDATA[<html>[Talk] </html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>Hello Adventurer!<BR>Have you come to visit ME? HAHAHAHA!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="136" link_target="sq_988_xmas_lindsay.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="113" link_target="nq32_8700_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Do you like horses?</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="114" link_target="nq32_8701_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Food</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="115" link_target="nq32_8702_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Event Helper</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="116" link_target="nq32_8703_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Newly Born Horse</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="117" link_target="nq32_8704_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Aspirations</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="118" link_target="nq32_8705_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Ideal Partner</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="119" link_target="nq32_8706_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About Irine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="120" link_target="nq32_8707_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Color</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="121" link_target="nq32_8708_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Weather</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="122" link_target="nq32_8709_lindsay_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Dislikes</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="126" link_target="nq32_8710_lindsay_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Lindsay's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="127"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Trainer Lindsay$<BR>Yeah! Talking about YOU!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="139" link_target="sq08_381_new_friend.xml"><![CDATA[<html>[Lv15] <FONT color=#086171>New Friend</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="nq32_8601_my_name.xml"><![CDATA[<html>[Lv.32] <FONT color=#086171>My Name</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="nq32_8602_sick_tom.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Tom is Unwell</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="103" link_target="nq32_8603_cannot_eat.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Do Not Eat!</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="104" link_target="nq32_8604_runaway_horse.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Runaway Horse</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="105" link_target="nq32_8605_picnic_together.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Picnic for Two</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="106" link_target="nq32_8606_good_glass.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Pools</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="107" link_target="nq32_8607_condition_of_love.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Terms of Endearment </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="108" link_target="nq32_8608_based_on_grades.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Academic Achievement </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="109" link_target="nq32_8609_holding_hand.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Hold Hands And Pass </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="110"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="20"><![CDATA[<html>$Trainer Lindsay$<BR>I like YOU! You seem like a nice person!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="59"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop_90" mid="130"><![CDATA[<html>[Shop]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="60"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="61"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Trainer Lindsay${action:Glad}<BR><FONT color=#387206>{user_nick}</FONT>~ my friend! I really like YOU more and more!<BR>I will miss you dearly!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="62"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop_60" mid="131"><![CDATA[<html>[Shop]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="63"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="64"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="65"><![CDATA[<html>$Trainer Lindsay$<BR>I like YOU! You seem like a nice person!<BR> Please come see me everyday, okay?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="66"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop_30" mid="132"><![CDATA[<html>[Shop]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="67"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="68"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="69"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>HI~? Ummm… YOU are my friend!!<BR>You must come to see ME everyday. OK?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="70"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop_0" mid="133"><![CDATA[<html>[Shop]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="71"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="72"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="73"><![CDATA[<html>$Trainer Lindsay${action:Talk}<BR>HELLO~ Hope you're feeling good!<BR>What's up?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="81"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="82"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="76"><![CDATA[<html>$Gift$</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="83"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="79"><![CDATA[<html>$Trainer Lindsay${action:Kiss}<BR>WOW!! I Love YOU!!<BR> You're the best!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="5" false="3">1</exe>
+         <exe type="conexe" true="6" false="4">2</exe>
+         <exe type="conexe" true="7" false="8">3</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 62 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 62 );</exe>
+         <exe type="talk">gift</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,11000,100);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 8601) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 62 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 62 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 62 ) >= 30</chk>
+      </conditions>
+      <exelink idx="open_shop_001">13</exelink>
+      <exelink idx="back_talk">1</exelink>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="open_shop_90">13</exelink>
+      <exelink idx="present_90">9,10</exelink>
+      <exelink idx="open_shop_60">13</exelink>
+      <exelink idx="present_60">9,10</exelink>
+      <exelink idx="open_shop_30">13</exelink>
+      <exelink idx="present_30">9,10</exelink>
+      <exelink idx="open_shop_0">13</exelink>
+      <exelink idx="present_0">9,10</exelink>
+      <exelink idx="gift">11,12</exelink>
+      <exelink idx="back_present_ui">1</exelink>
+      <exelink idx="back_gift">1</exelink>
+   </talk>

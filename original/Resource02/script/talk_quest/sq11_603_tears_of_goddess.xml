@@ -1,0 +1,196 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_603_tears_of_goddess</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>603</qid>
+      <designer>곽노찬</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Tears of the Goddess]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="6"><![CDATA[<html>Yes, is anything the matter?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Dishonest Merchant Pero$<BR>You appear to be an adventurer, am I right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="72"><![CDATA[<html>……Ah, yes……What can I do for you……?</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+I'm happy to see you, my name is <FONT color=#a82424>Poppy</FONT>.<BR>
+I am someone who (soon) possesses the wealth to purchase the entire Saint Haven. Hehe……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="74"><![CDATA[<html>Yes, I have aided the Heraldry Scholars to investigate the Abyss several times.</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Hehe……Not others. I have caught wind of a rumor.<BR>
+It seems that……a place called <FONT color=#a82424>Abyss</FONT> has appeared here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="76"><![CDATA[<html>Tears of the Goddess?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Oh! That makes things easier.<BR>
+I am looking for a special gem called <FONT color=#a82424>Tears of the Goddess</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="78"><![CDATA[<html>Really?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Yes, <FONT color=#a82424>Tears of the Goddess</FONT> is formed from the powers of the Abyss regions. I have requested Sorcerers and Heraldry Scholars to aid in the hunt.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="80"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+The <FONT color=#a82424>Tears of the Goddess</FONT> cannot be found simply anywhere in the Abyss regions. It is formed only when the aura in the Abyss culminates.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-g" mid="82"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Once it forms, it takes merely a day for it to dissolve back into the atmosphere in the Abyss.<BR>
+Thus, it is a must to remove the Tears of the Goddess from the Abyss immediately</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-g" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-h" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Moreover, the Tears of the Goddess also possesses a power that causes confusion to monsters. Consuming the Tears of the Goddess can enhance energy too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-h" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-i" mid="86"><![CDATA[<html>What is the reward?</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Long story short, I will tell you which Abyss the Tears of the Goddess will appear everyday for you to collect. How does that sound?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="99"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Tears of the Goddess$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="88"><![CDATA[<html>I have helped you to collect the Tears of the Goddess, don't I get a reward……</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Reward……? What reward……?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-b" mid="90"><![CDATA[<html>(……Does not feel assured somehow……)</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Ah……That……That of course……<BR>
+Reward……Hmm……Since I've asked you for help, I will probably give you ...…Hehe……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-b" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-c" mid="92"><![CDATA[<html>Is there something?</html>]]></talk_answer>
+      <talk_question mid="91"><![CDATA[<html>$Dishonest Merchant Pero$<BR>Regardless of the transaction, it requires mutual trust from both parties……<BR>Alright! If you can collect the Tears of the Goddess for me, I will use what I've secretly stolen.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-open_shop" mid="94"><![CDATA[<html>[Abyss Trading Shop]</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+It's all good stuff. From<FONT color=#a82424>24Lv A items</FONT> to <FONT color=#a82424>items that can add special effects</FONT> to weapons.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-2-a" mid="95"><![CDATA[<html>Not really exciting……But it seems not bad.</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Dishonest Merchant Pero$<BR>How is it?<BR>
+Is it very exciting, is it not?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-2-b" mid="101"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2-b" image="" itemindex="">
+      <talk_question mid="96"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+This is really surprising……Regardless, start on it now!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6030,,,,,</exe>
+         <exe type="setquest">603</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="conexe" true="5" false="2">0</exe>
+         <exe type="conexe" true="6" false="3">1</exe>
+         <exe type="conexe" true="7" false="4">2</exe>
+         <exe type="conexe" true="8" false="9">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14002,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14003,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14004,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14005,100);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6030,,,,,</exe>
+         <exe type="complete">603</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="i">0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="c" />
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="open_shop">0,1</exelink>
+   <exelink qstep="2" npc="n277_bluff_dealers_pope" sub="a">0</exelink>
+   <exelink qstep="2" npc="n277_bluff_dealers_pope" sub="b">1</exelink>
+   <journal_data recompense="6030" quest_title="여신의 눈물" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode />
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[It has appeared! The Tears of the Goddess]]></title>
+         <contents mid="53"><![CDATA[<html>Dishonest Merchant Pero says he has obtained Tears of the Goddess news. Go find him.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Dishonest Merchant Pero</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Speak with Dishonest Merchant Pero]]></destination>
+         <todo_msg mid="55"><![CDATA[Mission has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

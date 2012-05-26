@@ -1,0 +1,165 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_831_take_care_plant</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>831</qid>
+      <designer>김인정</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Take Care Plant]]></qkname>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-a" mid="6"><![CDATA[<html>What's up?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Tamara$<BR>Oh my god…? Ah,<FONT color=#387207> {user_nick}</FONT>.<BR>Can you help me now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-a" image="QW_52.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-b" mid="9"><![CDATA[<html>(Why did you grow them there…)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Tamara$<BR>These days I started grow vegetables for fresh food.<BR>
+However, something bad happened in<FONT color=#a82425>Ancient Library</FONT>'s jungle cabbages.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-c" mid="11"><![CDATA[<html>……….</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hundreds monsters're wandering around my precious cabbages.<BR>Hu, I couldn't even imagine that  <FONT color=#a82424>{monster:1404}</FONT>s are so into cabbages.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-d" mid="13"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Sorceress Tamara$<BR>I can't beat them up by myself….<BR>So could you beat them up instead of me before they ruin all my cabbages?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-e" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Sorceress Tamara$<BR>If you beat up five to six monsters, they'll be afraid of you and run away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Take Care Plant$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="QW_52.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Master Sorceress Tamara$<BR>I can go to<FONT color=#a82424>Ancient Library</FONT>with you but, <FONT color=#a82424>{monster:1404}</FONT> looks so cute for me so I can't beat them up.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-a" mid="21"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Sorceress Tamara$<BR>Oh, you've already beat them up?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-b" mid="23"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-b" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2-c" mid="25"><![CDATA[<html>I, I'm sorry…</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Master Sorceress Tamara$<BR>So my cabbages are okay?<BR>
+<FONT color=#7e12d3>(Tamara looks at me with glittering eyes)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2-c" image="" itemindex="">
+      <talk_question mid="26"><![CDATA[<html>$Master Sorceress Tamara$<BR>Oh my, my cabbages must have been ruined already.<BR>
+Gee, what can I do for this.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8310,,,,,</exe>
+         <exe type="setquest">831</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+         <exe type="huntmon" num="5" party="1" exe="8,9,10" onexe="">1403</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201403</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">1401</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201401</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 1403);</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8310,,,,,</exe>
+         <exe type="complete">831</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceptted">1,2,3,4,5,6</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="a">0</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="b">1</exelink>
+   <exelink qstep="2" npc="n713_soceress_tamara" sub="c" />
+   <journal_data recompense="8310" quest_title="농작물을 지켜라" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>523,0,0</destination_pos>
+         <destination_mode>custom:521@3,522@3,523@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="28"><![CDATA[Enemy of Cabbage]]></title>
+         <contents mid="29"><![CDATA[<html>Go to Ancient Library and beat up guardian poison hatchling which ruined jungle cabbages.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="30"><![CDATA[Ancient Library]]></destination>
+         <todo_msg mid="31"><![CDATA[Go to Ancient Library and beat up monsters.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="32"><![CDATA[Tamara's Sigh]]></title>
+         <contents mid="33"><![CDATA[<html>I've just done my work. Go back to Lotus Marsh's Master Sorceress Tamara.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="34"><![CDATA[Talk with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="35"><![CDATA[I've just done my work. Report to Master Sorceress Tamara.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>830</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

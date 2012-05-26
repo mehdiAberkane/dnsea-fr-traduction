@@ -1,0 +1,204 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq_2101_valentine_2012_kor</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>2101</qid>
+      <designer>정진호</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Valentine: Valentine Love]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="9"><![CDATA[<html>Oh, yeah.</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="76"><![CDATA[<html>I don't mind it at all.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Events Planner Irine$<BR>
+On Valentine's Day, <FONT color=#a94407>women</FONT> and<FONT color=#a94407>men</FONT>confess <FONT color=#a94407>their love</FONT> to their special one. It is known simply as the world's most famous couple day.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="12"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="81"><![CDATA[<html>What cannot be helped.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Events Planner Irine${action:Talk1}<BR>But this is not just a day for lovers, but friends too, or even people you have not met. The Royal family is spreading love and friendship through <FONT color=#a94407>gifts</FONT>earned from <FONT color=#a94407>event rewards</FONT>. Will you like to participate?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="QS_Default.dds" itemindex="805306932">
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="14"><![CDATA[<html>Is there a reward when you join the event?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Events Planner Irine${action:Talk1}<BR>
+Thank you. I'll give you a brief description of the event.<BR>
+You can obtain<FONT color=#a82424>[Cupid's Treasure Box]</FONT>or <FONT color=#a82424> [Special Cupid's Treasure Box]</FONT>when you log in for a stipulated duration during this event period. Certain items received from them are the items required for <FONT color=#a94407>Valentine's Event</FONT>. Gather those items for additional rewards.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="QS_Default.dds" itemindex="805306913">
+      <talk_answer link_index="n100_event_ilyn-accepting-d" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Events Planner Irine$<BR>
+Those who participate and complete this event at least <FONT color=#a82424>9 times</FONT> will also receive a special<FONT color=#a82424>Title</FONT>to boost their abilities.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Valentine's Events$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="QS_Default.dds" itemindex="805306927">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="18"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Events Planner Irine$<BR>
+Collect these following event items for your reward - <FONT color=#a82424>One each of the [Shy Love Card], [Frill Lovely Ribbon], [Sweet Heart Brownie], [Strawberry Pave Choco], [Pink Rose Bouquet] </FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="QS_Default.dds" itemindex="805306933">
+      <talk_question mid="19"><![CDATA[<html>$Events Planner Irine$<BR>I hope you enjoy your rewards. Have a great Valentine's Day!<BR>
+ <BR>
+<FONT color=#7e12d2>※ [Cupid's Treasure Box] or a  [Special Cupid's Treasure Box] can be obtained when you log into the game for a stipulated time during the event period.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="QS_Default.dds" itemindex="805306927">
+      <talk_answer link_index="n100_event_ilyn-2-a" mid="56"><![CDATA[<html>Here you are.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Events Planner Irine$<BR>
+You have collected all the Event Items. <BR>Here, promise me you'll make good use of the Title ok?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2-b" mid="60"><![CDATA[<html><FONT color=#086171>(Receive Rewards)</FONT></html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-b" image="QS_Default.dds" itemindex="805306913">
+      <talk_question mid="61"><![CDATA[<html>$Events Planner Irine$<BR>Thank you for taking part in this event.<BR>Event rewards will be sent to your <FONT color=#a82424>Gift Box</FONT><BR>You can collect your rewards by pressing [<FONT color=#a82424>F11</FONT>]to visit the Cash Shop</html>.]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2-c" image="QS_Default.dds" itemindex="805306927">
+      <talk_question mid="65"><![CDATA[<html>$Events Planner Irine$<BR>I'm sorry but there is a shortage in the event item. Please use the special event Title given before receiving another.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">805306927</chk>
+         <chk type="item" num="1" op="]=">805306928</chk>
+         <chk type="item" num="1" op="]=">805306929</chk>
+         <chk type="item" num="1" op="]=">805306930</chk>
+         <chk type="item" num="1" op="]=">805306931</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">21010,,,,,</exe>
+         <exe type="setquest">2101</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7">805306927</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7">805306928</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7">805306929</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7">805306930</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7">805306931</exe>
+         <exe type="conexe" true="9,10" false="">0 and 1 and 2 and 3 and 4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="conexe" true="9,10,13" false="2,3,4,5,6,11">0 and 1 and 2 and 3 and 4</exe>
+         <exe type="talk" npc="n100_event_ilyn">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">805306927</chk>
+         <chk type="item" num="1" op="]=">805306928</chk>
+         <chk type="item" num="1" op="]=">805306929</chk>
+         <chk type="item" num="1" op="]=">805306930</chk>
+         <chk type="item" num="1" op="]=">805306931</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1,2,4" false="5">0 and 1 and 2 and 3 and 4</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="talk" npc="n100_event_ilyn">2</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">805306927</chk>
+         <chk type="item" num="1" op="]=">805306928</chk>
+         <chk type="item" num="1" op="]=">805306929</chk>
+         <chk type="item" num="1" op="]=">805306930</chk>
+         <chk type="item" num="1" op="]=">805306931</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">21010,,,,,</exe>
+         <exe type="complete">2101</exe>
+         <exe type="conexe" true="3" false="4">0 and 1 and 2 and 3 and 4</exe>
+         <exe type="talk" npc="n100_event_ilyn">2</exe>
+         <exe type="talk" npc="n100_event_ilyn">c</exe>
+         <exe type="delitem" num="1">805306927</exe>
+         <exe type="delitem" num="1">805306928</exe>
+         <exe type="delitem" num="1">805306929</exe>
+         <exe type="delitem" num="1">805306930</exe>
+         <exe type="delitem" num="1">805306931</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceptted">1,12</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn">0</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn">2</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="a">0</exelink>
+   <exelink qstep="2" npc="n100_event_ilyn" sub="b">5,6,7,8,9,1</exelink>
+   <journal_data recompense="21010" quest_title="발렌타인 : 발렌타인이 좋아" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>8,n100</destination_pos>
+         <destination_mode>custom:21@0,13014@0,2@0,3@0,6@0,7@0,4@0,9@0,10@0,12@0,13@0,24@0,1@4,5@4,8@4,11@4,13601@2,13602@2</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Valentine's Item Collection]]></title>
+         <contents mid="68"><![CDATA[<html>You can obtain the<FONT color=#a82424> [Cupid's Treasure Box]</FONT> or<FONT color=#a82424> [Special Cupid's Treasure Box]</FONT>when you log in for a stipulated duration during the <FONT color=#a94407>event period</FONT>. The longer you stay logged on, the more rewards you will receive..</html>]]></contents>
+         <destination mid="69"><![CDATA[Valentine's Item Collection]]></destination>
+         <todo_msg mid="70"><![CDATA[Please collect Valentine's items.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>8,n100</destination_pos>
+         <destination_mode>custom:21@0,13014@0,2@0,3@0,6@0,7@0,4@0,9@0,10@0,12@0,13@0,24@0,1@4,5@4,8@4,11@4,13601@2,13602@2</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="72"><![CDATA[Trade Events]]></title>
+         <contents mid="73"><![CDATA[<html>Gather all the event items required. <BR> When you are done, report to Events Planner Irine for your reward.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT> </html>]]></contents>
+         <destination mid="74"><![CDATA[Conversation with Events Planner Irine]]></destination>
+         <todo_msg mid="75"><![CDATA[Find Events Planner Irine to exchange for rewards.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

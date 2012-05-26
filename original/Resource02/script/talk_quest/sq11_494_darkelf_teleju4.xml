@@ -1,0 +1,294 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_494_darkelf_teleju4</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>494</qid>
+      <designer>김주연</designer>
+      <qlevel>36</qlevel>
+      <qdesc>더글라스의 지령서	300259
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>495</nextqid>
+      <nextqname>sq11_495_darkelf_teleju5</nextqname>
+      <nextqnpc>n281_darkelf_teleju</nextqnpc>
+      <qkname mid="1"><![CDATA[Dark Elf Teleju IV]]></qkname>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>282</npcid>
+         <npcename>n282_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>42</npcid>
+         <npcename>n042_general_duglars</npcename>
+         <npckname>장군 더글라스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Dark Elf Teleju$<BR>LaLa~ LaLaLa~ Hm?? Why am I here?<BR><FONT color=#7e12d2>(The girl is laughing with innocent face)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$General Douglas$<BR>Hm, I don't have time to talk to you.<BR>Come again later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-a" mid="8"><![CDATA[<html>(The choice of the word is wrong)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Dark Elf Teleju$<BR>I like you so much so I want to give something as a return.<BR>It's like <FONT color=#a82424>Revenge★</FONT>~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-a" image="QW_47.dds" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-b" mid="10"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Dark Elf Teleju$<BR>So can you meet me at The Ruins of Lost Time? <BR> I want to give you the present at the first place you took me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Dark Elf TelejuⅣ$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-a" mid="14"><![CDATA[<html>Something else? (I'm not looking forward)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Dark Elf Teleju$<BR>Also! I have prepared a Secret and Surprise present as I read in Oh! Goddess.<BR>Hahaha. I wish you'd like it~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-b" mid="16"><![CDATA[<html>(The choice of word is little wrong)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Dark Elf Teleju$<BR>I like you so much so I want to give something as a return.<BR>It's like <FONT color=#a82424>Revenge★</FONT>~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-b" image="QW_47.dds" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-2" mid="18"><![CDATA[<html>Ok.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Dark Elf Teleju$<BR>So can you meet me at The Ruins of Lost Time? <BR> I want to give you the present at the first place you took me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Dark Elf Teleju$<BR>LaLa~ LaLaLa~ Hm?? Why am I here?<BR><FONT color=#7e12d2>(The girl is laughing with innocent face)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-1" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$General Douglas$<BR>Hm, I don't have time to talk to you.<BR>Come again later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2" image="QW_47.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Dark Elf Teleju$<BR>Haha. So let's meet at <FONT color=#a82424>The Ruins of Lost Time</FONT>~<BR>I'll beat you this time as well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-2" image="" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-2-a" mid="23"><![CDATA[<html>(Teleju is laughing happily)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Dark Elf Teleju$<BR>I was faster this time as well.<BR>Maybe I have more ability than you. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-2-a" image="" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-2-b" mid="25"><![CDATA[<html>… What is this?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Dark Elf Teleju$<BR>According to the latest Oh! Goddess, the present is very important for girls.<BR>So the present must be at least this level. Haha. Here~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-2-b" image="" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-2-c" mid="27"><![CDATA[<html>(Open the present)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Dark Elf Teleju$<BR>Present~ I got this by hunting humans from where I live.<BR>Haha Do you like it? Hm? Happy?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-2-c" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-2-d" mid="29"><![CDATA[<html>This looks like a instructions from General Douglas?!</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Scrappy document$<BR>(There were unreadable military cods and <FONT color=#a82424> General Douglas' signature</FONT> on the document)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-2-d" image="" itemindex="">
+      <talk_answer link_index="n282_darkelf_teleju-3" mid="31"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Dark Elf Teleju$<BR>Instruction? I don't know~ I just took it from humans.<BR>Why don't you go and ask General Douglas?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n282_darkelf_teleju-3" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Dark Elf Teleju$<BR>Are you going to see General Douglas? Is that because you want to know what that is?<BR>Oh well, I'll be waiting at <FONT color=#a82424>Hermalte Port</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Dark Elf Teleju$<BR>Are you going to see General Douglas? Is that because you want to know what that is?<BR>Oh well, I'll be waiting at <FONT color=#a82424>Hermalte Port</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-a" mid="35"><![CDATA[<html>Excuse me, have a look at this.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$General Douglas${action:talk}<BR>I don't any time right now.<BR>There are military conference due to the extermination of our scout unit.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-a" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-b" mid="37"><![CDATA[<html>(General seems happy)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$General Douglas$<BR>What! This is the instruction I've wrote!!<BR>The dead scout unit had this, I thought we lost this because the word was Dark Elves have taken it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-b" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-3-c" mid="39"><![CDATA[<html>I'm glad it helped.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$General Douglas$<BR>You are an excellent Adventurer. Did you go near Dark Elves City?<BR>Well, it's good we got this instruction at least.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-3-c" image="" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$General Douglas$<BR>I have to return to the meeting. Please leave.<BR>The monsters are getting wilder now. It's a big worry...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4" image="" itemindex="">
+      <talk_answer link_index="n042_general_duglars-4-a" mid="42"><![CDATA[<html>(General is very happy)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$General Douglas${action:talk}<BR>Thank you for bringing back my instruction.<BR>Did you steal it from Dark Elves? Great work.<BR> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n042_general_duglars-4-a" image="" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$General Douglas$<BR>No one have seen the <FONT color=#a82424>World of Dark Elves</FONT>.<BR>I hear that place is connected to <FONT color=#a82424>deep inside of Dark Mine</FONT>….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-a" mid="45"><![CDATA[<html>Did you kill people to get that Instruction?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Dark Elf Teleju$<BR>ah, you're back. I have some other places…...<BR>What's wrong? You look so scary?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-b" mid="47"><![CDATA[<html>You shouldn't kill human!</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Dark Elf Teleju$<BR>Yes!! I hit him once and he died…So I searched his pocket and that paper came out.<BR>I can get you some more if you want.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-c" mid="49"><![CDATA[<html>But…</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Dark Elf Teleju$<BR>Hmm? Why? Why not?<BR>Humans also attack us and take out belongings.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-d" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Dark Elf Teleju$<BR>If we don't attack first, they will attack us first.<BR>We'll die if we don't do anything. Isn't that true?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-d" image="QW_41.dds" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-e" mid="53"><![CDATA[<html>It's not the right time to talk about that!</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Dark Elf Teleju$<BR>Anyway~ Let's go and see the ruins? Huh?<BR>I want to go to <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT> with you. I want to see….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-e" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-f" mid="55"><![CDATA[<html>(Teleju can't understand this at all)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Dark Elf Teleju$<BR>Why are you angry?<BR>Do you hate me now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-f" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-!next" mid="57"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4941,4942,4943,4944,4945</exe>
+         <exe type="setquest">494</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n281_darkelf_teleju">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300259</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="1">300259</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4941,4942,4943,4944,4945</exe>
+         <exe type="complete">494</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n282_darkelf_teleju" sub="b" />
+   <exelink qstep="2" npc="n282_darkelf_teleju" sub="c" />
+   <exelink qstep="2" npc="n282_darkelf_teleju" sub="d" />
+   <exelink qstep="2" npc="n282_darkelf_teleju" sub="3">0,1,2</exelink>
+   <exelink qstep="3" npc="n042_general_duglars" sub="b" />
+   <exelink qstep="3" npc="n042_general_duglars" sub="c">0,1,2</exelink>
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="c" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="d" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="e" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="f">0</exelink>
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="!next">1</exelink>
+   <journal_data recompense="1:4941,2:4942,3:4943,4:4944,5:4945" quest_title="다크엘프 텔레주Ⅳ" chapterid="" quest_level="36" quest_mark_type="10" use_item_list="300259">
+      <journal index="1">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Dark Elf Teleju's present]]></title>
+         <contents mid="59"><![CDATA[<html>Dark Elf Teleju wants to give you a present in return. Talk to her.<BR><BR><FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Dark Elf Teleju</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Conversation with Dark Elf Teleju]]></destination>
+         <todo_msg mid="61"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_47.dds</contents_image>
+         <destination_pos>474,n282</destination_pos>
+         <destination_mode>custom:471@1,472@1,473@1,474@1</destination_mode>
+         <statemark_npcid>282</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="62"><![CDATA[Conversation with Dark Elf Teleju at The Ruins of Lost Time]]></title>
+         <contents mid="63"><![CDATA[<html>Dark Elf Teleju wants to give a present in return. Go to the first place you met her, <FONT color=#a82424>The Ruins of Lost Time</FONT>. <BR><BR><FONT color=#086171>Hermalte Port(River Ruins Entrance)</FONT> <FONT color=#a82424>→ The Ruins of Lost Time</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[Conversation with Dark Elf Teleju at The Ruins of Lost Time]]></destination>
+         <todo_msg mid="65"><![CDATA[Talk to Dark Elf Teleju at The Ruins of Lost Time]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Genaral_Duglas.dds</contents_image>
+         <destination_pos>21,n42</destination_pos>
+         <destination_mode />
+         <statemark_npcid>42</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="66"><![CDATA[Conversation with General Douglas in Saint Haven Royal Castle]]></title>
+         <contents mid="67"><![CDATA[<html>The gift from Dark Elf Teleju is the instruction of General Douglas. Go to <FONT color=#a82424>General Douglas</FONT> and give it back.<BR><BR><FONT color=#086171>Saint Haven Royal Castle</FONT> <FONT color=#a82424>→ General Douglas</FONT></html>]]></contents>
+         <destination mid="68"><![CDATA[Conversation with General Douglas]]></destination>
+         <todo_msg mid="69"><![CDATA[Talk to General Douglas in Saint Heaven Royal Castle]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="70"><![CDATA[Conversation with Dark Elf Teleju of Hermalte Port]]></title>
+         <contents mid="71"><![CDATA[<html>The gift from Teleju was the operation instruction from General Douglas. Return to <FONT color=#a82424> Dark Elf Teleju</FONT> in Hermalte Port and talk to her.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Dark Elf Teleju</FONT></html>]]></contents>
+         <destination mid="72"><![CDATA[Conversation with Dark Elf Teleju of Hermalte Port]]></destination>
+         <todo_msg mid="73"><![CDATA[Return to Dark Elf Teleju of Hermalte Port]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>493</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

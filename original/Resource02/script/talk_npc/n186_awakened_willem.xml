@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n186_awakened_willem</npcename>
+      <npcid>186</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Priest William's Spirit]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Priest William's Spirit$<BR>Leon... I must not fall.. Not until he comes back...<BR>Curse you, monsters of evil!<BR><FONT color=#7e12d2>[William's spirit bellows. It seems the conversation has ended.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="3">0</exe>
+         <exe type="enterquest">sq08_255_ashes_of_saint1</exe>
+         <exe type="enterquest">sq08_257_ashes_of_saint3</exe>
+         <exe type="conexe" true="2" false="4">1</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">255</chk>
+         <chk type="hasquest">257</chk>
+      </conditions>
+   </talk>

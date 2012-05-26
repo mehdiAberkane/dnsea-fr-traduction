@@ -1,0 +1,182 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_861_real_treasure2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>861</qid>
+      <designer>김인정</designer>
+      <qlevel>50</qlevel>
+      <qdesc>칠흑색 문장열쇠	300489
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>862</nextqid>
+      <nextqname>sq15_862_real_treasure3</nextqname>
+      <nextqnpc>n710_scholar_hancock</nextqnpc>
+      <qkname mid="1"><![CDATA[Real Treasure II]]></qkname>
+      <qnpc>
+         <npcid>710</npcid>
+         <npcename>n710_scholar_hancock</npcename>
+         <npckname>문장학자 핸콕</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting" image="QS_Default.dds" itemindex="300488">
+      <talk_answer link_index="n710_scholar_hancock-accepting-a" mid="7"><![CDATA[<html>(Hancock is pleased)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Literary Hancock$<BR>Huh! There is a Pure White Mark Key!<BR>Here… It is exactly the same as the drawing! Oh my Goddess!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-accepting-acceptted" mid="11"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Real Treasure II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-1-a" mid="51"><![CDATA[<html>Do I have to go and get it this time as well?!</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Literary Hancock$<BR>The next key is <FONT color=#a82424>Dark Black Mark Key</FONT>….<BR>
+It is hidden somewhere not easy.<BR>According to the book…Hmm….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-1-b" mid="53"><![CDATA[<html>No don't get angry…</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Literary Hancock$<BR>Of course! Who else is going to get it? Should I go? <BR> Oh dear… You want me to read all the books, ask me what the items are.. <BR> and now you want me to hunt monsters?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-1-b" image="QS_Default.dds" itemindex="300489">
+      <talk_answer link_index="n710_scholar_hancock-2" mid="55"><![CDATA[<html>(Luck…)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Literary Hancock$<BR>According to this, <FONT color=#a82424>Dark Black Mark Key</FONT> can be found easily depending on your luck.<BR>
+Well, I think you can get it at one go.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-2" image="QW_57.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Literary Hancock$<BR>Hurry, go to <FONT color=#a82424>Ancient Treasure House</FONT> and find Dark Black Mark Key.<BR>Umm… It may be difficult to find depenidng on your luck.<BR>Anyway, you should find it easily, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-3" image="QS_Default.dds" itemindex="300489">
+      <talk_answer link_index="n710_scholar_hancock-3-a" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Literary Hancock$<BR>It is amazing!<BR>You did find Dark Black Mark Key.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-3-a" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-3-b" mid="34"><![CDATA[<html>(You don't have to think early…)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Literary Hancock$<BR>We are close to finding out what the Ancient Treasure is!! What would I do if there are huge amounts of gold?<BR>
+Should I build a library> Umm… then…<BR>
+<FONT color=#7e12d2>(Hancock is thinking about it seriously)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n710_scholar_hancock-3-b" image="" itemindex="">
+      <talk_answer link_index="n710_scholar_hancock-3-!next" mid="36"><![CDATA[<html><FONT color=#086171>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8610,,,,,</exe>
+         <exe type="setquest">861</exe>
+         <exe type="talk" npc="n710_scholar_hancock">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1717</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201717</exe>
+         <exe type="addquestitem" num="1">300489</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300489</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8610,,,,,</exe>
+         <exe type="complete">861</exe>
+         <exe type="delquestitem" num="-1">300489</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n710_scholar_hancock" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n710_scholar_hancock" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n710_scholar_hancock" sub="b" />
+   <exelink qstep="1" npc="n710_scholar_hancock" sub="2">0,1,2,3,5</exelink>
+   <exelink qstep="3" npc="n710_scholar_hancock" sub="b">0</exelink>
+   <exelink qstep="3" npc="n710_scholar_hancock" sub="!next">1,2</exelink>
+   <journal_data recompense="8610" quest_title="진정한 보물 Ⅱ" chapterid="" quest_level="50" quest_mark_type="10" use_item_list="300489">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>15,n710</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>710</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="38"><![CDATA[To Literary Hancock]]></title>
+         <contents mid="39"><![CDATA[<html>Talk to Literary Hancock about Ancient Treasure.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Literary Hancock</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Conversation with Literary Hancock]]></destination>
+         <todo_msg mid="41"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_57.dds</contents_image>
+         <destination_pos>572,0,0</destination_pos>
+         <destination_mode>custom:571@3,572@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Ancient Treasure House]]></title>
+         <contents mid="43"><![CDATA[<html>Go to Ancient Treasure House to find Dark Black Mark Key. One of the monsters will be carrying it.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Town of Isla Natives)</FONT> <FONT color=#a82424>→ Ancient Treasure House</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Ancient Treasure House]]></destination>
+         <todo_msg mid="45"><![CDATA[Go to Ancient Treasure House]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Starshy.dds</contents_image>
+         <destination_pos>15,n710</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>710</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report to Literary Hancock]]></title>
+         <contents mid="47"><![CDATA[<html>Deliver Dark Black Mark Key to Literary Hancock.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Literary Hancock</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Conversation with Literary Hancock]]></destination>
+         <todo_msg mid="49"><![CDATA[Return to Literary Hancock]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>50:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>860</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

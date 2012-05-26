@@ -1,0 +1,223 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_799_missed_brother</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>799</qid>
+      <designer>김인정</designer>
+      <qlevel>42</qlevel>
+      <qdesc>나비모양 장신구	300411
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Missed Brother]]></qkname>
+      <qnpc>
+         <npcid>709</npcid>
+         <npcename>n709_trader_lucita</npcename>
+         <npckname>상인 루시타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>769</npcid>
+         <npcename>n769_lucita_bro</npcename>
+         <npckname>수리야</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR>Hmm, I think I'm discovered.<BR>If you swear that you're not going to tell anybody about me, I won't kill you.<BR>
+<FONT color=#7e12d3>(Some strange native looks hard at me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-accepting-a" mid="7"><![CDATA[<html>What's going on?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Rucita$<BR><FONT color=#387206>{user_nick}</FONT>! It's good to see you!!<BR>
+<FONT color=#7e12d3>(Rucita looks like waiting me)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting-a" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-accepting-b" mid="9"><![CDATA[<html>Then, you should check!</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Rucita$<BR>I'm not sure but~<BR>In
+<FONT color=#a82425>East Ancient Armory</FONT>, there's a strange guy who just looks like my brother!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Rucita$<BR>I should be with you, but if I'm absent this shop, I would be punished by my master.<BR>And it's dangerous for me to go East Ancient Armory alone….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-accepting-d" mid="13"><![CDATA[<html>How does he look like?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Rucita$<BR>I'm sorry but, could you check the guy instead of me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting-d" image="QS_Default.dds" itemindex="300411">
+      <talk_answer link_index="n709_trader_lucita-accepting-e" mid="15"><![CDATA[<html>(I received a butterfly-shaped accessory)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant Rucita$<BR>My brother's ears look like this.…and the tail...<BR>
+<FONT color=#7e12d3>(Rucita' explaining about him)<BR></FONT>And then give him this.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Missed Brother$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-1" image="QW_55.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Merchant Rucita$<BR>My brother made this, so he would recognize this.<BR>I wish<FONT color=#a82425>East Ancient Armory</FONT>'s strange guy is my brother.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-1" image="" itemindex="">
+      <talk_answer link_index="n769_lucita_bro-1-a" mid="20"><![CDATA[<html>Wait! Do you know Rucita?!</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$???$<BR>Damn, I think I'm discovered?!<BR>
+<FONT color=#7e12d3>(The strange guy looks hard at me)<BR></FONT>I can't let you go if you see me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-1-a" image="QN_Npc_Lucita.dds" itemindex="">
+      <talk_answer link_index="n769_lucita_bro-1-b" mid="22"><![CDATA[<html>(I gave him a butterfly-shaped accessory)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$???$<BR><FONT color=#a82424>Rucita</FONT>?<BR>How do you know her?<BR><FONT color=#7e12d3>(He puts away his arm)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-1-b" image="QS_Default.dds" itemindex="300411">
+      <talk_answer link_index="n769_lucita_bro-1-c" mid="24"><![CDATA[<html>(Tell him Rucita's situation)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$???$<BR>
+Th, This! Exactly what I gave to Rucita.<BR>
+You know… Rucita!? Where's she now? Is she okay!?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-1-c" image="QN_Npc_Lucita.dds" itemindex="">
+      <talk_answer link_index="n769_lucita_bro-1-d" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$???$<BR>Rucita's just sold to this place.<BR>
+<FONT color=#7e12d3>(sighs)<BR></FONT>it's fine that she's okay though….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-1-d" image="" itemindex="">
+      <talk_answer link_index="n769_lucita_bro-1-e" mid="28"><![CDATA[<html>Bad situation?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Suriya$<BR>My name is <FONT color=#a82425>Suriya</FONT>. Rucita's brother.<BR>
+I wish I could meet my sister right now…<BR>
+But, now I'm kind of in a bad situation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-1-e" image="" itemindex="">
+      <talk_answer link_index="n769_lucita_bro-1-f" mid="30"><![CDATA[<html>It's not funny.</html>]]></talk_answer>
+      <talk_answer link_index="n769_lucita_bro-1-f" mid="31"><![CDATA[<html>(…what if I really do that?)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Suriya$<BR>While escaping from<FONT color=#a82424>Saint Haven</FONT>, there was a little accident. A reward is being offered for the capture of me. <FONT color=#7e12d3>(Suriya asks annoyingly)</FONT><BR>
+Bah. If you're interested in the money, you can capture me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-1-f" image="QN_Npc_Lucita.dds" itemindex="">
+      <talk_answer link_index="n769_lucita_bro-2" mid="33"><![CDATA[<html>Okay. I'll.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Suriya$<BR>Anyway, deliver my words to Rucita. I can't go back to the town because I'm a runner now.<BR>
+so when the Moon is full, go to<FONT color=#a82425>the place where our town existed</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n769_lucita_bro-2" image="QN_Npc_Lucita.dds" itemindex="">
+      <talk_question mid="34"><![CDATA[<html>$Suriya$<BR>I'm relieved that <FONT color=#a82424>Rucita</FONT>'s safe now.<BR>
+<FONT color=#7e12d3>(Suriya smiles a little)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-2-a" mid="37"><![CDATA[<html>Yes. He left these words to you.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Merchant Rucita$<BR>Please, tell me now!!<BR>
+<FONT color=#7e12d3>(Rucita's running to me with a pleading expression)<BR></FONT>Was that the guy my brother?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-a" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-2-b" mid="39"><![CDATA[<html>I can go with you.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Merchant Rucita$<BR>
+When the Moon is full, come to the place where our town existed….<BR>
+<FONT color=#7e12d3>(Rucita's face darkened)</FONT> The, the place is occupied by dragon-followers now.<BR>
+It's too dangerous.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-b" image="" itemindex="">
+      <talk_answer link_index="n709_trader_lucita-2-c" mid="41"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n709_trader_lucita-2-c" image="" itemindex="">
+      <talk_question mid="42"><![CDATA[<html>$Merchant Rucita$<BR><FONT color=#7e12d2>(Rucita's eyes watered)</FONT> Really?<BR>I can't thank <FONT color=#387207>{user_nick}</FONT> more.<BR>I'd rather clean this house quickly and then prepare to meet my brother.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">799</exe>
+         <exe type="recompense_view">7990,,,,,</exe>
+         <exe type="talk" npc="n709_trader_lucita">1</exe>
+         <exe type="addquestitem" num="1">300411</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delquestitem" num="-1">300411</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7990,,,,,</exe>
+         <exe type="complete">799</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n709_trader_lucita" sub="acceptted">0,2,3</exelink>
+   <exelink qstep="1" npc="n769_lucita_bro" sub="b">2</exelink>
+   <exelink qstep="1" npc="n769_lucita_bro" sub="c" />
+   <exelink qstep="1" npc="n769_lucita_bro" sub="d" />
+   <exelink qstep="1" npc="n769_lucita_bro" sub="e" />
+   <exelink qstep="1" npc="n769_lucita_bro" sub="f" />
+   <exelink qstep="1" npc="n769_lucita_bro" sub="f" />
+   <exelink qstep="1" npc="n769_lucita_bro" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n709_trader_lucita" sub="b">0</exelink>
+   <exelink qstep="2" npc="n709_trader_lucita" sub="c">1</exelink>
+   <journal_data recompense="0:7990" quest_title="그리운 오빠" chapterid="" quest_level="42" quest_mark_type="10" use_item_list="300411">
+      <journal index="1">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,n769</destination_pos>
+         <destination_mode>custom:551@1,552@1,553@1</destination_mode>
+         <statemark_npcid>769</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Brother's rumor]]></title>
+         <contents mid="45"><![CDATA[<html>Go to East Ancient Armory and find it there's Rucita's brother.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Find Rucita's brother in East Ancient Armory]]></destination>
+         <todo_msg mid="47"><![CDATA[Find Rucita's brother in East Ancient Armory]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lucita.dds</contents_image>
+         <destination_pos>15,n709</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>709</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Brother's words]]></title>
+         <contents mid="49"><![CDATA[<html>I checked there was Suriya in East Ancient Armory. He left words to his sister.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Merchant Rucita</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Talk with Lotus Marsh's Merchant Rucita]]></destination>
+         <todo_msg mid="51"><![CDATA[Get back to Merchant Rucita and tell the words Suriya gave]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>42:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>798</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

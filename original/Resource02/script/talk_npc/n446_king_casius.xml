@@ -1,0 +1,19 @@
+   <talk>
+      <npcename>n446_king_casius</npcename>
+      <npcid>446</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[King Cassius
+(Lower River Ruins)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$King Cassius$<BR>
+It's amazing! Many of you have seen this, right?<BR>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_687_secret_friend5</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">687</chk>
+      </conditions>
+   </talk>

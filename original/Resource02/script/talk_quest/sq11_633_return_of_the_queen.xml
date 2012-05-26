@@ -1,0 +1,188 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_633_return_of_the_queen</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>633</qid>
+      <designer>김주연</designer>
+      <qlevel>39</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Queen's Return]]></qkname>
+      <qnpc>
+         <npcid>336</npcid>
+         <npcename>n336_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주(sq631)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>92</npcid>
+         <npcename>n092_trader_kelly</npcename>
+         <npckname>상인 켈리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n336_darkelf_teleju-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Dark Elf Teri$<BR> My lovely friend is waiting.<BR>Who is valuable in this world….<BR>
+<FONT color=#7e12d2>※Can start quest after talking to Merchant Kelly</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-a" mid="7"><![CDATA[<html>What's… here?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Kelly$<BR>Here~dear Adventurer!!<BR>It's here, here!!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-b" mid="9"><![CDATA[<html>(Kelly is shaking a letter drenched in water)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant Kelly$<BR>I thought it was gone but it's my penpal's letter!!<BR>It's just a hello but~ it has arrived!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-c" mid="11"><![CDATA[<html>Sure. What is it about?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Kelly$<BR>But something is weird in between~<BR>Hmm…I thought Adventurer may know this, want to listen to it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-d" mid="13"><![CDATA[<html>(Kelly grumbles while she opens the letter)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Kelly$<BR>It maybe meant for someone, but it was sent to me instead.<BR>I  don't know who is it for. Sigh~ What am I supposed to do!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Queen's Return$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-a" mid="17"><![CDATA[<html>…Just read it.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Merchant Kelly${action:Talk}<BR>HmmHmm! Ah~ Ahahahah~<BR><FONT color=#7e12d2>(Kelly is crying like a Hound that has eaten the wrong source of food.)</FONT> Ah~ Okay, my voice is clear!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-a" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-1-b" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Merchant Kelly$<BR><FONT color=#7e12d2>Friend I love</FONT><FONT color=#387206> {user_class}</FONT> <FONT color=#7e12d2>I could not get this message to you so I am sending with it with my penpal.<BR>Hope this gets to you.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-1-b" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2" mid="21"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Merchant Kelly$<BR><FONT color=#7e12d2> My friend whom I love in this world, as per our promise, I want to meet again.<BR>Would you keep this promise?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n336_darkelf_teleju-1" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Dark Elf Teri$<BR>I am waiting for my  loving friend.<BR>The friend I miss the most….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2" image="" itemindex="">
+      <talk_answer link_index="n092_trader_kelly-2-a" mid="24"><![CDATA[<html>(Letter is over)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Merchant Kelly$<BR><FONT color=#7e12d2>If you remember, come see me at Ghost Town of Deserted Woods .<BR>Your friend, Teri….</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n092_trader_kelly-2-a" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Merchant Kelly$<BR>Hmm~ Who is this for? I don't know since the name is erased.<BR>But from what I know, this shows the person my penpal knows is closer to her than me. Hmph!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n336_darkelf_teleju-2" image="" itemindex="">
+      <talk_answer link_index="n336_darkelf_teleju-2-a" mid="27"><![CDATA[<html>(Teri smiles broadly)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Dark Elf Teri$<BR>…you came!<BR>My lovely <FONT color=#387206>{user_nick}</FONT>… I have been waiting for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n336_darkelf_teleju-2-a" image="" itemindex="">
+      <talk_answer link_index="n336_darkelf_teleju-2-b" mid="29"><![CDATA[<html>Yeah.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Dark Elf Teri$<BR>I am back as Queen of Dark Elves. The battle was so big, it became rather sad and depressing… However with this lesson I will be a better Queen this way.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n336_darkelf_teleju-2-b" image="" itemindex="">
+      <talk_answer link_index="n336_darkelf_teleju-2-c" mid="31"><![CDATA[<html>It will be done if you believe.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Dark Elf Teri$<BR><FONT color=#387206>{user_class}</FONT> The Dark Elf Queen is the first to have a human friend, and hopefully not the last. <BR>Soon Dark Elves and humans will not fight and get along? Hopefully that day will come.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n336_darkelf_teleju-2-c" image="" itemindex="">
+      <talk_answer link_index="n336_darkelf_teleju-2-d" mid="33"><![CDATA[<html><FONT color=#086171>(Receive Reward) </FONT></html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n336_darkelf_teleju-2-d" image="" itemindex="">
+      <talk_answer link_index="n336_darkelf_teleju-2-e" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Dark Elf Teri$<BR>Lovely {user_nick}, I want to travel far far away with you.<BR>Some day… when I am not the Queen anymore….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n336_darkelf_teleju-2-e" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Dark Elf Teri${sound:npc_Teri_qu633_01_c.ogg}<BR>Maybe the world we hope for will never come but my heart will always be with you.<BR>Don't forget me please. Goodbye…...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,6331,6332,6333,6334,6335</exe>
+         <exe type="setquest">633</exe>
+         <exe type="talk" npc="n092_trader_kelly">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,6331,6332,6333,6334,6335</exe>
+         <exe type="complete">633</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n092_trader_kelly" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n092_trader_kelly" sub="b" />
+   <exelink qstep="1" npc="n092_trader_kelly" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n336_darkelf_teleju" sub="b" />
+   <exelink qstep="2" npc="n336_darkelf_teleju" sub="c">0</exelink>
+   <exelink qstep="2" npc="n336_darkelf_teleju" sub="d">1</exelink>
+   <exelink qstep="2" npc="n336_darkelf_teleju" sub="e" />
+   <journal_data recompense="1:6331,2:6332,3:6333,4:6334,5:6335" quest_title="여왕의 귀환" chapterid="" quest_level="39" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Sonya.dds</contents_image>
+         <destination_pos>11,n92</destination_pos>
+         <destination_mode />
+         <statemark_npcid>92</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Talk to Merchant Kelly]]></title>
+         <contents mid="38"><![CDATA[<html>On the letter<FONT color=#a82424> Merchant Kelly</FONT>got, there is a weird part. Let's listen to the story.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Kelly</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Merchant Kelly]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>453,n336</destination_pos>
+         <destination_mode>custom:451@1,452@1,453@1</destination_mode>
+         <statemark_npcid>336</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Talk to Teri at Ghost Town of Deserted Woods]]></title>
+         <contents mid="42"><![CDATA[<html><FONT color=#a82424> Dark Elf Teri</FONT>is waiting at Ghost Town of Deserted Woods.<BR><BR><FONT color=#086171>Foothills of Black Mountain (Lonely Road Path)</FONT> <FONT color=#a82424>→ Ghost Town of Deserted Woods(Dark Elf Teri)</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk to Teri at Ghost Town of Deserted Woods]]></destination>
+         <todo_msg mid="44"><![CDATA[Meet missing friend at Ghost Town of Deserted Woods.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>39:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>632</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

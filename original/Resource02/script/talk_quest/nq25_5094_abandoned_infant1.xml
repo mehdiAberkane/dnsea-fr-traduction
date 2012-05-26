@@ -1,0 +1,238 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq25_5094_abandoned_infant1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5094</qid>
+      <designer>김인정</designer>
+      <qlevel>28</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>5095</nextqid>
+      <nextqname>nq25_5095_abandoned_infant2</nextqname>
+      <nextqnpc>n100_event_ilyn</nextqnpc>
+      <qkname mid="1"><![CDATA[Wandering Kids I]]></qkname>
+      <qnpc>
+         <npcid>100</npcid>
+         <npcename>n100_event_ilyn</npcename>
+         <npckname>이벤트 도우미 아이린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>309</npcid>
+         <npcename>n309_abandoned_infant</npcename>
+         <npckname>버려진 아이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n309_abandoned_infant-noquest" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Abandoned Kid$<BR>...<BR><FONT color=#7e12d2>(The kids seems terrified. It looks like he doesn't know how to talk.)<BR></FONT><BR><FONT color=#7e12d2>※ You can start the Quest by going to Events Planner Irine.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-a" mid="30"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Events Planner Irine$<BR>Hello! So busy today! No doubt, hanging out with adventurers gives me power!<BR>Woohoo...<BR><FONT color=#7e12d2>(Irine sighs.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-b" mid="45"><![CDATA[<html>Tell me, how can help you?</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Events Planner Irine$<BR>Nah... Nothing particular...<BR><FONT color=#7e12d2>(Irine looks flustered.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-c" mid="47"><![CDATA[<html>Special?</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Events Planner Irine$<BR>For all my complaints, you are the first person who is willing to listen!<BR>I knew from the start, that you are someone special. Thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-accepting-acceppted" mid="49"><![CDATA[<html><FONT color=#086171>(Accept quest.)</FONT></html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Wandering Kids I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-a" mid="51"><![CDATA[<html>(Irine looks like she's going to cry.)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Events Planner Irine$<BR>In fact, I am worrying about something these days. I'm pretty bothered...<BR>So far, my faith seems to have shaken.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-b" mid="53"><![CDATA[<html>Isn't everyone doing well?</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Events Planner Irine$<BR>I thought if I do my best, everyone would be happy...<BR>I should have know that it's impossible to do it alone from the beginning... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-c" mid="55"><![CDATA[<html>Kids outside of the town?</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$Events Planner Irine$<BR>I don't know about people in the town, but...<BR>Definitely not for kids outside of the town.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-d" mid="59"><![CDATA[<html>Ahhh!</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Events Planner Irine$<BR>Because of the monsters, lots of kids lost their parents. Some had fled the town.<BR>As there has been no one rescuing them after the attacks, they are still living and hiding out in place full of monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-d" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-e" mid="61"><![CDATA[<html>I didn't even know there are such kids.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Events Planner Irine$<BR>The town still do not have enough resources to accommodate the kids, hence, there are people who go there to offer them some food.<BR>But, those damned monsters stole the food and left the kids starving.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-e" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-f" mid="64"><![CDATA[<html>That's sad.</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Events Planner Irine$<BR>There are people who know the existence of the kids tried to bring them here. But the kids don't seem to trust anyone else but themselves... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-f" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-g" mid="66"><![CDATA[<html>Should I bring them back?</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Events Planner Irine$<BR>They weren't well educated and don't even seems to know how to talk.<BR>I just can't leave them like that...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-g" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-1-h" mid="68"><![CDATA[<html>But, please let me know where I can find them.</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Events Planner Irine$<BR>Are you sure you can do it? All others had failed. <BR>I wasn't really sure of myself too, what I did was to leave some food on the road for them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-1-h" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-2" mid="70"><![CDATA[<html>Yes, sir.</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Events Planner Irine$<BR>Well, a special adventurer like you might be able to rescue the kids.<BR>So... I shall leave it to you!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n309_abandoned_infant-1" image="QN_Event_Red.dds" itemindex="">
+      <talk_question mid="57"><![CDATA[<html>$Abandoned Kid$<BR>...<BR><FONT color=#7e12d2>(The kids seems terrified. It looks like he doesn't know how to talk.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-2" image="QW_32.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Events Planner Irine$<BR>Take this food and find the kids at <FONT color=#a82424>River Ruins</FONT>.<BR>Kids might come out when the monsters are gone!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n309_abandoned_infant-2" image="" itemindex="">
+      <talk_answer link_index="n309_abandoned_infant-2-a" mid="73"><![CDATA[<html>Hello? I brought you some food.</html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Abandoned Kid$<BR>…….<BR><FONT color=#7e12d2>(Kid looks alert but scared.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n309_abandoned_infant-2-a" image="" itemindex="">
+      <talk_question mid="74"><![CDATA[<html>$Abandoned Kid$<BR>…….<BR><FONT color=#7e12d2>(The kid snatches the food and just disappears into the woods.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-a" mid="76"><![CDATA[<html>The kid ran off after taking the food.</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Events Planner Irine$<BR>Did you meet the kid?<BR>The abandoned kid...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-a" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-b" mid="78"><![CDATA[<html>Kind of...</html>]]></talk_answer>
+      <talk_answer link_index="n100_event_ilyn-3-b" mid="79"><![CDATA[<html>Certainly I did!!</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Events Planner Irine$<BR>It's not gonna be easy. <BR>Which way did you see the kid ran away to?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-b" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-c" mid="81"><![CDATA[<html>(Irine laughs loudly.)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Events Planner Irine$<BR>Okay. Now that I know where they will be, I'll think of a way to help them!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n100_event_ilyn-3-c" image="" itemindex="">
+      <talk_answer link_index="n100_event_ilyn-3-!next" mid="83"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n309_abandoned_infant-3" image="" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Abandoned Children$<BR>…….</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">5094</exe>
+         <exe type="talk" npc="n100_event_ilyn">1</exe>
+         <exe type="recompense_view">50940,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300316</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">300316</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">5094</exe>
+         <exe type="recompense">50940,,,,,</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 100, 600 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="c">2</exelink>
+   <exelink qstep="accepting" npc="n100_event_ilyn" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="c" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="d" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="e" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="f" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="g" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="h" />
+   <exelink qstep="1" npc="n100_event_ilyn" sub="2">0,1,2</exelink>
+   <exelink qstep="2" npc="n309_abandoned_infant" sub="a">0,1,2</exelink>
+   <exelink qstep="3" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="3" npc="n100_event_ilyn" sub="b" />
+   <exelink qstep="3" npc="n100_event_ilyn" sub="c">1</exelink>
+   <exelink qstep="3" npc="n100_event_ilyn" sub="!next">0,2</exelink>
+   <journal_data recompense="0:50940" quest_title="떠도는 아이들Ⅰ" chapterid="" quest_level="28" quest_mark_type="10" use_item_list="300316">
+      <journal index="1">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:11@1,1@1,5@1,8@1</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Irine's Problem]]></title>
+         <contents mid="38"><![CDATA[<html>Irine seems to have a problem. Listen to what she has to say.<BR> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_32.dds</contents_image>
+         <destination_pos>323,0,0</destination_pos>
+         <destination_mode>custom:322@1,323@4</destination_mode>
+         <statemark_npcid>309</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Irine's Request]]></title>
+         <contents mid="85"><![CDATA[<html>Go to River Ruins and look for the abandoned kids with the snack that Events Planner Irine gave.<BR> <BR><FONT color=#086171>Hermalte Port (Entrance to River Ruins)</FONT> → River Ruins</html>]]></contents>
+         <destination mid="86"><![CDATA[Talk to the Abandoned Kid at River Ruins]]></destination>
+         <todo_msg mid="87"><![CDATA[Please find the abandoned kids at River Ruins.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Event_Red.dds</contents_image>
+         <destination_pos>11,n100</destination_pos>
+         <destination_mode>custom:11@1,1@1,5@1,8@1</destination_mode>
+         <statemark_npcid>100</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="88"><![CDATA[Irine's Determination]]></title>
+         <contents mid="89"><![CDATA[<html>Report the situation to Events Planner Irine.<BR> <BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Events Planner Irine</FONT></html>]]></contents>
+         <destination mid="90"><![CDATA[Talk to Events Planner Irine]]></destination>
+         <todo_msg mid="91"><![CDATA[Please return to Events Planner Irine and report the situation.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>28:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>5001</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,158 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_838_warranty_of_conviction</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>838</qid>
+      <designer>김인정</designer>
+      <qlevel>42</qlevel>
+      <qdesc>용추종자들의 상징	300464
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>839</nextqid>
+      <nextqname>sq15_839_punish_heretics</nextqname>
+      <nextqnpc>n714_cleric_yohan</nextqnpc>
+      <qkname mid="1"><![CDATA[Warranty of Conviction]]></qkname>
+      <qnpc>
+         <npcid>714</npcid>
+         <npcename>n714_cleric_yohan</npcename>
+         <npckname>상급 클레릭 요한</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting" image="QN_LM_Nativeman_A.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Yohan$<BR>I think… <FONT color=#a82425>Katau</FONT> believes that Asai tribe has a connection with dragon-followers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Cleric Yohan$<BR>If they really have connections with dragon-followers, I should kill them all as a member of cleric.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-b" image="QW_51.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-c" mid="15"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Cleric Yohan$<BR>But before that, I should check the truth.<BR>
+<FONT color=#387206>{user_nick}</FONT>, please go to<FONT color=#a82425>Riverwart Village Ruins</FONT>and search around there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Warranty of Conviction$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-1" image="QW_51.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Master Cleric Yohan$<BR>If Asai tribe has a connection with dragon-followers, there will be an evidence around there.<BR>Go to
+<FONT color=#a82425>Riverwart Village Ruins</FONT> and get it for me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2" image="QW_51.dds" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-a" mid="35"><![CDATA[<html>(Give him dragon-followers' symbol)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Cleric Yohan$<BR>Did you find something in <FONT color=#a82425>Riverwart Village Ruins</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-a" image="QS_Default.dds" itemindex="300464">
+      <talk_answer link_index="n714_cleric_yohan-2-b" mid="37"><![CDATA[<html>I got it from Asai Shamon.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Cleric Yohan$<BR>
+This… ? <FONT color=#a82425>This is dragon-followers' symbol</FONT>?!<BR>How did you get this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-b" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-c" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Cleric Yohan$<BR>Asai Shamon is the anchor of Asai tribe.<BR>
+He had this…, it seems that it's true they have a connection with dragon-followers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n714_cleric_yohan-2-c" image="" itemindex="">
+      <talk_answer link_index="n714_cleric_yohan-2-!next" mid="41"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">838</exe>
+         <exe type="talk" npc="n714_cleric_yohan">1</exe>
+         <exe type="recompense_view">8380,,,,,</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">1393</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="5">201393</exe>
+         <exe type="addquestitem" num="1">300464</exe>
+         <exe type="huntitem" num="1" exe="" onexe="7,8,9">300464</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8380,,,,,</exe>
+         <exe type="complete">838</exe>
+         <exe type="delquestitem" num="-1">300464</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="c">2</exelink>
+   <exelink qstep="accepting" npc="n714_cleric_yohan" sub="acceptted">0,1,3,4,6</exelink>
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="b" />
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="c">0</exelink>
+   <exelink qstep="2" npc="n714_cleric_yohan" sub="!next">1,2</exelink>
+   <journal_data recompense="8380" quest_title="확신의 근거" chapterid="" quest_level="42" quest_mark_type="10" use_item_list="300464">
+      <journal index="1">
+         <contents_image>QW_51.dds</contents_image>
+         <destination_pos>511,0,0</destination_pos>
+         <destination_mode>custom:511@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Evidence]]></title>
+         <contents mid="26"><![CDATA[<html>Go to Riverwart Village Ruins and find an evidence which shows Asai tribe has a connection with dragon-followers.<BR><BR><FONT color=#086171>Riverwart Wharf(Riverwart Ruins)</FONT> <FONT color=#a82425>→ Riverwart Village Ruins</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Search to Riverwart Village Ruins]]></destination>
+         <todo_msg mid="28"><![CDATA[Search to Riverwart Village Ruins.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
+         <destination_pos>15,n714</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>714</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="29"><![CDATA[Report]]></title>
+         <contents mid="30"><![CDATA[<html>I got dragon-followers' symbol from jungle ice Asai Shamon. Deliver it to Lotus Marsh's Master Cleric Yohan.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Cleric Yohan</FONT></html>]]></contents>
+         <destination mid="31"><![CDATA[Report to Master Cleric Yohan]]></destination>
+         <todo_msg mid="32"><![CDATA[Report to Master Cleric Yohan]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>42:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>810</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

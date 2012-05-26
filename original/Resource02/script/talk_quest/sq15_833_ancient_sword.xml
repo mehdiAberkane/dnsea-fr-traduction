@@ -1,0 +1,177 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_833_ancient_sword</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>833</qid>
+      <designer>김인정</designer>
+      <qlevel>40</qlevel>
+      <qdesc>사파이어 블레이드의 칼날	300467
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Ancient Sword]]></qkname>
+      <qnpc>
+         <npcid>708</npcid>
+         <npcename>n708_trader_molin</npcename>
+         <npckname>대장장이 몰린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-accepting" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-accepting-a" mid="6"><![CDATA[<html>Yes. I've heard it.</html>]]></talk_answer>
+      <talk_answer link_index="n708_trader_molin-accepting-a" mid="7"><![CDATA[<html>Sure~!</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Molin$<BR>
+You must have heard about the ancients's war quite long ago?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-accepting-b" mid="9"><![CDATA[<html>I didn't know that?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Blacksmith Molin$<BR>How about the story of the ancients sealed their powerful arms around here?<BR>
+Have you ever heard this too?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-accepting-b" image="QW_52.dds" itemindex="">
+      <talk_answer link_index="n708_trader_molin-accepting-c" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Blacksmith Molin$<BR>And I heard that <FONT color=#a82424>Ancient Library</FONT>'s <FONT color=#a82424>{monster:1407}</FONT> were used to add up special power on the ancients' arm.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-accepting-d" mid="13"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Blacksmith Molin$<BR>So, can you get some arms of {monster:1407} for me?<BR>
+If I research on it, I may find the secret how to produce powerful arms of the ancients.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-accepting-acceptted" mid="15"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Ancient Sword$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1" image="QW_52.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Molin$<BR>Now, Go to <FONT color=#a82424>Ancient Library</FONT>. Beat up<FONT color=#a82424>{monster:1407}</FONT>~<BR>
+While you're beating up the monsters, I'm going to prepare for research.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-2" image="QW_52.dds" itemindex="">
+      <talk_answer link_index="n708_trader_molin-2-a" mid="18"><![CDATA[<html>Here you are.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Blacksmith Molin$<BR>You've been to Ancient Library!<BR>The smelting furnace's already ready for it.<BR>So, may I see the arms of monsters?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-2-a" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-2-b" mid="20"><![CDATA[<html>Yes.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Blacksmith Molin$<BR><FONT color=#7e12d3>(Blacksmith Molin's checking the sapphire blade)<BR></FONT>Hmm… This blade is..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-2-b" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-2-c" mid="22"><![CDATA[<html>I'm sorry.</html>]]></talk_answer>
+      <talk_answer link_index="n708_trader_molin-2-c" mid="23"><![CDATA[<html>(I did what you wanted me to do!)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Molin$<BR>Just a normal blade even though the mixture rate of this is somewhat strange.<BR>Well well~  it was broken so this can't work well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-2-c" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-2-d" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Blacksmith Molin$<BR>Well.<FONT color=#7e12d2> (Blacksmith Molin throws away the blade)<BR></FONT>I'd rather find the way to capture {monster:1407} alive.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-2-d" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-2-e" mid="27"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-2-e" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Blacksmith Molin$<BR>I'm going to capture them alive soon, so thank you in advance.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8330,,,,,</exe>
+         <exe type="setquest">833</exe>
+         <exe type="talk" npc="n708_trader_molin">1</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">1406</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">1407</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201406</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">201407</exe>
+         <exe type="addquestitem" num="1">300467</exe>
+         <exe type="huntitem" num="1" exe="" onexe="9,10,11">300467</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8330,,,,,</exe>
+         <exe type="delquestitem" num="-1">300467</exe>
+         <exe type="complete">833</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n708_trader_molin" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n708_trader_molin" sub="acceptted">1,2,3,4,5,6,8</exelink>
+   <exelink qstep="2" npc="n708_trader_molin" sub="b" />
+   <exelink qstep="2" npc="n708_trader_molin" sub="c" />
+   <exelink qstep="2" npc="n708_trader_molin" sub="c" />
+   <exelink qstep="2" npc="n708_trader_molin" sub="d">0</exelink>
+   <exelink qstep="2" npc="n708_trader_molin" sub="e">1,2</exelink>
+   <journal_data recompense="8330" quest_title="고대의 명검" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="300467">
+      <journal index="1">
+         <contents_image>QW_52.dds</contents_image>
+         <destination_pos>523,0,0</destination_pos>
+         <destination_mode>custom:521@3,522@3,523@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Blade]]></title>
+         <contents mid="31"><![CDATA[<html>Go to Ancient Library and get a sapphire blade.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ Ancient Library</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Ancient Library]]></destination>
+         <todo_msg mid="33"><![CDATA[Get a sapphire blade in Ancient Library.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_LM_Blacksmith.dds</contents_image>
+         <destination_pos>15,n708</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>708</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="34"><![CDATA[Result]]></title>
+         <contents mid="35"><![CDATA[<html>I just got a sapphire blade. Deliver it to Lotus Marsh's Blacksmith Molin.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Blacksmith Molin</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[Talk with Lotus Marsh's Blacksmith Molin]]></destination>
+         <todo_msg mid="37"><![CDATA[Go back to Blacksmith Molin and report it.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>832</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

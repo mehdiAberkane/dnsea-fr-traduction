@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n124_guard_sam</npcename>
+      <npcid>124</npcid>
+      <startexe>4</startexe>
+      <npckname mid="1"><![CDATA[Guard Sam]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Guard Sam$ <BR>I… I…never thought I'll get through that alive.<BR>You have my thanks.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq01_008_whereabouts_girl2</exe>
+         <exe type="conexe" true="1" false="5">0</exe>
+         <exe type="enterquest">mq01_009_please_save_my_girl</exe>
+         <exe type="conexe" true="3" false="2">1</exe>
+         <exe type="conexe" true="7" false="6">2</exe>
+         <exe type="conexe" true="8" false="0">3</exe>
+         <exe type="enterquest">mq01_019_whereabouts_girl</exe>
+         <exe type="enterquest">mq01_020_please_save_my_girl</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">8</chk>
+         <chk type="hasquest">9</chk>
+         <chk type="hasquest">19</chk>
+         <chk type="hasquest">20</chk>
+      </conditions>
+   </talk>

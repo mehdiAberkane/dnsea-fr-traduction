@@ -1,0 +1,124 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq20_5806_kevin_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5806</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Scary Things]]></qkname>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-a" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Kevin$<BR>Is there anything you are afraid of? You know Airship Engineer Hubert... he's most afraid of rats! If a rat happens to enter the airship, such enormous airship can be crash due to that little guy?<BR>Isn't that scary?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-h" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Kevin$<BR>Merchant May is afraid of commodity price. Apparently, there's a inflation. The price of red wine raised to double this month as compared to last month!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-c" mid="10"><![CDATA[<html>Monsters, no doubt.</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-d" mid="11"><![CDATA[<html>Minotaurs.</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-move" mid="12"><![CDATA[<html>Women's mind.</html>]]></talk_answer>
+      <talk_answer link_index="n029_crew_kevin-accepting-g" mid="13"><![CDATA[<html>Money.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Kevin$<BR>Hmm... how about you?<BR>Monsters are still the scariest thing, huh?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-c" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Kevin$<BR>You're actually afraid of monsters... how do you cope with your fear then?<BR>Although my father was an engineer, but I heard that he was also a great adventurer too. Huh? Who did I heard it from?<BR>Well... In my dre..dreams?<BR>Anyway! A true warrior should conquer any fears. So brace up... conquer that fear and battle the monsters. You can be a great hero.<BR>Hehe, by then, I will become a crew too. I'm looking forward to it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-d" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Kevin$<BR>Minotaurs?<BR>Well... strange enough, there are many adventurers who are afraid of Minotaurs too. A survey was taken previously by  <FONT color=#a82424>Cheeky Goddess</FONT> and <FONT color=#a82424>Fashion Goddess</FONT>...<BR>the result shows that Minotaur was third in the rank of the scariest monsters.<BR>But you can't be afraid of cows!<BR>Drink lots of Minotaur Health Drink, the milk, and become a powerful person. Then kill them with a tight slap!!<BR>Hehe, I trust that you can do it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-j" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Kevin$<BR>I see...<BR><FONT color=#387206>{user_class}</FONT> is afraid of women's mind too. ...<BR>But you don't even have a lover, why are you afraid of that??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-j" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Kevin$<BR>Hmm...<BR>Why do you find it scary? Why is it not men's mind but women's mind... hmm...<BR>You are so unique...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-i" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Kevin$<BR>Money?! You think money is scary? Hehe... You are so interesting!<BR>Merchant May always talk about too! Money this! Money that! My mother used to fought with my father at times because of money too, so I kinda understand. Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-accepting-b" mid="28"><![CDATA[<html>(Kevin complains.)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Kevin$<BR>As for me, I'm most afraid of maths!!<BR>Gees...why do 1+1 have to be 2?<BR>Why can't we not add the 1 and maintain it as 1??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-i" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Kevin$<BR>But… but... you can't do many things without money! See, money can't bite or scold you.<BR>You gotta decide whether or not to scared of money, right?<BR><FONT color=#7e12d2>(Kevin laughs like an innocent child.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-accepting-j" image="" itemindex="">
+      <talk_question mid="30"><![CDATA[<html>$Kevin$<BR>Anyways, they say that true courage is not to give in to fear.<BR>You must do it, okay? Hehe!!<BR>But Uncle Hubert said... you'll be always FEAR of women's feelings.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 5806, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 29, 300 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 29, 150 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 29, 300 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 29, 150 );</exe>
+         <exe type="talk" npc="n029_crew_kevin">e</exe>
+         <exe type="talk" npc="n029_crew_kevin">f</exe>
+         <exe type="conexe" true="5" false="8">0</exe>
+         <exe type="conexe" true="5" false="6">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="c">1,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="d">2,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="move">3,7,0</exelink>
+   <exelink qstep="accepting" npc="n029_crew_kevin" sub="g">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 무서운 것" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>29:8250:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

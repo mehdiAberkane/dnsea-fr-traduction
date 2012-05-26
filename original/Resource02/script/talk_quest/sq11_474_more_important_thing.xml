@@ -1,0 +1,187 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_474_more_important_thing</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>474</qid>
+      <designer>김인정</designer>
+      <qlevel>35</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[More Important Thing]]></qkname>
+      <qnpc>
+         <npcid>296</npcid>
+         <npcename>n296_butterfly_ring</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$There is something glittering$<BR><FONT color=#7e12d2>(Must be mistaken. Nothing here)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting" image="QS_Default.dds" itemindex="300036">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-a" mid="7"><![CDATA[<html>No, Why do you ask?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Archer Ithilien$<BR>By any chance, have you seen an earring with butterfly shaped decoration from the <FONT color=#a82424>Sunken</FONT><FONT color=#a82424>Cargo Vessel</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-a" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-b" mid="9"><![CDATA[<html>But, why are you trying to find her belongings?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Archer Ithilien$<BR>It belongs to <FONT color=#a82424>Karacule</FONT>, who participated in the dragon raid, and she valued it so much.<BR>But, she lost the earrings there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-c" mid="11"><![CDATA[<html>What happened?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Archer Ithilien$<BR>That's because I'm in debt to her. Frankly, not only me but all the people who were in the battle near the Desolate Islet is in debt to <FONT color=#a82424>Karacule</FONT> and the Sorceress.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-d" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Archer Ithilien$<BR>It was before the dragon slayers were called dragon slayers. We gathered to eliminate the Black Dragon, but had no idea how to get to the <FONT color=#a82424>Black Dragon</FONT>'s nest.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-d" image="QN_cleric_Teramai_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-e" mid="15"><![CDATA[<html>Oh my…</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Archer Ithilien$<BR>A lot happened then, particularly <FONT color=#a82424>Karacule</FONT> and <FONT color=#a82424>Teramai</FONT> constantly fought. That day, their fight intensified and Karacule pronounced that she cannot fight along with the Clerics.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-f" mid="17"><![CDATA[<html>Must have been a tough fight.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Archer Ithilien$<BR><FONT color=#a82424>Karacule</FONT> said she was going back to the Lotus Marsh with the other Sorceress. Therefore, on that day, only the mercenaries, knights, and elf archers were in the battle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-f" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-g" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Master Archer Ithilien$<BR>Then, we were caught in enemy trap and were in the verge of being exterminated.<BR>But, when we were losing hope, <FONT color=#a82424> Karacule</FONT> came to save us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-h" mid="21"><![CDATA[<html>Is there some story to the earrings?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Master Archer Ithilien$<BR>Karacule said she came back because she didn't like to see the Clerics take all the credit after winning the battle, but we know she came back for her team. However, in that battle, Karacule lost her precious earrings.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-i" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Master Archer Ithilien$<BR>Yes, that earring was a present from her <FONT color=#a82424>older brother</FONT> before he disappeared while she was young. When others found out she had lost her earrings, they were worried, but Karacule said she was okay and said,</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-j" mid="25"><![CDATA[<html>Hmm, precious earrings…</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Master Archer Ithilien$<BR><FONT color=#a82424>It's fortunate she didn't lose her team, which is more valuable</FONT>. But, surely, she was very sad to have lost her precious earrings. So I really want to find that earring for her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-accepting-j" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-accepting-acceppted" mid="27"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$More Important Thing$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="QW_46.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Master Archer Ithilien$<BR>Please, look for the lost earrings at the <FONT color=#a82424>Sunken Cargo Vessel</FONT>.<BR>Good luck.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-1" image="" itemindex="">
+      <talk_answer link_index="n296_butterfly_ring-2" mid="30"><![CDATA[<html>(Approaches the item in picks it up)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Place where something glittered$<BR><FONT color=#7e12d2>(I see something small and glittering object)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n296_butterfly_ring-2" image="QS_Default.dds" itemindex="300036">
+      <talk_question mid="31"><![CDATA[<html>$Place where something glittered$<BR><FONT color=#7e12d2>(Now I can't see anything)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-a" mid="33"><![CDATA[<html>No problem.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Master Archer Ithilien$<BR>You found <FONT color=#a82424>Karacule</FONT>'s precious earrings.<BR>Thank you so much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-a" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-b" mid="35"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-b" image="QN_Npc_Karakule_silhouette.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Master Archer Ithilien$<BR>Now, I must give this earrings to her in <FONT color=#a82424>Lotus Marsh</FONT>. <BR>Surely, <FONT color=#a82424>Karacule</FONT> will be very happy.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">474</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">1</exe>
+         <exe type="recompense_view">,4741,4742,4743,4744,4745</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="addquestitem" num="1">300036</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4741,4742,4743,4744,4745</exe>
+         <exe type="delquestitem" num="-1">300036</exe>
+         <exe type="complete">474</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 44, 480 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="j">2</exelink>
+   <exelink qstep="accepting" npc="n044_archer_master_ishilien" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n296_butterfly_ring" sub="2">0,2,1</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="a">0</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="b">1,2,3</exelink>
+   <journal_data recompense="1:4741,2:4742,3:4743,4:4744,5:4745" quest_title="보다 소중한 것" chapterid="" quest_level="35" quest_mark_type="10" use_item_list="300036">
+      <journal index="1">
+         <contents_image>QW_46.dds</contents_image>
+         <destination_pos>461,n296</destination_pos>
+         <destination_mode>custom:461@1</destination_mode>
+         <statemark_npcid>296</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Butterfly Shaped Earrings]]></title>
+         <contents mid="38"><![CDATA[<html>Go to the Sunken Cargo Vessel and find the butterfly shaped earrings Karacule had lost.<BR><BR><FONT color=#086171>Hermalte Port(Desolate Islet Transport)</FONT> <FONT color=#a82424>→ Sunken Cargo Vessel</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Find the earrings at the Sunken Cargo Vessel]]></destination>
+         <todo_msg mid="40"><![CDATA[Find the earrings at the Sunken Cargo Vessel]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode />
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[To Master Archer Ithilien]]></title>
+         <contents mid="42"><![CDATA[<html>Found the butterfly shaped earrings. Give this to Master Archer Ithilien in Saint Haven.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Archer Ithilien</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Report to Master Archer Ithilien]]></destination>
+         <todo_msg mid="44"><![CDATA[Give the butterfly shaped earrings to Master Archer Ithilien.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>35:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>559</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

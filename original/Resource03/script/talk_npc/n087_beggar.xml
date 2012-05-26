@@ -1,0 +1,115 @@
+﻿   <talk>
+      <npcename>n087_beggar</npcename>
+      <npcid>87</npcid>
+      <startexe>5</startexe>
+      <npckname mid="1"><![CDATA[Loffy]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="13"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="14"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Loffy the Beggar$<BR>There is a hound kicking inside my head! Keekeehee! Keekeehee!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="84" link_target="nq25_5096_salvation_children.xml"><![CDATA[<html>[Lv.1] <FONT color=#086171>Support for the Children</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="26" link_target="sq11_552_pirate_treasure1.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Treasure of the Pirate King I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="27" link_target="sq11_553_pirate_treasure2.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Treasure of the Pirate King II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="28" link_target="sq11_554_pirate_treasure3.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Treasure of the Pirate King III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="33" link_target="nq30_8101_cursed_gold_coin.xml"><![CDATA[<html>[Lv.38] <FONT color=#086171>Cursed Gold Coin</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="85"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="6"><![CDATA[<html>$Loffy the Beggar$<BR>You are all liars! Keekeehee!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="talk_1" mid="59"><![CDATA[<html>[Talk] Treasure</html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="90" link_target="sq_985_xmas_beggar.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Merry Christmas</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="nq30_8102_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Saint Haven</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="61" link_target="nq30_8103_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Favorite Weather</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="62" link_target="nq30_8104_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Places Visited</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="63" link_target="nq30_8105_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Other Cities</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="64" link_target="nq30_8106_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Arandel</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="65" link_target="nq30_8107_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Adventure Stories</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="66" link_target="nq30_8108_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>The White Light</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="67" link_target="nq30_8109_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Recent Concerns</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="68" link_target="nq30_8110_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>About {user_nick}</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="69" link_target="nq30_8111_beggar_talk.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Wonderful Memories</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="78" link_target="nq30_8112_beggar_30_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>Loffy's Gift I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="87" link_target="nq30_8114_beggar_90_reward.xml"><![CDATA[<html>[Talk] <FONT color=#086171>An Unexpected Gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_talk" mid="88"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Loffy the Beggar$<BR>Who will save us? The Goddess? BR>That's a lie, a lie! Keekeehee!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_1" image="" itemindex="">
+         <talk_answer link_index="talk_2" mid="15"><![CDATA[<html>[Loffy flicks a flea from his body]</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Loffy the Beggar${action:Stand2}<BR>Treasures? Keekeehee. Well, there is one treasured hound in my head!<BR>Betcha don't know how valuable it is! Keekeehee!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk_2" image="" itemindex="">
+         <talk_answer link_index="talk" mid="71"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="12"><![CDATA[<html>$Loffy the Beggar$<BR>Who cares about Pirate Kings, heroes and honour? What a meaningless life.<BR>A treasure map is only good to blow my nose, aint that right Hound? Lemme hear you bark!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="90_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="42"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="43"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_90" mid="44"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="36"><![CDATA[<html>$Loffy the Beggar$<BR>The white light shall again and everyone will die… I hope you don't get caught in it. I hope not to repeat the same mistake again...</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="60_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="45"><![CDATA[<html>[Quest</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="46"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_60" mid="47"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="37"><![CDATA[<html>$Loffy the Beggar$<BR>Ahhh everyone thinks I am crazy but you don't seem to be like them. Come, I'll let you in on a secret.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="30_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="48"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="49"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_30" mid="50"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="38"><![CDATA[<html>$Loffy the Beggar$<BR>Stay true to yourself. Don't be a hypocrite! Bah, shall not be removing the Hound in my mind for you now. Woof woof woof!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="0_percent" image="" itemindex="">
+         <talk_answer link_index="quest" mid="51"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="52"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_answer link_index="present_0" mid="53"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_question mid="39"><![CDATA[<html>$Loffy the Beggar$<BR>Have you seen this? Are you feeling sorry for me now, huh! Bah!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="present_ui" image="" itemindex="">
+         <talk_answer link_index="gift" mid="54"><![CDATA[<html>[Gift]</html>]]></talk_answer>
+         <talk_answer link_index="back_present_ui" mid="55"><![CDATA[<html>[Don't Give Gift]</html>]]></talk_answer>
+         <talk_question mid="40"><![CDATA[<html>$Gift$<BR> </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="gift" image="" itemindex="">
+         <talk_answer link_index="back_gift" mid="56"><![CDATA[<html>[Previous]</html>]]></talk_answer>
+         <talk_question mid="41"><![CDATA[<html>$Loffy the Beggar$<BR>I'll have the gift, but save your pity.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="talk">ta2</exe>
+         <exe type="talk">ta1</exe>
+         <exe type="conexe" true="2" false="3">1</exe>
+         <exe type="conexe" true="6" false="0">2</exe>
+         <exe type="conexe" true="9" false="7">3</exe>
+         <exe type="conexe" true="10" false="8">4</exe>
+         <exe type="conexe" true="11" false="12">5</exe>
+         <exe type="talk">90_percent</exe>
+         <exe type="talk">60_percent</exe>
+         <exe type="talk">30_percent</exe>
+         <exe type="talk">0_percent</exe>
+         <exe type="custom">api_ui_OpenGiveNpcPresent( userObjID, 87 );</exe>
+         <exe type="talk">present_ui</exe>
+         <exe type="custom">api_npc_SendSelectedPresent( userObjID, 87 );</exe>
+         <exe type="talk">gift</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 554 ) == 1</chk>
+         <chk type="prob">500</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 8101) == 1</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 87 ) >= 90</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 87 ) >= 60</chk>
+         <chk type="custom">api_npc_GetFavorPercent( userObjID, 87 ) >= 30</chk>
+      </conditions>
+      <exelink idx="back_quest">5</exelink>
+      <exelink idx="back_talk">5</exelink>
+      <exelink idx="present_90">13,14</exelink>
+      <exelink idx="present_60">13,14</exelink>
+      <exelink idx="present_30">13,14</exelink>
+      <exelink idx="present_0">13,14</exelink>
+      <exelink idx="gift">15,16</exelink>
+      <exelink idx="back_present_ui">5</exelink>
+      <exelink idx="back_gift">5</exelink>
+   </talk>

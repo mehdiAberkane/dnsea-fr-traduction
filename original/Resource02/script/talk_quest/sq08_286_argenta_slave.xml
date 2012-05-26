@@ -1,0 +1,676 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_286_argenta_slave</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>286</qid>
+      <designer>김인정</designer>
+      <qlevel>22</qlevel>
+      <qdesc>아르젠타 시작.
+데커드-> 베일리-> 루퍼트-> 메이-> 티아나-> 케빈
+기도하는 자의 안식처 보스전 클리어-> 데이비드 구출
+데이비드와 대화
+잿빛 폐허의 아르젠타와 대화
+요리를 구해온다(향긋한 와인맛 우유)
+아르젠타는 노예의 증거를 가져가고 데이비드를 치료한 후, 새 노예로 임명한다.
+아르젠타의 진정한 노예 타이틀 획득. 끝.
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Argenta's Slave]]></qkname>
+      <qnpc>
+         <npcid>164</npcid>
+         <npcename>n164_argenta_wounded</npcename>
+         <npckname>아르젠타(잿빛폐허)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>203</npcid>
+         <npcename>n203_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(기도하는 자의 안식처)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>205</npcid>
+         <npcename>n205_slave_david</npcename>
+         <npckname>아르젠타의 두번째 노예 데이비드(잿빛 폐허2-부상버전)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>29</npcid>
+         <npcename>n029_crew_kevin</npcename>
+         <npckname>자칭 승무원 케빈</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>323</npcid>
+         <npcename>n323_warehouse_lupert</npcename>
+         <npckname>창고지기 루퍼트</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>35</npcid>
+         <npcename>n035_soceress_master_tiana</npcename>
+         <npckname>상급 소서리스 티아나 (캐더락 소서리 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Adventurer David$<BR>What, what are you looking at?! I... I'm just saving up my powers!<BR><FONT color=#7e12d2>(You can obtain the quest from Argenta in Ash Ruins.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n205_slave_david-noquest" image="" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Adventurer David$<BR>What, what are you looking at?! I... I'm just saving up my powers!<BR><FONT color=#7e12d2>(You can obtain the quest from Argenta in Ash Ruins.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Merchant May$<BR>Hmm... I think I actually had something to say to you...<BR><FONT color=#7e12d2>(You can obtain the quest from Argenta in Ash Ruins.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-noquest" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Kevin$<BR>Even if you want to get on the airship, you can't now!<BR><FONT color=#7e12d2>(You can obtain the quest from Argenta in Ash Ruins.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-noquest" image="" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hmm... Shouldn't you be busy with something else right now?<BR><FONT color=#7e12d2>(You can obtain the quest from Argenta in Ash Ruins.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-noquest" image="" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Master Sorceress Tiana$<BR>Get out of my face if you don't have any business<BR><FONT color=#7e12d2>(Quest from Argenta in Ash Ruins needed to proceed)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-noquest" image="" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Don't you have anything to store or retrieve? Then come back when you have item to store.<BR><FONT color=#7e12d2>(You can obtain the quest from Argenta in Ash Ruins.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-q286s" mid="15"><![CDATA[<html>Do you have something to say to me?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Argenta$<BR>... Fool.<BR><FONT color=#7e12d2>(Argenta is thinking about something, seems like she has something to say.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-a" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Argenta$<BR>Hmph. I have nothing to say to you right now, alright? Go and finish your business first.<BR><FONT color=#7e12d2>(This quest is only available after you have completed the main scenario for Calderock Village and Argenta's Side Quest.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-b" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-c" mid="19"><![CDATA[<html>They were talking about me? What were they talking about?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Argenta$<BR>I've been hearing people in town talking about you. Were you aware of this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-d" mid="21"><![CDATA[<html>A person who is well-informed about surrounding..?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Argenta$<BR>An rumor is circulating, and I can't believe you are so peacefully hanging around like this... This is so pathetic. Such a fool. If you're curious, then go ask <FONT color=#a82424>the person who is well-informed about surrounding..</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-accepting-acceptted" mid="23"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Argenta's Slave$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-1" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Argenta$<BR>Yes. I'm talking about that <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT> or whatever, who has the loud voice. I'm hungry now and all of this is getting annoying, so don't talk to me. I have generously given you enough information, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-a" mid="26"><![CDATA[<html>Where is it?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Oh... Thank you for coming like this. I had something to tell you. I'm really thankful that you worked night and day for Calderock Village. But there's something that... Cough. Ummph.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-b" mid="28"><![CDATA[<html>What? Secret communicating? With who? Where? Why?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>This is not easy for me to say to you but... There's been a pretty bad <FONT color=#a82424>rumor</FONT> about you circulating lately. Does this ring a bell? According to the <FONT color=#a82424>rumor</FONT>, you are... Umm... They say you are <FONT color=#a82424>secretly communicating</FONT> with someone, can you believe it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-c" mid="30"><![CDATA[<html>I have nothing to do with the Dark Elf.</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>According... According to the rumor, you are secretly communicating with <FONT color=#a82424>the monster dressed in red clothes</FONT>. Didn't you say the other time that the <FONT color=#a82424>red</FONT> <FONT color=#a82424>Dark Elf</FONT> was spreading the poison around?  </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-c" image="QW_15.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-1-d" mid="32"><![CDATA[<html>What? Sanctuary Flower Bouquet? (That sounds familiar...)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>I want to trust you, but the rumors are quite detailed. Somebody claims to have seen you putting together a <FONT color=#a82424>Sanctuary</FONT> <FONT color=#a82424>Flower Bouquet</FONT> from the Forest Sanctuary, and then giving it to the <FONT color=#a82424>red monster</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1-d" image="QN_Npc_Guilian.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Oh, I heard that somebody has left the Sanctuary Flower Bouquet with <FONT color=#a82424>Warehouse</FONT> <FONT color=#a82424>Rupert</FONT>. You should go and ask about it. I think it would be best for you to investigate the matter more deeply, for your own honor. I'll also ask around.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-1" image="" itemindex="">
+      <talk_question mid="187"><![CDATA[<html>$ Adventurer David$<BR>What, what are you looking at?! I'm just... saving my strength for now! I'm... I'm not scared at all!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n205_slave_david-1" image="" itemindex="">
+      <talk_question mid="188"><![CDATA[<html>$Adventurer David$<BR>What, what are you looking at?! I'm just... saving my strength for now! I'm... I'm not scared at all!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_question mid="189"><![CDATA[<html>$Merchant May$<BR>Hmm... I think I actually had something to say to you... I could almost remember it... Or not...<BR><FONT color=#7e12d2>(You must go to Adventurer's Guild Master Deckard.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-1" image="" itemindex="">
+      <talk_question mid="190"><![CDATA[<html>$Kevin$<BR>Even if you want to get on the airship, you can't now!<BR><FONT color=#7e12d2>(You must go to Adventurer's Guild Master Deckard.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-1" image="" itemindex="">
+      <talk_question mid="191"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>You seem to have some free time today. An adventurer with free time does not have anything to store here.<BR><FONT color=#7e12d2>(You must go to Adventurer's Guild Master Deckard.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-1" image="" itemindex="">
+      <talk_question mid="192"><![CDATA[<html>$Master Sorceress Tiana$<BR>Get out of my face, if you don't have anything to talk.<BR><FONT color=#7e12d2>(You must go to Adventurer's Guild Master Deckard.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QN_Npc_Guilian.dds" itemindex="">
+      <talk_question mid="43"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Go and ask <FONT color=#a82424>Warehouse Keeper Rupert</FONT> some questions. I feel sorry and ashamed for you that such a weird rumor has been circulating. Oh how could this happen...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Merchant May$<BR>I'm sorry, but they say that where there's smoke, there's fire, right? Hmm... I didn't think you were such a person, but I guess there will always be some bad people.<BR>I mean, it's not that I really believe in the <FONT color=#a82424>rumor</FONT>. Hehehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-2" image="" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Kevin$<BR>Hmm... I thought you were a good person. Why would such a rumor start? Don't you think that someone <FONT color=#a82424>jealous</FONT> might have framed you? Well, it's only my imagination.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-2" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$Master Sorceress Tiana$<BR>What's going on? Don't just mumble, speak up.<BR>See, that's why such weird rumors are circulating about you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2" image="" itemindex="">
+      <talk_answer link_index="n323_warehouse_lupert-2-a" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Wow! It's <FONT color=#382000>{user_nick}</FONT>! The one mentioned in all the rumors! You must be quite worried about the abrupt rumors. I don't believe in such rumors, so don't worry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2-a" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n323_warehouse_lupert-2-b" mid="50"><![CDATA[<html>What was this person like?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Oh! So you've come by word from Adventurer's Guild Master Deckard. Well, it's just like how you may have heard. I am temporarily holding the <FONT color=#a82424>Sanctuary Flower Bouquet</FONT>. The person who brought this to me told me the rumor about you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-2-b" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>Well I could easily find that out by going through the documents, but I cannot just leak the list of my customers. How about asking the ladies in town? <FONT color=#a82424>Merchant May</FONT> seems to know much about the news around here, so she might know.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-3" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>But don't blame me. Do you think I wouldn't want to tell you the information? It's just that I would not have the rights to do my business if I did that. Go and ask <FONT color=#a82424>Merchant May</FONT> about it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3-a" mid="54"><![CDATA[<html>(You directly asked Merchant May about it.)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Merchant May${action:talk}<BR>Huh! Rumors say that you have joined hands with the <FONT color=#a82424>red</FONT> <FONT color=#a82424>monster</FONT>, is that true?<BR>It's a lie, isn't it?! Isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-a" image="QS_Default.dds" itemindex="300136">
+      <talk_answer link_index="n026_trader_may-3-b" mid="56"><![CDATA[<html>Huh? Ancient Book? I've never heard about that before...</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Merchant May$<BR>The rumor about the <FONT color=#a82424>Sanctuary Flower Bouquet</FONT>, and the reports about you stealing the <FONT color=#a82424>Ancient Book</FONT> from the <FONT color=#a82424>Silent Monastery Main Hall</FONT>... All of this really makes you seem really suspicious! It really does, <FONT color=#382000> {user_nick}</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-b" image="QS_Default.dds" itemindex="300119">
+      <talk_answer link_index="n026_trader_may-3-c" mid="58"><![CDATA[<html>An old novel? An Ancient Book? That does sound a little familiar...</html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Merchant May$<BR>Oh come on! Someone claimed to have stopped you from stealing the book, and then brought the Ancient Book here to me. The person then offered to sell it to me at a cheap price. I'm telling you, somebody brought it to me like that! Well, I was a little disappointed when I found out that it was just a petty <FONT color=#a82424>old novel</FONT>...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3-c" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="59"><![CDATA[<html>$Merchant May$<BR><FONT color=#a82424>Master Sorceress Tiana</FONT> said she also heard about something else... Hmm... I don't remember though. Why don't you go and ask for yourself? But <FONT color=#a82424>Tiana</FONT> is scary, so she might hit you of course.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QN_Npc_SoceressTiana.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Merchant May$<BR>Did you talk to <FONT color=#a82424>Master Sorceress Tiana</FONT>? Hehe. Are you scared that you might get hit? The whole weird rumor thing is driving me crazy! I can't seem to focus on my work. Hmm...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-a" mid="62"><![CDATA[<html>(Sorceress Tiana gave a suspicious look.)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Master Sorceress Tiana$<BR>Oh, the <FONT color=#a82424>rumor</FONT>! What really happened?<BR>That's funny.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-a" image="QW_23.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-b" mid="64"><![CDATA[<html>But there was nothing we can do about the poison...</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Master Sorceress Tiana$<BR>Although you have given some great effort at the <FONT color=#a82424>Road of No Return</FONT>, the poison was not fully spread, right? The monsters still appears, as if you're <FONT color=#a82424>secretly communicating</FONT> with the enemy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-b" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-c" mid="66"><![CDATA[<html>I'm telling you.. That, it's not a monster...</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Master Sorceress Tiana$<BR>There is also something about stopping the <FONT color=#a82424>Red Dark Elf</FONT> about the rumor giving the <FONT color=#a82424>Dark Elf's</FONT> <FONT color=#a82424>necklace</FONT> to the <FONT color=#a82424>monster wearing red clothes</FONT> outside of town.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-c" image="QS_Default.dds" itemindex="300115">
+      <talk_answer link_index="n035_soceress_master_tiana-4-d" mid="68"><![CDATA[<html>Huh? The Dark Elf's Necklace?! </html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Master Sorceress Tiana$<BR>There are all kinds of story on why you would go through all the trouble to go back to the <FONT color=#a82424>Road of No Return</FONT>, which is now in ruins, just to get the <FONT color=#a82424>Dark Elf's Necklace</FONT>. Doesn't common sense tell you that something is suspicious about that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-d" image="" itemindex="">
+      <talk_answer link_index="n035_soceress_master_tiana-4-e" mid="70"><![CDATA[<html>Adventurer David?</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Master Sorceress Tiana$<BR>That reminds me. The one talking about the <FONT color=#a82424>Dark Elf's Necklace</FONT>... You know that person, don't you? That person... Who was it...?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-4-e" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="71"><![CDATA[<html>$Master Sorceress Tiana${action:talk}<BR>Well, yes. It was some kind of a silly name and look silly too. He said that he would go and visit that self-styled <FONT color=#a82424>Kevin</FONT>. He might still be there, so go and check.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-5" image="QN_crew_kevin.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Master Sorceress Tiana$<BR>What? What is it? Didn't you go to <FONT color=#a82424>Kevin</FONT> yet? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5" image="QM_Ellena.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-a" mid="74"><![CDATA[<html>I'm not a traitor!</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Kevin$<BR>Huh! It's the traitor who communications with the <FONT color=#a82424>monster in red clothes</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-a" image="QW_AirShip.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-b" mid="76"><![CDATA[<html>Yes, yes. I am not a spy nor a traitor.</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Kevin$<BR>I don't believe in such weird rumors. According to <FONT color=#a82424>Airship Engineer Hubert</FONT>, you helped him restore the airship so that it could fly again, is that right? Such an adventurer like that would never become a traitor, right? Am I right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-b" image="QS_Default.dds" itemindex="400091">
+      <talk_answer link_index="n029_crew_kevin-5-c" mid="78"><![CDATA[<html>An Adventurer...? Was the name...?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Kevin$<BR>Some <FONT color=#a82424>Adventurer fellow</FONT> came by and sold some <FONT color=#a82424>Poison Sac</FONT>, and said bad things. I think that fellow was pretty suspicious.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-d" mid="80"><![CDATA[<html>... I knew it. (You wait and see, Adventurer David!)</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Kevin$<BR>Yes! It was <FONT color=#a82424>Adventurer David</FONT>!<BR>You two know each other?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-d" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-e" mid="82"><![CDATA[<html>(I'm Argenta's slave, but not a betrayer!... This makes me sad.)</html>]]></talk_answer>
+      <talk_question mid="81"><![CDATA[<html>$Kevin$<BR>I'm not sure, but it seems like you two hold a grudge against each other, right? He said that you're he red clothes monster's <FONT color=#a82424>slave</FONT>, not its colleague or secret communicator.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-e" image="QW_CataractGateway.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-f" mid="84"><![CDATA[<html>Yes... Alright... (It still bothers me!)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Kevin$<BR>They say that Calderock cannot be completely purified because of that <FONT color=#a82424>monster in red clothes</FONT>. Hehe. I don't believe such things! So, <FONT color=#382000>{user_nick}</FONT>, don't worry too much about that rumor.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-f" image="" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-g" mid="86"><![CDATA[<html>I don't know where he is.</html>]]></talk_answer>
+      <talk_question mid="85"><![CDATA[<html>$Kevin$<BR>Well, I guess you still have to take your revenge against your grudge.<BR>is this right? Well.. give him a good punch, or get on your knees and say you're sorry. Do whatever it takes to solve the problem.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-g" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-h" mid="88"><![CDATA[<html>What's the request?</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Kevin$<BR>I know where he is! .<BR>I've just heard this a moment ago, but that <FONT color=#a82424>Adventurer David</FONT> fellow has received a big request.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-h" image="QW_26.dds" itemindex="">
+      <talk_answer link_index="n029_crew_kevin-5-i" mid="90"><![CDATA[<html>Uh... Hmm...  It would be a relief if he didn't run away...</html>]]></talk_answer>
+      <talk_question mid="89"><![CDATA[<html>$Kevin$<BR>Show the monsters a lesson at the <FONT color=#a82424>Prayer's Resting Place</FONT>! He was so arrogant, but hasn't returned yet. Maybe.. he just ran away? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-5-i" image="" itemindex="">
+      <talk_question mid="91"><![CDATA[<html>$Kevin$<BR>Oh come on! He's stupid to visit the <FONT color=#a82424>Prayer's Resting Place</FONT> all by himself. Why don't you just go and see for yourself.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-6" image="QW_26.dds" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Kevin$<BR>That <FONT color=#a82424>Adventurer David</FONT>. He's actually a coward, right? I bet he ran away to the <FONT color=#a82424>Prayer's Resting Place</FONT>. Hehehe. I'm pretty sure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-6" image="" itemindex="">
+      <talk_question mid="93"><![CDATA[<html>$Adventurer David$<BR>(Shivers)... I, I'm not shivering because I'm scared! (Shivers)...<BR>*Sniff sniff*. Mommy... I'm scared! *Sniff sniff*.<BR><FONT color=#7e12d2>(It seems like Adventurer David misses his mother)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-7" image="" itemindex="">
+      <talk_answer link_index="n203_slave_david-7-a" mid="95"><![CDATA[<html>Are you okay?</html>]]></talk_answer>
+      <talk_question mid="94"><![CDATA[<html>$Adventurer David$<BR>I.. I'm not shivering because I'm scared! (Shivers)... Its.. it's just that I've been suddenly ambushed! (Shivers)...<BR>The power over here was different.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-7-a" image="" itemindex="">
+      <talk_answer link_index="n203_slave_david-7-b" mid="97"><![CDATA[<html>seems like you're hurt.</html>]]></talk_answer>
+      <talk_question mid="96"><![CDATA[<html>$Adventurer David$<BR>(Shivers)... Don't, don't try to be so arrogant just because you have saved me once! (Shivers)... *Sniff sniff*. I miss my mom. *Sniff*. <FONT color=#7e12d2>(Adventurer David looks pale from fear. He looks hurt.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-7-b" image="" itemindex="">
+      <talk_answer link_index="n203_slave_david-7-c" mid="99"><![CDATA[<html>(I can't believe he still speak nonsense in this situation.)</html>]]></talk_answer>
+      <talk_question mid="98"><![CDATA[<html>$Adventurer David$<BR>These wounds are... Nothing! (Shivers)...<BR>Is this how the <FONT color=#a82424>Great Adventurer</FONT> <FONT color=#a82424>Adventurer David</FONT> will pass away? *Sniff sniff*.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n203_slave_david-7-c" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="100"><![CDATA[<html>$Adventurer David$<BR>When I pass away, bury me at a sunny place, and pass this down to the generations to come! ... <BR><FONT color=#7e12d2>(You should return to Gray Ruins and talk to Argenta.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n035_soceress_master_tiana-8" image="QW_26.dds" itemindex="">
+      <talk_question mid="101"><![CDATA[<html>$Master Sorceress Tiana$<BR>Didn't you already go to the <FONT color=#a82424>Prayer's Resting Place</FONT>? I was surprised to hear that you went there again! <FONT color=#382000>{user_nick}</FONT>. Hehe. Since you're so brave, you can ignore a few petty rumors.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n029_crew_kevin-8" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="102"><![CDATA[<html>$Kevin$<BR>Wow! That <FONT color=#a82424>stupid</FONT> fellow went there?! He is indeed <FONT color=#a82424>stupid</FONT>, right?<BR>You can't beat a fool, don't you think? It's fortunate that he didn't die.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n323_warehouse_lupert-8" image="" itemindex="">
+      <talk_question mid="103"><![CDATA[<html>$Warehouse Keeper Rupert$<BR>What? A <FONT color=#a82424>rumor</FONT> about an adventurer? What is that about?<BR>I've already forgotten everything about it. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-8" image="QN_Slave_David.dds" itemindex="">
+      <talk_question mid="104"><![CDATA[<html>$Merchant May$<BR>Anyway, was that <FONT color=#a82424>Adventurer David</FONT> greatly injured? Poor guy.<BR>I don't know why he would spread such rumors.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-8" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-8-a" mid="106"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="105"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>I've heard the rumors. That adventurer named <FONT color=#a82424>Adventurer David</FONT> or whatever almost died, didn't he? This happened because he acted on his own without reporting to me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-8-a" image="" itemindex="">
+      <talk_question mid="107"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Don't worry about the rumor. I'll explain everything clearly. It's ridiculous for such a great person like you to be a traitor or <FONT color=#a82424>the slave of a monster</FONT>... Not it doesn't make sense at all. Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n205_slave_david-8" image="" itemindex="">
+      <talk_answer link_index="n205_slave_david-8-a" mid="109"><![CDATA[<html>You can't really die with the amount of wounds.. you have.</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Adventurer David$<BR>When I pass away, bury me at a sunny place, and pass this down to the next generation.<BR>That <FONT color=#a82424>Adventurer David</FONT> was a brave man...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n205_slave_david-8-a" image="QN_Npc_Argenta.dds" itemindex="">
+      <talk_question mid="110"><![CDATA[<html>$Adventurer David$<BR>The sky... The sky is so beautiful. Ha. I'm such a lucky person, to be able to rest beside <FONT color=#a82424>Argenta</FONT>. Ha.<BR><FONT color=#7e12d2>(Adventurer David seems to have lost his mind.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-a" mid="112"><![CDATA[<html>He's hurt, i thought that you might be able to heal him...</html>]]></talk_answer>
+      <talk_question mid="111"><![CDATA[<html>$Argenta$<BR>Hmm? What is this <BR>Isn't this the <FONT color=#a82424>fool</FONT> that was wandering around me last time?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-a" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-b" mid="114"><![CDATA[<html>Please, just take it as saving one's life, will you?</html>]]></talk_answer>
+      <talk_question mid="113"><![CDATA[<html>$Argenta$<BR>Heal?... Well, I guess so.<BR>But why should I? This is annoying. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-c" mid="116"><![CDATA[<html>But still.. no matter how pathetic he is.. you can't let him die.</html>]]></talk_answer>
+      <talk_question mid="115"><![CDATA[<html>$Argenta$<BR>He should be able to get better on his own. <BR>Oh... so annoying. He is too pathetic.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-c" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-d" mid="118"><![CDATA[<html>Then I'll bring you something to eat.</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Argenta$<BR>I'm hungry. I don't even feel like moving a finger right now, and you want me to heal that <FONT color=#a82424>fool</FONT>?<BR>No.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-e" mid="120"><![CDATA[<html>I'm angry, but he should stay alive.</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Argenta$<BR>What? You will do that? ...Hmm. I'll think about it. But, wait. Are you stupid? That's the fool who went around spreading rumors about you. I thought you were mad at him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-e" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-8-f" mid="122"><![CDATA[<html>Well.. anyway, I'll get you something to eat..</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Argenta$<BR>... What a weird person..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-8-f" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$Argenta$<BR>Bring me that <FONT color=#a82424>Fragrant Wine-Flavored Priestess of Darkness Miok</FONT> from last time. You could get it from the Supplies Merchant or whatever, right?<BR><FONT color=#7e12d2>(Please go to Merchant May.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-9" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="124"><![CDATA[<html>$Argenta$<BR>Do you enjoy going through all this troubles.. trying to save someome that you don't even know that well? <BR><FONT color=#7e12d2>(Please go to Merchant May.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9" image="QN_Slave_David.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-9-a" mid="126"><![CDATA[<html>(May frowned.)</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Merchant May${action:talk}<BR>Hmm... I've heard that the <FONT color=#a82424>Adventurer David</FONT> was really hurt, or was he? I don't know why they show off so much. Don't you think so?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9-a" image="QW_26.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-9-b" mid="128"><![CDATA[<html>He should be fine after healing.</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Merchant May$<BR>I can't believe he recklessly went to the <FONT color=#a82424>Prayer's Resting Place</FONT> on his own.  <BR>Was he severely injured?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-9-c" mid="130"><![CDATA[<html>The drink that I bought last time.</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Merchant May$<BR>Is that so? I'm very surprised to hear the news.<BR>Oh, what did you want to buy from me again?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9-c" image="QS_Default.dds" itemindex="300137">
+      <talk_answer link_index="n026_trader_may-9-d" mid="132"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Merchant May$<BR>Oh... You're talking about the <FONT color=#a82424>Fragrant Wine-Flavored Priestess of Darkness Miok</FONT>, right? I'll let you have this one for free. I'm sorry for making such a fuss out of the weird rumor the other time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-9-d" image="" itemindex="">
+      <talk_question mid="133"><![CDATA[<html>$Merchant May$<BR>Frankly, I was thinking of selling it at a discounted price, since I've some left overs. <FONT color=#382000>{user_nick}</FONT>, must be having a hard time, dealing with all the weird rumors going around.<BR>Well, I'll see you again next time!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-10" image="" itemindex="">
+      <talk_question mid="134"><![CDATA[<html>$Merchant May$<BR>Oh... I really don't understand why the person spread such a rumour.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-a" mid="136"><![CDATA[<html>... What do you mean that you needed one? </html>]]></talk_answer>
+      <talk_question mid="135"><![CDATA[<html>$Argenta$<BR>You really got it?<BR>Well, good. I need one anyway.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-a" image="QW_SaintHaven.dds" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-b" mid="138"><![CDATA[<html>(Argenta took the Proof of Slave without the permission.)</html>]]></talk_answer>
+      <talk_question mid="137"><![CDATA[<html>$Argenta$<BR>What's what? The <FONT color=#a82424>new slave</FONT> is what I'm talking about. You're annoying and high-maintenance. I know you are going to just wander around <FONT color=#a82424>Saint Haven</FONT> on your own when you get there. I'll just going to hire an obedient fool as the new slave.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-b" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-c" mid="140"><![CDATA[<html>Yes. (I am freed!)</html>]]></talk_answer>
+      <talk_question mid="139"><![CDATA[<html>$Argenta$<BR>You are <FONT color=#a82424>fired</FONT> as of today. I am not going to take you back even if you plead. Got it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-c" image="QS_Default.dds" itemindex="300003">
+      <talk_answer link_index="n164_argenta_wounded-10-d" mid="142"><![CDATA[<html>(You feel bad for Adventurer David...)</html>]]></talk_answer>
+      <talk_question mid="141"><![CDATA[<html>$Argenta$<BR>And this over here is my <FONT color=#a82424>new slave</FONT>. I will make good use of you, weakling!<BR><FONT color=#7e12d2>(Argenta puts the proof of slave on Adventurer David.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-d" image="" itemindex="">
+      <talk_answer link_index="n164_argenta_wounded-10-e" mid="144"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n164_argenta_wounded-10-e" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="145"><![CDATA[<html>$Argenta$<BR>Okay.. Now i will treat this fool and make him my slave. Get ready to leave to <FONT color=#a82424>Saint Haven</FONT>. I am going to take this one with me too.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 265 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 267 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 268 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 218 ) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 237 ) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="4">0</exe>
+         <exe type="conexe" true="2" false="4">1</exe>
+         <exe type="conexe" true="3" false="4">2</exe>
+         <exe type="conexe" true="5" false="9">3</exe>
+         <exe type="talk" npc="n164_argenta_wounded">a</exe>
+         <exe type="talk" npc="n164_argenta_wounded">b</exe>
+         <exe type="recompense_view">,2861,2862,2863,2864,2865</exe>
+         <exe type="setquest">286</exe>
+         <exe type="talk" npc="n164_argenta_wounded">1</exe>
+         <exe type="conexe" true="5" false="4">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">6</exe>
+         <exe type="setjornal">6</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="6">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="7">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">8</exe>
+         <exe type="setjornal">8</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="8">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">9</exe>
+         <exe type="setjornal">9</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="9">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="addquestitem" num="10">300137</exe>
+         <exe type="setstep">10</exe>
+         <exe type="setjornal">10</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="10">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300137</exe>
+         <exe type="delquestitem" num="-1">300003</exe>
+         <exe type="recompense">,2861,2862,2863,2864,2865</exe>
+         <exe type="complete">286</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="q286s">0</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="d">6</exelink>
+   <exelink qstep="accepting" npc="n164_argenta_wounded" sub="acceptted">7,8</exelink>
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="b" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="c" />
+   <exelink qstep="1" npc="n024_adventurer_guildmaster_decud" sub="d">0,1</exelink>
+   <exelink qstep="2" npc="n323_warehouse_lupert" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n026_trader_may" sub="b" />
+   <exelink qstep="3" npc="n026_trader_may" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="b" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="c" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="d" />
+   <exelink qstep="4" npc="n035_soceress_master_tiana" sub="e">0,1</exelink>
+   <exelink qstep="5" npc="n029_crew_kevin" sub="b" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="c" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="d" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="e" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="f" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="g" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="h" />
+   <exelink qstep="5" npc="n029_crew_kevin" sub="i">0,1</exelink>
+   <exelink qstep="7" npc="n203_slave_david" sub="b" />
+   <exelink qstep="7" npc="n203_slave_david" sub="c">0,1</exelink>
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="d" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="e" />
+   <exelink qstep="8" npc="n164_argenta_wounded" sub="f">0,1</exelink>
+   <exelink qstep="9" npc="n026_trader_may" sub="b" />
+   <exelink qstep="9" npc="n026_trader_may" sub="c" />
+   <exelink qstep="9" npc="n026_trader_may" sub="d">0,1,2</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="b" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="c" />
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="d">2</exelink>
+   <exelink qstep="10" npc="n164_argenta_wounded" sub="e">0,1,3</exelink>
+   <journal_data recompense="1:2861,2:2862,3:2863,4:2864,5:2865" quest_title="아르젠타의 노예" chapterid="" quest_level="22" quest_mark_type="10" use_item_list="300137">
+      <journal index="1">
+         <contents_image>QN_Master_Decud.dds</contents_image>
+         <destination_pos>8,-2954,-1891</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>24</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="147"><![CDATA[Strange Rumor]]></title>
+         <contents mid="148"><![CDATA[<html>You heard that there's strange rumor spreading in <FONT color=#a82424>Calderock Village</FONT>. Go to <FONT color=#a82424>Adventurer's Guild Master Deckard</FONT> and find out about this rumor.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Adventurer's Guild Master Deckard</FONT></html>]]></contents>
+         <destination mid="149"><![CDATA[Talk to Adventurer's Guild Master Deckard at Calderock Village]]></destination>
+         <todo_msg mid="150"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Guilian.dds</contents_image>
+         <destination_pos>8,n323</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>323</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="151"><![CDATA[Tracing Strange Rumor I]]></title>
+         <contents mid="152"><![CDATA[<html>Seems like it's true about the strange rumor spreading. Go to <FONT color=#a82424>Warehouse Keeper Rupert</FONT> and find out more about the rumor.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Warehouse Keeper Rupert</FONT></html>]]></contents>
+         <destination mid="153"><![CDATA[Talk to Warehouse Keeper Rupert]]></destination>
+         <todo_msg mid="154"><![CDATA[Please talk to Warehouse Keeper Rupert]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,-4179,2192</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="155"><![CDATA[Tracing Strange Rumor II]]></title>
+         <contents mid="156"><![CDATA[<html>Since <FONT color=#a82424>Merchant May</FONT> knows everything about the town, you can find out more about the rumor.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="157"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="158"><![CDATA[Please go talk to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressTiana.dds</contents_image>
+         <destination_pos>8,-2265,1121</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>35</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="159"><![CDATA[Tracing Strange Rumor III]]></title>
+         <contents mid="160"><![CDATA[<html>Go ask <FONT color=#a82424>Master Sorceress Tiana</FONT> about the rumor. Someone you know might have spread the rumor as time passes.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Training Sorceress Tiana</FONT></html>]]></contents>
+         <destination mid="161"><![CDATA[Talk to Master Sorceress Tiana]]></destination>
+         <todo_msg mid="162"><![CDATA[Please go talk to Master Sorceress Tiana.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_crew_kevin.dds</contents_image>
+         <destination_pos>8,2847,2315</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>29</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="163"><![CDATA[Tracing Strange Rumor IV]]></title>
+         <contents mid="164"><![CDATA[<html>Guess who started the rumor, but some things are not clear..Visit <FONT color=#a82424>Kevin</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Kevin</FONT></html>]]></contents>
+         <destination mid="165"><![CDATA[Talk to Kevin]]></destination>
+         <todo_msg mid="166"><![CDATA[Please talk to Kevin]]></todo_msg>
+      </journal>
+      <journal index="6">
+         <contents_image>QW_26.dds</contents_image>
+         <destination_pos>264,n203</destination_pos>
+         <destination_mode>custom:261@1,262@1,263@1,264@1</destination_mode>
+         <statemark_npcid>203</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="167"><![CDATA[Look for Adventurer David]]></title>
+         <contents mid="168"><![CDATA[<html>As you expected, <FONT color=#a82424>Adventurer David</FONT> started all this. But it seems like Adventurer David went to the <FONT color=#a82424>Prayer's Resting Place</FONT> alone. Go there and find Adventurer David.<BR><BR><FONT color=#086171>Gray Ruins → Lower Ridge(Forgotten Temple Entrance)</FONT> <FONT color=#a82424>→ Prayer's Resting Place</FONT></html>]]></contents>
+         <destination mid="169"><![CDATA[Investigate the  Prayer's Resting Place.]]></destination>
+         <todo_msg mid="170"><![CDATA[Please look for Adventurer David from the Prayer's Resting Place.]]></todo_msg>
+      </journal>
+      <journal index="7">
+         <contents_image />
+         <destination_pos>264,n203</destination_pos>
+         <destination_mode>custom:264@1</destination_mode>
+         <statemark_npcid>203</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="171"><![CDATA[Rescue Adventurer David]]></title>
+         <contents mid="172"><![CDATA[<html>You saved <FONT color=#a82424>Adventurer David</FONT> from deadly situation. Talk to wounded Adventurer David.<BR><BR><FONT color=#086171></FONT> Prayer's Resting Place<FONT color=#a82424>→ Adventurer David</FONT></html>]]></contents>
+         <destination mid="173"><![CDATA[Talk to Adventurer David.]]></destination>
+         <todo_msg mid="174"><![CDATA[Please talk to trembled Adventurer David.]]></todo_msg>
+      </journal>
+      <journal index="8">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="175"><![CDATA[Adventurer David's rescue]]></title>
+         <contents mid="176"><![CDATA[<html>Looks like you need to treat Adventurer David's wounds. Return to <FONT color=#a82424>Argenta</FONT> in <FONT color=#a82424>Gray Ruins</FONT> and ask her for a help.<BR> <BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="177"><![CDATA[Talk to Argenta at Gray Ruins]]></destination>
+         <todo_msg mid="178"><![CDATA[Please report to Argenta in Gray Ruins.]]></todo_msg>
+      </journal>
+      <journal index="9">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,-4179,2192</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="179"><![CDATA[Fragrant Wine-Flavor Priestess of Darkness Miok]]></title>
+         <contents mid="180"><![CDATA[<html>Go get some Fragrant Wine-Flavor Priestess of Darkness Miok from <FONT color=#a82424>Merchant May</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="181"><![CDATA[Talk to Merchant May in Calderock Village]]></destination>
+         <todo_msg mid="182"><![CDATA[Please go talk to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="10">
+         <contents_image>QN_Npc_Argenta.dds</contents_image>
+         <destination_pos>9,-1155,-4312</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>164</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="183"><![CDATA[The Emancipation of Slaves]]></title>
+         <contents mid="184"><![CDATA[<html>Return to <FONT color=#a82424>Argenta</FONT> in <FONT color=#a82424>Gray Ruins</FONT>.<BR><BR><FONT color=#086171>Gray Ruins</FONT> <FONT color=#a82424>→ Argenta</FONT></html>]]></contents>
+         <destination mid="185"><![CDATA[Talk to Argenta at Gray Ruins]]></destination>
+         <todo_msg mid="186"><![CDATA[Please report to Argenta in Gray Ruins.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>22:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>268</prev_quest>
+      <have_quest>218,237</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,206 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_773_hungry_hungry</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>773</qid>
+      <designer>김인정</designer>
+      <qlevel>43</qlevel>
+      <qdesc xml:space="preserve">
+
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Hungry Hungry]]></qkname>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-a" mid="6"><![CDATA[<html>(Tamara rolls up her sleeves)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hu… Huuhuu… In this time, I'm going to let people think of me like<FONT color=#a82425>Family Woman!</FONT><BR>I'm not going to ruin the food again with lessons from former recipes.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-b" mid="8"><![CDATA[<html>Huh? What're you going to make me to?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Master Sorceress Tamara$<BR>You'd better go and train yourself until you can feel my cook is far more delicious!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceppted" mid="10"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Hungry hungry$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-1-a" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Sorceress Tamara$<BR>There's a saying.<BR><FONT color=#a82425>"One can eat everything, if one's hungry."</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-a" image="QM_OrcGreen.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-1-b" mid="37"><![CDATA[<html>…That's a little bit different.</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Master Sorceress Tamara$<BR>And also there's a saying.<BR><FONT color=#a82425>"Young enough to eat orcs off"</FONT> .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1-b" image="QW_55.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-2" mid="39"><![CDATA[<html>To where?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Sorceress Tamara$<BR>What? What's the difference? Anyway~ you will eat anything if you're hungry.<BR>While I'm cooking, you go around here training yourself to become hungry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-2" image="QW_55.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#a82425>East Ancient Armory</FONT>. To enhance your strength, take a around here. <BR>While fighting against monsters, you'll become hungry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-3-a" mid="43"><![CDATA[<html>(I want to run away)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Sorceress Tamara$<BR>You came!<BR><FONT color=#7e12d3>(Tamara looks at me with glittering eyes.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3-a" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n713_soceress_tamara-3-b" mid="45"><![CDATA[<html>(You're the fool…)</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-3-b" mid="55"><![CDATA[<html>(And it seems like the same as poison!)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Sorceress Tamara$<BR>Well, this time, we can see the beautiful red color like tomatoes and smell… (Tamara's face turns distorted)<BR>
+… well, it smells like <FONT color=#a82425>the sole of a shoe</FONT>. Doesn't it feel good?<BR>At least it smells like the real thing in the world!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-3-c" mid="47"><![CDATA[<html>(She put a bite of it into my mouth against my will)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Master Sorceress Tamara$<BR>Why are you looking at me like that? You should look at the food not at me!.<BR>Huhu. Don't say no, go ahead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3-c" image="QM_black_Dragon.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-3-d" mid="49"><![CDATA[<html>…….</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>${user_nick}$<BR><FONT color=#7e12d3>(I feel like I'm going to puke after eating it.<BR>It tastes…just terrible)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3-d" image="QM_GoblinGreen.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-3-e" mid="51"><![CDATA[<html>(Help me please)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Master Sorceress Tamara$<BR>Oh? What's wrong with you?<BR>You look like you see your girl friend just turned to a goblin?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3-e" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-3-f" mid="57"><![CDATA[<html>W, what did you put in?!</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Master Sorceress Tamara$<BR>Hu… This time is also failed again. I spelled magic even 25 times on it to make it.<BR>Murmuring… wasn't it dangerous to put a poison into it??<BR>
+<FONT color=#7e12d3>(She touches some portions which look so dangerous)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3-f" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-3-g" mid="53"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-3-g" image="" itemindex="">
+      <talk_question mid="54"><![CDATA[<html>$Master Sorceress Tamara$<BR>Ah… nothing special. Look, you didn't die. It's not dangerous. It's oka……<BR>
+<FONT color=#7e12d2>(Tamara looks at the air)<BR></FONT>Okay. …Maybe. <FONT color=#7e12d3>(I'd rather puke now)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">773</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+         <exe type="recompense_view">7730,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="checkStageClearRank" rand="6" num="553" onexe="3,4,5" true="[=" xsi:nil="true" />
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7730,,,,,</exe>
+         <exe type="complete">773</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="b">2</exelink>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="1" npc="n713_soceress_tamara" sub="2">0,2,1</exelink>
+   <exelink qstep="3" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="3" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="3" npc="n713_soceress_tamara" sub="c" />
+   <exelink qstep="3" npc="n713_soceress_tamara" sub="d" />
+   <exelink qstep="3" npc="n713_soceress_tamara" sub="e" />
+   <exelink qstep="3" npc="n713_soceress_tamara" sub="f">0</exelink>
+   <exelink qstep="3" npc="n713_soceress_tamara" sub="g">1</exelink>
+   <journal_data recompense="0:7730" quest_title="배가 고프면 다 맛있다" chapterid="" quest_level="43" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Tamara's Request]]></title>
+         <contents mid="65"><![CDATA[<html>Master Sorceress Tamara needs you to help her. Talk with her.<BR>
+<BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="36"><![CDATA[Talk with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="67"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_55.dds</contents_image>
+         <destination_pos>553,0,0</destination_pos>
+         <destination_mode>custom:551@1,552@1,553@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[If hungry]]></title>
+         <contents mid="27"><![CDATA[<html>There's saying that "If one's hungry, one can eat anything." Go around East Ancient Armory.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf(Ancient Warehouse Entrance)</FONT> <FONT color=#a82425>→ East Ancient Armory</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Search East Ancient Armory]]></destination>
+         <todo_msg mid="29"><![CDATA[Search East Ancient Armory]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Even though I'm hungry]]></title>
+         <contents mid="31"><![CDATA[<html>Get back to Master Sorceress Tamara.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Talk with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="33"><![CDATA[Get back to Master Sorceress Tamara]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>43:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>772</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

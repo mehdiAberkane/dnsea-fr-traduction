@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n901_ranger_fugus</npcename>
+      <npcid>901</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Scout Fergus]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="002" mid="60"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+         <talk_question mid="2"><![CDATA[<html>$Scout Fergus${action:Talk}<BR>You did well. You now have all the basic knowledge of a worthy adventurer. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="61"><![CDATA[<html>$Scout Fergus$<BR>Hey, be sure to check out this box. May the hidden items inside aid you in your journey. I wish you all the best.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

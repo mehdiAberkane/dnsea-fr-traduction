@@ -1,0 +1,251 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_680_thrives_on_adventure</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>680</qid>
+      <designer>김인정</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[I want an adventure.]]></qkname>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>440</npcid>
+         <npcename>n440_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>441</npcid>
+         <npcename>n441_elite_soldier</npcename>
+         <npckname>왕성 근위병</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$King Cassius${action:Talk2}<BR>Hmmm…this, this is the place..<BR>
+I, I am never afraid….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n441_elite_soldier-noquest" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Royal Guard$<BR>Salute!! On a mission taken from Duke Stuart!!<BR>
+<FONT color=#a82424>King Cassius</FONT>, we came to aid you, Your Honour.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-a" mid="10"><![CDATA[<html><FONT color=#387206>{user_nick} </FONT><FONT color=#2b2723>Greetings.</FONT></html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$King Cassius$<BR>A, Are you here to see me? You….You are a loyal servant? <BR>What is……your name?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-b" mid="12"><![CDATA[<html>(You cant even remember…)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$King Cassius$<BR><FONT color=#387206>{user_nick}</FONT>, I thank you for always being a loyal servant.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-c" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$King Cassius$<BR>In fact I have a favour to ask…will you….listen?<BR>No..no! Listen!...You will do it…right?<BR>
+<FONT color=#7e12d2>(He looks at you pleadingly.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-d" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$King Cassius$<BR>It…It's just that I want to be someone courageous as the Knight King Cassius.<BR>That is why I want to see the big world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-e" mid="18"><![CDATA[<html>(Cassius opens the map)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$King Cassius$<BR>Therefore to loyal<FONT color=#387206> {user_nick}</FONT>….<BR>
+take…take me… to wi..wild world.<BR>The place.. Place I want to go….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-accepting-acceptted" mid="20"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$I want an adventure$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QW_27.dds" itemindex="">
+      <talk_question mid="8"><![CDATA[<html>$King Cassius$<BR><FONT color=#a82424>The Black Mine</FONT>! Go to the Black Mine! Ha..have decided!<BR>
+…Hurry, come to the…the Black Mine and help my confidence soar. Will you..?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n441_elite_soldier-1" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Royal Guard$<BR>Sir! I am following orders from Duke Stuart!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-1" image="" itemindex="">
+      <talk_answer link_index="n440_king_casius-1-a" mid="23"><![CDATA[<html>(Cassius' eyes brighten)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$King Cassius${action:Talk}<BR>Rea…really huge ogre was here…<BR>
+Incredible.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-1-a" image="" itemindex="">
+      <talk_answer link_index="n440_king_casius-1-b" mid="25"><![CDATA[<html>Of course!</html>]]></talk_answer>
+      <talk_answer link_index="n440_king_casius-1-b" mid="26"><![CDATA[<html>You can do it if you try.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$King Cassius$<BR>Ohoh….that’s cool. IF I am somewhere there, I could c…clearly be a great…. king? <BR>R….right?<BR><FONT color=#7e12d2>(Cassius reasons)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-1-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n440_king_casius-1-c" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$King Cassius$<BR>I feel stronger when I hear those words. <FONT color=#a82424>For </FONT>my dear uncle <FONT color=#a82424>General Douglas </FONT>always treats me like a little kid, and he thinks this story is absurd. I am upset.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-1-c" image="" itemindex="">
+      <talk_answer link_index="n440_king_casius-2" mid="30"><![CDATA[<html>(Human footsteps are heard behind us.)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$King Cassius$<BR>…If I leave my spot, he always comes to find me .<BR>I am not a little kid…why won't he trust me?! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$King Cassius${action:Talk}<BR>Look at that. They came here to find me. Sigh... Did <FONT color=#a82424>uncle</FONT>send the person?<BR>Or is it <FONT color=#a82424>General Douglas</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n441_elite_soldier-2" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n441_elite_soldier-2-a" mid="34"><![CDATA[<html>(Royal Guard salutes)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Royal Guard$<BR>Salute!<BR>
+<FONT color=#a82424>Duke Stuart</FONT> gave me this order for the mission!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n441_elite_soldier-2-a" image="" itemindex="">
+      <talk_answer link_index="n441_elite_soldier-2-b" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Royal Guard$<BR>Your Majesty has left the palace, thus the pursuit.<BR>Please don't put yourself in danger and return.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n441_elite_soldier-2-b" image="" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$Royal Guard$<BR>Soon the next troops will arrive to escort you<BR>
+Salute!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n441_elite_soldier-3" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Royal Guard$<BR>Sir! I am honoured to be guarding you.<BR>I will guide you back safe and sound!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n440_king_casius-3" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$King Cassius${action:Talk}<BR>I am not a little boy. Why can I not go on my own adventure? <BR>…I will go back to the castle. *Sob*.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="QN_Npc_Duke_Stwart.dds" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-a" mid="41"><![CDATA[<html>We are worried about you.</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$King Cassius$<BR>Everytime it's like this. Even if I try to go on an adventure, uncle and General will send guards to make me return.<BR>I am not a child anymore….<BR>
+<FONT color=#7e12d2>(Cassius is unsatisfied)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-b" mid="43"><![CDATA[<html>Plan?</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$King Cassius$<BR>However I can't move like this? <BR>I have my old plans. This time I will carry it out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-c" mid="45"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3-c" image="" itemindex="">
+      <talk_question mid="46"><![CDATA[<html>$King Cassius$<BR>If the plan works, I will..sp..specially tell you.<BR>Uhmm!! You can look fo,forward to it!<BR>
+<FONT color=#7e12d2>(Cassius pretends to be strong)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">680</exe>
+         <exe type="talk" npc="n040_king_casius">1</exe>
+         <exe type="recompense_view">6800,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6800,,,,,</exe>
+         <exe type="complete">680</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 270 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="e">2</exelink>
+   <exelink qstep="accepting" npc="n040_king_casius" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n440_king_casius" sub="b" />
+   <exelink qstep="1" npc="n440_king_casius" sub="b" />
+   <exelink qstep="1" npc="n440_king_casius" sub="c" />
+   <exelink qstep="1" npc="n440_king_casius" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n441_elite_soldier" sub="b">0,1</exelink>
+   <exelink qstep="3" npc="n040_king_casius" sub="b">0</exelink>
+   <exelink qstep="3" npc="n040_king_casius" sub="c">2,1</exelink>
+   <journal_data recompense="0:6800" quest_title="모험을 하고 싶다" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>274,n440</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@1</destination_mode>
+         <statemark_npcid>440</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[The King of the Black Mine]]></title>
+         <contents mid="49"><![CDATA[<html>King Cassius seems to be thinking of sneaking out. Let's meet him at the Black Mine<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Entrance of the Black Mine)</FONT> <FONT color=#a82424>→Black Mine(King Cassius)</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Talk to King Cassius at the Black Mine]]></destination>
+         <todo_msg mid="51"><![CDATA[Meet King Cassius at the Black Mine]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>274,n441</destination_pos>
+         <destination_mode>custom:271@1,272@1,273@1,274@1</destination_mode>
+         <statemark_npcid>441</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Royal Guard]]></title>
+         <contents mid="53"><![CDATA[<html>Let talk with the Royal Guard to find the King who has sneaked out.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Entrance of the Black Mine)</FONT> <FONT color=#a82424>→ Black Mine(Royal Guard)</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Talk to the royal guard at the Black Mine]]></destination>
+         <todo_msg mid="55"><![CDATA[Talk to the royal guard who came to the Black Mine]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode />
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="56"><![CDATA[Talk to King Cassius ]]></title>
+         <contents mid="57"><![CDATA[<html>Let's go back to the kingdom and talk to King Cassius.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="58"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="59"><![CDATA[Talk to King Cassius back at the Saint Haven Palace]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>6601</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

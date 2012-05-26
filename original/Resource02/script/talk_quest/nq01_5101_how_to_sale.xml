@@ -1,0 +1,138 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq01_5101_how_to_sale</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>5101</qid>
+      <designer>김주연</designer>
+      <qlevel>9</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[How to Sell Well?]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="6"><![CDATA[<html>Ah…! How did you…?<html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Merchant May$<BR>Oh my, isn't this <FONT color=#387206> {user_nick}</FONT>, the charming young chap with at least 100 Gold in reserves? The weather's excellent today!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Merchant May$<BR>Hehe, I can't survive here if I'm so ill-informed. To us merchants, information is power.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Merchant May$<BR>By the way! The world-reowned brand of sand is now on sale at Calderock Village, right in my shop! Hehehe~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="31"><![CDATA[<html>I don't need it…</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Merchant May$<BR>To commemorate its launch, we will sell Minotaur leather <FONT color=#a82424>sandbags</FONT> a low prices.<BR>My first customer today, <FONT color=#387206>{user_nick}</FONT>, this is my special offer for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-a" mid="14"><![CDATA[<html>No, I'm not interested…</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Merchant May$<BR>The residents in Saint Haven are so crazy about this backpack the price it commands is well over 400 Gold! You'll love it once you see it.<BR>It's impossible to get this elsewhere, why not get one for your family and friends?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-b" mid="16"><![CDATA[<html>I don't need it.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Merchant May$<BR>Of course, I'll never charge you that much.<BR>My special discounted price for you <FONT color=#387206>{user_nick}</FONT>, only <FONT color=#a82424>399</FONT> Gold.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-c" mid="18"><![CDATA[<html>I don't want to buy.</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Merchant May$<BR>Only 399 Gold for something worth 400 Gold!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-d" mid="37"><![CDATA[<html>I'm busy, I have to go…</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Merchant May$<BR><FONT color=#a82424>398</FONT> Gold.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-d" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-e" mid="33"><![CDATA[<html>(……...)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Merchant May$<BR>……...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-e" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-f" mid="20"><![CDATA[<html>(Shake head)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Merchant May$<BR>A-alright… We also have the <FONT color=#a82424>Membership Card</FONT> for the Calderock's Supplies Shop. Accumulate 5% mileage with each purchase, and it can be used as real cash anytime...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-f" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-g" mid="22"><![CDATA[<html>(Leaves the shop silently)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Merchant May$<BR>Ugh…! Why aren't you buying? Why? Why?!<BR>WHY~~~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-g" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Merchant May$<BR>I will sell it off~!<BR><FONT color=#7e12d2>(May's eyes shone like a hunter. My relationship with May seems to be closer.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">5101</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">5101</exe>
+         <exe type="custom">api_npc_Rage( userObjID, 26 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="b" />
+   <exelink qstep="1" npc="n026_trader_may" sub="c" />
+   <exelink qstep="1" npc="n026_trader_may" sub="d">1</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="e" />
+   <exelink qstep="1" npc="n026_trader_may" sub="f">1</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="g">0</exelink>
+   <journal_data recompense="" quest_title="어떻게 하면 물건을 잘 팔까요?" chapterid="" quest_level="9" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="26"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="27"><![CDATA[<html><FONT color=#2b2723><FONT color=#a82424>Merchant May</FONT></FONT> has something to say. Talk to her cautiously.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="28"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="29"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>9:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission>35</complete_mission>
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

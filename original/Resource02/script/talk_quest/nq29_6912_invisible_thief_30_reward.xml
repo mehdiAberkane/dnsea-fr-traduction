@@ -1,0 +1,102 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq29_6912_invisible_thief_30_reward</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6912</qid>
+      <designer>김인정</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Invisible Thief's Gift I]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-acceppted" mid="8"><![CDATA[<html>(Cracking some lame jokes)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Invisible Thief$<BR>We really see each other frequent!<BR>Are you here to see me? Don't you know I'm invisible?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-a" mid="18"><![CDATA[<html>[Receive Gift]</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Invisible Thief$<BR>Wahahaha~ Though I'm invisible, I can give you present!! Hahahahaha!!<BR>Take this!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-b" mid="20"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-b" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Invisible Thief$<BR>I think of you when I look into the sky, come to me quick!<BR>Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">6912</exe>
+         <exe type="talk" npc="n255_invisible_thief">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">69120,,,,,</exe>
+         <exe type="complete">6912</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="a">0</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="b">1</exelink>
+   <journal_data recompense="0:69120" quest_title="안 보이는 도둑의 선물Ⅰ" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image />
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="22"><![CDATA[Invisible Thief's Gift]]></title>
+         <contents mid="23"><![CDATA[<html>Talk to Invisible Thief<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Invisible Thief</FONT></html>]]></contents>
+         <destination mid="24"><![CDATA[Talk to Invisible Thief]]></destination>
+         <todo_msg mid="25"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>255:6000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

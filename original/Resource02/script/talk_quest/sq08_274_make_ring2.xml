@@ -1,0 +1,190 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_274_make_ring2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>274</qid>
+      <designer>곽노찬</designer>
+      <qlevel>10</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Ring Production II]]></qkname>
+      <qnpc>
+         <npcid>25</npcid>
+         <npcename>n025_trader_corin</npcename>
+         <npckname>대장장이 코린</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting" image="QS_Default.dds" itemindex="336732192">
+      <talk_answer link_index="n025_trader_corin-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Blacksmith Corin$<BR>You can make a ring with that Common Starlight Fragment. Give it a try.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-accepting-acceptted" mid="8"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Ring Production II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1" image="QS_Default.dds" itemindex="287906048">
+      <talk_answer link_index="n025_trader_corin-1-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Blacksmith Corin$<BR>The ring you craft will either be a <FONT color=#a82424>Pearl Sky Ring of Magic</FONT> or a <FONT color=#a82424>Pearl Sky Ring of Destruction</FONT>. I'm not telling you to make two rings, of course! Just make the one you want.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-1-a" image="QS_Default.dds" itemindex="287906048">
+      <talk_answer link_index="n025_trader_corin-1-opencompounditem1" mid="14"><![CDATA[<html> [Item production] </html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Blacksmith Corin$<BR>The <FONT color=#a82424>Pearl Sky Ring of Magic</FONT> will boost your magical attacks and energies.  The <FONT color=#a82424>Pearl Sky Ring of Destruction</FONT> will boost your attack power. Consider what is more useful to you, and keep in mind that with crafting, there is no 100% successful rate.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2" image="QS_Default.dds" itemindex="287906048">
+      <talk_answer link_index="n025_trader_corin-2-opencompounditem2" mid="16"><![CDATA[<html> [Item production] </html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Blacksmith Corin$<BR>Haven't made up your mind which ring you want? Craft one of the rings and let me see you work.<BR>(Crafted item needs to be in your inventory while talking to Corin.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-a" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-b" mid="41"><![CDATA[<html> Thank you. </html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Blacksmith Corin$<BR>Let me see... Heh, not bad! Not bad at all.<BR>I appreciate you taking the time to learn from an old man. Here, I have a gift for you. This is an <FONT color=#a82424>Exquisite Starlight Fragment</FONT>. You can craft superior items with this, far better than with the Common Starlight Fragment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-b" image="" itemindex="">
+      <talk_answer link_index="n025_trader_corin-2-c" mid="43"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n025_trader_corin-2-c" image="" itemindex="">
+      <talk_question mid="44"><![CDATA[<html>$Blacksmith Corin$<BR>I'll see you next time. Bye!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">2740,,,,</exe>
+         <exe type="setquest">274</exe>
+         <exe type="talk" npc="n025_trader_corin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 3);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">287906048</chk>
+         <chk type="item" num="1" op="]=">287905984</chk>
+      </conditions>
+      <executions>
+         <exe type="custom">api_ui_OpenCompoundItem(userObjID, 3);</exe>
+         <exe type="conexe" true="3" false="2">0</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="talk" npc="n025_trader_corin">a</exe>
+         <exe type="talk" npc="n025_trader_corin">2</exe>
+         <exe type="recompense">2740,,,,</exe>
+         <exe type="complete">274</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n025_trader_corin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n025_trader_corin" sub="opencompounditem1">0,1,2</exelink>
+   <exelink qstep="2" npc="n025_trader_corin">1</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="opencompounditem2">0</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="b">5</exelink>
+   <exelink qstep="2" npc="n025_trader_corin" sub="c">6</exelink>
+   <journal_data recompense="2740" quest_title="반지 제작Ⅱ" chapterid="" quest_level="10" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Talk to Blacksmith Corin]]></title>
+         <contents mid="26"><![CDATA[<html>You have received a <FONT color=#a82424>Common Starlight Fragment</FONT> from <FONT color=#a82424>Blacksmith Corin</FONT>.<BR>Talk to Blacksmith Corin and find out what type of rings you can make with it.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Blacksmith Corin</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk to Blacksmith Corin]]></destination>
+         <todo_msg mid="28"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n25</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>25</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="30"><![CDATA[Crafting Your Ring]]></title>
+         <contents mid="31"><![CDATA[<html>Blacksmith Corin wants you to create either a <FONT color=#a82424>Pearl Sky Ring of Magic</FONT> or a <FONT color=#a82424>Pearl Sky Ring of Destruction</FONT>. After you have created the ring, show it to Blacksmith Corin.<BR> <BR><FONT color=#7e12d2>The crafted ring must be in your inventory when you start the conversation.</FONT><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Blacksmith Corin</FONT></html>]]></contents>
+         <destination mid="32"><![CDATA[Craft a ring and show it to Blacksmith Corin]]></destination>
+         <todo_msg mid="33"><![CDATA[Craft a ring and show it to Corin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>273</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

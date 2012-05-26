@@ -1,0 +1,96 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq26_7408_lena_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7408</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About  {user_nick}]]></qkname>
+      <qnpc>
+         <npcid>133</npcid>
+         <npcename>n133_lena_duglars</npcename>
+         <npckname>레나</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting" image="" itemindex="">
+      <talk_answer link_index="n133_lena_duglars-accepting-a" mid="7"><![CDATA[<html>(Talk about weather)</html>]]></talk_answer>
+      <talk_answer link_index="n133_lena_duglars-accepting-b" mid="8"><![CDATA[<html>(Talk about family)</html>]]></talk_answer>
+      <talk_answer link_index="n133_lena_duglars-accepting-c" mid="9"><![CDATA[<html>(Talk about monsters of Black Mountain)</html>]]></talk_answer>
+      <talk_answer link_index="n133_lena_duglars-accepting-d" mid="10"><![CDATA[<html>(Talk about mistakes)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Lady Lena$<BR>I’ve talked way too much. {user_nick}, do you have anything to say to me? </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Lady Lena$<BR>About weather…. It’s like we've never met before. {user_nick}, you must not trust me. (Lena seems disappointed) </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Lady Lena$<BR>
+It was quite a boring conversation but I was listening out of politeness. However, let’s not talk about this issue again. It will help our friendship. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Lady Lena$<BR>
+Hmm… Thanks I’ll keep in mind. Well I have to take extra care when I go for walks. Don't be mistaken. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n133_lena_duglars-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Lady Lena$<BR>
+Hahaha, what a silly mistake! {user_nick}, you are somehow cute! (Lena seems very happy) You must trust me a lot, telling me that kind of personal story. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7408, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 133, 400 ); </exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 133, 100 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 133, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 133, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n133_lena_duglars" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] {user_nick}에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>133:13000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

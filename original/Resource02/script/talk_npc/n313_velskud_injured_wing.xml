@@ -1,0 +1,17 @@
+   <talk>
+      <npcename>n313_velskud_injured_wing</npcename>
+      <npcid>313</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Velskud]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Velskud$<BR>Out of my way,  <BR>I have nothing to say to junk like you.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_618_fallen_life_crystal</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">618</chk>
+      </conditions>
+   </talk>

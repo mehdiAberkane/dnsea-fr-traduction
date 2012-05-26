@@ -1,0 +1,99 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq37_9157_gunter_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9157</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About {user_nick}]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="7"><![CDATA[<html> (Talk about weather) </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="8"><![CDATA[<html> (Talk about favourite food) </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="9"><![CDATA[<html> (Talk about mistakes you have made) </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="10"><![CDATA[<html> (Ask about Gunther's achievements in Dragon Raid)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+I talk about myself all the time. I want to hear your side of story. <BR>
+ </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Yeah, it is a nice weather, I guess you are not in a mood to talk about your story. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Adventurer’s Guild Master Gunther$ <BR>
+Hmm? Did you like such foods? I like foods that are plain. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer’s Guild Master Gunther$ <BR>
+Hahaha, anyone could have made that kind of mistake. You remind me of my past. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+I didn’t have much achievements. I was left behind due to my injury during the Black Dragon Raid. I just survived. I am sorry that I can’t tell you something interesting. </html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 9157, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 36, 320 ); </exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 80 ); </exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 160 ); </exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 320 ); </exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] {user_nick}에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>36:10400:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

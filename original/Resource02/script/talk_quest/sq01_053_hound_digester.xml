@@ -1,0 +1,335 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq01_053_hound_digester</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>53</qid>
+      <designer>김주연</designer>
+      <qlevel>5</qlevel>
+      <qdesc>300084(썩은 나무 곰팡이),300085(하운드 소화제)</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Barking Mad]]></qkname>
+      <qnpc>
+         <npcid>2</npcid>
+         <npcename>n002_trader_dorin</npcename>
+         <npckname>대장장이 도린 (프레리 무기상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>3</npcid>
+         <npcename>n003_trader_dolis</npcename>
+         <npckname>상인 도리스 (프레리 잡화상)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-noquest" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Merchant Doris$<BR>Hi adventurer. How can I help you?<BR><FONT color=#7e12d2>(Obtain quest from Blacksmith Dorin)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-a" mid="7"><![CDATA[<html>Yup, what is it?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Blacksmith Dorin$<BR>Come here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-a" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-b" mid="9"><![CDATA[<html>An item I brought back?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Blacksmith Dorin$<BR>What in the world was that icky thing you got from <FONT color=#a82424>Merchant Doris</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-b" image="QM_HoundNormal_1.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-c" mid="11"><![CDATA[<html>How could this have happened… It was supposed to taste of home...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Blacksmith Dorin$<BR>Didn't you get some <FONT color=#a82424>Nutritious Food</FONT> from <FONT color=#a82424>Doris</FONT>! The Hound whined non-stop with foam in his mouth! What the hell was that!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-c" image="QM_HoundNormal_1.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-d" mid="15"><![CDATA[<html>… No… I think he's going up to Heaven real soon...</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Blacksmith Dorin$<BR>Cure his homesickness? Is she insane?! Does that look like a Hound that's gotten over his homesickness?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-d" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-e" mid="17"><![CDATA[<html>Ah… Okay. (Don't flare up…)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Blacksmith Dorin$<BR>Find <FONT color=#a82424>Merchant Doris</FONT> rightaway and demand for a solution!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Hound Digestant$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-1" image="QN_Npc_Woman_Trader_Doris.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Blacksmith Dorin$<BR>Argh, my blood pressure…<BR>Why are you still idling here? Get the solution from <FONT color=#a82424>Merchant Doris</FONT> now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-a" mid="23"><![CDATA[<html>… The Hound collapsed after consumption.</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Oh, adventurer. What is it this time round?<BR>Was <FONT color=#a82424>Blacksmith Dorin</FONT> touched by my meticulous care?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-a" image="QS_Default.dds" itemindex="300066">
+      <talk_answer link_index="n003_trader_dolis-1-b" mid="25"><![CDATA[<html>(You explain the situation)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>That's impossible. My <FONT color=#a82424>Nutritious Food</FONT> uses only the finest ingredients, a miracle potion that will bring the Hound back to life, so why...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-b" image="QM_HoundNormal_1.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-c" mid="29"><![CDATA[<html>No matter how I see it, he doesn't have much time left...</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>He whined and collapsed thereafter?<BR>Are you sure the Hound didn't just lie down from a hearty meal?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-c" image="QM_HoundNormal_1.dds" itemindex="">
+      <talk_answer link_index="n003_trader_dolis-1-d" mid="31"><![CDATA[<html>Didn't I say he was foaming in the mouth...</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Merchant Doris$<BR>Hmm… I strongly believe the Hound was so touched by the <FONT color=#a82424>taste of home</FONT> the stomach couldn't take it he gobbled everything down.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-d" image="QS_Default.dds" itemindex="300085">
+      <talk_answer link_index="n003_trader_dolis-1-e" mid="33"><![CDATA[<html>(Doesn't look like a tummy upset…)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Right! All he needs is some <FONT color=#a82424>Hound Digestant</FONT> to regain his energy. Please find me some ingredients while I concoct the digestant.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-1-e" image="QS_Default.dds" itemindex="300084">
+      <talk_answer link_index="n003_trader_dolis-2" mid="35"><![CDATA[<html>… Alright then, let's do it.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Merchant Doris$<BR>The best ingredient for the <FONT color=#a82424>Hound Digestant</FONT> has got to be the <FONT color=#a82424>Rotten Tree Fungi</FONT>. It thrives in dark and humid places, so the nearest one…<BR>You can try <FONT color=#a82424>Catacombs</FONT> of <FONT color=#a82424>Wind Forest</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-2" image="QW_3.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Merchant Doris$<BR>Thanks. Please go to <FONT color=#a82424>Catacombs</FONT> of <FONT color=#a82424>Wind Forest</FONT> and collect 10 <FONT color=#a82424>Rotten Tree Fungi</FONT> for me. Since it grows on old trees, you should be able to find some by breaking the <FONT color=#a82424>Wooden Barrels</FONT> there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3" image="QS_Default.dds" itemindex="300084">
+      <talk_answer link_index="n003_trader_dolis-3-a" mid="40"><![CDATA[<html>Here you go. (Hands over the Rotten Tree Fungi)</html>]]></talk_answer>
+      <talk_question mid="39"><![CDATA[<html>$Merchant Doris$<BR>Found the fungi?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3-a" image="QS_Default.dds" itemindex="300084">
+      <talk_answer link_index="n003_trader_dolis-3-b" mid="42"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Nice. Just ferment the <FONT color=#a82424>fungi</FONT> and add a little <FONT color=#a82424>chemical additives</FONT>, and the <FONT color=#a82424>Hound Digestant</FONT> is done! <BR><FONT color=#7e12d2>(Doris sprinkled some powder on top...)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-3-b" image="QS_Default.dds" itemindex="300085">
+      <talk_answer link_index="n003_trader_dolis-4" mid="44"><![CDATA[<html>… Oh… Is that so?</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Merchant Doris$<BR>Okay, it's done. A <FONT color=#a82424>Hound Digestant</FONT> is made possible by my <FONT color=#a82424>superior technology</FONT> and knowledge of <FONT color=#a82424>cutting edge fermentation science</FONT>.<BR><FONT color=#7e12d2>(Merchant Doris starts mixing some weird powder with the fungi)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n003_trader_dolis-4" image="QN_BlackSmith_dorin.dds" itemindex="">
+      <talk_question mid="45"><![CDATA[<html>$Merchant Doris${action:Talk}<BR>Take this and feed it to <FONT color=#a82424>Blacksmith Dorin</FONT>'s <FONT color=#a82424>Hound</FONT>. He'll be back to normal in no time!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4" image="QS_Default.dds" itemindex="300085">
+      <talk_answer link_index="n002_trader_dorin-4-a" mid="67"><![CDATA[<html>This is the Hound Digestant...</html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Blacksmith Dorin$<BR>What's that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-a" image="QS_Default.dds" itemindex="300085">
+      <talk_answer link_index="n002_trader_dorin-4-b" mid="70"><![CDATA[<html>(It doesn't look anything like an tummy upset at all…)</html>]]></talk_answer>
+      <talk_question mid="68"><![CDATA[<html>$Blacksmith Dorin$<BR><FONT color=#a82424>Digestant</FONT>? Ah, brilliant! The Hound must've gotten overexcited over the food and ate itself sick. Why didn't I think of that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-b" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-c" mid="73"><![CDATA[<html>… Thank you.</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Blacksmith Dorin$<BR>Nevermind, nevermind. Thanks for the help. Here's a little token of my appreciation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-c" image="" itemindex="">
+      <talk_answer link_index="n002_trader_dorin-4-d" mid="75"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n002_trader_dorin-4-d" image="QM_HoundNormal_1.dds" itemindex="">
+      <talk_question mid="76"><![CDATA[<html>$Blacksmith Dorin$<BR>I have to give the medicine to the Hound now. See you.<BR><FONT color=#7e12d2>(Dorin takes the digestant to the foaming Hound)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">53</exe>
+         <exe type="recompense_view">,531,532,532,532</exe>
+         <exe type="talk" npc="n002_trader_dorin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntitem" num="10" exe="3,4,5" onexe="">300084</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="addquestitem" num="1">300085</exe>
+         <exe type="delquestitem" num="-1">300084</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,531,532,532,532</exe>
+         <exe type="delquestitem" num="-1">300085</exe>
+         <exe type="complete">53</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n002_trader_dorin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="c" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="d" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="e" />
+   <exelink qstep="1" npc="n003_trader_dolis" sub="2">0,1,2</exelink>
+   <exelink qstep="3" npc="n003_trader_dolis" sub="b" />
+   <exelink qstep="3" npc="n003_trader_dolis" sub="4">2,3,0,1</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="b" />
+   <exelink qstep="4" npc="n002_trader_dorin" sub="c">0</exelink>
+   <exelink qstep="4" npc="n002_trader_dorin" sub="d">1,2</exelink>
+   <journal_data recompense="1:531,2:532" quest_title="하운드의 소화제" chapterid="" quest_level="5" quest_mark_type="10" use_item_list="300084,300085">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,755.95,1811.22</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>대장장이 도린</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상인 도리스</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="78"><![CDATA[The Hound fainted!]]></title>
+         <contents mid="79"><![CDATA[<html><FONT color=#a82424>Blacksmith Dorin</FONT> said his Hound fainted after having some nutritious food from<FONT color=#a82424>Merchant Doris</FONT>. Find out what happened.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Merchant Doris</FONT></html>]]></contents>
+         <destination mid="80"><![CDATA[Talk to Merchant Doris]]></destination>
+         <todo_msg mid="81"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_3.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>64,3.56,-514.28</destination_pos>
+         <destination_mode>custom:61@4,62@4,64@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>상인 도리스</start_npc>
+         <desc_location>카타콤</desc_location>
+         <step_action>수집</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item>썩은 나무 곰팡이 5개</collect_item>
+         <collect_itemindex>84</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="83"><![CDATA[Rotten Tree Fungi]]></title>
+         <contents mid="84"><![CDATA[<html>Merchant Doris believes the Hound merely suffers from indigestion and requested for some Wooden Tree Fungi to concoct a digestant.<BR>Go to <FONT color=#a82424>Catacombs</FONT> and break <FONT color=#a82424>Wooden Barrels</FONT> to collect 10 <FONT color=#a82424>Rotten Tree Fungi</FONT>.<BR><BR><FONT color=#086171>Wind Forest (Catacombs Entrance)</FONT> <FONT color=#a82424>→ Catacombs</FONT></html>]]></contents>
+         <destination mid="85"><![CDATA[Collect 10 Rotten Tree Fungi at Catacombs]]></destination>
+         <todo_msg mid="86"><![CDATA[Please go to Catacombs to search for Wooden Tree Fungi.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Woman_Trader_Doris.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,755.95,1811.22</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>3</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location>카타콤</get_location>
+         <start_npc />
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>상인 도리스</complete_npc>
+         <get_item>하운드 소화제</get_item>
+         <get_itemindex>85</get_itemindex>
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="91"><![CDATA[Hound Digestant I]]></title>
+         <contents mid="92"><![CDATA[<html>Pass the <FONT color=#a82424>Rotten Tree Fungi</FONT> collected from the Catacombs to <FONT color=#a82424>Merchant Doris</FONT>.<BR><BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Merchant Doris</FONT></html>]]></contents>
+         <destination mid="93"><![CDATA[Talk to Merchant Doris]]></destination>
+         <todo_msg mid="94"><![CDATA[Rotten Tree Fungi collected. Return and meet Merchant Doris.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image />
+         <contents_image>QN_BlackSmith_dorin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>1,-962.33,49.29</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>2</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>상인 도리스</start_npc>
+         <desc_location>프레리 타운</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>대장장이 도린</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="95"><![CDATA[Hound Digestant II]]></title>
+         <contents mid="96"><![CDATA[<html>Take the <FONT color=#a82424>Hound Digestant</FONT> to <FONT color=#a82424>Blacksmith Dorin</FONT>.<BR> <BR><FONT color=#086171>Prairie Town</FONT> <FONT color=#a82424>→ Blacksmith Dorin</FONT></html>]]></contents>
+         <destination mid="97"><![CDATA[Talk to Blacksmith Dorin]]></destination>
+         <todo_msg mid="98"><![CDATA[Please pass the Hound Digestant to Blacksmith Dorin.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>5:-1</user_level>
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest>51</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

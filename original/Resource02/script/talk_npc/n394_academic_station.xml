@@ -1,0 +1,53 @@
+   <talk>
+      <npcename>n394_academic_station</npcename>
+      <npcid>394</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Academic Station]]></npckname>
+      <talk_paragraph index="001" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="50"><![CDATA[<html>[Learing skill]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Academic Station$<BR>▶ <FONT color=#086171>The system is running on local interface.</FONT><BR>▷ <FONT color=#7e12d2>For network activation user identification is neccessary.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_answer link_index="q_enter" mid="7" link_target="mq15_724_lotusmarsh.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>It's Lotus Marsh</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="24" link_target="mq15_725_karakule.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>Met Karakule</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="56" link_target="mq15_726_boy_and_girl.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>Met a girl and a boy</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="60" link_target="mq15_727_mystery_man.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>Met a strange man</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="63" link_target="mq15_728_whos_watching_me.xml"><![CDATA[<html>[Lv40] <FONT color=#a94407>Someone is watching</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="66" link_target="mq15_729_resolve.xml"><![CDATA[<html>[Lv42] <FONT color=#a94407>Get the answers of curiosity</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="69" link_target="mq15_730_rescue_natives.xml"><![CDATA[<html>[Lv42] <FONT color=#a94407>Rescue natives</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="70" link_target="mq15_731_can_not_understand.xml"><![CDATA[<html>[Lv42] <FONT color=#a94407>Girl can't understand</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="71" link_target="mq15_732_medicines.xml"><![CDATA[<html>[Lv42] <FONT color=#a94407>Making medicine</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="72" link_target="mq15_733_charty_grandfather.xml"><![CDATA[<html>[Lv44] <FONT color=#a94407>Crying out</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="74" link_target="mq15_734_lost.xml"><![CDATA[<html>[Lv44] <FONT color=#a94407>Can't access</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="77" link_target="mq15_735_tell_you.xml"><![CDATA[<html>[Lv44]<FONT color=#a94407>It belongs to someone</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="80" link_target="mq15_736_prepared.xml"><![CDATA[<html>[Lv44] <FONT color=#a94407>Make a fresh</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="83" link_target="mq15_737_truth.xml"><![CDATA[<html>[Lv44] <FONT color=#a94407>Approaching truth </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="99" link_target="mq15_738_tears.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>Drop tears</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="102" link_target="mq15_739_meet_again.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>Meet Again</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="106" link_target="mq15_740_past_story.xml"><![CDATA[<html>[Lv46] <FONT color=#a94407>The Story of The Past</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="107" link_target="mq15_741_past_wounds.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Wounds of Sad Past</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="109" link_target="mq15_742_genius.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Genius</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="112" link_target="mq15_743_destiny.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>It is Fate</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="115" link_target="mq15_744_record_end.xml"><![CDATA[<html>[Lv48] <FONT color=#a94407>Stop The Record</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="86" link_target="sq15_747_continued_attempt.xml"><![CDATA[<html>[Previous] <FONT color=#086171>Keep trying</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="89" link_target="sq15_748_what_am_i.xml"><![CDATA[<html>[Previous] <FONT color=#086171>Who am I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="92" link_target="sq15_749_do_not_despair.xml"><![CDATA[<html>[Previous] <FONT color=#086171>Don't fall into despair</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="96" link_target="sq15_750_life_that_someone_desire.xml"><![CDATA[<html>[Previous] <FONT color=#086171>Ideal life</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="53"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Academic Station${action:Talk}<BR><FONT color=#086171>Connect…………….<BR>Welcome Academic Station. ver.2.1.1.</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>(C) Berlin Corporation. All Right Reserved.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="QN_Npc_Academic_station.dds" itemindex="">
+         <talk_question mid="51"><![CDATA[<html>$Strange construction$<BR><FONT color=#7e12d2>(A thing never seen is standing<BR>It's for resting one's chin on one's hand or for a bird to take a rest)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="0" false="2">0</exe>
+         <exe type="talk">002</exe>
+         <exe type="custom">api_ui_OpenSkillShop(userObjID);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <exelink idx="skill">3</exelink>
+   </talk>

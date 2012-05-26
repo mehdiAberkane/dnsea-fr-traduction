@@ -1,0 +1,465 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_763_truly_power</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>763</qid>
+      <designer>김주연</designer>
+      <qlevel>45</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Changing job] Truly Power]]></qkname>
+      <qnpc>
+         <npcid>475</npcid>
+         <npcename>n475_great_book</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>476</npcid>
+         <npcename>n476_the_light</npcename>
+         <npckname />
+      </qnpc>
+      <qnpc>
+         <npcid>701</npcid>
+         <npcename>n701_oldkarakule</npcename>
+         <npckname>카라큘 페어리스타</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-noquest" image="" itemindex="">
+      <talk_question mid="80"><![CDATA[<html>$The Greatest Book Solomon$<BR>You turn pages but you can't find anything.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n476_the_light-noquest" image="" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Light of Destiny$<BR>I can see bright light leaking out of it, but that's it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="" itemindex="">
+      <talk_question mid="272"><![CDATA[<html>$Master Sorceress Tamara$<BR>
+Karacule and I expect great things from you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-a" mid="123"><![CDATA[<html>That was… haha…</html>]]></talk_answer>
+      <talk_question mid="122"><![CDATA[<html>$Master Sorceress Tamara$<BR>I heard that you sincerely talked with Karacule's magic spell book <FONT color=#a82425>Chatterbox Book Doctor</FONT>. So what was that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-b" mid="125"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="124"><![CDATA[<html>$Master Sorceress Tamara$<BR>Doctor said, you have great talents even though you're a little aggressive.<BR>It is you who can hear the Greatest Book's voice</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-b" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-c" mid="127"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="126"><![CDATA[<html>$Master Sorceress Tamara$<BR>From the past when you were young, you've made people surprised because of your potential talents. So, keep going on with your confidence. <BR>
+<FONT color=#7e12d3>(Tamara pats on the shoulder)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-accepting-acceptted" mid="129"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="128"><![CDATA[<html>$Truly Power$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-1" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_question mid="130"><![CDATA[<html>$Karacule$<BR>You never give up even though the weigh on your shoulder is too heavy. Because you're strong.<BR>…Go to <FONT color=#a82425>Riverwart Wharf</FONT>. If your destiny allows you, there will be someone waiting for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n476_the_light-1" image="" itemindex="">
+      <talk_answer link_index="n476_the_light-1-check1" mid="205"><![CDATA[<html>Peer at it.</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Light of Destiny$<BR>Bright light is leaking out of somewhere.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n476_the_light-1-a" image="" itemindex="">
+      <talk_question mid="206"><![CDATA[<html>$Light of Destiny$<BR>There's nothing special.<BR>
+<FONT color=#7e12d2></FONT><BR><FONT color=#7e12d3>※ You can't enter here with a party.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n476_the_light-1-b" image="" itemindex="">
+      <talk_answer link_index="n476_the_light-1-enter_room1" mid="208"><![CDATA[<html>(Go inside)</html>]]></talk_answer>
+      <talk_question mid="207"><![CDATA[<html>$Light of Destiny$<BR><FONT color=#7e12d2>(I can see some place inside of the bright light.</FONT><BR>
+<FONT color=#7e12d3>Let's go into it.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-a" mid="135"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$The Greatest Book Solomon$<BR>Welcome. You're qualified to be my lord.<BR>I was waiting for you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-a" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-b" mid="137"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$The Greatest Book Solomon$<BR>Little sorceress led by the energy of destiny.<BR>Answering my voice, get the power that you truly want.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-b" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-check_job" mid="139"><![CDATA[<html>I'm going to wipe out with fire and ice.</html>]]></talk_answer>
+      <talk_question mid="138"><![CDATA[<html>$The Greatest Book Solomon$<BR>If you enter the door behind me, you will face with obstacles so get through all of them and then you can be stronger.<BR>Are you willing to do this?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-c" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-d" mid="141"><![CDATA[<html>About Seleana◁ </html>]]></talk_answer>
+      <talk_answer link_index="n475_great_book-1-e" mid="142"><![CDATA[<html>About Elestra◁</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$The Greatest Book Solomon$<BR>See, little sorceress.<BR>I'm going to give you my knowledge. See the knowledge that you truly need.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-d" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-f" mid="144"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="143"><![CDATA[<html>$Seleana$<BR>is succeeded by Elementalroad's  <FONT color=#a82424>fire skills</FONT>. It is specialized in long-distance and wide-range fire spells. You will walk on a long-wide oriented sorceress.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-e" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-f" mid="146"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="145"><![CDATA[<html>$Elestra$<BR>is succeeded by Elementalroad's<FONT color=#a82425> cold skills</FONT>. It is specialized in middle-distance and wide-range cold spells which makes enemies slow. You will walk on mid-wide oriented sub-sorceress.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-f" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-2" mid="211"><![CDATA[<html>I've seen all.</html>]]></talk_answer>
+      <talk_answer link_index="n475_great_book-1-c" mid="212"><![CDATA[<html>I need more time to see them.</html>]]></talk_answer>
+      <talk_question mid="147"><![CDATA[<html>$The Greatest Book Solomon$<BR>Did you read them all, my lord.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-g" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-h" mid="153"><![CDATA[<html>About Smasher◁</html>]]></talk_answer>
+      <talk_answer link_index="n475_great_book-1-i" mid="154"><![CDATA[<html>About Majesty◁</html>]]></talk_answer>
+      <talk_question mid="152"><![CDATA[<html>$The Greatest Book Solomon$<BR>See, little sorceress.<BR>I'm going to give you my knowledge. See the knowledge that you truly need.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-h" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-j" mid="156"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="155"><![CDATA[<html>$Smasher$<BR>is succeeded by Forceuser's  <FONT color=#a82424>laser skills</FONT>. It is specialized pin-point, middle-distance, mid-range laser skills which impacts strong damages. You will walk on a sorceress attacking enemies with mid-distance lasers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-i" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-j" mid="158"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="157"><![CDATA[<html>$The Greatest Book Solomon$<BR>is succeeded by Forceuser's <FONT color=#a82424>gravity skills</FONT>. It is specialized in middle-distance and wide-range gravity spells which limits enemies movements. You will walk on mid-wide oriented sub-sorceress.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-1-j" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-1-!next" mid="160"><![CDATA[<html>I've seen all.</html>]]></talk_answer>
+      <talk_answer link_index="n475_great_book-1-g" mid="161"><![CDATA[<html>I need more time to see them.</html>]]></talk_answer>
+      <talk_question mid="159"><![CDATA[<html>$The Greatest Book Solomon$<BR>Did you read them all, my lord.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="QW_LiverwortFerry.dds" itemindex="">
+      <talk_question mid="273"><![CDATA[<html>$Master Sorceress Tamara$<BR>Then go to <FONT color=#a82425>Riverwart Wharf</FONT>.<BR>
+If your destiny allows you, there will be someone waiting for you.….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-2" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-2-check_job2_2" mid="164"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="163"><![CDATA[<html>$The Greatest Book Solomon$<BR>Choice should be done carefully but confidence should not be vulnerable.<BR>
+You get strong enough power to get over your shadow.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-2-a" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-2-set_ba1" mid="264"><![CDATA[<html>Seleana's power</html>]]></talk_answer>
+      <talk_answer link_index="n475_great_book-2-set_ba2" mid="265"><![CDATA[<html>Elestra's power.</html>]]></talk_answer>
+      <talk_question mid="263"><![CDATA[<html>$The Greatest Book Solomon$<BR>
+Which one will you choose? Little sorceress.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-2-b" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-2-set_battle_3" mid="170"><![CDATA[<html>Smasher's power.</html>]]></talk_answer>
+      <talk_answer link_index="n475_great_book-2-set_battle_4" mid="171"><![CDATA[<html>Majesty's power.</html>]]></talk_answer>
+      <talk_question mid="169"><![CDATA[<html>$The Greatest Book Solomon$<BR>
+Which one will you choose? Little sorceress.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-2-c" image="QM_So_Doppelganger.dds" itemindex="">
+      <talk_question mid="213"><![CDATA[<html>$The Greatest Book Solomon$<BR>You get over your shadow with the acquired power.<BR>
+Genuine power will start from that destruction….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-3" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-3-a" mid="270"><![CDATA[<html>New skills~ I'm excited!</html>]]></talk_answer>
+      <talk_question mid="214"><![CDATA[<html>$The Greatest Book Solomon$<BR>I just engraved new skills into your heart.<BR>Press
+<FONT color=#a82425>[K]</FONT> button to check the skills.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-3-a" image="QM_So_Doppelganger.dds" itemindex="">
+      <talk_question mid="271"><![CDATA[<html>$The Greatest Book Solomon$<BR>You get over your shadow with the acquired power.<BR>
+Genuine power will start from that destruction….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-4" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-4-no_find" mid="216"><![CDATA[<html>I couldn't find it yet.</html>]]></talk_answer>
+      <talk_answer link_index="n475_great_book-4-a" mid="217"><![CDATA[<html>I got it.</html>]]></talk_answer>
+      <talk_question mid="215"><![CDATA[<html>$The Greatest Book Solomon$<BR>Did you decide where to go?<BR>
+Your first step will determine your last destination.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-4-a" image="" itemindex="">
+      <talk_answer link_index="n475_great_book-4-b" mid="267"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="218"><![CDATA[<html>$The Greatest Book Solomon$<BR>Little sorceress, keep going on the way you found and don't lose your confidence.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-4-b" image="" itemindex="">
+      <talk_question mid="268"><![CDATA[<html>$The Greatest Book Solomon$<BR>You should overcome your confusion and anxiety.<BR>
+Only true knowledge can lead you to overcome your shadow and to the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n475_great_book-5" image="" itemindex="">
+      <talk_question mid="219"><![CDATA[<html>$The Greatest Book Solomon$<BR>Little sorceress,<BR>I hope you found the true knowledge. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-check_j_last" mid="221"><![CDATA[<html>I'm going to the new way!</html>]]></talk_answer>
+      <talk_question mid="220"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#7e12d3>(Tamara is staring at {user_nick}'s eyes carefully)</FONT><BR>I can't believe that you already understood the Greatest Book. You are the genius.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-a" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-c" mid="224"><![CDATA[<html>Seleana's way</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-5-d" mid="225"><![CDATA[<html>Elestra's way</html>]]></talk_answer>
+      <talk_question mid="223"><![CDATA[<html>$Master Sorceress Tamara$<BR>I thought you were just a child but it's amazing.<BR>
+So, what do you say?<BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d3>※ You can't change the job after you choose.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-e" mid="227"><![CDATA[<html>Smasher's way.</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-5-f" mid="228"><![CDATA[<html>Majesty's way.</html>]]></talk_answer>
+      <talk_question mid="226"><![CDATA[<html>$Master Sorceress Tamara$<BR>I thought you were just a child but it's amazing.<BR>
+So, what do you say?<BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d3>※ You can't change the job after you choose.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-a" mid="282"><![CDATA[<html>(Choose to another job)</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-5-set_job1" mid="230"><![CDATA[<html><FONT color=#086172>(Let's become Seleana)</FONT></html>]]></talk_answer>
+      <talk_question mid="229"><![CDATA[<html>$Become Seleana$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-a" mid="283"><![CDATA[<html>(Choose to another job)</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-5-set_job2" mid="232"><![CDATA[<html><FONT color=#086172>(Let's become Elestra)</FONT></html>]]></talk_answer>
+      <talk_question mid="231"><![CDATA[<html>$Become Elestra$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-e" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-b" mid="284"><![CDATA[<html>(Choose to another job)</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-5-set_job3" mid="234"><![CDATA[<html><FONT color=#086172>(Let's become Smasher)</FONT></html>]]></talk_answer>
+      <talk_question mid="233"><![CDATA[<html>$Become Smasher$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-f" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-b" mid="285"><![CDATA[<html>(Choose to another job)</html>]]></talk_answer>
+      <talk_answer link_index="n713_soceress_tamara-5-set_job4" mid="236"><![CDATA[<html><FONT color=#086172>(Let's become Majesty)</FONT></html>]]></talk_answer>
+      <talk_question mid="235"><![CDATA[<html>$Become Majesty$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-g" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-5-h" mid="238"><![CDATA[<html>Yes. Thank you.</html>]]></talk_answer>
+      <talk_question mid="237"><![CDATA[<html>$Master Sorceress Tamara$<BR>All done. <FONT color=#7e12d2>(Tamara looks at me with warm smile)<BR></FONT>Be like the immortal Sun not like a temporary comet,<FONT color=#387207>{user_class}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5-h" image="" itemindex="">
+      <talk_question mid="239"><![CDATA[<html>$Master Sorceress Tamara$<BR>I bless <FONT color=#387207>{user_nick}</FONT>, with the name of Fairystar.<BR>True knowledge will follow you….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5" image="" itemindex="">
+      <talk_answer link_index="n701_oldkarakule-5-a" mid="275"><![CDATA[<html>I think so.</html>]]></talk_answer>
+      <talk_question mid="274"><![CDATA[<html>$Karacule$<BR>I feel a little different of you than before.<BR>Did you get true knowledge?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n701_oldkarakule-5-a" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_question mid="276"><![CDATA[<html>$Karacule$<BR>You seem to decide all as you came to me.<BR>
+<FONT color=#7e12d2>(Karacule smiles tenderly)</FONT><BR>Go to<FONT color=#a82425>Master Sorceress Tamara</FONT>and tell your opinion.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n476_the_light-5" image="" itemindex="">
+      <talk_question mid="278"><![CDATA[<html>$???$<BR>
+<FONT color=#7e12d3>(I can't get closer to it)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">7630,,,,,</exe>
+         <exe type="setquest">763</exe>
+         <exe type="talk" npc="n713_soceress_tamara">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>
+엘리멘탈로드	17
+포스유저	18
+</comment>
+      <conditions>
+         <chk type="custom">api_user_GetUserJobID(userObjID) == 17</chk>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n475_great_book">c</exe>
+         <exe type="talk" npc="n475_great_book">g</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n475_great_book">g</exe>
+         <exe type="conexe" true="7" false="8">1</exe>
+         <exe type="talk" npc="n476_the_light">b</exe>
+         <exe type="talk" npc="n476_the_light">a</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13512,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>a 엘리멘탈 로드 세팅
+b 포스유저 세팅
+
+직업 선택시 3스탭 3저널로 변경.</comment>
+      <conditions>
+         <chk type="custom">api_user_GetUserJobID(userObjID) == 17</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="conexe" true="3" false="4">0</exe>
+         <exe type="talk" npc="n475_great_book">a</exe>
+         <exe type="talk" npc="n475_great_book">b</exe>
+         <exe type="talk" npc="n475_great_book">3</exe>
+         <exe type="custom">api_user_SetSecondJobSkill( userObjID, 35 );</exe>
+         <exe type="custom">api_user_SetSecondJobSkill( userObjID, 36 );</exe>
+         <exe type="custom">api_user_SetSecondJobSkill( userObjID, 37 );</exe>
+         <exe type="custom">api_user_SetSecondJobSkill( userObjID, 38 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n475_great_book">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_GetUserJobID(userObjID) == 17</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n713_soceress_tamara">a</exe>
+         <exe type="talk" npc="n713_soceress_tamara">b</exe>
+         <exe type="recompense">7630,,,,,</exe>
+         <exe type="complete">763</exe>
+         <exe type="talk" npc="n713_soceress_tamara">g</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 35);</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 36);</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 37);</exe>
+         <exe type="custom">api_user_SetUserJobID(userObjID, 38);</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n713_soceress_tamara" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n476_the_light" sub="check1">6</exelink>
+   <exelink qstep="1" npc="n476_the_light" sub="enter_room1">9</exelink>
+   <exelink qstep="1" npc="n475_great_book" sub="b" />
+   <exelink qstep="1" npc="n475_great_book" sub="check_job">0</exelink>
+   <exelink qstep="1" npc="n475_great_book" sub="d" />
+   <exelink qstep="1" npc="n475_great_book" sub="e" />
+   <exelink qstep="1" npc="n475_great_book" sub="f" />
+   <exelink qstep="1" npc="n475_great_book" sub="f" />
+   <exelink qstep="1" npc="n475_great_book" sub="2">3,4</exelink>
+   <exelink qstep="1" npc="n475_great_book" sub="c" />
+   <exelink qstep="1" npc="n475_great_book" sub="h" />
+   <exelink qstep="1" npc="n475_great_book" sub="i" />
+   <exelink qstep="1" npc="n475_great_book" sub="j" />
+   <exelink qstep="1" npc="n475_great_book" sub="j" />
+   <exelink qstep="1" npc="n475_great_book" sub="!next">3,4</exelink>
+   <exelink qstep="1" npc="n475_great_book" sub="g" />
+   <exelink qstep="2" npc="n475_great_book" sub="check_job2_2">2</exelink>
+   <exelink qstep="2" npc="n475_great_book" sub="set_ba1">0,1,5,6</exelink>
+   <exelink qstep="2" npc="n475_great_book" sub="set_ba2">0,1,5,7</exelink>
+   <exelink qstep="2" npc="n475_great_book" sub="set_battle_3">0,1,5,8</exelink>
+   <exelink qstep="2" npc="n475_great_book" sub="set_battle_4">0,1,5,9</exelink>
+   <exelink qstep="4" npc="n475_great_book" sub="no_find">2,3,4</exelink>
+   <exelink qstep="4" npc="n475_great_book" sub="b">0,1</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="check_j_last">0</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="c">3</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="d">3</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="e">3</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="f">3</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="a" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="set_job1">4,5,6</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="a" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="set_job2">4,5,7</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="set_job3">4,5,8</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="set_job4">4,5,9</exelink>
+   <exelink qstep="5" npc="n713_soceress_tamara" sub="h" />
+   <journal_data recompense="7630" quest_title="[전직] 진정 필요한 힘" chapterid="" quest_level="45" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n476</destination_pos>
+         <destination_mode>custom:14@1</destination_mode>
+         <statemark_npcid>476</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="243"><![CDATA[Strange light]]></title>
+         <contents mid="244"><![CDATA[<html>At Riverwart Wharf, there should be something. Go and find it.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf</FONT> <FONT color=#a82425>→ strange light</FONT></html>]]></contents>
+         <destination mid="245"><![CDATA[Search something special at Riverwart Wharf]]></destination>
+         <todo_msg mid="246"><![CDATA[Go to Riverwart Wharf]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image />
+         <destination_pos>13512,n475</destination_pos>
+         <destination_mode>custom:13512@1</destination_mode>
+         <statemark_npcid>475</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="247"><![CDATA[The place led by Light of Destiny]]></title>
+         <contents mid="248"><![CDATA[<html>Go to Riverwart Wharf and follow the light.<BR><BR>
+<FONT color=#7e12d2>※ You can't continue with a party.</FONT><BR>
+<BR><FONT color=#086171>Riverwart Wharf(Light of Destiny)</FONT> <FONT color=#a82425>→ Strange place(The Greatest Book Solomon)</FONT></html>]]></contents>
+         <destination mid="249"><![CDATA[(1 person) Talk with The Greatest Book Solomon in the strange place]]></destination>
+         <todo_msg mid="250"><![CDATA[Talk with the Greatest Book in the place led by Light of Destiny]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QM_So_Doppelganger.dds</contents_image>
+         <destination_pos>13512,0,0</destination_pos>
+         <destination_mode>custom:13512@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="251"><![CDATA[Research on genuine knowledge]]></title>
+         <contents mid="252"><![CDATA[<html>This is the course for finding which knowledge will be suitable to you. Choose the job and fight against it.<BR>
+<BR><FONT color=#7e12d2>※ You can't continue with a party.</FONT><BR><BR><FONT color=#086171>Riverwart Wharf(Light of Destiny)</FONT> <FONT color=#a82425>→ Strange place</FONT></html>]]></contents>
+         <destination mid="253"><![CDATA[(1 person) fight against the shadow at the strange place]]></destination>
+         <todo_msg mid="254"><![CDATA[Choose the job and win the fight]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image />
+         <destination_pos>13512,n475</destination_pos>
+         <destination_mode>custom:13512@1</destination_mode>
+         <statemark_npcid>475</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="255"><![CDATA[Talk with the Greatest Book]]></title>
+         <contents mid="256"><![CDATA[<html>Talk with the Greatest Book in the strange place.<BR>
+ <BR>
+<FONT color=#7e12d2>※ You can't continue with a party.</FONT><BR>
+<BR><FONT color=#086171>Riverwart Wharf(Light of Destiny)</FONT> <FONT color=#a82425>→ Strange place(The Greatest Book Solomon)</FONT></html>]]></contents>
+         <destination mid="257"><![CDATA[Talk with the Greatest Book]]></destination>
+         <todo_msg mid="258"><![CDATA[You beat the shadow down. Talk with the Greatest Book]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="259"><![CDATA[Talk with Master Sorceress Tamara]]></title>
+         <contents mid="260"><![CDATA[<html>Go back to Karacule and tell him the situation.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="261"><![CDATA[Talk with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="262"><![CDATA[Talk with Master Sorceress Tamara]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>44:-1</user_level>
+      <user_worldzone_level />
+      <user_class>3</user_class>
+      <prev_quest>762:283</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

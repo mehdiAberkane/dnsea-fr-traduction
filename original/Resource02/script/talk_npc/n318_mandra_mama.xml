@@ -1,0 +1,29 @@
+   <talk>
+      <npcename>n318_mandra_mama</npcename>
+      <npcid>318</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Mama Mandra]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="15"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Mama Mandra$<BR>I want to be home with my children...<BR><FONT color=#7e12d2>[A worn-out looking Mandra is hiding.]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="4"><![CDATA[<html>$Mama Mandra$<BR>Hello <FONT color=#387206>{user_class}</FONT>.<BR>It's been a long time since we met. My children and I are alright now.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="17" link_target="sq11_621_hunting_mandra.xml"><![CDATA[<html>[Lv.33]<FONT color=#086171>Mandra Caught</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="18" link_target="sq11_622_baby_food.xml"><![CDATA[<html>[Lv.33]<FONT color=#086171>Delicious Infant Food</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="19" link_target="sq11_623_glow_rapidly.xml"><![CDATA[<html>[Lv.33]<FONT color=#086171>Children Growing Up Healthy and Strong</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="sq11_624_hairbreadth_escape.xml"><![CDATA[<html>[Lv.33]<FONT color=#086171>Mandra in the Nick of Time</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="21"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="16"><![CDATA[<html>$Mama Mandra$<BR>I want to be home with my children...<BR><FONT color=#7e12d2>(A worn-out looking Mandra is hiding.)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="talk">002</exe>
+      </executions>
+      <conditions>
+         <chk type="hascomq">624</chk>
+      </conditions>
+   </talk>

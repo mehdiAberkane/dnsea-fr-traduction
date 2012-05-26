@@ -1,0 +1,130 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq19_8806_tara_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8806</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Dream]]></qkname>
+      <qnpc>
+         <npcid>15</npcid>
+         <npcename>n015_sorceress_tara</npcename>
+         <npckname>소서리스 타라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-a" mid="7"><![CDATA[<html>Take a different path!</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-accepting-d" mid="8"><![CDATA[<html>Elemental Lord!</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-accepting-g" mid="9"><![CDATA[<html>Force User is the best!</html>]]></talk_answer>
+      <talk_answer link_index="n015_sorceress_tara-accepting-k" mid="10"><![CDATA[<html>My wife!</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html><FONT size=2 face=A rial>$Sorceress Tara$</FONT><BR><FONT face=Arial></FONT><FONT size=2 face=Arial>My dream? Well...<BR>Hehe. Do you want to take a guess? What do you think I should be?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>Huh? Different path?<BR>Hmmm.. Actually I did hear that there a job  that is still unknown but exist some where…but...<BR>What could that be?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-c" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>Maybe the reason why I haven't been promoted is because there's something more suitable for me out there, right?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-c" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>For example, tomorrow I'll be just hanging out in the corner over there and then suddenly get in a fight with a dragon...<BR><FONT color=#7e12d2>(Sorceress Tara is completely in her fantasy.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-e" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>Flashy and powerful Elemental Lord! So cool!<BR><FONT size=2 face=Arial></FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-f" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>If I become an Elemental Lord, I'm going to freeze the whole earth and burn up Mana Ridge! Hohoho!<BR><FONT color=#7e12d2>(She speaks some scary words with such innocent face.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-f" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>Hmm Force user sound good to<BR>But that's something I have to decide, right? Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-h" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR><FONT size=2 face=Arial>Telepathic powers, time and space magic! How awesome! Fast, swift, a true queen that's not bound by anything!!! At least that's how I see it.</FONT><BR><FONT size=2 face=Arial></FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-h" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-i" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>If I become a Force User, I'm going to tie up allies and enemies alike and fly over their heads. Heh heh heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-j" mid="28"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>You insignificant fool! Worship me!! How cool!<BR><FONT color=#7e12d2>(She speaks some scary words with such innocent face.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-j" image="" itemindex="">
+      <talk_question mid="24"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>But Elemental Lord sounds good too...<BR>But that's something I have to decide, right? Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-k" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-l" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>Whaaaaat?<BR><FONT color=#7e12d2>(Sorceress Tara bursts out laughing.)</FONT><BR><FONT size=2 face=Arial></FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-l" image="" itemindex="">
+      <talk_answer link_index="n015_sorceress_tara-accepting-m" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>How can I be your, {user_nick}'s, wife? Oh My.. Your funny!<BR>But... my heart skipped a beat for a second. I never been proposed to before. Hehe.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n015_sorceress_tara-accepting-m" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html><FONT size=2 face=Arial>$Sorceress Tara$</FONT><BR>So my dream... I guess is something I have to choose, right?<BR><FONT color=#7e12d2>(Sorceress Tara puts on a big smile.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 8806, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 15, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 15, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 15, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 15, 320 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 15, -160 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="d">2,0</exelink>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="g">3,0</exelink>
+   <exelink qstep="accepting" npc="n015_sorceress_tara" sub="k">4,5,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 장래희망에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>15:7200:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

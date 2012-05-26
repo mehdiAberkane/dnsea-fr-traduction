@@ -1,0 +1,192 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_368_albratum_quest1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>368</qid>
+      <designer>김인정</designer>
+      <qlevel>15</qlevel>
+      <qdesc>심연의 장막 아이템 처리에 따라 변경.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>369</nextqid>
+      <nextqname>sq08_369_albratum_quest2</nextqname>
+      <nextqnpc>n199_darklair_castia</nextqnpc>
+      <qkname mid="1"><![CDATA[Jealous Zealing I]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Priestess of Darkness Castia$<BR>This place is the Shadow of the World of Light. It is where Goddess was poisoned.<BR>We have surround this place with magical barrier and be constantly careful not to let it contaminate the outside world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-a" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-acceppted" mid="8"><![CDATA[<html>Count me in!</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Priestess of Darkness Castia$<BR>But... we can no longer hold the Seal. We need the help of adventurers like yourself. Please... You must help us, protect the Seal of the <FONT color=#a82424>Boundary of Darkness</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Priestess of Darkness Castia$<BR>This place is the Shadow of the World of Light. It is where Goddess were poisoned.<BR>We had surround this place with magical barrier and constantly watchful on not to let it contaminate the outside world.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>To be honest... many adventurers did helped us, but the nightmare had infested them all. With umpteen attempts, we finally manage to craft this Seal, it can prevent such horror from happening again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="14"><![CDATA[<html>Priestess Shea? Alright.</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Before entering, you need <FONT color=#a82424>The Tent of the Abyss</FONT>. You can obtain it from <FONT color=#a82424>Priestess Shea</FONT>. Take the Veil and travel to the Jealous Zealing. Purge any nightmares you find and go deeper.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-d" mid="19"><![CDATA[<html>(Condition understood).</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Jealous Zealing I$<BR><FONT color=#7e12d2>※ A party of 4 is recommended for the Boundary of Jealousy.<BR>※ You must have an Tent of the Abyss to enter the Boundary of Darkness.</FONT><BR><FONT color=#7e12d2>※ Tent of the Abyss can be obtained from Priestess Shea.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-d" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2" mid="21"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Jealous Zealing I$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-a" mid="22"><![CDATA[<html>Where can I get an Tent of the Abyss?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Priestess of Darkness Castia$<BR><FONT color=#a82424>The Jealous Zealing</FONT>...  It's a place of pure malice. It feeds off the purity and soul.<BR>Go in and purge to <FONT color=#a82424>Round 5</FONT>. Return here when you complete.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-b" mid="45"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Priestess of Darkness Castia$<BR>It's hard to find the exit once you enter the nightmare. The simplest way is to deal with the Zealing, once you <FONT color=#a82424>purge all</FONT>, that's the end of a <FONT color=#a82424>Round</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2-c" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Repeating Rounds will lead you deeper into the nightmares. More corrupted evil will appear, so the number of rounds you stay depends largely on your endurance.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2-c" image="QW_DarkLair.dds" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Oh, one important note, on every 5 rounds, you'll face a particularly strong leader of the evil. Be cautious as they never show mercy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-a" mid="26"><![CDATA[<html>(Castia express a slight smile)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Ah, adventurer!<BR>You managed to stop the spreading of the nightmare and returned safely, I am deeply grateful to you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-a" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-b" mid="28"><![CDATA[<html>Future? So it's not the end.</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Even if you possess the <FONT color=#a82424>Abyss Stigma</FONT>, it could well turn into a monster.<BR>You must remain safe even in the future.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-!next" mid="30"><![CDATA[<html><FONT color=#086171>(Receive reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_npc_NextTalk(userObjID, npcObjID, "n199_darklair_castia-1-a", npc_talk_target);</exe>
+         <exe type="setquest">368</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="recompense_view">3680,,,,,</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="4,5,6">300011</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3680,,,,,</exe>
+         <exe type="complete">368</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n199_darklair_castia" sub="acceppted">1,0</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="d">2</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="2">0,3,1</exelink>
+   <exelink qstep="2" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="2" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="b">0</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="!next">1</exelink>
+   <journal_data recompense="0:3680" quest_title="질투의 알브트라움 Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>29,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,30@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Into the Nightmare]]></title>
+         <contents mid="32"><![CDATA[<html>Look for <FONT color=#a82424>Priestess of Darkness Castia</FONT> at Rozin Sanctuary to hear her request.<BR><BR><FONT color=#086171>Rozin Sanctuary</FONT> <FONT color=#a82424>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Speak to Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="34"><![CDATA[Quest has been added..]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_DarkLair.dds</contents_image>
+         <destination_pos>12007,0,0</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0,12007@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[To the Fifth Wave]]></title>
+         <contents mid="36"><![CDATA[<html>Survive for 5 or more waves in the Boundary of Jealousy.<BR><BR><FONT color=#7e12d2>※ A party of 4 is recommended.<BR>※ You must have an Tent of the Abyss to enter the Boundary of Darkness.<BR>※ Tent of the Abyss can be obtained from Priestess of Darkness Shea.</FONT><BR><BR><FONT color=#086171>Boundary Gateway</FONT> <FONT color=#a82424>→ Boundary of Jealousy</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Clear at least 5 waves in the Boundary of Jealousy.]]></destination>
+         <todo_msg mid="38"><![CDATA[Clear at least 5 waves in the Boundary of Jealousy.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>29,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,30@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Report to Priestess of Darkness Castia]]></title>
+         <contents mid="40"><![CDATA[<html>Mission Completed. Report to Priestess of Darkness Castia.<BR><BR><FONT color=#086171>Rozin Sanctuary</FONT> <FONT color=#a82424>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Speak to Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="42"><![CDATA[Report to Priestess of Darkness Castia.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>367</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

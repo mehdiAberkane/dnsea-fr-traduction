@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n315_whilerose_lena</npcename>
+      <npcid>315</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[White Rose Knight]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$White Rose Knight$<BR>
+I am not free to speak with you now.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_578_brand</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">578</chk>
+      </conditions>
+   </talk>

@@ -1,0 +1,243 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_299_fear_of_abyss2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>299</qid>
+      <designer>김인정</designer>
+      <qlevel>23</qlevel>
+      <qdesc>주바카의 변형된 보옥	300132
+스칼렛 사이스의 변형된 보옥	300133
+다크 스크림의 변형된 보옥	300134
+크루루의 변형된 보옥	300135
+1. 베일리와 대화
+2. 어비스 지역들에게 보옥을 모아 베일리에게 보고.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Horror of the Abyss II]]></qkname>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Thanks to all of the <FONT color=#a82424>Abyss</FONT> materials you have brought to me, I was able to find out more about Abyss.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-accepting-acceptted" mid="8"><![CDATA[<html>Then, was there another Abyss that appeared?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>But... Before I can even find out why the Abyss regions keep appearing, new Abyss regions keep showing up. There's nothing I can do.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="10"><![CDATA[<html>Where is it this time?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I've just received a report about it... A <FONT color=#a82424>new Abyss</FONT> has been discovered. I really feel helpless as a scholar.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="12"><![CDATA[<html>Those regions have stronger monsters than the previous ones.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>It is the <FONT color=#a82424>Road of No Return</FONT>, <FONT color=#a82424>Death Basin</FONT>, <FONT color=#a82424>Santurary Core</FONT>, and <FONT color=#a82424>Prayer's Resting Place</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="14"><![CDATA[<html>Is there anything I can help with?</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>That's right. The Abyss is gradually spreading to regions that contain stronger monsters. We're just busy here with our research and analysis, trying to keep up with the affected regions. This is embarrassing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="16"><![CDATA[<html>Of course.</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I would like to ask you to collect some <FONT color=#a82424>Mutated Jewel</FONT> again.<BR>This should be more difficult than before... Is that fine?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-e" mid="18"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Horror of the Abyss II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="20"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>You can obtain Chubaka's Mutated Jewel at <FONT color=#a82424>Road of No Return</FONT>, Scarlet Scythe's Mutated Jewel at <FONT color=#a82424>Death Basin</FONT>, Shadow Dark Scream's Mutated Jewel at <FONT color=#a82424>Santurary Core</FONT>, and Keruru's Mutated Jewel at <FONT color=#a82424>Prayer's Resting Place</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-f" image="" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Although this may be obvious, you must enter them through <FONT color=#a82424>Abyss</FONT> if you want to acquire the Mutated Jewel. Remember that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="24"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>You can obtain Chubaka's Mutated Jewel at <FONT color=#a82424>Road of No Return</FONT>, Scarlet Scythe's Mutated Jewel at <FONT color=#a82424>Death Basin</FONT>, Shadow Dark Scream's Mutated Lustre at <FONT color=#a82424>Santurary Core</FONT>, and Keruru's Mutated Lustre at <FONT color=#a82424>Prayer's Resting Place</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Although this may be obvious, you must enter them through <FONT color=#a82424>Abyss</FONT> if you want to acquire the Mutated Jewels. Remember that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-a" mid="27"><![CDATA[<html>(Give the jewels to Heraldry Scholar Bailey, who is letting out a sigh.)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>This now confirms the existence of <FONT color=#a82424>Abyss</FONT> at most of the regions in the vicinity of Calderock.<BR>I just hope it doesn't get worse.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-a" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-b" mid="29"><![CDATA[<html>It's a pleasure...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Heraldry Scholar Bailey${action:Talk}<BR>Oh, you're amazing. Even some of the well-trained soldiers give up and return. You really have outstanding skills, adventurer.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-b" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-c" mid="31"><![CDATA[<html>(Heraldry Scholar Bailey shudders.)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I heard that there is a place somewhere in this world that <FONT color=#a82424>sealed</FONT> the <FONT color=#a82424>regions polluted with nightmares</FONT>. I heard that the world within this seal is filled with vicious monsters that were never seen or heard before.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-c" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-d" mid="33"><![CDATA[<html>What can be done about this?</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I don't know why, but after the <FONT color=#a82424>Prophet</FONT> has appeared, there are rumors that the power of the seal has weakened. That probably means that the <FONT color=#a82424>nightmares</FONT> that have spread throughout this world have become that much stronger. This has eventually affected the world outside the seal, and that is why the terrifying <FONT color=#a82424>Abyss</FONT> regions have appeared.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-d" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-e" mid="35"><![CDATA[<html>Yes. I guess all we can do is try.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>We could not find a complete solution to this problem yet. All I hope is that we somehow find a solution by gathering our weak wisdom together.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-e" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-3-f" mid="37"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-3-f" image="" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Thanks to your cooperation, I think we were able to make some progress towards the <FONT color=#a82424>Truth of the Abyss</FONT>. Although I may not be of much help, I would like to research diligently and provide all the help I can for others.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">299</exe>
+         <exe type="talk" npc="n028_scholar_bailey">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="prob">1000</chk>
+         <chk type="questitem" num="1" op="]=">300132</chk>
+         <chk type="questitem" num="1" op="]=">300133</chk>
+         <chk type="questitem" num="1" op="]=">300134</chk>
+         <chk type="questitem" num="1" op="]=">300135</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">200612</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200664</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="8">200712</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200762</exe>
+         <exe type="conexe" true="22" false="18">1</exe>
+         <exe type="conexe" true="22" false="19">2</exe>
+         <exe type="conexe" true="22" false="20">3</exe>
+         <exe type="conexe" true="22" false="21">4</exe>
+         <exe type="addquestitem" num="1">300132</exe>
+         <exe type="addquestitem" num="1">300133</exe>
+         <exe type="addquestitem" num="1">300134</exe>
+         <exe type="addquestitem" num="1">300135</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300132</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300133</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300134</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300135</exe>
+         <exe type="conexe" true="10,22" false="">0</exe>
+         <exe type="conexe" true="11,22" false="">0</exe>
+         <exe type="conexe" true="12,22" false="">0</exe>
+         <exe type="conexe" true="13,22" false="">0</exe>
+         <exe type="conexe" true="23,24,25" false="">1 and 2 and 3 and 4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="recompense_view">,2991,2992,2993,2994,2995</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,2991,2992,2993,2994,2995</exe>
+         <exe type="delquestitem" num="-1">300132</exe>
+         <exe type="delquestitem" num="-1">300133</exe>
+         <exe type="delquestitem" num="-1">300134</exe>
+         <exe type="delquestitem" num="-1">300135</exe>
+         <exe type="complete">299</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n028_scholar_bailey" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d">26</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="e">0,1,14,15,16,17,2,3,4,5</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="e">0</exelink>
+   <exelink qstep="3" npc="n028_scholar_bailey" sub="f">1,2,3,4,5</exelink>
+   <journal_data recompense="1:2991,2:2992,3:2993,4:2994,5:2995" quest_title="어비스의 공포 II" chapterid="" quest_level="23" quest_mark_type="10" use_item_list="300132,300133,300134,300135">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[News]]></title>
+         <contents mid="42"><![CDATA[<html>There is news about the Abyss regions. Talk to <FONT color=#a82424>Heraldry Scholar Bailey</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="44"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image />
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Fearful Grounds]]></title>
+         <contents mid="46"><![CDATA[<html>You must enter Road of No Return, Death Basin, Sanctuary Core, and Prayer's Resting Place through <FONT color=#a82424>Abyss</FONT> and then acquire the <FONT color=#a82424>Mutated Jewel</FONT> from the <FONT color=#a82424>boss</FONT>.<BR><BR><FONT color=#086171>Cristal Stream(Entrance to Sigh Canyon)</font> <FONT color=#a82424>→ Road of No Return</FONT><BR><FONT color=#086171>Lower Ridge (Forest of Death Entrance)</font> <FONT color=#a82424>→ Death Basin</FONT><BR><FONT color=#086171>Gray Ruins (Sanctuary Entrance)</FONT> <FONT color=#a82424>→ Sanctuary Core<BR></FONT><FONT color=#086171>Lower Ridge (Forgotten Temple)</FONT> <FONT color=#a82424>→ Prayer's Resting Place</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Collect Mutated Jewel]]></destination>
+         <todo_msg mid="48"><![CDATA[Collect the Mutated Lustre from a new Abyss region.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="49"><![CDATA[Arousing a Fighting Spirit]]></title>
+         <contents mid="50"><![CDATA[<html>You have acquired all of the Mutated Jewels. Deliver it to <FONT color=#a82424>Heraldry Scholar Bailey</FONT>.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="51"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="52"><![CDATA[Take the Mutated Jewel back to Heraldry Scholar Bailey.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>23:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>298</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

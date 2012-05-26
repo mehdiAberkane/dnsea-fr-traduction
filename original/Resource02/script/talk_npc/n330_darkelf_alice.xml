@@ -1,0 +1,24 @@
+   <talk>
+      <npcename>n330_darkelf_alice</npcename>
+      <npcid>330</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Dark Elf Alice]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Dark Elf Alice$<BR>Telreju……Please be safe……<BR>
+<FONT color=#7e12d2>(An unfamiliar Dark Elf appears to be sad and lonely)</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="3" false="2">0</exe>
+         <exe type="conexe" true="4" false="5">1</exe>
+         <exe type="enterquest">sq11_627_lost_crown</exe>
+         <exe type="enterquest">sq11_628_urgent_message</exe>
+         <exe type="conexe" true="6" false="0">2</exe>
+         <exe type="enterquest">sq11_632_far_away_kingdom</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">627</chk>
+         <chk type="hasquest">628</chk>
+         <chk type="hasquest">632</chk>
+      </conditions>
+   </talk>

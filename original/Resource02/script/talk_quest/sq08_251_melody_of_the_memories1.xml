@@ -1,0 +1,332 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_251_melody_of_the_memories1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>251</qid>
+      <designer>나은하</designer>
+      <qlevel>9</qlevel>
+      <qdesc>300165 유릭의 노트</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>252</nextqid>
+      <nextqname>sq08_252_melody_of_the_memories2</nextqname>
+      <nextqnpc>n026_trader_may</nextqnpc>
+      <qkname mid="1"><![CDATA[Melody of Memories I]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이   (캐더락 잡화상)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>28</npcid>
+         <npcename>n028_scholar_bailey</npcename>
+         <npckname>문장학자 베일리</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린  (캐더락 아쳐 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html> {ui_string: 1200001} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html> {ui_string: 1200002} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html> {ui_string: 1200003} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html> {ui_string: 1200004} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html> {ui_string: 1200005} </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-noquest" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Something seems to be wrong.<BR>(You can obtain the quest from Master Archer Adelynn.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-noquest" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR>Is there something you need? Potions or Goods?<BR>(You can obtain the quest from Master Archer Adelynn.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-a" mid="9"><![CDATA[<html>Is something bothering you?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Archer Adelynn$<BR>(Adelynn stares at the harp with sadness in the eyes.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Master Archer Adelynn$<BR>Sigh. This harp... it just revokes my past memories. There was... someone who loved to hear me play...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-b" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-c" mid="103"><![CDATA[<html>Him?</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Master Archer Adelynn$<BR>He and Heraldry Scholar Bailey would come listen to the sound of the harp playing every evening.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-d" mid="13"><![CDATA[<html>I'm sorry, I was just trying to...</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Master Archer Adelynn$<BR>Oh, nevermind. Let bygones be bygones.<BR>Didn't you say you have a job to rush?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-e" mid="15"><![CDATA[<html>(Talk to Heraldry Scholar Bailey to find out more about this mysterious person.)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Archer Adelynn$<BR>Oh, now that I remember! I have an unfinished job to take care.<BR>I'll talk to you again later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Melody of Memories II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Master Archer Adelynn$<BR>I'm afraid that I have something to rush on hand and I need to focus.<BR>(Talk to Heraldry Scholar Bailey to learn more about Adelynn.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-a" mid="21"><![CDATA[<html>(You ask about Adelynn.)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Do you have any question?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-b" mid="23"><![CDATA[<html> I am sorry that I bring up the story. </html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Like you mention, it has been some time since Adelynn last played her harp. In fact, she hasn't played since my friend Eureke passed away.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-b" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-c" mid="25"><![CDATA[<html>So it really happened.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>No, that was 3 years ago. <BR>Adelynn, though... I'm certain she no longer plays the harp due to her broken heart.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-c" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-d" mid="27"><![CDATA[<html> Hmm? What do you mean by that? </html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I hope that Adelynn would forget her pain.<BR>Ah, now that you mention... Eureke once told me, shortly before he passed, that he had some harsh words with Adelynn.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-d" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-e" mid="29"><![CDATA[<html>Something that hurt her...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Although I don't know what he said, but seems like those words greatly hurt Adelynn.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-e" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-f" mid="31"><![CDATA[<html>I'll help if I can do any help.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Having said that, I need help.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-f" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-1-g" mid="33"><![CDATA[<html> Yes, but I think you need to figure out how to do it? </html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Adelynn is upset because of the bitter end for them.<BR>We could render some help to Adelynn if we knew what happened.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-1-g" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2" mid="35"><![CDATA[<html>Sounds like a good idea.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>You should find out more information from May regarding Adelynn. May tends to be more unreserved with information.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QN_Npc_Scholar_Baily.dds" itemindex="">
+      <talk_question mid="94"><![CDATA[<html>$Merchant May$<BR>Is there something you need? Potions or Goods?<BR>( You should find out more about Adelynn from Heraldry Scholar Bailey first.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2" image="" itemindex="">
+      <talk_answer link_index="n028_scholar_bailey-2-a" mid="38"><![CDATA[<html>(Try talking to Merchant May.)</html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>Eureke said if something happens to him , I should do him a favour by taking care of Adelynn. But… I have been busy with work and neglected her.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n028_scholar_bailey-2-a" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="39"><![CDATA[<html>$Heraldry Scholar Bailey$<BR>I would like to hear Adelynn's play the beautiful music again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_question mid="41"><![CDATA[<html>$Master Archer Adelynn$<BR>Please leave me alone if you do not intend to learn archery from me.<BR><BR>(Adelynn looks seems to be lost in thoughts.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-a" mid="44"><![CDATA[<html>Thanks, but I'm here for another reason today.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Merchant May$<BR>I'm so happy to see you. <BR>I reserved some special goods aside, just for you, {user_nick}!.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-b" mid="46"><![CDATA[<html>Actually, I wanted to ask you about Adelynn...</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Merchant May$<BR>Oh, so why are you here, to see me? (She giggles.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-b" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-c" mid="48"><![CDATA[<html> (Merchant May, frowning forehead and trying remember something.) </html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Merchant May$<BR>Eureke died. Many things happen between Adelynn and Cleric Eureke.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-c" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-d" mid="51"><![CDATA[<html>What are they arguing in about?</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Merchant May$<BR>Oh, yeah. I remember. Both of them had an argument followed by a fight.<BR>I was startled and I remember it so well.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-d" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-e" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Merchant May$<BR>Adelynn had a bad dream about Eureke going to battle and pleaded him not to go. It happened 3 years ago so the details are quite incomplete..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-e" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-f" mid="56"><![CDATA[<html> What do you mean? </html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Merchant May$<BR>They were having some quiet conversation, and then they both broke up. Strange, yes very strange.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-f" image="QN_Npc_Archer_Adellin.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-g" mid="60"><![CDATA[<html> Hmmm, anything else that you can recall? </html>]]></talk_answer>
+      <talk_question mid="57"><![CDATA[<html>$Merchant May$<BR>The day before that fight, Eureke bought a ring for Adelynn. But why do they fight? However, I don't think Adelynn got the ring. .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-g" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-2-h" mid="63"><![CDATA[<html>Is there any other way?</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Merchant May$<BR>Maybe I can find a way, there's must be a way...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-h" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n026_trader_may-2-i" mid="65"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Merchant May$<BR>Eureke always have  a small notebook with him because he liked to write poetry. From time to time he also used it as a diary. After the battle, his body was recovered from Raider's Den, but his notebook was missing.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2-i" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-3" mid="67"><![CDATA[<html>I'm going into the Raider's Den to find the notes</html>]]></talk_answer>
+      <talk_question mid="66"><![CDATA[<html>$Merchant May$<BR>Perhaps those monsters of Raider's Den are holding on to it all this while</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_13.dds" itemindex="">
+      <talk_question mid="70"><![CDATA[<html>$Merchant May$<BR>Hope you can retrieve the notes, this might be helpful to Adelynn to move on it we manage to find out what happen that day.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n026_trader_may-4-level_check" mid="73"><![CDATA[<html> (Hand over the notebook to Merchant May) </html>]]></talk_answer>
+      <talk_question mid="72"><![CDATA[<html>$Merchant May$<BR>You brought back Eureke's notebook!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-c" mid="75"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="74"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-d" mid="101"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-c" image="QS_Default.dds" itemindex="300165">
+      <talk_question mid="96"><![CDATA[<html>$Merchant May$<BR>I'll need time to look at the diary, see you later<BR>(You must be at least Level 10 to proceed.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-d" image="QS_Default.dds" itemindex="300165">
+      <talk_answer link_index="n026_trader_may-4-!next" mid="98"><![CDATA[<html>What was the content about?</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Merchant May$<BR>(May quickly read the diary.)</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">251</exe>
+         <exe type="recompense_view">,2511,2512,2513,2514,2515</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="1">349</exe>
+         <exe type="addquestitem" num="1">300165</exe>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntitem" num="30001" exe="" onexe="2,3,4">300165</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="1">200349</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment>퀘스트 진행 유저가 10레벨이 넘을 경우, !next로 다음 퀘스트 진행. 안되면 그냥 여기서 종료.</comment>
+      <conditions>
+         <chk type="lvl" op="]=">10</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">,2511,2512,2513,2514,2515</exe>
+         <exe type="complete">251</exe>
+         <exe type="conexe" true="4" false="3">0</exe>
+         <exe type="talk" npc="n026_trader_may">a</exe>
+         <exe type="talk" npc="n026_trader_may">b</exe>
+         <exe type="custom">api_quest_MarkingCompleteQuest(userObjID, questID);</exe>
+         <exe type="custom">api_quest_CompleteQuest(userObjID, questID, true);</exe>
+         <exe type="delquestitem" num="-1">300165</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="e">1</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="b" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="c" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="d" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="e" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="f" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="g" />
+   <exelink qstep="1" npc="n028_scholar_bailey" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n026_trader_may" sub="b" />
+   <exelink qstep="2" npc="n026_trader_may" sub="c" />
+   <exelink qstep="2" npc="n026_trader_may" sub="d" />
+   <exelink qstep="2" npc="n026_trader_may" sub="e" />
+   <exelink qstep="2" npc="n026_trader_may" sub="f" />
+   <exelink qstep="2" npc="n026_trader_may" sub="g" />
+   <exelink qstep="2" npc="n026_trader_may" sub="h" />
+   <exelink qstep="2" npc="n026_trader_may" sub="i" />
+   <exelink qstep="2" npc="n026_trader_may" sub="3">0,8,5,6,7</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="level_check">2,0</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="c">5,6,7</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="d">1,7</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="!next" />
+   <journal_data recompense="1:2511,2:2512,3:2513,4:2514,5:2515" quest_title="추억의 멜로디 I" chapterid="" quest_level="9" quest_mark_type="10" use_item_list="300165">
+      <journal index="1">
+         <contents_image>QN_Npc_Scholar_Baily.dds</contents_image>
+         <destination_pos>8,n28</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>28</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="77"><![CDATA[Talk to Heraldry Scholar Bailey]]></title>
+         <contents mid="78"><![CDATA[<html>Ask Heraldry Scholar Bailey about Adelynn's situation.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424> → Heraldry Scholar Bailey</FONT></html>]]></contents>
+         <destination mid="79"><![CDATA[Talk to Heraldry Scholar Bailey]]></destination>
+         <todo_msg mid="80"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="81"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="82"><![CDATA[<html>Ask Merchant May about Eureke and Adelynn.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424> → Merchant May</FONT></html>]]></contents>
+         <destination mid="83"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="84"><![CDATA[Talk to Merchant May]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_13.dds</contents_image>
+         <destination_pos>114,0,0</destination_pos>
+         <destination_mode>custom:111@1,112@1,113@1,114@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="85"><![CDATA[Find Eureke's Notebook]]></title>
+         <contents mid="86"><![CDATA[<html>Defeat the monsters at <FONT color=#a82424>Raider's Den</FONT> and search for <FONT color=#a82424>Eureke's Note</FONT>.<BR><BR><FONT color=#086171>Cristal Stream</FONT> <FONT color=#a82424>→ Raider's Den</FONT></html>]]></contents>
+         <destination mid="87"><![CDATA[Find Eureke's Notes]]></destination>
+         <todo_msg mid="88"><![CDATA[Find Eureke's Notes at Raider's Den.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="90"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="91"><![CDATA[<html>You have found all belongings of Eureke. Take this to Merchant May at Calderock Village.<BR><BR><FONT color=#086171>Calderock Village →</FONT> <FONT color=#a82424>Merchant May</FONT></html>]]></contents>
+         <destination mid="92"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="93"><![CDATA[Talk to Merchant May]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>201,221</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

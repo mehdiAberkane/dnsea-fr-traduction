@@ -1,0 +1,109 @@
+   <talk>
+      <npcename>n351_farm</npcename>
+      <npcid>351</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Farm Manager Morrie]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="14"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="buy" mid="15"><![CDATA[<html>[Purchase/Repair Items]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="27"><![CDATA[<html>[Learn Skills]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="101"><![CDATA[<html>[Talk]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Farm Manager Morrie${action:Talk}<BR>Besides engaging in battles, getting involved in production work may also be a good experience!<BR>Now, you can learn some useful skills such as cultivation, fishing and cooking, please study hard!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="talk" image="" itemindex="">
+         <talk_answer link_index="001" mid="33"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$Farm Manager Morrie${action:Talk}<BR>Some of things which you can do in my Farm are harvesting crops or catching seasonal fishes from the pond! You can even whip up delicacies with your crops and fishes! </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="16" link_target="sq11_665_grow_skill.xml"><![CDATA[<html>[Farm]<FONT color=#086171>Learn Cultivation</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="17" link_target="sq11_666_grow_go_farm.xml"><![CDATA[<html>[Farm]<FONT color=#086171>Hands-on! Cultivation</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="18" link_target="sq11_668_fishing_skill.xml"><![CDATA[<html>[Fish]<FONT color=#086171>Learn Fishing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="19" link_target="sq11_669_fishing_go_farm.xml"><![CDATA[<html>[Fish]<FONT color=#086171>Hands-on! Fishing</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="20" link_target="sq11_671_cook_skill.xml"><![CDATA[<html>[Cook]<FONT color=#086171>Learn Cooking</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="21" link_target="sq11_672_cook_go_farm.xml"><![CDATA[<html>[Cook]<FONT color=#086171>Hands-on! Cooking</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="38" link_target="sq11_664_grand_open_farm.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Earth Farm Grand Opening </FONT> </html>]]></talk_answer>
+         <talk_answer link_index="001" mid="39"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="11"><![CDATA[<html>$Farm Manager Morrie${action:Talk}<BR>A journey of a thousand miles begins with a single step! Cultivation, Fishing and Cooking, regardless of which you choose to learn first, make sure you have no regrets!! Cough! </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="skill" image="" itemindex="">
+         <talk_answer link_index="skill_1" mid="102"><![CDATA[<html>[Learn Cultivation Skills]</html>]]></talk_answer>
+         <talk_answer link_index="skill_2" mid="103"><![CDATA[<html>[Learn Fishing Skills]</html>]]></talk_answer>
+         <talk_answer link_index="skill_3" mid="104"><![CDATA[<html>[Learn Cooking Skills]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="105"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="42"><![CDATA[<html>$Farm Manager Morrie$<BR>Hehehe~A good beginning is half the battle won!<BR>Which do you want to learn?</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="no_skill" image="" itemindex="">
+         <talk_answer link_index="skill" mid="106"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="47"><![CDATA[<html>$Farm Manager Morrie$<BR>Don't tell me you have forgotten already!<BR>
+I have already imparted everything to you.<BR>
+ Please check your skills in Skills [K], under Supporting Skills section.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="grow_skill" image="" itemindex="">
+         <talk_answer link_index="skill" mid="107"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="55"><![CDATA[<html>$Farm Manager Morrie$<BR>What! Do you remember the methods of Cultivation now?<BR> 
+It can be found in Skills [K], under Supporting Skills. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="noquest_1" image="" itemindex="">
+         <talk_answer link_index="skill" mid="108"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="57"><![CDATA[<html>$Farm Manager Morrie$<BR>Cultivation Skills can be learnt after the completion of [Farm]<FONT color=#086171>Learn Cultivation</FONT> quests, <BR> hurry and try now!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="noquest_2" image="" itemindex="">
+         <talk_answer link_index="skill" mid="109"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="67"><![CDATA[<html>$Farm Manager Morrie$<BR>Fishing Skills can be learnt after the completion of [Fish]<FONT color=#086171>Learn Fishing</FONT> quests, <BR> hurry and try now!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="noquest_3" image="" itemindex="">
+         <talk_answer link_index="skill" mid="110"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="69"><![CDATA[<html>$Farm Manager Morrie$<BR>Cooking Skills can be learnt after the completion of [Cook]<FONT color=#086171>Learn Cooking</FONT> quests, <BR> hurry and try now!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="fishing_skill" image="" itemindex="">
+         <talk_answer link_index="skill" mid="142"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="112"><![CDATA[<html>$Farm Manager Morrie$<BR>What! Do you remember the methods of Cultivation now?<BR> 
+It can be found in Skills [K], under Supporting Skills. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="cook_skill" image="" itemindex="">
+         <talk_answer link_index="skill" mid="143"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="114"><![CDATA[<html>$Farm Manager Morrie$<BR>What! Do you remember the methods of Cooking now?<BR> 
+It can be found in Skills [K], under Supporting Skills. </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="buy" image="" itemindex="">
+         <talk_answer link_index="farmshop" mid="164"><![CDATA[<html>Tools/Cultivation Shop</html>]]></talk_answer>
+         <talk_answer link_index="cookshop" mid="165"><![CDATA[<html>Cooking Shop</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="166"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="145"><![CDATA[<html>$Farm Manager Morrie$<BR>
+Hehehe! Pick any of your choice, there are many good stuff today~</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,45001,100);</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="custom">api_npc_CreateSecondarySkill( userObjID, 2101);</exe>
+         <exe type="talk">no_skill</exe>
+         <exe type="conexe" true="3,6" false="7">1</exe>
+         <exe type="talk">grow_skill</exe>
+         <exe type="talk">noquest_1</exe>
+         <exe type="conexe" true="4" false="9">2</exe>
+         <exe type="conexe" true="10,16" false="11">3</exe>
+         <exe type="custom">api_npc_CreateSecondarySkill( userObjID, 3101);</exe>
+         <exe type="talk">noquest_2</exe>
+         <exe type="conexe" true="4" false="13">4</exe>
+         <exe type="conexe" true="14,17" false="15">5</exe>
+         <exe type="custom">api_npc_CreateSecondarySkill( userObjID, 1101);</exe>
+         <exe type="talk">noquest_3</exe>
+         <exe type="talk">fishing_skill</exe>
+         <exe type="talk">cook_skill</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,45002,100);</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_npc_CheckSecondarySkill( userObjID, 2101) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest( userObjID, 665) == 1</chk>
+         <chk type="custom">api_npc_CheckSecondarySkill( userObjID,3101) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest( userObjID, 668) == 1</chk>
+         <chk type="custom">api_npc_CheckSecondarySkill( userObjID,1101) == 1</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest( userObjID,671) == 1</chk>
+      </conditions>
+      <exelink idx="skill_1">2</exelink>
+      <exelink idx="skill_2">8</exelink>
+      <exelink idx="skill_3">12</exelink>
+      <exelink idx="farmshop">1</exelink>
+      <exelink idx="cookshop">18</exelink>
+   </talk>

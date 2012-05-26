@@ -1,0 +1,319 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_280_test_archer1</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>280</qid>
+      <designer>김주연</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>281</nextqid>
+      <nextqname>sq08_281_test_archer2</nextqname>
+      <nextqnpc>n033_archer_master_adellin</nextqnpc>
+      <qkname mid="1"><![CDATA[[Specialization] Telepathy Part 1]]></qkname>
+      <qnpc>
+         <npcid>33</npcid>
+         <npcename>n033_archer_master_adellin</npcename>
+         <npckname>상급 아처 아델린  (캐더락 아쳐 스킬)</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Archer Adelynn${action:Talk}<BR>Before an elf reaches her 20th birthday, she must embark on a long journey in search of her destiny. Humans call this a coming-of-age ceremony, but we call it "Telepathy Part 1", or a journey of discovery.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-b" mid="74"><![CDATA[<html>What is your destiny, Adelynn?</html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Master Archer Adelynn$<BR>{user_nick}, it has been a year since the journey has began. I wonder what kind of destiny awaits you. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-c" mid="77"><![CDATA[<html>How did you find your destiny?</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Master Archer Adelynn$<BR>I have come here in Calderock Village. The safety and prosperity of this place on my own. For me, I help young elves and archers who come through, aiding others in finding their own destinies.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-d" mid="79"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="78"><![CDATA[<html>$Master Archer Adelynn$<BR>The important choices you make in your journey, comes naturally from your heart, it will lead to your true purpose. My choices during the Siege of Calderock led me here, and to my new name.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-e" mid="81"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="80"><![CDATA[<html>$Master Archer Adelynn$<BR>You must have forgotten. When an elf completes her Telepathy Part 1, she takes a new name to signify the acceptance of her destiny. Fifty years ago, during the Black Dragon Raid, our queen took the name Narsilia, in honor of her duty. As for me, I acquired the name Adelynn 10 years ago, during the Siege of Calderock.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-f" mid="9"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Master Archer Adelynn$<BR>I can feel your Telezia drawing near, {user_nick}. The time has come for you to take your first step towards realizing your destiny.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Accept quest. </FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Telepathy Part 1$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-1-a" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Archer Adelynn$<BR>First, allow me to ask you a few questions. Answer from your heart, {user_nick}. Let the songs of nature flow through you, and listen carefully to the whispers of the spirits.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-1-b" mid="84"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Master Archer Adelynn$<BR>No worries, I simply wish to understand you better. Shall we begin?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-1-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-1-me1" mid="17"><![CDATA[<html>I would carry my comrade on my back.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-1-me2" mid="18"><![CDATA[<html>I would lend my comrade my shoulder.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-1-me3" mid="19"><![CDATA[<html>I would encourage my comrade to stand on their own.</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Master Archer Adelynn$<BR>If your comrade is injured in the battle. Would you lend them your shoulder, or lessen their pain, or.... What would you do?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-2-a" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Archer Adelynn$<BR>I see. Ahh, the Stone of Spirits is reacting...<BR>Next question.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-2-b" mid="39"><![CDATA[<html>I will strike it down with an arrow within short distance.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-2-b" mid="40"><![CDATA[<html>I will approach and defeat in close combat.</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Archer Adelynn$<BR>Suppose you are hunting in a forest, and you have found your prey.<BR>Tell me how you would prefer to kill your prey.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-2-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Master Archer Adelynn$<BR>The Stone of Spirits is listening, do you see?<BR>Now, I must ask the most important question. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-a" mid="45"><![CDATA[<html>I would keep my distance, attacking only when the opportunity arises.</html>]]></talk_answer>
+      <talk_answer link_index="n033_archer_master_adellin-3-b" mid="46"><![CDATA[<html>I will approach quickly and rely my skills and avoid.</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Master Archer Adelynn$<BR>How would you defeat an enormous monster?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-d" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Master Archer Adelynn$<BR>Your bow is your greatest asset. Elves who posess such talent in archery often becomes <FONT color=#a82424>Bow Masters</FONT>. Bow Masters provide valuable support in battles, especially their powerful, long-range attacks.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-d" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="50"><![CDATA[<html>$Master Archer Adelynn$<BR>So, {user_nick}... Your elve agility is your strength, is it? Those who are quick and limber among us become <FONT color=#a82424>Acrobats</FONT>, masters of swift action and dizzying combat techniques at any range.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-c" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-3-d" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Master Archer Adelynn$<BR>--Hunter Explanation--</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-3-d" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4" mid="89"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Master Archer Adelynn$<BR>The Stone of Spirits has spoken. Two paths now lie before you, {user_nick}, choose one to earn the privilege.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-member1" mid="91"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="87"><![CDATA[<html>$Master Archer Adelynn$<BR>Allow me to test your skills, see if they are strong enough to support your destiny. There is a place where young elves practice to prove their skill with a bow, known as the <FONT color=#a82424>Chamber of Dawn</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-a" image="" itemindex="">
+      <talk_question mid="92"><![CDATA[<html>$Master Archer Adelynn$<BR>Before we proceed, you have to leave your companions here.<BR>The trials of the Chamber of Dawn is for you to face alone.<BR>(You cannot proceed while you are in a Party.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-4-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-4-changemap1" mid="94"><![CDATA[<html>Yes, let us begin.</html>]]></talk_answer>
+      <talk_question mid="93"><![CDATA[<html>$Master Archer Adelynn$<BR>Inside the Chamber of Dawn, bring down as many Hounds as you can. However, you must not hit the white snowfield Hounds, else you will lose points. This is a test  for your wits and accuracy, {user_nick}. Are you prepared?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-5" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-5-a" mid="96"><![CDATA[<html>When will I find my destiny?</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Master Archer Adelynn$<BR>I watched your performance in the Chamber of Dawn. You have some excellent skills. if you are ready to accept your destiny, i will help you..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-5-a" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-5-b" mid="98"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Master Archer Adelynn$<BR>Patience, young one. This is your first step on the long coming destiny..For now, we should make sure you have the power.. but you need to find it.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n033_archer_master_adellin-5-b" image="" itemindex="">
+      <talk_answer link_index="n033_archer_master_adellin-5-!next" mid="100"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">280</exe>
+         <exe type="recompense_view">2800,,,,</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>헌터 : 덫을 놓고 사냥감을 유인하겠습니다.</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment>헌터 : 주변의 동물들과 정령들에게 도움을 구하겠어요.
+</comment>
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="custom">api_user_IsPartymember(userObjID) == 0</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="2" false="1">0</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">a</exe>
+         <exe type="talk" npc="n033_archer_master_adellin">b</exe>
+         <exe type="custom">api_user_ChangeMap(userObjID,13007,1);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">280</exe>
+         <exe type="recompense">2800,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="f">1</exelink>
+   <exelink qstep="accepting" npc="n033_archer_master_adellin" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="me1">0,1</exelink>
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="me2">0,1</exelink>
+   <exelink qstep="1" npc="n033_archer_master_adellin" sub="me3">0,1</exelink>
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="b" />
+   <exelink qstep="2" npc="n033_archer_master_adellin" sub="3">0</exelink>
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="d" />
+   <exelink qstep="3" npc="n033_archer_master_adellin" sub="4">0,1</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="member1">0</exelink>
+   <exelink qstep="4" npc="n033_archer_master_adellin" sub="changemap1">3</exelink>
+   <exelink qstep="5" npc="n033_archer_master_adellin" sub="b">1</exelink>
+   <exelink qstep="5" npc="n033_archer_master_adellin" sub="!next">0</exelink>
+   <journal_data recompense="2800" quest_title="[전직] 텔레지아Ⅰ" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="59"><![CDATA[The Knowledge Test]]></title>
+         <contents mid="60"><![CDATA[<html> Master Archer Adelynn has chosen to assist young elves towards their destiny.<BR>Talk to <FONT color=#a82424> Master Archer Adelynn</FONT> about your destiny.<BR><BR><FONT color=#086171>Calderock Village</FONT><FONT color=#a82424> →  Master Archer Adelynn</FONT></html>]]></contents>
+         <destination mid="61"><![CDATA[Talk to Master Archer Adelynn]]></destination>
+         <todo_msg mid="62"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom:13007@2</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="63"><![CDATA[Chamber of Dawn]]></title>
+         <contents mid="64"><![CDATA[<html><FONT color=#a82424>Master Archer Adelynn</FONT> wants to test your skills in the <FONT color=#a82424>Chamber of Dawn</FONT>.<BR>Talk to Adelynn to enter the Chamber of Dawn, and pass the test.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Archer Adelynn</FONT> </html>]]></contents>
+         <destination mid="65"><![CDATA[Talk to Master Archer Adelynn]]></destination>
+         <todo_msg mid="66"><![CDATA[Enter the Chamber of Dawn by talking to Adelynn.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Archer_Adellin.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>8,n33</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>33</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="67"><![CDATA[Talk to Master Archer Adelynn]]></title>
+         <contents mid="68"><![CDATA[<html>You have passed the test in the Chamber of Dawn.<BR>Talk to <FONT color=#a82424>Master Archer Adelynn</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Master Archer Adelynn</FONT></html>]]></contents>
+         <destination mid="69"><![CDATA[Talk to Master Archer Adelynn]]></destination>
+         <todo_msg mid="70"><![CDATA[You have passed the test. Talk to Adelynn.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class>2</user_class>
+      <prev_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

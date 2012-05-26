@@ -1,0 +1,266 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>mq01_014_scattered_evidence</qename>
+      <qtype>mainquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>1</qchapter>
+      <qid>14</qid>
+      <designer>김주연</designer>
+      <qlevel>2</qlevel>
+      <qdesc>300057 지도조각
+
+1. 자경단장 스티브는 지도 조각을 모으면 사람들이 어디로 끌려갔는지 알 수 있을 거 같단 말을 한다. 그는 자경단원인 가드 티모시와 힘을 합쳐 나머지 지도 조각을 모아보라고 한다.
+2. 그늘 숲 기슭의 초입에서 티모시와 대화, 함께 지도조각을 찾아보기로 함.
+3. 그늘 숲 기슭에서 마물을 사냥해서 지도조각들을 모으지만 마지막 지도 조각은 얻지 못한 채, 그늘 숲 기슭의 끝에 다다른다.
+4. 그늘 숡 기슭의 오크를 물리치고 가드 티모시에게 말을 걸면, 그는 자기가 찾은 지도조각을 건네준다. 지도 조각을 맞춘 결과 사람들이 끌려간 곳은 고대의 수도원일 가능성이 높단 사실을 알아낸다.
+5. 자경단장 스티브에게 그 사실을 보고하자, 그는 계속 가드 티모시와 함께 사람들을 수색하는 일을 하란 지시를 내린다.</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Scattered Clues]]></qkname>
+      <qnpc>
+         <npcid>4</npcid>
+         <npcename>n004_guard_steave</npcename>
+         <npckname>가드 스티브 </npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>8</npcid>
+         <npcename>n008_guard_timose</npcename>
+         <npckname>가드 티모시 </npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-noquest" image="" itemindex="">
+      <talk_question mid="274"><![CDATA[<html>$Timothy$<BR>H..Huh?! I..I..I'm not doing anything!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-accepting" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n004_guard_steave-accepting-acceptted" mid="273"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="272"><![CDATA[<html>$Vigilante Leader Steve$<BR>First of all, we need to refurbish the map. I've sent one of my men to the <FONT color=#a82424>Shadow Forest Trail</FONT> after hearing about the abduction of <FONT color=#a82424>Rose</FONT>. Please, co-operate with him and find the remaining <FONT color=#a82424>Map Fragments</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n004_guard_steave-1" image="QN_Guard_Timose.dds" itemindex="">
+      <talk_question mid="7"><![CDATA[<html>$Vigilante Leader Steve${action:Talk}<BR>My guard, <FONT color=#a82424>Timothy</FONT>, is waiting at the <FONT color=#a82424>Shadow Forest Trail</FONT>. Please help him to look for more map fragments in the <FONT color=#a82424>Shadow Forest Trail</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-1" image="" itemindex="">
+      <talk_answer link_index="n008_guard_timose-2" mid="286"><![CDATA[<html>Okay</html>]]></talk_answer>
+      <talk_question mid="276"><![CDATA[<html>$Timothy$<BR>Let's split up and s..search for the <FONT color=#a82424>Map Fragments</FONT>.<BR>It's fa..faster this way. W..we can di..discuss about the de..details later.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-2" image="QS_Default.dds" itemindex="300057">
+      <talk_question mid="17"><![CDATA[<html>$Timothy$<BR>Go on. I'll k..ke..keep a lookout here... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-3" image="QS_Default.dds" itemindex="300057">
+      <talk_answer link_index="n008_guard_timose-3-a" mid="248"><![CDATA[<html>Yes. I believe I've found them all.</html>]]></talk_answer>
+      <talk_question mid="194"><![CDATA[<html>$Timothy$<BR>Have you f..found all the m..map fragments?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-3-a" image="" itemindex="">
+      <talk_answer link_index="n008_guard_timose-4" mid="284"><![CDATA[<html>Do you recogonise where is it?</html>]]></talk_answer>
+      <talk_question mid="283"><![CDATA[<html>$Timothy$<BR>R..really? A..aw..awesome!<BR>Let's try p..piecing them together...<BR>(Timothy completes piecing the map.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-4" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n008_guard_timose-4-a" mid="296"><![CDATA[<html>Let's return to the village first.</html>]]></talk_answer>
+      <talk_question mid="295"><![CDATA[<html>$Timothy$<BR>Ah, here... The <FONT color=#a82424>Ancient Temple Ruins</FONT>. To g..get there, y..you have to go th..through <FONT color=#a82424>Wind Forest</FONT>. R..Rose gotta be here...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-4-a" image="QW_2.dds" itemindex="">
+      <talk_answer link_index="n008_guard_timose-4-b" mid="298"><![CDATA[<html>It could be dangerous...</html>]]></talk_answer>
+      <talk_question mid="297"><![CDATA[<html>$Timothy$<BR>NO! I'm not g..go..going back until I find <FONT color=#a82424>Rose</FONT>!<BR>Please in..inform the Steve for me. I must pro..proceed to the <FONT color=#a82424>Ancient Temple Ruins</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-4-b" image="" itemindex="">
+      <talk_answer link_index="n008_guard_timose-4-c" mid="300"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="299"><![CDATA[<html>$Timothy$<BR>D..Do not worry about me<BR>Return to the v..village then go over to the <FONT color=#a82424>Ancient Temple Ruins</FONT> wi..without, okay?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-4-c" image="" itemindex="">
+      <talk_answer link_index="n008_guard_timose-4-d" mid="302"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>
+      <talk_question mid="301"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n008_guard_timose-4-d" image="" itemindex="">
+      <talk_question mid="303"><![CDATA[<html>$Timothy$<BR>S..So please, return to the vi..village and inform <FONT color=#a82424>Vigilante Leader Steve</FONT>.<BR>Every se..second we waste here is p..putting <FONT color=#a82424>Rose</FONT> in more dan..danger...</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">14</exe>
+         <exe type="talk" npc="n004_guard_steave">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="5" op="[">300057</chk>
+         <chk type="questitem" num="5" op="]=">300057</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="6">102</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">104</exe>
+         <exe type="huntitem" num="30002" exe="" onexe="">300057</exe>
+         <exe type="addquestitem" num="1">300057</exe>
+         <exe type="conexe" true="5" false="">0</exe>
+         <exe type="conexe" true="5,8,9,10" false="">1</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="delquestitem" num="-1">300057</exe>
+         <exe type="addquestitem" num="1">300058</exe>
+         <exe type="setstep">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">141,141,142,,</exe>
+         <exe type="conexe" true="2" false="3">0</exe>
+         <exe type="setquest">15</exe>
+         <exe type="setquest">16</exe>
+         <exe type="complete">14</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n004_guard_steave" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n008_guard_timose" sub="2">0,2,3,4,1</exelink>
+   <exelink qstep="3" npc="n008_guard_timose" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n008_guard_timose" sub="b" />
+   <exelink qstep="4" npc="n008_guard_timose" sub="c">0</exelink>
+   <exelink qstep="4" npc="n008_guard_timose" sub="d">4,1</exelink>
+   <journal_data recompense="1:141,2:142" quest_title="흩어진 단서" chapterid="1" quest_level="2" quest_mark_type="1" use_item_list="300057">
+      <journal index="1">
+         <title_image />
+         <contents_image>QW_1.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>51,0,0</destination_pos>
+         <destination_mode>custom:51@1</destination_mode>
+         <statemark_npcid>8</statemark_npcid>
+         <statemark_type>2</statemark_type>
+         <get_location>프레리 타운</get_location>
+         <start_npc>자경단장 스티브</start_npc>
+         <desc_location>그늘 숲 기슭</desc_location>
+         <step_action>대화</step_action>
+         <complete_npc>가드 티모시</complete_npc>
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Join Timothy in Shadow Forest Trail]]></title>
+         <contents mid="51"><![CDATA[<html>More Map Fragments are needed to put the map together. Look for Timothy in Shadow Forest Trail and begin your search.<BR> <BR><FONT color=#086171>Shadow Forest</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Shadow Forest Trail</FONT> </html>]]></contents>
+         <destination mid="52"><![CDATA[Join Timothy in Shadow Forest Trail]]></destination>
+         <todo_msg mid="53"><![CDATA[Search for Timothy in the Shadow Forest Trail and speak to him.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>QW_1.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>53,0,0</destination_pos>
+         <destination_mode>custom:51@3,52@3,53@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>3</statemark_type>
+         <get_location>그늘 숲 기슭</get_location>
+         <start_npc>가드 티모시</start_npc>
+         <desc_location>그늘 숲 기슭</desc_location>
+         <step_action>사냥/수집</step_action>
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex>102,104</hunt_monsterindex>
+         <collect_item>지도 조각 6개</collect_item>
+         <collect_itemindex>300057</collect_itemindex>
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Collect Map Fragments]]></title>
+         <contents mid="55"><![CDATA[<html>Hunt for <FONT color=#a82424>6 Map Fragments</FONT> from the monsters in <FONT color=#a82424>Shadow Forest Trail</FONT>. <BR><BR><FONT color=#2b2723><FONT color=#086171>Shadow Forest</FONT> </FONT><FONT color=#a82424>→ Shadow Forest Trail</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Collect Map Fragments]]></destination>
+         <todo_msg mid="57"><![CDATA[Collect Map Fragments in Shadow Forest Trail.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QW_1.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>53,n8</destination_pos>
+         <destination_mode>custom:51@1,52@1,53@1</destination_mode>
+         <statemark_npcid>8</statemark_npcid>
+         <statemark_type>3</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="290"><![CDATA[Speak to Timothy in Shadow Forest Trail]]></title>
+         <contents mid="291"><![CDATA[<html>You've collected all the <FONT color=#a82424>Map Fragments</FONT> in <FONT color=#a82424>Shadow Forest Trail</FONT>.<BR>Speak to <FONT color=#a82424>Timothy</FONT>.<BR><BR><FONT color=#086171>Shadow Forest → Shadow Forest Trail<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Timothy</FONT></FONT></html>]]></contents>
+         <destination mid="292"><![CDATA[You've searched through the Shadow Forest Trail. Return to Timothy.]]></destination>
+         <todo_msg mid="293"><![CDATA[You've collected all the Map Fragments in Shadow Forest Trail.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class>1:2</user_class>
+      <prev_quest>13</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

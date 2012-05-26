@@ -1,0 +1,167 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_367_albratum_start</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>367</qid>
+      <designer>김인정</designer>
+      <qlevel>15</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>368</nextqid>
+      <nextqname>sq08_368_albratum_quest1</nextqname>
+      <nextqnpc>n199_darklair_castia</nextqnpc>
+      <qkname mid="1"><![CDATA[Boundary of Darkness]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-noquest" image="QN_Master_Decud.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Our powers have reached it's limit.<BR>It seems the Goddess has more trials for us.<BR>(Quest can be obtain from Adventurer's Guild Deckard.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-class1" mid="7"><![CDATA[<html>What's going on now?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Ah, of course! {user_nick}! A young adventurer like you should be up to the task.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="9"><![CDATA[<html>I probably heard it somewhere.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Very few have heard of this name… Have you ever heard of the  <FONT color=#a82424>Priestess of Darkness</FONT>?<BR> Of course,  an adventurer like you <FONT color=#387206>{user_class}</FONT>, might not feel that the name is inviting.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="11"><![CDATA[<html>Doesn't ring a bell to me...</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Very few have heard of this name… Have you ever heard of the  <FONT color=#a82424>Priestess of Darkness</FONT>?<BR>This is different from the well-known Goddess of Order... Though, it's not a surprise if you haven't heard of either...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="QW_DarkVillage.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="14"><![CDATA[<html>I see.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Priestess of Darkness symbolise Goddess of Darkness. They are in extremely dangerous places carrying out abnormal missions, having their own beliefs.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-e" mid="16"><![CDATA[<html>Where would that be?</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>So, I require you to go and meet the Priestess of Darkness.<BR>They've always been reluctant to expose themselves, but for some unknown reasons, they've lately requested helps from adventurers.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-acceppted" mid="20"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$On the Boundary of Darkness$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-1" image="QN_darklair_castia.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Good. Now hurry to the Boundary of Darkness, and meet the Priestess of Darkness, Castia.<BR>Something drastic must have occurred for them to request the help of outsiders.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Are you here from the Adventurer's Guild?<BR>I've been expecting you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Allow me to introduce myself. I am Castia, Priestess of Darkness.<BR>I am one of the representative of the three priestesses who were sent to the Rozin Sanctuary on the Boundary of Darkness.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Priestess of Darkness Castia$<BR>This abnormality to request help from an adventurer is to prevent the corruption of this place.<BR>The Goddess of Nightmare influence reality directly in here. Dangers are entrenched. We are always struggling to hold back the darkness.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-d" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Each of our body contains <FONT color=#a82424>Gem</FONT>. We sacrifice ourselves, to prevent the darkness from overrunning the world of light. However...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-d" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-e" mid="47"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="46"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Despite our efforts, the corruption is growing stronger, beyond our limits.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-e" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-f" mid="50"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Priestess of Darkness Castia$<BR>The power of darkness is starting to penetrate to the world of light, spreading slowly to the Abyss regions.<BR>Therefore, our Order of Darkness has come to a decision.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-f" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-g" mid="39"><![CDATA[<html>What do I have to do?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Priestess of Darkness Castia$<BR>There's no way we can protect the <FONT color=#a82424>Boundary of Darkness</FONT> seal by ourselves. <BR>We've decided to call upon help from brave souls of the world of light.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-g" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-!next" mid="41"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">4</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">a</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">b</exe>
+         <exe type="talk" npc="n024_adventurer_guildmaster_decud">1</exe>
+         <exe type="setquest">367</exe>
+         <exe type="recompense_view">3670,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">3670,,,,,</exe>
+         <exe type="complete">367</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="class1">0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="e">5</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="acceppted">4,3</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="d" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="e" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="f" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="g">0</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="!next">1</exelink>
+   <journal_data recompense="0:3670" quest_title="어둠의 경계 수르파" chapterid="" quest_level="15" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>29,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,30@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Boundary of Darkness]]></title>
+         <contents mid="43"><![CDATA[<html>Switch to the <FONT color=#a82424>Boundary of Darkness</font> channel and speak to Priestess of Darkness Castia.<BR><BR><FONT color=#7e12d2>(You can switch channels by selecting Boundary of Darkness with the channel button located at top-right.)</FONT><BR><BR><FONT color=#086171>Boundary of Darkness Channel</FONT> <FONT color=#a82424>→ Priestess of Darkness Castia</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Speak to Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="45"><![CDATA[Go to Rozin Sanctuary on the Boundary of Darkness and speak to Priestess of Darkness Castia.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>15:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

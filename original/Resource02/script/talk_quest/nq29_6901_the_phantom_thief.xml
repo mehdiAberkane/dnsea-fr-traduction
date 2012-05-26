@@ -1,0 +1,132 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq29_6901_the_phantom_thief</qename>
+      <qtype>favorMalicequest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6901</qid>
+      <designer>김인정</designer>
+      <qlevel>21</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Great Phantom Thief Shupin]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-a" mid="6"><![CDATA[<html>Who's talking?</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Invisible Thief$<BR>Hey hey hey... we meet again!<BR>Don't you feel relax in this countryside?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-b" mid="8"><![CDATA[<html>Phantom Thief Shupin?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Invisible Thief$<BR>Erm... How do you get to know about <FONT color=#a82424>Phantom Thief Shupin</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-c" mid="30"><![CDATA[<html>(You did not even steal anything properly!)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Invisible Thief$<BR>I'm now just a small fly to compare to a great thief like Phantom Thief Shupin! My dream is to be as great as him! Heh.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-acceppted" mid="32"><![CDATA[<html>(I can see that you don't really steal much...)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Invisible Thief$<BR>Well, I happen to have free time now, let me tell you about Phantom Thief Shupin's legend. Don't be misunderstood, it's not because I have <FONT color=#a82424>nothing to steal and nothing to do</FONT>!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-a" mid="35"><![CDATA[<html>Inventions?</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Invisible Thief$<BR>Phantom Thief Shupin was such a great person. Not only he helped the poor by stealing things, he was famous for his various <FONT color=#a82424>inventions</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-b" mid="37"><![CDATA[<html>(You look impressed huh?)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Invisible Thief$<BR>Yes. He created countless wonderful inventions and spread them all over the continent.<BR>He was indeed a great thief and a great inventor! Heh!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-c" mid="39"><![CDATA[<html>Which one?</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Invisible Thief$<BR>There were so many different inventions...<BR>But the most memorable one was... that one.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-d" mid="41"><![CDATA[<html>Fascinating!</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Invisible Thief$<BR>Can you imagine? <FONT color=#a82424>A yellow bird that enables someone far away to hear your voice</FONT>. This cute little birdie makes your voice to be heard from afar! Fascinating isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-d" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-e" mid="43"><![CDATA[<html>Well, I'm not expecting you to...</html>]]></talk_answer>
+      <talk_question mid="42"><![CDATA[<html>$Invisible Thief$<BR>There are still more strange and amazing inventions he had.<BR>Erm, looks like you got a lot of FREE TIME, I'll tell you ALL about them. Wouldn't you wanna thank me for that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-e" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-1-f" mid="45"><![CDATA[<html>(This thief is crapping...)</html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Invisible Thief$<BR>Heh, you don't have to apologise. I'm sure <FONT color=#a82424>Phantom Thief Shupin</FONT> would like more people to know about his inventions.<BR>Just like his motto, "Good stuff meant to be spreaded around."</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-1-f" image="" itemindex="">
+      <talk_question mid="48"><![CDATA[<html>$Invisible Thief$<BR>Heh heh! I shall see you again then! Welcome to be a follower of Phantom Thief Shupin!!<BR><FONT color=#7e12d2>(He seems to treat you as a fan of Phantom Thief Shupin. Looks like you've gotten closer with the Invisible Thief.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">6901</exe>
+         <exe type="talk" npc="n255_invisible_thief">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">6901</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n255_invisible_thief" sub="b" />
+   <exelink qstep="1" npc="n255_invisible_thief" sub="c" />
+   <exelink qstep="1" npc="n255_invisible_thief" sub="d" />
+   <exelink qstep="1" npc="n255_invisible_thief" sub="e" />
+   <exelink qstep="1" npc="n255_invisible_thief" sub="f">0</exelink>
+   <journal_data recompense="" quest_title="위대한 괴도 슈팡" chapterid="" quest_level="21" quest_mark_type="15" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_CataractGateway.dds</contents_image>
+         <destination_pos>8,n255</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>255</statemark_npcid>
+         <statemark_type>17</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="25"><![CDATA[Legend of Phantom Thief Shupin]]></title>
+         <contents mid="26"><![CDATA[<html>Listen to the Invisible Thief at Calderock Village talk about Phantom Thief Shupin.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Invisible Thief</FONT></html>]]></contents>
+         <destination mid="27"><![CDATA[Talk to the Invisible Thief]]></destination>
+         <todo_msg mid="28"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>21:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>336</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

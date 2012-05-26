@@ -1,0 +1,248 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_626_meet_teleju_again</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>626</qid>
+      <designer>김주연</designer>
+      <qlevel>37</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>627</nextqid>
+      <nextqname>sq11_627_lost_crown</nextqname>
+      <nextqnpc>n281_darkelf_teleju</nextqnpc>
+      <qkname mid="1"><![CDATA[Unexpected Reunion]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>284</npcid>
+         <npcename>n284_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n284_darkelf_teleju-noquest" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Dark Elf Teri$<BR>….<BR><FONT color=#2b2723>(Looks effortless)</FONT><BR><FONT color=#7e12d2>
+<FONT color=#7e12d2>(※Can start the quest after talking to Royal Palace Guard Joey.)</FONT><BR></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-noquest" image="QN_Npc_Elite_Soilder.dds" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$Dark Elf Teri$<BR>….<BR><FONT color=#2b2723>(Looks effortless)</FONT><BR>
+<FONT color=#7e12d2>(※Can start the quest after talking to Royal Palace Guard Joey)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="8"><![CDATA[<html>What is going on?</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Royal Guard Joey$<BR>…It's really strange.<BR><FONT color=#7e12d2>(Joey is talking to himself)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="QN_Teleju.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="10"><![CDATA[<html>Dark Elf?</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Royal Guard Joey${action:Talk}<BR>Ah, dear Adventurer, I brought my friend Malcolm to <FONT color=#a82424>Explosion Zone in Withered Leaves Forest</FONT> and I believed I saw a Dark Elf.<BR> I have never seen a <FONT color=#a82424> Dark Elf</FONT>… Was I dreaming?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-c" mid="12"><![CDATA[<html>(Joey shakes his head)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Royal Guard Joey$<BR>Yes. It seemed different with the Dark Elf….<BR>It disappeared the moment  I tried to talk to it. Hmm… Maybe I was confused….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-c" image="QN_Teleju.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-d" mid="14"><![CDATA[<html>(I am concerned…)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Royal Guard Joey$<BR>Ah~ I should stop thinking about it.<BR>There are a lot of monsters in Explosion Zone in Withered Leaves Forest,<FONT color=#a82424> Dark Elves</FONT> are the least of my worries… right? Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceptted" mid="16"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Unexpected Reunion$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QW_41.dds" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Royal Guard Joey$<BR>Be careful Adventurer when you go to <FONT color=#a82424>Explosion Zone in Withered Leaves Forest</FONT>. <BR>You may lose your life if a Dark Elf appears out of nowhere.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Dark Elf Teri$<BR>….<BR><FONT color=#7e12d2>(Looks effortless)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n284_darkelf_teleju-1" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Dark Elf Teri$<BR>….<BR><FONT color=#7e12d2>(Looks effortless)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n284_darkelf_teleju-2" image="QN_Teleju.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Dark Elf Teri$<BR>….<BR><FONT color=#7e12d2>(Looks effortless)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n284_darkelf_teleju-3" image="" itemindex="">
+      <talk_answer link_index="n284_darkelf_teleju-3-a" mid="22"><![CDATA[<html>Why get attacked?</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Dark Elf Teri$<BR>…You are… <FONT color=#387206>{user_nick}</FONT> ?<BR>…I must be dreaming. I never thought I will meet you here.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n284_darkelf_teleju-3-a" image="" itemindex="">
+      <talk_answer link_index="n284_darkelf_teleju-4" mid="24"><![CDATA[<html>(Looks as though something is up.)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Dark Elf Teri$<BR>We, well…. (Teri looks serious) That's….<BR>…Can we go somewhere else first? I don't know if I will be attacked here again….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n284_darkelf_teleju-4" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Dark Elf Teri$<BR>Now let's go to<FONT color=#a82424> Hermalte Port </FONT>.<BR>Let's talk over there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-a" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Dark Elf Teri$<BR>I thought I would never meet you again. I did not want to come here again.<BR><FONT color=#a82424>Queen of Dark Elves</FONT>, I wanted to live for them. However….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-b" mid="29"><![CDATA[<html>Run away?</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Dark Elf Teri$<BR>But, I … escaped.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-c" mid="31"><![CDATA[<html>(Teri shakes her head)</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Dark Elf Teri$<BR>But…a  <FONT color=#a82424>revolt</FONT> happened. I didn't want to fight with my kind so I ran.<BR>…You know. Killing my own kind is strange. I can never do that.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-d" mid="33"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Dark Elf Teri$<BR><FONT color=#a82424>The New Queen</FONT> is chasing after me. So I ran far away, but I cannot go to the city where people live…<BR> I may get caught.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-e" mid="35"><![CDATA[<html>Yeah….</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Dark Elf Teri${sound:npc_Teri_qu626_01_c.ogg}<BR>I don't know what to do, I should think more about it…<BR>I cannot always run.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-4-e" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-4-!next" mid="37"><![CDATA[<html><FONT color=#086171>(Receive Reward) </FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,6261,6262,6263,6264,6265</exe>
+         <exe type="setquest">626</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment>고엽의 숲 폭발지역 첫 스테이지 입장시.
+다음 스테이지 가는 곳 앞 정도에 텔레주가 있음.
+대화불가 상태.
+유저가 다가가면 사라진다.
+
+스텝 2 저널 2로 변경 (저널메시지- 낯익은 다크엘프가 도망쳤습니다.)</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment>41_3A??에(확인 필요. 텔레주 퀘스트에 썼었던 위치) 입장시 텔레주가 몬스터들에 둘러싸여 있음.
+
+몹 모두 해치우면 스텝 3 저널 3으로 변경</comment>
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,6261,6262,6263,6264,6265</exe>
+         <exe type="complete">626</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="d">0</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceptted">1,2</exelink>
+   <exelink qstep="3" npc="n284_darkelf_teleju" sub="a">0,1</exelink>
+   <exelink qstep="3" npc="n284_darkelf_teleju" sub="4" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="c" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="d" />
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="e">0</exelink>
+   <exelink qstep="4" npc="n281_darkelf_teleju" sub="!next">1</exelink>
+   <journal_data recompense="1:6261,2:6262,3:6263,4:6264,5:6265" quest_title="예상 외의 재회" chapterid="" quest_level="37" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>411,0,0</destination_pos>
+         <destination_mode>custom:411@4</destination_mode>
+         <statemark_npcid>284</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[The Dark Elf Concern]]></title>
+         <contents mid="40"><![CDATA[<html>Dark Elf has been found at the<FONT color=#a82424>Explosion Zone in Withered Leaves Forest</FONT>. It's a concern so let's go.<BR>
+ <BR>
+<FONT color=#086171>Foothills of Black Mountain(Lonely Road Path)</FONT> <FONT color=#a82424>→ Explosion Zone in Withered Leaves Forest</FONT><BR>
+ </html>]]></contents>
+         <destination mid="41"><![CDATA[Search Explosion Zone in Withered Leaves Forest]]></destination>
+         <todo_msg mid="42"><![CDATA[Search Explosion Zone in Withered Leaves Forest.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>413,n284</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@1</destination_mode>
+         <statemark_npcid>284</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="43"><![CDATA[Familiar Dark Elf]]></title>
+         <contents mid="44"><![CDATA[<html>Saw a familiar Dark Elf at the Explosion Zone in Withered Leaves Forest. She ran away without saying a word, so let's go inside.<BR><BR><FONT color=#086171>Foothills of Black Mountain(Lonely Road Path)</FONT> <FONT color=#a82424>→ Explosion Zone in Withered Leaves Forest(Dark Elf Teri)</FONT></html>]]></contents>
+         <destination mid="45"><![CDATA[Talk to Teri]]></destination>
+         <todo_msg mid="46"><![CDATA[Familiar Dark Elf ran away.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>413,n284</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@1</destination_mode>
+         <statemark_npcid>284</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Talk to Dark Elf Teri]]></title>
+         <contents mid="48"><![CDATA[<html>Talk to <FONT color=#a82424>Dark Elf Teri</FONT>.<BR><BR><FONT color=#086171>Foothills of Black Mountain (Lonely Road Path)</FONT> <FONT color=#a82424>→ Explosion Zone in Withered Leaves Forest(Dark Elf Teri)</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk to Dark Elf Teri]]></destination>
+         <todo_msg mid="50"><![CDATA[Talk to Dark Elf Teri.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Talk to Teri at Hermalte Port]]></title>
+         <contents mid="52"><![CDATA[<html>Teri may have some concerns. Let's go to<FONT color=#a82424>Hermalte Port</FONT> and talk to Dark Elf Teri.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port  </FONT><FONT color=#a82424>→ Dark Elf Teri</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[Talk to Hermalte Port's Teri]]></destination>
+         <todo_msg mid="54"><![CDATA[Talk to Hermalte Port's Teri.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>37:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>589</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n807_market</npcename>
+      <npcid>807</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Market]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Merchant Pania${action:Talk}<BR>Welcome.<BR>I am a merchant, Pania, hello.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="14" link_target="sq_2055_exchange_dreamdrop_kor.xml"><![CDATA[<html>[Event] <FONT color=#086171>Trade Pandora's Coin Box </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="15" link_target="sq_2056_exchange_dreamdrop_kor.xml"><![CDATA[<html>[Event] <FONT color=#086171>Trade Pandora's Coin Box </FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="11"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Merchant Pania$<BR>The event what we have is this.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

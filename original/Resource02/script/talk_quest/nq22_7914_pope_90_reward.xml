@@ -1,0 +1,105 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq22_7914_pope_90_reward</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7914</qid>
+      <designer>김인정</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Unexpected Gift]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="8"><![CDATA[<html>(Pope smiles all over his face)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Pero$<BR>Hmm, your face is so shiny today. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="29"><![CDATA[<html>[Receive a present]</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Merchant Pero$<BR>I should be selling this for 34716 gold but I’ll give it to you for free. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-b" mid="31"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-b" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Merchant Pero$<BR>Remember my business ethics and keep that in mind whenever you're here. <BR>
+Hahahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">7914</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">7914</exe>
+         <exe type="recompense">79140,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="a">1</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="b">0</exelink>
+   <journal_data recompense="0:79140" quest_title="뜻밖의 선물" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Pero's present]]></title>
+         <contents mid="34"><![CDATA[<html>Talk to Merchant Pero.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Merchant Pero</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Talk to Merchant Pero]]></destination>
+         <todo_msg mid="36"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>277:18000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

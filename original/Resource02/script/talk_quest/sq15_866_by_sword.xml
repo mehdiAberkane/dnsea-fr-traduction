@@ -1,0 +1,340 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_866_by_sword</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>866</qid>
+      <designer>김인정</designer>
+      <qlevel>50</qlevel>
+      <qdesc>작고 낡은 칼	300495
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[The Use of Sword]]></qkname>
+      <qnpc>
+         <npcid>708</npcid>
+         <npcename>n708_trader_molin</npcename>
+         <npckname>대장장이 몰린</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>713</npcid>
+         <npcename>n713_soceress_tamara</npcename>
+         <npckname>상급 소서리스 타마라</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-noquest" image="" itemindex="">
+      <talk_question mid="75"><![CDATA[<html>$Master Sorceress Tamara$<BR>Have not been taking care of myself because I've been so busy these days. Now look at my skin.<BR>
+Should I go for a massage?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-accepting" image="QW_57.dds" itemindex="">
+      <talk_answer link_index="n708_trader_molin-accepting-a" mid="7"><![CDATA[<html>Want me to go again…?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Blacksmith Morlin$<BR>There is nothing in Ancient Treasure Box.<BR>But let's have a look at it one last time?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-accepting-acceptted" mid="11"><![CDATA[<html><FONT color=#086171>Quest Accept</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$The Use of Sword$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-1" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Master Sorceress Tamara$<BR>Damn.<BR>
+Have not been taking care of myself because I've been so busy these days. Now look at my skin.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-1-a" mid="78"><![CDATA[<html>Yea.</html>]]></talk_answer>
+      <talk_question mid="76"><![CDATA[<html>$Blacksmith Morlin$<BR>Cannot understand Ancient people.<BR>No treasure but trash only.<BR>
+Hmm. What were they doing here?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-1-a" image="QW_57.dds" itemindex="">
+      <talk_answer link_index="n708_trader_molin-2" mid="80"><![CDATA[<html>Okay</html>]]></talk_answer>
+      <talk_question mid="79"><![CDATA[<html>$Blacksmith Morlin$<BR>Damn! This would be the last time. Something from the treasure box behind the Loon Elves…<BR>Find something for real this time.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-2" image="QW_57.dds" itemindex="">
+      <talk_question mid="81"><![CDATA[<html>$Blacksmith Morlin$<BR><FONT color=#a82424>Ancient Treasure Box</FONT>'s Loon Elves.<BR>I think, Ancient weapons must be what they are protecting!<BR> Just my thoughts.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-3-a" mid="85"><![CDATA[<html>We got this for now.</html>]]></talk_answer>
+      <talk_question mid="83"><![CDATA[<html>$Blacksmith Morlin$<BR>This time!<BR>
+Would something be found this time?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-a" image="QS_Default.dds" itemindex="300495">
+      <talk_answer link_index="n708_trader_molin-3-b" mid="87"><![CDATA[<html>(Oops, nope)</html>]]></talk_answer>
+      <talk_question mid="86"><![CDATA[<html>$Blacksmith Morlin$<BR>This….hmm…..hmm….<BR>?! <FONT color=#7e12d2>(Morlin's small eyes grows big)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-b" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-3-c" mid="89"><![CDATA[<html>Do you know what this one as well?</html>]]></talk_answer>
+      <talk_question mid="88"><![CDATA[<html>$Blacksmith Morlin$<BR>This……!!<BR>
+If I'm not wrong, this feeling is it!! It's gotta be it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-c" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-3-d" mid="91"><![CDATA[<html>I don't know.</html>]]></talk_answer>
+      <talk_question mid="90"><![CDATA[<html>$Blacksmith Morlin$<BR>……No idea.<BR>
+Any thoughts?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-d" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-3-e" mid="93"><![CDATA[<html>(Ha?!)</html>]]></talk_answer>
+      <talk_answer link_index="n708_trader_molin-3-e" mid="94"><![CDATA[<html>(If it wasn't for the reward!!)</html>]]></talk_answer>
+      <talk_question mid="92"><![CDATA[<html>$Blacksmith Morlin$<BR>Aw~ Don't even know what this is, dummy.<BR>These kids, they just do what they are told without knowing anything?Blah…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-e" image="QS_Default.dds" itemindex="300495">
+      <talk_answer link_index="n708_trader_molin-3-f" mid="96"><![CDATA[<html>(Morlin's talking)</html>]]></talk_answer>
+      <talk_question mid="95"><![CDATA[<html>$Blacksmith Morlin$<BR>Seems like you can't do anything with this small knife.Hmm…doesn't seem like something that's used to kill.<BR>What could this be? So curious..<BR>
+Are you curious too?Thought so!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-3-f" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_question mid="97"><![CDATA[<html>$Blacksmith Morlin$<BR>Then take this to <FONT color=#a82424>Master Sorceress Tamara</FONT>and ask.<BR>I think an old Sorceress like Tamara would know something. Haha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-4" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_question mid="99"><![CDATA[<html>$Blacksmith Morlin$<BR>Huh? <FONT color=#a82424>Master Sorceress Tamara</FONT> also does not know what the knife is for?<BR>
+You didn't go?! Hurry and ask. Come on!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-a" mid="101"><![CDATA[<html>Take look at this</html>]]></talk_answer>
+      <talk_question mid="100"><![CDATA[<html>$Master Sorceress Tamara$<BR>Oops, <FONT color=#387206>{user_nick}</FONT>.<BR>Me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-a" image="QS_Default.dds" itemindex="300495">
+      <talk_answer link_index="n713_soceress_tamara-4-b" mid="103"><![CDATA[<html>Do you know what this is for?</html>]]></talk_answer>
+      <talk_question mid="102"><![CDATA[<html>$Master Sorceress Tamara$<BR>What's that little sword? Huh? Something from the Ancient Treasure Box?<BR>Wow, that's rare. I wonder why Ancient people made that little knife?<BR>
+<FONT color=#7e12d2>(Tamara takes a look at the knife)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-b" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-classcheck1" mid="105"><![CDATA[<html>Huh? What are you doing with your eyebrow?</html>]]></talk_answer>
+      <talk_question mid="104"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>Oh~ Okay. Got it. This knife is for women to use on their eyebrows.<BR>
+It's similar to the ones these days, so it should be.<BR>Well... Ancient people were humans as well, unlike Elfs who are beautiful since they were born..</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-c" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-f" mid="107"><![CDATA[<html>(Why are you mad at me?)</html>]]></talk_answer>
+      <talk_question mid="106"><![CDATA[<html>$Master Sorceress Tamara$<BR>What? Women are complicated and troublesome but beautiful creatures.<BR>Hmm! You don't understand women at all because you're still a kid!!<BR>
+<FONT color=#7e12d2>(Tamara's talking to herself)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-d" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-f" mid="109"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="108"><![CDATA[<html>$Master Sorceress Tamara$<BR>…This is why. From Karacule's words <FONT color=#a82424>"Can't talk to an Elf. So beautiful but mingling in trees!"</FONT> Cannot understand what it means now. Hmm!<BR>
+<FONT color=#7e12d2>(Tamara seems irritated)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-e" image="" itemindex="">
+      <talk_answer link_index="n713_soceress_tamara-4-f" mid="111"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="110"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#7e12d2>(Tamara's staring hard) </FONT>…Don't think you can always be pretty and young like now.<BR>
+It takes work to keep the beauty. Hmm! You will find out when you get old.<BR>
+<FONT color=#7e12d2>(Tamara gets mad for no reason)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-f" image="QS_Default.dds" itemindex="300495">
+      <talk_answer link_index="n713_soceress_tamara-4-g" mid="113"><![CDATA[<html>(Go back to Morlin now)</html>]]></talk_answer>
+      <talk_question mid="112"><![CDATA[<html>$Master Sorceress Tamara$<BR>If the question is solved then go away with the little knife.<BR>I should massage my face with the jungle plants. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-4-g" image="" itemindex="">
+      <talk_question mid="114"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>Whew, look at these dark circles. It's gonna reach to my knees.<BR>
+<FONT color=#7e12d2>(Blah,Blah)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n713_soceress_tamara-5" image="QN_LM_Blacksmith.dds" itemindex="">
+      <talk_question mid="115"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#a82424>Thought you were going back to Blacksmith Morlin</FONT>?<BR>Why? Wanna go to the Jungle with me to make jungle plants massage packs?<BR><FONT color=#7e12d2>(Tamara is looking at herself in the mirror)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-5" image="QN_Npc_SoceressTamara.dds" itemindex="">
+      <talk_answer link_index="n708_trader_molin-5-a" mid="118"><![CDATA[<html>(Tell what have been heard)</html>]]></talk_answer>
+      <talk_question mid="117"><![CDATA[<html>$Blacksmith Morlin$<BR><FONT color=#a82424>Master Sorceress Tamara</FONT>say?<BR>She knows?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-5-a" image="QS_Default.dds" itemindex="300495">
+      <talk_answer link_index="n708_trader_molin-5-b" mid="120"><![CDATA[<html>Maybe.</html>]]></talk_answer>
+      <talk_question mid="119"><![CDATA[<html>$Blacksmith Morlin$<BR>It was a beauty knife?Geez!!<BR>
+<FONT color=#7e12d2>(Morlin is frustrated)</FONT><BR>
+That Treasure Box might be hiding something other than treasures.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-5-b" image="" itemindex="">
+      <talk_answer link_index="n708_trader_molin-5-c" mid="122"><![CDATA[<html><FONT color=#086171>(Get reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n708_trader_molin-5-c" image="QW_57.dds" itemindex="">
+      <talk_question mid="123"><![CDATA[<html>$Blacksmith Morlin$<BR>Fruit Knife, Rice Hammer and a Beauty Knife…. This <FONT color=#a82424>Ancient Treasure box</FONT>is like an  Ancient's lifestyle museum!!<BR>Where are the Ancient weapons?<BR><FONT color=#7e12d2>(Morlin sighs and hammers fiercely)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">8660,,,,,</exe>
+         <exe type="setquest">866</exe>
+         <exe type="talk" npc="n708_trader_molin">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">1708</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4">201708</exe>
+         <exe type="addquestitem" num="1">300495</exe>
+         <exe type="huntitem" num="1" exe="" onexe="6,7,8">300495</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">4</exe>
+         <exe type="delquestitem" num="-1">300495</exe>
+         <exe type="addquestitem" num="1">300495</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="class" op="=">2</chk>
+      </conditions>
+      <executions>
+         <exe type="conexe" true="3" false="1">0</exe>
+         <exe type="conexe" true="3" false="2">1</exe>
+         <exe type="conexe" true="4" false="5">2</exe>
+         <exe type="talk" npc="n713_soceress_tamara">c</exe>
+         <exe type="talk" npc="n713_soceress_tamara">d</exe>
+         <exe type="talk" npc="n713_soceress_tamara">e</exe>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">8660,,,,,</exe>
+         <exe type="complete">866</exe>
+         <exe type="delquestitem" num="-1">300495</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n708_trader_molin" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n708_trader_molin" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n708_trader_molin" sub="2">0,1,2,3,5</exelink>
+   <exelink qstep="3" npc="n708_trader_molin" sub="a">2</exelink>
+   <exelink qstep="3" npc="n708_trader_molin" sub="b" />
+   <exelink qstep="3" npc="n708_trader_molin" sub="c" />
+   <exelink qstep="3" npc="n708_trader_molin" sub="d" />
+   <exelink qstep="3" npc="n708_trader_molin" sub="e" />
+   <exelink qstep="3" npc="n708_trader_molin" sub="e" />
+   <exelink qstep="3" npc="n708_trader_molin" sub="f">0,1,3</exelink>
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="b" />
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="classcheck1">0</exelink>
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="f" />
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="f" />
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="f" />
+   <exelink qstep="4" npc="n713_soceress_tamara" sub="g">6,7</exelink>
+   <exelink qstep="5" npc="n708_trader_molin" sub="b">0</exelink>
+   <exelink qstep="5" npc="n708_trader_molin" sub="c">1,2</exelink>
+   <journal_data recompense="8660" quest_title="검의 용도" chapterid="" quest_level="50" quest_mark_type="10" use_item_list="300495">
+      <journal index="1">
+         <contents_image>QN_LM_Blacksmith.dds</contents_image>
+         <destination_pos>15,n708</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>708</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="124"><![CDATA[Should try 3 times at least]]></title>
+         <contents mid="125"><![CDATA[<html>Blacksmith Morlin is almost obssessed with finding the Ancient Weapons.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Blacksmith Morlin</FONT></html>]]></contents>
+         <destination mid="126"><![CDATA[Conversation with Blacksmith Morlin]]></destination>
+         <todo_msg mid="127"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_57.dds</contents_image>
+         <destination_pos>572,0,0</destination_pos>
+         <destination_mode>custom:571@3,572@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="128"><![CDATA[Their Weapons]]></title>
+         <contents mid="129"><![CDATA[<html>Let's find the Ancient weapons from Ancient Treasure box. Loon Elfs might have them.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Town of Isla)</FONT> <FONT color=#a82424>→ Ancient Treasure Box</FONT></html>]]></contents>
+         <destination mid="130"><![CDATA[Ancient Treasure box]]></destination>
+         <todo_msg mid="131"><![CDATA[Go to Ancient Treasure box]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_LM_Blacksmith.dds</contents_image>
+         <destination_pos>15,n708</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>708</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="132"><![CDATA[Report to Blacksmith Morlin]]></title>
+         <contents mid="133"><![CDATA[<html>Can't find out if the weapon is legit but let's give it to Blacksmith Morlin in Lotus Marsh.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Blacksmith Morling</FONT></html>]]></contents>
+         <destination mid="134"><![CDATA[Conversation with Blacksmith Morlin]]></destination>
+         <todo_msg mid="135"><![CDATA[Go back to Blacksmith Morlin.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <contents_image>QN_Npc_SoceressTamara.dds</contents_image>
+         <destination_pos>15,n713</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>713</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="136"><![CDATA[Common Sense of Women]]></title>
+         <contents mid="137"><![CDATA[<html>Go ask Master Sorceress Tamara about the item from the Ancient Treasure box.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Master Sorceress Tamara</FONT></html>]]></contents>
+         <destination mid="138"><![CDATA[Conversation with Master Sorceress Tamara]]></destination>
+         <todo_msg mid="139"><![CDATA[Talk to Master Sorceress Tamara]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <contents_image>QN_LM_Blacksmith.dds</contents_image>
+         <destination_pos>15,n708</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>708</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="140"><![CDATA[The Usage of the Sword]]></title>
+         <contents mid="141"><![CDATA[<html>Tell Blacksmith Morlin about what has been told from Master Sorceress Tamara.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82424>→ Blacksmith Morlin</FONT></html>]]></contents>
+         <destination mid="142"><![CDATA[Conversation with Blacksmith Morlin]]></destination>
+         <todo_msg mid="143"><![CDATA[Report to Blacksmith Morlin]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>50:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>865</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,259 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_612_fantastic_po</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>612</qid>
+      <designer>곽노찬</designer>
+      <qlevel>24</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Fantastic Po]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>44</npcid>
+         <npcename>n044_archer_master_ishilien</npcename>
+         <npckname>상급 아처 이실리엔</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-noquest" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Master Archer Adelynn$<BR>
+The elves and the spirits are on friendly terms.<BR>
+Spirits born in nature are the friends and family of the elves.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-item_check" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Dishonest Merchant Pero$<BR>uh ah hun?!<BR>
+ <BR>
+<FONT color=#7e12d2>(Dishonest Merchant Pero freaks out)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="QS_Default.dds" itemindex="612502016">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="54"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Dishonest Merchant Pero$<BR>What, what are you doing?<BR>My <FONT color=#a82424>Po</FONT>… why are you talking my<FONT color=#a82424>Po</FONT>?!!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="8"><![CDATA[<html>Hmm...This is the spirit I have heard….really...</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+You ignorant fool…!<BR>
+Never thought that he would actually <FONT color=#a82424>gather 50</FONT> Tears of Goddess…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="10"><![CDATA[<html>Well, take care</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Wa,wait! That is in fact<FONT color=#a82424>500</FONT>tears of godness .<BR>We forgot to add one more '0' in the store!<BR>
+G..give it back now!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="QN_Npc_Caraban_Atdin.dds" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-e" mid="12"><![CDATA[<html>(…He cries in grief, is there a story…)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Uhh! No! Po! Urrrr~ Po!<BR>
+asofjqwrqowrqwrpoij…!<BR>
+ <BR>
+<FONT color=#7e12d2>(Poppy wails)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-e" image="QS_Default.dds" itemindex="612502016">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-f" mid="14"><![CDATA[<html>(No…Then why did you put it on the market...)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Po is… oh no… <FONT color=#a82424>Po</FONT>is my life saviour who saved me in the  Telnumara desert, when I was dying from thirst!<BR>
+It is not something you can buy and sell!! Give it back now!!! T.T…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-f" image="QS_Default.dds" itemindex="612502016">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-g" mid="17"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Aiyo aiyo….<BR>
+Oh no… <FONT color=#a82424>You have no idea how much that costs</FONT>… </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-acceptted" mid="19"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Fantastic Po$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-h" image="QS_Default.dds" itemindex="612502016">
+      <talk_question mid="55"><![CDATA[<html>$Notification$<BR>There is no item for the quest<BR><BR>※ <FONT color=#7e12d2>To move on to the quest, you need to buy Fantastic Po from Dishonest Merchant Pero.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-a" mid="21"><![CDATA[…Anyway how am I suppose to use this? ?]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Huh.. Cold blooded… doesn't even move a finger even though I am doing this…<BR>
+…He will be sorry.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-1-b" mid="23"><![CDATA[<html>So…?</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Hehehe… you can't just use that.<BR>
+You have to have a very very special way to use the spirit.<BR>
+That is……</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-1-b" image="QS_Default.dds" itemindex="612442112">
+      <talk_answer link_index="n277_bluff_dealers_pope-2" mid="25"><![CDATA[<html>(He doesn't know it himself...)</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Dishonest Merchant Pero$<BR>So… hmm<BR>Well.. well, about that … I can't tell you that easily!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-1" image="" itemindex="">
+      <talk_question mid="29"><![CDATA[<html>$Master Archer Adelynn$<BR>
+The elves and the spirits are on friendly terms.<BR>
+Spirits born in nature are the friends and family of the elves.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-2-a" mid="59"><![CDATA[<html>Adelynn may know about this spirit. </html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Now about that spirit, <FONT color=#a82424>only the elf</FONT>knows everything. Don’t sweat it, and just give it back ok??</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-2-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="60"><![CDATA[<html>$Dishonest Merchant Pero$<BR>
+Wh..what?? W…wait a moment~!<BR>
+<FONT color=#7e12d2>(Let's ask Master Archer Adelynn how to make a spirit-fortified weapon.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2" image="QS_Default.dds" itemindex="612502016">
+      <talk_answer link_index="n044_archer_master_ishilien-2-a" mid="32"><![CDATA[<html>What? The spirit's name is Po…?</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Master Archer Adelynn$<BR>
+Huh…?<BR>
+Isn't that the spirit of light <FONT color=#a82424>Po</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-a" image="QS_Default.dds" itemindex="612502016">
+      <talk_answer link_index="n044_archer_master_ishilien-2-b" mid="35"><![CDATA[<html>(So that's the original name...)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Master Archer Adelynn$<BR>
+Yes it is.<BR>
+To be exact, Spirit of Firefly <FONT color=#a82424>Po</FONT>is its name.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-b" image="QS_Default.dds" itemindex="612502016">
+      <talk_answer link_index="n044_archer_master_ishilien-2-c" mid="37"><![CDATA[<html>Oh! ! By any chance, can a spirit fortify a weapon?</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Archer Adelynn$<BR>
+<FONT color=#a82424>Po</FONT>is one of the elemental spirits that does not own an ego .<BR>
+This small and sparkly thing is so pretty, that even the elves cover their armor and clothes with Po </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-c" image="QS_Default.dds" itemindex="612502016">
+      <talk_answer link_index="n044_archer_master_ishilien-2-reward" mid="39"><![CDATA[<html>(Gives Fantastic Po)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Archer Adelynn$<BR>
+Sure. It is simple. All you have to do is to slightly wake the spirits up...<BR>
+Will you give it to me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-d" image="" itemindex="">
+      <talk_answer link_index="n044_archer_master_ishilien-2-e" mid="41"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-e" image="QS_Default.dds" itemindex="612502016">
+      <talk_question mid="42"><![CDATA[<html>$Master Archer Adelynn$<BR>
+We have awoken Po. <FONT color=#a82424>If Fantastic Four</FONT>is <FONT color=#a82424>worn, there is an available spirit slot where </FONT>the weapon can be fortified with the energy of Po.<BR>
+※ <FONT color=#7e12d2>Fantastic Four(costume) is delivered in the gift box.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n044_archer_master_ishilien-2-f" image="QS_Default.dds" itemindex="612502016">
+      <talk_question mid="57"><![CDATA[<html>$Notification$<BR>There is no item for the quest<BR><BR>※ <FONT color=#7e12d2>To proceed with the quest,  you need to buy Fantastic Po from Dishonest Merchant Pero.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">612502016</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense_view">6120,,,,,</exe>
+         <exe type="setquest">612</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">1</exe>
+         <exe type="conexe" true="4" false="5">0</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">a</exe>
+         <exe type="talk" npc="n277_bluff_dealers_pope">h</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions>
+         <chk type="item" num="1" op="]=">612502016</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">6120,,,,,</exe>
+         <exe type="complete">612</exe>
+         <exe type="delitem" num="1">612502016</exe>
+         <exe type="conexe" true="4,0" false="5">0</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">d</exe>
+         <exe type="talk" npc="n044_archer_master_ishilien">f</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="item_check">3</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="g">0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="b" />
+   <exelink qstep="1" npc="n277_bluff_dealers_pope" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="b" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="c" />
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="reward">3</exelink>
+   <exelink qstep="2" npc="n044_archer_master_ishilien" sub="e">2,1</exelink>
+   <journal_data recompense="6120" quest_title="판타스틱 포" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
+         <destination_pos>11,n277</destination_pos>
+         <destination_mode />
+         <statemark_npcid>277</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Fantastic Po I]]></title>
+         <contents mid="45"><![CDATA[<html>From Dishonest Merchant Pero store, paid 50 Tears of the Goddess and [<FONT color=#a82424>Fantastic Four</FONT>]was purchased, but unusable.
+Let's ask Dishonest Merchant Pero about putting on the Fantastic Po.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Dishonest Merchant Pero</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Talk to Dishonest Merchant Pero]]></destination>
+         <todo_msg mid="47"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Archer_Ishilien.dds</contents_image>
+         <destination_pos>11,n44</destination_pos>
+         <destination_mode />
+         <statemark_npcid>44</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Fantastic Po II]]></title>
+         <contents mid="49"><![CDATA[<html>Dishonest Merchant doesn't seem to know the instructions to use Fantastic Po either. Maybe the elf would know something about the spirit...<BR>
+<FONT color=#a82424> Talk to</FONT> Master Archer Adelynn and ask about[<FONT color=#a82424>Fantastic Po</FONT>]<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→  Master Archer Adelynn</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Talk to Master Archer Adelynn]]></destination>
+         <todo_msg mid="51"><![CDATA[Ask Master Archer Adelynn how to use Fantastic Po]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item>612502016:1</have_normal_item>
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

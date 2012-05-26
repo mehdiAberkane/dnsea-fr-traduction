@@ -1,0 +1,107 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq29_6902_invisible_thief_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>6902</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Becoming a Thief]]></qkname>
+      <qnpc>
+         <npcid>255</npcid>
+         <npcename>n255_invisible_thief</npcename>
+         <npckname xml:space="preserve">　</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-a" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Invisible Thief$<BR>Huh? Why did I become a thief? Were you previously listening when I was telling my story?<BR>You are annoying!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-b" mid="27"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Invisible Thief$<BR>Initially, I wanted to become a wizard. One day, I was doing an experiment something exploded! When regain consious, I was like this. Well, stealing will be the best thing to do with an invisible body, isn't it?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-c" mid="11"><![CDATA[<html>Erm, that's kind of positive.</html>]]></talk_answer>
+      <talk_answer link_index="n255_invisible_thief-accepting-e" mid="12"><![CDATA[<html>But, it's still wrong to steal.</html>]]></talk_answer>
+      <talk_answer link_index="n255_invisible_thief-accepting-g" mid="13"><![CDATA[<html>Isn't there some ways to return to your original form?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Invisible Thief$<BR>Since this is the case, I might as well become a great thief like Phantom Thief Shupin! Hahahaha!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-d" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="15"><![CDATA[<html>$Invisible Thief$<BR>What? Are you trying to be sarcastic?<BR>Isn't being positive a good thing? Do you think being negative is better?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-d" image="" itemindex="">
+      <talk_question mid="17"><![CDATA[<html>$Invisible Thief$<BR>When you can't change the reality, you need to adapt to it~<BR><FONT color=#7e12d2>(Invisible Thief seems to be a bit cranky now.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-f" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Invisible Thief$<BR>So, you are trying to teach me? Of course stealing is bad!!<BR>But, with body like this, do you think I can still receive any mission? I can't be a wizard anymore, I'll just do whatever I want!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-f" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Invisible Thief$<BR>But.. But.. Wouldn't it be nice to be a helpful great thief like Phantom Thief Shupin?<BR><FONT color=#7e12d2>(Invisible Thief in deep thoughts.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n255_invisible_thief-accepting-h" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Invisible Thief$<BR>I've been trying hard, but it's not that easy.<BR>I even tried painting my body, but when it rains, I turned invisible again.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n255_invisible_thief-accepting-h" image="" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Invisible Thief$<BR>Some day, I should be able to return to my former self again, right?<BR><FONT color=#7e12d2>(Invisible Thief sounds hopeful.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 6902, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 255, 40 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 255, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 255, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="c">1,0</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="e">2,0</exelink>
+   <exelink qstep="accepting" npc="n255_invisible_thief" sub="g">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 도둑이 된 이유" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>255:1000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

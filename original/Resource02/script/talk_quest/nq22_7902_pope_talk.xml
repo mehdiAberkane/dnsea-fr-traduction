@@ -1,0 +1,88 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq22_7902_pope_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7902</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] The most expensive good]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="8"><![CDATA[<html>So, what is it?</html>]]></talk_answer>
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="9"><![CDATA[<html>That's great~</html>]]></talk_answer>
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="10"><![CDATA[<html>You're being a little cheap</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Pero$<BR>You should sell what people want and not just what they need. Oh and something unique too!<BR>When rarity and demand meet perfectly, its price skyrockets. Hahahahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Merchant Pero$<BR>What?<BR>Sell tissue to whoever enters Saint Haven!!<BR>Sell potions to the adventurer who suffers from sickness!!<BR>…Why are you looking at me like that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Merchant Pero$<BR>
+That's just a small part of the business.<BR>You will pass out if I tell you the real secret, huh?<BR>…As a matter of fact, why don't you pay me for the lesson? Hahahahah.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Merchant Pero$<BR>Don't pretend to be innocent? That's the way the cookie crumbles in this world.<BR>You need to be cheap and cunning to make money. That's the way of the world! You know!<BR><FONT color=#7e12d2>(Pero boasts.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7902, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 400 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 277, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="c">3,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 가장 비싼 상품" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>277:1000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

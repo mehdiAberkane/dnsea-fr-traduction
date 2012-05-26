@@ -1,0 +1,247 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_695_good_donald</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>695</qid>
+      <designer>김인정</designer>
+      <qlevel>32</qlevel>
+      <qdesc xml:space="preserve">
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>696</nextqid>
+      <nextqname>sq11_696_secret_thing</nextqname>
+      <nextqnpc>n040_king_casius</nextqnpc>
+      <qkname mid="1"><![CDATA[Good Hearted Man]]></qkname>
+      <qnpc>
+         <npcid>252</npcid>
+         <npcename>n252_saint_guard</npcename>
+         <npckname>왕성 근위병 조이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>450</npcid>
+         <npcename>n450_saint_guard</npcename>
+         <npckname>왕성 근위병 말콤</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n450_saint_guard-noquest" image="" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Royal Guard Malcolm${action:Talk}<BR>What? Why are monsters swarming in?<BR>Go away! Oh, this place is so dangerous. We should hurry back….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$King Cassius$<BR>You're a loyal servant.<BR>I'm planning to go on a journey… no, an adventure.<BR>
+I'm so excited I can't sleep.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-a" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Royal Guard Joy$<BR>Ahh… It's you.<BR>I think the reason why I saw ghosts was because my physical and mental strength has weakened.<BR>
+So I was going out to get some medicine.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-b" mid="37"><![CDATA[<html>But, about the things I picked up.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Royal Guard Joy$<BR>I must go off duty as soon as I can and see Stella for some medicine.<BR>
+You eat well and be sure to rest for 10 minutes after being at the dungeon for an hour.<BR>
+Nothing's better than good health.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-accepting-acceptted" mid="39"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Kind Hearted Acquaintance$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1" image="QW_37.dds" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-a" mid="42"><![CDATA[<html>Do the cookies look familiar?</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Royal Guard Joy${action:Talk}<BR>Huh? …Oh, did you say you found these at the <FONT color=#a82424>Spirit Grave Tomb</FONT>?<BR>Umm… let me see…. Isn't this hardtack?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-a" image="QS_Default.dds" itemindex="300375">
+      <talk_answer link_index="n252_saint_guard-1-b" mid="44"><![CDATA[<html>Donald?!</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Royal Guard Joy$<BR>Of course~<FONT color=#7e12d2> (Joy smells the suspicious hardtack)</FONT> I'm sure!<BR>
+This is the hardtack ordered from the famouse Chef Nye Nye.<BR>My buddy Donald had asked me to order them.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-b" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-1-c" mid="46"><![CDATA[<html>(Joy is moved deeply)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Royal Guard Joy$<BR>Yes. He said he was going to give them to poor children.<BR>Although a bit selfish sometimes, he is a good man.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-1-c" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-2" mid="48"><![CDATA[<html>Where is he?</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Royal Guard Joy$<BR>Oh… I ordered another sack of hardtacks and left it with <FONT color=#a82424>Malcolm</FONT>, so if you're interested, talk to Malcolm.<BR>He'll know more about this hardtack than both Donald and I.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="" itemindex="">
+      <talk_question mid="50"><![CDATA[<html>$King Cassius$<BR>
+Where should I go on a journey, no, an adventure?<BR>
+Hmm, where?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n450_saint_guard-1" image="" itemindex="">
+      <talk_question mid="51"><![CDATA[<html>$Royal Guard Malcolm${action:Talk}<BR>What? Why are monsters swarming in?<BR>Go away! Oh, this place is so dangerous. We must return soon….<BR>
+Before something terrible happens.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-2" image="QW_33.dds" itemindex="">
+      <talk_question mid="52"><![CDATA[<html>$Royal Guard Joy$<BR>My friend Malcolm should be at the <FONT color=#a82424>Forsaken Islet Core</FONT>.<BR>He said he was going to be there for a while…<BR>
+Come to think of it, why did he go there?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n450_saint_guard-2" image="" itemindex="">
+      <talk_answer link_index="n450_saint_guard-2-a" mid="55"><![CDATA[<html>(Malcolm is crying)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Royal Guard Malcolm${action:Talk}<BR>Ahh. I thought I was going to die from all the monsters swarming in.<BR>…If it wasn't for you, I would have been in big trouble.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n450_saint_guard-2-a" image="QS_Default.dds" itemindex="300375">
+      <talk_answer link_index="n450_saint_guard-2-b" mid="57"><![CDATA[<html>(Malcolm spreads the familiar hardtack)</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Royal Guard Malcolm$<BR>I'm out here because Donald asked me to spread these out here…<BR>I just finished spreading these out, so I'm heading back.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n450_saint_guard-2-b" image="" itemindex="">
+      <talk_answer link_index="n450_saint_guard-3" mid="59"><![CDATA[<html>(Monsters swarm in to places where he spread the hardtacks)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Royal Guard Malcolm$<BR>Why does he want these spread out over here, when I heard that he was giving them away to poor children?<BR>
+Well… I'm just doing what I'm asked to do.<BR>
+He's a strange man, Donald.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n450_saint_guard-3" image="" itemindex="">
+      <talk_answer link_index="n450_saint_guard-3-a" mid="61"><![CDATA[<html>Alright.</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Royal Guard Malcolm$<BR>Ahh!! I better get back before the monsters return.<BR>Take care of yourself, too.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n450_saint_guard-3-a" image="QS_Default.dds" itemindex="300375">
+      <talk_question mid="62"><![CDATA[<html>$Royal Guard Malcolm$<BR>Are these monsters… swarming in to eat these hardtacks? That can't be!<BR><FONT color=#7e12d2>(Looking at the hardtacks closely, it's the same thing Poor Kid was eating a while ago)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3" image="" itemindex="">
+      <talk_answer link_index="n252_saint_guard-3-a" mid="65"><![CDATA[<html>That's what I want to know.</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Royal Guard Joy$<BR>Did you meet Malcolm? …What? He was spreading out the hardtacks?<BR>Hmm… Why would he do that? That thing is really delicious.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n252_saint_guard-3-a" image="QS_Default.dds" itemindex="300375">
+      <talk_question mid="66"><![CDATA[<html>$Royal Guard Joy$<BR>Donald is such an odd person!<BR>(Looking at the hardtacks Joy is holding closely, it's the same thing Poor Kid was eating a while ago.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-a" mid="68"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$King Cassius$<BR>Isn't this my loyal <FONT color=#387206> {user_nick}</FONT>?<BR>I hope you're doing well thesedays.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3-a" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-b" mid="70"><![CDATA[<html>Where will you go?</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$King Cassius$<BR>This is a secret, but I'm going on a journey…<BR>
+No, going on an adventure.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-3-b" image="" itemindex="">
+      <talk_answer link_index="n040_king_casius-3-!next" mid="72"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">695</exe>
+         <exe type="recompense_view">6950,,,,,</exe>
+         <exe type="talk" npc="n252_saint_guard">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6950,,,,,</exe>
+         <exe type="complete">695</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 90 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="b">1</exelink>
+   <exelink qstep="accepting" npc="n252_saint_guard" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n252_saint_guard" sub="b" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="c" />
+   <exelink qstep="1" npc="n252_saint_guard" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n450_saint_guard" sub="b" />
+   <exelink qstep="2" npc="n450_saint_guard" sub="3">0,1</exelink>
+   <exelink qstep="3" npc="n040_king_casius" sub="b">0</exelink>
+   <exelink qstep="3" npc="n040_king_casius" sub="!next">1,2</exelink>
+   <journal_data recompense="0:6950" quest_title="알고보면 좋은 사람" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>11,n252</destination_pos>
+         <destination_mode />
+         <statemark_npcid>252</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="75"><![CDATA[Seen it Before]]></title>
+         <contents mid="76"><![CDATA[<html>Continue listening to Royal Guard Joy's story.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Royal Guard Joy</FONT></html>]]></contents>
+         <destination mid="77"><![CDATA[Talk to Royal Guard Joy]]></destination>
+         <todo_msg mid="78"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,n450</destination_pos>
+         <destination_mode>custom:331@1</destination_mode>
+         <statemark_npcid>450</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="79"><![CDATA[Royal Guard Malcolm]]></title>
+         <contents mid="80"><![CDATA[<html>Meet Royal Guard Malcolm at the Forsaken Islet Core.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Forsaken Islet Transport)</FONT> <FONT color=#a82424>→ Forsaken Islet Core(Royal Guard Malcolm)</FONT></html>]]></contents>
+         <destination mid="81"><![CDATA[Talk to Royal Guard Malcolm at the Forsaken Islet Core]]></destination>
+         <todo_msg mid="82"><![CDATA[Meet Royal Guard Malcolm at the Forsaken Islet Core.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_King_Casius.dds</contents_image>
+         <destination_pos>21,n40</destination_pos>
+         <destination_mode />
+         <statemark_npcid>40</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="84"><![CDATA[Doubt]]></title>
+         <contents mid="85"><![CDATA[<html>There may be some kind of a conspiracy . First, return to the castle and talk to King Cassius.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ King Cassius</FONT></html>]]></contents>
+         <destination mid="86"><![CDATA[Talk to King Cassius]]></destination>
+         <todo_msg mid="87"><![CDATA[Return to Saint Haven Royal Palace and talk to King Cassius.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>694</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

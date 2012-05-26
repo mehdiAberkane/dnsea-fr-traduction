@@ -1,0 +1,203 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_520_remove_enemy</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>520</qid>
+      <designer>손원호</designer>
+      <qlevel>24</qlevel>
+      <qdesc>검은 광산은 전쟁물자를 만드는데 꼭 필요한 광석이 나는 중요한 장소인데, 현재 마물들에게 점령당해 그들의 연구기지가 되어 버렸다. 검은 군대의 병참선을 차단하기 위해 사전에 검은 광산을 습격해 적의 전력을 약화 시키고 광산을 되찾을 필요가 있다. 폭탄 기술 연구의 핵심이 되는 폐광 고블린 기술병을 해치워라. (100마리가 많아 보이긴 하지만 여러가지 첩보 임무를 하다보면 손쉽게 처리할 수 있을 것이다.)  </qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Pulling out the roots.]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Adventure Guild Master$<BR>
+Movement of Creatures are unusual.<BR>
+Even feel like borrowing cat's hand.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Adventure Guild Master$<BR>Creatures are growing ,but when should we wait till for the aristocrats. .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="122"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="121"><![CDATA[<html>$Adventure Guild Master$<BR>Using aristocrats to convince to use the army is  <FONT color=#a82424>General Douglas </FONT>'s part so  I will wait, However, with the task at hand I am restless.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="124"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="123"><![CDATA[<html>$Adventure Guild Master$<BR>Right now we could only wait for our guild to do what they  can do . </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="QW_27.dds" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="126"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="125"><![CDATA[<html>$Adventure Guild Master$<BR>Near Saint Haven is  <FONT color=#a82424>Black Cave</FONT>which is an important place to create army supplies. However , the creatures took over and it is now being used for their supplies. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="128"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="127"><![CDATA[<html>$Adventure Guild Master $<BR>With the latest information that I have received, <FONT color=#a82424>Goblin Technicians</FONT>are creating weapons for the black monarch.  I cannot stand how they can come at us with stronger weapons.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-f" mid="130"><![CDATA[<html>A cruel method?</html>]]></talk_answer>
+      <talk_question mid="129"><![CDATA[<html>$Adventure Guild Master$<BR>To stop their weapon supplies fundamentally, we have  to choose a <FONT color=#a82424>cruel way</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-f" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-g" mid="132"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="131"><![CDATA[<html>$Adventure Guild Master$<BR>That is <FONT color=#a82424>to eliminate</FONT>Goblin Technician in the caves.<BR>
+If they are all gone, supply should definitely be cut off.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-g" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$remove_enemy$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-a" mid="135"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="134"><![CDATA[<html>$Adventure Guild Master$<BR>Go to the black cave and take care of all the <FONT color=#a82424>cave </FONT>.<BR>If  <FONT color=#a82424>10</FONT><FONT color=#a82424>goblin</FONT> dies, they might quiet down. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-1-b" mid="137"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="136"><![CDATA[<html>$Adventure Guild Master$<BR>I know it is a difficult task, but to stop their weapon supply this is the only choice. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-1-b" image="" itemindex="">
+      <talk_question mid="138"><![CDATA[<html>$Adventure Guild Master$<BR>There may seem to be a lot but if you do a lot of information work, you can handle them easily.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-2" image="" itemindex="">
+      <talk_question mid="139"><![CDATA[<html>$Adventure Guild Master$<BR>It is <FONT color=#a82424>goblin technicians </FONT> in the black cave. Don’t get confused with other Monsters.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-a" mid="141"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="140"><![CDATA[<html>$Adventure Guild Master$<BR>Of course, your reputation stands for itself.<BR>You took care of them fast.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-b" mid="143"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="142"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-b" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-3-c" mid="145"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="144"><![CDATA[<html>$Adventure Guild Master$<BR>If we need adventure Guild's power to protect the kingdom in the future, I will ask for it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-3-c" image="" itemindex="">
+      <talk_question mid="146"><![CDATA[<html>$Adventurer's Guild Gunther$<BR>The Monsters are getting stronger so don't lose your tense.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">520</exe>
+         <exe type="recompense_view">,5201,5202,5203,5204,5205</exe>
+         <exe type="talk" npc="n036_adventurer_guildmaster_gunter">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="10" party="1" exe="3,4,5" onexe="">803</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="7">200803</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 803);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,5201,5202,5203,5204,5205</exe>
+         <exe type="complete">520</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="g">1</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="acceptted">0,2</exelink>
+   <exelink qstep="1" npc="n036_adventurer_guildmaster_gunter" sub="b">0,2,6,1</exelink>
+   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="a">0</exelink>
+   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="b">1</exelink>
+   <exelink qstep="3" npc="n036_adventurer_guildmaster_gunter" sub="c" />
+   <journal_data recompense="1:5201,2:5202,3:5203,4:5204,5:5205" quest_title="뿌리뽑기" chapterid="" quest_level="24" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode />
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="148"><![CDATA[Talk with Adventure Guild Gunther]]></title>
+         <contents mid="149"><![CDATA[<html>Talk with Saint Haven's Adventure Guild Gunther.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Adventure Guild Gunther</FONT></html>]]></contents>
+         <destination mid="150"><![CDATA[Talk with Adventure Guild Gunther]]></destination>
+         <todo_msg mid="151"><![CDATA[A quest has been added. ]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_27.dds</contents_image>
+         <destination_pos>274,0,0</destination_pos>
+         <destination_mode>custom:271@3,272@3,273@3,274@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="152"><![CDATA[Eliminating goblin technicians]]></title>
+         <contents mid="153"><![CDATA[<html>Go to the black cave to eliminate . Since there are a lot of goblin technicians, at least <FONT color=#a82424>10 goblins </FONT>need  to be eliminated to do some damage .<BR><BR><FONT color=#086171> Hermalte Port (Black cave entrance)</FONT> <FONT color=#a82424>→ black cave</FONT></html>]]></contents>
+         <destination mid="154"><![CDATA[Eliminating goblin technicians]]></destination>
+         <todo_msg mid="155"><![CDATA[Go to the black cave to eliminate the goblin technicians]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Master_Gunter.dds</contents_image>
+         <destination_pos>11,n36</destination_pos>
+         <destination_mode />
+         <statemark_npcid>36</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="156"><![CDATA[Report to Adventure Guild Gunther]]></title>
+         <contents mid="157"><![CDATA[<html>Took care of 10 Goblin Technicians! Lets go back to Saint Haven's Adventure Guild Gunther.<BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Adventure Guild Gunther</FONT></html>]]></contents>
+         <destination mid="158"><![CDATA[Report to Adventure Guild Gunther]]></destination>
+         <todo_msg mid="159"><![CDATA[Go back to Saint Haven and report to Adventure Guild Gunther]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>24:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>420,435</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

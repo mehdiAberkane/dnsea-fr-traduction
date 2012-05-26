@@ -1,0 +1,56 @@
+   <talk>
+      <npcename>n281_darkelf_teleju</npcename>
+      <npcid>281</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Dark Elf Telreju]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="4"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Dark Elf Telreju$<BR>What's it gonna be?<BR>This lady has all the latest fads! I'm gonna try them all!<BR> </html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="6" link_target="sq11_490_darkelf_girl.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Dark Elf Girl</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="7" link_target="sq11_491_darkelf_teleju1.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Dark Elf Telreju I</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="8" link_target="sq11_492_darkelf_teleju2.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Dark Elf Telreju II</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="9" link_target="sq11_493_darkelf_teleju3.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Dark Elf Telreju III</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="10" link_target="sq11_494_darkelf_teleju4.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Dark Elf Telreju IV</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="11" link_target="sq11_495_darkelf_teleju5.xml"><![CDATA[<html>[Lv.36]<FONT color=#086171> Dark Elf Telreju V</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="19" link_target="sq11_521_i_know_you.xml"><![CDATA[<html>[Lv36] <FONT color=#086171>Know who you are</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="20"><![CDATA[<html>(Go back)</html>]]></talk_answer>
+         <talk_question mid="5"><![CDATA[<html>$Dark Elf Telreju$<BR>Hmmm, I'd better watch out after the lies I've told the others.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="002" image="" itemindex="">
+         <talk_question mid="14"><![CDATA[<html>$Dark Elf Telreju$<BR>It was good to see you.<BR>Farewell, <FONT color=#382000><FONT color=#382000>{user_nick}</FONT>.</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="6">0</exe>
+         <exe type="enterquest">sq11_510_darkelf_teleju6</exe>
+         <exe type="conexe" true="4" false="0">1</exe>
+         <exe type="talk">002</exe>
+         <exe type="enterquest">sq11_626_meet_teleju_again</exe>
+         <exe type="conexe" true="5" false="8">2</exe>
+         <exe type="enterquest">sq11_627_lost_crown</exe>
+         <exe type="conexe" true="7" false="10">3</exe>
+         <exe type="enterquest">sq11_628_urgent_message</exe>
+         <exe type="conexe" true="9" false="12">4</exe>
+         <exe type="enterquest">sq11_629_retreat_teleju</exe>
+         <exe type="conexe" true="11" false="14">5</exe>
+         <exe type="enterquest">sq11_630_determination</exe>
+         <exe type="conexe" true="13" false="16">6</exe>
+         <exe type="enterquest">sq11_631_scepter_of_shadow</exe>
+         <exe type="conexe" true="15" false="18">7</exe>
+         <exe type="enterquest">sq11_632_far_away_kingdom</exe>
+         <exe type="conexe" true="17" false="3">8</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">510</chk>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 510) == 1</chk>
+         <chk type="hasquest">626</chk>
+         <chk type="hasquest">627</chk>
+         <chk type="hasquest">628</chk>
+         <chk type="hasquest">629</chk>
+         <chk type="hasquest">630</chk>
+         <chk type="hasquest">631</chk>
+         <chk type="hasquest">632</chk>
+      </conditions>
+   </talk>

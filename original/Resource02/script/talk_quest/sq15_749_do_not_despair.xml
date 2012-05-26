@@ -1,0 +1,259 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_749_do_not_despair</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>749</qid>
+      <designer>곽노찬</designer>
+      <qlevel>44</qlevel>
+      <qdesc>중단거리 이동 장치	300498
+XD-14의 보옥	300499
+XD-15의 보옥	300500
+XD-18의 보옥	300501
+XD-21의 보옥	300502
+XD-22의 보옥	300503</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>750</nextqid>
+      <nextqname>sq15_750_life_that_someone_desire</nextqname>
+      <nextqnpc>n394_academic_station</nextqnpc>
+      <qkname mid="1"><![CDATA[[Changing Job] Do Not Despair]]></qkname>
+      <qnpc>
+         <npcid>394</npcid>
+         <npcename>n394_academic_station</npcename>
+         <npckname>아카데믹 스테이션</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>799</npcid>
+         <npcename>n799_academin_npc</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-a" mid="6"><![CDATA[<html>I don't have a heart.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Academic Jasmine$<BR>I'm sorry, <FONT color=#387206>XD-27</FONT>.<BR>Your heart would stop before long.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting-a" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-accepting-b" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Academic Jasmine$<BR>
+Yes, you have a jewel instead of a heart.<BR>
+The jewel had so strong power, but after separating into 30 pieces, it changed to be unstable. If I don't take a measure to you, the jewel inside of you will lose the energy before long.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-accepting-b" image="QN_Npc_Academic_jasmine.dds" itemindex="">
+      <talk_question mid="9"><![CDATA[<html>$Academic Jasmine${sound:npc_Jasmin_qu_job_chg2_02.ogg}<BR>I don't have anything to tell you.<BR><FONT color=#7e12d2>(Jasmine disconnected. Go to Riverwart Wharf to talk with the past investigator XD-25)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-1" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Academic station$<BR>▶ <FONT color=#086171>Mission Object.</FONT><BR>▷ <FONT color=#7e12d2>Meet XD-25 in Riverwart Wharf.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-1" image="" itemindex="">
+      <talk_answer link_index="n799_academin_npc-1-a" mid="13"><![CDATA[<html>(Tell about what I talked with Jasmine)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$The Past Investigator${sound:npc_LM_2nd_Academic_sp_05.ogg}<BR>So you believe me now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-1-a" image="" itemindex="">
+      <talk_answer link_index="n799_academin_npc-1-b" mid="15"><![CDATA[<html>(………)</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$The Past Investigator$<BR>Yes, it's all true. Our jewel has been losing its energies. If the energy totally runs out, we'll be dull and finally wait for death.<BR>The worst thing is… we'll be alive for a long time while our body's dead.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-1-b" image="" itemindex="">
+      <talk_answer link_index="n799_academin_npc-1-c" mid="17"><![CDATA[<html>Is there a way…?</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$The Past Investigator$<BR>
+There is a way to prevent running out our jewel's energy… will you try?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-1-c" image="" itemindex="">
+      <talk_answer link_index="n799_academin_npc-1-d" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$The Past Investigator${action:Talk}<BR>I was also just like you. My jewel was running out of the energy and I thought that I was going to die.<BR>At that moment, someone who was in the same situation told me the way….<BR><FONT color=#7e12d3>(The investigator adjusts her glasses)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-1-d" image="" itemindex="">
+      <talk_answer link_index="n799_academin_npc-1-e" mid="21"><![CDATA[<html>How can I find another jewel? I haven't seen other investigators….</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$The Past Investigator$<BR>The reason why the jewel is running out of energy is because it is unstable now.<BR>
+The jewel isn't able to control the power inside of it and the power is leaking out through cracks. To solve this problem, you should absorb another empty jewel to expand the size of your jewel.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-1-e" image="" itemindex="">
+      <talk_answer link_index="n799_academin_npc-1-f" mid="23"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$The Past Investigator$<BR>You and I are the only ones who're still alive.<BR>The one who told me this method was <FONT color=#a82424>DX-08</FONT> and she died too.<BR>Her jewel had lost too many energies, so it wasn't impossible to recharge it. However, you're still okay. You have about ten days left.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-1-f" image="" itemindex="">
+      <talk_answer link_index="n799_academin_npc-1-g" mid="25"><![CDATA[<html>Why are you telling me this?</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$The Past Investigator$<BR>I'll tell you where jewels are.<BR><FONT color=#a82424>Ancient Library, Riverwart Village Ruins, East Ancient Armory, Dragon-followers Territory, West Ancient Armory</FONT>. You can get a jewel on each stage's  <FONT color=#a82425>Abyss</FONT> mode.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-1-g" image="QS_Default.dds" itemindex="300498">
+      <talk_question mid="29"><![CDATA[<html>$The Past Investigator$<BR>
+I was also helped by other investigators, so this is for repaying it. Take this.<BR>
+<FONT color=#7e12d3>(The past investigator gives me a middle-distance movement equipment)</FONT><BR>
+If you get all jewels, connect to Academic station and use them. I'll prepare for putting jewels into your breast.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-2" image="QS_Default.dds" itemindex="300499">
+      <talk_question mid="33"><![CDATA[<html>$The Past Investigator$<BR>I'll tell you where jewels are.<BR><FONT color=#a82424>Ancient Library, Riverwart Village Ruins, East Ancient Armory, Dragon-followers Territory, West Ancient Armory</FONT>. You can get a jewel on each stage's  <FONT color=#a82425>Abyss</FONT> mode. <BR>f you get all jewels, connect to Academic station and activate this middle-distance movement equipment.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-2" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="36"><![CDATA[<html>$Academic station$<BR>▶ <FONT color=#086171>Mission Object.</FONT><BR>▷ <FONT color=#7e12d3>Collect jewels left from the past investigators.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n799_academin_npc-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_question mid="37"><![CDATA[<html>$The Past Investigator$<BR>
+If you get all jewels, then connect to<FONT color=#a82425>Academic station</FONT>and warp to designated coordinate.<BR>
+I'll be waiting for you there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-a" mid="40"><![CDATA[<html>(Activate the middle-distance movement equipment)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Academic station$<BR>
+▶ <FONT color=#086171>Network connection's signal is low.</FONT><BR>
+▷ <FONT color=#7e12d3>Mission Object's being reset.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-a" image="QN_Npc_Academic_station.dds" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-b" mid="43"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="41"><![CDATA[<html>$Academic station$<BR>▶ <FONT color=#086171>New hardware device is recognized.</FONT><BR>▷ <FONT color=#7e12d3>A device driver is now installing.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n394_academic_station-3-b" image="" itemindex="">
+      <talk_answer link_index="n394_academic_station-3-!next" mid="45"><![CDATA[<html><FONT color=#086172>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="44"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">749</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions>
+         <chk type="questitem" num="1" op="]=">300499</chk>
+         <chk type="questitem" num="1" op="]=">300500</chk>
+         <chk type="questitem" num="1" op="]=">300501</chk>
+         <chk type="questitem" num="1" op="]=">300502</chk>
+         <chk type="questitem" num="1" op="]=">300503</chk>
+      </conditions>
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="17">201417</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="18">201576</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="19">201611</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="20">201400</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="21">201455</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300499</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300500</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300501</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300502</exe>
+         <exe type="huntitem" num="1" exe="" onexe="">300503</exe>
+         <exe type="addquestitem" num="1">300499</exe>
+         <exe type="addquestitem" num="1">300500</exe>
+         <exe type="addquestitem" num="1">300501</exe>
+         <exe type="addquestitem" num="1">300502</exe>
+         <exe type="addquestitem" num="1">300503</exe>
+         <exe type="conexe" true="22" false="12,22">0</exe>
+         <exe type="conexe" true="22" false="13,22">1</exe>
+         <exe type="conexe" true="22" false="14,22">2</exe>
+         <exe type="conexe" true="22" false="15,22">3</exe>
+         <exe type="conexe" true="22" false="16,22">4</exe>
+         <exe type="conexe" true="23,24,25" false="">0 and 1 and 2 and 3 and 4</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="addquestitem" num="1">300498</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">7490,,,,,</exe>
+         <exe type="complete">749</exe>
+         <exe type="delquestitem" num="-1">300498</exe>
+         <exe type="delquestitem" num="-1">300499</exe>
+         <exe type="delquestitem" num="-1">300500</exe>
+         <exe type="delquestitem" num="-1">300501</exe>
+         <exe type="delquestitem" num="-1">300502</exe>
+         <exe type="delquestitem" num="-1">300503</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n394_academic_station" sub="b">0</exelink>
+   <exelink qstep="1" npc="n799_academin_npc" sub="b" />
+   <exelink qstep="1" npc="n799_academin_npc" sub="c" />
+   <exelink qstep="1" npc="n799_academin_npc" sub="d" />
+   <exelink qstep="1" npc="n799_academin_npc" sub="e" />
+   <exelink qstep="1" npc="n799_academin_npc" sub="f" />
+   <exelink qstep="1" npc="n799_academin_npc" sub="g">0,1,2,3,4,5,6,7,8,9,10,11,26</exelink>
+   <exelink qstep="3" npc="n394_academic_station" sub="b">0</exelink>
+   <exelink qstep="3" npc="n394_academic_station" sub="!next">1,2,3,4,5,6,7</exelink>
+   <journal_data recompense="7490" quest_title="[전직] 절망하지 않겠습니다" chapterid="" quest_level="44" quest_mark_type="10" use_item_list="300498,300499,300500,300501,300502,300503">
+      <journal index="1">
+         <contents_image>QW_LiverwortFerry.dds</contents_image>
+         <destination_pos>14,n799</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>799</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="47"><![CDATA[Do not despair I]]></title>
+         <contents mid="48"><![CDATA[<html>Lets' meet the past investigator in Riverwart Wharf.<BR>
+ <BR>
+<FONT color=#086171>Riverwart Wharf</FONT> <FONT color=#a82425>→ The Past Investigator</FONT></html>]]></contents>
+         <destination mid="49"><![CDATA[Talk with the past investigator in Riverwart Wharf]]></destination>
+         <todo_msg mid="50"><![CDATA[Quest has just added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image />
+         <destination_pos />
+         <destination_mode>hide</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="51"><![CDATA[Do not despair II]]></title>
+         <contents mid="52"><![CDATA[<html>In Abyss area, collect jewels left from the past investigators.<BR><BR><FONT color=#086171>Riverwart Wharf (Ancient Warehouse Entrance)</FONT> <FONT color=#a82424>→ Ancient Library</FONT><BR><FONT color=#086171>Riverwart Wharf (Ancient Warehouse Entrance)</FONT> <FONT color=#a82424>→ East Ancient Armory</FONT><BR><FONT color=#086171>Riverwart Wharf (Ancient Warehouse Entrance)</FONT> <FONT color=#a82424>→ West Ancient Armory</FONT><BR><FONT color=#086171>Riverwart Wharf (Riverwart Village Ruins Entrance)</FONT> <FONT color=#a82424>→ Riverwart Village Ruins</FONT><BR><FONT color=#086171>Riverwart Wharf (Riverwart Village Ruins Entrance)</FONT> <FONT color=#a82424>→ Dragon-followers Territory</FONT></html>]]></contents>
+         <destination mid="53"><![CDATA[[Abyss] Collect the past investigators' jewels]]></destination>
+         <todo_msg mid="54"><![CDATA[In Abyss, collect the past investigators' jewels.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Academic_station.dds</contents_image>
+         <destination_pos>15,n394</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>394</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="55"><![CDATA[Do not despair III]]></title>
+         <contents mid="56"><![CDATA[<html>I just got all jewels from the past investigators. Let's connect to Academic station and activate the middle-distance movement equipment.<BR>
+ <BR>
+<FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Academic station</FONT></html>]]></contents>
+         <destination mid="57"><![CDATA[Connect to Academic station]]></destination>
+         <todo_msg mid="58"><![CDATA[Connect to Academic station.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>748</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

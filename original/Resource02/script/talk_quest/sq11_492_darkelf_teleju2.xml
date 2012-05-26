@@ -1,0 +1,217 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_492_darkelf_teleju2</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>492</qid>
+      <designer>김주연</designer>
+      <qlevel>36</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid>493</nextqid>
+      <nextqname>sq11_493_darkelf_teleju3</nextqname>
+      <nextqnpc>n281_darkelf_teleju</nextqnpc>
+      <qkname mid="1"><![CDATA[Dark Elf Teleju II]]></qkname>
+      <qnpc>
+         <npcid>281</npcid>
+         <npcename>n281_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>283</npcid>
+         <npcename>n283_darkelf_teleju</npcename>
+         <npckname>다크엘프 텔레주</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Dark Elf Teleju$<BR>Shh! You can't make any sound~ That's a foul!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-a" mid="7"><![CDATA[<html>What are you doing?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Dark Elf Teleju$<BR>Hi~!! Did you come to play with me?<BR>Huh? Ehu? Tell me you are. Let's play with me~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-b" mid="9"><![CDATA[<html>Hide and seek?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Dark Elf Teleju$<BR>Hahaha. I want to play <FONT color=#a82424>Hide and seek</FONT>!<BR>If you have read the latest edition of Oh! Goddess, that is really popular among human girls~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-c" mid="11"><![CDATA[<html>Ok. Fine</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Dark Elf Teleju$<BR>I'll hide and you find!<BR>Doesn’t it sound fun? Come on~ please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Dark Elf Teleju II$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-a" mid="15"><![CDATA[<html>Hide and seek?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Dark Elf Teleju$<BR>Hahaha. I want to play <FONT color=#a82424>Hide and seek</FONT>!<BR>If you see the latest edition of Oh! Goddess, that is really popular among human girls~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-1-b" mid="17"><![CDATA[<html>Ok. Fine</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Dark Elf Teleju$<BR>I'll hide and you find!<BR>Doesn’t it sound fun? Come on~ please?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-1-b" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Dark Elf Teleju$<BR>Really? I'll hide somewhere in Gates to City of Death so find me ok? <BR>I'll be hiding behind something tall so you must find me ok?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-1" image="" itemindex="">
+      <talk_question mid="19"><![CDATA[<html>$Dark Teleju$<BR>Shh! You can't make any sound~ That's a foul~!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-2" image="" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Dark Elf Teleju$<BR>Really? I'll hide somewhere in Gates to City of Death so find me ok? <BR>I'll be hiding behind something tall so you must find me ok?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-2" image="" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-2-a" mid="22"><![CDATA[<html>(Teleju is excited)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Dark Elf Teleju$<BR>Wow~ I got caught~!!<BR>This is fun~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-2-a" image="" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-2-b" mid="24"><![CDATA[<html>I'm glad you're having fun.</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Dark Elf Teleju$<BR>It's good to play hide and seek with a friend.<BR>Everyone told me not to go out but I'm glad I did come out! Hahaha.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-2-b" image="" itemindex="">
+      <talk_answer link_index="n283_darkelf_teleju-2-c" mid="26"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Dark Elf Teleju$<BR>Yes! I'm having so much fun! <BR><FONT color=#382000>{user_nick}</FONT>, I like you. I wish we can hang out together all the time~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-2-c" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Dark Elf Teleju$<BR>Well, should we get back to <FONT color=#a82424>Hermalte Port</FONT>?<BR>I will have to think about what to do next looking at Oh! Goddess.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n283_darkelf_teleju-3" image="QW_HermaltePort.dds" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$Dark Elf Teleju$<BR>Haha~ I'll be waiting for you at <FONT color=#a82424>Hermalte Port</FONT>~<BR>Come and see me, ok?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-a" mid="30"><![CDATA[<html>Really?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Dark Elf Teleju$<BR>Did you have fun?<BR>I never had so much fun like today in my life! I'm serious! </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3-a" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-b" mid="32"><![CDATA[<html>Yes. True that.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Dark Elf Teleju$<BR>Yes I've been busy all the time! <BR>And it's not usual for a Dark Elf to have a friend like you, <FONT color=#382000>{user_class}</FONT> .</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3-b" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-c" mid="34"><![CDATA[<html>(Teleju speaks like a grown up)</html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Dark Elf Teleju$<BR>I wish everyone can live in peace.<BR>You can't live this world how you want to live…That's other Dark Elves have told me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3-c" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-d" mid="36"><![CDATA[<html>(Teleju holds my hand)</html>]]></talk_answer>
+      <talk_question mid="35"><![CDATA[<html>$Dark Elf Teleju$<BR>Other Elves say we never can be friends with humans or Elves from outside.<BR>But~ I don't believe that. I've met a good friend like you~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n281_darkelf_teleju-3-d" image="" itemindex="">
+      <talk_answer link_index="n281_darkelf_teleju-3-!next" mid="38"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="37"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,4921,4922,4923,4924,4925</exe>
+         <exe type="setquest">492</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n281_darkelf_teleju">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,4921,4922,4923,4924,4925</exe>
+         <exe type="complete">492</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n281_darkelf_teleju" sub="acceptted">1,2,3,4</exelink>
+   <exelink qstep="1" npc="n281_darkelf_teleju" sub="b">0,1</exelink>
+   <exelink qstep="2" npc="n283_darkelf_teleju" sub="b" />
+   <exelink qstep="2" npc="n283_darkelf_teleju" sub="c">0,1</exelink>
+   <exelink qstep="3" npc="n281_darkelf_teleju" sub="b" />
+   <exelink qstep="3" npc="n281_darkelf_teleju" sub="c" />
+   <exelink qstep="3" npc="n281_darkelf_teleju" sub="d">0</exelink>
+   <exelink qstep="3" npc="n281_darkelf_teleju" sub="!next">1</exelink>
+   <journal_data recompense="1:4921,2:4922,3:4923,4:4924,5:4925" quest_title="다크엘프 텔레주Ⅱ" chapterid="" quest_level="36" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode />
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="40"><![CDATA[Conversation with Dark Elf Teleju]]></title>
+         <contents mid="41"><![CDATA[<html>Dark Elf Teleju wants to hang out with you. <FONT color=#2b2723> Talk to her.</FONT><BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Dark Elf Teleju</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[Conversation with Dark Elf Teleju]]></destination>
+         <todo_msg mid="43"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Teleju.dds</contents_image>
+         <destination_pos>424,n283</destination_pos>
+         <destination_mode>custom:421@1,422@1,423@4,424@0</destination_mode>
+         <statemark_npcid>283</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Find Teleju at Gates to City of Death]]></title>
+         <contents mid="45"><![CDATA[<html>Dark Elf Teleju wants to play hide and seek. Go to <FONT color=#a82424>Gates to City of Death</FONT> and find Dark Elf Teleju hiding behind boxes.<BR><BR><FONT color=#086171>Hermalte Port(Dark Mine Entrance)</FONT> <FONT color=#a82424>→ Gates to City of Death</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Find Teleju at Gates to City of Death]]></destination>
+         <todo_msg mid="47"><![CDATA[Find Teleju at Gates to City of Death]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QW_HermaltePort.dds</contents_image>
+         <destination_pos>12,n281</destination_pos>
+         <destination_mode>custom:</destination_mode>
+         <statemark_npcid>281</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Conversation with Dark Elf Teleju at Hermalte Port]]></title>
+         <contents mid="49"><![CDATA[<html>Found Teleju hiding at Gates to City of Death. Return to <FONT color=#a82424>Hermalte Port</FONT> and talk to her.<BR><BR><FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Dark Elf Teleju</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[Conversation with Dark Elf Teleju at Hermalte Port]]></destination>
+         <todo_msg mid="51"><![CDATA[Return to Hermalte Port and talk to Dark Elf Teleju]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>36:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>491</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

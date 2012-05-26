@@ -1,0 +1,128 @@
+   <talk>
+      <npcename>n778_bluff_dealers_jeff</npcename>
+      <npcid>778</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[Dishonest Merchant Jeff]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="24"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_question mid="3"><![CDATA[<html>$Dishonest Merchant Jeff${action:Talk}<BR>I am part of the Pero Trade Group, which provides a service with integrity,  trust, good attitude and quality, all to ensure our customers' satisfaction!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="shop_open_24" image="" itemindex="">
+         <talk_answer link_index="quest" mid="35"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_24_24" mid="25"><![CDATA[<html>[Open Lv.24 Epic Store]</html>]]></talk_answer>
+         <talk_question mid="4"><![CDATA[<html>$Dishonest Merchant Jeff$<BR>I am part of the Pero Trade Group, which provides a service with integrity,  trust, good attitude and quality, all to ensure our customers' satisfaction!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="shop_open_32" image="" itemindex="">
+         <talk_answer link_index="quest" mid="36"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop_32_24" mid="26"><![CDATA[<html>[Open Lv.24 Epic Store]</html>]]></talk_answer>
+         <talk_answer link_index="open_shop_32_32" mid="27"><![CDATA[<html>[Open Lv.32 Epic Store]</html>]]></talk_answer>
+         <talk_question mid="7"><![CDATA[<html>$Dishonest Merchant Jeff$<BR>I am part of the Pero Trade Group, which provides a service with integrity,  trust, good attitude and quality, all to ensure our customers' satisfaction!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="shop_open_40" image="" itemindex="">
+         <talk_answer link_index="quest" mid="37"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_40_24" mid="28"><![CDATA[<html>[Open Lv.24 Epic Store]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_40_32" mid="29"><![CDATA[<html>[Open Lv.32 Epic Store]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_40_40" mid="30"><![CDATA[<html>[Open Lv.40 Epic Store]</html>]]></talk_answer>
+         <talk_question mid="10"><![CDATA[<html>$Dishonest Merchant Jeff${action:Talk}<BR>I am part of the Pero Trade Group, which provides a service with integrity,  trust, good attitude and quality, all to ensure our customers' satisfaction!</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="31" link_target="sq08_373_tears_of_goddess.xml"><![CDATA[<html>[Lv.16] <FONT color=#086171>Goddess's Tears</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="40" link_target="dq08_1100_tears_hount.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Raider's Den - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="43" link_target="dq08_1101_tears_canyon.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Sigh Canyon - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="44" link_target="dq08_1102_tears_ambush.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Raider's Ambush Point - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="45" link_target="dq08_1103_tears_forest.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Forest Sanctuary - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="46" link_target="dq08_1104_tears_sleep.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Sleepers' Temple - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="47" link_target="dq08_1105_tears_death_forest.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Forest of Death - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="48" link_target="dq08_1106_tears_worship.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Church Ruins - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="49" link_target="dq08_1107_tears_catacomb.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Catacombs Hall - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="50" link_target="dq08_1108_tears_fairy.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Dark Tower Magic Institute - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="51" link_target="dq08_1109_tears_hall.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Silent Monastery Main Hall - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="52" link_target="dq08_1110_tears_unreturn.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Road of No Return - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="53" link_target="dq08_1111_tears_basin.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Death Basin - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="54" link_target="dq08_1112_tears_center.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Sanctuary Core - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="55" link_target="dq08_1113_tears_pray.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Prayer Resting Place - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="back_quest" mid="32"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="21"><![CDATA[<html>$Dishonest Merchant Jeff$<BR>The staff of Pero Trade Group always puts the interests of our customers first. We assure you that we will do our very best until our customers are satisfied.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="shop_open_50" image="" itemindex="">
+         <talk_answer link_index="quest" mid="65"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_50_24" mid="66"><![CDATA[<html>[24Lv Open Epic Shop]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_50_32" mid="67"><![CDATA[<html>[32Lv Open Epic Shop]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_50_40" mid="68"><![CDATA[<html>[40Lv Open Epic Shop]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_50_50" mid="69"><![CDATA[<html>[50Lv Open Epic Shop]</html>]]></talk_answer>
+         <talk_question mid="58"><![CDATA[<html>$Merchant Jeff$<BR>Buy a Dark Lair item with Tears of the Goddess.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+         <exe type="conexe" true="2" false="0">0</exe>
+         <exe type="conexe" true="35" false="3">7</exe>
+         <exe type="conexe" true="4" false="34">6</exe>
+         <exe type="talk">shop_open_40</exe>
+         <exe type="talk">shop_open_32</exe>
+         <exe type="talk">shop_open_24</exe>
+         <exe type="conexe" true="11" false="8">1</exe>
+         <exe type="conexe" true="12" false="9">2</exe>
+         <exe type="conexe" true="13" false="10">3</exe>
+         <exe type="conexe" true="14" false="45">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14002,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14003,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14004,100);</exe>
+         <exe type="conexe" true="19" false="16">1</exe>
+         <exe type="conexe" true="20" false="17">2</exe>
+         <exe type="conexe" true="21" false="18">3</exe>
+         <exe type="conexe" true="22" false="46">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14011,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14012,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14013,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14014,100);</exe>
+         <exe type="conexe" true="27" false="24">1</exe>
+         <exe type="conexe" true="28" false="25">2</exe>
+         <exe type="conexe" true="29" false="26">3</exe>
+         <exe type="conexe" true="30" false="47">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14021,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14022,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14023,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14024,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14005,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14015,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14025,100);</exe>
+         <exe type="conexe" true="5" false="6">5</exe>
+         <exe type="talk">shop_open_50</exe>
+         <exe type="conexe" true="40" false="37">1</exe>
+         <exe type="conexe" true="41" false="38">2</exe>
+         <exe type="conexe" true="42" false="39">3</exe>
+         <exe type="conexe" true="43" false="48">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14031,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14032,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14033,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14034,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14035,100);</exe>
+         <exe type="conexe" true="31" false="31">8</exe>
+         <exe type="conexe" true="32" false="32">8</exe>
+         <exe type="conexe" true="33" false="33">8</exe>
+         <exe type="conexe" true="44" false="44">8</exe>
+      </executions>
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 373) == 1</chk>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="lvl" op=">=">30</chk>
+         <chk type="lvl" op=">=">38</chk>
+         <chk type="lvl" op=">=">48</chk>
+         <chk type="class" op="=">5</chk>
+      </conditions>
+      <exelink idx="shop_open_24_24">7</exelink>
+      <exelink idx="open_shop_32_24">7</exelink>
+      <exelink idx="open_shop_32_32">15</exelink>
+      <exelink idx="shop_open_40_24">7</exelink>
+      <exelink idx="shop_open_40_32">15</exelink>
+      <exelink idx="shop_open_40_40">23</exelink>
+      <exelink idx="back_quest">1</exelink>
+      <exelink idx="shop_open_50_24">7</exelink>
+      <exelink idx="shop_open_50_32">15</exelink>
+      <exelink idx="shop_open_50_40">23</exelink>
+      <exelink idx="shop_open_50_50">36</exelink>
+   </talk>

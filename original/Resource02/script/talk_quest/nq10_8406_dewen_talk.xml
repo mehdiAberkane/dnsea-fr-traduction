@@ -1,0 +1,94 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq10_8406_dewen_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>8406</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Lessons of life]]></qkname>
+      <qnpc>
+         <npcid>304</npcid>
+         <npcename>n304_auction_manger_duwen</npcename>
+         <npckname>거래소 조합장 더웬</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-a" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Exchange Deacon Deowen$<BR>A lesson of life? Hmm. From me?<BR>Well…alright.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-b" mid="8"><![CDATA[<html>Thank you for good words.</html>]]></talk_answer>
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-c" mid="9"><![CDATA[<html>I already know all of them.</html>]]></talk_answer>
+      <talk_answer link_index="n304_auction_manger_duwen-accepting-d" mid="10"><![CDATA[<html>It's boring.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Time is gold! What do you think of this? A deal should be made fairly. If you deceive someone, you'll be the next.<BR>This is truth as I've been working as an Exchange Deacon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting-b" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Exchange Deacon Deowen$<BR>
+Please keep these in your mind and always try to achieve them.<BR>If you follow them, you'll be a great man.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting-c" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Exchange Deacon Deowen$<BR>Do you know these? But you don't know their real value.<BR>When you regret something, then you will understand these words! <BR><FONT color=#7e12d2>(Deowen clicks his tongue.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n304_auction_manger_duwen-accepting-d" image="" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Exchange Deacon Deowen$<BR>
+You have no idea that a boring story has a real value.<BR>You're still young to understand this.<BR><FONT color=#7e12d2>(Deowen  clicks his tongue)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 8406, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 304, 280 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 304, 100 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 304, 200 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 304, 280 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n304_auction_manger_duwen" sub="b">1,0</exelink>
+   <exelink qstep="accepting" npc="n304_auction_manger_duwen" sub="c">2,3,0</exelink>
+   <exelink qstep="accepting" npc="n304_auction_manger_duwen" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 인생의 교훈" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>304:6300:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,201 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_678_find_blackbird</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>678</qid>
+      <designer>김주연</designer>
+      <qlevel>34</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Find my bird]]></qkname>
+      <qnpc>
+         <npcid>343</npcid>
+         <npcename>n343_littlegirl_daisy</npcename>
+         <npckname>데이지</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>344</npcid>
+         <npcename>n344_mystery_man</npcename>
+         <npckname>의문의 남자</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$Mystery Man$<BR>Ah, here comes another bee which got attracted by my scent.<BR>I'm busy right now so leave me alone.<BR><FONT color=#7e12d2>(He still talks about strange stuff.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-accepting" image="" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-accepting-a" mid="7"><![CDATA[<html>Why are you crying?</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Daisy$<BR>Boohoo.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-accepting-a" image="QW_40.dds" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-accepting-b" mid="9"><![CDATA[<html>What? To Dark Overlord Tower?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Daisy$<BR>My bird got better but...<BR>As soon as she got better she flew off to <FONT color=#a82424>Dark Overlord Tower</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-accepting-c" mid="11"><![CDATA[<html>How does she look like?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Daisy$<BR><FONT color=#7e12d2>(She nods her head.)<BR></FONT>I couldn't go into <FONT color=#a82424>Dark Overlord Tower</FONT>, it was too scary.<BR>Find my bird please.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-accepting-d" mid="13"><![CDATA[<html>No, you must be a good mother.</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Daisy$<BR>She's like a <FONT color=#a82424>big crow</FONT>. But she is lot more friendly than crows.<BR>Why did she run away from me??<BR>Wasn't I a good mother to her?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-accepting-d" image="" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-accepting-e" mid="15"><![CDATA[<html>It's ok, I'll find your bird.</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Daisy$<BR>I must have done something wrong to her.<BR>What if my bird gets eaten by monsters?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-accepting-acceptted" mid="17"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Find my bird$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-1" image="" itemindex="">
+      <talk_question mid="18"><![CDATA[<html>$Daisy$<BR>She will be in fear right now.<BR>Save her from getting eaten by monsters!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-1" image="" itemindex="">
+      <talk_answer link_index="n344_mystery_man-1-a" mid="20"><![CDATA[<html>What are you doing here?</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Mystery Man$<BR>Hmm, is it gone?<BR><FONT color=#7e12d2>(He is looking at the faraway sky.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-1-a" image="" itemindex="">
+      <talk_answer link_index="n344_mystery_man-1-b" mid="22"><![CDATA[<html>I didn't come after you.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Mysterous Man$<BR>Ah, did you come after <FONT color=#a82424>my scent</FONT>?<BR>Don't be shy.<BR>There were already many followers of mine and they failed to get my attention.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-1-b" image="" itemindex="">
+      <talk_answer link_index="n344_mystery_man-1-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Mystery Man$<BR>Hahaha! <FONT color=#7e12d2>(He laughs hard.)<BR></FONT>You must be shy. It's ok, there were many people like you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-1-c" image="" itemindex="">
+      <talk_answer link_index="n344_mystery_man-1-d" mid="26"><![CDATA[<html>So what are you doing here?</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Mystery Man$<BR>An advice for you - don't look at me for more than 3 seconds. <BR>If you do, your heart will explode.<BR><FONT color=#7e12d2>(He is still talking about weird stuff!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-1-d" image="" itemindex="">
+      <talk_answer link_index="n344_mystery_man-1-e" mid="28"><![CDATA[<html>Your sworn friend from the past?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Mystery Man$<BR>I'm looking for my sworn friend from the past.<BR>But he started to avoid me, worrying he will fall for me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-1-e" image="" itemindex="">
+      <talk_answer link_index="n344_mystery_man-1-f" mid="30"><![CDATA[<html>Have you seen a blackbird around here?</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Mystery Man$<BR>Ha, he deserves to be a sworn friend of me.<BR>He ran away this time but he will fall for me next time.<BR><FONT color=#7e12d2>(He is still talking about weird stuff!)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-1-f" image="" itemindex="">
+      <talk_answer link_index="n344_mystery_man-2" mid="32"><![CDATA[<html>Ok, I should look somewhere else.</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Mystery Man$<BR>A blackbrid…. Haha, my charm is powerful enough to seduce monsters as well. But I haven't seen a <FONT color=#a82424>blackbird falling off after being seduced by me</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n344_mystery_man-2" image="" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Mystery Man$<BR>Haha, next time, it's ok to admit that you are into me.<BR>Then I'll let you kiss my foot.<BR><FONT color=#7e12d2>(Better get back to Daisy and tell her about her bird.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-2" image="" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-2-a" mid="35"><![CDATA[<html>She wasn't there.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Daisy$<BR><FONT color=#7e12d2>(Her face is swollen from all the crying)</FONT><BR>Why are you by yourself?<BR>What happen to my bird?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-2-a" image="" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-2-b" mid="37"><![CDATA[<html>She probably went back home.</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Daisy$<BR>Nooo, do you think those monsters have taken her?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-2-b" image="" itemindex="">
+      <talk_answer link_index="n343_littlegirl_daisy-2-c" mid="39"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n343_littlegirl_daisy-2-c" image="" itemindex="">
+      <talk_question mid="40"><![CDATA[<html>$Daisy$<BR>Boohoo. I wish she went back home and met with her families and friends….<BR>I want to believe that.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6780,,,,,</exe>
+         <exe type="setquest">678</exe>
+         <exe type="talk" npc="n343_littlegirl_daisy">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6780,,,,,</exe>
+         <exe type="complete">678</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n343_littlegirl_daisy" sub="e">0</exelink>
+   <exelink qstep="accepting" npc="n343_littlegirl_daisy" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n344_mystery_man" sub="b" />
+   <exelink qstep="1" npc="n344_mystery_man" sub="c" />
+   <exelink qstep="1" npc="n344_mystery_man" sub="d" />
+   <exelink qstep="1" npc="n344_mystery_man" sub="e" />
+   <exelink qstep="1" npc="n344_mystery_man" sub="f" />
+   <exelink qstep="1" npc="n344_mystery_man" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n343_littlegirl_daisy" sub="b">0</exelink>
+   <exelink qstep="2" npc="n343_littlegirl_daisy" sub="c">1</exelink>
+   <journal_data recompense="0:6780" quest_title="검은새를 찾아줘" chapterid="" quest_level="34" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_40.dds</contents_image>
+         <destination_pos>404,n344</destination_pos>
+         <destination_mode>custom:401@1,402@1,403@1,404@1</destination_mode>
+         <statemark_npcid>344</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Daisy's bird]]></title>
+         <contents mid="42"><![CDATA[<html>Look for Daisy's bird in Dark Overlord Tower.<BR>
+ <BR>
+<FONT color=#086171>Black Mountain(Dark Overlord Gates)</FONT> <FONT color=#a82424>→ Dark Overlord Tower</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Find Daisy's bird at Dark Overlord Tower]]></destination>
+         <todo_msg mid="44"><![CDATA[Go to Dark Overlord Tower and look for Daisy's bird]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Daisy.dds</contents_image>
+         <destination_pos>13,n343</destination_pos>
+         <destination_mode />
+         <statemark_npcid>343</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="45"><![CDATA[Conversation with Daisy]]></title>
+         <contents mid="46"><![CDATA[<html>Daisy's bird is not here, she must have moved. Report to Daisy in Black Mountain.<BR>
+ <BR>
+<FONT color=#086171>Black Mountain</FONT> <FONT color=#a82424>→ Daisy</FONT></html>]]></contents>
+         <destination mid="47"><![CDATA[Conversation with Daisy in Black Mountain]]></destination>
+         <todo_msg mid="48"><![CDATA[Talk to Daisy in Black Mountain]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>34:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>677</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,101 @@
+   <talk>
+      <npcename>n791_bluff_dealers_chief</npcename>
+      <npcid>791</npcid>
+      <startexe>5</startexe>
+      <npckname mid="1"><![CDATA[Bluff Dealers Chief]]></npckname>
+      <talk_paragraph index="shop_open_40" image="" itemindex="">
+         <talk_answer link_index="shop_open_40_24" mid="28"><![CDATA[<html>[24Lv Open Epic Market]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_40_32" mid="29"><![CDATA[<html>[32Lv Open Epic Market]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_40_40" mid="30"><![CDATA[<html>[40Lv Open Epic Market]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="114"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="10"><![CDATA[<html>$Bluff Dealers Chief${action:Talk}<BR>Our market provides a solid basis of trust for our clients.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="shop_open_50" image="" itemindex="">
+         <talk_answer link_index="shop_open_50_24" mid="57"><![CDATA[<html>[24Lv Open Epic Market]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_50_32" mid="58"><![CDATA[<html>[32Lv Open Epic Market]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_50_40" mid="59"><![CDATA[<html>[40Lv Open Epic Market]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open_50_50" mid="60"><![CDATA[<html>[50Lv Open Epic Market]</html>]]></talk_answer>
+         <talk_answer link_index="001" mid="115"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="40"><![CDATA[<html>$Bluff Dealers Chief${action:Talk}<BR>Our market provides a solid basis of trust for our clients.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_answer link_index="quest" mid="91"><![CDATA[<html>[Quest]</html>]]></talk_answer>
+         <talk_answer link_index="shop_open" mid="92"><![CDATA[<html>[Shop Trade Tears of the Goddess]</html>]]></talk_answer>
+         <talk_question mid="62"><![CDATA[<html>$Merchant Chief${action:Talk}<BR>Merchant Pero ensures honest, trust, quality and happiness.</html>]]></talk_question>
+      </talk_paragraph>
+      <talk_paragraph index="quest" image="" itemindex="">
+         <talk_answer link_index="q_enter" mid="93" link_target="dq15_1135_tears_library.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Ancient Library - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="94" link_target="dq15_1136_tears_riverwart.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Ruins of Riverwort Village - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="95" link_target="dq15_1137_tears_east.xml"><![CDATA[<html>[Daily] <FONT color=#086171>East Ancient Armory - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="96" link_target="dq15_1138_tears_dragonsycophant.xml"><![CDATA[<html>[Daily] <FONT color=#086171>Dragon Followers' Base - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="97" link_target="dq15_1139_tears_west.xml"><![CDATA[<html>[Daily] <FONT color=#086171>West Ancient Armory - Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="98" link_target="sq15_882_tears_of_goddess.xml"><![CDATA[<html>[Lv40] <FONT color=#086171>Tears of the Goddess</FONT></html>]]></talk_answer>
+         <talk_answer link_index="001" mid="99"><![CDATA[<html>(Back)</html>]]></talk_answer>
+         <talk_question mid="65"><![CDATA[<html>$Merchant Chief${action:Talk}<BR>Merchant Peroi ensures honest, trust, quality and happiness.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">shop_open_50</exe>
+         <exe type="conexe" true="0" false="4">5</exe>
+         <exe type="conexe" true="36" false="3">0</exe>
+         <exe type="conexe" true="37" false="">1</exe>
+         <exe type="talk">shop_open_40</exe>
+         <exe type="talk">001</exe>
+         <exe type="talk">quest</exe>
+         <exe type="conexe" true="11" false="8">0</exe>
+         <exe type="conexe" true="12" false="9">1</exe>
+         <exe type="conexe" true="13" false="10">2</exe>
+         <exe type="conexe" true="14" false="41">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14001,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14002,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14003,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14004,100);</exe>
+         <exe type="conexe" true="19" false="16">0</exe>
+         <exe type="conexe" true="20" false="17">1</exe>
+         <exe type="conexe" true="21" false="18">2</exe>
+         <exe type="conexe" true="22" false="43">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14011,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14012,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14013,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14014,100);</exe>
+         <exe type="conexe" true="27" false="24">0</exe>
+         <exe type="conexe" true="28" false="25">1</exe>
+         <exe type="conexe" true="29" false="26">2</exe>
+         <exe type="conexe" true="30" false="45">3</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14021,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14022,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14023,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14024,100);</exe>
+         <exe type="conexe" true="36" false="32">0</exe>
+         <exe type="conexe" true="37" false="33">1</exe>
+         <exe type="conexe" true="38" false="34">2</exe>
+         <exe type="conexe" true="39" false="35">3</exe>
+         <exe type="conexe" true="40" false="40">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14031,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14032,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14033,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14034,100);</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14035,100);</exe>
+         <exe type="conexe" true="42" false="42">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14005,100);</exe>
+         <exe type="conexe" true="44" false="44">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14015,100);</exe>
+         <exe type="conexe" true="46" false="46">4</exe>
+         <exe type="custom">api_ui_OpenShop(userObjID,14025,100);</exe>
+      </executions>
+      <conditions>
+         <chk type="class" op="=">1</chk>
+         <chk type="class" op="=">2</chk>
+         <chk type="class" op="=">3</chk>
+         <chk type="class" op="=">4</chk>
+         <chk type="class" op="=">5</chk>
+         <chk type="lvl" op=">=">48</chk>
+      </conditions>
+      <exelink idx="shop_open_40_24">7</exelink>
+      <exelink idx="shop_open_40_32">15</exelink>
+      <exelink idx="shop_open_40_40">23</exelink>
+      <exelink idx="shop_open_50_24">7</exelink>
+      <exelink idx="shop_open_50_32">15</exelink>
+      <exelink idx="shop_open_50_40">23</exelink>
+      <exelink idx="shop_open_50_50">31</exelink>
+      <exelink idx="shop_open">1</exelink>
+   </talk>

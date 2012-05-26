@@ -1,0 +1,183 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_674_hurted_blackbird</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>674</qid>
+      <designer>김주연</designer>
+      <qlevel>31</qlevel>
+      <qdesc>*파란 꽃	400296
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>675</nextqid>
+      <nextqname>sq11_675_bandage_of_blackbird</nextqname>
+      <nextqnpc>n338_littlegirl_daisy</nextqnpc>
+      <qkname mid="1"><![CDATA[Injured Blackbird]]></qkname>
+      <qnpc>
+         <npcid>338</npcid>
+         <npcename>n338_littlegirl_daisy</npcename>
+         <npckname>데이지</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-a" mid="7"><![CDATA[<html>Hello, I haven't seen you around before.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Daisy$<BR>Hello~?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-a" image="QN_Npc_Daisy.dds" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-b" mid="9"><![CDATA[<html>Hi, my name is {user_nick}.</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Daisy$<BR>I'm <FONT color=#a82424>Daisy</FONT>.<BR>
+I moved to Saint Haven not too long ago.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-c" mid="11"><![CDATA[<html>Hmm…, why do you ask?</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Daisy$<BR><FONT color=#387206>{user_nick}</FONT> seem to have some sort of a weapon.<BR>Umm, are you, <FONT color=#387206>{user_nick}</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-d" mid="13"><![CDATA[<html>Birdie…?</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Daisy$<BR>Yesterday, I headed under a tree to avoid rain and I saw this poor <FONT color=#a82424> Birdie</FONT>…. It was soaked in rain and shivering…, I think it may have lost its mother, like Daisy.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-d" image="QP_Crow1.dds" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-e" mid="15"><![CDATA[<html>Was it injured by a hunter…?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Daisy$<BR>
+Yes… it's was a small and cute Blackbird. My father told me not to pick up strange things on the road, so I tried to ignore it but… <FONT color=#a82424>Birdie</FONT> was losing blood. It seemed it had hurt its wings and couldn't fly, so I felt so sorry for the bird….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-e" image="QP_Crow1.dds" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-f" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Daisy$<BR><FONT color=#7e12d2>(Daisy put her hands together to stroke the little bird.)<BR></FONT>I tried to stroke it, but it keeps on dodging my hands and keeps on crying sadly. I think it's badly hurt….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-f" image="QP_Crow1.dds" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-g" mid="19"><![CDATA[<html>You're a good kid Daisy.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Daisy$<BR>When I approached it carefully and gently stroked it, it seemed to relax. So Daisy decided to become the poor <FONT color=#a82424>Birdie</FONT>'s <FONT color=#a82424>mother</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-g" image="QW_34.dds" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-h" mid="21"><![CDATA[<html>So do you want me to find some medicinal herbs?</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$Daisy$<BR>There is still blood coming out from <FONT color=#a82424>Birdie</FONT>'s wings.<BR>
+I asked my grandpa and he said I would need lots of medicinal herbs. But that herb can only be found at the <FONT color=#a82424>Flooded Downstream</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-h" image="QN_Npc_Daisy.dds" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-i" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$Daisy$<BR>Yes!<BR><FONT color=#7e12d2>(Daisy nods her head vigorously.)</FONT><BR>Please bring me the <FONT color=#a82424>Blue Flower</FONT> from the <FONT color=#a82424>Flooded Downstream</FONT>.<BR>I beg you… I hope Birdie gets better soon.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-accepting-i" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-accepting-acceptted" mid="26"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Injured Blackbird$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-1" image="QW_34.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Daisy$<BR>The <FONT color=#a82424>Blue Flower</FONT> is at <FONT color=#a82424>Flooded Downstream</FONT>, the spot where the strongest monster is at.<BR>
+Daisy will be waiting here.<BR>Don't get hurt.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-2" image="QS_Default.dds" itemindex="400296">
+      <talk_answer link_index="n338_littlegirl_daisy-2-a" mid="29"><![CDATA[<html>(Gives her the Blue Flower)</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Daisy$<BR>Did you find the <FONT color=#a82424>Blue Flower</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-2-a" image="QS_Default.dds" itemindex="400296">
+      <talk_answer link_index="n338_littlegirl_daisy-2-b" mid="31"><![CDATA[<html>I hope Birdie gets better.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Daisy$<BR>Thank you so much….<BR>I hope this <FONT color=#a82424>medicinal herb</FONT> has some healing effects….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-2-b" image="" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-2-c" mid="33"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n338_littlegirl_daisy-2-c" image="QN_Npc_Daisy.dds" itemindex="">
+      <talk_answer link_index="n338_littlegirl_daisy-2-!next" mid="35"><![CDATA[<html>I'm listening.</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Daisy$<BR>Hey… Can <FONT color=#a82424>Daisy</FONT> ask you one more favour?</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6740,,,,,</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID,674, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="huntitem" num="1" exe="" onexe="5,6,8">400296</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="talk" npc="n338_littlegirl_daisy">1</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6740,,,,,</exe>
+         <exe type="complete">674</exe>
+         <exe type="delquestitem" num="-1">400296</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n338_littlegirl_daisy" sub="i">0</exelink>
+   <exelink qstep="accepting" npc="n338_littlegirl_daisy" sub="acceptted">1,2,4,3,7</exelink>
+   <exelink qstep="2" npc="n338_littlegirl_daisy" sub="b">0</exelink>
+   <exelink qstep="2" npc="n338_littlegirl_daisy" sub="c">1,2</exelink>
+   <exelink qstep="2" npc="n338_littlegirl_daisy" sub="!next" />
+   <journal_data recompense="0:6740" quest_title="상처입은 검은새" chapterid="" quest_level="31" quest_mark_type="10" use_item_list="400296">
+      <journal index="1">
+         <contents_image>QW_34.dds</contents_image>
+         <destination_pos>344,0,0</destination_pos>
+         <destination_mode>custom:341@1,342@1,343@1,344@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Collect the Blue Flowers at the Flooded Downstream]]></title>
+         <contents mid="38"><![CDATA[<html>Go to the Flooded Downstream and collect the Blue Flowers.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port(Entrance to the Flooded Downstream Ruins)</FONT> <FONT color=#a82424>→ Flooded Downstream</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Collect the Blue Flowers at the Flooded Downstream]]></destination>
+         <todo_msg mid="40"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Daisy.dds</contents_image>
+         <destination_pos>12,n338</destination_pos>
+         <destination_mode />
+         <statemark_npcid>338</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Talk to Daisy at the Hermalte Port]]></title>
+         <contents mid="42"><![CDATA[<html>Collected the Blue Flowers. Give this to <FONT color=#a82424>Daisy</FONT> at the Hermalte Port.<BR>
+ <BR>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Daisy</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk to Daisy at the Hermalte Port]]></destination>
+         <todo_msg mid="44"><![CDATA[Talk to Daisy at the Hermalte Port]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>31:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest>383,410</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n071_ship_ticketer_karin</npcename>
+      <npcid>71</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Ticket Agent Karin]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Ticket Agent Karin$<BR>All flight services are cancelled because an evil monster was sighted near the river.</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

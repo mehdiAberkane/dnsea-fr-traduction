@@ -1,0 +1,156 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>gq11_3262_n411_icenter_hunt</qename>
+      <qtype>venturerquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>3262</qid>
+      <designer>김주연</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Guild Request] I Want to Ascend to Heaven I]]></qkname>
+      <qnpc>
+         <npcid>411</npcid>
+         <npcename>n411_guild_board</npcename>
+         <npckname>모험자 길드 게시판</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>What is this……, Mummy, I'm afraid. I can't go to heaven this time again, can I? Seems like it. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-b" mid="98"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="97"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>I thought about it, the place where I died is not on land. Ah, I don't know. <FONT color=#7e12d2></FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-c" mid="100"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="99"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>I think the one who beat me isn't him, thus I am unable to go to heaven. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-c" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-d" mid="105"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="103"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>
+To be honest, I don't know who killed me but I have grievances yet to be cleared. Yes, it must be this. I remember that Forsaken Islet's <FONT color=#a82424>Pirate Kobold Gunner</FONT> threw stones at me, it hurt real bad. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-d" image="GQ_hunt.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-e" mid="102"><![CDATA[<html>Defeat 6 Pirate Kobold Gunner</html>]]></talk_answer>
+      <talk_question mid="101"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR><FONT color=#2b2723>Please help me to defeat the <FONT color=#a82424>Pirate Kobold Gunner</FONT> who gave me painful memories. This is the only way for me to leave this place to go to heaven. </FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#7e12d2> Client: Spirit K</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-e" image="" itemindex="">
+      <talk_answer link_index="n411_guild_board-accepting-f" mid="11"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-accepting-f" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$[Guild Request] I Want to Ascend to Heaven I$<BR>You accepted a Mission. <BR>Go to <FONT color=#a82424>Forsaken Islet</FONT> to defeat <FONT color=#a82424>Pirate Kobold Gunner</FONT>. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-1" image="GQ_hunt.dds" itemindex="">
+      <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request] I Want to Ascend to Heaven I</FONT>. <BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time. </FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-2" image="GQ_hunt_end.dds" itemindex="">
+      <talk_answer link_index="n411_guild_board-2-a" mid="22"><![CDATA[<html>[Completed] <FONT color=#086171>I Want to Ascend to Heaven I</FONT></html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Adventurers who have completed the Mission, please stamp the Mission posting below to receive your reward.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-2-a" image="" itemindex="">
+      <talk_answer link_index="n411_guild_board-2-b" mid="24"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n411_guild_board-2-b" image="GQ_hunt_end.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>An Adventurer's Mission has been completed.<BR><BR><FONT color=#a82424>[Adventurer's Guild Commission Board]</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_AddQuest(userObjID,3262, 1);</exe>
+         <exe type="setstep">1</exe>
+         <exe type="setjornal">1</exe>
+         <exe type="recompense_view">32620,,,,,</exe>
+         <exe type="huntmon" num="6" party="1" exe="5,6,7" onexe="">925</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="9">200925</exe>
+         <exe type="custom">api_quest_IncCounting(userObjID, 2, 925);</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">3262</exe>
+         <exe type="recompense">32620,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n411_guild_board" sub="e">3</exelink>
+   <exelink qstep="accepting" npc="n411_guild_board" sub="f">0,1,4,8,2</exelink>
+   <exelink qstep="2" npc="n411_guild_board" sub="a">1</exelink>
+   <exelink qstep="2" npc="n411_guild_board" sub="b">0</exelink>
+   <journal_data recompense="32620" quest_title="[길드의뢰] 승천하고 싶어요Ⅰ" chapterid="" quest_level="32" quest_mark_type="19" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_33.dds</contents_image>
+         <destination_pos>331,0,0</destination_pos>
+         <destination_mode>custom:331@3</destination_mode>
+         <statemark_npcid>411</statemark_npcid>
+         <statemark_type>20</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Go to Forsaken Islet and defeat Pirate Kobold Gunner]]></title>
+         <contents mid="43"><![CDATA[<html>Go to Forsaken Islet and defeat 6 Pirate Kobold Gunner. <BR><BR><FONT color=#086171>Hermalte Port (Desolate Islet Transport) </FONT><FONT color=#a82424>→ Forsaken Islet</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Hunt] Forsaken Islet]]></destination>
+         <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_guild_board.dds</contents_image>
+         <destination_pos>12,n411</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>411</statemark_npcid>
+         <statemark_type>21</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Report Mission completion to the Adventurer's Guild Commission Board]]></title>
+         <contents mid="47"><![CDATA[<html>Report Mission Completion to the Adventurer's Guild Commission Board at Hermalte Port.<BR><BR><FONT color=#086171>Hermalte Port (Desolate Islet Transport) </FONT><FONT color=#a82424>→ Adventurer's Guild Commission Board</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Report Mission completion to the Adventurer's Guild Commission Board]]></destination>
+         <todo_msg mid="49"><![CDATA[An Adventurer's Mission has been completed.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>32:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>3261</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

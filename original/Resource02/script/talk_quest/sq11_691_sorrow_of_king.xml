@@ -1,0 +1,227 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_691_sorrow_of_king</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>691</qid>
+      <designer>김인정</designer>
+      <qlevel>30</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[King Cassius' Sorrow]]></qkname>
+      <qnpc>
+         <npcid>40</npcid>
+         <npcename>n040_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>442</npcid>
+         <npcename>n442_elite_soldier_donald</npcename>
+         <npckname>왕성 근위병 도날드</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>447</npcid>
+         <npcename>n447_king_casius</npcename>
+         <npckname>국왕 카시우스</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$King Cassius$<BR>
+……<BR>
+<FONT color=#7e12d2>(Pretends to look elsewhere)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n447_king_casius-noquest" image="" itemindex="">
+      <talk_question mid="6"><![CDATA[<html>$King Cassius$<BR>The battle here must have been so intense… This is the first time I saw the scene….<BR>
+As the King, I'm so ashamed and sad.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-accepting" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-accepting-a" mid="8"><![CDATA[<html>You seem really busy.</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Royal Guard Donald${action:Talk}<BR>I'm dazed by all this fuss about the <FONT color=#a82424>Dark Knight</FONT> and other things….<BR>Right on time, <FONT color=#387206>{user_nick}</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-accepting-a" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-accepting-b" mid="11"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Royal Guard Donald$<BR>I'm so busy handling the dispatched troops.<BR>Anyway, my shift will be over soon, but the <FONT color=#a82424>King</FONT> went out and hasn't come back yet.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-accepting-b" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-accepting-c" mid="46"><![CDATA[<html>Where did he go?</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Royal Guard Donald$<BR>I don't know how he could find time to go on a journey at such a busy time. Hmm…. I think he went some place dangerous, and we don't want anything happening to the King, don't we? Could you bring the King back safely?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$King Cassius' Sorrow$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-1" image="QW_36.dds" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Royal Guard Donald$<BR>He said he was going to the <FONT color=#a82424>Dark Overlord Training Ground</FONT>.<BR>Isn't that where the big battle took place recently? I don't understand why he would go to such a dangerous place.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-1" image="QW_36.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Fake Cassius$<BR>Haha~ The real owner of this seat is at the Dark Overlord Training Ground.<BR>Are you going to bring him back?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n447_king_casius-1" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n447_king_casius-1-a" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$King Cassius${action:Talk}<BR>Many soldiers are injured from fighting the <FONT color=#a82424>Dark Knight</FONT>.<BR>The General and my uncle are all worried.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n447_king_casius-1-a" image="" itemindex="">
+      <talk_answer link_index="n447_king_casius-1-b" mid="20"><![CDATA[<html>Maybe they don't want to make you worried.</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$King Cassius$<BR>But they don't tell me much and asked me to trust them to take care of the problems.<BR>Is it because I'm too young…?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n447_king_casius-1-b" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n447_king_casius-1-c" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="22"><![CDATA[<html>$King Cassius$<BR>I have no right to be a king if I don't even worry about my kingdom at such an unstable state. Besides, I'm just stuck in the Palace, worrying, and knowing nothing….<BR>
+<FONT color=#7e12d2>(Cassius sighs)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n447_king_casius-1-c" image="" itemindex="">
+      <talk_answer link_index="n447_king_casius-1-d" mid="50"><![CDATA[<html>Don't lament on it too much.</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$King Cassius$<BR>I just wanted to see for myself, but no one would let me go, so I had no choice but to come here secretly like this…. Why am I only a child?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n447_king_casius-1-d" image="" itemindex="">
+      <talk_answer link_index="n447_king_casius-2" mid="26"><![CDATA[<html>There must be something you could do.</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$King Cassius$<BR>But I'm… the King! I have a responsibility to know what's going on in my kingdom! I want to protect the soldiers like the Knight King Cassius….<BR>
+I feel so weak.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n447_king_casius-2" image="QW_SaintHaven_Inside.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$King Cassius${action:Talk2}<BR>Re... really? Is there something I could do back at the Palace?<BR>I hope there is….<BR>
+I'll think about it after I return to the castle.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n040_king_casius-2" image="" itemindex="">
+      <talk_question mid="28"><![CDATA[<html>$King Cassius$<BR>How can I become a great Knight King?<BR>
+… Is it possible that I may never become one…?<BR>(Cassius sighs)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-2" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-2-a" mid="30"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Royal Guard Donald$<BR>The <FONT color=#a82424>King</FONT> returned safely just moments ago. Nobody noticed the King had vanished from all the disturbance made by fighting the Dark Knight….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-2-a" image="" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-2-b" mid="32"><![CDATA[<html>Your words are a bit harsh….</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Royal Guard Donald$<BR>He's no different from the Poor Kid except for the crown.<BR>…Oh my, I might get into trouble for insulting the Royal Family.<BR>
+You didn't hear the words I just said.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-2-b" image="" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-2-c" mid="53"><![CDATA[<html>That's true…</html>]]></talk_answer>
+      <talk_answer link_index="n442_elite_soldier_donald-2-c" mid="54"><![CDATA[<html>It's not true!</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Royal Guard Donald$<BR>It's not harsh at all, it's all true, isn't it? <BR>I know you're also playing along with a kid.<BR>
+Am I wrong?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-2-c" image="" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-2-d" mid="56"><![CDATA[<html>(Donald laughs away)</html>]]></talk_answer>
+      <talk_question mid="55"><![CDATA[<html>$Royal Guard Donald$<BR>I can see you're startled~ Haha!!<BR>Well, we're just swept with the little king's caprice, so we have no choice but to accept this situation.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-2-d" image="" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-2-e" mid="60"><![CDATA[<html>(What does he mean by taking whatever I can)</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Royal Guard Donald$<BR>
+Since things happened this way, we have no choice but to enjoy the situation.<BR>
+You should also start taking whatever you can. Okay?!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-2-e" image="" itemindex="">
+      <talk_answer link_index="n442_elite_soldier_donald-2-f" mid="34"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="33"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n442_elite_soldier_donald-2-f" image="QN_Npc_King_Casius.dds" itemindex="">
+      <talk_question mid="35"><![CDATA[<html>$Royal Guard Donald${action:Talk}<BR>Let's continue this good work~ Unlucky <FONT color=#387206>{user_class}</FONT>!<BR>
+I think we just might meet again~</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6910,,,,,</exe>
+         <exe type="setquest">691</exe>
+         <exe type="talk" npc="n442_elite_soldier_donald">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">691</exe>
+         <exe type="recompense">6910,,,,,</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 40, 90 );</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n442_elite_soldier_donald" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n442_elite_soldier_donald" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n447_king_casius" sub="b" />
+   <exelink qstep="1" npc="n447_king_casius" sub="c" />
+   <exelink qstep="1" npc="n447_king_casius" sub="d" />
+   <exelink qstep="1" npc="n447_king_casius" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n442_elite_soldier_donald" sub="b" />
+   <exelink qstep="2" npc="n442_elite_soldier_donald" sub="c" />
+   <exelink qstep="2" npc="n442_elite_soldier_donald" sub="c" />
+   <exelink qstep="2" npc="n442_elite_soldier_donald" sub="d" />
+   <exelink qstep="2" npc="n442_elite_soldier_donald" sub="e">1</exelink>
+   <exelink qstep="2" npc="n442_elite_soldier_donald" sub="f">0,2</exelink>
+   <journal_data recompense="0:6910" quest_title="카시우스의 슬픔" chapterid="" quest_level="30" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QW_36.dds</contents_image>
+         <destination_pos>364,n447</destination_pos>
+         <destination_mode>custom:361@1,362@1,363@1,364@1</destination_mode>
+         <statemark_npcid>447</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[At the Dark Overlord Training Ground]]></title>
+         <contents mid="38"><![CDATA[<html>Go to the Dark Overlord Training Ground and bring King Cassius back.<BR>
+ <BR>
+<FONT color=#086171>Black Mountain(Dark Overlord Gate)</FONT> <FONT color=#a82424>→ Dark Overlord Training Ground(King Cassius)</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Talk to King Cassius at the Dark Overlord Training Ground]]></destination>
+         <todo_msg mid="40"><![CDATA[Meet King Cassius at the Dark Overlord Training Ground.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Elite_Soilder.dds</contents_image>
+         <destination_pos>21,n442</destination_pos>
+         <destination_mode />
+         <statemark_npcid>442</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Report to Royal Guard Donald]]></title>
+         <contents mid="42"><![CDATA[<html>Return to Saint Haven Royal Palace and report to Royal Guard Donald.<BR>
+ <BR>
+<FONT color=#086171>Saint Haven Royal Palace</FONT> <FONT color=#a82424>→ Royal Guard Donald</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk to Royal Guard Donald]]></destination>
+         <todo_msg mid="44"><![CDATA[Report to Royal Guard Donald.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>30:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>690</prev_quest>
+      <have_quest>410,382</have_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

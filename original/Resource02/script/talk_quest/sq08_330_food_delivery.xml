@@ -1,0 +1,209 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_330_food_delivery</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>330</qid>
+      <designer>김주연</designer>
+      <qlevel>19</qlevel>
+      <qdesc>끈적끈적 파스타	400109
+</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Food Delivery]]></qkname>
+      <qnpc>
+         <npcid>26</npcid>
+         <npcename>n026_trader_may</npcename>
+         <npckname>소모품 상인 메이</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>267</npcid>
+         <npcename>n267_invisible_thef_sq330</npcename>
+         <npckname />
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n267_invisible_thef_sq330-noquest" image="" itemindex="">
+      <talk_question mid="5"><![CDATA[<html>$???$<BR>...<BR><FONT color=#7e12d2>(To begin the quest, find May in Calderock Village.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant May$<BR><FONT color=#7e12d2>(May is occupied with her new recipe.)</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-b" mid="9"><![CDATA[<html>Mmm? How so?</html>]]></talk_answer>
+      <talk_question mid="8"><![CDATA[<html>$Merchant May$<BR>Hero! <BR>Stay! Stay!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-c" mid="11"><![CDATA[<html>No choice then I guess.</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant May$<BR>After I'm finished with this, please deliver for me!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Food Delivery$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1" image="QS_Default.dds" itemindex="400109">
+      <talk_answer link_index="n026_trader_may-1-a" mid="15"><![CDATA[<html>Merchant May! You can eat anything!</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Merchant May$<BR>Tada! It is done! It gets stickier as you chew it. Let's call it... Sticky Pasta! ?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-a" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-1-b" mid="17"><![CDATA[<html>(May gives you the nicely decorated dish.)</html>]]></talk_answer>
+      <talk_question mid="16"><![CDATA[<html>$Merchant May$<BR>You have to send it .. Where's the address.... Ah, the Dark Tower Magic Institute.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-1-b" image="QW_21.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-2" mid="19"><![CDATA[<html>Okie Dokie.</html>]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Merchant May$<BR>Bring it down to this exact location at Dark Tower Magic Institute.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n267_invisible_thef_sq330-1" image="" itemindex="">
+      <talk_answer link_index="n267_invisible_thef_sq330-3" mid="50"><![CDATA[<html>(Check the writing carefully.)</html>]]></talk_answer>
+      <talk_question mid="20"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There are some scriblings on the ground.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-2" image="QW_21.dds" itemindex="">
+      <talk_question mid="21"><![CDATA[<html>$Merchant May$<BR>Got to be quick, hero! You won't want the food to be cold. To the Dark Tower Magic Institute!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-3" image="QW_21.dds" itemindex="">
+      <talk_question mid="22"><![CDATA[<html>$Merchant May$<BR>What? Still hanging around? The food is not getting any warmer. To the Dark Tower Magic Institute!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n267_invisible_thef_sq330-3" image="" itemindex="">
+      <talk_answer link_index="n267_invisible_thef_sq330-4" mid="24"><![CDATA[<html>(You genty place the food on the ground.) </html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Suspicious Note$<BR>"If you're here to deliver the Sticky Pasta I ordered, just place it here. It is time to cook for my lady."</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n267_invisible_thef_sq330-4" image="" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Suspicious Note$<BR>"Don't worry! I'll pick up the food when my lady's not looking."</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-a" mid="27"><![CDATA[<html>No one. There was a message telling me to leave the food there, though. </html>]]></talk_answer>
+      <talk_question mid="26"><![CDATA[<html>$Merchant May$<BR>Ooh, how was your trip? Did you get to meet the person who ordered?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-a" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-b" mid="29"><![CDATA[<html>Oh, my goodness...</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Merchant May$<BR>My goodness?! And you just left it there?! I hope the food is still warm when the person collected it!</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-b" image="" itemindex="">
+      <talk_answer link_index="n026_trader_may-4-c" mid="31"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n026_trader_may-4-c" image="QN_Npc_Woman_Trader_May.dds" itemindex="">
+      <talk_question mid="32"><![CDATA[<html>$Merchant May$<BR>Well, that's all i can do. I just hope they find my food great.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">,3301,3302,3303,3304,3305</exe>
+         <exe type="setquest">330</exe>
+         <exe type="talk" npc="n026_trader_may">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">4</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delquestitem" num="-1">400109</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">,3301,3302,3303,3304,3305</exe>
+         <exe type="complete">330</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="c">0</exelink>
+   <exelink qstep="accepting" npc="n026_trader_may" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n026_trader_may" sub="b" />
+   <exelink qstep="1" npc="n026_trader_may" sub="2">0,1</exelink>
+   <exelink qstep="3" npc="n267_invisible_thef_sq330" sub="4">0,1,2</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="b">0</exelink>
+   <exelink qstep="4" npc="n026_trader_may" sub="c">1</exelink>
+   <journal_data recompense="1:3301,2:3302,3:3303,4:3304,5:3305" quest_title="요리 배달" chapterid="" quest_level="19" quest_mark_type="10" use_item_list="400109">
+      <journal index="1">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos />
+         <destination_mode />
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="33"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="34"><![CDATA[<html><FONT color=#a82424>Merchant May</FONT> needs a delivery for the Sticky Pasta. She'll let you know the details.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="35"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="36"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_21.dds</contents_image>
+         <destination_pos>153,n267</destination_pos>
+         <destination_mode>custom:151@1,152@1,153@1</destination_mode>
+         <statemark_npcid>267</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="37"><![CDATA[Bring the food to the Dark Tower Magic Institute]]></title>
+         <contents mid="38"><![CDATA[<html>May wants you to deliver the Sticky Pasta to the Dark Tower Magic Institute. <BR><BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Dark Tower Magic Institute</FONT></html>]]></contents>
+         <destination mid="39"><![CDATA[Deliver the dish to the Dark Tower Magic Institute]]></destination>
+         <todo_msg mid="40"><![CDATA[Deliver the Sticky Pasta to the Dark Tower Magic Institute.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Woman_Trader_May.dds</contents_image>
+         <destination_pos>8,n26</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>26</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="41"><![CDATA[Talk to Merchant May]]></title>
+         <contents mid="42"><![CDATA[<html>You placed the dish together with Nye Nye's note. Return to Calderock Village and speak with <FONT color=#a82424>Merchant May</FONT>.<BR><BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→ Merchant May</FONT></html>]]></contents>
+         <destination mid="43"><![CDATA[Talk to Merchant May]]></destination>
+         <todo_msg mid="44"><![CDATA[Find May at Calderock Village.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>19:-1</user_level>
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>329</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

@@ -1,0 +1,214 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq08_380_end_of_2nd_nightmare</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>380</qid>
+      <designer>정진호</designer>
+      <qlevel>32</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[35th land]]></qkname>
+      <qnpc>
+         <npcid>199</npcid>
+         <npcename>n199_darklair_castia</npcename>
+         <npckname>어둠의 여신관 카스티아</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-a" mid="44"><![CDATA[<html>Thank you.</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Due to your effort, the massive nightmare is coming to an end.<BR>
+Of course, the new nightmare will suppress this world…but your effort will still be remembered.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-b" mid="74"><![CDATA[<html>You make me delighted.</html>]]></talk_answer>
+      <talk_question mid="73"><![CDATA[<html>$Priestess of Darkness Castia$<BR>We would thank you. We haven't seen anyone cleaning this place this successfully. I'm so honored talking to a person like you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-accepting-b" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-accepting-acceppted" mid="48"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="47"><![CDATA[<html>$Priestess of Darkness Castia$<BR>Well, we should talk about the end of this nightmare.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-a" mid="51"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="49"><![CDATA[<html>$Priestess of Darkness Castia$<BR>To be honest, even though we are at the end of dark but we don't know how long this would last.<BR>
+So I don't feel like this would be the last moment with you. <BR>
+ <BR>
+Should I be happy or sad…</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-a" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-b" mid="76"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="75"><![CDATA[<html>$Priestess of Darkness Castia$<BR>The nightmare will finish sometime. Until then please help us.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-b" image="QW_DarkLair.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-c" mid="53"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="52"><![CDATA[<html>$Priestess of Darkness Castia$<BR><FONT color=#2b2723>This time</FONT>, please clean up until the end of 2nd floor of Boundary of Darkness. Please remember, no matter how strong you are, you can only clear <FONT color=#a82424>five times</FONT> <FONT color=#a82424>a week</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-1-d" mid="55"><![CDATA[<html>(Understood the condition)</html>]]></talk_answer>
+      <talk_question mid="54"><![CDATA[<html>$35th land$<BR><FONT color=#7e12d2>※ Recommended party of 4 in Boundary of Darkness.</FONT><BR><FONT color=#7e12d2>※ Boundary of Darkness can be cleared maximum five times a week.<BR></FONT><FONT color=#7e12d2>※ The host must clear the first floor of Boundary of Darkness.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-1-d" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-2" mid="57"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$35th land$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-2" image="QW_DarkLair.dds" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>The last of 2nd floor of Boundary of Darkness. So, clear the boss monster of <FONT color=#a82424>35th </FONT><FONT color=#a82424>round</FONT>.<BR>It will be a tough fight but please try your best.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-a" mid="60"><![CDATA[<html>You're welcome.</html>]]></talk_answer>
+      <talk_question mid="59"><![CDATA[<html>$Priestess of Darkness Castia$<BR><FONT color=#387206>{user_class} {user_nick}</FONT>, because of you, we could do our job in relief.<BR>Once again, on behalf of all three sisters, we thank you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-a" image="QN_darklair_castia.dds" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-b" mid="62"><![CDATA[<html>(Castia gives a warm smile)</html>]]></talk_answer>
+      <talk_question mid="61"><![CDATA[<html>$Priestess of Darkness Castia$<BR><FONT color=#2b2723>1st and 2nd floor of Boundary of Darkness is cleared up.</FONT><BR>
+<FONT color=#2b2723> No other adventurer has gone this far, so we think ourselves very lucky.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-b" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-c" mid="64"><![CDATA[<html>I would help anytime.</html>]]></talk_answer>
+      <talk_question mid="63"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>In fairy tales, it ends with everyone living happily ever after but….in reality it's not like that. Nightmares will continue to come back and we will look for you everytime they occur.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-c" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-d" mid="68"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Priestess of Darkness Castia$<BR>I'm so happy I don't know what to say.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-d" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-check_quest" mid="66"><![CDATA[<html><FONT color=#086171>(Accept Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="65"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-e" image="" itemindex="">
+      <talk_question mid="77"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Because of you <FONT color=#387206>{user_class} {user_nick}</FONT>, we can do our job in relief.<BR>On behalf of three sisters, we thank you very much.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n199_darklair_castia-3-f" image="" itemindex="">
+      <talk_answer link_index="n199_darklair_castia-3-next_script" mid="85"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="84"><![CDATA[<html>$Priestess of Darkness Castia${action:Talk}<BR>Because of you <FONT color=#387206>{user_class} {user_nick}</FONT>, we can do our job in relief.<BR>On behalf of three sisters we thank you very much.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">380</exe>
+         <exe type="talk" npc="n199_darklair_castia">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">3800,,,,,</exe>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="1" party="1" exe="" onexe="6,4,5">400061</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+         <exe type="delcount">.</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions>
+         <chk type="custom">api_quest_IsMarkingCompleteQuest(userObjID, 352) == 1</chk>
+      </conditions>
+      <executions>
+         <exe type="recompense">3800,,,,,</exe>
+         <exe type="complete">380</exe>
+         <exe type="conexe" true="1,6" false="1,3,4,5,7">0</exe>
+         <exe type="custom">api_quest_AddQuest(userObjID, 352, 1);</exe>
+         <exe type="custom">api_quest_SetQuestStep(userObjID, 352, 1);</exe>
+         <exe type="custom">api_quest_SetJournalStep(userObjID, 352, 1);</exe>
+         <exe type="talk" npc="n199_darklair_castia">e</exe>
+         <exe type="talk" npc="n199_darklair_castia">f</exe>
+         <exe type="custom">api_npc_NextScript(userObjID, npcObjID, "n199_darklair_castia-1-a", "sq08_352_beyond_the_nightmare.xml");</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n199_darklair_castia" sub="acceppted">0,1</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="1" npc="n199_darklair_castia" sub="d">0</exelink>
+   <exelink qstep="1" npc="n199_darklair_castia" sub="2">1,3,2</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="b" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="c" />
+   <exelink qstep="3" npc="n199_darklair_castia" sub="d">0</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="check_quest">2</exelink>
+   <exelink qstep="3" npc="n199_darklair_castia" sub="next_script">8</exelink>
+   <journal_data recompense="3800" quest_title="서른 다섯 번째 땅" chapterid="" quest_level="32" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>30,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,29@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="31"><![CDATA[Trustworthy Adventurer]]></title>
+         <contents mid="32"><![CDATA[<html>Hear about the request from Priestess of Darkness Castia.<BR><BR><FONT color=#086171>Calderock Gates(Dark Gates)<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Priestess of Darkness Castia</FONT><BR><FONT color=#086171>Saint Haven(Dark Gates)</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Priestess of Darkness Castia</FONT></FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Conversation with Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="34"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_DarkLair.dds</contents_image>
+         <destination_pos>12021,0,0</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@0,11@0,12011@3,12012@3,12021@3</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="35"><![CDATA[Clear 2nd floor of Boundary of Darkness]]></title>
+         <contents mid="36"><![CDATA[<html>Clear 35th round in 2nd floor of Boundary of Darkness.<BR><BR><FONT color=#7e12d2>※ Reccomended party of 4.</FONT><BR><FONT color=#7e12d2>※ Maximum number of clearance: 5 times a week.<BR></FONT><FONT color=#7e12d2>※ The host must have cleared the 1st floor of Boundary of Darkness.<BR></FONT><BR><FONT color=#086171>Boundary Gateway</FONT> <FONT color=#a82424>→ 35th round of 2nd floor of Boundary of Darkness</FONT></html>]]></contents>
+         <destination mid="37"><![CDATA[Clear 35th round of 2nd floor of Boundary of Darkness]]></destination>
+         <todo_msg mid="38"><![CDATA[Clear 35th round of 2nd floor of Boundary of Darkness]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_darklair_castia.dds</contents_image>
+         <destination_pos>30,n199</destination_pos>
+         <destination_mode>custom:1@0,5@0,8@4,11@4,23@4,15@0,29@4,31@4</destination_mode>
+         <statemark_npcid>199</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="39"><![CDATA[Report to Priestess of Darkness Castia]]></title>
+         <contents mid="40"><![CDATA[<html>Request completed. Report to Priestess of Darkness Castia.<BR><BR><FONT color=#086171>Calderock Gate(Dark Gate)<FONT color=#2b2723> </FONT><FONT color=#a82424>→ Priestess of Darkness Castia</FONT><BR><FONT color=#086171>Saint Haven(Dark Gate)</FONT><FONT color=#2b2723> </FONT><FONT color=#a82424>→ Priestess of Darkness Castia</FONT></FONT></html>]]></contents>
+         <destination mid="41"><![CDATA[Conversation with Priestess of Darkness Castia]]></destination>
+         <todo_msg mid="42"><![CDATA[Request Completed. Talk to Priestess of Darkness Castia]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>351</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

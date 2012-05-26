@@ -1,0 +1,26 @@
+   <talk>
+      <npcename>n122_prairie_wounded</npcename>
+      <npcid>122</npcid>
+      <startexe>1</startexe>
+      <npckname mid="1"><![CDATA[The Wounded Villager]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="2"><![CDATA[<html>$Wounded Villager$<BR>Ooouchhhh! <BR>[The pain seems too much to bear.]</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="enterquest">mq01_004_red_emblem1</exe>
+         <exe type="conexe" true="0" false="4">0</exe>
+         <exe type="talk">001</exe>
+         <exe type="enterquest">mq01_003_red_emblem1</exe>
+         <exe type="conexe" true="3" false="5">1</exe>
+         <exe type="conexe" true="7" false="6">2</exe>
+         <exe type="conexe" true="8" false="2">3</exe>
+         <exe type="enterquest">mq01_015_red_emblem1</exe>
+         <exe type="enterquest">mq01_016_red_emblem1</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">4</chk>
+         <chk type="hasquest">3</chk>
+         <chk type="hasquest">15</chk>
+         <chk type="hasquest">16</chk>
+      </conditions>
+   </talk>

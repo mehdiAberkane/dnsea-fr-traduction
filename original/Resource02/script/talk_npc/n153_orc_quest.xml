@@ -1,0 +1,13 @@
+   <talk>
+      <npcename>n153_orc_quest</npcename>
+      <npcid>153</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Unconscious Orc [Tale of Courage]]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$Fighter Orc$<BR><FONT color=#7e12d2>[The Orc is unconscious but still alive]</FONT></html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions />
+   </talk>

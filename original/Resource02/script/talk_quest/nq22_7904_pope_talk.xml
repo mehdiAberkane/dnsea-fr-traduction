@@ -1,0 +1,89 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq22_7904_pope_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>7904</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Selling at a higher price.]]></qkname>
+      <qnpc>
+         <npcid>277</npcid>
+         <npcename>n277_bluff_dealers_pope</npcename>
+         <npckname>허세상인 포프</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-a" mid="7"><![CDATA[<html>It's bit suspicious</html>]]></talk_answer>
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-c" mid="8"><![CDATA[<html>I'll buy it!</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Merchant Pero$<BR>Here, have a look at this black stone, this is the ordinary black stone you can find everywhere.<BR>I will teach you the trick to selling it at a higher price.<BR>But first of all, buy this blue stone.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-b" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="10"><![CDATA[<html>$Merchant Pero$<BR>Why do you have so many questions? This blue stone costs a cooper and do you think I am doing all this stuff to earn a cooper?<BR>Sigh...I make 5021048gold a month! Do you know that?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Merchant Pero$<BR>Don't do it if you are suspicious of me. Forget it then!<BR>Hey! You have to invest something to gain a return, you can't gain anything for free.<BR><FONT color=#7e12d2>(Pero gets furious)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-c" image="" itemindex="">
+      <talk_answer link_index="n277_bluff_dealers_pope-accepting-d" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Merchant Pero$<BR>No no no. You can't just buy it like that.<BR>How can you survive this tough world being so innocent? You make me sad that you will be fooled over and over in a world where people steal everything in a blink of an eye.<BR><FONT color=#7e12d2>(Pero's eyes are brimming with tears)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n277_bluff_dealers_pope-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Merchant Pero$<BR>If you are going to be fooled why don't you just give me the money?<BR><FONT color=#7e12d2>(Most likely, that was his purpose all along.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 7904, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 277, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 277, 400 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n277_bluff_dealers_pope" sub="c">2,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 비싸게 파는 법" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>277:5000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

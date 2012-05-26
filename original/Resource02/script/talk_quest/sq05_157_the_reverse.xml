@@ -1,0 +1,359 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq05_157_the_reverse</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>157</qid>
+      <designer>곽노찬</designer>
+      <qlevel>8</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Thomas' Task]]></qkname>
+      <qnpc>
+         <npcid>13</npcid>
+         <npcename>n013_cleric_tomas</npcename>
+         <npckname>클레릭 토마스 (마나리지 클레릭 스킬)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>175</npcid>
+         <npcename>n175_cleric_cedric</npcename>
+         <npckname>클레릭 세드릭(쓰러진 용추종자.ver)</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>60</npcid>
+         <npcename>n060_guard_cleric_alcane</npcename>
+         <npckname>가드 알케인</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n060_guard_cleric_alcane-noquest" image="" itemindex="">
+      <talk_question mid="62"><![CDATA[<html>$Guard Alkanes$<BR>Slaves of the Goddess...<BR>Is there something you wish to tell me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n175_cleric_cedric-noquest" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="63"><![CDATA[<html>$Cleric Cedric$<BR>*Pant pant* So...it wasn't by luck that you defeated <FONT color=#a82424>Jake</FONT>... Argggh...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-a" mid="6"><![CDATA[<html>I think... it was Cleric Cedric's face.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Thomas$<BR>You said you remember the <FONT color=#a82424>face</FONT>of the <FONT color=#a82424>Dragon Cultist</FONT>?<BR>Tell me about him.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-accepting-acceptted" mid="8"><![CDATA[<html><FONT color=#086171>Accept quest.</FONT></html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Thomas' Task$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1" image="QN_Npc_Cl_Fallen_Cedric.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-1-a" mid="10"><![CDATA[<html>He...had a unsual aura, but it was Cleric Cedric.</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Master Cleric Thomas$<BR>Cleric Cedric?! You mean the same <FONT color=#a82424>Cedric</FONT> who was attacked and injured by the monsters?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-1-a" image="QN_Npc_Cl_Fallen_Cedric.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-2" mid="12"><![CDATA[<html>He was at Frost Hill, but he seems to have gone missing.</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Master Cleric Thomas$<BR>Cleric Cedric... He was injured thus taken out of the pursuit team, but... Hmm. So where is <FONT color=#a82424>Cleric Cedric</FONT> right now?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n060_guard_cleric_alcane-1" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Guard Alkanes$<BR>Slaves of the Goddess...<BR>Is there something you wish to tell me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n175_cleric_cedric-1" image="QN_Jake.dds" itemindex="">
+      <talk_question mid="16"><![CDATA[<html>$Cleric Cedric$<BR>*Pant pant* So...it wasn't by luck that you defeated <FONT color=#a82424>Jake</FONT>... Argggh...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-2" image="Npc_Cl_Fallen.dds" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Master Cleric Thomas$<BR>Son of a biscuit!<BR>But, in that case, go ask <FONT color=#a82424>Guard Alkanes</FONT> at <FONT color=#a82424>Frost Hill</FONT> about Cleric Cedric's movements.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n060_guard_cleric_alcane-2" image="" itemindex="">
+      <talk_answer link_index="n060_guard_cleric_alcane-2-a" mid="18"><![CDATA[<html>Do you happen to know where Cleric Cedric is?</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Guard Alkanes$<BR>Slaves of the Goddess...<BR>Is there something you wish to tell me?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n060_guard_cleric_alcane-2-a" image="QN_Npc_Cl_Fallen_Cedric.dds" itemindex="">
+      <talk_answer link_index="n060_guard_cleric_alcane-2-b" mid="20"><![CDATA[<html><FONT size=2>(Continue)</FONT></html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Guard Alkanes$<BR>Ah, Cleric <FONT color=#a82424>Cedric</FONT>?<BR>He seems fine physically, but he is acting weird...perhaps the guilt over losing the Cane? He's much more active now, as though he was never injured. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n060_guard_cleric_alcane-2-b" image="QW_11.dds" itemindex="">
+      <talk_answer link_index="n060_guard_cleric_alcane-2-c" mid="22"><![CDATA[<html>Thank you for the information.</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Guard Alkanes$<BR>Cleric <FONT color=#a82424>Cedric</FONT> should be at <FONT color=#a82424>Marian's Shrine</FONT>. I haven't been there personally, but he told me that it's a good place for resting and meditation. He told me that he often visit there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n060_guard_cleric_alcane-2-c" image="" itemindex="">
+      <talk_question mid="23"><![CDATA[<html>$Guard Alkanes$<BR>You are welcomed.<BR>May the Goddess's blessings be with you.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n060_guard_cleric_alcane-3" image="QW_11.dds" itemindex="">
+      <talk_question mid="24"><![CDATA[<html>$Guard Alkanes$<BR>Cleric <FONT color=#a82424>Cedric</FONT> should be at <FONT color=#a82424>Marian's Shrine</FONT>. I haven't been there personally, but he told me that it's a good place for resting and meditation. He told me that he often visit there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n175_cleric_cedric-4" image="QN_Jake.dds" itemindex="">
+      <talk_answer link_index="n175_cleric_cedric-4-a" mid="26"><![CDATA[<html>You filthy Dragon Cultist! Tell me how many more of you guys are out there hiding!</html>]]></talk_answer>
+      <talk_question mid="25"><![CDATA[<html>$Cleric Cedric$<BR>*Pant pant* So...it wasn't by luck that you defeated <FONT color=#a82424>Jake</FONT>... Argggh...</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n175_cleric_cedric-4-a" image="QN_DragonSycophant.dds" itemindex="">
+      <talk_answer link_index="n175_cleric_cedric-4-b" mid="28"><![CDATA[<html>What's this? Am I suppose to believe you now?</html>]]></talk_answer>
+      <talk_question mid="27"><![CDATA[<html>$Master Cleric Thomas$<BR>Haha... <FONT color=#a82424>Dragon Cultist</FONT>... *cough cough*... Even... Fool like <FONT color=#a82424>Jake</FONT> was conned... argghh...<BR>I'm no <FONT color=#a82424>Dragon Cultist</FONT>... Hahaha... *cough*</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n175_cleric_cedric-4-b" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n175_cleric_cedric-4-c" mid="30"><![CDATA[<html>Lord? Who is that? Tell me!</html>]]></talk_answer>
+      <talk_question mid="29"><![CDATA[<html>$Cleric Cedric$<BR>You don't have to believe me...*cough cough*...<BR>But remember this... The <FONT color=#a82424>secret</FONT> of the <FONT color=#a82424>Cane</FONT> and the <FONT color=#a82424>Orb</FONT> you chased so desperately for has already been delivered to my master... the <FONT color=#a82424>Lord</FONT>. Haha... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n175_cleric_cedric-4-c" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n175_cleric_cedric-5" mid="32"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="31"><![CDATA[<html>$Cleric Cedric${action:Talk}<BR>Haha... patience... you will... meet him… arrgghhh...<BR><FONT color=#a82424>Dark Lord</FONT>... I p...pray... </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n175_cleric_cedric-5" image="QN_Cedric_Down.dds" itemindex="">
+      <talk_question mid="33"><![CDATA[<html>$Cleric Cedric$<BR>...<BR><FONT color=#7e12d2>(Cedric lies motionless, he has stop breathing.)</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5" image="QN_Npc_Velskud1.dds" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-a" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Cleric Thomas$<BR>Goddess bless us...it really was Cleric Cedric...<BR>But who is this <FONT color=#a82424>Dark Lord</FONT>? Could this be another force set against us, besides the <FONT color=#a82424>Dragon Cult</FONT>?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-a" image="" itemindex="">
+      <talk_answer link_index="n013_cleric_tomas-5-b" mid="37"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n013_cleric_tomas-5-b" image="QW_SaintHaven.dds" itemindex="">
+      <talk_question mid="38"><![CDATA[<html>$Master Cleric Thomas$<BR>So...the world is heading towards chaos... Tsk...<BR>In any case, good work. Rest until we hear from the <FONT color=#a82424>Saint Haven Cathedral</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">1570,,,,</exe>
+         <exe type="talk" npc="n013_cleric_tomas">1</exe>
+         <exe type="setquest">157</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="4">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">5</exe>
+         <exe type="setjornal">5</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="5">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">1570,,,,</exe>
+         <exe type="complete">157</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="a">0</exelink>
+   <exelink qstep="accepting" npc="n013_cleric_tomas" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n013_cleric_tomas" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n060_guard_cleric_alcane" sub="b" />
+   <exelink qstep="2" npc="n060_guard_cleric_alcane" sub="c">0,1</exelink>
+   <exelink qstep="4" npc="n175_cleric_cedric" sub="b" />
+   <exelink qstep="4" npc="n175_cleric_cedric" sub="c" />
+   <exelink qstep="4" npc="n175_cleric_cedric" sub="5">0,1</exelink>
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="a">0</exelink>
+   <exelink qstep="5" npc="n013_cleric_tomas" sub="b">1</exelink>
+   <journal_data recompense="0:1570" quest_title="리버스" chapterid="" quest_level="8" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="42"><![CDATA[Talk to Master Cleric Thomas]]></title>
+         <contents mid="43"><![CDATA[<html>Describe the face of the Dragon Followers that was at Frost Wind Forest to <FONT color=#a82424>Cleric Thomas</FONT>.<BR> <BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Cleric Thomas</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[Talk to Master Cleric Thomas]]></destination>
+         <todo_msg mid="45"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <title_image />
+         <contents_image>Npc_Cl_Fallen.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>6,-16,-1246</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>60</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="46"><![CDATA[Talk to Guard Alkanes at Frost Hill]]></title>
+         <contents mid="47"><![CDATA[<html>Meet <FONT color=#a82424>Priestess of Darkness Mioitiaman Alkanes</FONT> at <FONT color=#a82424>Frost Hill</FONT> and ask about Cedric's whereabouts.<BR> <BR><FONT color=#086171>Frost Hill</FONT> <FONT color=#a82424>→ Priestess of Darkness Mioitiaman Alkanes</FONT></html>]]></contents>
+         <destination mid="48"><![CDATA[Talk to Guard Alkanes at Frost Hill]]></destination>
+         <todo_msg mid="49"><![CDATA[Please talk to Guard Alkanes at Frost Hill.]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <title_image />
+         <contents_image>QN_Npc_Cl_Fallen_Cedric.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>103,0,0</destination_pos>
+         <destination_mode>custom:101@1,102@1,103@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="50"><![CDATA[Find Cleric Cedric at Marian's Shrine]]></title>
+         <contents mid="51"><![CDATA[<html>Priestess of Darkness Mioitiaman Alkanes says that <FONT color=#a82424>Cedric</FONT> headed towards <FONT color=#a82424>Marian's Shrine</FONT>.<BR>Find Cleric Cedric at Marian's Shrine.<BR> <BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Marian's Shrine</FONT></html>]]></contents>
+         <destination mid="52"><![CDATA[Find Cleric Cedric at Marian's Shrine]]></destination>
+         <todo_msg mid="53"><![CDATA[Please find Cleric Cedric Marian's Shrine.]]></todo_msg>
+      </journal>
+      <journal index="4">
+         <title_image>QN_Cedric_Down.dds</title_image>
+         <contents_image>QN_Cedric_Down.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>103,387,-571</destination_pos>
+         <destination_mode>custom:101@1,102@1,103@1</destination_mode>
+         <statemark_npcid>175</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="54"><![CDATA[Talk to Cleric Cedric at Marian's Shrine]]></title>
+         <contents mid="55"><![CDATA[<html>You found <FONT color=#a82424>Cedric</FONT>, dressed in <FONT color=#a82424>Dragon Follower</FONT>'s garb, at Marian's Shrine!<BR>Talk to Cedric.<BR> <BR><FONT color=#086171>Blizzard Plain (Secret Path)</FONT> <FONT color=#a82424>→ Marian's Shrine(Cleric Cedric)</FONT></html>]]></contents>
+         <destination mid="56"><![CDATA[Talk to Cleric Cedric at Marian's Shrine]]></destination>
+         <todo_msg mid="57"><![CDATA[Please talk to Cleric Cedric.]]></todo_msg>
+      </journal>
+      <journal index="5">
+         <title_image />
+         <contents_image>QN_Cl_Tomas.dds</contents_image>
+         <need_itemlist />
+         <destination_pos>5,-518,1452</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>13</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <get_location />
+         <start_npc />
+         <desc_location />
+         <step_action />
+         <complete_npc />
+         <get_item />
+         <get_itemindex />
+         <hunt_monster />
+         <hunt_monsterindex />
+         <collect_item />
+         <collect_itemindex />
+         <comp_symbol />
+         <comp_symbolindex />
+         <comp_item />
+         <comp_itemindex />
+         <comp_exp />
+         <comp_money />
+         <trigger_string />
+         <maptool_index />
+         <title mid="58"><![CDATA[Talk to Master Cleric Thomas]]></title>
+         <contents mid="59"><![CDATA[<html>Return to Mana Ridge and report Cedric's secret to Cleric Thomas. <BR><BR><FONT color=#086171>Mana Ridge</FONT> <FONT color=#a82424>→ Cleric Thomas</FONT></html>]]></contents>
+         <destination mid="60"><![CDATA[Talk to Master Cleric Thomas]]></destination>
+         <todo_msg mid="61"><![CDATA[Please return to Mana Ridge and talk to Master Cleric Thomas.]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest>156</prev_quest>
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

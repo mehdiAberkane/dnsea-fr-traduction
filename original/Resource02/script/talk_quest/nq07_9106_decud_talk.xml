@@ -1,0 +1,96 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq07_9106_decud_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9106</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] Master Sorceress Tiana]]></qkname>
+      <qnpc>
+         <npcid>24</npcid>
+         <npcename>n024_adventurer_guildmaster_decud</npcename>
+         <npckname>모험자 길드장 데커드</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="" itemindex="">
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>Do you want me to introduce her to you?</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="7"><![CDATA[<html>At least, she won't get married yet.</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="8"><![CDATA[<html>But she's quite a good sorceress.</html>]]></talk_answer>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-d" mid="9"><![CDATA[<html>Every Jack has his Jill.</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Hush! Don't say this about her. She has such a hot temper. I don't think that she can date.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="" itemindex="">
+      <talk_question mid="10"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>No way! Stop saying it even as a joke.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="" itemindex="">
+      <talk_question mid="11"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>
+Hahaha, yes, that's fortunate.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-c" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>
+As a Sorceress, I think Tiana's ability is excellent. She's good.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-d" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>
+Well, I'm not sure that any man can control her, but I'm sure about this -  that man is not me.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 9106, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 400 );</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 24, 400 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 200 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 24, 100 );</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="a">1,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="b">2,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="c">3,0</exelink>
+   <exelink qstep="accepting" npc="n024_adventurer_guildmaster_decud" sub="d">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 상급 소서리스 티아나에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>24:9000:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

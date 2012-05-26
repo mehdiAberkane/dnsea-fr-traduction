@@ -1,0 +1,260 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq15_815_another_telejia</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>815</qid>
+      <designer>곽노찬</designer>
+      <qlevel>40</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[Another Telejia]]></qkname>
+      <qnpc>
+         <npcid>147</npcid>
+         <npcename>n147_mailbox</npcename>
+         <npckname>우편함</npckname>
+      </qnpc>
+      <qnpc>
+         <npcid>712</npcid>
+         <npcename>n712_archer_zenya</npcename>
+         <npckname>상급 아처 제냐</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-noquest" image="QN_Npc_Postbox.dds" itemindex="">
+      <talk_question mid="72"><![CDATA[<html>$Master Archer Zenya$<BR>
+If you want to talk with boring topics, no thanks.<BR>
+ <BR>
+※ <FONT color=#7e12d3>You can get a quest in the post box of Lotus Marsh.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-accepting" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-accepting-a" mid="6"><![CDATA[<html>(Read the letter)</html>]]></talk_answer>
+      <talk_question mid="5"><![CDATA[<html>$Post Box$<BR>You've got a letter from Saint Haven's <FONT color=#a82425>Master Archer Isillien</FONT>.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n147_mailbox-accepting-acceptted" mid="61"><![CDATA[<html><FONT color=#086172>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Another Telejia$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="7"><![CDATA[<html>$Isillien's letter$<BR>Did you arrive at <FONT color=#7e12d3>there Lotus Marsh safely?</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-a" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-b" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="9"><![CDATA[<html>$Isillien's letter$<BR><FONT color=#7e12d3>The reason why I'm writing this letter is to tell you about 'Guardian of pledge'.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-b" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-c" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="11"><![CDATA[<html>$Isillien's letter$<BR><FONT color=#7e12d3>The guardian of pledge is noble and tough telejia. Elfs who regarded as a guardian of pledge has to walk on the path for protecting Tree of Life.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-c" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-d" mid="14"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="13"><![CDATA[<html>$Isillien's letter$<BR><FONT color=#7e12d3>And one of the guardians of pledge will become new Anu Arendel's queen.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-d" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-e" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="17"><![CDATA[<html>$Isillien's letter$<BR><FONT color=#7e12d2>{user_nick}. The reason why I'm telling you this is that you deserve to be 'The guardian of pledge'.</FONT><BR>
+<FONT color=#7e12d3>However, it doesn't mean that you'll definitely become the queen.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-e" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-f" mid="20"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="19"><![CDATA[<html>$Isillien's letter$<BR><FONT color=#7e12d2>{user_nick}, you're qualified to be the guardian but I'm still hesitating. </FONT><FONT color=#7e12d3>Because you did go for one step, but you haven't stepped further so far.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-f" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-1-g" mid="22"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="21"><![CDATA[<html>$Isillien's letter$<BR><FONT color=#7e12d2>Tree of Life's sister, you can't resist the destiny. Even though this would demand some sacrifices.</FONT><BR>
+<FONT color=#7e12d3>Don't ever stop but go on your way. You should accept your destiny and endure it. May Goddess bless be with your telejia.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-1-g" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_answer link_index="n147_mailbox-2" mid="24"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="23"><![CDATA[<html>$Isillien's letter$<BR><FONT color=#7e12d2>I'm going to help you to walk on your way rightly. Lotus Marsh's Master Archer Zenya will do that too. You should meet her.</FONT><BR>
+<FONT color=#7e12d3></FONT> </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-1" image="" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Master Archer Zenya$<BR>If you want to talk with boring topics, no thanks.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n147_mailbox-2" image="QN_Npc_Archer_Ishilien.dds" itemindex="">
+      <talk_question mid="25"><![CDATA[<html>$Isillien's letter$<BR><FONT color=#7e12d3>Pala Telejia, I hope you'll find your own way.</FONT></html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-a" mid="29"><![CDATA[<html>I came from Saint Haven.</html>]]></talk_answer>
+      <talk_question mid="28"><![CDATA[<html>$Master Archer Zenya$<BR>Huh? I've never met you before, where did you come here?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-a" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-b" mid="31"><![CDATA[<html>Good to see you too.</html>]]></talk_answer>
+      <talk_question mid="30"><![CDATA[<html>$Master Archer Zenya$<BR>
+Oh… you must be the girl that Isillien said?<BR>
+Good to see you, my name is Master Archer Zenya. I'm working for saving young elfs who don't know their ways in Lotus Marsh.~</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-b" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-c" mid="33"><![CDATA[<html>In fact… This is about telejia.</html>]]></talk_answer>
+      <talk_question mid="32"><![CDATA[<html>$Master Archer Zenya$<BR>
+But, you didn't come here only to say hello….<BR>
+You must have something in your mind.<BR>
+I don't know that, but tell me anything.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-c" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-d" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="34"><![CDATA[<html>$Master Archer Zenya$<BR>
+telejia…? You're worrying about too serious things for youngsters. Usually children asked me about"<FONT color=#a82424>Some human boy tried courting me.</FONT>" or, "<FONT color=#a82425>I want to have a boyfriend, where can I meet him?</FONT>"….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-d" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-e" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="36"><![CDATA[<html>$Master Archer Zenya$<BR>
+telejia… actually I don't want to talk with that kind of serious topics.<BR>
+I missed and lost a lot because of telejia….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-e" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-f" mid="39"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="38"><![CDATA[<html>$Master Archer Zenya$<BR>
+Yes, this is our destiny.<BR>
+Yes, this is our fate.<BR>
+It's telejia, we can't resist….</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-f" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-g" mid="41"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="40"><![CDATA[<html>$Master Archer Zenya$<BR>
+I always made excuses and felt self-comfort.<BR>
+Everything is going on as the destiny goes….<BR>
+I can't change anything against my destiny.<BR>
+I can't help but just following my destiny.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-g" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-h" mid="44"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="43"><![CDATA[<html>$Master Archer Zenya$<BR>
+I've been living like this. I could've looked back, looked the other sides. But I haven't even tried.<BR>
+I've never had any doubts about my destiny and just followed telejia.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-h" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-i" mid="46"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="45"><![CDATA[<html>$Master Archer Zenya$<BR>However, It's not what telejia wants.<BR>
+I'm not saying you should resist the telejia.<BR>But, you don't need to close your eyes and isolate yourself without seeing other sides.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-i" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-j" mid="49"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="48"><![CDATA[<html>$Master Archer Zenya$<BR>For an elf, telejia is life and purpose.<BR>
+However, the end of it isn't only one. It changes continuously.<BR>In my opinion, you haven't decided your telejia yet.<BR>
+</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-j" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-k" mid="55"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="53"><![CDATA[<html>$Master Archer Zenya$<BR>Don't be hesitate but wait in calm.<BR>When it's time, wind will come to you whispering the truth.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-k" image="" itemindex="">
+      <talk_answer link_index="n712_archer_zenya-2-l" mid="57"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n712_archer_zenya-2-l" image="" itemindex="">
+      <talk_question mid="58"><![CDATA[<html>$Master Archer Zenya$<BR>There's no answer in telejia.<BR>
+You don't need to worry about right answers because there can't be an answer.<BR>
+You feel that in your heart. Don't try to understand that by your head. <BR>
+Pala telejia. I hope you'll find happiness at the end of the journey….</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setquest">815</exe>
+         <exe type="talk" npc="n147_mailbox">1</exe>
+         <exe type="recompense_view">8150,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="complete">815</exe>
+         <exe type="recompense">8150,,,,,</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n147_mailbox" sub="a">2</exelink>
+   <exelink qstep="accepting" npc="n147_mailbox" sub="acceptted">0,1</exelink>
+   <exelink qstep="1" npc="n147_mailbox" sub="b" />
+   <exelink qstep="1" npc="n147_mailbox" sub="c" />
+   <exelink qstep="1" npc="n147_mailbox" sub="d" />
+   <exelink qstep="1" npc="n147_mailbox" sub="e" />
+   <exelink qstep="1" npc="n147_mailbox" sub="f" />
+   <exelink qstep="1" npc="n147_mailbox" sub="g" />
+   <exelink qstep="1" npc="n147_mailbox" sub="2">0,1</exelink>
+   <exelink qstep="2" npc="n712_archer_zenya" sub="b" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="c" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="d" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="e" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="f" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="g" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="h" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="i" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="j" />
+   <exelink qstep="2" npc="n712_archer_zenya" sub="k">1</exelink>
+   <exelink qstep="2" npc="n712_archer_zenya" sub="l">0</exelink>
+   <journal_data recompense="8150" quest_title="또 다른 텔레지아" chapterid="" quest_level="40" quest_mark_type="10" use_item_list="">
+      <journal index="1">
+         <contents_image>QN_Npc_Postbox.dds</contents_image>
+         <destination_pos>15,n147</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>147</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="64"><![CDATA[Isillien's letter]]></title>
+         <contents mid="65"><![CDATA[<html>Saint Haven's Master Archer Isillien sent me a letter. Let's read it.<BR><BR><FONT color=#086171>Lotus Marsh</FONT> <FONT color=#a82425>→ Post Box</FONT></html>]]></contents>
+         <destination mid="66"><![CDATA[Read the letter in the Lotus Marsh's post box]]></destination>
+         <todo_msg mid="67"><![CDATA[Quest has been added.]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QN_Npc_Lotus_ArcherZenya.dds</contents_image>
+         <destination_pos>15,n712</destination_pos>
+         <destination_mode>custom</destination_mode>
+         <statemark_npcid>712</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="68"><![CDATA[Master Archer Zenya]]></title>
+         <contents mid="69"><![CDATA[<html>Meet with Master Archer Zenya.<BR><BR>Lotus Marsh <FONT color=#a82425>→ Master Archer Zenya</FONT></html>]]></contents>
+         <destination mid="70"><![CDATA[Talk with Master Archer Zenya]]></destination>
+         <todo_msg mid="71"><![CDATA[Talk with Master Archer Zenya]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>40:-1</user_level>
+      <user_worldzone_level />
+      <user_class>2</user_class>
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

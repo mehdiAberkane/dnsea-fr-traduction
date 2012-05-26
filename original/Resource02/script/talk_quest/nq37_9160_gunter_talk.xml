@@ -1,0 +1,103 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>nq37_9160_gunter_talk</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>9160</qid>
+      <designer>박정민</designer>
+      <qlevel>1</qlevel>
+      <qdesc />
+      <qdifficulty>1</qdifficulty>
+      <nextqid />
+      <nextqname />
+      <nextqnpc />
+      <qkname mid="1"><![CDATA[[Talk] About Lotus Marsh]]></qkname>
+      <qnpc>
+         <npcid>36</npcid>
+         <npcename>n036_adventurer_guildmaster_gunter</npcename>
+         <npckname>모험자 길드장 군터</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-a" mid="17"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Lotus Marsh is covered by jungles and swamps. In the past, sorceresses have used them as a safe house when they were being persecuted. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-b" mid="20"><![CDATA[<html> Jungles and swamp, horrible! </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-c" mid="21"><![CDATA[<html> Jungles…Sounds interesting. </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-d" mid="22"><![CDATA[<html> Wasn't Mana Ridge the home of sorceresses? </html>]]></talk_answer>
+      <talk_answer link_index="n036_adventurer_guildmaster_gunter-accepting-e" mid="23"><![CDATA[<html> What are the natives like?</html.]]></talk_answer>
+      <talk_question mid="18"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+So sorceresses still use that area as a base. If you go there, be careful of natives. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-b" image="" itemindex="">
+      <talk_question mid="12"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Well, I don’t want you to form prejudices towards a place you haven’t been to. I don’t like your attitude of saying negative things about a place you never been to. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-c" image="" itemindex="">
+      <talk_question mid="13"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Don’t expect much about the place you've never been to. Once you are there, you will feel it is a very different place from your imagination. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-d" image="" itemindex="">
+      <talk_question mid="14"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Mana Ridge is the holy land to clerics and sorceresses. Those remaining sorceresses in Mana Ridge are there to keep the peace in holy land. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n036_adventurer_guildmaster_gunter-accepting-e" image="" itemindex="">
+      <talk_question mid="15"><![CDATA[<html>$Adventurer’s Guild Master Gunther$<BR>
+Well, they are not exactly humans nor animals. More like a mix of both. They are on friendly terms with humans but they are sensitive to foreigners so be careful.</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="custom">api_quest_ForceCompleteQuest(userObjID, 9160, 0, 1, 1, 0);</exe>
+         <exe type="custom">api_npc_AddMalicePoint( userObjID, 36, 320 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 80 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 160 );</exe>
+         <exe type="custom">api_npc_AddFavorPoint( userObjID, 36, 320 ); </exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="b">1,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="c">2,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="d">3,0</exelink>
+   <exelink qstep="accepting" npc="n036_adventurer_guildmaster_gunter" sub="e">4,0</exelink>
+   <journal_data recompense="" quest_title="[대화] 로터스 마쉬에 대해서" chapterid="" quest_level="1" quest_mark_type="10" use_item_list="" />
+   <condition_data>
+      <user_level />
+      <user_worldzone_level />
+      <user_class />
+      <prev_quest />
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor>36:15200:-1</npc_favor>
+      <npc_malice />
+   </condition_data>
+</quest>

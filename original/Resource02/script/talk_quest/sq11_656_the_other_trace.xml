@@ -1,0 +1,197 @@
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <quest_desc>
+      <qename>sq11_656_the_other_trace</qename>
+      <qtype>subquest</qtype>
+      <qcomtype>ONCE</qcomtype>
+      <qchapter>-1</qchapter>
+      <qid>656</qid>
+      <designer>김인정</designer>
+      <qlevel>38</qlevel>
+      <qdesc>*루시피나의 일기	300349</qdesc>
+      <qdifficulty>1</qdifficulty>
+      <nextqid>657</nextqid>
+      <nextqname>sq11_657_this_witch</nextqname>
+      <nextqnpc>n046_cleric_master_enoc</nextqnpc>
+      <qkname mid="1"><![CDATA[Different Evidence]]></qkname>
+      <qnpc>
+         <npcid>46</npcid>
+         <npcename>n046_cleric_master_enoc</npcename>
+         <npckname>상급 클레릭 에녹</npckname>
+      </qnpc>
+   </quest_desc>
+   <talk_paragraph index="q_enter" />
+   <talk_paragraph index="!quit" />
+   <talk_paragraph index="_no_quest">
+      <talk_question mid="2"><![CDATA[<html>{ui_string:1200001}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_quest">
+      <talk_question mid="3"><![CDATA[<html>{ui_string:1200002}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_inventory">
+      <talk_question mid="4"><![CDATA[<html>{ui_string:1200003}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_daily_quest_fail">
+      <talk_question mid="99998"><![CDATA[<html>{ui_string:1200004}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="_full_Qinventory">
+      <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-a" mid="7"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="6"><![CDATA[<html>$Master Cleric Enoch$<BR>
+Since there are strange footsteps, it is bothering me.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-b" mid="57"><![CDATA[<html>Okay.</html>]]></talk_answer>
+      <talk_question mid="56"><![CDATA[<html>$Master Cleric Enoch$<BR>
+It might belong to Dragon Followers.<BR>
+Let's investigate the suspicious part first.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-accepting-b" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-accepting-acceptted" mid="13"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
+      <talk_question mid="12"><![CDATA[<html>$Different evidence$</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1" image="QW_41.dds" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-1-a" mid="15"><![CDATA[<html>What? Diary?</html>]]></talk_answer>
+      <talk_question mid="14"><![CDATA[<html>$Master Cleric Enoch${action:Talk}<BR>You should hurry<FONT color=#a82424>and investigate </FONT>the Explosion Zone in Forest of Death.<BR>It will be good if you bring it if it is still there.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1-a" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-1-b" mid="59"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="58"><![CDATA[<html>$Master Cleric Enoch$<BR>
+The Nameless Tyrant Tomb that you have investigated has a deep relationship with this kind of situation. That place had a terrible moment because of the heresy. </html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1-b" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-1-c" mid="61"><![CDATA[<html>(Enoch looks serious)</html>]]></talk_answer>
+      <talk_question mid="60"><![CDATA[<html>$Master Cleric Enoch$<BR>
+The diary that has the history of that situation is at that the Explosion Zone in the Forest of Death. The cult tried to get that many times but they all failed. They thought that was not important,but....</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-1-c" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-2" mid="25"><![CDATA[<html>Okay, I'll go and see.</html>]]></talk_answer>
+      <talk_question mid="24"><![CDATA[<html>$Master Cleric Enoch$<BR>But, regardless of whether it is the Dragon Followers, someone has interest in this "situation". We need to check that diary.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-2" image="QW_41.dds" itemindex="">
+      <talk_question mid="27"><![CDATA[<html>$Master Cleric Enoch$<BR><FONT color=#a82424>It's </FONT>Explosion Zone in the Forest of Death.<BR>Hmm.... now they are looking into the witch's heresy… that I cannot understand.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-a" mid="63"><![CDATA[<html>It's here.</html>]]></talk_answer>
+      <talk_question mid="62"><![CDATA[<html>$Master Cleric Enoch${action:Talk}<BR>Oh, you are back?<BR>Is the diary back?</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-a" image="QS_Default.dds" itemindex="300349">
+      <talk_answer link_index="n046_cleric_master_enoc-3-b" mid="66"><![CDATA[<html>Who can they be?</html>]]></talk_answer>
+      <talk_question mid="64"><![CDATA[<html>$Master Cleric Enoch$<BR>Hmmm…<FONT color=#7e12d2> (Enoch looks through the diary)</FONT>… I knew there were some places that were missing.<BR>I was pretty sure that someone ripped it out.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-b" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-c" mid="68"><![CDATA[<html>(Continue)</html>]]></talk_answer>
+      <talk_question mid="67"><![CDATA[<html>$Master Cleric Enoch$<BR>Can't find that out. So many documents are gone, and I don't have enough resources.<BR><FONT color=#a82424>It's been passed to</FONT>Nameless Tyrant Tomb. The cult is in this situation now.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-c" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-d" mid="70"><![CDATA[<html>Yes, that's right.</html>]]></talk_answer>
+      <talk_question mid="69"><![CDATA[<html>$Master Cleric Enoch$<BR>But i know that someone else is looking into this also.<BR>I am concerned about their goal.</html>]]></talk_question>
+   </talk_paragraph>
+   <talk_paragraph index="n046_cleric_master_enoc-3-d" image="" itemindex="">
+      <talk_answer link_index="n046_cleric_master_enoc-3-!next" mid="72"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
+      <talk_question mid="71"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
+   </talk_paragraph>
+   <qstep_change qstep="accepting">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense_view">6560,,,,,</exe>
+         <exe type="setquest">656</exe>
+         <exe type="talk" npc="n046_cleric_master_enoc">1</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="1">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="setstep">2</exe>
+         <exe type="setjornal">2</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">1081</exe>
+         <exe type="huntmon" num="30000" party="1" exe="" onexe="4,5,6,7">201081</exe>
+         <exe type="addquestitem" num="1">300349</exe>
+         <exe type="delcount">.</exe>
+         <exe type="setstep">3</exe>
+         <exe type="setjornal">3</exe>
+      </executions>
+   </qstep_change>
+   <qstep_change qstep="2">
+      <comment />
+      <conditions />
+      <executions />
+   </qstep_change>
+   <qstep_change qstep="3">
+      <comment />
+      <conditions />
+      <executions>
+         <exe type="recompense">6560,,,,,</exe>
+         <exe type="delquestitem" num="-1">300349</exe>
+         <exe type="complete">656</exe>
+      </executions>
+   </qstep_change>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="b">0</exelink>
+   <exelink qstep="accepting" npc="n046_cleric_master_enoc" sub="acceptted">1,2</exelink>
+   <exelink qstep="1" npc="n046_cleric_master_enoc" sub="b" />
+   <exelink qstep="1" npc="n046_cleric_master_enoc" sub="c" />
+   <exelink qstep="1" npc="n046_cleric_master_enoc" sub="2">0,2,3,1</exelink>
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="b" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="c" />
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="d">0</exelink>
+   <exelink qstep="3" npc="n046_cleric_master_enoc" sub="!next">1,2</exelink>
+   <journal_data recompense="0:6560" quest_title="또 다른 흔적" chapterid="" quest_level="38" quest_mark_type="10" use_item_list="300349">
+      <journal index="1">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="44"><![CDATA[Concern]]></title>
+         <contents mid="45"><![CDATA[<html>let's listen to Master Cleric Enoch's story <BR><BR><FONT color=#086171>Saint Haven </FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="46"><![CDATA[Chat with Master Cleric Enoch]]></destination>
+         <todo_msg mid="47"><![CDATA[Quest has been added]]></todo_msg>
+      </journal>
+      <journal index="2">
+         <contents_image>QW_41.dds</contents_image>
+         <destination_pos>413,0,0</destination_pos>
+         <destination_mode>custom:411@1,412@1,413@4</destination_mode>
+         <statemark_npcid />
+         <statemark_type>11</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="48"><![CDATA[Diary]]></title>
+         <contents mid="49"><![CDATA[<html>There might be a witch's heretic history book left behind at the Forest of Death. Let's go check.<BR><BR><FONT color=#086171>Black Mountain (Lonely Road)</FONT> <FONT color=#a82424>→Explosion Zone in the Forest of Death</FONT></html>]]></contents>
+         <destination mid="50"><![CDATA[go to the explosive zone death of forest and find the diary]]></destination>
+         <todo_msg mid="51"><![CDATA[Find the diary at Explosion Zone in the Forest of Death]]></todo_msg>
+      </journal>
+      <journal index="3">
+         <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>
+         <destination_pos>11,n46</destination_pos>
+         <destination_mode />
+         <statemark_npcid>46</statemark_npcid>
+         <statemark_type>12</statemark_type>
+         <trigger_string />
+         <maptool_index />
+         <title mid="52"><![CDATA[Suspicion]]></title>
+         <contents mid="53"><![CDATA[<html>Found the diary. Let's inform Master Cleric Enoch.<BR>
+<BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Master Cleric Enoch</FONT></html>]]></contents>
+         <destination mid="54"><![CDATA[Chat with Master Cleric Enoch]]></destination>
+         <todo_msg mid="55"><![CDATA[Give the diary to Master Cleric Enoch]]></todo_msg>
+      </journal>
+   </journal_data>
+   <condition_data>
+      <user_level>38:-1</user_level>
+      <user_worldzone_level />
+      <user_class>4</user_class>
+      <prev_quest>655</prev_quest>
+      <have_quest />
+      <have_normal_item />
+      <complete_mission />
+      <have_symbol_item />
+      <quest_date />
+      <quest_day />
+      <npc_favor />
+      <npc_malice />
+   </condition_data>
+</quest>

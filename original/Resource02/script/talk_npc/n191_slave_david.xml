@@ -1,0 +1,20 @@
+   <talk>
+      <npcename>n191_slave_david</npcename>
+      <npcid>191</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[Adventurer David]]></npckname>
+      <talk_paragraph index="001" image="">
+         <talk_question mid="3"><![CDATA[<html>$Adventurer David$<BR>Do you see that lady over there? Her beauty will shame any flower!<BR>Ahh! My Lady Rose who shines brighter than any other!<BR>[David cannot take his eyes off <FONT color=#a82424>Argenta</FONT>.]</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq08_267_crisis_of_david</exe>
+         <exe type="conexe" true="3" false="4">1</exe>
+         <exe type="enterquest">sq08_266_argenta_darkelf</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">267</chk>
+         <chk type="hasquest">266</chk>
+      </conditions>
+   </talk>

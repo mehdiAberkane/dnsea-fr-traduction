@@ -1,0 +1,18 @@
+   <talk>
+      <npcename>n453_king_casius</npcename>
+      <npcid>453</npcid>
+      <startexe>0</startexe>
+      <npckname mid="1"><![CDATA[King Cassius
+(Dark Overlord Tower)]]></npckname>
+      <talk_paragraph index="001" image="" itemindex="">
+         <talk_question mid="3"><![CDATA[<html>$King Cassius$<BR>Ugh… Save me….<BR>Uncle… General~!! Ughhh…!!</html>]]></talk_question>
+      </talk_paragraph>
+      <executions>
+         <exe type="conexe" true="1" false="2">0</exe>
+         <exe type="enterquest">sq11_698_bad_donald</exe>
+         <exe type="talk">001</exe>
+      </executions>
+      <conditions>
+         <chk type="hasquest">698</chk>
+      </conditions>
+   </talk>
