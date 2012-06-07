@@ -116,7 +116,7 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[Defeat Smoky Brethren Ice Mage]]></title>
-         <contents mid="43"><![CDATA[<html>Defeat 3 Smokey Brethan, the Ice Mage at Silent Monastery Main Hall.<BR><BR><FONT color=#086171>Blizzard Plain (Silent Monastery Gates) </FONT><FONT color=#a82424>→ Silent Monastery Main Hall</FONT></html>]]></contents>
+         <contents mid="43"><![CDATA[<html>Defeat 3 Smokey Brethren, the Ice Mage at Silent Monastery Main Hall.<BR><BR><FONT color=#086171>Blizzard Plain (Silent Monastery Gates) </FONT><FONT color=#a82424>→ Silent Monastery Main Hall</FONT></html>]]></contents>
          <destination mid="44"><![CDATA[[Hunt] Silent Monastery Main Hall]]></destination>
          <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
       </journal>

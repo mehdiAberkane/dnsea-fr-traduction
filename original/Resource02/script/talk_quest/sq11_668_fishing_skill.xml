@@ -38,11 +38,11 @@
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-a" mid="9"><![CDATA[<html>It smells fishy!!</html>]]></talk_answer>
-      <talk_question mid="7"><![CDATA[<html>$Farm Keeper Mori$<BR>Getting fresh ingredients is the basic of cooking!<BR>However, ingredients like <FONT color=#a82424>fish</FONT> have short freshness date.</html>]]></talk_question>
+      <talk_question mid="7"><![CDATA[<html>$Farm Manager Morrie$<BR>Getting fresh ingredients is the basic of cooking!<BR>However, ingredients like <FONT color=#a82424>fish</FONT> have short freshness date.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-b" mid="11"><![CDATA[<html>Ok! Teach me please.</html>]]></talk_answer>
-      <talk_question mid="10"><![CDATA[<html>$Farm Keeper Mori$<BR>Ok Ok! It's very sad…<BR>There is a best way to get fresh <FONT color=#a82424>fish</FONT>!<BR>I think you have the talent so I wish you could learn it!</html>]]></talk_question>
+      <talk_question mid="10"><![CDATA[<html>$Farm Manager Morrie$<BR>Ok Ok! It's very sad…<BR>There is a best way to get fresh <FONT color=#a82424>fish</FONT>!<BR>I think you have the talent so I wish you could learn it!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting-b" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-acceptted" mid="13"><![CDATA[<html>Accept Quest</html>]]></talk_answer>
@@ -50,28 +50,28 @@
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-a" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="15"><![CDATA[<html>$Farm Keeper Mori$<BR>The best way is catch the fish is all by yourself.<BR>I guess you already knew that. Good!</html>]]></talk_question>
+      <talk_question mid="15"><![CDATA[<html>$Farm Manager Morrie$<BR>The best way is catch the fish is all by yourself.<BR>I guess you already knew that. Good!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-b" mid="21"><![CDATA[<html>And then?</html>]]></talk_answer>
-      <talk_question mid="19"><![CDATA[<html>$Farm Keeper Mori$<BR>To fish, take a fishing rod and bait to the farming area and use the fishing skill.<BR>Fishing skill can be found in the skill screen under [<FONT color=#a82424>K</FONT>] of the <FONT color=#a82424>extra skill tab</FONT>.</html>]]></talk_question>
+      <talk_question mid="19"><![CDATA[<html>$Farm Manager Morrie$<BR>To fish, take a fishing rod and bait to the farming area and use the fishing skill.<BR>Fishing skill can be found in the skill screen under [<FONT color=#a82424>K</FONT>] of the <FONT color=#a82424>extra skill tab</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-b" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-c" mid="24"><![CDATA[<html>Is there a faster way?</html>]]></talk_answer>
-      <talk_question mid="22"><![CDATA[<html>$Farm Keeper Mori$<BR>You're smart!<BR>Once the fishing starts <FONT color=#a82424>Time spend gauge</FONT> at the top starts to fill.<BR>When the gauge becomes full <FONT color=#a82424>Right click the mouse button</FONT> and you should be able to check the fish in your inventory.</html>]]></talk_question>
+      <talk_question mid="22"><![CDATA[<html>$Farm Manager Morrie$<BR>You're smart!<BR>Once the fishing starts <FONT color=#a82424>Time spend gauge</FONT> at the top starts to fill.<BR>When the gauge becomes full <FONT color=#a82424>Right click the mouse button</FONT> and you should be able to check the fish in your inventory.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-c" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-d" mid="27"><![CDATA[<html>Oh I see!</html>]]></talk_answer>
-      <talk_question mid="25"><![CDATA[<html>$Farm Keeper Mori$<BR>Hahaha! Don't be so impatient!<BR>Under the time gauge there is a <FONT color=#a82424>power gauge</FONT>!<BR>When it reaches middle <FONT color=#a82424>Left click mouse button</FONT> and the time will reduce.</html>]]></talk_question>
+      <talk_question mid="25"><![CDATA[<html>$Farm Manager Morrie$<BR>Hahaha! Don't be so impatient!<BR>Under the time gauge there is a <FONT color=#a82424>power gauge</FONT>!<BR>When it reaches middle <FONT color=#a82424>Left click mouse button</FONT> and the time will reduce.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-d" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-e" mid="30"><![CDATA[<html>The key idea is the timing!.</html>]]></talk_answer>
-      <talk_question mid="28"><![CDATA[<html>$Farm Keeper Mori$<BR>So if you get the timing right, it's faster to catch a fish.<BR>Don't think too much into it. If you turn the [<FONT color=#a82424>Control Helper</FONT>] on, you'll find this easier.</html>]]></talk_question>
+      <talk_question mid="28"><![CDATA[<html>$Farm Manager Morrie$<BR>So if you get the timing right, it's faster to catch a fish.<BR>Don't think too much into it. If you turn the [<FONT color=#a82424>Control Helper</FONT>] on, you'll find this easier.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-e" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-f" mid="33"><![CDATA[<html>Of course!</html>]]></talk_answer>
       <talk_answer link_index="n351_farm-1-a" mid="34"><![CDATA[<html>Please explain one more time.</html>]]></talk_answer>
-      <talk_question mid="31"><![CDATA[<html>$Farm Keeper Mori$<BR>Correct! I have told you everything I know. It's more about real experience than theory.<BR>Did you understand everything?</html>]]></talk_question>
+      <talk_question mid="31"><![CDATA[<html>$Farm Manager Morrie$<BR>Correct! I have told you everything I know. It's more about real experience than theory.<BR>Did you understand everything?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-f" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-!next" mid="36"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>

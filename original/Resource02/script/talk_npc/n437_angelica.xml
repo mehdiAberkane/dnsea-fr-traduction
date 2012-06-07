@@ -3,7 +3,7 @@
       <npcid>437</npcid>
       <startexe>1</startexe>
       <npckname mid="1"><![CDATA[Sorceress Angelica
-(Death City Gates)]]></npckname>
+(Gates to City of Death)]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
          <talk_question mid="3"><![CDATA[<html>$Sorceress Angelica$<BR>Pfft… I'm in the middle of something, what now?<BR>
 Stop dropping by.</html>]]></talk_question>

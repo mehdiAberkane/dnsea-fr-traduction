@@ -5,7 +5,7 @@
       <npckname mid="1"><![CDATA[Academic Station]]></npckname>
       <talk_paragraph index="001" image="QN_Npc_Academic_station.dds" itemindex="">
          <talk_answer link_index="quest" mid="6"><![CDATA[<html>[Quest]</html>]]></talk_answer>
-         <talk_answer link_index="skill" mid="40"><![CDATA[<html>[Learing skill]</html>]]></talk_answer>
+         <talk_answer link_index="skill" mid="40"><![CDATA[<html>[Learning skill]</html>]]></talk_answer>
          <talk_answer link_index="tuto" mid="41"><![CDATA[<html>[Tutorial]</html>]]></talk_answer>
          <talk_question mid="3"><![CDATA[<html>$Academic Station$<BR>
 * <FONT color=#086171>Local interface system drives now.</FONT><BR>

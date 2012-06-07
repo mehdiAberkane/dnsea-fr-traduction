@@ -58,7 +58,7 @@
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n548_edan-noquest" image="" itemindex="">
-      <talk_question mid="5"><![CDATA[<html>$Cleric Ethan$<BR>
+      <talk_question mid="5"><![CDATA[<html>$Cleric Edan$<BR>
 It's all my fault.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n547_cian-noquest" image="" itemindex="">
@@ -87,7 +87,7 @@ You seem pretty close with those adventurers, if you have time, you should go an
       <talk_question mid="93"><![CDATA[<html>$Academic Jasmine${sound:npc_MR_Jasmin_sp_05.ogg}<BR>We're all depending on you.<BR>Remember that.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n548_edan-1" image="" itemindex="">
-      <talk_question mid="94"><![CDATA[<html>$Cleric Ethan$<BR>You've become famous.<BR>
+      <talk_question mid="94"><![CDATA[<html>$Cleric Edan$<BR>You've become famous.<BR>
 <FONT color=#387206>{user_nick}</FONT> were great at field.<BR>You're so strong even though you're a little girl.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n549_triana-1" image="" itemindex="">
@@ -110,7 +110,7 @@ We are going to cleanse Calderock with that research.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n547_cian-1-c" image="QN_Npc_Cian.dds" itemindex="">
       <talk_question mid="243"><![CDATA[<html>$Warrior Xian$<BR>We've received help from <FONT color=#387206>{user_nick}</FONT> many times, so leave this task to us.<BR>We will find a way to cleanse this contamination and save Calderock! Hehe.<BR>
-<FONT color=#7e12d2>(Cyan announces with confidence)</FONT></html>]]></talk_question>
+<FONT color=#7e12d2>(Xian announces with confidence)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n547_cian-2" image="QN_Npc_Academic_station.dds" itemindex="">
       <talk_question mid="244"><![CDATA[<html><FONT color=#7e12d2>(There is no data related to cleansing Calderock.<BR>Connect to the Academic Station at the Calderock Village and ask Jasmine)</FONT></html>]]></talk_question>

@@ -3,7 +3,7 @@
       <npcid>436</npcid>
       <startexe>1</startexe>
       <npckname mid="1"><![CDATA[Cleric Edan
-(Death City Gates)]]></npckname>
+(Gates to City of Death)]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
          <talk_question mid="3"><![CDATA[<html>$Cleric Edan$<BR>
 The will of the goddess always brings you peace.</html>]]></talk_question>

@@ -59,7 +59,7 @@
       <talk_question mid="141"><![CDATA[<html>$Sorceress Angelica$<BR>What I do here is none of your concern.<BR>Mind your own business!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n429_edan-noquest" image="" itemindex="">
-      <talk_question mid="142"><![CDATA[<html>$Cleric Ethan$<BR>I am on a mission from the church.<BR>If you have business with me, please state them later.</html>]]></talk_question>
+      <talk_question mid="142"><![CDATA[<html>$Cleric Edan$<BR>I am on a mission from the church.<BR>If you have business with me, please state them later.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n041_duke_stwart-accepting" image="" itemindex="">
       <talk_answer link_index="n041_duke_stwart-accepting-a" mid="8"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -89,7 +89,7 @@
       <talk_question mid="113"><![CDATA[<html>$Master Cleric Enoch$<BR>Are you still seaching for Celestine's Rosary by the order of the Duke?<BR>If you happen to find other Relic Artifacts in the process, please return them to the church.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n429_edan-1" image="" itemindex="">
-      <talk_question mid="145"><![CDATA[<html>$Cleric Ethan$<BR>
+      <talk_question mid="145"><![CDATA[<html>$Cleric Edan$<BR>
 I'm on a mission from the church.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n430_angelica-1" image="" itemindex="">
@@ -118,20 +118,20 @@ And the cult trial record was among the stolen documents. </html>]]></talk_quest
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-3" image="QW_39.dds" itemindex="">
       <talk_question mid="155"><![CDATA[<html>$Master Cleric Enoch$<BR>Well, maybe you should head to<FONT color=#a82424>Captain Darlant's base</FONT>.<BR>
-If you happen to meet <FONT color=#a82424>Cleric Ethan</FONT>,ask him whether he found the documents or not.<BR>
+If you happen to meet <FONT color=#a82424>Cleric Edan</FONT>,ask him whether he found the documents or not.<BR>
  <BR>
 <FONT color=#7e12d2>※ Cannot proceed with quest in current party status.</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n429_edan-3" image="" itemindex="">
       <talk_answer link_index="n429_edan-3-a" mid="157"><![CDATA[<html>Master Cleric Enoch sent us for his bidding.</html>]]></talk_answer>
-      <talk_question mid="156"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>You are the<FONT color=#387206>{user_class}</FONT>I met before. I apologize for my past actions.<BR>I'm currently on a church mission, so if you have personal issues please state them later..</html>]]></talk_question>
+      <talk_question mid="156"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>You are the<FONT color=#387206>{user_class}</FONT>I met before. I apologize for my past actions.<BR>I'm currently on a church mission, so if you have personal issues please state them later..</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n429_edan-3-a" image="" itemindex="">
       <talk_answer link_index="n429_edan-4" mid="159"><![CDATA[<html>It is so.</html>]]></talk_answer>
-      <talk_question mid="158"><![CDATA[<html>$Cleric Ethan$<BR>What? Master Cleric Enoch? <FONT color=#7e12d2>(After listening to the whole story, Eden nods his head)</FONT> You need  the cult trial record to find out more about them?</html>]]></talk_question>
+      <talk_question mid="158"><![CDATA[<html>$Cleric Edan$<BR>What? Master Cleric Enoch? <FONT color=#7e12d2>(After listening to the whole story, Eden nods his head)</FONT> You need  the cult trial record to find out more about them?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n429_edan-4" image="QN_Npc_Angelica.dds" itemindex="">
-      <talk_question mid="160"><![CDATA[<html>$Cleric Ethan$<BR>I didn't find any records about the heresey trial. I will try to find it, and if you find it around here, please tell me.<BR><FONT color=#7e12d2>(A strange sorceress is working secretly around here.)</FONT></html>]]></talk_question>
+      <talk_question mid="160"><![CDATA[<html>$Cleric Edan$<BR>I didn't find any records about the heresey trial. I will try to find it, and if you find it around here, please tell me.<BR><FONT color=#7e12d2>(A strange sorceress is working secretly around here.)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n430_angelica-4" image="" itemindex="">
       <talk_answer link_index="n430_angelica-4-a" mid="162"><![CDATA[<html>Have you seen church documents around here?</html>]]></talk_answer>
@@ -151,7 +151,7 @@ Nothing else! Hmph!</html>]]></talk_question>
       <talk_question mid="167"><![CDATA[<html>$Sorceress Angelica$<BR>I'm not as free as you are so leave me be!<BR><FONT color=#7e12d2>(It seems I will not find the cult trial record around here.)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n429_edan-5" image="" itemindex="">
-      <talk_question mid="168"><![CDATA[<html>$Cleric Ethan$<BR>
+      <talk_question mid="168"><![CDATA[<html>$Cleric Edan$<BR>
 I believe there is no cult trial record here.<BR>
 It seems we have hit a dead end.</html>]]></talk_question>
    </talk_paragraph>
@@ -277,12 +277,12 @@ Have you found the cult trial record? I thought Eden would be able to find it bu
          <trigger_string />
          <maptool_index />
          <title mid="183"><![CDATA[Captain Darlant's Base]]></title>
-         <contents mid="184"><![CDATA[<html>Meet Cleric Ethan at Captain Darlant's Base to ask about the cult trial records.<BR>
+         <contents mid="184"><![CDATA[<html>Meet Cleric Edan at Captain Darlant's Base to ask about the cult trial records.<BR>
 <BR><FONT color=#7e12d2>※ Cannot proceed with quest in current party status.</FONT><BR>
 <FONT color=#086171></FONT> <BR>
-<FONT color=#086171>Hermalte Port(Charter Ship)</FONT> <FONT color=#a82424>→ Near Captain Darlant(Cleric Ethan)</FONT></html>]]></contents>
-         <destination mid="185"><![CDATA[(Solo) Conversation with Cleric Ethan at Captain Darlant's Base]]></destination>
-         <todo_msg mid="186"><![CDATA[Talk to Cleric Ethan at Captain Darlant's Base]]></todo_msg>
+<FONT color=#086171>Hermalte Port(Charter Ship)</FONT> <FONT color=#a82424>→ Near Captain Darlant(Cleric Edan)</FONT></html>]]></contents>
+         <destination mid="185"><![CDATA[(Solo) Conversation with Cleric Edan at Captain Darlant's Base]]></destination>
+         <todo_msg mid="186"><![CDATA[Talk to Cleric Edan at Captain Darlant's Base]]></todo_msg>
       </journal>
       <journal index="4">
          <contents_image>QN_Npc_Angelica.dds</contents_image>

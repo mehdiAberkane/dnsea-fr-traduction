@@ -47,7 +47,7 @@
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-noquest" image="QN_Npc_Duke_Stwart.dds" itemindex="">
-      <talk_question mid="5"><![CDATA[<html>$Cleric Ethan$<BR>Don't come here if you do not want to be mistaken for a Dragon Follower.<BR>
+      <talk_question mid="5"><![CDATA[<html>$Cleric Edan$<BR>Don't come here if you do not want to be mistaken for a Dragon Follower.<BR>
 ※ <FONT color=#7e12d2>Receive the quest from Duke Stuart to proceed.</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-noquest" image="QN_Npc_Duke_Stwart.dds" itemindex="">
@@ -113,18 +113,18 @@ Everyone should look at this.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-1-b" image="QN_Npc_Duke_Stwart.dds" itemindex="">
       <talk_answer link_index="n420_edan-1-c" mid="33"><![CDATA[<html>(Eden says hello nicely.)</html>]]></talk_answer>
-      <talk_question mid="32"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>I see.… I have seen you with <FONT color=#a82424>Duke Stuart</FONT> .<BR>I apologise, I am <FONT color=#a82424>Cleric Ethan</FONT>.</html>]]></talk_question>
+      <talk_question mid="32"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>I see.… I have seen you with <FONT color=#a82424>Duke Stuart</FONT> .<BR>I apologise, I am <FONT color=#a82424>Cleric Edan</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-1-c" image="" itemindex="">
       <talk_answer link_index="n420_edan-1-d" mid="35"><![CDATA[<html>I have to find Celestine's Rosary.</html>]]></talk_answer>
-      <talk_question mid="34"><![CDATA[<html>$Cleric Ethan$<BR>This place is where Dragon Followers come and go. You should not be here if you do not want to be recognized as a cult member.</html>]]></talk_question>
+      <talk_question mid="34"><![CDATA[<html>$Cleric Edan$<BR>This place is where Dragon Followers come and go. You should not be here if you do not want to be recognized as a cult member.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-1-d" image="" itemindex="">
       <talk_answer link_index="n420_edan-2" mid="37"><![CDATA[<html>(Eden is deep in thoughts)</html>]]></talk_answer>
-      <talk_question mid="36"><![CDATA[<html>$Cleric Ethan$<BR>If you are talking about Celestine, you must be talking about <FONT color=#a82424>Queen Celestine</FONT>.<BR>Her rosary is very valuable. However I only heard about the legend, but do not know where it is.</html>]]></talk_question>
+      <talk_question mid="36"><![CDATA[<html>$Cleric Edan$<BR>If you are talking about Celestine, you must be talking about <FONT color=#a82424>Queen Celestine</FONT>.<BR>Her rosary is very valuable. However I only heard about the legend, but do not know where it is.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-2" image="QN_Npc_Cl_master_Enoc.dds" itemindex="">
-      <talk_question mid="38"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>I have not seen something like that here, why don't you ask about Celestine's rosary from<FONT color=#a82424>Master Cleric Enoch</FONT>?</html>]]></talk_question>
+      <talk_question mid="38"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>I have not seen something like that here, why don't you ask about Celestine's rosary from<FONT color=#a82424>Master Cleric Enoch</FONT>?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-2" image="" itemindex="">
       <talk_answer link_index="n046_cleric_master_enoc-2-a" mid="40"><![CDATA[<html>Ask about Celestine's Rosary.</html>]]></talk_answer>
@@ -181,8 +181,8 @@ Hmm? Celestine's Rosary must be a Relic Artifact protected by the royal treasure
          <statemark_type>11</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="45"><![CDATA[Unknown Tyrant's Grave]]></title>
-         <contents mid="46"><![CDATA[Unknown Tyrant's Grave]]></contents>
+         <title mid="45"><![CDATA[Unknown Nameless Tyrant Tomb]]></title>
+         <contents mid="46"><![CDATA[Unknown Nameless Tyrant Tomb]]></contents>
          <destination mid="47"><![CDATA[(Solo) Searching Nameless Tyrant Tomb]]></destination>
          <todo_msg mid="48"><![CDATA[Find out about Celestine's Rosary at Nameless Tyrant Tomb]]></todo_msg>
       </journal>

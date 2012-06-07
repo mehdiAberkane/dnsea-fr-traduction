@@ -42,7 +42,7 @@
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-noquest" image="" itemindex="">
-      <talk_question mid="75"><![CDATA[<html>$Blacksmith Korin$<BR>I have gotta produced a more powerful <FONT color=#a82424>Immortal Armor </FONT><BR>Seems like Harpy Feathers still won't do. <BR>I need a material which is softer, alittle tougher and more durable. </html>]]></talk_question>
+      <talk_question mid="75"><![CDATA[<html>$Blacksmith Corin$<BR>I have gotta produced a more powerful <FONT color=#a82424>Immortal Armor </FONT><BR>Seems like Harpy Feathers still won't do. <BR>I need a material which is softer, alittle tougher and more durable. </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QM_Ellena.dds" itemindex="">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="6"><![CDATA[<html>Yes, you have mentioned Elena.</html>]]></talk_answer>
@@ -69,7 +69,7 @@
       <talk_question mid="64"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Well, what's youth about?<BR>Just full of ambitions for the challenges ahead? <BR>Quick, use your use to write the story of immortality!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-1" image="" itemindex="">
-      <talk_question mid="76"><![CDATA[<html>$Blacksmith Korin$<BR>I have gotta produced a more powerful <FONT color=#a82424>Immortal Armor </FONT><BR>Seems like Harpy Feathers still won't do. <BR>I need a material which is softer, alittle tougher and more durable. </html>]]></talk_question>
+      <talk_question mid="76"><![CDATA[<html>$Blacksmith Corin$<BR>I have gotta produced a more powerful <FONT color=#a82424>Immortal Armor </FONT><BR>Seems like Harpy Feathers still won't do. <BR>I need a material which is softer, alittle tougher and more durable. </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-2" image="QS_Default.dds" itemindex="337839105">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-2-a" mid="72"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -79,46 +79,46 @@
       <talk_question mid="73"><![CDATA[<html>$Crimson General Ummanba$<BR>※ <FONT color=#7e12d2>Recommend for 4 players to party up and enter the Minotaur Nest.</FONT><BR>※ <FONT color=#7e12d2>You'll need the Red Seal to enter the Minotaur Nest.</FONT><BR>※ <FONT color=#7e12d2>Seal can be gotten from the Abyss dungeons.</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-3" image="QN_BlackSmith_dorin.dds" itemindex="">
-      <talk_answer link_index="n024_adventurer_guildmaster_decud-4" mid="79"><![CDATA[<html>Blacksmith Korin? Looking for me?</html>]]></talk_answer>
-      <talk_question mid="77"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>You're good.<BR>If only I had such impressive talents in my team...<BR>Hoho... Anyway, great job there.<BR>Now you should go to <FONT color=#a82424>Blacksmith Korin</FONT>.</html>]]></talk_question>
+      <talk_answer link_index="n024_adventurer_guildmaster_decud-4" mid="79"><![CDATA[<html>Blacksmith Corin? Looking for me?</html>]]></talk_answer>
+      <talk_question mid="77"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>You're good.<BR>If only I had such impressive talents in my team...<BR>Hoho... Anyway, great job there.<BR>Now you should go to <FONT color=#a82424>Blacksmith Corin</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-4" image="QN_BlackSmith_dorin.dds" itemindex="">
       <talk_question mid="81"><![CDATA[<html>$Adventurer's Guild Master Deckard$<BR>Yes. He said that the Immortal Armor is blah blah....<BR>I have no idea what he is talking about, so I suggest you find<FONT color=#a82424>Blacksmith Corin</FONT> for a chat.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4" image="" itemindex="">
-      <talk_answer link_index="n025_trader_corin-4-quest_check" mid="84"><![CDATA[<html>Korin, looking for me?</html>]]></talk_answer>
-      <talk_question mid="82"><![CDATA[<html>$Blacksmith Korin$<BR>I have gotta produced a more powerful <FONT color=#a82424>Immortal Armor </FONT><BR>Seems like Harpy Feathers still won't do. <BR>I need a material which is softer, alittle tougher and more durable. </html>]]></talk_question>
+      <talk_answer link_index="n025_trader_corin-4-quest_check" mid="84"><![CDATA[<html>Corin, looking for me?</html>]]></talk_answer>
+      <talk_question mid="82"><![CDATA[<html>$Blacksmith Corin$<BR>I have gotta produced a more powerful <FONT color=#a82424>Immortal Armor </FONT><BR>Seems like Harpy Feathers still won't do. <BR>I need a material which is softer, alittle tougher and more durable. </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4-a" image="" itemindex="">
       <talk_answer link_index="n025_trader_corin-4-b" mid="86"><![CDATA[<html>Yes… This, anyway..</html>]]></talk_answer>
-      <talk_question mid="85"><![CDATA[<html>$Blacksmith Korin$<BR>Ohh~ It's you!<BR>Good, how do you feel after using <FONT color=#a82424>immortal armor</FONT>? Need my help?</html>]]></talk_question>
+      <talk_question mid="85"><![CDATA[<html>$Blacksmith Corin$<BR>Ohh~ It's you!<BR>Good, how do you feel after using <FONT color=#a82424>immortal armor</FONT>? Need my help?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4-b" image="QM_Harpy.dds" itemindex="">
       <talk_answer link_index="n025_trader_corin-4-c" mid="88"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="87"><![CDATA[<html>$Blacksmith Korin$<BR>As always, your reply is so vague...<BR>Well, even the Sigh Canyon's <FONT color=#a82424>Coldtime Harpy</FONT> feathers had become lesser.</html>]]></talk_question>
+      <talk_question mid="87"><![CDATA[<html>$Blacksmith Corin$<BR>As always, your reply is so vague...<BR>Well, even the Sigh Canyon's <FONT color=#a82424>Coldtime Harpy</FONT> feathers had become lesser.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4-c" image="QM_Harpy_Black.dds" itemindex="">
       <talk_answer link_index="n025_trader_corin-4-f" mid="91"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="89"><![CDATA[<html>$Blacksmith Korin$<BR>The Sunken Cargo ship in Saint Haven lies <FONT color=#a82424>Harpy Canna's</FONT> feather which is a worthy material....what a pity.</html>]]></talk_question>
+      <talk_question mid="89"><![CDATA[<html>$Blacksmith Corin$<BR>The Sunken Cargo ship in Saint Haven lies <FONT color=#a82424>Harpy Canna's</FONT> feather which is a worthy material....what a pity.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4-d" image="" itemindex="">
       <talk_answer link_index="n025_trader_corin-4-e" mid="93"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="92"><![CDATA[<html>$Blacksmith Korin$<BR>Oh, it is you?<BR>You are still in that junk clothing huh.<BR>Where could be a better place for you to fight?</html>]]></talk_question>
+      <talk_question mid="92"><![CDATA[<html>$Blacksmith Corin$<BR>Oh, it is you?<BR>You are still in that junk clothing huh.<BR>Where could be a better place for you to fight?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4-e" image="" itemindex="">
       <talk_answer link_index="n025_trader_corin-4-f" mid="97"><![CDATA[<html>Yes, you are done with you task?</html>]]></talk_answer>
-      <talk_question mid="96"><![CDATA[<html>$Blacksmith Korin$<BR>If have some time, I'll help you to research on a new armor.<BR>I'll make you a suitable set of armor.</html>]]></talk_question>
+      <talk_question mid="96"><![CDATA[<html>$Blacksmith Corin$<BR>If have some time, I'll help you to research on a new armor.<BR>I'll make you a suitable set of armor.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4-f" image="QM_Minotauros_Red.dds" itemindex="">
       <talk_answer link_index="n025_trader_corin-4-g" mid="99"><![CDATA[<html>Yes, it's not an easy job.</html>]]></talk_answer>
-      <talk_question mid="94"><![CDATA[<html>$Blacksmith Korin$<BR>Deckard said you went off to slay the <FONT color=#a82424>Crimson General Ummanba</FONT>. Looks like it was a success since you're still in one piece.</html>]]></talk_question>
+      <talk_question mid="94"><![CDATA[<html>$Blacksmith Corin$<BR>Deckard said you went off to slay the <FONT color=#a82424>Crimson General Ummanba</FONT>. Looks like it was a success since you're still in one piece.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4-g" image="" itemindex="">
       <talk_answer link_index="n025_trader_corin-4-h" mid="103"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
       <talk_question mid="102"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n025_trader_corin-4-h" image="QS_Default.dds" itemindex="338756610">
-      <talk_question mid="104"><![CDATA[<html>$Blacksmith Korin$<BR>So... You got your hands on <FONT color=#a82424>Minotaur's Family</FONT> ingredients? Let me use them to craft some useful items for you.<BR>Take a look before you leave, alright?</html>]]></talk_question>
+      <talk_question mid="104"><![CDATA[<html>$Blacksmith Corin$<BR>So... You got your hands on <FONT color=#a82424>Minotaur's Family</FONT> ingredients? Let me use them to craft some useful items for you.<BR>Take a look before you leave, alright?</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
@@ -228,10 +228,10 @@
          <statemark_type>12</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="121"><![CDATA[Blacksmith Korin]]></title>
-         <contents mid="122"><![CDATA[<html>After Adventurer's Guild Master Deckard greetings, he told me that Blacksmith Korin is looking for me.<BR>Look for Blacksmith Korin.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→Blacksmith Korin</FONT></html>]]></contents>
-         <destination mid="123"><![CDATA[Talk to Blacksmith Korin]]></destination>
-         <todo_msg mid="124"><![CDATA[Look for Blacksmith Korin]]></todo_msg>
+         <title mid="121"><![CDATA[Blacksmith Corin]]></title>
+         <contents mid="122"><![CDATA[<html>After Adventurer's Guild Master Deckard greetings, he told me that Blacksmith Corin is looking for me.<BR>Look for Blacksmith Corin.<BR> <BR><FONT color=#086171>Calderock Village</FONT> <FONT color=#a82424>→Blacksmith Corin</FONT></html>]]></contents>
+         <destination mid="123"><![CDATA[Talk to Blacksmith Corin]]></destination>
+         <todo_msg mid="124"><![CDATA[Look for Blacksmith Corin]]></todo_msg>
       </journal>
    </journal_data>
    <condition_data>

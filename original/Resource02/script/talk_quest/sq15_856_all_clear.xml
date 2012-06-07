@@ -47,7 +47,7 @@
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-accepting" image="QW_58.dds" itemindex="">
       <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="6"><![CDATA[<html>Maybe.</html>]]></talk_answer>
-      <talk_question mid="5"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>What's happening with the people of Town of Isla Natives vanishing here and there?<BR>Is it related to the incident that happened a long time ago?</html>]]></talk_question>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>What's happening with the people of Isla Native Village vanishing here and there?<BR>Is it related to the incident that happened a long time ago?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-accepting-a" image="" itemindex="">
       <talk_answer link_index="n714_cleric_yohan-accepting-b" mid="132"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -104,7 +104,7 @@ We better ask <FONT color=#a82424>Master Sorceress Tamara</FONT>.</html>]]></tal
    </talk_paragraph>
    <talk_paragraph index="n713_soceress_tamara-2-d" image="QW_58.dds" itemindex="">
       <talk_answer link_index="n713_soceress_tamara-2-e" mid="149"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="148"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#a82424>Town of Isla Natives</FONT>? …Oh, that place.<BR>I've been there once to find ingredients for magic potions before.</html>]]></talk_question>
+      <talk_question mid="148"><![CDATA[<html>$Master Sorceress Tamara$<BR><FONT color=#a82424>Isla Native Village</FONT>? …Oh, that place.<BR>I've been there once to find ingredients for magic potions before.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n713_soceress_tamara-2-e" image="QW_58.dds" itemindex="">
       <talk_answer link_index="n713_soceress_tamara-2-f" mid="151"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -121,7 +121,7 @@ Maybe the totem were stolen by Dragon Followers.<BR>However, we had no clue wher
    </talk_paragraph>
    <talk_paragraph index="n713_soceress_tamara-3" image="QW_58.dds" itemindex="">
       <talk_question mid="156"><![CDATA[<html>$Master Sorceress Tamara${action:Talk}<BR>…There is a saying, if you want the dragon, go to the Dragon's Nest! To find out the truth, you have to search the place.<BR>
-Go to <FONT color=#a82424>Town of Isla Natives</FONT> once again, there must be some clue.</html>]]></talk_question>
+Go to <FONT color=#a82424>Isla Native Village</FONT> once again, there must be some clue.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n713_soceress_tamara-4" image="" itemindex="">
       <talk_answer link_index="n713_soceress_tamara-4-a" mid="158"><![CDATA[<html>I found this.</html>]]></talk_answer>
@@ -151,7 +151,7 @@ Hmm… I don't feel good about this….</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-5" image="" itemindex="">
       <talk_answer link_index="n714_cleric_yohan-5-a" mid="170"><![CDATA[<html>(Give him the bag)</html>]]></talk_answer>
-      <talk_question mid="169"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>I have asked the Adventurer's Guild to go to <FONT color=#a82424>Town of Isla Natives</FONT> but they couldn't find any of my people.<BR>
+      <talk_question mid="169"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>I have asked the Adventurer's Guild to go to <FONT color=#a82424>Isla Native Village</FONT> but they couldn't find any of my people.<BR>
 It is weird but, did they get better in such a short time?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-5-a" image="QS_Default.dds" itemindex="300485">
@@ -286,10 +286,10 @@ If that happened after the Dragon Followers and Asahi tribe entered the land, it
          <statemark_type>12</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="189"><![CDATA[Scout Town of Isla Natives]]></title>
-         <contents mid="190"><![CDATA[<html>Look for a clue to figure out why people are missing.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Town of Ilsa Natives)</FONT> <FONT color=#a82424>→ Town of Isla Natives</FONT></html>]]></contents>
-         <destination mid="191"><![CDATA[Scout Town of Isla Natives]]></destination>
-         <todo_msg mid="192"><![CDATA[Go to Town of Isla Natives]]></todo_msg>
+         <title mid="189"><![CDATA[Scout Isla Native Village]]></title>
+         <contents mid="190"><![CDATA[<html>Look for a clue to figure out why people are missing.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Town of Ilsa Natives)</FONT> <FONT color=#a82424>→ Isla Native Village</FONT></html>]]></contents>
+         <destination mid="191"><![CDATA[Scout Isla Native Village]]></destination>
+         <todo_msg mid="192"><![CDATA[Go to Isla Native Village]]></todo_msg>
       </journal>
       <journal index="4">
          <contents_image>QN_Npc_SoceressTamara.dds</contents_image>

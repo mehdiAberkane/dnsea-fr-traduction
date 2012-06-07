@@ -42,7 +42,7 @@
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-noquest" image="" itemindex="">
-      <talk_question mid="5"><![CDATA[<html>$Cleric Ethan$<BR>If you stay here, people will know you as a <FONT color=#a82424>Dragon Follower</FONT>.<BR>Go somewhere else.</html>]]></talk_question>
+      <talk_question mid="5"><![CDATA[<html>$Cleric Edan$<BR>If you stay here, people will know you as a <FONT color=#a82424>Dragon Follower</FONT>.<BR>Go somewhere else.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-accepting" image="" itemindex="">
       <talk_answer link_index="n038_royal_magician_kalaen-accepting-a" mid="7"><![CDATA[<html>You have not given up?!</html>]]></talk_answer>
@@ -76,7 +76,7 @@ Think about it, <FONT color=#387206>{user_nick}</FONT>.<BR>
 Wouldn't it be better to get rich by finding a magic book than being a carp keeping quiet about it?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-1" image="" itemindex="">
-      <talk_question mid="28"><![CDATA[<html>$Cleric Ethan$<BR>If you stay here people will think you are a <FONT color=#a82424>Dragon Follower</FONT>.<BR>Go somewhere else.</html>]]></talk_question>
+      <talk_question mid="28"><![CDATA[<html>$Cleric Edan$<BR>If you stay here people will think you are a <FONT color=#a82424>Dragon Follower</FONT>.<BR>Go somewhere else.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-2" image="QW_44.dds" itemindex="">
       <talk_question mid="29"><![CDATA[<html>$Court Sorceress Kayleen$<BR>Good thinking. Now go to <FONT color=#a82424>Nameless Tyrant Tomb</FONT> and find any evidence you can!<BR><BR>
@@ -111,19 +111,19 @@ Casino Princess<FONT color=#387206> {user_nick}</FONT>….</html>]]></talk_quest
    </talk_paragraph>
    <talk_paragraph index="n420_edan-2-e" image="" itemindex="">
       <talk_answer link_index="n420_edan-2-f" mid="73"><![CDATA[<html>Okay. Bye~</html>]]></talk_answer>
-      <talk_question mid="72"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>My bad manners.<BR>I am<FONT color=#a82424>Cleric Ethan</FONT>.</html>]]></talk_question>
+      <talk_question mid="72"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>My bad manners.<BR>I am<FONT color=#a82424>Cleric Edan</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-2-f" image="" itemindex="">
       <talk_answer link_index="n420_edan-2-g" mid="75"><![CDATA[<html>We, well I lost my way…ahaha.</html>]]></talk_answer>
-      <talk_question mid="74"><![CDATA[<html>$Cleric Ethan$<BR>What's the reason for being here?<BR>Here is where the Dragon Followers come and go.</html>]]></talk_question>
+      <talk_question mid="74"><![CDATA[<html>$Cleric Edan$<BR>What's the reason for being here?<BR>Here is where the Dragon Followers come and go.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-2-g" image="" itemindex="">
       <talk_answer link_index="n420_edan-3" mid="35"><![CDATA[<html>Oh~ okay. I understand!</html>]]></talk_answer>
-      <talk_question mid="34"><![CDATA[<html>$Cleric Ethan$<BR>So I see. Exit is that way.<BR>
+      <talk_question mid="34"><![CDATA[<html>$Cleric Edan$<BR>So I see. Exit is that way.<BR>
 Don't come here again. Also forget what  I said earlier.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n420_edan-3" image="QN_Npc_Royal_Magician_Kalaen.dds" itemindex="">
-      <talk_question mid="36"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>I believe you have given up gambling. Well goodbye~.<BR><FONT color=#7e12d2>(Cleric is looking for Dragon Followers here. I think it will help when I report this to Kayleen.)</FONT></html>]]></talk_question>
+      <talk_question mid="36"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>I believe you have given up gambling. Well goodbye~.<BR><FONT color=#7e12d2>(Cleric is looking for Dragon Followers here. I think it will help when I report this to Kayleen.)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n038_royal_magician_kalaen-3" image="" itemindex="">
       <talk_answer link_index="n038_royal_magician_kalaen-3-a" mid="38"><![CDATA[<html>Yes. Actually……</html>]]></talk_answer>

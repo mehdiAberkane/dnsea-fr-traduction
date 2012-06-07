@@ -111,7 +111,7 @@ all you have to do is go to the strongest evil and take it out from there. very 
       <talk_question mid="155"><![CDATA[<html>$Velskud$<BR><FONT color=#a82424>That is</FONT> Corrupted Life Choice.<BR>You don't even know what you are looking for… pathetic.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n045_soceress_master_stella-2" image="QW_44.dds" itemindex="">
-      <talk_question mid="166"><![CDATA[<html>$Master Sorceress Stella$<BR>What are you doing? Hurry and <FONT color=#a82424>go to</FONT> tyrant's grave.<BR>If you go, you will find a way. Ho-ho-ho-ho.</html>]]></talk_question>
+      <talk_question mid="166"><![CDATA[<html>$Master Sorceress Stella$<BR>What are you doing? Hurry and <FONT color=#a82424>go to</FONT> Nameless Tyrant Tomb.<BR>If you go, you will find a way. Ho-ho-ho-ho.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n313_velskud_injured_wing-3" image="QN_Npc_Velskud.dds" itemindex="">
       <talk_question mid="157"><![CDATA[<html>$Velskud$<BR>If you got everything that you needed, go away.<BR>I don't want to talk to you anymore.<BR><FONT color=#7e12d2>(Velskud does not want to talk anymore.)</FONT></html>]]></talk_question>
@@ -258,9 +258,9 @@ And, if you need more scales for the<FONT color=#a82424>sea dragon's key</FONT>,
          <trigger_string />
          <maptool_index />
          <title mid="115"><![CDATA[Corrupted Life Choice]]></title>
-         <contents mid="116"><![CDATA[<html>Go to the Unknown Tyrant's Grave and retrieve Corrupted Life Choice.<BR><BR><FONT color=#086171>Hermalte Port(Entrance to black Mountain)</FONT> <FONT color=#a82424>→ unknown tyrant's grave</FONT></html>]]></contents>
-         <destination mid="117"><![CDATA[Unknown Tyrant's Grave]]></destination>
-         <todo_msg mid="118"><![CDATA[go to the Unknown Tyrant's Grave and find Corrupted Life Choice]]></todo_msg>
+         <contents mid="116"><![CDATA[<html>Go to the Unknown Nameless Tyrant Tomb and retrieve Corrupted Life Choice.<BR><BR><FONT color=#086171>Hermalte Port(Entrance to black Mountain)</FONT> <FONT color=#a82424>→ unknown Nameless Tyrant Tomb</FONT></html>]]></contents>
+         <destination mid="117"><![CDATA[Unknown Nameless Tyrant Tomb]]></destination>
+         <todo_msg mid="118"><![CDATA[go to the Unknown Nameless Tyrant Tomb and find Corrupted Life Choice]]></todo_msg>
       </journal>
       <journal index="3">
          <contents_image>QN_Npc_SoceressStella.dds</contents_image>

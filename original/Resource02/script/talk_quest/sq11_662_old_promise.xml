@@ -50,7 +50,7 @@
       <talk_question mid="7"><![CDATA[<html>$Broken Sealed Box$<BR><FONT color=#7e12d2>(The box is destroyed. There is nothing left in it.)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n436_edan-noquest" image="" itemindex="">
-      <talk_question mid="8"><![CDATA[<html>$Cleric Ethan$<BR>I'm on a mission.<BR>Please talk to me later.</html>]]></talk_question>
+      <talk_question mid="8"><![CDATA[<html>$Cleric Edan$<BR>I'm on a mission.<BR>Please talk to me later.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n092_trader_kelly-accepting" image="" itemindex="">
       <talk_answer link_index="n092_trader_kelly-accepting-a" mid="10"><![CDATA[<html>Ah, ok.</html>]]></talk_answer>
@@ -86,7 +86,7 @@ Keeping in touch even after the excommunication, the cleric must have thought of
       <talk_question mid="23"><![CDATA[<html>$Broken Sealed Box$<BR><FONT color=#7e12d2>(The box is completely destroyed. There is nothing left.)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n436_edan-1" image="" itemindex="">
-      <talk_question mid="24"><![CDATA[<html>$Cleric Ethan$<BR>I'm on duty.<BR><FONT color=#7e12d2>(Ethan looks around with a serious expression)</FONT></html>]]></talk_question>
+      <talk_question mid="24"><![CDATA[<html>$Cleric Edan$<BR>I'm on duty.<BR><FONT color=#7e12d2>(Edan looks around with a serious expression)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n092_trader_kelly-2" image="QW_42.dds" itemindex="">
       <talk_question mid="25"><![CDATA[<html>$Merchant Kelly${action:Talk}<BR>Of course! Who else could go?<BR>Hurry up and find the will and keepsakes from <FONT color=#a82424>Gates to City of Death</FONT>.<BR><BR><FONT color=#7e12d2>※ Can't proceed in party mode.</FONT></html>]]></talk_question>
@@ -104,32 +104,32 @@ Keeping in touch even after the excommunication, the cleric must have thought of
       <talk_question mid="30"><![CDATA[<html>$Borken Sealed Box$<BR><FONT color=#7e12d2>(Kept the promise. Delivered to the person)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n433_light_pole-3" image="QN_Npc_Edan.dds" itemindex="">
-      <talk_question mid="32"><![CDATA[<html><FONT color=#7e12d2>(Ethan is looking for something in the area.</FONT><BR>
+      <talk_question mid="32"><![CDATA[<html><FONT color=#7e12d2>(Edan is looking for something in the area.</FONT><BR>
 <FONT color=#7e12d2>Talk to him)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n436_edan-3" image="" itemindex="">
       <talk_answer link_index="n436_edan-3-a" mid="34"><![CDATA[<html>I'm looking for the record of beautiful love.</html>]]></talk_answer>
-      <talk_question mid="33"><![CDATA[<html>$Cleric Ethan$<BR>
+      <talk_question mid="33"><![CDATA[<html>$Cleric Edan$<BR>
 Ah, <FONT color=#387206>{user_class} {user_nick}</FONT>.<BR>What are you doing here?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n436_edan-3-a" image="" itemindex="">
       <talk_answer link_index="n436_edan-3-b" mid="36"><![CDATA[<html>Excuse me? Me?</html>]]></talk_answer>
-      <talk_question mid="35"><![CDATA[<html>$Cleric Ethan$<BR>…. <FONT color=#7e12d2>(Ethan's face sours.)<BR></FONT>You are not going to use black magic on me by distracting me are you?</html>]]></talk_question>
+      <talk_question mid="35"><![CDATA[<html>$Cleric Edan$<BR>…. <FONT color=#7e12d2>(Edan's face sours.)<BR></FONT>You are not going to use black magic on me by distracting me are you?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n436_edan-3-b" image="" itemindex="">
       <talk_answer link_index="n436_edan-3-c" mid="39"><![CDATA[<html>Nameless tyrant?</html>]]></talk_answer>
       <talk_answer link_index="n436_edan-3-c" mid="40"><![CDATA[<html>King Rodain?</html>]]></talk_answer>
-      <talk_question mid="37"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>Sorry. You spoke something too abstract for me…. <FONT color=#7e12d2>(Ethan blushes)</FONT><BR>…Anyway this is the place where the agreement has been made with the church.</html>]]></talk_question>
+      <talk_question mid="37"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>Sorry. You spoke something too abstract for me…. <FONT color=#7e12d2>(Edan blushes)</FONT><BR>…Anyway this is the place where the agreement has been made with the church.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n436_edan-3-c" image="" itemindex="">
       <talk_answer link_index="n436_edan-3-d" mid="42"><![CDATA[<html>I'm not interested.</html>]]></talk_answer>
-      <talk_question mid="41"><![CDATA[<html>$Cleric Ethan$<BR>How did you… <FONT color=#7e12d2>(Ethan is in panic)</FONT> …Yes to be honest. I'm searching for the black magic item that he used. His keepsakes are all part of black magic so don't touch it. Keep that in mind.</html>]]></talk_question>
+      <talk_question mid="41"><![CDATA[<html>$Cleric Edan$<BR>How did you… <FONT color=#7e12d2>(Edan is in panic)</FONT> …Yes to be honest. I'm searching for the black magic item that he used. His keepsakes are all part of black magic so don't touch it. Keep that in mind.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n436_edan-3-d" image="" itemindex="">
       <talk_answer link_index="n436_edan-4" mid="72"><![CDATA[<html>Well goodbye.</html>]]></talk_answer>
-      <talk_question mid="43"><![CDATA[<html>$Cleric Ethan$<BR>
+      <talk_question mid="43"><![CDATA[<html>$Cleric Edan$<BR>
 Wow the daughter of the Tree of Life, I guess you are not interested in black magic.<BR>
-<FONT color=#7e12d2>(Ethan smiles)</FONT></html>]]></talk_question>
+<FONT color=#7e12d2>(Edan smiles)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n092_trader_kelly-4" image="" itemindex="">
       <talk_answer link_index="n092_trader_kelly-4-a" mid="46"><![CDATA[<html>Yes. There was a memo.</html>]]></talk_answer>
@@ -149,7 +149,7 @@ It said <FONT color=#7e12d2>Kept the promise. Delivered to the person</FONT>?</h
       <talk_question mid="51"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n436_edan-4" image="" itemindex="">
-      <talk_question mid="70"><![CDATA[<html>$Cleric Ethan${action:Talk}<BR>May the blessing of the Goddess be with you.</html>]]></talk_question>
+      <talk_question mid="70"><![CDATA[<html>$Cleric Edan${action:Talk}<BR>May the blessing of the Goddess be with you.</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
@@ -244,11 +244,11 @@ It said <FONT color=#7e12d2>Kept the promise. Delivered to the person</FONT>?</h
          <statemark_type>11</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="62"><![CDATA[Cleric Ethan]]></title>
-         <contents mid="63"><![CDATA[<html>There is a broken sealed box. Talk to Cleric Ethan nearby.<BR>
-<BR><FONT color=#7e12d2>※ Can't proceed in party mode.</FONT><BR><BR><FONT color=#086171>Hermalte Port(Dark Mine Entrance)</FONT> <FONT color=#a82424>→ Gates to City of Death(Cleric Ethan)</FONT></html>]]></contents>
-         <destination mid="64"><![CDATA[(Solo) Conversation with Cleric Ethan]]></destination>
-         <todo_msg mid="65"><![CDATA[Talk to Cleric Ethan]]></todo_msg>
+         <title mid="62"><![CDATA[Cleric Edan]]></title>
+         <contents mid="63"><![CDATA[<html>There is a broken sealed box. Talk to Cleric Edan nearby.<BR>
+<BR><FONT color=#7e12d2>※ Can't proceed in party mode.</FONT><BR><BR><FONT color=#086171>Hermalte Port(Dark Mine Entrance)</FONT> <FONT color=#a82424>→ Gates to City of Death(Cleric Edan)</FONT></html>]]></contents>
+         <destination mid="64"><![CDATA[(Solo) Conversation with Cleric Edan]]></destination>
+         <todo_msg mid="65"><![CDATA[Talk to Cleric Edan]]></todo_msg>
       </journal>
       <journal index="4">
          <contents_image>QN_Sonya.dds</contents_image>

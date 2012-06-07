@@ -2,7 +2,7 @@
       <npcename>n337_saint_guard</npcename>
       <npcid>337</npcid>
       <startexe>0</startexe>
-      <npckname mid="1"><![CDATA[Royal Guard Roy (Center of the Deserted Island)]]></npckname>
+      <npckname mid="1"><![CDATA[Royal Guard Roy (Forsaken Islet Core)]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
          <talk_question mid="3"><![CDATA[<html>$Royal Guard Roy$<BR>This is an incredible sight!</html>]]></talk_question>
       </talk_paragraph>

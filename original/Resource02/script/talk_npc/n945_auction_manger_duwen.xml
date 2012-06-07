@@ -2,15 +2,15 @@
       <npcename>n945_auction_manger_duwen</npcename>
       <npcid>945</npcid>
       <startexe>0</startexe>
-      <npckname mid="1"><![CDATA[Trading Master Cox]]></npckname>
+      <npckname mid="1"><![CDATA[Marketplace Master Cox]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
-         <talk_answer link_index="auction_001" mid="6"><![CDATA[<html>[History]</html>]]></talk_answer>
+         <talk_answer link_index="auction_001" mid="6"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
          <talk_answer link_index="talk" mid="7"><![CDATA[<html>[Talk]</html>]]></talk_answer>
-         <talk_question mid="3"><![CDATA[<html>$Trading Master Cox$<BR>You wish to make a reliable trade? <BR>Then, you have come to the right place.</html>]]></talk_question>
+         <talk_question mid="3"><![CDATA[<html>$Marketplace Master Cox$<BR>You wish to make a reliable trade? <BR>Then, you have come to the right place.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="talk" image="" itemindex="">
          <talk_answer link_index="001" mid="9"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="8"><![CDATA[<html>$Trading Master Cox$<BR>Adventurers are busy people so leave the selling of your unwanted goods to us. You may also buy things that others have for sale.</html>]]></talk_question>
+         <talk_question mid="8"><![CDATA[<html>$Marketplace Master Cox$<BR>Adventurers are busy people so leave the selling of your unwanted goods to us. You may also buy things that others have for sale.</html>]]></talk_question>
       </talk_paragraph>
       <executions>
          <exe type="talk">001</exe>

@@ -42,31 +42,31 @@
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n352_farm_warehouse-noquest" image="" itemindex="">
-      <talk_question mid="28"><![CDATA[<html>$Farm Keeper Mori$<BR>It's too early for the real challenge now...<BR>
+      <talk_question mid="28"><![CDATA[<html>$Farm Manager Morrie$<BR>It's too early for the real challenge now...<BR>
  <BR>
-<FONT color=#7e12d2>(Require a quest from Farm Keeper Mori to proceed)</FONT></html>]]></talk_question>
+<FONT color=#7e12d2>(Require a quest from Farm Manager Morrie to proceed)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-a" mid="20"><![CDATA[<html>Yes! I'll do it.</html>]]></talk_answer>
-      <talk_question mid="9"><![CDATA[<html>$Farm Keeper Mori$<BR>I have told you everything! It's time for the <FONT color=#a82424>Real Experience</FONT>.<BR>You never the know the true fun of fishing unless you catch a fish.<BR>Are you willing to try?</html>]]></talk_question>
+      <talk_question mid="9"><![CDATA[<html>$Farm Manager Morrie$<BR>I have told you everything! It's time for the <FONT color=#a82424>Real Experience</FONT>.<BR>You never the know the true fun of fishing unless you catch a fish.<BR>Are you willing to try?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-acceptted" mid="22"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
       <talk_question mid="21"><![CDATA[<html>$Real Fishing$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1" image="" itemindex="">
-      <talk_question mid="10"><![CDATA[<html>$Farm Keeper Mori$<BR>Don't tell me you are going to practice on the floor.<BR>Now it's time for real fishing. To catch a fish you have to go where the fish is!!<BR>Head to the <FONT color=#a82424>farm</FONT>.</html>]]></talk_question>
+      <talk_question mid="10"><![CDATA[<html>$Farm Manager Morrie$<BR>Don't tell me you are going to practice on the floor.<BR>Now it's time for real fishing. To catch a fish you have to go where the fish is!!<BR>Head to the <FONT color=#a82424>farm</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n352_farm_warehouse-1" image="" itemindex="">
       <talk_answer link_index="n352_farm_warehouse-1-a" mid="13"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="11"><![CDATA[<html>$Farm Keeper Mori$<BR>Hahaha! Welcome. This is the <FONT color=#a82424>Farming area</FONT>.<BR>Do you hear the fishing breathing out there?</html>]]></talk_question>
+      <talk_question mid="11"><![CDATA[<html>$Farm Manager Morrie$<BR>Hahaha! Welcome. This is the <FONT color=#a82424>Farming area</FONT>.<BR>Do you hear the fishing breathing out there?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n352_farm_warehouse-1-a" image="" itemindex="">
       <talk_answer link_index="n352_farm_warehouse-1-b" mid="15"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>
       <talk_question mid="14"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n352_farm_warehouse-1-b" image="" itemindex="">
-      <talk_question mid="16"><![CDATA[<html>$Farm Keeper Mori$<BR>Are you all ready?<BR>I gave you all the <FONT color=#a82424>equipment</FONT> you need so run a check on them.<BR>Now it's real.</html>]]></talk_question>
+      <talk_question mid="16"><![CDATA[<html>$Farm Manager Morrie$<BR>Are you all ready?<BR>I gave you all the <FONT color=#a82424>equipment</FONT> you need so run a check on them.<BR>Now it's real.</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />

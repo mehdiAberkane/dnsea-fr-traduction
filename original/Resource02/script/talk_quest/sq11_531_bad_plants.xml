@@ -54,7 +54,7 @@
    </talk_paragraph>
    <talk_paragraph index="n098_warrior_master_lodrigo-accepting-d" image="QW_29.dds" itemindex="">
       <talk_answer link_index="n098_warrior_master_lodrigo-accepting-e" mid="14"><![CDATA[<html>I understand..</html>]]></talk_answer>
-      <talk_question mid="13"><![CDATA[<html>$Master Warrior Rodrigo$<BR>To make herbicide, go to <FONT color=#a82424>Lost Tunnels</FONT> to obtain <FONT color=#a82424>Ogre Buwoo</FONT>'s Ogre Medicine.<BR>It will surely be very effective.</html>]]></talk_question>
+      <talk_question mid="13"><![CDATA[<html>$Master Warrior Rodrigo$<BR>To make herbicide, go to <FONT color=#a82424>Collapsed Mine</FONT> to obtain <FONT color=#a82424>Ogre Buwoo</FONT>'s Ogre Medicine.<BR>It will surely be very effective.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n098_warrior_master_lodrigo-accepting-e" image="" itemindex="">
       <talk_answer link_index="n098_warrior_master_lodrigo-accepting-accepted" mid="16"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
@@ -127,9 +127,9 @@
          <trigger_string />
          <maptool_index />
          <title mid="31"><![CDATA[Ogre Buwoo's Medicine]]></title>
-         <contents mid="32"><![CDATA[<html><FONT color=#a82424>Master Warrior Rodrigo</FONT>To manufacture the Spitflower herbicide, I need <FONT color=#a82424>Ogre Buwoo</FONT>'s medicine.<BR><BR><FONT color=#086171>Hermalte Port (Dark Mines)</FONT> <FONT color=#a82424>→ Lost Tunnels</FONT></html>]]></contents>
-         <destination mid="33"><![CDATA[Defeat Lost Tunnels' Ogre Buwoo]]></destination>
-         <todo_msg mid="34"><![CDATA[Defeat Lost Tunnels' Ogre Buwoo and retrieve the medicine.]]></todo_msg>
+         <contents mid="32"><![CDATA[<html><FONT color=#a82424>Master Warrior Rodrigo</FONT>To manufacture the Spitflower herbicide, I need <FONT color=#a82424>Ogre Buwoo</FONT>'s medicine.<BR><BR><FONT color=#086171>Hermalte Port (Dark Mines)</FONT> <FONT color=#a82424>→ Collapsed Mine</FONT></html>]]></contents>
+         <destination mid="33"><![CDATA[Defeat Collapsed Mine' Ogre Buwoo]]></destination>
+         <todo_msg mid="34"><![CDATA[Defeat Collapsed Mine' Ogre Buwoo and retrieve the medicine.]]></todo_msg>
       </journal>
       <journal index="2">
          <contents_image>QN_NPC_Warrior_Lodrigo.dds</contents_image>

@@ -68,7 +68,7 @@ After sparkle~it's too late! kehehe…!<BR><FONT color=#7e12d2>(cannot follow qu
       <talk_question mid="13"><![CDATA[<html>$Treasure of the Pirate King III$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n087_beggar-accepting-e" image="QW_39.dds" itemindex="">
-      <talk_question mid="15"><![CDATA[<html>$Ropi the Beggar$<BR>This is the last one, hurry <FONT color=#a82424>Base of Captain Dalant</FONT>you go away to there!<BR>and you never want me and hound in my head! Kehehehehe!</html>]]></talk_question>
+      <talk_question mid="15"><![CDATA[<html>$Ropi the Beggar$<BR>This is the last one, hurry <FONT color=#a82424>Captain Darlant's Base</FONT>you go away to there!<BR>and you never want me and hound in my head! Kehehehehe!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n087_beggar-1" image="" itemindex="">
       <talk_answer link_index="n087_beggar-1-party2" mid="18"><![CDATA[<html>I am not taking from you….</html>]]></talk_answer>
@@ -89,13 +89,13 @@ After sparkle~it's too late! kehehe…!<BR><FONT color=#7e12d2>(cannot follow qu
       <talk_question mid="22"><![CDATA[<html>$Ropi the Beggar$<BR><FONT color=#7e12d2>(He glues frayed two maps with black rice paste and hand over)<BR></FONT>Look at the back side. Kehehe… This is the real <FONT color=#a82424>map of treasure of the pirate king</FONT>지. Kekeke…</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n087_beggar-1-d" image="QW_39.dds" itemindex="">
-      <talk_question mid="24"><![CDATA[<html>$Ropi the Beggar$<BR>This is the last one, hurry <FONT color=#a82424>Base of Captain Dalant</FONT>you go away to there!<BR>and you never want me and hound in my head! Kehehehehe!</html>]]></talk_question>
+      <talk_question mid="24"><![CDATA[<html>$Ropi the Beggar$<BR>This is the last one, hurry <FONT color=#a82424>Captain Darlant's Base</FONT>you go away to there!<BR>and you never want me and hound in my head! Kehehehehe!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n286_treasure_box-1" image="" itemindex="">
       <talk_question mid="26"><![CDATA[<html>$????$<BR><FONT color=#7e12d2>(Doesn't open)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n087_beggar-2" image="QW_39.dds" itemindex="">
-      <talk_question mid="28"><![CDATA[<html>$Ropi the Beggar${action:Stand2}<BR>Why did you go to <FONT color=#a82424>Base of Captain Dalant</FONT>and come back?<BR>righ..… right! You came here to steal my hound!! You thief!! Bad guy! Woof woof!</html>]]></talk_question>
+      <talk_question mid="28"><![CDATA[<html>$Ropi the Beggar${action:Stand2}<BR>Why did you go to <FONT color=#a82424>Captain Darlant's Base</FONT>and come back?<BR>righ..… right! You came here to steal my hound!! You thief!! Bad guy! Woof woof!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n286_treasure_box-2" image="" itemindex="">
       <talk_answer link_index="n286_treasure_box-2-a" mid="30"><![CDATA[<html>(Read the letter )</html>]]></talk_answer>
@@ -185,9 +185,9 @@ After sparkle~it's too late! kehehe…!<BR><FONT color=#7e12d2>(cannot follow qu
          <trigger_string />
          <maptool_index />
          <title mid="40"><![CDATA[Find the treasure]]></title>
-         <contents mid="41"><![CDATA[<html>Got a new treasure map in my hand. Let's find treasure at Base of Captain Dalant<BR><BR><FONT color=#7e12d2>※ cannot proceed while still in a party.</FONT><BR><BR><FONT color=#086171>Hermalte Port (deserted Island transportation)</FONT> <FONT color=#a82424>→ Base of Captain Dalant</FONT></html>]]></contents>
-         <destination mid="42"><![CDATA[(One person) Explore treasure at Base of Captain Dalant]]></destination>
-         <todo_msg mid="43"><![CDATA[Find treasure chest at Base of Captain Dalant]]></todo_msg>
+         <contents mid="41"><![CDATA[<html>Got a new treasure map in my hand. Let's find treasure at Captain Darlant's Base<BR><BR><FONT color=#7e12d2>※ cannot proceed while still in a party.</FONT><BR><BR><FONT color=#086171>Hermalte Port (deserted Island transportation)</FONT> <FONT color=#a82424>→ Captain Darlant's Base</FONT></html>]]></contents>
+         <destination mid="42"><![CDATA[(One person) Explore treasure at Captain Darlant's Base]]></destination>
+         <todo_msg mid="43"><![CDATA[Find treasure chest at Captain Darlant's Base]]></todo_msg>
       </journal>
    </journal_data>
    <condition_data>

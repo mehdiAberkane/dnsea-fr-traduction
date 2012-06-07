@@ -50,14 +50,14 @@
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-accepting-c" image="QS_Default.dds" itemindex="300287">
       <talk_answer link_index="n046_cleric_master_enoc-accepting-d" mid="24"><![CDATA[<html>All right.</html>]]></talk_answer>
-      <talk_question mid="23"><![CDATA[<html>$Cleric Trainer Enoch$<BR><FONT color=#a82424>At sunken ship</FONT>, collecting sea flowers is a lot of work.<BR>Could you? 5 flowers may be enough.</html>]]></talk_question>
+      <talk_question mid="23"><![CDATA[<html>$Cleric Trainer Enoch$<BR><FONT color=#a82424>At Sunken Cargo Vessel</FONT>, collecting sea flowers is a lot of work.<BR>Could you? 5 flowers may be enough.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-accepting-d" image="" itemindex="">
       <talk_answer link_index="n046_cleric_master_enoc-accepting-acceppted" mid="26"><![CDATA[<html><FONT color=#086171>Quest Accepted</FONT></html>]]></talk_answer>
       <talk_question mid="25"><![CDATA[<html>$Sleeping Ocean Flowers$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-1" image="QW_46.dds" itemindex="">
-      <talk_question mid="27"><![CDATA[<html>$Cleric Trainer Enoch$<BR>Thank you. <FONT color=#a82424>At Sunken Ship</FONT> get some <FONT color=#a82424>sea flowers</FONT>.<BR>It's white flower so you can find it easily.</html>]]></talk_question>
+      <talk_question mid="27"><![CDATA[<html>$Cleric Trainer Enoch$<BR>Thank you. <FONT color=#a82424>At Sunken Cargo Vessel</FONT> get some <FONT color=#a82424>sea flowers</FONT>.<BR>It's white flower so you can find it easily.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-2" image="QS_Default.dds" itemindex="300287">
       <talk_answer link_index="n046_cleric_master_enoc-2-a" mid="29"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -69,7 +69,7 @@
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-2-b" image="QW_46.dds" itemindex="">
       <talk_answer link_index="n046_cleric_master_enoc-2-c" mid="33"><![CDATA[<html>It's a quite story.</html>]]></talk_answer>
-      <talk_question mid="32"><![CDATA[<html>$Cleric Trainer Enoch$<BR>After then, at the Sunken Ship, white flowers bloom as if they are paying tribute to the dead soldiers .<BR>And the flowers became a really good emergency relief.</html>]]></talk_question>
+      <talk_question mid="32"><![CDATA[<html>$Cleric Trainer Enoch$<BR>After then, at the Sunken Cargo Vessel, white flowers bloom as if they are paying tribute to the dead soldiers .<BR>And the flowers became a really good emergency relief.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n046_cleric_master_enoc-2-c" image="" itemindex="">
       <talk_answer link_index="n046_cleric_master_enoc-2-d" mid="35"><![CDATA[<html><FONT color=#086171>(Receive Reward)</FONT></html>]]></talk_answer>
@@ -120,12 +120,12 @@ But I believe their sacrifice will be our foundation of peace.</html>]]></talk_q
          <statemark_type>12</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="38"><![CDATA[Ocean Flowers blooms at Sunken Ship]]></title>
-         <contents mid="39"><![CDATA[<html>Let's collect Ocean Flowers at Sunken Ship.<BR>
+         <title mid="38"><![CDATA[Ocean Flowers blooms at Sunken Cargo Vessel]]></title>
+         <contents mid="39"><![CDATA[<html>Let's collect Ocean Flowers at Sunken Cargo Vessel.<BR>
  <BR>
-<FONT color=#086171>Hermalte Port (Forsaken Islet transportation)</FONT> <FONT color=#a82424>→ Sunken Ship</FONT></html>]]></contents>
-         <destination mid="40"><![CDATA[Sunken Ship]]></destination>
-         <todo_msg mid="41"><![CDATA[Collect Ocean Flowers at Sunken Ship]]></todo_msg>
+<FONT color=#086171>Hermalte Port (Forsaken Islet transportation)</FONT> <FONT color=#a82424>→ Sunken Cargo Vessel</FONT></html>]]></contents>
+         <destination mid="40"><![CDATA[Sunken Cargo Vessel]]></destination>
+         <todo_msg mid="41"><![CDATA[Collect Ocean Flowers at Sunken Cargo Vessel]]></todo_msg>
       </journal>
       <journal index="2">
          <contents_image>QN_Npc_Cl_master_Enoc.dds</contents_image>

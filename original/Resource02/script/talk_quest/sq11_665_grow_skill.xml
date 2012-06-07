@@ -38,11 +38,11 @@
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-a" mid="10"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="9"><![CDATA[<html>$Farm Keeper Mori$<BR>Earth don't lie…<BR>Your effort pays off by <FONT color=#a82424>crops</FONT>.</html>]]></talk_question>
+      <talk_question mid="9"><![CDATA[<html>$Farm Manager Morrie$<BR>Earth don't lie…<BR>Your effort pays off by <FONT color=#a82424>crops</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-b" mid="12"><![CDATA[<html>Yes! I am ready.</html>]]></talk_answer>
-      <talk_question mid="11"><![CDATA[<html>$Farm Keeper Mori$<BR>So are you ready to work?</html>]]></talk_question>
+      <talk_question mid="11"><![CDATA[<html>$Farm Manager Morrie$<BR>So are you ready to work?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting-b" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
@@ -50,7 +50,7 @@
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-a" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="15"><![CDATA[<html>$Farm Keeper Mori$<BR>Hahaha! You are unlike any other young man.<BR>Listen carefully. I'll take you through step by step.</html>]]></talk_question>
+      <talk_question mid="15"><![CDATA[<html>$Farm Manager Morrie$<BR>Hahaha! You are unlike any other young man.<BR>Listen carefully. I'll take you through step by step.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-b" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -58,11 +58,11 @@
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-b" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-c" mid="37"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="17"><![CDATA[<html>$Farm Keeper Mori$<BR>You need to find an [<FONT color=#a82424>empty space</FONT>] in the farming area to <FONT color=#a82424>plant the seeds</FONT>.</html>]]></talk_question>
+      <talk_question mid="17"><![CDATA[<html>$Farm Manager Morrie$<BR>You need to find an [<FONT color=#a82424>empty space</FONT>] in the farming area to <FONT color=#a82424>plant the seeds</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-c" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-d" mid="38"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="18"><![CDATA[<html>$Farm Keeper Mori$<BR>Left-click the empty space and <FONT color=#a82424>choose</FONT> the seeds you want to plant.</html>]]></talk_question>
+      <talk_question mid="18"><![CDATA[<html>$Farm Manager Morrie$<BR>Left-click the empty space and <FONT color=#a82424>choose</FONT> the seeds you want to plant.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-d" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-e" mid="40"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -71,7 +71,7 @@
    <talk_paragraph index="n351_farm-1-e" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-f" mid="26"><![CDATA[<html>Ok I get it!</html>]]></talk_answer>
       <talk_answer link_index="n351_farm-1-a" mid="27"><![CDATA[<html>It's too hard, explain to me one more time.</html>]]></talk_answer>
-      <talk_question mid="24"><![CDATA[<html>$Farm Keeper Mori$<BR>Hahaha! How is it? Do you get it?</html>]]></talk_question>
+      <talk_question mid="24"><![CDATA[<html>$Farm Manager Morrie$<BR>Hahaha! How is it? Do you get it?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-f" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-!next" mid="29"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>

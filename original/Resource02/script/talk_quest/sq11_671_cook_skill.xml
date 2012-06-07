@@ -38,7 +38,7 @@
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-a" mid="10"><![CDATA[<html>Yes I agree.</html>]]></talk_answer>
-      <talk_question mid="7"><![CDATA[<html>$Farm Keeper Mori$<BR><FONT color=#a82424>Cooking</FONT> is an art performed by passion and a delicate touch!!<BR>If the food is healthy it's the art of the Goddess! What do you think about this?</html>]]></talk_question>
+      <talk_question mid="7"><![CDATA[<html>$Farm Manager Morrie$<BR><FONT color=#a82424>Cooking</FONT> is an art performed by passion and a delicate touch!!<BR>If the food is healthy it's the art of the Goddess! What do you think about this?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-acceptted" mid="12"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
@@ -46,32 +46,32 @@
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-a" mid="18"><![CDATA[<html>Good! Tell me.</html>]]></talk_answer>
-      <talk_question mid="15"><![CDATA[<html>$Farm Keeper Mori$<BR>I'm so glad I have seen a young man who is ready to become a chef!!<BR>I want to teach you all my <FONT color=#a82424>Cooking Skills</FONT>!</html>]]></talk_question>
+      <talk_question mid="15"><![CDATA[<html>$Farm Manager Morrie$<BR>I'm so glad I have seen a young man who is ready to become a chef!!<BR>I want to teach you all my <FONT color=#a82424>Cooking Skills</FONT>!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-b" mid="32"><![CDATA[<html>Where do I get the cooking tools from?</html>]]></talk_answer>
-      <talk_question mid="19"><![CDATA[<html>$Farm Keeper Mori$<BR>To cook, you need [<FONT color=#a82424>cooking tools</FONT>], [<FONT color=#a82424>recipe</FONT>], and the right [<FONT color=#a82424>ingredients</FONT>] for the recipe.</html>]]></talk_question>
+      <talk_question mid="19"><![CDATA[<html>$Farm Manager Morrie$<BR>To cook, you need [<FONT color=#a82424>cooking tools</FONT>], [<FONT color=#a82424>recipe</FONT>], and the right [<FONT color=#a82424>ingredients</FONT>] for the recipe.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-b" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-c" mid="33"><![CDATA[<html>Where do I get the recipe from?</html>]]></talk_answer>
-      <talk_question mid="20"><![CDATA[<html>$Farm Keeper Mori$<BR>[<FONT color=#a82424>Cooking tools</FONT>] are sold in a shop.<BR>Depending on the recipe, the [<FONT color=#a82424>cooking tools</FONT>] <FONT color=#a82424>varies</FONT> so be careful.</html>]]></talk_question>
+      <talk_question mid="20"><![CDATA[<html>$Farm Manager Morrie$<BR>[<FONT color=#a82424>Cooking tools</FONT>] are sold in a shop.<BR>Depending on the recipe, the [<FONT color=#a82424>cooking tools</FONT>] <FONT color=#a82424>varies</FONT> so be careful.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-c" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-d" mid="34"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="21"><![CDATA[<html>$Farm Keeper Mori$<BR>[<FONT color=#a82424>Recipes</FONT>] can be found in the reward box after the stage clearance. Acquired [<FONT color=#a82424>recipes</FONT>] can be registered by using  [<FONT color=#a82424>Add a recipe</FONT>] in the [<FONT color=#a82424>Cooking</FONT>] tab in Skill. Press [<FONT color=#a82424>K</FONT>] to view the <FONT color=#a82424>Extra Skill Tab</FONT></html>]]></talk_question>
+      <talk_question mid="21"><![CDATA[<html>$Farm Manager Morrie$<BR>[<FONT color=#a82424>Recipes</FONT>] can be found in the reward box after the stage clearance. Acquired [<FONT color=#a82424>recipes</FONT>] can be registered by using  [<FONT color=#a82424>Add a recipe</FONT>] in the [<FONT color=#a82424>Cooking</FONT>] tab in Skill. Press [<FONT color=#a82424>K</FONT>] to view the <FONT color=#a82424>Extra Skill Tab</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-d" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-e" mid="35"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="22"><![CDATA[<html>$Farm Keeper Mori$<BR>Required <FONT color=#2b2723>[<FONT color=#a82424>Cooking ingredients</FONT>] differ from each recipe.<BR></FONT>[<FONT color=#a82424>Cooking ingredients</FONT>] can be found by <FONT color=#a82424>Fishing</FONT> and <FONT color=#a82424>Growing</FONT>.<BR>So to cook it is essential to learn <FONT color=#a82424>fishing</FONT> and <FONT color=#a82424>growing</FONT>.</html>]]></talk_question>
+      <talk_question mid="22"><![CDATA[<html>$Farm Manager Morrie$<BR>Required <FONT color=#2b2723>[<FONT color=#a82424>Cooking ingredients</FONT>] differ from each recipe.<BR></FONT>[<FONT color=#a82424>Cooking ingredients</FONT>] can be found by <FONT color=#a82424>Fishing</FONT> and <FONT color=#a82424>Growing</FONT>.<BR>So to cook it is essential to learn <FONT color=#a82424>fishing</FONT> and <FONT color=#a82424>growing</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-e" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-f" mid="36"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="23"><![CDATA[<html>$Farm Keeper Mori$<BR>After the recipe registration, on the tools and ingredients are ready <BR>Choose the recipe from the cooking screen <BR> Click [<FONT color=#a82424>Start Cooking</FONT>] to make some food.</html>]]></talk_question>
+      <talk_question mid="23"><![CDATA[<html>$Farm Manager Morrie$<BR>After the recipe registration, on the tools and ingredients are ready <BR>Choose the recipe from the cooking screen <BR> Click [<FONT color=#a82424>Start Cooking</FONT>] to make some food.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-f" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-g" mid="25"><![CDATA[<html>Yes! I get it.</html>]]></talk_answer>
       <talk_answer link_index="n351_farm-1-a" mid="26"><![CDATA[<html>It's too hard.</html>]]></talk_answer>
-      <talk_question mid="24"><![CDATA[<html>$Farm Keeper Mori$<BR>If you don't have the required number of <FONT color=#a82424>ingredients</FONT> you won't be able to cook so keep that in mind<BR>Did you understand everything?!</html>]]></talk_question>
+      <talk_question mid="24"><![CDATA[<html>$Farm Manager Morrie$<BR>If you don't have the required number of <FONT color=#a82424>ingredients</FONT> you won't be able to cook so keep that in mind<BR>Did you understand everything?!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-g" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-!next" mid="28"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>

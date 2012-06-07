@@ -2,7 +2,7 @@
       <npcename>n141_trader_bellin</npcename>
       <npcid>141</npcid>
       <startexe>0</startexe>
-      <npckname mid="1"><![CDATA[Blacksmith Belin [Center of the Deserted Island]]]></npckname>
+      <npckname mid="1"><![CDATA[Blacksmith Belin [Forsaken Islet Core]]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
          <talk_question mid="3"><![CDATA[<html> $ Blacksmith Belin $ <BR>* Pant * What happened to Harori? Did Harori escape safely?? <BR>I need to buy some more time ...</html>]]></talk_question>
       </talk_paragraph>

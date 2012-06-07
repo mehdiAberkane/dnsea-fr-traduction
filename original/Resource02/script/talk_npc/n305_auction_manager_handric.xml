@@ -4,7 +4,7 @@
       <startexe>0</startexe>
       <npckname mid="1"><![CDATA[Trading Master Hendrick]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
-         <talk_answer link_index="auction" mid="3"><![CDATA[<html>[History]</html>]]></talk_answer>
+         <talk_answer link_index="auction" mid="3"><![CDATA[<html>[Trading House]</html>]]></talk_answer>
          <talk_question mid="2"><![CDATA[<html>$Trading Master Hendrick${action:Talk}<BR>Is there something you want?</html>]]></talk_question>
       </talk_paragraph>
       <executions>

@@ -25,7 +25,7 @@
       </talk_paragraph>
       <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_16" mid="74"><![CDATA[<html>[Lv.14] Sleepers' Temple</html>]]></talk_answer>
-         <talk_answer link_index="stage_26" mid="75"><![CDATA[<html>[Lv.22] Prayer's Haven</html>]]></talk_answer>
+         <talk_answer link_index="stage_26" mid="75"><![CDATA[<html>[Lv.22] Prayer's Resting Place</html>]]></talk_answer>
          <talk_answer link_index="002" mid="76"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>

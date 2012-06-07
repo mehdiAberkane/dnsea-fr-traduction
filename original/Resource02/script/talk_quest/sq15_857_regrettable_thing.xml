@@ -39,7 +39,7 @@
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-accepting" image="QW_58.dds" itemindex="">
       <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="5"><![CDATA[<html>$Master Cleric Johan$<BR>Our people who went back to Town of Isla Natives to get back their homeland got wounded and disappeared.<BR>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Johan$<BR>Our people who went back to Isla Native Village to get back their homeland got wounded and disappeared.<BR>
 They may have turned into monsters like Master Sorceress Tamara said.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-accepting-a" image="" itemindex="">
@@ -56,11 +56,11 @@ They may have turned into monsters like Master Sorceress Tamara said.</html>]]><
       <talk_question mid="98"><![CDATA[<html>$Master Cleric Johan$<BR>…We can't let this get worse.<BR>I believe that they are using totems to do this so we have to do something.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-1-b" image="QW_58.dds" itemindex="">
-      <talk_question mid="131"><![CDATA[<html>$Master Cleric Johan$<BR>We have to destroy and unactivate the totems in <FONT color=#a82424>Town of Isla Natives</FONT>.<BR>
+      <talk_question mid="131"><![CDATA[<html>$Master Cleric Johan$<BR>We have to destroy and unactivate the totems in <FONT color=#a82424>Isla Native Village</FONT>.<BR>
 Please help us all the way if you don't mind.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-2" image="QW_58.dds" itemindex="">
-      <talk_question mid="132"><![CDATA[<html>$Master Cleric Johan$<BR>Find and unactivate totems in <FONT color=#a82424>Town of Isla Natives</FONT>.<BR>Hurting people and using them…. It is disgrace to them.</html>]]></talk_question>
+      <talk_question mid="132"><![CDATA[<html>$Master Cleric Johan$<BR>Find and unactivate totems in <FONT color=#a82424>Isla Native Village</FONT>.<BR>Hurting people and using them…. It is disgrace to them.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-3" image="QW_58.dds" itemindex="">
       <talk_answer link_index="n714_cleric_yohan-3-a" mid="134"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -148,10 +148,10 @@ As I can't figure out what this is, I'll seek for advice.</html>]]></talk_questi
          <statemark_type>11</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="60"><![CDATA[Scout Town of Isla Natives]]></title>
-         <contents mid="61"><![CDATA[<html>Go to Town of Isla Natives and destroy totems.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Town of Isla Natives)</FONT> <FONT color=#a82424>→ Town of Isla Natives</FONT></html>]]></contents>
-         <destination mid="62"><![CDATA[Destroy totems in Town of Isla Natives]]></destination>
-         <todo_msg mid="63"><![CDATA[Go to Town of Isla Natives]]></todo_msg>
+         <title mid="60"><![CDATA[Scout Isla Native Village]]></title>
+         <contents mid="61"><![CDATA[<html>Go to Isla Native Village and destroy totems.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Isla Native Village)</FONT> <FONT color=#a82424>→ Isla Native Village</FONT></html>]]></contents>
+         <destination mid="62"><![CDATA[Destroy totems in Isla Native Village]]></destination>
+         <todo_msg mid="63"><![CDATA[Go to Isla Native Village]]></todo_msg>
       </journal>
       <journal index="3">
          <contents_image>QN_Npc_lotus_yohan.dds</contents_image>

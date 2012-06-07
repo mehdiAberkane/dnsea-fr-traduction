@@ -52,12 +52,12 @@
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting" image="QN_Npc_Argenta.dds" itemindex="">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-a" mid="7"><![CDATA[<html>(She wasn't injured while helping others, but I'll let it slide)</html>]]></talk_answer>
-      <talk_question mid="6"><![CDATA[<html>$Adventurers' Guild Master Deckard${action:Talk}<BR>…I heard the news. That <FONT color=#a82424>Silver-haired Swordswoman</FONT> was badly injured.<BR>From what I've heard, she was injured while helping Ethan and Angelica… She is so amazing.</html>]]></talk_question>
+      <talk_question mid="6"><![CDATA[<html>$Adventurers' Guild Master Deckard${action:Talk}<BR>…I heard the news. That <FONT color=#a82424>Silver-haired Swordswoman</FONT> was badly injured.<BR>From what I've heard, she was injured while helping Edan and Angelica… She is so amazing.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-a" image="QN_Npc_Argenta.dds" itemindex="">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-b" mid="9"><![CDATA[<html>There is no relationship between a beauty and an injury.</html>]]></talk_answer>
       <talk_question mid="8"><![CDATA[<html>$Adventurers' Guild Master Deckard$<BR>on top of that, I heard that swordswoman is bery beautiful!<BR>
-I can see since <FONT color=#a82424>Ethan</FONT> is blushing and  panicking.<BR>Since such a beautiful woman is injured, she would suffer so much!</html>]]></talk_question>
+I can see since <FONT color=#a82424>Edan</FONT> is blushing and  panicking.<BR>Since such a beautiful woman is injured, she would suffer so much!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n024_adventurer_guildmaster_decud-accepting-b" image="QN_Npc_Argenta.dds" itemindex="">
       <talk_answer link_index="n024_adventurer_guildmaster_decud-accepting-c" mid="109"><![CDATA[<html>So there is no relationship between a beauty and an injury!</html>]]></talk_answer>

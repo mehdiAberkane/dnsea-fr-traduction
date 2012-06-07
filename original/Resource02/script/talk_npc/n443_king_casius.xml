@@ -2,7 +2,7 @@
       <npcename>n443_king_casius</npcename>
       <npcid>443</npcid>
       <startexe>0</startexe>
-      <npckname mid="1"><![CDATA[King Cassius (Homeless Welton Hollow)]]></npckname>
+      <npckname mid="1"><![CDATA[King Cassius (Abandoned Welton Hollow)]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
          <talk_question mid="3"><![CDATA[<html>$King Cassius${action:Talk2}<BR>Hmmm……So this, this place looks like this…….I, I am definitely not afraid……<BR>
 Do you, you believe me?</html>]]></talk_question>

@@ -47,7 +47,7 @@
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n263_general_duglars-noquest" image="QN_Npc_Bishop.dds" itemindex="">
-      <talk_question mid="50"><![CDATA[<html>$General Douglas$<BR>The courageous soldiers of Saint Haven are currently trying their best to fight off the monsters of the Black Mines.<BR><FONT color=#7e12d2>(Talk to Bishop Ignacio.)</FONT></html>]]></talk_question>
+      <talk_question mid="50"><![CDATA[<html>$General Douglas$<BR>The courageous soldiers of Saint Haven are currently trying their best to fight off the monsters of the Dark Mines.<BR><FONT color=#7e12d2>(Talk to Bishop Ignacio.)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-noquest" image="" itemindex="">
       <talk_question mid="56"><![CDATA[<html>$General Douglas$<BR>I have too much work to do now. If there is no urgent matter, please find later okie?<BR><FONT color=#7e12d2>(Talk to Bishop Ignacio.)</FONT></html>]]></talk_question>

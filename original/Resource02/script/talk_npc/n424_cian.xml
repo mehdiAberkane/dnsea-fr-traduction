@@ -2,7 +2,7 @@
       <npcename>n424_cian</npcename>
       <npcid>424</npcid>
       <startexe>1</startexe>
-      <npckname mid="1"><![CDATA[Warrior Sean (Explosions in the Forest of Dead Leaves)]]></npckname>
+      <npckname mid="1"><![CDATA[Warrior Sean (Explosions in the Withered Leaves Forest)]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
          <talk_question mid="3"><![CDATA[<html>$Warrior Sean$<BR>
 Ha~!!</html>]]></talk_question>

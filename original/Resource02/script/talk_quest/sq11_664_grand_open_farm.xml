@@ -45,7 +45,7 @@
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-noquest" image="QN_Event_Red.dds" itemindex="">
-      <talk_question mid="55"><![CDATA[<html>$Farm Manager Mori$<BR><FONT color=#2b2723>Are you interested in farm matters?</FONT><BR><FONT color=#2b2723></FONT><BR><FONT color=#7e12d2>※You can only get the quest from Events Planner Irine.</FONT></html>]]></talk_question>
+      <talk_question mid="55"><![CDATA[<html>$Farm Manager Morrie$<BR><FONT color=#2b2723>Are you interested in farm matters?</FONT><BR><FONT color=#2b2723></FONT><BR><FONT color=#7e12d2>※You can only get the quest from Events Planner Irine.</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n100_event_ilyn-accepting" image="QW_SaintHaven.dds" itemindex="">
       <talk_answer link_index="n100_event_ilyn-accepting-a" mid="20"><![CDATA[<html>I'm working hard to meet expectations.</html>]]></talk_answer>
@@ -97,7 +97,7 @@
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1" image="QN_Event_Red.dds" itemindex="">
       <talk_answer link_index="n351_farm-1-a" mid="49"><![CDATA[<html>Yes, please.</html>]]></talk_answer>
-      <talk_question mid="35"><![CDATA[<html>$Farm Manager Mori$<BR>You are the young adventurer that <FONT color=#a82424>Irine</FONT> mentioned!<BR>First time to the farm?</html>]]></talk_question>
+      <talk_question mid="35"><![CDATA[<html>$Farm Manager Morrie$<BR>You are the young adventurer that <FONT color=#a82424>Irine</FONT> mentioned!<BR>First time to the farm?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-1-b" mid="51"><![CDATA[<html><FONT color=#a94407>(Receive Reward)</FONT></html>]]></talk_answer>
@@ -107,7 +107,7 @@
       <talk_answer link_index="n351_farm-1-sq11_665_grow_skill" mid="84"><![CDATA[<html>[Farming] <FONT color=#086171>Learn Farming</FONT></html>]]></talk_answer>
       <talk_answer link_index="n351_farm-1-sq11_668_fishing_skill" mid="85"><![CDATA[<html>[Fishing] <FONT color=#086171>Learn Fishing</FONT></html>]]></talk_answer>
       <talk_answer link_index="n351_farm-1-sq11_671_cook_skill" mid="86"><![CDATA[<html>[Cooking] <FONT color=#086171>Learn Cooking</FONT></html>]]></talk_answer>
-      <talk_question mid="53"><![CDATA[<html>$Farm Manager Mori$<BR>Do you have any field that you are interested in?<BR>You can learn all these, don't be too concerned, so just pick any.</html>]]></talk_question>
+      <talk_question mid="53"><![CDATA[<html>$Farm Manager Morrie$<BR>Do you have any field that you are interested in?<BR>You can learn all these, don't be too concerned, so just pick any.</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
@@ -147,8 +147,8 @@
          <statemark_type>12</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="40"><![CDATA[Talk to the Farm Manager Mori]]></title>
-         <contents mid="41"><![CDATA[<html>The Farm District is now open in Saint Haven! Go look for the Farm Manager Mori.<BR><BR>※<FONT color=#7e12d2>At the top right hand corner of the screen, do a change of channel to move to the Farm District.</FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#2b2723><FONT color=#086171>Saint Haven</FONT></FONT><FONT color=#a82424>→ Farm Manager Mori (Farm Office)</FONT></html>]]></contents>
+         <title mid="40"><![CDATA[Talk to the Farm Manager Morrie]]></title>
+         <contents mid="41"><![CDATA[<html>The Farm District is now open in Saint Haven! Go look for the Farm Manager Morrie.<BR><BR>※<FONT color=#7e12d2>At the top right hand corner of the screen, do a change of channel to move to the Farm District.</FONT><BR><FONT color=#7e12d2></FONT><BR><FONT color=#2b2723><FONT color=#086171>Saint Haven</FONT></FONT><FONT color=#a82424>→ Farm Manager Morrie (Farm Office)</FONT></html>]]></contents>
          <destination mid="42"><![CDATA[Talk to Mori]]></destination>
          <todo_msg mid="43"><![CDATA[Quest has been added.]]></todo_msg>
       </journal>

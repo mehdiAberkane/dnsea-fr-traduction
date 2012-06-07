@@ -145,7 +145,7 @@ Should I build a library> Umm… then…<BR>
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[Ancient Treasure House]]></title>
-         <contents mid="43"><![CDATA[<html>Go to Ancient Treasure House to find Dark Black Mark Key. One of the monsters will be carrying it.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Town of Isla Natives)</FONT> <FONT color=#a82424>→ Ancient Treasure House</FONT></html>]]></contents>
+         <contents mid="43"><![CDATA[<html>Go to Ancient Treasure House to find Dark Black Mark Key. One of the monsters will be carrying it.<BR><BR><FONT color=#086171>Riverwort Port(Entrance of Isla Native Village)</FONT> <FONT color=#a82424>→ Ancient Treasure House</FONT></html>]]></contents>
          <destination mid="44"><![CDATA[Ancient Treasure House]]></destination>
          <todo_msg mid="45"><![CDATA[Go to Ancient Treasure House]]></todo_msg>
       </journal>

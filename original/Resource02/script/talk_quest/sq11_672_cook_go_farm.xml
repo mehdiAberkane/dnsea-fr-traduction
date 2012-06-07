@@ -42,32 +42,32 @@
       <talk_question mid="99999"><![CDATA[<html>{ui_string:1200005}</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n352_farm_warehouse-noquest" image="" itemindex="">
-      <talk_question mid="28"><![CDATA[<html>$Farm Keeper Mori$<BR>It's too early for the real challenge now...<BR>
+      <talk_question mid="28"><![CDATA[<html>$Farm Manager Morrie$<BR>It's too early for the real challenge now...<BR>
  <BR>
-<FONT color=#7e12d2>(Require a quest from Farm Keeper Mori to proceed)</FONT></html>]]></talk_question>
+<FONT color=#7e12d2>(Require a quest from Farm Manager Morrie to proceed)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-a" mid="12"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="11"><![CDATA[<html>$Farm Keeper Mori$<BR>As you know, there is nothing more fresh than a fish that was just caught or vegetables that were just harvested!<BR>Are you up for a <FONT color=#a82424>real</FONT> cooking session with fresh ingredients?</html>]]></talk_question>
+      <talk_question mid="11"><![CDATA[<html>$Farm Manager Morrie$<BR>As you know, there is nothing more fresh than a fish that was just caught or vegetables that were just harvested!<BR>Are you up for a <FONT color=#a82424>real</FONT> cooking session with fresh ingredients?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-accepting-a" image="" itemindex="">
       <talk_answer link_index="n351_farm-accepting-acceptted" mid="14"><![CDATA[<html><FONT color=#086171>Accept Quest</FONT></html>]]></talk_answer>
-      <talk_question mid="13"><![CDATA[<html>$Farm Keeper Mori$<BR>
+      <talk_question mid="13"><![CDATA[<html>$Farm Manager Morrie$<BR>
  </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n351_farm-1" image="" itemindex="">
-      <talk_question mid="7"><![CDATA[<html>$Farm Keeper Mori$<BR>Hahaha! Now you are acting like a chef.<BR>Go to <FONT color=#a82424>Farming Area</FONT> to find fresh ingredients.</html>]]></talk_question>
+      <talk_question mid="7"><![CDATA[<html>$Farm Manager Morrie$<BR>Hahaha! Now you are acting like a chef.<BR>Go to <FONT color=#a82424>Farming Area</FONT> to find fresh ingredients.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n352_farm_warehouse-1" image="" itemindex="">
       <talk_answer link_index="n352_farm_warehouse-1-a" mid="19"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="8"><![CDATA[<html>$Farm Keeper Mori$<BR>Welcome!<BR>This is the <FONT color=#a82424>Farming Area</FONT>.<BR>You can find the ingredients you need for a recipe.</html>]]></talk_question>
+      <talk_question mid="8"><![CDATA[<html>$Farm Manager Morrie$<BR>Welcome!<BR>This is the <FONT color=#a82424>Farming Area</FONT>.<BR>You can find the ingredients you need for a recipe.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n352_farm_warehouse-1-a" image="" itemindex="">
       <talk_answer link_index="n352_farm_warehouse-1-b" mid="21"><![CDATA[<html><FONT color=#a94407>(Accept)</FONT></html>]]></talk_answer>
       <talk_question mid="20"><![CDATA[<html>$Quest Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n352_farm_warehouse-1-b" image="" itemindex="">
-      <talk_question mid="22"><![CDATA[<html>$Farm Keeper Mori$<BR>Are you all set?<BR>I <FONT color=#a82424>provided</FONT> you everything you need so check.<BR>It's the real cooking now.</html>]]></talk_question>
+      <talk_question mid="22"><![CDATA[<html>$Farm Manager Morrie$<BR>Are you all set?<BR>I <FONT color=#a82424>provided</FONT> you everything you need so check.<BR>It's the real cooking now.</html>]]></talk_question>
    </talk_paragraph>
    <qstep_change qstep="accepting">
       <comment />
