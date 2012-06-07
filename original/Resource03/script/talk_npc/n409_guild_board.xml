@@ -2,7 +2,7 @@
       <npcename>n409_guild_board</npcename>
       <npcid>409</npcid>
       <startexe>1</startexe>
-      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Black Mines Entrance]]></npckname>
+      <npckname mid="1"><![CDATA[Adventurer's Guild Board: Dark Mines Entrance]]></npckname>
       <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="4" link_target="gq11_3161_n409_mine_normal.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Mapography I</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="5" link_target="gq11_3162_n409_mine_hunt.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Source</FONT></html>]]></talk_answer>
@@ -55,8 +55,8 @@
          <talk_question mid="33"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>No requests have been received at the moment.<BR><BR><FONT color=#086171>?When will the dragons appear? - A Level 40 Player </FONT></html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
-         <talk_answer link_index="stage_27" mid="207"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
-         <talk_answer link_index="stage_29" mid="208"><![CDATA[<html>[Lv.28] Lost Tunnels</html>]]></talk_answer>
+         <talk_answer link_index="stage_27" mid="207"><![CDATA[<html>[Lv.24] Dark Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_29" mid="208"><![CDATA[<html>[Lv.28] Collapsed Mine</html>]]></talk_answer>
          <talk_answer link_index="stage_38" mid="209"><![CDATA[<html>[Lv34] Road to Death City</html>]]></talk_answer>
          <talk_answer link_index="stage_42" mid="210"><![CDATA[<html>[Lv36]Road to Death City</html>]]></talk_answer>
          <talk_answer link_index="stage_44" mid="211"><![CDATA[<html>[Lv38] Nameless Tyrant Tomb</html>]]></talk_answer>
@@ -74,7 +74,7 @@
          <talk_answer link_index="q_enter" mid="220" link_target="gq11_3170_n409_mine_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2> Assaults I</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="221" link_target="gq11_3169_n409_mine_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into The Abyss: Defeat Numharoko</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_27" mid="222"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="78"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Black Mines</FONT>.</html>]]></talk_question>
+         <talk_question mid="78"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Dark Mines</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_29" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="223" link_target="gq11_3201_n409_sink_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Mapography V </FONT></html>]]></talk_answer>
@@ -100,7 +100,7 @@
          <talk_answer link_index="q_enter" mid="240" link_target="gq11_3290_n409_cityfront_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault III</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="241" link_target="gq11_3289_n409_cityfront_abyss.xml"><![CDATA[<html>[Abyss]<FONT color=#7e12d2> Into the Abyss: Defeat Imposter Kayleen</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_38" mid="242"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="80"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Road of Death City</FONT>.</html>]]></talk_question>
+         <talk_question mid="80"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Road to Death City</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_42" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="243" link_target="gq11_3321_n409_citygate_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Show Me!</FONT></html>]]></talk_answer>
@@ -113,7 +113,7 @@
          <talk_answer link_index="q_enter" mid="250" link_target="gq11_3330_n409_citygate_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault VII</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="251" link_target="gq11_3329_n409_citygate_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Tiny Half Golem</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_42" mid="252"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="81"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Death City Gates</FONT>.</html>]]></talk_question>
+         <talk_question mid="81"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Gates to City of Death</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_44" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="253" link_target="gq11_3351_n409_ntomb_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Mapology XI</FONT></html>]]></talk_answer>
@@ -126,31 +126,31 @@
          <talk_answer link_index="q_enter" mid="260" link_target="gq11_3360_n409_ntomb_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault X</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="261" link_target="gq11_3359_n409_ntomb_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Abandoned Firestone Mine </FONT></html>]]></talk_answer>
          <talk_answer link_index="001" mid="262"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="82"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Tyrant's Grave</FONT>.</html>]]></talk_question>
+         <talk_question mid="82"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Nameless Tyrant Tomb</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="lv24" image="QN_guild_board.dds" itemindex="">
-         <talk_answer link_index="stage_27" mid="265"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_27" mid="265"><![CDATA[<html>[Lv.24] Dark Mines</html>]]></talk_answer>
          <talk_answer link_index="002" mid="266"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="264"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="lv28" image="QN_guild_board.dds" itemindex="">
-         <talk_answer link_index="stage_27" mid="268"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
-         <talk_answer link_index="stage_29" mid="269"><![CDATA[<html>[Lv.28] Lost Tunnels</html>]]></talk_answer>
+         <talk_answer link_index="stage_27" mid="268"><![CDATA[<html>[Lv.24] Dark Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_29" mid="269"><![CDATA[<html>[Lv.28] Collapsed Mine</html>]]></talk_answer>
          <talk_answer link_index="002" mid="270"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="267"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="lv34" image="QN_guild_board.dds" itemindex="">
-         <talk_answer link_index="stage_27" mid="272"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
-         <talk_answer link_index="stage_29" mid="273"><![CDATA[<html>[Lv.28] Lost Tunnels</html>]]></talk_answer>
-         <talk_answer link_index="stage_38" mid="274"><![CDATA[<html>[Lv34] Road of Death City</html>]]></talk_answer>
+         <talk_answer link_index="stage_27" mid="272"><![CDATA[<html>[Lv.24] Dark Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_29" mid="273"><![CDATA[<html>[Lv.28] Collapsed Mine</html>]]></talk_answer>
+         <talk_answer link_index="stage_38" mid="274"><![CDATA[<html>[Lv34] Road to Death City</html>]]></talk_answer>
          <talk_answer link_index="002" mid="275"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="271"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="lv36" image="QN_guild_board.dds" itemindex="">
-         <talk_answer link_index="stage_27" mid="277"><![CDATA[<html>[Lv.24] Black Mines</html>]]></talk_answer>
-         <talk_answer link_index="stage_29" mid="278"><![CDATA[<html>[Lv.28] Lost Tunnels</html>]]></talk_answer>
-         <talk_answer link_index="stage_38" mid="279"><![CDATA[<html>[Lv34] Road of Death City</html>]]></talk_answer>
-         <talk_answer link_index="stage_42" mid="280"><![CDATA[<html>[Lv36] Death City Gates</html>]]></talk_answer>
+         <talk_answer link_index="stage_27" mid="277"><![CDATA[<html>[Lv.24] Dark Mines</html>]]></talk_answer>
+         <talk_answer link_index="stage_29" mid="278"><![CDATA[<html>[Lv.28] Collapsed Mine</html>]]></talk_answer>
+         <talk_answer link_index="stage_38" mid="279"><![CDATA[<html>[Lv34] Road to Death City</html>]]></talk_answer>
+         <talk_answer link_index="stage_42" mid="280"><![CDATA[<html>[Lv36] Gates to City of Death</html>]]></talk_answer>
          <talk_answer link_index="002" mid="281"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="276"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>

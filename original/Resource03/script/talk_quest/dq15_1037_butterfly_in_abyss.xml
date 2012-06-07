@@ -38,7 +38,7 @@
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-accepting" image="QW_58.dds" itemindex="">
       <talk_answer link_index="n714_cleric_yohan-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="5"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>Is it because of the experiment by the heretics at <FONT color=#a82424>Town of Isla Natives</FONT>…<BR>I heard that the evil spirit is getting stronger.</html>]]></talk_question>
+      <talk_question mid="5"><![CDATA[<html>$Master Cleric Johan${action:Talk}<BR>Is it because of the experiment by the heretics at <FONT color=#a82424>Isla Native Village</FONT>…<BR>I heard that the evil spirit is getting stronger.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-accepting-a" image="" itemindex="">
       <talk_answer link_index="n714_cleric_yohan-accepting-b" mid="62"><![CDATA[<html>Ok.</html>]]></talk_answer>
@@ -49,7 +49,7 @@
       <talk_question mid="10"><![CDATA[<html>$Butterfly in Abyss$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-1" image="QW_58.dds" itemindex="">
-      <talk_question mid="20"><![CDATA[<html>$Master Cleric Johan$<BR>Please go and scout the <FONT color=#a82424>Town of Isla Natives</FONT>.<BR>You must visit there at <FONT color=#a82424>Abyss difficulty</FONT> to assess the heretics' strength.</html>]]></talk_question>
+      <talk_question mid="20"><![CDATA[<html>$Master Cleric Johan$<BR>Please go and scout the <FONT color=#a82424>Isla Native Village</FONT>.<BR>You must visit there at <FONT color=#a82424>Abyss difficulty</FONT> to assess the heretics' strength.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n714_cleric_yohan-2" image="QW_58.dds" itemindex="">
       <talk_answer link_index="n714_cleric_yohan-2-a" mid="67"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -106,10 +106,10 @@ We will be looking forward to see you from now on.</html>]]></talk_question>
          <statemark_type>11</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="42"><![CDATA[Town of Isla Natives clear]]></title>
-         <contents mid="43"><![CDATA[<html>Scout Town of Isla Natives at Abyss difficulty.<BR><BR><FONT color=#7e12d2>※ Only available at Abyss difficulty.</FONT><BR><BR><FONT color=#086171>Riverwort Port(Entrance of Isla town) </FONT><FONT color=#a82424>→ Town of Isla Natives</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[[Abyss] Town of Isla Natives]]></destination>
-         <todo_msg mid="45"><![CDATA[Clear Town of Isla Natives at Abyss difficulty.]]></todo_msg>
+         <title mid="42"><![CDATA[Clear Isla Native Village]]></title>
+         <contents mid="43"><![CDATA[<html>Scout Isla Native Village at Abyss difficulty.<BR><BR><FONT color=#7e12d2>※ Only available at Abyss difficulty.</FONT><BR><BR><FONT color=#086171>Riverwort Port(Entrance of Isla town) </FONT><FONT color=#a82424>→ Isla Native Village</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Abyss] Isla Native Village]]></destination>
+         <todo_msg mid="45"><![CDATA[Clear Isla Native Village at Abyss difficulty.]]></todo_msg>
       </journal>
       <journal index="2">
          <contents_image>QN_Npc_lotus_yohan.dds</contents_image>
