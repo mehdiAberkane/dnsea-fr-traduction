@@ -48,7 +48,7 @@
       <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_28" mid="148"><![CDATA[<html>[Lv.26] Dark Overlord Keep</html>]]></talk_answer>
          <talk_answer link_index="stage_43" mid="149"><![CDATA[<html>[Lv.28]Fortress of the Dark Overlord Army</html>]]></talk_answer>
-         <talk_answer link_index="stage_36" mid="150"><![CDATA[<html>[Lv.30] Dark Overlord Parade Ground</html>]]></talk_answer>
+         <talk_answer link_index="stage_36" mid="150"><![CDATA[<html>[Lv.30] Dark Overlord Training Camp</html>]]></talk_answer>
          <talk_answer link_index="stage_40" mid="151"><![CDATA[<html>[Lv34] Dark Overlord Tower</html>]]></talk_answer>
          <talk_answer link_index="002" mid="152"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="63"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
@@ -90,7 +90,7 @@
          <talk_answer link_index="q_enter" mid="180" link_target="gq11_3260_n412_ground_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault X</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="181" link_target="gq11_3259_n412_ground_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Jakobo</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_36" mid="182"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Dark Overlord Parade Ground</FONT>.</html>]]></talk_question>
+         <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Dark Overlord Training Camp</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_40" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="183" link_target="gq11_3301_n412_dtower_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Loving Pair V</FONT></html>]]></talk_answer>
@@ -119,7 +119,7 @@
       <talk_paragraph index="lv30" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_28" mid="203"><![CDATA[<html>[Lv.26] Dark Overlord Keep</html>]]></talk_answer>
          <talk_answer link_index="stage_43" mid="204"><![CDATA[<html>[Lv.28]Fortress of the Dark Overlord Army</html>]]></talk_answer>
-         <talk_answer link_index="stage_36" mid="205"><![CDATA[<html>[Lv30] Dark Overlord Parade Ground</html>]]></talk_answer>
+         <talk_answer link_index="stage_36" mid="205"><![CDATA[<html>[Lv30] Dark Overlord Training Camp</html>]]></talk_answer>
          <talk_answer link_index="002" mid="206"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="202"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>

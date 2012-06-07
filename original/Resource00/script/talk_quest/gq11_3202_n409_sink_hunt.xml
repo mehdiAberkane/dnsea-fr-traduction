@@ -38,7 +38,7 @@
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting" image="GQ_hunt.dds" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-a" mid="6"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="5"><![CDATA[<html><FONT color=#2b2723><FONT color=#2b2723>$Adventurer's Guild Commission Board$<BR>Hmmph. I can't stand seeing anyone prettier than me. Not too long ago, I heard the Miners in Lost Tunnels say that the <FONT color=#a82424>Dark Elves in the Dark Kingdom</FONT> are prettier than me.</FONT><FONT color=#a82424></FONT></FONT><FONT color=#a82424></FONT></html>]]></talk_question>
+      <talk_question mid="5"><![CDATA[<html><FONT color=#2b2723><FONT color=#2b2723>$Adventurer's Guild Commission Board$<BR>Hmmph. I can't stand seeing anyone prettier than me. Not too long ago, I heard the Miners in Collapsed Mine say that the <FONT color=#a82424>Dark Elves in the Dark Kingdom</FONT> are prettier than me.</FONT><FONT color=#a82424></FONT></FONT><FONT color=#a82424></FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-a" image="GQ_hunt.dds" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-b" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -53,7 +53,7 @@
       <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-d" image="GQ_hunt.dds" itemindex="">
-      <talk_question mid="52"><![CDATA[<html>$[Guild Request] Jealousy$<BR>You accepted a Mission.<BR>Please defeat <FONT color=#2b2723><FONT color=#a82424>Lost Tunnels</FONT>' <FONT color=#a82424>{monster:847}</FONT>.</FONT></html>]]></talk_question>
+      <talk_question mid="52"><![CDATA[<html>$[Guild Request] Jealousy$<BR>You accepted a Mission.<BR>Please defeat <FONT color=#2b2723><FONT color=#a82424>Collapsed Mine</FONT>' <FONT color=#a82424>{monster:847}</FONT>.</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-1" image="GQ_hunt.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request] <FONT color=#2b2723><FONT color=#a82424>Jealousy</FONT></FONT></FONT>.<BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time.</FONT></html>]]></talk_question>
@@ -111,9 +111,9 @@
          <statemark_type>20</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="42"><![CDATA[Defeat Lost Tunnels Black Mine's Dark Elves]]></title>
-         <contents mid="43"><![CDATA[<html>Defeat Lost Tunnels' 10<FONT color=#a82424>{monster:847} </FONT>.<BR><FONT color=#7e12d2>※ Black Mine Dark Elves can only be found in the Secret Passages of the Lost Tunnels.</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Lost Tunnels</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[[Hunt] Lost Tunnels]]></destination>
+         <title mid="42"><![CDATA[Defeat Collapsed Mine Black Mine's Dark Elves]]></title>
+         <contents mid="43"><![CDATA[<html>Defeat Collapsed Mine' 10<FONT color=#a82424>{monster:847} </FONT>.<BR><FONT color=#7e12d2>※ Black Mine Dark Elves can only be found in the Secret Passages of the Collapsed Mine.</FONT><BR><FONT color=#086171></FONT><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Collapsed Mine</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Hunt] Collapsed Mine]]></destination>
          <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
       </journal>
       <journal index="2">

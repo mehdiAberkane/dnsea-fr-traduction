@@ -4,7 +4,7 @@
       <startexe>2</startexe>
       <npckname mid="1"><![CDATA[Warehouse Keeper Walter]]></npckname>
       <talk_paragraph index="001" image="" itemindex="">
-         <talk_answer link_index="warehouse_001" mid="3"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
+         <talk_answer link_index="warehouse_001" mid="3"><![CDATA[<html>[Storage]</html>]]></talk_answer>
          <talk_answer link_index="talk" mid="4"><![CDATA[<html>[Talk] What is Storage?</html>]]></talk_answer>
          <talk_question mid="2"><![CDATA[<html>$Warehouse Keeper Walter${action:Talk}<BR>Your inventory looks full, <BR>You have to free up your inventory if you want to store all your loots properly.</html>]]></talk_question>
       </talk_paragraph>
@@ -13,10 +13,10 @@
          <talk_question mid="5"><![CDATA[<html>$Warehouse Keeper Walter$<BR>It is common to meet with insufficient inventory space while adventuring. At times like this, feel free to store your items in my WareHouse.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="002" image="" itemindex="">
-         <talk_answer link_index="warehouse_002" mid="9"><![CDATA[<html>[Personal Storage]</html>]]></talk_answer>
-         <talk_answer link_index="guild_002" mid="10"><![CDATA[<html>[Guild Storage]</html>]]></talk_answer>
-         <talk_answer link_index="talk" mid="11"><![CDATA[<html>[Talk]</html>]]></talk_answer>
-         <talk_question mid="8"><![CDATA[<html>$Warehouse Keeper Walter${action:Talk}<BR>You are welcome to store or retrieve items from me anytime.</html>]]></talk_question>
+         <talk_answer link_index="warehouse_002" mid="9"><![CDATA[<html>[개인 창고]</html>]]></talk_answer>
+         <talk_answer link_index="guild_002" mid="10"><![CDATA[<html>[길드 창고]</html>]]></talk_answer>
+         <talk_answer link_index="talk" mid="11"><![CDATA[<html>[대화]</html>]]></talk_answer>
+         <talk_question mid="8"><![CDATA[<html>$창고관리인 월터${action:Talk}<BR>맡기고 싶은 것이라든가, 찾고 싶은 것이 있다면 둘러보십시오.</html>]]></talk_question>
       </talk_paragraph>
       <executions>
          <exe type="talk">001</exe>

@@ -6,7 +6,7 @@
       <talk_paragraph index="002" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="4" link_target="gq11_3171_n413_wilden_normal.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Mapology II</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="5" link_target="gq11_3172_n413_wilden_hunt.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>The Hair Affair</FONT></html>]]></talk_answer>
-         <talk_answer link_index="q_enter" mid="6" link_target="gq11_3173_n413_wilden_drop.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Snooping Around Welton Hollow </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="6" link_target="gq11_3173_n413_wilden_drop.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Snooping Around Abandoned Welton Hollow </FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="7" link_target="gq11_3174_n413_wilden_hard.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Courage of a Man</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="8" link_target="gq11_3175_n413_wilden_boss.xml"><![CDATA[<html>[Lv.24]<FONT color=#086171>Wanted: Stone Wing</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="10" link_target="gq11_3176_n413_wilden_prop.xml"><![CDATA[<html>[Lv.24] <FONT color=#086171>Finding The Remains</FONT></html>]]></talk_answer>
@@ -56,7 +56,7 @@
       <talk_paragraph index="stage_31" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="152" link_target="gq11_3171_n413_wilden_normal.xml"><![CDATA[<html><FONT color=#2b2723>[Normal]</FONT><FONT color=#086171> Mapology II</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="153" link_target="gq11_3172_n413_wilden_hunt.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171> The Hair Affair</FONT></html>]]></talk_answer>
-         <talk_answer link_index="q_enter" mid="154" link_target="gq11_3173_n413_wilden_drop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Snooping Around Welton Hollow </FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="154" link_target="gq11_3173_n413_wilden_drop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Snooping Around Abandoned Welton Hollow </FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="155" link_target="gq11_3174_n413_wilden_hard.xml"><![CDATA[<html><FONT color=#2b2723>[Hard]</FONT><FONT color=#086171> Courage of a Man</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="156" link_target="gq11_3175_n413_wilden_boss.xml"><![CDATA[<html><FONT color=#2b2723>[Hunt]</FONT><FONT color=#086171> Wanted: Stone Wing</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="157" link_target="gq11_3176_n413_wilden_prop.xml"><![CDATA[<html><FONT color=#2b2723>[Acquire]</FONT><FONT color=#086171> Finding the Remains</FONT></html>]]></talk_answer>
@@ -90,7 +90,7 @@
          <talk_answer link_index="q_enter" mid="179" link_target="gq11_3320_n413_explosion_rank.xml"><![CDATA[<html>[Master]<FONT color=#7e12d2> Assault VI</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="180" link_target="gq11_3319_n413_explosion_abyss.xml"><![CDATA[<html>[Abyss]<FONT color=#7e12d2> Into the Abyss: Defeat Cyclops Patchwork</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_41" mid="181"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="70"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Forest of Dead Leaves</FONT>.</html>]]></talk_question>
+         <talk_question mid="70"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Explosion zone in Withered Leaves Forest</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_45" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="182" link_target="gq11_3341_n413_gtown_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Cutie Fertilizer</FONT></html>]]></talk_answer>
@@ -103,7 +103,7 @@
          <talk_answer link_index="q_enter" mid="189" link_target="gq11_3350_n413_gtown_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault IX</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="190" link_target="gq11_3349_n413_gtown_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Giant Wisp </FONT></html>]]></talk_answer>
          <talk_answer link_index="001" mid="191"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Ghost Town of Desolate Woods</FONT>.</html>]]></talk_question>
+         <talk_question mid="71"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Ghost Town of Isolated Forest</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="lv24" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_31" mid="195"><![CDATA[<html>[Lv.24] Abandoned Welton Hollow</html>]]></talk_answer>
@@ -119,7 +119,7 @@
       <talk_paragraph index="lv36" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_31" mid="202"><![CDATA[<html>[Lv.24] Abandoned Welton Hollow</html>]]></talk_answer>
          <talk_answer link_index="stage_35" mid="203"><![CDATA[<html>[Lv.30] Dried Marissa Spring</html>]]></talk_answer>
-         <talk_answer link_index="stage_41" mid="204"><![CDATA[<html>[Lv36] Forest of Dead Leaves</html>]]></talk_answer>
+         <talk_answer link_index="stage_41" mid="204"><![CDATA[<html>[Lv36] Explosion zone in Withered Leaves Forest</html>]]></talk_answer>
          <talk_answer link_index="002" mid="205"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="201"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>

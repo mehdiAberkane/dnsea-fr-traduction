@@ -52,7 +52,7 @@
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-b" image="" itemindex="">
       <talk_answer link_index="n039_bishop_ignasio-1-d" mid="41"><![CDATA[<html>Then where could it be?</html>]]></talk_answer>
-      <talk_question mid="40"><![CDATA[<html>$Bishop Ignacio$<BR>That monster was defeated after it had already attacked and sunk the Ship. Immediately after this, the heroes attacked. So the monster's neck was left near the <FONT color=#a82424>Sunken Ship</FONT>, as you have already seen. But the heroes took the <FONT color=#a82424>root of the powers</FONT> to somewhere far away.</html>]]></talk_question>
+      <talk_question mid="40"><![CDATA[<html>$Bishop Ignacio$<BR>That monster was defeated after it had already attacked and sunk the Ship. Immediately after this, the heroes attacked. So the monster's neck was left near the <FONT color=#a82424>Sunken Cargo Vessel</FONT>, as you have already seen. But the heroes took the <FONT color=#a82424>root of the powers</FONT> to somewhere far away.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-c" image="" itemindex="">
       <talk_question mid="9"><![CDATA[<html>$Bishop Ignacio$<BR>Its exact location has not been identified yet. I will investigate more about the Sea Monster, so you train while you wait.<BR><FONT color=#7e12d2>(Get to Level 36 or higher to proceed.)</FONT></html>]]></talk_question>
@@ -203,7 +203,7 @@
          <comp_money />
          <trigger_string />
          <maptool_index />
-         <title mid="32"><![CDATA[To the Sunken Ship]]></title>
+         <title mid="32"><![CDATA[To the Sunken Cargo Vessel]]></title>
          <contents mid="33"><![CDATA[<html>Go to the Ruins of Lost Time and find the <FONT color=#a82424>Sea Monster's Crest</FONT>.<BR><BR><FONT color=#086171>Port Hermalte(Ruined Riverganks Path)</FONT> <FONT color=#a82424>→ Ruins of Lost Time</FONT></html>]]></contents>
          <destination mid="34"><![CDATA[Collect Crest from Ruins of Lost Time]]></destination>
          <todo_msg mid="35"><![CDATA[Find the Sea Monster's Crest at Ruins of Lost Time.]]></todo_msg>

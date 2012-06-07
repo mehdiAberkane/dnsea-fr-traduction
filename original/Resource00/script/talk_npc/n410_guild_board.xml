@@ -47,7 +47,7 @@
       </talk_paragraph>
       <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_32" mid="145"><![CDATA[<html>[Lv.28]River Ruins</html>]]></talk_answer>
-         <talk_answer link_index="stage_34" mid="146"><![CDATA[<html>[Lv.30] River Stream</html>]]></talk_answer>
+         <talk_answer link_index="stage_34" mid="146"><![CDATA[<html>[Lv.30] Flooded Downstream Ruins</html>]]></talk_answer>
          <talk_answer link_index="stage_37" mid="147"><![CDATA[<html>[Lv32] Spirit Grave Tomb</html>]]></talk_answer>
          <talk_answer link_index="stage_47" mid="148"><![CDATA[<html>[Lv36] Ruins of Lost Time</html>]]></talk_answer>
          <talk_answer link_index="002" mid="149"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
@@ -77,7 +77,7 @@
          <talk_answer link_index="q_enter" mid="167" link_target="gq11_3250_n410_flood_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault IX</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="168" link_target="gq11_3249_n410_flood_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Rhastka</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_34" mid="169"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="67"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>River Stream</FONT>.</html>]]></talk_question>
+         <talk_question mid="67"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Flooded Downstream Ruins</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_37" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="170" link_target="gq11_3271_n410_etomb_normal.xml"><![CDATA[<html><FONT color=#2b2723>[Normal] </FONT><FONT color=#086171>Loving Pair</FONT></html>]]></talk_answer>
@@ -90,7 +90,7 @@
          <talk_answer link_index="q_enter" mid="177" link_target="gq11_3280_n410_etomb_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault II</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="178" link_target="gq11_3279_n410_etomb_abyss.xml"><![CDATA[<html>[Abyss]<FONT color=#7e12d2> Into the Abyss: Defeat Gargoyle Nexus</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_37" mid="179"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="68"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Spirit of the Tomb</FONT>.</html>]]></talk_question>
+         <talk_question mid="68"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Spirit Grave Tomb</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_47" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="180" link_target="gq11_3331_n410_timeruin_normal.xml"><![CDATA[<html>[Normal]<FONT color=#086171> Nada!</FONT></html>]]></talk_answer>
@@ -112,13 +112,13 @@
       </talk_paragraph>
       <talk_paragraph index="lv30" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_32" mid="206"><![CDATA[<html>[Lv.28]River Ruins</html>]]></talk_answer>
-         <talk_answer link_index="stage_34" mid="207"><![CDATA[<html>[Lv.30] River Stream</html>]]></talk_answer>
+         <talk_answer link_index="stage_34" mid="207"><![CDATA[<html>[Lv.30] Flooded Downstream Ruins</html>]]></talk_answer>
          <talk_answer link_index="002" mid="208"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="195"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="lv32" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_32" mid="209"><![CDATA[<html>[Lv.28]River Ruins</html>]]></talk_answer>
-         <talk_answer link_index="stage_34" mid="210"><![CDATA[<html>[Lv.30] River Stream</html>]]></talk_answer>
+         <talk_answer link_index="stage_34" mid="210"><![CDATA[<html>[Lv.30] Flooded Downstream Ruins</html>]]></talk_answer>
          <talk_answer link_index="stage_37" mid="211"><![CDATA[<html>[Lv32]  Spirit Grave Tomb</html>]]></talk_answer>
          <talk_answer link_index="002" mid="212"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="199"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>

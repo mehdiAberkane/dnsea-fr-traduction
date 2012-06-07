@@ -54,6 +54,7 @@
          <talk_answer link_index="q_enter" mid="70" link_target="sq08_342_change_job3.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gifts</FONT> </html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="71" link_target="sq08_343_change_job4.xml"><![CDATA[<html>[Lv.15] <FONT color=#086171>Irine's Gifts</FONT> </html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="358" link_target="sq08_379_change_job5.xml"><![CDATA[<html>[Lv15] <FONT color=#086171>Irine's previous gift</FONT></html>]]></talk_answer>
+         <talk_answer link_index="q_enter" mid="340" link_target="sq11_664_grand_open_farm.xml"><![CDATA[<html>[Lv24] <FONT color=#086171>Farm District Grand Open</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="314" link_target="nq25_5094_abandoned_infant1.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Drifting Children?</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="315" link_target="nq25_5095_abandoned_infant2.xml"><![CDATA[<html>[Lv.28] <FONT color=#086171>Drifting Children ? </FONT> </html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="316" link_target="nq25_5096_salvation_children.xml"><![CDATA[<html>[Lv.30] <FONT color=#086171>Support for the Children</FONT></html>]]></talk_answer>

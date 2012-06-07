@@ -62,7 +62,7 @@
 <FONT color=#7e12d2>(You can start a quest if you go to General Douglas in Royal Castle)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-noquest" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
-      <talk_question mid="6"><![CDATA[<html>$Castle Maid$<BR>
+      <talk_question mid="6"><![CDATA[<html>$Royal Maid$<BR>
 We have to leave soon, why isn’t she coming? <BR>
 <FONT color=#7e12d2>(You can start a quest if you go to General Douglas in Royal Castle)</FONT></html>]]></talk_question>
    </talk_paragraph>
@@ -101,7 +101,7 @@ I can’t leave this castle even if I wanted to see her…</html>]]></talk_quest
       <talk_question mid="21"><![CDATA[<html>$???$<BR><FONT color=#7e12d2>(There’s nothing special)</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-1" image="" itemindex="">
-      <talk_question mid="22"><![CDATA[<html>$Castle Maid$<BR>We have to leave now, why isn’t she coming ….</html>]]></talk_question>
+      <talk_question mid="22"><![CDATA[<html>$Royal Maid$<BR>We have to leave now, why isn’t she coming ….</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n047_unknown_girl_lena-1" image="" itemindex="">
       <talk_question mid="23"><![CDATA[<html>$Mysterious Lady$<BR>
@@ -116,15 +116,15 @@ Please don’t tell anyone that I’m here.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-2" image="" itemindex="">
       <talk_answer link_index="n048_maid_of_lena-2-a" mid="27"><![CDATA[<html>By herself? Where did she go? </html>]]></talk_answer>
-      <talk_question mid="26"><![CDATA[<html>$Castle Maid$<BR>Help me. My <FONT color=#a82424>Lady</FONT> went in three hours ago but she still hasn’t came out yet. <BR>
+      <talk_question mid="26"><![CDATA[<html>$Royal Maid$<BR>Help me. My <FONT color=#a82424>Lady</FONT> went in three hours ago but she still hasn’t came out yet. <BR>
 I’m afraid something has happened to her… </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-2-a" image="QW_27.dds" itemindex="">
       <talk_answer link_index="n048_maid_of_lena-3" mid="29"><![CDATA[<html>I’ll look for her don’t worry too much.</html>]]></talk_answer>
-      <talk_question mid="28"><![CDATA[<html>$Castle Maid$<BR>I saw her heading towards the<FONT color=#a82424>Dark Mine</FONT> I couldn’t follow her because of the nearby monsters. She told me she had lost something, what should I do? </html>]]></talk_question>
+      <talk_question mid="28"><![CDATA[<html>$Royal Maid$<BR>I saw her heading towards the<FONT color=#a82424>Dark Mine</FONT> I couldn’t follow her because of the nearby monsters. She told me she had lost something, what should I do? </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
-      <talk_question mid="30"><![CDATA[<html>$Castle Maid$<BR>Our lady has <FONT color=#a82424>red hair</FONT> with white skin.<BR>
+      <talk_question mid="30"><![CDATA[<html>$Royal Maid$<BR>Our lady has <FONT color=#a82424>red hair</FONT> with white skin.<BR>
 Please save her.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n047_unknown_girl_lena-3" image="QN_Npc_Lena_Duglars.dds" itemindex="">
@@ -157,17 +157,17 @@ That’s my <FONT color=#a82424>handkerchief</FONT>. Thank you so much!</html>]]
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-6" image="QN_Npc_Lena_Duglars.dds" itemindex="">
       <talk_answer link_index="n048_maid_of_lena-6-a" mid="44"><![CDATA[<html>Is she the daughter of General Douglas? </html>]]></talk_answer>
-      <talk_question mid="43"><![CDATA[<html>$Castle Maid$<BR>Oh, you’ve came back!<BR>I heard the adventurer have found your handkerchief. </html>]]></talk_question>
+      <talk_question mid="43"><![CDATA[<html>$Royal Maid$<BR>Oh, you’ve came back!<BR>I heard the adventurer have found your handkerchief. </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-6-a" image="QN_Npc_Genaral_Duglas.dds" itemindex="">
       <talk_answer link_index="n048_maid_of_lena-6-b" mid="46"><![CDATA[<html>Good. I have something to deliver as well. </html>]]></talk_answer>
-      <talk_question mid="45"><![CDATA[<html>$Castle Maid$<BR>Do you know her?<BR>Yes, she is the daughter of <FONT color=#a82424>General Douglas</FONT>, Lady <FONT color=#a82424>Lena</FONT>.</html>]]></talk_question>
+      <talk_question mid="45"><![CDATA[<html>$Royal Maid$<BR>Do you know her?<BR>Yes, she is the daughter of <FONT color=#a82424>General Douglas</FONT>, Lady <FONT color=#a82424>Lena</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-6-b" image="QN_Npc_Lena_Duglars.dds" itemindex="">
-      <talk_question mid="47"><![CDATA[<html>$Castle Maid$<BR>She is at the back hiding from the sea wind.<BR>She wanted to talk to you. </html>]]></talk_question>
+      <talk_question mid="47"><![CDATA[<html>$Royal Maid$<BR>She is at the back hiding from the sea wind.<BR>She wanted to talk to you. </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n048_maid_of_lena-7" image="QN_Npc_Lena_Duglars.dds" itemindex="">
-      <talk_question mid="48"><![CDATA[<html>$Castle Maid $<BR>
+      <talk_question mid="48"><![CDATA[<html>$Royal Maid $<BR>
 I was so worried.<BR>
 Thank you for returning her. </html>]]></talk_question>
    </talk_paragraph>
@@ -326,7 +326,7 @@ You took a while to say good bye. Did anything happen? </html>]]></talk_question
          <title mid="72"><![CDATA[Find Lena at Hermalte Port]]></title>
          <contents mid="73"><![CDATA[<html> <FONT color=#a82424>Lena</FONT>, the daughter of General Douglas should be near Hermalte Port. Go there and pass on <FONT color=#a82424>General Douglas</FONT>' words.<BR>
  <BR>
-<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Castle Maid </FONT></html>]]></contents>
+<FONT color=#086171>Hermalte Port</FONT> <FONT color=#a82424>→ Royal Maid </FONT></html>]]></contents>
          <destination mid="74"><![CDATA[Find Lena at Hermalte Port]]></destination>
          <todo_msg mid="75"><![CDATA[Please find Lena at Hermalte Port]]></todo_msg>
       </journal>
@@ -381,12 +381,12 @@ You took a while to say good bye. Did anything happen? </html>]]></talk_question
          <statemark_type>11</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="88"><![CDATA[Conversation with the Castle Maid]]></title>
-         <contents mid="89"><![CDATA[<html>Mysterious Lady fits the <FONT color=#a82424>Description of Lena</FONT> by <FONT color=#a82424>General Douglas</FONT>. Go back to <FONT color=#a82424>Hermalte Port </FONT> and find the <FONT color=#a82424>Castle Maid</FONT> to clarify with her.<BR>
+         <title mid="88"><![CDATA[Conversation with the Royal Maid]]></title>
+         <contents mid="89"><![CDATA[<html>Mysterious Lady fits the <FONT color=#a82424>Description of Lena</FONT> by <FONT color=#a82424>General Douglas</FONT>. Go back to <FONT color=#a82424>Hermalte Port </FONT> and find the <FONT color=#a82424>Royal Maid</FONT> to clarify with her.<BR>
  <BR>
-<FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Castle Maid </FONT><BR>
+<FONT color=#086171>Hermalte Port </FONT> <FONT color=#a82424>→ Royal Maid </FONT><BR>
  </html>]]></contents>
-         <destination mid="90"><![CDATA[Conversation with Castle Maid at Hermalte Port]]></destination>
+         <destination mid="90"><![CDATA[Conversation with Royal Maid at Hermalte Port]]></destination>
          <todo_msg mid="91"><![CDATA[Talk to Castel Maid at Hermalte Port]]></todo_msg>
       </journal>
       <journal index="7">

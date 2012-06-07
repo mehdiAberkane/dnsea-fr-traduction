@@ -42,18 +42,18 @@
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-a" image="GQ_prop.dds" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-b" mid="62"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="61"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Will you help by going to the Lost Tunnels to search for the <FONT color=#a82424>Miner's Remains</FONT>? It would be some sort of consolation for his family members. </html>]]></talk_question>
+      <talk_question mid="61"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Will you help by going to the Collapsed Mine to search for the <FONT color=#a82424>Miner's Remains</FONT>? It would be some sort of consolation for his family members. </html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-b" image="GQ_prop.dds" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-c" mid="66"><![CDATA[<html>Hunt for the Miner's Remains</html>]]></talk_answer>
-      <talk_question mid="65"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Collect <FONT color=#2b2723>Lost Tunnels' <FONT color=#a82424>Miner's Remains</FONT>. Miner's Remains can be obtained from the pile of bones.</FONT><BR><FONT color=#7e12d2> Client: Master Cleric Enoch</FONT></html>]]></talk_question>
+      <talk_question mid="65"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Collect <FONT color=#2b2723>Collapsed Mine' <FONT color=#a82424>Miner's Remains</FONT>. Miner's Remains can be obtained from the pile of bones.</FONT><BR><FONT color=#7e12d2> Client: Master Cleric Enoch</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-c" image="" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-d" mid="11"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
       <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-d" image="GQ_prop.dds" itemindex="">
-      <talk_question mid="52"><![CDATA[<html><FONT color=#2b2723>$[Guild Request]Survivor's Obligation$</FONT><FONT color=#2b2723><BR>You accepted a Mission.<BR>Collect Lost Tunnels' <FONT color=#a82424>Miner's Remains</FONT>.</FONT><BR><FONT color=#2b2723>Miner's Remains can be found in the <FONT color=#a82424>Bone Pile</FONT> surrounding Ogre Crushy.</FONT></html>]]></talk_question>
+      <talk_question mid="52"><![CDATA[<html><FONT color=#2b2723>$[Guild Request]Survivor's Obligation$</FONT><FONT color=#2b2723><BR>You accepted a Mission.<BR>Collect Collapsed Mine' <FONT color=#a82424>Miner's Remains</FONT>.</FONT><BR><FONT color=#2b2723>Miner's Remains can be found in the <FONT color=#a82424>Bone Pile</FONT> surrounding Ogre Crushy.</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-1" image="GQ_prop.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request]Survivor's Obligation<FONT color=#2b2723></FONT></FONT>.<BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time.</FONT></html>]]></talk_question>
@@ -111,8 +111,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[Hunt for the Miner's Remains]]></title>
-         <contents mid="43"><![CDATA[<html>Search the bone piles in the Lost Tunnels to find the <FONT color=#a82424>Miner's Remains</FONT>.<BR><FONT color=#086171><FONT color=#2b2723>※</FONT></FONT><FONT color=#7e12d2>Miner's Remains可在Ogre Crushy附近寻找.</FONT><BR><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Lost Tunnels</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[[Collect] Lost Tunnels]]></destination>
+         <contents mid="43"><![CDATA[<html>Search the bone piles in the Collapsed Mine to find the <FONT color=#a82424>Miner's Remains</FONT>.<BR><FONT color=#086171><FONT color=#2b2723>※</FONT></FONT><FONT color=#7e12d2>Miner's Remains可在Ogre Crushy附近寻找.</FONT><BR><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Collapsed Mine</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Collect] Collapsed Mine]]></destination>
          <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
       </journal>
       <journal index="2">

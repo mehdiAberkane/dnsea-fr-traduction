@@ -102,13 +102,13 @@
       <talk_question mid="63"><![CDATA[<html>$General Douglas$<BR>I need to know the progress of gathering troops <BR>Go to <FONT color=#a82424>Elite Soldiers</FONT> and the situation over there.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-1-a" image="QN_Npc_Velskud1.dds" itemindex="">
-      <talk_question mid="123"><![CDATA[<html>$General Douglas$<BR>Report to me once the preparations are completed<BR>In the mean time, I would monitor the situation of<FONT color=#a82424>Black Mines</FONT>, and prepare logistic for the fight against <FONT color=#a82424>Black Knight</FONT>.</html>]]></talk_question>
+      <talk_question mid="123"><![CDATA[<html>$General Douglas$<BR>Report to me once the preparations are completed<BR>In the mean time, I would monitor the situation of<FONT color=#a82424>Dark Mines</FONT>, and prepare logistic for the fight against <FONT color=#a82424>Black Knight</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n261_slave_david-1" image="QN_Npc_Argenta.dds" itemindex="">
       <talk_question mid="186"><![CDATA[<html>$Argenta's Slave Adventurer David$<BR>Hey you! <FONT color=#a82424>Argenta</FONT>!<BR>What causes the delay in her returns</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n042_general_duglars-2" image="QN_Npc_Elite_Soilder.dds" itemindex="">
-      <talk_question mid="12"><![CDATA[<html>$General Douglas$<BR>Report to me once the preparations are completed<BR>In the mean time, I would monitor the situation of<FONT color=#a82424>Black Mines</FONT>, and prepare logistic for the fight against <FONT color=#a82424>Black Knight</FONT>.</html>]]></talk_question>
+      <talk_question mid="12"><![CDATA[<html>$General Douglas$<BR>Report to me once the preparations are completed<BR>In the mean time, I would monitor the situation of<FONT color=#a82424>Dark Mines</FONT>, and prepare logistic for the fight against <FONT color=#a82424>Black Knight</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n209_elite_soldier-2" image="" itemindex="">
       <talk_answer link_index="n209_elite_soldier-2-c" mid="15"><![CDATA[<html>(Continue)</html>]]></talk_answer>

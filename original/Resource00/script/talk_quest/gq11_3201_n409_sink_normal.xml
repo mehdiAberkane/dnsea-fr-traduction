@@ -46,10 +46,10 @@
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-b" image="GQ_normal.dds" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-c" mid="64"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="63"><![CDATA[<html><FONT color=#2b2723>$Adventurer's Guild Commission Board$<BR>Unfortunately, monsters roam in every corner of <FONT color=#a82424>Lost Tunnels</FONT>, thus I am unable to enter directly.</FONT></html>]]></talk_question>
+      <talk_question mid="63"><![CDATA[<html><FONT color=#2b2723>$Adventurer's Guild Commission Board$<BR>Unfortunately, monsters roam in every corner of <FONT color=#a82424>Collapsed Mine</FONT>, thus I am unable to enter directly.</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-c" image="GQ_normal.dds" itemindex="">
-      <talk_answer link_index="n409_guild_board-accepting-d" mid="66"><![CDATA[<html>Lost Tunnels, clear once at Normal Difficulty or higher</html>]]></talk_answer>
+      <talk_answer link_index="n409_guild_board-accepting-d" mid="66"><![CDATA[<html>Collapsed Mine, clear once at Normal Difficulty or higher</html>]]></talk_answer>
       <talk_question mid="65"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR><FONT color=#2b2723>Please proceed to defeat those monsters. I will follow shortly to draw the maps.</FONT> <BR><FONT color=#7e12d2> Client: Cartographer Chris</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-d" image="" itemindex="">
@@ -57,7 +57,7 @@
       <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-e" image="GQ_normal.dds" itemindex="">
-      <talk_question mid="52"><![CDATA[<html>$[Guild Request] Cartography V$<BR>You accepted a Mission.<BR> Clear <FONT color=#2b2723><FONT color=#a82424>Lost Tunnels</FONT> at </FONT> <FONT color=#a82424>Normal</FONT> Difficulty or higher.</html>]]></talk_question>
+      <talk_question mid="52"><![CDATA[<html>$[Guild Request] Cartography V$<BR>You accepted a Mission.<BR> Clear <FONT color=#2b2723><FONT color=#a82424>Collapsed Mine</FONT> at </FONT> <FONT color=#a82424>Normal</FONT> Difficulty or higher.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-1" image="GQ_normal.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request] Cartography V</FONT>.<BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time.</FONT></html>]]></talk_question>
@@ -116,9 +116,9 @@
          <statemark_type>20</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="42"><![CDATA[Clear Lost Tunnels]]></title>
-         <contents mid="43"><![CDATA[<html>Clear Lost Tunnels at Normal Difficulty or higher.<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Lost Tunnels</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[[Normal] Lost Tunnels]]></destination>
+         <title mid="42"><![CDATA[Clear Collapsed Mine]]></title>
+         <contents mid="43"><![CDATA[<html>Clear Collapsed Mine at Normal Difficulty or higher.<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Collapsed Mine</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Normal] Collapsed Mine]]></destination>
          <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
       </journal>
       <journal index="2">

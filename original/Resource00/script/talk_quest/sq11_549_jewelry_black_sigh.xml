@@ -62,7 +62,7 @@ YEAH! You know collecting jewellery is the trend. Among them, <FONT color=#a8242
    </talk_paragraph>
    <talk_paragraph index="n277_bluff_dealers_popo-accepting-e" image="QS_Default.dds" itemindex="400175">
       <talk_answer link_index="n277_bluff_dealers_popo-accepting-f" mid="16"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="15"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>Black sigh is<FONT color=#a82424>at Death City Gates</FONT>found rare onyx. Real jewellery collector fall in dark attraction in the blink of an eye.</html>]]></talk_question>
+      <talk_question mid="15"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>Black sigh is<FONT color=#a82424>at Gates to Death City</FONT>found rare onyx. Real jewellery collector fall in dark attraction in the blink of an eye.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n277_bluff_dealers_popo-accepting-f" image="QS_Default.dds" itemindex="400175">
       <talk_answer link_index="n277_bluff_dealers_popo-accepting-g" mid="18"><![CDATA[<html>(Continue)</html>]]></talk_answer>
@@ -79,10 +79,10 @@ Big money… hahahaha! So looking forward to it!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n277_bluff_dealers_popo-1" image="QW_42.dds" itemindex="">
       <talk_answer link_index="n277_bluff_dealers_popo-1-a" mid="25"><![CDATA[<html>(Continue)</html>]]></talk_answer>
-      <talk_question mid="23"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>Black ore rock <FONT color=#a82424>at Death City Gates</FONT>there you can find many black ore rocks<FONT color=#a82424> Half Golem Tiny Land Fall</FONT>if you defeat it, you can get it.</html>]]></talk_question>
+      <talk_question mid="23"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>Black ore rock <FONT color=#a82424>at Gates to Death City</FONT>there you can find many black ore rocks<FONT color=#a82424> Half Golem Tiny Land Fall</FONT>if you defeat it, you can get it.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n277_bluff_dealers_popo-1-a" image="QS_Default.dds" itemindex="400155">
-      <talk_question mid="26"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>Don't use your time idling around. Hurry go to<FONT color=#a82424>Death City Gates</FONT>you go to there.<BR><FONT color=#a82424>black ore rocks</FONT>get them by the tons!</html>]]></talk_question>
+      <talk_question mid="26"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>Don't use your time idling around. Hurry go to<FONT color=#a82424>Gates to Death City</FONT>you go to there.<BR><FONT color=#a82424>black ore rocks</FONT>get them by the tons!</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n277_bluff_dealers_popo-2" image="QS_Default.dds" itemindex="400155">
       <talk_answer link_index="n277_bluff_dealers_popo-2-haveitem1" mid="28"><![CDATA[<html>(Hand over 1 black ore rock)</html>]]></talk_answer>
@@ -107,7 +107,7 @@ Big money… hahahaha! So looking forward to it!</html>]]></talk_question>
       <talk_question mid="35"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>No! This is just a random rock. It's better to dump it</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n277_bluff_dealers_popo-2-e" image="QW_42.dds" itemindex="">
-      <talk_question mid="38"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>Black ore rocks <FONT color=#a82424>at Death City Gates</FONT> 's <FONT color=#a82424>Half Golem Tiny Land Fall</FONT>if you defeat it, you can get it. You didn't forget it, did you?</html>]]></talk_question>
+      <talk_question mid="38"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>Black ore rocks <FONT color=#a82424>at Gates to Death City</FONT> 's <FONT color=#a82424>Half Golem Tiny Land Fall</FONT>if you defeat it, you can get it. You didn't forget it, did you?</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n277_bluff_dealers_popo-2-f" image="" itemindex="">
       <talk_question mid="39"><![CDATA[<html>$Dishonest Merchant Poppy$<BR>What? What do you think to ask for appraising without giving any ore rocks! </html>]]></talk_question>
@@ -219,10 +219,10 @@ it is<FONT color=#a82424>black sigh</FONT> you really found.</html>]]></talk_que
          <statemark_type>12</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="53"><![CDATA[Collect black ore rocks at Death City Gates]]></title>
-         <contents mid="54"><![CDATA[<html>If you find and bring black ore rock to him, he appraise and pay you. <FONT color=#a82424>at Death City Gates</FONT>'s <FONT color=#a82424>Half Golem Tiny Land Fall</FONT>get some black ore rocks. Collect many and appraise them together.<BR><BR><FONT color=#086171>Hermalte Harbor(at the black mine)</FONT> <FONT color=#a82424>→ Death City Gates</FONT></html>]]></contents>
-         <destination mid="55"><![CDATA[Collect black ore rocks at Death City Gates]]></destination>
-         <todo_msg mid="56"><![CDATA[Bring black ore rocks from Death City Gates]]></todo_msg>
+         <title mid="53"><![CDATA[Collect black ore rocks at Gates to Death City]]></title>
+         <contents mid="54"><![CDATA[<html>If you find and bring black ore rock to him, he appraise and pay you. <FONT color=#a82424>at Gates to Death City</FONT>'s <FONT color=#a82424>Half Golem Tiny Land Fall</FONT>get some black ore rocks. Collect many and appraise them together.<BR><BR><FONT color=#086171>Hermalte Harbor(at the black mine)</FONT> <FONT color=#a82424>→ Gates to Death City</FONT></html>]]></contents>
+         <destination mid="55"><![CDATA[Collect black ore rocks at Gates to Death City]]></destination>
+         <todo_msg mid="56"><![CDATA[Bring black ore rocks from Gates to Death City]]></todo_msg>
       </journal>
       <journal index="3">
          <contents_image>QN_Npc_Caraban_Atdin.dds</contents_image>
@@ -233,7 +233,7 @@ it is<FONT color=#a82424>black sigh</FONT> you really found.</html>]]></talk_que
          <trigger_string />
          <maptool_index />
          <title mid="57"><![CDATA[Talk with Dishonest Merchant Poppy]]></title>
-         <contents mid="58"><![CDATA[<html>Found black ore rock.<FONT color=#a82424> Dishonest Merchant Poppy</FONT>bring it to him to ask to appraise <FONT color=#a82424>at Death City Gates</FONT>'s <FONT color=#a82424>Half Golem Tiny Land Fall</FONT>who you can get from.<BR><FONT color=#a82424>(if the black ore rock is not real black sigh, collect again )</FONT><BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Dishonest Merchant Poppy</FONT></html>]]></contents>
+         <contents mid="58"><![CDATA[<html>Found black ore rock.<FONT color=#a82424> Dishonest Merchant Poppy</FONT>bring it to him to ask to appraise <FONT color=#a82424>at Gates to Death City</FONT>'s <FONT color=#a82424>Half Golem Tiny Land Fall</FONT>who you can get from.<BR><FONT color=#a82424>(if the black ore rock is not real black sigh, collect again )</FONT><BR><BR><FONT color=#086171>Saint Haven</FONT> <FONT color=#a82424>→ Dishonest Merchant Poppy</FONT></html>]]></contents>
          <destination mid="59"><![CDATA[Appraise jewellery from Dishonest Merchant Poppy]]></destination>
          <todo_msg mid="60"><![CDATA[Ask to appraise red ore rocks from Dishonest Merchant Poppy]]></todo_msg>
       </journal>

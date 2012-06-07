@@ -48,14 +48,14 @@
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-b" image="GQ_hunt.dds" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-c" mid="66"><![CDATA[<html>Defeat BOSS Ogre Crushy</html>]]></talk_answer>
-      <talk_question mid="65"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>The one who kills Ogre Crushy will get a reward.<BR><FONT color=#2b2723>Habitat: Lost Tunnels</FONT><BR><FONT color=#2b2723></FONT><BR><FONT color=#7e12d2> Client: Adventurer's Guild Master Gunther</FONT></html>]]></talk_question>
+      <talk_question mid="65"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>The one who kills Ogre Crushy will get a reward.<BR><FONT color=#2b2723>Habitat: Collapsed Mine</FONT><BR><FONT color=#2b2723></FONT><BR><FONT color=#7e12d2> Client: Adventurer's Guild Master Gunther</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-c" image="" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-d" mid="11"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
       <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-d" image="GQ_hunt.dds" itemindex="">
-      <talk_question mid="52"><![CDATA[<html>$[Guild Request] Ogre Crushy$<BR>You accepted a Mission.<BR>Please eliminate <FONT color=#2b2723><FONT color=#a82424>Lost Tunnels</FONT>' <FONT color=#a82424>Ogre Crushy</FONT>.</FONT></html>]]></talk_question>
+      <talk_question mid="52"><![CDATA[<html>$[Guild Request] Ogre Crushy$<BR>You accepted a Mission.<BR>Please eliminate <FONT color=#2b2723><FONT color=#a82424>Collapsed Mine</FONT>' <FONT color=#a82424>Ogre Crushy</FONT>.</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-1" image="GQ_hunt.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request]Wanted: Ogre Crushy</FONT><FONT color=#2b2723></FONT>.<BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time.</FONT></html>]]></talk_question>
@@ -113,10 +113,10 @@
          <statemark_type>20</statemark_type>
          <trigger_string />
          <maptool_index />
-         <title mid="42"><![CDATA[Defeat Lost Tunnels' BOSS ]]></title>
+         <title mid="42"><![CDATA[Defeat Collapsed Mine' BOSS ]]></title>
          <contents mid="43"><![CDATA[<html> Let's defeat the boss of Collapsed Mine, Orge Buwoo. <BR><FONT color=#086171></FONT><BR><FONT color=#086171>Hermalte Port (entrance of Dark Mines) </FONT><FONT color=#a82424>→ Collapsed Mine</FONT><BR>
 </html>]]></contents>
-         <destination mid="44"><![CDATA[[Hunt] Lost Tunnels]]></destination>
+         <destination mid="44"><![CDATA[[Hunt] Collapsed Mine]]></destination>
          <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
       </journal>
       <journal index="2">

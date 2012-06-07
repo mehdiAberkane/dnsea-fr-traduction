@@ -46,14 +46,14 @@
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-b" image="GQ_item.dds" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-c" mid="66"><![CDATA[<html>Collect 1 Diamond Ore</html>]]></talk_answer>
-      <talk_question mid="65"><![CDATA[<html><FONT color=#2b2723>$Adventurer's Guild Commission Board$<BR>Please go to Lost Tunnels to search for the enormous <FONT color=#a82424>Diamond Ore</FONT><FONT color=#a82424></FONT>Diamond Ore can be obtained from the greedy <FONT color=#a82424>Abandoned Mine Orc Commander</FONT></FONT><FONT color=#2b2723>!</FONT><BR><FONT color=#7e12d2>  Client: Pretty Girl Harori </FONT></html>]]></talk_question>
+      <talk_question mid="65"><![CDATA[<html><FONT color=#2b2723>$Adventurer's Guild Commission Board$<BR>Please go to Collapsed Mine to search for the enormous <FONT color=#a82424>Diamond Ore</FONT><FONT color=#a82424></FONT>Diamond Ore can be obtained from the greedy <FONT color=#a82424>Abandoned Mine Orc Commander</FONT></FONT><FONT color=#2b2723>!</FONT><BR><FONT color=#7e12d2>  Client: Pretty Girl Harori </FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-c" image="" itemindex="">
       <talk_answer link_index="n409_guild_board-accepting-d" mid="11"><![CDATA[<html><FONT color=#086171>(Accept Mission)</FONT></html>]]></talk_answer>
       <talk_question mid="10"><![CDATA[<html>$Mission Reward$</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-d" image="GQ_item.dds" itemindex="">
-      <talk_question mid="52"><![CDATA[<html>$[Guild Request] Collect Harori's Gemstone$<BR>You accepted a Mission.<BR>Please defeat <FONT color=#a82424>Lost Tunnels</FONT>' <FONT color=#a82424>Abandoned Mine Orc Commander</FONT>, collect <FONT color=#a82424>Diamond Ore</FONT>.</html>]]></talk_question>
+      <talk_question mid="52"><![CDATA[<html>$[Guild Request] Collect Harori's Gemstone$<BR>You accepted a Mission.<BR>Please defeat <FONT color=#a82424>Collapsed Mine</FONT>' <FONT color=#a82424>Abandoned Mine Orc Commander</FONT>, collect <FONT color=#a82424>Diamond Ore</FONT>.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-1" image="GQ_item.dds" itemindex="">
       <talk_question mid="20"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>You are currently doing <FONT color=#a82424>[Guild Request] Collect Harori's Gemstone<FONT color=#2b2723></FONT></FONT>.<BR><BR>※ <FONT color=#7e12d2>Only one Mission can be undertaken from a Guild Board at a time.</FONT></html>]]></talk_question>
@@ -118,8 +118,8 @@
          <trigger_string />
          <maptool_index />
          <title mid="42"><![CDATA[Collect 1 Diamond Ore]]></title>
-         <contents mid="43"><![CDATA[<html>Defeat Lost Tunnels' Abandoned Mine Orc Commander, collect <FONT color=#a82424>1 Diamond Ore</FONT>.<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Lost Tunnels</FONT></html>]]></contents>
-         <destination mid="44"><![CDATA[[Collect] Lost Tunnels]]></destination>
+         <contents mid="43"><![CDATA[<html>Defeat Collapsed Mine' Abandoned Mine Orc Commander, collect <FONT color=#a82424>1 Diamond Ore</FONT>.<BR><FONT color=#086171></FONT><BR><FONT color=#086171>Hermalte Port (Black Mine)</FONT><FONT color=#a82424>→ Collapsed Mine</FONT></html>]]></contents>
+         <destination mid="44"><![CDATA[[Collect] Collapsed Mine]]></destination>
          <todo_msg mid="45"><![CDATA[An Adventurer's Mission has been added.]]></todo_msg>
       </journal>
       <journal index="2">

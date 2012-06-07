@@ -57,10 +57,10 @@
       <talk_question mid="12"><![CDATA[<html>$Bishop Ignacio$<BR>Hehe. How would you ever bring back the whole neck. It would have decomposed by now, leaving only the bones, and even the bones would be too large to carry back. Bring back the <FONT color=#a82424>cerebrate</FONT>. That is, bring back the <FONT color=#a82424>Spirit</FONT> that has leaked from the monster's head.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-1-d" image="QW_46.dds" itemindex="">
-      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio$<BR>This is called the <FONT color=#a82424>Crystal Calabash</FONT>, and it has been specially passed down our Order. If you take this to the <FONT color=#a82424>Sunken Ship</FONT> and roam around, the spirits that were attached to the monsters will gather. Well then, I'll count on you.</html>]]></talk_question>
+      <talk_question mid="14"><![CDATA[<html>$Bishop Ignacio$<BR>This is called the <FONT color=#a82424>Crystal Calabash</FONT>, and it has been specially passed down our Order. If you take this to the <FONT color=#a82424>Sunken Cargo Vessel</FONT> and roam around, the spirits that were attached to the monsters will gather. Well then, I'll count on you.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-2" image="QW_46.dds" itemindex="">
-      <talk_question mid="15"><![CDATA[<html>$Bishop Ignacio$<BR>Bring the spirit of the Sea Monster, by putting it inside the <FONT color=#a82424>Crystal Calabash</FONT>.<BR>If you roam around the <FONT color=#a82424>Sunken Ship</FONT>, the spirits that were attached to the monsters will gather.</html>]]></talk_question>
+      <talk_question mid="15"><![CDATA[<html>$Bishop Ignacio$<BR>Bring the spirit of the Sea Monster, by putting it inside the <FONT color=#a82424>Crystal Calabash</FONT>.<BR>If you roam around the <FONT color=#a82424>Sunken Cargo Vessel</FONT>, the spirits that were attached to the monsters will gather.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n039_bishop_ignasio-3" image="QS_Default.dds" itemindex="300023">
       <talk_answer link_index="n039_bishop_ignasio-3-a" mid="18"><![CDATA[<html>Here it is.</html>]]></talk_answer>
@@ -189,8 +189,8 @@
          <maptool_index />
          <title mid="32"><![CDATA[Collect the Sea Monster's Spirit]]></title>
          <contents mid="33"><![CDATA[<html>Go to the Ruins of Lost Time and find the <FONT color=#a82424>Sea Monster's Crest</FONT>.<BR><BR><FONT color=#086171>Port Hermalte(Ruined Riverganks Path)</FONT> <FONT color=#a82424>→ Ruins of Lost Time</FONT></html>]]></contents>
-         <destination mid="34"><![CDATA[Defeat the monster at Sunken Ship]]></destination>
-         <todo_msg mid="35"><![CDATA[Collect the Sea Monster's Spirit at Sunken Ship.]]></todo_msg>
+         <destination mid="34"><![CDATA[Defeat the monster at Sunken Cargo Vessel]]></destination>
+         <todo_msg mid="35"><![CDATA[Collect the Sea Monster's Spirit at Sunken Cargo Vessel.]]></todo_msg>
       </journal>
       <journal index="3">
          <title_image />

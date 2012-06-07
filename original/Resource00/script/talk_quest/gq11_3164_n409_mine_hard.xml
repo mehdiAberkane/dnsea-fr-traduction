@@ -41,7 +41,7 @@
       <talk_question mid="5"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Recently, the Dark Overlord seems to have unusual movements. Strange beastmen have been gathering at Black Mine, they're probably concocting some evil plan.</html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-a" image="GQ_hard.dds" itemindex="">
-      <talk_answer link_index="n409_guild_board-accepting-b" mid="66"><![CDATA[<html> black mines, or Hard difficulty cleared a week </html>]]></talk_answer>
+      <talk_answer link_index="n409_guild_board-accepting-b" mid="66"><![CDATA[<html> Dark Mines, or Hard difficulty cleared a week </html>]]></talk_answer>
       <talk_question mid="65"><![CDATA[<html>$Adventurer's Guild Commission Board$<BR>Enter<FONT color=#a82424>Hard Difficulty</FONT>'s <FONT color=#a82424>Black Mine</FONT>Investigate their movements. If its convenient, defeat those monsters as well, it will definitely put things to our advantage in the future. <BR><FONT color=#7e12d2> Client: Captain Richard</FONT></html>]]></talk_question>
    </talk_paragraph>
    <talk_paragraph index="n409_guild_board-accepting-b" image="" itemindex="">

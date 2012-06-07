@@ -47,9 +47,9 @@
       </talk_paragraph>
       <talk_paragraph index="001" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_30" mid="87"><![CDATA[<html>[Lv.26] Forsaken Islet</html>]]></talk_answer>
-         <talk_answer link_index="stage_33" mid="88"><![CDATA[<html>[Lv32] Center of the Deserted Island</html>]]></talk_answer>
-         <talk_answer link_index="stage_46" mid="89"><![CDATA[<html>[Lv34] Sunken ship</html>]]></talk_answer>
-         <talk_answer link_index="stage_39" mid="90"><![CDATA[<html>[Lv38] Base of Captain Dalant</html>]]></talk_answer>
+         <talk_answer link_index="stage_33" mid="88"><![CDATA[<html>[Lv32] Forsaken Islet Core</html>]]></talk_answer>
+         <talk_answer link_index="stage_46" mid="89"><![CDATA[<html>[Lv34] Sunken Cargo Vessel</html>]]></talk_answer>
+         <talk_answer link_index="stage_39" mid="90"><![CDATA[<html>[Lv38] Captain Darlant's Base</html>]]></talk_answer>
          <talk_answer link_index="002" mid="91"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="62"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>
@@ -64,7 +64,7 @@
          <talk_answer link_index="q_enter" mid="99" link_target="gq11_3190_n411_island_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault III</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="100" link_target="gq11_3189_n411_island_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Sticky Thorns</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_30" mid="101"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="68"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Remote Island</FONT>.</html>]]></talk_question>
+         <talk_question mid="68"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Forsaken Islet</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_33" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="102" link_target="gq11_3261_n411_icenter_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Gambling and Weather</FONT></html>]]></talk_answer>
@@ -77,7 +77,7 @@
          <talk_answer link_index="q_enter" mid="109" link_target="gq11_3270_n411_icenter_rank.xml"><![CDATA[<html>[Master] <FONT color=#7e12d2>Assault I</FONT></html>]]></talk_answer>
          <talk_answer link_index="q_enter" mid="110" link_target="gq11_3269_n411_icenter_abyss.xml"><![CDATA[<html>[Abyss] <FONT color=#7e12d2>Into the Abyss: Defeat Lizardman Ralph</FONT></html>]]></talk_answer>
          <talk_answer link_index="back_stage_33" mid="111"><![CDATA[<html>(Back)</html>]]></talk_answer>
-         <talk_question mid="69"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Remote Island Center</FONT>.</html>]]></talk_question>
+         <talk_question mid="69"><![CDATA[<html>$Adventurer's Guild Board$<BR>The following requests have been received for <FONT color=#a82424>Forsaken Islet Center</FONT>.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="stage_46" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="q_enter" mid="124" link_target="gq11_3291_n411_sunken_normal.xml"><![CDATA[<html>[Normal] <FONT color=#086171>Loving Pair IV</FONT></html>]]></talk_answer>
@@ -112,13 +112,13 @@
       </talk_paragraph>
       <talk_paragraph index="lv32" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_30" mid="149"><![CDATA[<html>[Lv.26] Forsaken Islet</html>]]></talk_answer>
-         <talk_answer link_index="stage_33" mid="150"><![CDATA[<html>[Lv32] Center of the Deserted Island</html>]]></talk_answer>
+         <talk_answer link_index="stage_33" mid="150"><![CDATA[<html>[Lv32] Forsaken Islet Core</html>]]></talk_answer>
          <talk_answer link_index="002" mid="151"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="148"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
       </talk_paragraph>
       <talk_paragraph index="lv34" image="QN_guild_board.dds" itemindex="">
          <talk_answer link_index="stage_30" mid="153"><![CDATA[<html>[Lv.26] Forsaken Islet</html>]]></talk_answer>
-         <talk_answer link_index="stage_33" mid="154"><![CDATA[<html>[Lv32] Remote Island Center</html>]]></talk_answer>
+         <talk_answer link_index="stage_33" mid="154"><![CDATA[<html>[Lv32] Forsaken Islet Core</html>]]></talk_answer>
          <talk_answer link_index="stage_46" mid="155"><![CDATA[<html>[Lv34] Sunken Cargo Vessel</html>]]></talk_answer>
          <talk_answer link_index="002" mid="156"><![CDATA[<html>[All Requests]</html>]]></talk_answer>
          <talk_question mid="152"><![CDATA[<html>$Adventurer's Guild Board${action:Talk}<BR>Please select the commission you wish to take up for the dungeon.</html>]]></talk_question>
