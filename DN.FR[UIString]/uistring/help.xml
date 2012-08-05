@@ -8,22 +8,22 @@ Utilisez la touche <font color="yellow">[H]</font> pour ouvrir le guide des cont
 <font color="yellow">[S]</font> : Arrière<br>
 <font color="yellow">[A]</font> : Gauche<br>
 <font color="yellow">[D]</font> : Droite<br>
-<font color="yellow">[E]</font> : Courir Auto<br>
-<font color="yellow">[Space]</font> : Saut<br>
-<font color="yellow">[Mouse Movement]</font> : Changer de vue (angle visuel) <br>
+<font color="yellow">[E]</font> : Course Auto<br>
+<font color="yellow">[Espace]</font> : Saut<br>
+<font color="yellow">[Mouvement de Souris]</font> : Changer de vue (angle visuel) <br>
 <br>
 <font color="red">[Passer en mode combat]</font><br>
 Utilisez <font color="yellow">[Tab]</font> pour basculer entre le mode combat / non-combat.<br>
 <br>
-<font color="red">[Combat Method]</font><br>
-<font color="yellow">[Left Mouse Button]</font> : Attaque Basique <br>
-<font color="yellow">[Right Mouse Button]</font> : Attaque Spéciale<br>
-<font color="yellow">[Number Key 1~0]</font> : Use skill / item in quick slot<br>
-<font color="yellow">[~]</font> : Toggle between quick slot bars<br>
+<font color="red">[Méthode de Combat]</font><br>
+<font color="yellow">[Souris Clique Gauche]</font> : Attaque Basique <br>
+<font color="yellow">[Souris Clique Droit]</font> : Attaque Spéciale<br>
+<font color="yellow">[Nombre Clé 1~0]</font> : Utiliser compétence / objet dans la barre de raccourcis<br>
+<font color="yellow">[~]</font> : Basculer entre les barres de raccourics<br>
 <br>
-<font color="yellow">[R]</font> : Revive / Party Revive<br>
-<font color="yellow">[F]</font> : Pick up loot<br>
-<font color="yellow">[Alt]</font> : Show / Hide item name
+<font color="yellow">[R]</font> : Revivre / Revivre le Groupe<br>
+<font color="yellow">[F]</font> : Ramasser un objet<br>
+<font color="yellow">[Alt]</font> : Voir / Cacher le nom de objets
 </html>]]></Category>
 
 <Category index="1" Title="Mouse Control"><![CDATA[<html>
@@ -124,14 +124,14 @@ However, if the item gained is untradeable, it will be distributed according to 
 </html>]]></Category>
 
 <Category index="7" Title="Combat Tips"><![CDATA[<html>
-<font color="red">[Combat Tips]</font><br>
+<font color="red">[Conseils de Combat]</font><br>
 <font color="yellow">[Bounce Combo]</font><br>
 You may chain the combo by striking the monster after it has rebounded from a wall or obstacle.<br>
 <br>
 <font color="yellow">[Party Combo]</font><br>
 You may chain the combo by striking the monster after it has been striked by your party member.<br>
 <br>
-<font color="yellow">[Special Attack]</font><br>
+<font color="yellow">[Attaque Spécial]</font><br>
 Use the right mouse button to execute special attack (kick).<br>
 Try the special attack on monsters who are lying on the ground.
 </html>]]></Category>
