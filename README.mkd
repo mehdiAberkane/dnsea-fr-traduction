@@ -1,1 +1,8 @@
-Projet de la traduction française de Dragon Nest SEA.
+Projet de traduction de [Dragon Nest SEA (Global)](http://dn.cherrycredits.com/) en français.
+
+[Site officiel du projet](http://www.dragon-nest.fr/) | [Forum officiel du projet](http://www.dragon-nest.fr/forum/)
+
+Pour participer au projet de traduction, faites simplement un **fork** du projet, vous trouverez dans le dossier "original" 
+les différents fichiers à traduire et dans leurs dossiers respectifs les fichiers déjà traduits
+(DN.FR[UIString] pour l'interface par exemple).
+
